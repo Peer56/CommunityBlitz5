@@ -32,3 +32,27 @@
 #include "EngineHacks/SkillSystem/skill_definitions.event"
 
 // #define __DEBUG__ // Uncomment to get the Debug startup menu :p
+
+#define Gunborg 1
+#define Bastion 2
+#define Aldric 3
+#define Scully 4
+#define Wilbur 5
+
+#define Serahlta 7
+#define Yin 8
+#define Yang 9
+
+#define Vulture 14
+#define Ouderen 15
+#define Francine 16
+#define Loretta 17
+
+#define Kartre 28
+#define Barla 29
+
+#define Charles 34
+#define Hosay 35
+
+#define Wulfram 40
+#define Agvaldt 41
