@@ -1,3 +1,79 @@
 
 #include "Portraits/_PortraitInstaller.event"
 
+#define StandingMapSprite(aId, size, gfxPointer) "PUSH; ORG StandingMapSpriteTable + (aId * 8); SHORT 0 size; POIN gfxPointer; POP"
+#define MovingMapSprite(aId, apPointer, gfxPointer) "PUSH; ORG MovingMapSpriteTable + ((aId - 1) * 8); POIN gfxPointer apPointer; POP"
+
+#define MapSprite16x16 0
+#define MapSprite16x32 1
+#define MapSprite32x32 2
+
+#define AnimTableEntry(index) "ORG ClassAnimTable + ((index-1) * 0x20)"
+
+#define SwordAnim(Animation) "BYTE Swords 0x01 ; SHORT Animation"
+#define LanceAnim(Animation) "BYTE Lances 0x01 ; SHORT Animation"
+#define AxeAnim(Animation) "BYTE Axes 0x01 ; SHORT Animation"
+#define HandAxeAnim(Animation) "BYTE HandAxe 0x00 ; SHORT Animation ; BYTE Tomahawk 0x00 ; SHORT Animation ; BYTE Hatchet 0x00 ; SHORT Animation; "
+#define BowAnim(Animation) "BYTE Bows 0x01 ; SHORT Animation"
+#define StaffAnim(Animation) "BYTE Staves 0x01 ; SHORT Animation"
+#define AnimaAnim(Animation) "BYTE Anima 0x01 ; SHORT Animation"
+#define LightAnim(Animation) "BYTE Light 0x01 ; SHORT Animation"
+#define DarkAnim(Animation) "BYTE Dark 0x01 ; SHORT Animation"
+#define UnarmedAnim(Animation) "BYTE Disarmed 0x01 ; SHORT Animation"
+#define SpecialAnim(Animation,Weapon) "BYTE Weapon 0x00 ; SHORT Animation"
+#define MonsterAnim(Animation) "BYTE 0xB 0x01; SHORT Animation"
+#define LaguzAnim(Animations) "BYTE 0xB 0x01; SHORT Animation"
+#define MagicAnim(Animation) "AnimaAnim(Animation); LightAnim(Animation); DarkAnim(Animation)"
+#define EndAnim "WORD 0"
+
+#define ClassAnimTable 0xC00008 //we shouldn't need to repoint this
+#define StandingMapSpriteTable 0x8AF880
+#define MovingMapSpriteTable 0x9A2E00
+
+{
+#include "LordSwordAnim.event" //written over ephraim lord lance
+}
+{
+#include "LordUnarmedAnim.event" //written over ephraim lord unarmed
+}
+{
+#include "HalbLanceAnim.event" //written over eirika lord sword
+}
+{
+#include "HalbUnarmedAnim.event" //written over eirika lord unarmed
+}
+
+ALIGN 4
+HalbStandingMapSprite:
+#incext Png2Dmp "HalbStand.png" --lz77
+
+ALIGN 4
+HalbMovingMapSprite:
+#incext Png2Dmp "HalbMov.png" --lz77
+
+ALIGN 4
+LordStandingMapSprite:
+#incext Png2Dmp "LordStand.png" --lz77
+
+ALIGN 4
+LordMovingMapSprite:
+#incext Png2Dmp "LordMov.png" --lz77
+
+StandingMapSprite(0, MapSprite16x16, LordStandingMapSprite) //Roy Lord map sprite over Ephraim Lord map sprite
+MovingMapSprite(GunborgLord,0x1C46CC,LordMovingMapSprite) //this one is indexed by class ID for dumb reasons
+
+StandingMapSprite(1, MapSprite16x32, HalbStandingMapSprite) //Halberdier map sprite over Eirika Lord map sprite
+MovingMapSprite(Halberdier,0x1C46CC,HalbMovingMapSprite) //this one is indexed by class ID for dumb reasons
+
+ALIGN 4
+HalbAnims:
+LanceAnim(HalbLanceAnimID)
+UnarmedAnim(HalbUnarmedAnimID)
+EndAnim
+
+ALIGN 4
+LordAnims:
+SwordAnim(LordSwordAnimID)
+UnarmedAnim(LordUnarmedAnimID)
+EndAnim
+

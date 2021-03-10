@@ -188,6 +188,12 @@
 #define Phantom GhostFighter //who the hell calls it a Ghost Fighter
 #define Dracozombie DracoZombie //grr
 #define Falcoknight FalcoKnight //grrrrrr
+#define Halberdier Cyclops_2 //good a spot as any
+
+#define LordSwordAnimID 1
+#define LordUnarmedAnimID 2
+#define HalbLanceAnimID 3
+#define HalbUnarmedAnimID 4
 
 // Item Definitions
 
