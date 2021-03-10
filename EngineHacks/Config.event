@@ -8,7 +8,7 @@
 // =========================
 
 // If commented, the skill reorder warning will not be displayed.
-#define SHOW_SKILL_WARNING
+// #define SHOW_SKILL_WARNING
 
 // If commented, the test map will not be installed.
 #define USE_TEST_MAP
@@ -34,16 +34,16 @@
 
 // If uncommented, will use a full (EMS-based) save expansion instead of the "old" suspend expansion
 // Enabling this *will* break saves, but allows for higher stats and other things.
-// #define USE_SAVE_EXPANSION
+#define USE_SAVE_EXPANSION
 
 //If uncommented, will enable Battle Stats with Animations Off.
 #define BATTLE_STATS
 
 //If uncommented, will enable Casual Mode (set by flag 0xE0).
-#define CASUAL_MODE
+// #define CASUAL_MODE
 
 //If uncommented, will enable Contemporary Talk & Support.
-#define CONTEMPORARY_TALK_SUPPORT
+// #define CONTEMPORARY_TALK_SUPPORT
 
 //If uncommented, will enable Danger Zone.
 #define DANGER_ZONE
@@ -53,24 +53,24 @@
 
 //If uncommented, will use Trap Rework.
 //This is automatically used if Dragon Veins or Heal Tiles are uncommented.
-#define TRAP_REWORK
+// #define TRAP_REWORK
 
 //If uncommented, will enable Dragon Veins.
-#define DRAGON_VEINS
+// #define DRAGON_VEINS
 
 //If uncommented, will enable Heal Tiles.
-#define HEAL_TILES
+// #define HEAL_TILES
 
 //If uncommented, will enable event ASMCs for adding traps, rescuing units, and sending items to the convoy respectively.
-#define EVENT_ADD_TRAPS
-#define EVENT_RESCUE
-#define EVENT_SEND_TO_CONVOY
+// #define EVENT_ADD_TRAPS
+// #define EVENT_RESCUE
+// #define EVENT_SEND_TO_CONVOY
 
 //If uncommented, will enable Event Writer.
-#define EVENT_WRITER
+// #define EVENT_WRITER
 
 //If uncommented, will enable Freeze.
-#define FREEZE_HACK
+// #define FREEZE_HACK
 
 //If uncommented, will enable HP Bars.
 #define HP_BARS
@@ -82,7 +82,7 @@
 #define LTOGGLE_HACK
 
 //If uncommented, will enable Menu Semitransparency.
-#define SEMITRANSPARENCY_CHANGES
+// #define SEMITRANSPARENCY_CHANGES
 
 //If uncommented, will enable use of Supply during the prologue.
 #define PROLOGUE_SUPPLY
@@ -165,7 +165,7 @@
 // If uncommented, the fourth page of the stat screen will include personal information on the character.
 // This information can be edited in the "Personal Data Editor.csv" file.
 // This will automatically enable Narrow Font.
-#define ENABLE_PERSONAL_INFO
+// #define ENABLE_PERSONAL_INFO
 
 // If uncommented, the third page of the stat screen will only show weapon ranks that the unit has a rank in.
 #define ONLY_SHOW_USED_RANKS
@@ -177,7 +177,7 @@
 // #define GAIDEN_MAGIC
 
 // If uncommented, Unlock staves will work on chests.
-// #define UNLOCK_WORKS_ON_CHESTS
+#define UNLOCK_WORKS_ON_CHESTS
 
 // If uncommented, units can promote after acting when at or above the specified levels.
 // (By default, all classes promote at level 255.) 
@@ -249,7 +249,7 @@
 
 //If uncommented, ModularPreBattleSkill will be installed.
 //This modularly affects combat arts. See: SkillSystem\Skills\PreBattleSkills\ModularPreBattleSkills
-#define MODULAR_PRE_BATTLE_SKILLS
+// #define MODULAR_PRE_BATTLE_SKILLS
 
 // If uncommented, the range skills checker will use SkillTester2 instead of SkillTester.
 // This will prevent this function from checking for equipped weapon skills to prevent potential infinite recursion.
@@ -302,18 +302,17 @@
 //If true, the stat colors for player units will reflect their growth in the stat.
 #define USE_STAT_COLORS True
 
-
 //If true, Fixed Growths mode will exist.
-#define FIXED_GROWTHS_MODE False
+#define FIXED_GROWTHS_MODE True
 
 //ID of flag to use for fixed growths mode, if enabled
 #define FIXED_GROWTHS_FLAG_ID 0xEF
 
 //If true, passive growth boosters and metis tome will not affect growths in fixed growths mode.
-#define FIXED_GROWTHS_DONT_BOOST True
+#define FIXED_GROWTHS_DONT_BOOST False
 
 //If true, enemy/NPC autolevels will use fixed growths as well.
-#define ENEMY_NPC_FIXED_GROWTHS True
+#define ENEMY_NPC_FIXED_GROWTHS False
 
 
 //If true, the effects of multiple passive growth boosters can stack.

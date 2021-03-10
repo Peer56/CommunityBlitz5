@@ -1,0 +1,17 @@
+/*
+setMugEntry(Mug,Portrait,2,6,3,4)
+ALIGN 4
+Portrait:
+#incext PortraitFormatter ".png"
+*/
+
+setMugEntry(EusebiosMug,EusebiosPortrait,2,6,3,4)
+ALIGN 4
+EusebiosPortrait:
+#incext PortraitFormatter "Eusebios.png"
+
+setMugEntry(WulframMug,WulframPortrait,2,6,3,4)
+ALIGN 4
+WulframPortrait:
+#incext PortraitFormatter "Wulfram.png"
+
