@@ -31,7 +31,34 @@
 
 #include "EngineHacks/SkillSystem/skill_definitions.event"
 
-// #define __DEBUG__ // Uncomment to get the Debug startup menu :p
+#define __DEBUG__ // Uncomment to get the Debug startup menu :p
+
+// As chapters are finished, uncomment their defs here
+
+// #define CHAPTER_1
+// #define CHAPTER_2
+// #define CHAPTER_3
+// #define CHAPTER_4
+// #define CHAPTER_5
+// #define CHAPTER_6
+// #define CHAPTER_7
+// #define CHAPTER_8
+// #define CHAPTER_9
+// #define CHAPTER_10
+// #define CHAPTER_11
+// #define CHAPTER_12
+// #define CHAPTER_13
+// #define CHAPTER_14
+// #define CHAPTER_15
+// #define CHAPTER_16
+// #define CHAPTER_17
+// #define CHAPTER_18
+#define CHAPTER_19
+// #define CHAPTER_20
+// #define CHAPTER_21
+
+
+//Character Defs
 
 #define Gunborg 1
 #define Bastion 2

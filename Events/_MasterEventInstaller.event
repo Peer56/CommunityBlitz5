@@ -1,0 +1,129 @@
+
+#include "WorldMapEvents.event"
+#include "REDAHelpers.event"
+
+#ifdef CHAPTER_1
+	{
+		#include "Chapter1.event"
+	}
+#endif // CHAPTER_1
+
+#ifdef CHAPTER_2
+	{
+		#include "Chapter2.event"
+	}
+#endif // CHAPTER_2
+
+#ifdef CHAPTER_3
+	{
+		#include "Chapter3.event"
+	}
+#endif // CHAPTER_3
+
+#ifdef CHAPTER_4
+	{
+		#include "Chapter4.event"
+	}
+#endif // CHAPTER_4
+
+#ifdef CHAPTER_5
+	{
+		#include "Chapter5.event"
+	}
+#endif // CHAPTER_5
+
+#ifdef CHAPTER_6
+	{
+		#include "Chapter6.event"
+	}
+#endif // CHAPTER_6
+
+#ifdef CHAPTER_7
+	{
+		#include "Chapter7.event"
+	}
+#endif // CHAPTER_7
+
+#ifdef CHAPTER_8
+	{
+		#include "Chapter8.event"
+	}
+#endif // CHAPTER_8
+
+#ifdef CHAPTER_9
+	{
+		#include "Chapter9.event"
+	}
+#endif // CHAPTER_9
+
+#ifdef CHAPTER_10
+	{
+		#include "Chapter10.event"
+	}
+#endif // CHAPTER_10
+
+#ifdef CHAPTER_11
+	{
+		#include "Chapter11.event"
+	}
+#endif // CHAPTER_11
+
+#ifdef CHAPTER_12
+	{
+		#include "Chapter12.event"
+	}
+#endif // CHAPTER_12
+
+#ifdef CHAPTER_13
+	{
+		#include "Chapter13.event"
+	}
+#endif // CHAPTER_13
+
+#ifdef CHAPTER_14
+	{
+		#include "Chapter14.event"
+	}
+#endif // CHAPTER_14
+
+#ifdef CHAPTER_15
+	{
+		#include "Chapter15.event"
+	}
+#endif // CHAPTER_15
+
+#ifdef CHAPTER_16
+	{
+		#include "Chapter16.event"
+	}
+#endif // CHAPTER_16
+
+#ifdef CHAPTER_17
+	{
+		#include "Chapter17.event"
+	}
+#endif // CHAPTER_17
+
+#ifdef CHAPTER_18
+	{
+		#include "Chapter18.event"
+	}
+#endif // CHAPTER_18
+
+#ifdef CHAPTER_19
+	{
+		#include "Chapter19.event"
+	}
+#endif // CHAPTER_19
+
+#ifdef CHAPTER_20
+	{
+		#include "Chapter20.event"
+	}
+#endif // CHAPTER_20
+
+#ifdef CHAPTER_21
+	{
+		#include "Chapter21.event"
+	}
+#endif // CHAPTER_21
