@@ -53,7 +53,7 @@
 // #define CHAPTER_16
 // #define CHAPTER_17
 // #define CHAPTER_18
-// #define CHAPTER_19
+#define CHAPTER_19
 // #define CHAPTER_20
 // #define CHAPTER_21
 
@@ -112,7 +112,7 @@
 #define Ch3Boss 66
 #define Susie 67
 #define Ch5Boss 68
-#define Eusebios1 69
+#define Ch6Eusebios 69
 #define Westley 70
 #define Ch8Boss1 71
 #define Ch8Boss2 72
@@ -127,9 +127,72 @@
 #define Darlas 81
 #define Ch17Boss 82
 #define Ch18Boss 83
-#define Eusebios2 84
+#define Ch19Eusebios 84
 #define Ch20Boss 85
 #define Ch21Boss 86
+
+//NPCs
+//start these at 96
+
+
+//Generics
+
+#define Ch1Generics1 128
+#define Ch1Generics2 129
+#define Ch2Generics1 130
+#define Ch2Generics2 131
+#define Ch3Generics1 132
+#define Ch3Generics2 133
+#define Ch4Generics1 134
+#define Ch4Generics2 135
+#define Ch5Generics1 136
+#define Ch5Generics2 137
+#define Ch6Generics1 138
+#define Ch6Generics2 139
+#define Ch7Generics1 140
+#define Ch7Generics2 141
+#define Ch8Generics1 142
+#define Ch8Generics2 143
+#define Ch9Generics1 144
+#define Ch9Generics2 145
+#define Ch10Generics1 146
+#define Ch10Generics2 147
+#define Ch11Generics1 148
+#define Ch11Generics2 149
+#define Ch12Generics1 150
+#define Ch12Generics2 151
+#define Ch13Generics1 152
+#define Ch13Generics2 153
+#define Ch14Generics1 154
+#define Ch14Generics2 155
+#define Ch15Generics1 156
+#define Ch15Generics2 157
+#define Ch16Generics1 158
+#define Ch16Generics2 159
+#define Ch17Generics1 160
+#define Ch17Generics2 161
+#define Ch18Generics1 162
+#define Ch18Generics2 163
+#define Ch19Enemies 164
+#define Ch19Phantoms 165
+#define Ch20Generics1 166
+#define Ch20Generics2 167
+#define Ch21Generics1 168
+#define Ch21Generics2 169
+
+
+// Class Definitions
+
+#define GunborgLord 1
+#define GunborgGreatLord 2
+#define Phantom GhostFighter //who the hell calls it a Ghost Fighter
+#define Dracozombie DracoZombie //grr
+#define Falcoknight FalcoKnight //grrrrrr
+
+// Item Definitions
+
+#define HoplonGuard HoplonShield //I too like naming things not what they're called
+
 
 // Mug Defs
 
