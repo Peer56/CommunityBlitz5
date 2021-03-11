@@ -1,29 +1,5 @@
 EventPointerTable(0x33, PointerList)
 
-//temp testing stuff
-#ifndef Gunborg
-	#define Gunborg 1
-#endif // Gunborg
-#ifndef Bastion
-	#define Bastion 2
-#endif // Bastion
-#ifndef Dogi
-	#define Dogi 3
-#endif // Dogi
-#ifndef Feena
-	#define Feena 4
-#endif // Feena
-#ifndef DarkTovah
-	#define DarkTovah 5
-#endif // DarkTovah
-#ifndef Ch12Enemy
-	#define Ch12Enemy 0x70
-#endif // Ch12Enemy
-#ifndef Halberdier
-	#define Halberdier Soldier
-#endif // Halberdier
-
-
 PointerList:
 POIN TurnBasedEvents
 POIN CharacterBasedEvents
@@ -68,7 +44,7 @@ END_MAIN
 
 ALIGN 4
 Units1:
-UNIT Gunborg Knight 0 Level(0,Ally,0) [16,14] 0 0 0 1 NoItems NoAI
+UNIT Gunborg GunborgLord 0 Level(0,Ally,0) [16,14] 0 0 0 1 NoItems NoAI
 UNIT Bastion Knight 0 Level(0,Ally,0) [15,15] 0 0 0 1 NoItems NoAI
 UNIT Bastion Knight 0 Level(0,Ally,0) [17,15] 0 0 0 1 NoItems NoAI
 UNIT Bastion Knight 0 Level(0,Ally,0) [14,14] 0 0 0 1 NoItems NoAI
@@ -90,37 +66,37 @@ UNIT
 ALIGN 4
 EnemyUnits:
 UNIT DarkTovah Druid_F 0 Level(5,Enemy,0) [33,9] 2 0 0 1 [Luna] NeverMoveAI
-UNIT Ch12Enemy GreatKnight 0 Level(1,Enemy,1) [4,8] 0 0 0 1 [SteelSword,SteelLance,SteelAxe] AttackInRangeAI
-UNIT Ch12Enemy Wight 0 Level(3,Enemy,1) [7,10] 0 0 0 1 [PoisonSword] AttackInRangeAI
-UNIT Ch12Enemy Halberdier 0 Level(2,Enemy,1) [1,9] 2 0 0 1 [Javelin] AttackInRangeAI
-UNIT Ch12Enemy Druid 0 Level(2,Enemy,1) [7,3] 0 0 0 1 [Nosferatu] AttackInRangeAI
-UNIT Ch12Enemy Swordmaster 0 Level(1,Enemy,1) [11,5] 2 0 0 1 [Runesword] AttackInRangeAI
-UNIT Ch12Enemy Wight_Bow 0 Level(3,Enemy,1) [18,4] 0 0 0 1 [SteelBow] AttackInRangeAI
-UNIT Ch12Enemy Hero 0 Level(1,Enemy,1) [21,3] 2 0 0 1 [Tomahawk] AttackInRangeAI
-UNIT Ch12Enemy Maelduin 0 Level(2,Enemy,1) [25,5] 0 0 0 1 [KillerAxe,SteelBow] AttackInRangeAI
-UNIT Ch12Enemy Entombed 0 Level(6,Enemy,1) [28,4] 0 0 0 1 [FetidClaw] AttackInRangeAI
-UNIT Ch12Enemy Halberdier 0 Level(3,Enemy,1) [30,5] 0 0 0 1 [Ridersbane] AttackInRangeAI
-UNIT Ch12Enemy Druid 0 Level(1,Enemy,1) [15,3] 2 0 0 1 [Flux,Mend] AttackInRangeAI
-UNIT Ch12Enemy Cyclops 0 Level(1,Enemy,1) [27,8] 0 0 0 1 [KillerAxe] GuardTileAI
-UNIT Ch12Enemy Wight_Bow 0 Level(4,Enemy,1) [25,9] 2 0 0 1 [PoisonBow] AttackInRangeAI
-UNIT Ch12Enemy Warrior 0 Level(1,Enemy,1) [22,8] 0 0 0 1 [SteelAxe] AttackInRangeAI
-UNIT Ch12Enemy ElderBael 0 Level(3,Enemy,1) [22,13] 0 0 0 1 [SharpClaw] AttackInRangeAI
-UNIT Ch12Enemy Paladin 0 Level(1,Enemy,1) [20,14] 0 0 0 1 [SilverSword] AttackInRangeAI
-UNIT Ch12Enemy Wight 0 Level(3,Enemy,1) [26,13] 0 0 0 1 [PoisonLance] AttackInRangeAI
-UNIT Ch12Enemy Druid 0 Level(2,Enemy,1) [29,12] 0 0 0 1 [Flux] AttackInRangeAI
-UNIT Ch12Enemy Gorgon 0 Level(5,Enemy,1) [27,15] 0 0 0 1 [Stone] AttackInRangeAI
-UNIT Ch12Enemy Sage 0 Level(2,Enemy,1) [21,9] 2 0 0 1 [Divine,Restore] AttackInRangeAI
-UNIT Ch12Enemy Sage 0 Level(1,Enemy,1) [31,13] 2 0 0 1 [Elfire] AttackInRangeAI
-UNIT Ch12Enemy ArchMogall 0 Level(2,Enemy,1) [23,8] 0 0 0 1 [CrimsonEye] AttackInRangeAI
-UNIT Ch12Enemy MageKnight 0 Level(1,Enemy,1) [21,5] 2 0 0 1 [Bolting,Mend] AttackInRangeAI
-UNIT Ch12Enemy Wight 0 Level(3,Enemy,1) [33,15] 2 0 0 1 [SteelLance,Javelin] AttackInRangeAI
-UNIT Ch12Enemy Bishop 0 Level(3,Enemy,1) [29,9] 2 0 0 1 [Purge,Physic] AttackInRangeAI
-UNIT Ch12Enemy ArchMogall 0 Level(2,Enemy,1) [25,5] 0 0 0 1 [Shadowshot] AttackInRangeAI
-UNIT Ch12Enemy Druid 0 Level(1,Enemy,1) [13,4] 2 0 0 1 [Eclipse] AttackInRangeAI
-UNIT Ch12Enemy MageKnight 0 Level(1,Enemy,1) [2,5] 2 0 0 1 [Thunder] AttackInRangeAI
-UNIT Ch12Enemy Entombed 0 Level(6,Enemy,1) [5,5] 0 0 0 1 [FetidClaw] AttackInRangeAI
-UNIT Ch12Enemy Bishop 0 Level(3,Enemy,1) [32,11] 0 0 0 1 [Shine,Physic] AttackInRangeAI
-UNIT Ch12Enemy Druid 0 Level(3,Enemy,1) [34,11] 2 0 0 1 [Flux,Physic] AttackInRangeAI
+UNIT Ch12Enemies GreatKnight 0 Level(1,Enemy,1) [4,8] 0 0 0 1 [SteelSword,SteelLance,SteelAxe] AttackInRangeAI
+UNIT Ch12Monsters Wight 0 Level(3,Enemy,1) [7,10] 0 0 0 1 [PoisonSword] AttackInRangeAI
+UNIT Ch12Enemies Halberdier 0 Level(2,Enemy,1) [1,9] 2 0 0 1 [Javelin] AttackInRangeAI
+UNIT Ch12Enemies Druid 0 Level(2,Enemy,1) [7,3] 0 0 0 1 [Nosferatu] AttackInRangeAI
+UNIT Ch12Enemies Swordmaster 0 Level(1,Enemy,1) [11,5] 2 0 0 1 [Runesword] AttackInRangeAI
+UNIT Ch12Monsters Wight_Bow 0 Level(3,Enemy,1) [18,4] 0 0 0 1 [SteelBow] AttackInRangeAI
+UNIT Ch12Enemies Hero 0 Level(1,Enemy,1) [21,3] 2 0 0 1 [Tomahawk] AttackInRangeAI
+UNIT Ch12Monsters Maelduin 0 Level(2,Enemy,1) [25,5] 0 0 0 1 [KillerAxe,SteelBow] AttackInRangeAI
+UNIT Ch12Monsters Entombed 0 Level(6,Enemy,1) [28,4] 0 0 0 1 [FetidClaw] AttackInRangeAI
+UNIT Ch12Enemies Halberdier 0 Level(3,Enemy,1) [30,5] 0 0 0 1 [Ridersbane] AttackInRangeAI
+UNIT Ch12Enemies Druid 0 Level(1,Enemy,1) [15,3] 2 0 0 1 [Flux,Mend] AttackInRangeAI
+UNIT Ch12Monsters Cyclops 0 Level(1,Enemy,1) [27,8] 0 0 0 1 [KillerAxe] GuardTileAI
+UNIT Ch12Monsters Wight_Bow 0 Level(4,Enemy,1) [25,9] 2 0 0 1 [PoisonBow] AttackInRangeAI
+UNIT Ch12Enemies Warrior 0 Level(1,Enemy,1) [22,8] 0 0 0 1 [SteelAxe] AttackInRangeAI
+UNIT Ch12Monsters ElderBael 0 Level(3,Enemy,1) [22,13] 0 0 0 1 [SharpClaw] AttackInRangeAI
+UNIT Ch12Enemies Paladin 0 Level(1,Enemy,1) [20,14] 0 0 0 1 [SilverSword] AttackInRangeAI
+UNIT Ch12Monsters Wight 0 Level(3,Enemy,1) [26,13] 0 0 0 1 [PoisonLance] AttackInRangeAI
+UNIT Ch12Enemies Druid 0 Level(2,Enemy,1) [29,12] 0 0 0 1 [Flux] AttackInRangeAI
+UNIT Ch12Monsters Gorgon 0 Level(5,Enemy,1) [27,15] 0 0 0 1 [Stone] AttackInRangeAI
+UNIT Ch12Enemies Sage 0 Level(2,Enemy,1) [21,9] 2 0 0 1 [Divine,Restore] AttackInRangeAI
+UNIT Ch12Enemies Sage 0 Level(1,Enemy,1) [31,13] 2 0 0 1 [Elfire] AttackInRangeAI
+UNIT Ch12Monsters ArchMogall 0 Level(2,Enemy,1) [23,8] 0 0 0 1 [CrimsonEye] AttackInRangeAI
+UNIT Ch12Enemies MageKnight 0 Level(1,Enemy,1) [21,5] 2 0 0 1 [Bolting,Mend] AttackInRangeAI
+UNIT Ch12Monsters Wight 0 Level(3,Enemy,1) [33,15] 2 0 0 1 [SteelLance,Javelin] AttackInRangeAI
+UNIT Ch12Enemies Bishop 0 Level(3,Enemy,1) [29,9] 2 0 0 1 [Purge,Physic] AttackInRangeAI
+UNIT Ch12Monsters ArchMogall 0 Level(2,Enemy,1) [25,5] 0 0 0 1 [Shadowshot] AttackInRangeAI
+UNIT Ch12Enemies Druid 0 Level(1,Enemy,1) [13,4] 2 0 0 1 [Eclipse] AttackInRangeAI
+UNIT Ch12Enemies MageKnight 0 Level(1,Enemy,1) [2,5] 2 0 0 1 [Thunder] AttackInRangeAI
+UNIT Ch12Monsters Entombed 0 Level(6,Enemy,1) [5,5] 0 0 0 1 [FetidClaw] AttackInRangeAI
+UNIT Ch12Enemies Bishop 0 Level(3,Enemy,1) [32,11] 0 0 0 1 [Shine,Physic] AttackInRangeAI
+UNIT Ch12Enemies Druid 0 Level(3,Enemy,1) [34,11] 2 0 0 1 [Flux,Physic] AttackInRangeAI
 UNIT
 
 Traps1:

@@ -1,0 +1,7 @@
+#ifdef __DEBUG__
+
+#include "MainMenu.event"
+
+#include "DebugOMatic/WinButton.event"
+
+#endif // __DEBUG__

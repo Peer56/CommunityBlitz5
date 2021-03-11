@@ -1,0 +1,58 @@
+PUSH
+ORG $1BC14
+POIN SoundRoomList
+ORG $1BCC4
+POIN SoundRoomList
+ORG $AECA8
+POIN SoundRoomList
+ORG $AECD0
+POIN SoundRoomList
+ORG $AED2C
+POIN SoundRoomList
+ORG $AEEBC
+POIN SoundRoomList
+ORG $AF438
+POIN SoundRoomList
+ORG $AF830
+POIN SoundRoomList
+ORG $AFE30
+POIN SoundRoomList
+ORG $B0080
+POIN SoundRoomList
+ORG $B042C
+POIN SoundRoomList
+POP
+
+#define SoundRoomEntry(songID,songLength,nameTextID) "WORD songID songLength 0 nameTextID"
+#define SoundRoomConditionalEntry(songID,songLength,functionPointer,nameTextID) "WORD songID songLength; POIN functionPointer; WORD nameTextID"
+#define SoundRoomTerminator "WORD 0xFFFFFFFF 0 0 0"
+
+ALIGN 4
+SoundRoomList:
+
+
+SoundRoomTerminator
+
+/*
+//expand sound room cap
+PUSH
+ORG $AED76
+SHORT 0x2148 //change 0x36 offset to 0x48? this may break more things but let's see
+ORG $AED80
+SHORT 0x6010 //write for size
+ORG $AEE1C
+SHORT 0x1A89 //read for size
+ORG $AF4B6
+SHORT 0x3048 //add r0,#0x48
+SHORT 0x6800 //ldr r0,[r0]
+ORG $AF33C
+SHORT 0x3048 //add r0,#0x48
+SHORT 0x6800 //ldr r0,[r0]
+ORG $AF92E
+SHORT 0x3148 //add r1,#0x48
+SHORT 0x6809 //ldr r1,[r1]
+ORG $AF3A6
+SHORT 0x3048 //add r0,#0x48
+SHORT 0x6800 //ldr r0,[r0]
+POP
+*/

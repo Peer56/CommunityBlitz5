@@ -15,3 +15,53 @@ ALIGN 4
 WulframPortrait:
 #incext PortraitFormatter "Wulfram.png"
 
+setMugEntry(DarkTovahMug,DarkTovahPortrait,2,6,3,4)
+ALIGN 4
+DarkTovahPortrait:
+#incext PortraitFormatter "DarkTovah.png"
+
+setMugEntry(DogiMug,DogiPortrait,3,6,3,4)
+ALIGN 4
+DogiPortrait:
+#incext PortraitFormatter "Dogi.png"
+
+setMugEntry(FeenaMug,FeenaPortrait,3,6,3,4)
+ALIGN 4
+FeenaPortrait:
+#incext PortraitFormatter "Feena.png"
+
+setMugEntry(NegajMug,NegajPortrait,2,5,3,3)
+ALIGN 4
+NegajPortrait:
+#incext PortraitFormatter "Negaj.png"
+
+setMugEntry(PeteMug,PetePortrait,3,6,3,4)
+ALIGN 4
+PetePortrait:
+#incext PortraitFormatter "Pete.png"
+
+setMugEntry(ViridiaMug,ViridiaPortrait,2,5,2,3)
+ALIGN 4
+ViridiaPortrait:
+#incext PortraitFormatter "Viridia.png"
+
+setMugEntry(PinkusMug,PinkusPortrait,2,5,3,3)
+ALIGN 4
+PinkusPortrait:
+#incext PortraitFormatter "Pinkus.png"
+
+setMugEntry(ErgonMug,ErgonPortrait,2,6,3,4)
+ALIGN 4
+ErgonPortrait:
+#incext PortraitFormatter "Ergon.png"
+
+setMugEntry(YaraMug,YaraPortrait,2,6,3,4)
+ALIGN 4
+YaraPortrait:
+#incext PortraitFormatter "Yara.png"
+
+setMugEntry(CalanthiaMug,CalanthiaPortrait,2,6,3,4)
+ALIGN 4
+CalanthiaPortrait:
+#incext PortraitFormatter "Calanthia.png"
+

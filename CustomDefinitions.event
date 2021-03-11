@@ -33,20 +33,20 @@
 
 #define __DEBUG__ // Uncomment to get the Debug startup menu :p
 
-// As chapters are finished, uncomment their defs here
+// As chapters are finished, uncomment their defs here; controls event installer
 
 // #define CHAPTER_1
 // #define CHAPTER_2
 // #define CHAPTER_3
 // #define CHAPTER_4
-// #define CHAPTER_5
+#define CHAPTER_5
 // #define CHAPTER_6
 // #define CHAPTER_7
-// #define CHAPTER_8
+#define CHAPTER_8
 // #define CHAPTER_9
 // #define CHAPTER_10
 // #define CHAPTER_11
-// #define CHAPTER_12
+#define CHAPTER_12
 // #define CHAPTER_13
 // #define CHAPTER_14
 // #define CHAPTER_15
@@ -80,42 +80,44 @@
 #define Loretta 17
 #define Jamie 18
 #define Viridia 19
-#define Ch9Playable1 20
-#define Ch9Playable2 21
-#define Ch10Playable1 22
-#define Gaspard 23
-#define Ch11Playable1 24
-#define Ch11Playable2 25
-#define Dogi 26
-#define Feena 27
-#define Kartre 28
-#define Barla 29
-#define Renaldo 30
-#define Ch14Playable2 31
-#define Ch15Playable1 32
-#define Ch15Playable2 33
-#define Charles 34
-#define Hosay 35
-#define Ch17Playable1 36
-#define Ch17Playable2 37
-#define Ch18Playable1 38
-#define Ch18Playable2 39
-#define Wulfram 40
-#define Agvaldt 41
-#define Ch20Playable1 42
-#define Ch20Playable2 43
-#define Xholt 44
+#define Sunshine 20
+#define Pete 21
+#define Ch9Playable1 22
+#define Ch9Playable2 23
+#define Ch10Playable1 24
+#define Gaspard 25
+#define Ch11Playable1 26
+#define Ch11Playable2 27
+#define Dogi 28
+#define Feena 29
+#define Kartre 30
+#define Barla 31
+#define Renaldo 32
+#define Ch14Playable2 33
+#define Ch15Playable1 34
+#define Ch15Playable2 35
+#define Charles 36
+#define Hosay 37
+#define Ch17Playable1 38
+#define Ch17Playable2 39
+#define Ch18Playable1 40
+#define Ch18Playable2 41
+#define Wulfram 42
+#define Agvaldt 43
+#define Ch20Playable1 44
+#define Ch20Playable2 45
+#define Xholt 46
 
 //Bosses
 #define Mulch 64
 #define Kitabei 65
 #define Ch3Boss 66
 #define Susie 67
-#define Ch5Boss 68
+#define Calanthia 68
 #define Ch6Eusebios 69
 #define Westley 70
-#define Ch8Boss1 71
-#define Ch8Boss2 72
+#define Negaj 71
+#define Pinkus 72
 #define Ch9Boss 73
 #define Otto 74
 #define Ch11Boss 75
@@ -145,7 +147,7 @@
 #define Ch3Generics2 133
 #define Ch4Generics1 134
 #define Ch4Generics2 135
-#define Ch5Generics1 136
+#define Ch5Enemies 136
 #define Ch5Generics2 137
 #define Ch6Generics1 138
 #define Ch6Generics2 139
@@ -159,8 +161,8 @@
 #define Ch10Generics2 147
 #define Ch11Generics1 148
 #define Ch11Generics2 149
-#define Ch12Generics1 150
-#define Ch12Generics2 151
+#define Ch12Enemies 150
+#define Ch12Monsters 151
 #define Ch13Generics1 152
 #define Ch13Generics2 153
 #define Ch14Generics1 154
@@ -188,10 +190,17 @@
 #define Phantom GhostFighter //who the hell calls it a Ghost Fighter
 #define Dracozombie DracoZombie //grr
 #define Falcoknight FalcoKnight //grrrrrr
+#define Halberdier Cyclops_2 //good a spot as any
+
+#define LordSwordAnimID 1
+#define LordUnarmedAnimID 2
+#define HalbLanceAnimID 3
+#define HalbUnarmedAnimID 4
 
 // Item Definitions
 
 #define HoplonGuard HoplonShield //I too like naming things not what they're called
+#define LongBow Longbow
 
 
 // Mug Defs
@@ -215,41 +224,43 @@
 #define LorettaMug 17
 #define JamieMug 18
 #define ViridiaMug 19
-#define Ch9Playable1Mug 20
-#define Ch9Playable2Mug 21
-#define Ch10Playable1Mug 22
-#define GaspardMug 23
-#define Ch11Playable1Mug 24
-#define Ch11Playable2Mug 25
-#define DogiMug 26
-#define FeenaMug 27
-#define KartreMug 28
-#define BarlaMug 29
-#define RenaldoMug 30
-#define Ch14Playable2Mug 31
-#define Ch15Playable1Mug 32
-#define Ch15Playable2Mug 33
-#define CharlesMug 34
-#define HosayMug 35
-#define Ch17Playable1Mug 36
-#define Ch17Playable2Mug 37
-#define Ch18Playable1Mug 38
-#define Ch18Playable2Mug 39
-#define WulframMug 40
-#define AgvaldtMug 41
-#define Ch20Playable1Mug 42
-#define Ch20Playable2Mug 43
-#define XholtMug 44
+#define SunshineMug 20
+#define PeteMug 21
+#define Ch9Playable1Mug 22
+#define Ch9Playable2Mug 23
+#define Ch10Playable1Mug 24
+#define GaspardMug 25
+#define Ch11Playable1Mug 26
+#define Ch11Playable2Mug 27
+#define DogiMug 28
+#define FeenaMug 29
+#define KartreMug 30
+#define BarlaMug 31
+#define RenaldoMug 32
+#define Ch14Playable2Mug 33
+#define Ch15Playable1Mug 34
+#define Ch15Playable2Mug 35
+#define CharlesMug 36
+#define HosayMug 37
+#define Ch17Playable1Mug 38
+#define Ch17Playable2Mug 39
+#define Ch18Playable1Mug 40
+#define Ch18Playable2Mug 41
+#define WulframMug 42
+#define AgvaldtMug 43
+#define Ch20Playable1Mug 44
+#define Ch20Playable2Mug 45
+#define XholtMug 46
 
 #define MulchMug 64
 #define KitabeiMug 65
 #define Ch3BossMug 66
 #define SusieMug 67
-#define Ch5BossMug 68
+#define CalanthiaMug 68
 #define EusebiosMug 69
 #define WestleyMug 70
-#define Ch8Boss1Mug 71
-#define Ch8Boss2Mug 72
+#define NegajMug 71
+#define PinkusMug 72
 #define Ch9BossMug 73
 #define OttoMug 74
 #define Ch11BossMug 75
@@ -263,4 +274,3 @@
 #define Ch18BossMug 83
 #define Ch20BossMug 84
 #define Ch21BossMug 85
-
