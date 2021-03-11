@@ -78,14 +78,16 @@ SongTable(0x1d,cvcotmbigbattle,0)
 #include "songs/cvcotmbigbattle.event"
 }
 
-
 {
 SongTable(0x10,cheetahmen,1)
 #include "songs/cheetahmen.event"
 }
 
 // Add your song here!
-
+{
+SongTable(0xd,ys3wings,1)
+#include "songs/ys3wings.event"
+}
 
 
 // --------------- PART 3: VOICE TABLES ---------------
