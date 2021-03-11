@@ -31,7 +31,7 @@
 
 #include "EngineHacks/SkillSystem/skill_definitions.event"
 
-// #define __DEBUG__ // Uncomment to get the Debug startup menu :p
+#define __DEBUG__ // Uncomment to get the Debug startup menu :p
 
 // As chapters are finished, uncomment their defs here; controls event installer
 
