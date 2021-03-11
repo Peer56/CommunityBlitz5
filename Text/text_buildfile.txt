@@ -133,7 +133,20 @@ This is placeholder text![A][X]
 [OpenMidRight][LoadActive][OpenMidLeft][LoadMan4]
 This is placeholder text![A][X]
 
+## DefendText
+Defend[X]
+
+## PlaceholderObjectiveText
+Who knows?[X]
+
+## ArriveText
+Arrive[X]
+
+## MultiSeizeText
+Seize Points[X]
 
 #include "skilldesc_text.txt"
 
 #include "unitinfo_text.txt"
+
+#include "chapter_names.txt"

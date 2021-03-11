@@ -117,6 +117,19 @@
   #define UnlockLock4 0x80000000
 #endif
 
+//Chapter Objective definitions:
+#define SurviveText 0x19C
+#define DefeatBossText 0x19D
+#define DefeatEnemyText 0x19E
+#define SeizeGateText 0x19F
+#define SeizeThroneText 0x1A1
+
+#define SeizeObjective 0
+#define RoutObjective 1
+#define DefendObjective 2
+#define DefeatBossObjective 3
+#define OtherObjective 4
+
 // Affinity
 #define NoAffinity 0
 #define FireAffinity 1

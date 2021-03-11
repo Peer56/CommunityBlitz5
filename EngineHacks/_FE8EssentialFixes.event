@@ -35,6 +35,14 @@ POP
   ORG $23072
   SHORT $e00d
   POP
+  
+//Fix top right label at prep screen not being chapter ID
+ORG $96B1C
+SHORT 0xE00A // Eliminate "Tower" in prep screens
+ORG $96B3A
+SHORT 0xE003 // Eliminate "Ruins" in prep screens
+ORG $96B4C
+SHORT 0xE003 // Eliminate "Ex.map" in prep screens
 
 //Break HP Cap for Players/NPCs (credit Solum)
   // ORG $181ee
