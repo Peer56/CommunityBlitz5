@@ -146,10 +146,10 @@ Arrive[X]
 Seize Points[X]
 
 ## UM_Debug
-Debug[X]
+ Debug[X]
 
 ## UMText_Win
-Win[X]
+ Win[X]
 
 ## UMDesc_Win
 Win the chapter.[X]
