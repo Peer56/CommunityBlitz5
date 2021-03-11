@@ -126,47 +126,47 @@ UNIT Sunshine Troubadour Eirika Level(1, Ally, 0) [0,10] 0x00 0x00 0x0 0x00 [Bar
 UNIT
 
 Bad:
-UNIT Bone Druid 0x00 Level(5, Enemy, 0) [24,1] 0x00 0x00 0x0 0x00 [Nosferatu, Fenrir, Sleep, Item3000G] NeverMoveAI 
-UNIT Bazba Hero Bone Level(5, Enemy, 0) [24,15] 0x00 0x00 0x0 0x00 [Tomahawk, SilverBlade, Swordslayer, Item3000G] NeverMoveAI 
-UNIT 0x80 Bonewalker Bone Level(8, Enemy, 1) [21,18] 0x00 0x00 0x0 0x00 [Spear] NeverMoveAI 
-UNIT 0x80 Bonewalker Bone Level(8, Enemy, 1) [21,19] 0x00 0x00 0x0 0x00 [Spear] NeverMoveAI 
-UNIT 0x80 Bonewalker Bone Level(8, Enemy, 1) [21,4] 0x00 0x00 0x0 0x00 [Spear] NeverMoveAI 
-UNIT 0x80 Bonewalker Bone Level(8, Enemy, 1) [21,5] 0x00 0x00 0x0 0x00 [Spear] NeverMoveAI 
-UNIT 0x80 Bonewalker Bone Level(8, Enemy, 1) [6,3] 0x00 0x00 0x0 0x00 [Spear] NeverMoveAI 
-UNIT 0x80 Bonewalker Bone Level(8, Enemy, 1) [6,2] 0x00 0x00 0x0 0x00 [Spear] NeverMoveAI 
-UNIT 0x80 Bonewalker Bone Level(8, Enemy, 1) [13,9] 0x00 0x00 0x0 0x00 [Spear] NeverMoveAI 
-UNIT 0x80 Bonewalker Bone Level(8, Enemy, 1) [12,9] 0x00 0x00 0x0 0x00 [Spear] NeverMoveAI 
-UNIT 0x80 Gargoyle Bone Level(8, Enemy, 1) [15,4] 0x00 0x00 0x0 0x00 [SteelLance] AttackInRangeAI 
-UNIT 0x80 Gargoyle Bone Level(8, Enemy, 1) [9,10] 0x00 0x00 0x0 0x00 [SteelLance] AttackInRangeAI 
-UNIT 0x80 Gargoyle Bone Level(8, Enemy, 1) [15,16] 0x00 0x00 0x0 0x00 [SteelLance] AttackInRangeAI 
-UNIT 0x80 Mogall Bone Level(8, Enemy, 1) [7,16] 0x00 0x00 0x0 0x00 [Thunder] AttackInRangeAI 
-UNIT 0x80 Mogall Bone Level(8, Enemy, 1) [15,13] 0x00 0x00 0x0 0x00 [Thunder] AttackInRangeAI 
-UNIT 0x80 Mogall Bone Level(8, Enemy, 1) [16,2] 0x00 0x00 0x0 0x00 [Thunder] AttackInRangeAI 
-UNIT 0x80 Berserker Bone Level(1, Enemy, 1) [17,7] 0x00 0x00 0x0 0x00 [KillerAxe] AttackInRangeAI 
-UNIT 0x80 Berserker Bone Level(1, Enemy, 1) [18,18] 0x00 0x00 0x0 0x00 [KillerAxe] AttackInRangeAI 
-UNIT 0x80 Shaman Bone Level(8, Enemy, 1) [4,18] 0x00 0x00 0x0 0x00 [Flux] AttackInRangeAI 
-UNIT 0x80 Shaman Bone Level(8, Enemy, 1) [11,13] 0x00 0x00 0x0 0x00 [Flux] AttackInRangeAI 
-UNIT 0x80 Shaman Bone Level(8, Enemy, 1) [10,0] 0x00 0x00 0x0 0x00 [Flux] AttackInRangeAI 
-UNIT 0x80 Druid Bone Level(1, Enemy, 1) [13,0] 0x00 0x00 0x0 0x00 [Berserk, Flux] NeverMoveAI 
-UNIT 0x80 Myrmidon Bone Level(8, Enemy, 1) [11,17] 0x00 0x00 0x0 0x00 [KillingEdge] AttackInRangeAI 
-UNIT 0x80 Myrmidon Bone Level(8, Enemy, 1) [10,7] 0x00 0x00 0x0 0x00 [KillingEdge] AttackInRangeAI 
-UNIT 0x80 Mercenary Bone Level(8, Enemy, 1) [7,12] 0x00 0x00 0x0 0x00 [IronSword] PursueWithoutHeedAI 
-UNIT 0x80 Mercenary Bone Level(8, Enemy, 1) [3,16] 0x00 0x00 0x0 0x00 [IronSword] PursueWithoutHeedAI 
-UNIT 0x80 Mercenary Bone Level(8, Enemy, 1) [13,18] 0x00 0x00 0x0 0x00 [IronSword] PursueWithoutHeedAI 
-UNIT 0x80 Mercenary Bone Level(8, Enemy, 1) [7,7] 0x00 0x00 0x0 0x00 [IronSword] PursueWithoutHeedAI 
-UNIT 0x80 Mercenary Bone Level(8, Enemy, 1) [13,2] 0x00 0x00 0x0 0x00 [IronSword] PursueWithoutHeedAI 
-UNIT 0x80 Mercenary Bone Level(8, Enemy, 1) [18,0] 0x00 0x00 0x0 0x00 [IronSword] PursueWithoutHeedAI 
-UNIT 0x80 Pirate Bone Level(8, Enemy, 1) [19,1] 0x00 0x00 0x0 0x00 [IronAxe] PursueWithoutHeedAI 
-UNIT 0x80 Pirate Bone Level(8, Enemy, 1) [14,3] 0x00 0x00 0x0 0x00 [IronAxe] PursueWithoutHeedAI 
-UNIT 0x80 Pirate Bone Level(8, Enemy, 1) [2,17] 0x00 0x00 0x0 0x00 [IronAxe] PursueWithoutHeedAI 
-UNIT 0x80 Pirate Bone Level(8, Enemy, 1) [14,19] 0x00 0x00 0x0 0x00 [IronAxe] PursueWithoutHeedAI 
-UNIT 0x80 Pirate Bone Level(8, Enemy, 1) [6,13] 0x00 0x00 0x0 0x00 [IronAxe] PursueWithoutHeedAI 
-UNIT 0x80 Pirate Bone Level(8, Enemy, 1) [2,2] 0x00 0x00 0x0 0x00 [IronAxe] PursueWithoutHeedAI 
-UNIT 0x80 Pirate Bone Level(8, Enemy, 1) [5,6] 0x00 0x00 0x0 0x00 [IronAxe] PursueWithoutHeedAI 
-UNIT 0x80 Mogall Bone Level(4, Enemy, 1) [17,11] 0x00 0x00 0x0 0x00 [Bolting] NeverMoveAI 
-UNIT 0x80 Wight_Bow Bone Level(1, Enemy, 1) [13,13] 0x00 0x00 0x0 0x00 [IronBow] AttackInRangeAI 
-UNIT 0x80 Wight_Bow Bone Level(1, Enemy, 1) [23,16] 0x00 0x00 0x0 0x00 [IronBow] AttackInRangeAI 
-UNIT 0x80 Wight_Bow Bone Level(1, Enemy, 1) [23,2] 0x00 0x00 0x0 0x00 [IronBow] AttackInRangeAI 
+UNIT Pinkus Druid 0x00 Level(5, Enemy, 0) [24,1] 0x00 0x00 0x0 0x00 [Nosferatu, Fenrir, Sleep, Item3000G] NeverMoveAI 
+UNIT Negaj Hero Pinkus Level(5, Enemy, 0) [24,15] 0x00 0x00 0x0 0x00 [Tomahawk, SilverBlade, Swordslayer, Item3000G] NeverMoveAI 
+UNIT 0x80 Bonewalker Pinkus Level(8, Enemy, 1) [21,18] 0x00 0x00 0x0 0x00 [Spear] NeverMoveAI 
+UNIT 0x80 Bonewalker Pinkus Level(8, Enemy, 1) [21,19] 0x00 0x00 0x0 0x00 [Spear] NeverMoveAI 
+UNIT 0x80 Bonewalker Pinkus Level(8, Enemy, 1) [21,4] 0x00 0x00 0x0 0x00 [Spear] NeverMoveAI 
+UNIT 0x80 Bonewalker Pinkus Level(8, Enemy, 1) [21,5] 0x00 0x00 0x0 0x00 [Spear] NeverMoveAI 
+UNIT 0x80 Bonewalker Pinkus Level(8, Enemy, 1) [6,3] 0x00 0x00 0x0 0x00 [Spear] NeverMoveAI 
+UNIT 0x80 Bonewalker Pinkus Level(8, Enemy, 1) [6,2] 0x00 0x00 0x0 0x00 [Spear] NeverMoveAI 
+UNIT 0x80 Bonewalker Pinkus Level(8, Enemy, 1) [13,9] 0x00 0x00 0x0 0x00 [Spear] NeverMoveAI 
+UNIT 0x80 Bonewalker Pinkus Level(8, Enemy, 1) [12,9] 0x00 0x00 0x0 0x00 [Spear] NeverMoveAI 
+UNIT 0x80 Gargoyle Pinkus Level(8, Enemy, 1) [15,4] 0x00 0x00 0x0 0x00 [SteelLance] AttackInRangeAI 
+UNIT 0x80 Gargoyle Pinkus Level(8, Enemy, 1) [9,10] 0x00 0x00 0x0 0x00 [SteelLance] AttackInRangeAI 
+UNIT 0x80 Gargoyle Pinkus Level(8, Enemy, 1) [15,16] 0x00 0x00 0x0 0x00 [SteelLance] AttackInRangeAI 
+UNIT 0x80 Mogall Pinkus Level(8, Enemy, 1) [7,16] 0x00 0x00 0x0 0x00 [Thunder] AttackInRangeAI 
+UNIT 0x80 Mogall Pinkus Level(8, Enemy, 1) [15,13] 0x00 0x00 0x0 0x00 [Thunder] AttackInRangeAI 
+UNIT 0x80 Mogall Pinkus Level(8, Enemy, 1) [16,2] 0x00 0x00 0x0 0x00 [Thunder] AttackInRangeAI 
+UNIT 0x80 Berserker Pinkus Level(1, Enemy, 1) [17,7] 0x00 0x00 0x0 0x00 [KillerAxe] AttackInRangeAI 
+UNIT 0x80 Berserker Pinkus Level(1, Enemy, 1) [18,18] 0x00 0x00 0x0 0x00 [KillerAxe] AttackInRangeAI 
+UNIT 0x80 Shaman Pinkus Level(8, Enemy, 1) [4,18] 0x00 0x00 0x0 0x00 [Flux] AttackInRangeAI 
+UNIT 0x80 Shaman Pinkus Level(8, Enemy, 1) [11,13] 0x00 0x00 0x0 0x00 [Flux] AttackInRangeAI 
+UNIT 0x80 Shaman Pinkus Level(8, Enemy, 1) [10,0] 0x00 0x00 0x0 0x00 [Flux] AttackInRangeAI 
+UNIT 0x80 Druid Pinkus Level(1, Enemy, 1) [13,0] 0x00 0x00 0x0 0x00 [Berserk, Flux] NeverMoveAI 
+UNIT 0x80 Myrmidon Pinkus Level(8, Enemy, 1) [11,17] 0x00 0x00 0x0 0x00 [KillingEdge] AttackInRangeAI 
+UNIT 0x80 Myrmidon Pinkus Level(8, Enemy, 1) [10,7] 0x00 0x00 0x0 0x00 [KillingEdge] AttackInRangeAI 
+UNIT 0x80 Mercenary Pinkus Level(8, Enemy, 1) [7,12] 0x00 0x00 0x0 0x00 [IronSword] PursueWithoutHeedAI 
+UNIT 0x80 Mercenary Pinkus Level(8, Enemy, 1) [3,16] 0x00 0x00 0x0 0x00 [IronSword] PursueWithoutHeedAI 
+UNIT 0x80 Mercenary Pinkus Level(8, Enemy, 1) [13,18] 0x00 0x00 0x0 0x00 [IronSword] PursueWithoutHeedAI 
+UNIT 0x80 Mercenary Pinkus Level(8, Enemy, 1) [7,7] 0x00 0x00 0x0 0x00 [IronSword] PursueWithoutHeedAI 
+UNIT 0x80 Mercenary Pinkus Level(8, Enemy, 1) [13,2] 0x00 0x00 0x0 0x00 [IronSword] PursueWithoutHeedAI 
+UNIT 0x80 Mercenary Pinkus Level(8, Enemy, 1) [18,0] 0x00 0x00 0x0 0x00 [IronSword] PursueWithoutHeedAI 
+UNIT 0x80 Pirate Pinkus Level(8, Enemy, 1) [19,1] 0x00 0x00 0x0 0x00 [IronAxe] PursueWithoutHeedAI 
+UNIT 0x80 Pirate Pinkus Level(8, Enemy, 1) [14,3] 0x00 0x00 0x0 0x00 [IronAxe] PursueWithoutHeedAI 
+UNIT 0x80 Pirate Pinkus Level(8, Enemy, 1) [2,17] 0x00 0x00 0x0 0x00 [IronAxe] PursueWithoutHeedAI 
+UNIT 0x80 Pirate Pinkus Level(8, Enemy, 1) [14,19] 0x00 0x00 0x0 0x00 [IronAxe] PursueWithoutHeedAI 
+UNIT 0x80 Pirate Pinkus Level(8, Enemy, 1) [6,13] 0x00 0x00 0x0 0x00 [IronAxe] PursueWithoutHeedAI 
+UNIT 0x80 Pirate Pinkus Level(8, Enemy, 1) [2,2] 0x00 0x00 0x0 0x00 [IronAxe] PursueWithoutHeedAI 
+UNIT 0x80 Pirate Pinkus Level(8, Enemy, 1) [5,6] 0x00 0x00 0x0 0x00 [IronAxe] PursueWithoutHeedAI 
+UNIT 0x80 Mogall Pinkus Level(4, Enemy, 1) [17,11] 0x00 0x00 0x0 0x00 [Bolting] NeverMoveAI 
+UNIT 0x80 Wight_Bow Pinkus Level(1, Enemy, 1) [13,13] 0x00 0x00 0x0 0x00 [IronBow] AttackInRangeAI 
+UNIT 0x80 Wight_Bow Pinkus Level(1, Enemy, 1) [23,16] 0x00 0x00 0x0 0x00 [IronBow] AttackInRangeAI 
+UNIT 0x80 Wight_Bow Pinkus Level(1, Enemy, 1) [23,2] 0x00 0x00 0x0 0x00 [IronBow] AttackInRangeAI 
 UNIT
 
 BeginningScene:
