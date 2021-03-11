@@ -49,3 +49,19 @@ setMugEntry(PinkusMug,PinkusPortrait,2,5,3,3)
 ALIGN 4
 PinkusPortrait:
 #incext PortraitFormatter "Pinkus.png"
+
+setMugEntry(ErgonMug,ErgonPortrait,2,6,3,4)
+ALIGN 4
+ErgonPortrait:
+#incext PortraitFormatter "Ergon.png"
+
+setMugEntry(YaraMug,YaraPortrait,2,6,3,4)
+ALIGN 4
+YaraPortrait:
+#incext PortraitFormatter "Yara.png"
+
+setMugEntry(CalanthiaMug,CalanthiaPortrait,2,6,3,4)
+ALIGN 4
+CalanthiaPortrait:
+#incext PortraitFormatter "Calanthia.png"
+

@@ -33,13 +33,13 @@
 
 // #define __DEBUG__ // Uncomment to get the Debug startup menu :p
 
-// As chapters are finished, uncomment their defs here
+// As chapters are finished, uncomment their defs here; controls event installer
 
 // #define CHAPTER_1
 // #define CHAPTER_2
 // #define CHAPTER_3
 // #define CHAPTER_4
-// #define CHAPTER_5
+#define CHAPTER_5
 // #define CHAPTER_6
 // #define CHAPTER_7
 #define CHAPTER_8
@@ -113,7 +113,7 @@
 #define Kitabei 65
 #define Ch3Boss 66
 #define Susie 67
-#define Ch5Boss 68
+#define Calanthia 68
 #define Ch6Eusebios 69
 #define Westley 70
 #define Negaj 71
@@ -147,7 +147,7 @@
 #define Ch3Generics2 133
 #define Ch4Generics1 134
 #define Ch4Generics2 135
-#define Ch5Generics1 136
+#define Ch5Enemies 136
 #define Ch5Generics2 137
 #define Ch6Generics1 138
 #define Ch6Generics2 139
@@ -200,6 +200,7 @@
 // Item Definitions
 
 #define HoplonGuard HoplonShield //I too like naming things not what they're called
+#define LongBow Longbow
 
 
 // Mug Defs
@@ -255,7 +256,7 @@
 #define KitabeiMug 65
 #define Ch3BossMug 66
 #define SusieMug 67
-#define Ch5BossMug 68
+#define CalanthiaMug 68
 #define EusebiosMug 69
 #define WestleyMug 70
 #define NegajMug 71
