@@ -1,0 +1,65 @@
+
+## Ch1Name
+1: Oath of Redemption[X]
+
+## Ch2Name
+2: Dark Hearts, Light Blades[X]
+
+## Ch3Name
+3: Feather on the Wind[X]
+
+## Ch4Name
+4: [X]
+
+## Ch5Name
+5: Killing Fields[X]
+
+## Ch6Name
+6: Citadel of the West[X]
+
+## Ch7Name
+7: Warriors from the East[X]
+
+## Ch8Name
+8: Thunderin' Bones[X]
+
+## Ch9Name
+9: [X]
+
+## Ch10Name
+10: [X]
+
+## Ch11Name
+11: [X]
+
+## Ch12Name
+12: Tower of Darm[X]
+
+## Ch13Name
+13: Temple Siege[X]
+
+## Ch14Name
+14: [X]
+
+## Ch15Name
+15: [X]
+
+## Ch16Name
+16: Betrayal[X]
+
+## Ch17Name
+17: [X]
+
+## Ch18Name
+18: [X]
+
+## Ch19Name
+19: Ascendance[X]
+
+## Ch20Name
+20: [X]
+
+## Ch21Name
+21: The Final Swear[X]
+
+

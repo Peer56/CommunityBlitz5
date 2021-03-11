@@ -28,9 +28,16 @@
 
     //Maps
     #include "Maps/MasterMapInstaller.event"
+	MESSAGE Used map space ends at currentOffset
+	
+	//Music
+	#include "Music/_MusicInstaller.event"
+	MESSAGE Used music space ends at currentOffset
 
     //Events
 	#include "Events/_MasterEventInstaller.event"
+	MESSAGE Used event space ends at currentOffset
+	
 	
     MESSAGE Used free space ends at currentOffset
 #else // _FE8_

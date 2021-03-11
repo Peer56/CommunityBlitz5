@@ -1,0 +1,47 @@
+
+
+
+ALIGN 4
+GateAnims1:
+#incbin "GateAnims1.dmp"
+
+ALIGN 4
+GateAnims2:
+#incbin "GateAnims2.dmp"
+
+ALIGN 4
+GateAnims3:
+#incbin "GateAnims3.dmp"
+
+ALIGN 4
+GateAnims4:
+#incbin "GateAnims4.dmp"
+
+ALIGN 4
+GateAnims5:
+#incbin "GateAnims5.dmp"
+
+ALIGN 4
+GateAnims6:
+#incbin "GateAnims6.dmp"
+
+ALIGN 4
+GateAnims7:
+#incbin "GateAnims7.dmp"
+
+ALIGN 4
+GateAnims8:
+#incbin "GateAnims8.dmp"
+
+ALIGN 4
+ValniGateAnims:
+tilesetAnimation(11,4096,GateAnims1)
+tilesetAnimation(11,4096,GateAnims2)
+tilesetAnimation(11,4096,GateAnims3)
+tilesetAnimation(11,4096,GateAnims4)
+tilesetAnimation(11,4096,GateAnims5)
+tilesetAnimation(11,4096,GateAnims6)
+tilesetAnimation(11,4096,GateAnims7)
+tilesetAnimation(11,4096,GateAnims8)
+WORD 0 0
+

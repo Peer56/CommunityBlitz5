@@ -1,0 +1,25 @@
+
+#define tilesetAnimation(speed, size, pointer)    "BYTE speed 0; SHORT size; POIN pointer"
+
+//Ch8 palette
+EventPointerTable(0xD6,Chapter8VillagePalette)
+
+ALIGN 4
+Chapter8VillagePalette:
+#incext Png2Dmp "PortPalette.png" --palette-only
+
+
+//Valni feat. dragon's gate (for Ch12)
+EventPointerTable(0x88,Valni_ObjType)
+EventPointerTable(0x8A,Valni_TileConfig)
+EventPointerTable(0xD7,ValniGateAnims)
+
+ALIGN 4
+Valni_ObjType:
+#incbin "ValniGate/ValniGate.dmp"
+
+ALIGN 4
+Valni_TileConfig:
+#incbin "ValniGate/ValniGate_comp.dmp"
+
+#include "ValniGate/GateAnims/GateAnims.event"
