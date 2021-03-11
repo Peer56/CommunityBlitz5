@@ -74,7 +74,7 @@ SongTable(0x1c,cvbrevilgods,0)
 #include "songs/cvbrevilgods.event"
 }
 {
-SongTable(0x1d,cvcotmbigbattle,0)
+SongTable(0x1d,cvcotmbigbattle,1)
 #include "songs/cvcotmbigbattle.event"
 }
 

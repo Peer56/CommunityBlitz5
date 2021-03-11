@@ -277,13 +277,15 @@
 
 
 // Music Defs
+
+// Map Music
 #define VenusLighthouse 0x9
-#define EvilGods 0x1C
 #define PrayingHands 0xA
-#define BigBattle 0x1D
 #define WoodlandRuins 0xB
 #define Lang2Soldier 0xC
 #define TheBoysGotWings 0xD
 #define Cheetahmen 0x10
+#define BigBattle 0xE
 
-
+// Battle Music
+#define EvilGods 0x1C
