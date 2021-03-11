@@ -161,8 +161,8 @@
 #define Ch10Generics2 147
 #define Ch11Generics1 148
 #define Ch11Generics2 149
-#define Ch12Generics1 150
-#define Ch12Generics2 151
+#define Ch12Enemies 150
+#define Ch12Monsters 151
 #define Ch13Generics1 152
 #define Ch13Generics2 153
 #define Ch14Generics1 154
