@@ -170,7 +170,6 @@ UnitMenuTable:
   // MenuCommand(UMText_Switch,UMText_SwitchDesc,GreenText,SwitchUsability,SwitchCommand)   //switch
   UM_Drop
 
-
   UM_Item
   UM_Trade
   
@@ -179,7 +178,6 @@ UnitMenuTable:
 
   #ifdef __DEBUG__
 //    MenuCommand(UM_EditSkill, UM_EditSkillDesc, OrangeText, $04F449, SkillDebugCommand_OnSelect)
-	MenuCommand(UM_WinButton, UM_WinButtonDesc, OrangeText, Win_Usability, Win_Effect)
   #endif
   
   UM_Wait
