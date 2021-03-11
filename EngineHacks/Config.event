@@ -76,7 +76,7 @@
 #define HP_BARS
 
 //If uncommented, will enable Improved Sound Mixer.
-#define IMPROVED_SOUND_MIXER
+// #define IMPROVED_SOUND_MIXER
 
 //If uncommented, will enable L-Toggle Animations.
 #define LTOGGLE_HACK
