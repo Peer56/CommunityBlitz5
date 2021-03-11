@@ -777,6 +777,8 @@ GSSquareMacro(0x40,0xf0,0x10,0x80)
 GSSquare12p5:
 GSSquareMacro(0x20,0xf0,0x20,0x80)
 
+#include "SoundRoomInstaller.event"
+
 #else
 ERROR You are not assembling FE8 events!
 #endif

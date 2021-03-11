@@ -274,3 +274,16 @@
 #define Ch18BossMug 83
 #define Ch20BossMug 84
 #define Ch21BossMug 85
+
+
+// Music Defs
+#define VenusLighthouse 0x9
+#define EvilGods 0x1C
+#define PrayingHands 0xA
+#define BigBattle 0x1D
+#define WoodlandRuins 0xB
+#define Lang2Soldier 0xC
+#define TheBoysGotWings 0xD
+#define Cheetahmen 0x10
+
+
