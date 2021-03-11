@@ -11,7 +11,7 @@
    <property name="MapChangesID" value="0x23"/>
    <property name="MapID" value="0x22"/>
    <property name="ObjectType" value="0x0e"/>
-   <property name="PaletteID" value="0x0f"/>
+   <property name="PaletteID" value="0xd6"/>
    <property name="TileConfig" value="0x10"/>
   </properties>
   <data encoding="base64" compression="zlib">
