@@ -28,7 +28,7 @@
 #define MagicAnim(Animation) "AnimaAnim(Animation); LightAnim(Animation); DarkAnim(Animation)"
 #define EndAnim "WORD 0"
 
-#define ClassAnimTable 0xC00008 //we shouldn't need to repoint this
+#define ClassAnimTable (0xc00008-0x20) //we shouldn't need to repoint this
 #define StandingMapSpriteTable 0x8AF880
 #define MovingMapSpriteTable 0x9A2E00
 
