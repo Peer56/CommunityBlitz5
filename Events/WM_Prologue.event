@@ -1,4 +1,4 @@
-WorldMapPointerTable(1,WM_Events)
+WorldMapPointerTable(0,WM_Events)
 
 WM_Events:
 EVBIT_MODIFY 0x1

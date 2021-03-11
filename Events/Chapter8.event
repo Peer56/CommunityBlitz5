@@ -1,0 +1,186 @@
+EventPointerTable(0x24, PointerList)
+
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno1 Dunno2 Dunno3 Tutorial
+POIN Traps1 Traps2
+POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+POIN $0 $0 $0
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+TURN 0x0 GameOverScene[15,0] 0x0
+END_MAIN
+
+GameOverScene:
+ENUT 0x65
+NoFade
+ENDA
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+Seize(0xB,CheckSeize1,24,1) //This can be used for multiple-seize chapters ala FE4.
+Seize(0xC,CheckSeize2,24,15) //This can be used for multiple-seize chapters ala FE4. 
+Village(0x7,Village1,16,5)
+Village(0x8,Village2,5,11)
+Village(0x9,Village3,10,11)
+Village(0xA,Village4,8,17)
+Vendor(Shop1List, 10, 5)
+Vendor(Shop2List, 14, 16)
+Armory(ArmoryList, 13, 5)
+Chest(BodyRing,24,6)
+Chest(LightRune,16,10)
+Chest(MemberCard,17,17)
+END_MAIN
+
+Village1:
+VillageEventItem(Ch8VillageText1, Village, MasterSeal)
+
+Village2:
+VillageEventItem(Ch8VillageText2, Village, Silence)
+
+Village3:
+VillageEventItem(Ch8VillageText3, Village, Sleep)
+
+Village4:
+VillageEventItem(Ch8VillageText4, Village, Talisman)
+
+Shop1List:
+SHLI Thunder Shine Flux Aircalibur SecretBook GoddessIcon
+ALIGN 4
+
+Shop2List:
+SHLI Vulnerary Elixir PureWater Heal Mend Berserk Unlock
+ALIGN 4
+
+ArmoryList:
+SHLI SteelSword IronBlade PoisonSword WindSword SteelLance Horseslayer DragonSpear Javelin SteelAxe Hammer HandAxe BattleAxe SteelBow Longbow KillerBow BeaconBow
+ALIGN 4
+
+MiscBasedEvents:
+AFEV 0xD CheckSeize1 0xF
+AFEV 0xE CheckSeize2 0x10
+CauseGameOverIfLordDies
+END_MAIN
+
+CheckSeize1:
+CHECK_EVENTID 0xF
+BEQ 0x0 0xc 0x0
+  //if boat 2 is also seized
+  CALL EndingScene
+LABEL 0x0
+NoFade
+ENDA
+
+CheckSeize2:
+CHECK_EVENTID 0x10
+BEQ 0x0 0xc 0x0
+  //if boat 1 is also seized
+  CALL EndingScene
+LABEL 0x0
+NoFade
+ENDA
+
+Dunno1:
+END_MAIN
+
+Dunno2:
+END_MAIN
+
+Dunno3:
+END_MAIN
+
+Traps1:
+END_MAIN
+
+Traps2:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+Units1:
+UNIT Eirika EphraimLord 0x00 Level(1, Ally, 0) [0,8] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth EphraimMasterLord Eirika Level(1, Ally, 0) [2,7] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth EphraimMasterLord Eirika Level(1, Ally, 0) [1,7] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth EphraimMasterLord Eirika Level(1, Ally, 0) [1,6] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth EphraimMasterLord Eirika Level(1, Ally, 0) [0,6] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth EphraimMasterLord Eirika Level(1, Ally, 0) [0,5] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth EphraimMasterLord Eirika Level(1, Ally, 0) [3,6] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth EphraimMasterLord Eirika Level(1, Ally, 0) [1,11] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth EphraimMasterLord Eirika Level(1, Ally, 0) [0,12] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth EphraimMasterLord Eirika Level(1, Ally, 0) [1,10] 0x00 0x00 0x0 0x00 [0x00] NoAI
+UNIT
+
+ChristmasCavs:
+UNIT Jamie Cavalier Eirika Level(5, Ally, 0) [1,8] 0x00 0x00 0x0 0x00 [SteelLance, ShortSpear, IronSword] NoAI 
+UNIT Viridia Cavalier_F Eirika Level(6, Ally, 0) [0,9] 0x00 0x00 0x0 0x00 [Shadowkiller, SteelSword, Javelin] NoAI
+UNIT Pete Mercenary Eirika Level(1, Ally, 0) [1,9] 0x00 0x00 0x0 0x00 [Runesword, SteelBlade, IronSword] NoAI 
+UNIT Sunshine Troubadour Eirika Level(1, Ally, 0) [0,10] 0x00 0x00 0x0 0x00 [Barrier, Heal, Thunder, Divine] NoAI 
+UNIT
+
+Bad:
+UNIT Bone Druid 0x00 Level(5, Enemy, 0) [24,1] 0x00 0x00 0x0 0x00 [Nosferatu, Fenrir, Sleep, Item3000G] NeverMoveAI 
+UNIT Bazba Hero Bone Level(5, Enemy, 0) [24,15] 0x00 0x00 0x0 0x00 [Tomahawk, SilverBlade, Swordslayer, Item3000G] NeverMoveAI 
+UNIT 0x80 Bonewalker Bone Level(8, Enemy, 1) [21,18] 0x00 0x00 0x0 0x00 [Spear] NeverMoveAI 
+UNIT 0x80 Bonewalker Bone Level(8, Enemy, 1) [21,19] 0x00 0x00 0x0 0x00 [Spear] NeverMoveAI 
+UNIT 0x80 Bonewalker Bone Level(8, Enemy, 1) [21,4] 0x00 0x00 0x0 0x00 [Spear] NeverMoveAI 
+UNIT 0x80 Bonewalker Bone Level(8, Enemy, 1) [21,5] 0x00 0x00 0x0 0x00 [Spear] NeverMoveAI 
+UNIT 0x80 Bonewalker Bone Level(8, Enemy, 1) [6,3] 0x00 0x00 0x0 0x00 [Spear] NeverMoveAI 
+UNIT 0x80 Bonewalker Bone Level(8, Enemy, 1) [6,2] 0x00 0x00 0x0 0x00 [Spear] NeverMoveAI 
+UNIT 0x80 Bonewalker Bone Level(8, Enemy, 1) [13,9] 0x00 0x00 0x0 0x00 [Spear] NeverMoveAI 
+UNIT 0x80 Bonewalker Bone Level(8, Enemy, 1) [12,9] 0x00 0x00 0x0 0x00 [Spear] NeverMoveAI 
+UNIT 0x80 Gargoyle Bone Level(8, Enemy, 1) [15,4] 0x00 0x00 0x0 0x00 [SteelLance] AttackInRangeAI 
+UNIT 0x80 Gargoyle Bone Level(8, Enemy, 1) [9,10] 0x00 0x00 0x0 0x00 [SteelLance] AttackInRangeAI 
+UNIT 0x80 Gargoyle Bone Level(8, Enemy, 1) [15,16] 0x00 0x00 0x0 0x00 [SteelLance] AttackInRangeAI 
+UNIT 0x80 Mogall Bone Level(8, Enemy, 1) [7,16] 0x00 0x00 0x0 0x00 [Thunder] AttackInRangeAI 
+UNIT 0x80 Mogall Bone Level(8, Enemy, 1) [15,13] 0x00 0x00 0x0 0x00 [Thunder] AttackInRangeAI 
+UNIT 0x80 Mogall Bone Level(8, Enemy, 1) [16,2] 0x00 0x00 0x0 0x00 [Thunder] AttackInRangeAI 
+UNIT 0x80 Berserker Bone Level(1, Enemy, 1) [17,7] 0x00 0x00 0x0 0x00 [KillerAxe] AttackInRangeAI 
+UNIT 0x80 Berserker Bone Level(1, Enemy, 1) [18,18] 0x00 0x00 0x0 0x00 [KillerAxe] AttackInRangeAI 
+UNIT 0x80 Shaman Bone Level(8, Enemy, 1) [4,18] 0x00 0x00 0x0 0x00 [Flux] AttackInRangeAI 
+UNIT 0x80 Shaman Bone Level(8, Enemy, 1) [11,13] 0x00 0x00 0x0 0x00 [Flux] AttackInRangeAI 
+UNIT 0x80 Shaman Bone Level(8, Enemy, 1) [10,0] 0x00 0x00 0x0 0x00 [Flux] AttackInRangeAI 
+UNIT 0x80 Druid Bone Level(1, Enemy, 1) [13,0] 0x00 0x00 0x0 0x00 [Berserk, Flux] NeverMoveAI 
+UNIT 0x80 Myrmidon Bone Level(8, Enemy, 1) [11,17] 0x00 0x00 0x0 0x00 [KillingEdge] AttackInRangeAI 
+UNIT 0x80 Myrmidon Bone Level(8, Enemy, 1) [10,7] 0x00 0x00 0x0 0x00 [KillingEdge] AttackInRangeAI 
+UNIT 0x80 Mercenary Bone Level(8, Enemy, 1) [7,12] 0x00 0x00 0x0 0x00 [IronSword] PursueWithoutHeedAI 
+UNIT 0x80 Mercenary Bone Level(8, Enemy, 1) [3,16] 0x00 0x00 0x0 0x00 [IronSword] PursueWithoutHeedAI 
+UNIT 0x80 Mercenary Bone Level(8, Enemy, 1) [13,18] 0x00 0x00 0x0 0x00 [IronSword] PursueWithoutHeedAI 
+UNIT 0x80 Mercenary Bone Level(8, Enemy, 1) [7,7] 0x00 0x00 0x0 0x00 [IronSword] PursueWithoutHeedAI 
+UNIT 0x80 Mercenary Bone Level(8, Enemy, 1) [13,2] 0x00 0x00 0x0 0x00 [IronSword] PursueWithoutHeedAI 
+UNIT 0x80 Mercenary Bone Level(8, Enemy, 1) [18,0] 0x00 0x00 0x0 0x00 [IronSword] PursueWithoutHeedAI 
+UNIT 0x80 Pirate Bone Level(8, Enemy, 1) [19,1] 0x00 0x00 0x0 0x00 [IronAxe] PursueWithoutHeedAI 
+UNIT 0x80 Pirate Bone Level(8, Enemy, 1) [14,3] 0x00 0x00 0x0 0x00 [IronAxe] PursueWithoutHeedAI 
+UNIT 0x80 Pirate Bone Level(8, Enemy, 1) [2,17] 0x00 0x00 0x0 0x00 [IronAxe] PursueWithoutHeedAI 
+UNIT 0x80 Pirate Bone Level(8, Enemy, 1) [14,19] 0x00 0x00 0x0 0x00 [IronAxe] PursueWithoutHeedAI 
+UNIT 0x80 Pirate Bone Level(8, Enemy, 1) [6,13] 0x00 0x00 0x0 0x00 [IronAxe] PursueWithoutHeedAI 
+UNIT 0x80 Pirate Bone Level(8, Enemy, 1) [2,2] 0x00 0x00 0x0 0x00 [IronAxe] PursueWithoutHeedAI 
+UNIT 0x80 Pirate Bone Level(8, Enemy, 1) [5,6] 0x00 0x00 0x0 0x00 [IronAxe] PursueWithoutHeedAI 
+UNIT 0x80 Mogall Bone Level(4, Enemy, 1) [17,11] 0x00 0x00 0x0 0x00 [Bolting] NeverMoveAI 
+UNIT 0x80 Wight_Bow Bone Level(1, Enemy, 1) [13,13] 0x00 0x00 0x0 0x00 [IronBow] AttackInRangeAI 
+UNIT 0x80 Wight_Bow Bone Level(1, Enemy, 1) [23,16] 0x00 0x00 0x0 0x00 [IronBow] AttackInRangeAI 
+UNIT 0x80 Wight_Bow Bone Level(1, Enemy, 1) [23,2] 0x00 0x00 0x0 0x00 [IronBow] AttackInRangeAI 
+UNIT
+
+BeginningScene:
+LOAD2 0x1 Units1
+ENUN
+LOAD1 0x1 ChristmasCavs
+ENUN
+LOAD1 0x01 Bad
+ENUN
+NoFade
+GotoPrepScreen
+ENDA
+
+EndingScene:
+MNC2 8
+NoFade
+ENDA
