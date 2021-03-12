@@ -84,6 +84,11 @@ SongTable(0x10,cheetahmen,1)
 #include "songs/cheetahmen.event"
 }
 
+{
+SongTable(0x1e,InkMeUpSplatoon,1)
+#include "songs/InkMeUpSplatoon.event"
+}
+
 // Add your song here!
 
 
