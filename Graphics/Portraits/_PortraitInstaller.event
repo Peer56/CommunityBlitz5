@@ -65,3 +65,32 @@ ALIGN 4
 CalanthiaPortrait:
 #incext PortraitFormatter "Calanthia.png"
 
+setMugEntry(LorettaMug,LorettaPortrait,3,6,3,4)
+ALIGN 4
+LorettaPortrait:
+#incext PortraitFormatter "Loretta.png"
+
+setMugEntry(FrancineMug,FrancinePortrait,3,7,3,5)
+ALIGN 4
+FrancinePortrait:
+#incext PortraitFormatter "Francine.png"
+
+setMugEntry(WestleyMug,WestleyPortrait,3,5,3,3)
+ALIGN 4
+WestleyPortrait:
+#incext PortraitFormatter "Westley.png"
+
+setMugEntry(HosayMug,HosayPortrait,3,4,3,1)
+ALIGN 4
+HosayPortrait:
+#incext PortraitFormatter "Hosay.png"
+
+setMugEntry(DariasMug,DariasPortrait,2,7,2,3)
+ALIGN 4
+DariasPortrait:
+#incext PortraitFormatter "Darias.png"
+
+setMugEntry(CharlesMug,CharlesPortrait,3,5,3,2)
+ALIGN 4
+CharlesPortrait:
+#incext PortraitFormatter "Charles.png"
