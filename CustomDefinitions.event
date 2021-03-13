@@ -31,13 +31,13 @@
 
 #include "EngineHacks/SkillSystem/skill_definitions.event"
 
-#define __DEBUG__ // Uncomment to get the Debug startup menu :p
+// #define __DEBUG__ // Uncomment to get the Debug startup menu :p
 
 // As chapters are finished, uncomment their defs here; controls event installer
 
 // #define CHAPTER_1
 // #define CHAPTER_2
-// #define CHAPTER_3
+#define CHAPTER_3
 // #define CHAPTER_4
 #define CHAPTER_5
 // #define CHAPTER_6
@@ -111,7 +111,7 @@
 //Bosses
 #define Mulch 64
 #define Kitabei 65
-#define Ch3Boss 66
+#define Peter 66
 #define Susie 67
 #define Calanthia 68
 #define Ch6Eusebios 69
@@ -257,7 +257,7 @@
 
 #define MulchMug 64
 #define KitabeiMug 65
-#define Ch3BossMug 66
+#define PeterMug 66
 #define SusieMug 67
 #define CalanthiaMug 68
 #define EusebiosMug 69

@@ -1,4 +1,4 @@
-EventPointerTable(0x??, PointerList)
+EventPointerTable(0xD, PointerList)
 
 PointerList:
 POIN TurnBasedEvents
@@ -7,21 +7,21 @@ POIN LocationBasedEvents
 POIN MiscBasedEvents
 POIN Dunno1 Dunno2 Dunno3 Tutorial
 POIN Traps1 Traps2
-POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+POIN Units Units  //This unit group determines the number and position of deployment slots when there is a prep screen
 POIN $0 $0 $0
 POIN $0 $0 $0
 POIN BeginningScene EndingScene
 
 TurnBasedEvents:
 //reinforcements here, pegs from the forts.
-TURN 0x0 Reinforcements[5,0] 0x0
-TURN 0x0 Brigand[2,0] 0x0
+TURN 0x0 Reinforcements [5,0] 0x0
+TURN 0x0 BrigandReinforceEvent [2,0] 0x0
 END_MAIN
 
 Reinforcements:
 ReinforcementEvent(ReinforcePegs)
 
-Brigand:
+BrigandReinforceEvent:
 ReinforcementEvent(BrigandUnit)
 
 CharacterBasedEvents:
@@ -32,7 +32,7 @@ Village(0x7,VillageEvent,13,7)
 END_MAIN
 
 VillageEvent:
-VillageEventItem(PlaceholderText, Village, Zanbato)
+VillageEventItem(Ch3VillageText, Village, Zanbato)
 
 MiscBasedEvents:
 DefeatBoss(EndingScene)
@@ -74,16 +74,16 @@ UNIT Yang PegasusKnight Gunborg Level(3, Ally, 0) [3,17] 0x00 0x00 0x0 0x00 [Axe
 UNIT
 
 Bad:
-UNIT Peter Soldier 0x00 Level(4, Enemy, 0) [6,0] 0x00 0x00 0x0 0x00 [Shortspear, SteelLance] NeverMoveAI 
+UNIT Peter Soldier 0x00 Level(4, Enemy, 0) [6,0] 0x00 0x00 0x0 0x00 [ShortSpear, SteelLance] NeverMoveAI 
 UNIT Ch3Generics1 Mage Peter Level(2, Enemy, 1) [8,16] 0x00 0x00 0x0 0x00 [Bolting] NeverMoveAI
-UNIT Ch3Generics1 Priest Peter Level(2, Enemy, 1) [7,14] 0x00 0x00 0x0 0x00 [Physic] HealInjuredAlliesAI
+UNIT Ch3Generics1 Priest Peter Level(2, Enemy, 1) [7,14] 0x00 0x00 0x0 0x00 [Physic] [HealInjuredAllies,0]
 UNIT Ch3Generics1 Mercenary Peter Level(2, Enemy, 1) [2,15] 0x00 0x00 0x0 0x00 [IronSword] AttackInRangeAI
 UNIT Ch3Generics1 Cavalier Peter Level(1, Enemy, 1) [0,12] 0x00 0x00 0x0 0x00 [IronLance] PursueWithoutHeedAI
 UNIT Ch3Generics1 Soldier Peter Level(2, Enemy, 1) [13,13] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI
 UNIT Ch3Generics1 Fighter Peter Level(2, Enemy, 1) [11,14] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI
-UNIT Ch3Generics1 Knight Peter Level(2, Enemy, 1) [3,10] DropItem 0x00 0x0 0x00 [Javelin, Heavy Spear] NeverMoveAI
-UNIT Ch3Generics1 Archer Peter Level(3, Enemy, 1) [0,8] 0x00 0x00 0x0 0x00 [StealBow, RedGem] AttackInRangeAI
-UNIT Ch3Generics1 Myrmidon Peter Level(2, Enemy, 1) [9,10] 0x00 0x00 0x0 0x00 [KillingEdge, SpeedWing] AttackInRangeAI
+UNIT Ch3Generics1 Knight Peter Level(2, Enemy, 1) [3,10] DropItem 0x00 0x0 0x00 [Javelin, HeavySpear] NeverMoveAI
+UNIT Ch3Generics1 Archer Peter Level(3, Enemy, 1) [0,8] 0x00 0x00 0x0 0x00 [SteelBow, RedGem] AttackInRangeAI
+UNIT Ch3Generics1 Myrmidon Peter Level(2, Enemy, 1) [9,10] 0x00 0x00 0x0 0x00 [KillingEdge, Speedwings] AttackInRangeAI
 UNIT Ch3Generics1 Knight Peter Level(2, Enemy, 1) [2,10] 0x00 0x00 0x0 0x00 [Javelin, Horseslayer] AttackInRangeAI
 UNIT Ch3Generics1 Cavalier Peter Level(1, Enemy, 1) [11,8] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI
 UNIT Ch3Generics1 Cavalier Peter Level(1, Enemy, 1) [12,8] 0x00 0x00 0x0 0x00 [Armorslayer] AttackInRangeAI
@@ -94,12 +94,12 @@ UNIT Ch3Generics1 Archer Peter Level(3, Enemy, 1) [8,16] 0x00 0x00 0x0 0x00 [Iro
 UNIT Ch3Generics1 WyvernRider Peter Level(2, Enemy, 1) [14,0] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI
 UNIT Ch3Generics1 WyvernRider Peter Level(2, Enemy, 1) [13,0] 0x00 0x00 0x0 0x00 [Axereaver] AttackInRangeAI
 UNIT Ch3Generics1 Knight Peter Level(3, Enemy, 1) [3,2] 0x00 0x00 0x0 0x00 [SteelLance] NeverMoveAI
-UNIT Ch3Generics1 Mercenary Peter Level(3, Enemy, 1) [10,2] 0x00 0x00 0x0 0x00 [IronBlade] AttackIfCloseAI
+UNIT Ch3Generics1 Mercenary Peter Level(3, Enemy, 1) [10,2] 0x00 0x00 0x0 0x00 [IronBlade] [AttackIfClose,0]
 UNIT Ch3Generics1 Shaman Peter Level(3, Enemy, 1) [7,0] 0x00 0x00 0x0 0x00 [Flux] NeverMoveAI
 UNIT Ch3Generics1 Pirate Peter Level(2, Enemy, 1) [6,1] 0x00 0x00 0x0 0x00 [HandAxe] AttackInRangeAI
 UNIT Ch3Generics1 Soldier Peter Level(2, Enemy, 1) [12,11] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI
 UNIT Ch3Generics1 Fighter Peter Level(2, Enemy, 1) [10,5] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI
-UNIT Ch3Generics1 Shaman Peter Level(2, Enemy, 1) [14,9] 0x00 0x00 0x0 0x00 [Flux] AttackIfCloseAI
+UNIT Ch3Generics1 Shaman Peter Level(2, Enemy, 1) [14,9] 0x00 0x00 0x0 0x00 [Flux]  [AttackIfClose,0]
 UNIT Ch3Generics1 Mercenary Peter Level(3, Enemy, 1) [1,3] DropItem 0x00 0x0 0x00 [LightBrand] NeverMoveAI
 UNIT
 
@@ -114,7 +114,7 @@ UNIT Ch3Generics1 Brigand Peter Level(2, Enemy, 1) [0,12] 0x00 0x00 0x0 0x00 [Ir
 UNIT
 
 BeginningScene:
-LOAD2 0x1 Units1
+LOAD2 0x1 Units
 ENUN
 LOAD1 0x1 Pegs
 ENUN
@@ -125,6 +125,6 @@ GotoPrepScreen
 ENDA
 
 EndingScene:
-MNC2 0x??
+MNC2 3
 NoFade
 ENDA
