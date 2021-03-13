@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.2.5" orientation="orthogonal" renderorder="right-down" width="15" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="9" nextobjectid="1">
+<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="15" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="9" nextobjectid="1">
  <tileset firstgid="1" source="fields.tsx"/>
  <layer id="1" name="map" width="15" height="20">
   <properties>
@@ -35,7 +35,7 @@
 402,434,402,232,164,721,94,245,246,214,21,721,163,145,402
 </data>
  </layer>
- <layer id="3" name="0" width="15" height="20" visible="0">
+ <layer id="3" name="l0" width="15" height="20" visible="0">
   <properties>
    <property name="Height" value="1"/>
    <property name="ID" value="0"/>
@@ -66,7 +66,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer id="4" name="1" width="15" height="20" visible="0">
+ <layer id="4" name="l1" width="15" height="20" visible="0">
   <properties>
    <property name="Height" value="1"/>
    <property name="ID" value="1"/>
@@ -97,7 +97,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer id="5" name="2" width="15" height="20" visible="0">
+ <layer id="5" name="l2" width="15" height="20" visible="0">
   <properties>
    <property name="Height" value="3"/>
    <property name="ID" value="2"/>
@@ -128,7 +128,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer id="6" name="3" width="15" height="20" visible="0">
+ <layer id="6" name="l3" width="15" height="20" visible="0">
   <properties>
    <property name="Height" value="1"/>
    <property name="ID" value="3"/>
@@ -159,7 +159,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer id="7" name="4" width="15" height="20" visible="0">
+ <layer id="7" name="l4" width="15" height="20" visible="0">
   <properties>
    <property name="Height" value="1"/>
    <property name="ID" value="2"/>
@@ -190,7 +190,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer id="8" name="5" width="15" height="20" visible="0">
+ <layer id="8" name="l5" width="15" height="20" visible="0">
   <properties>
    <property name="Height" value="1"/>
    <property name="ID" value="5"/>
