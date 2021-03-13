@@ -121,6 +121,11 @@ SongTable(0x30,eo2thefirstcampaign,0)
 #include "songs/eo2thefirstcampaign.event"
 }
 
+{
+SongTable(0x1e,InkMeUpSplatoon,1)
+#include "songs/InkMeUpSplatoon.event"
+}
+
 // Add your song here!
 {
 SongTable(0xd,ys3wings,1)

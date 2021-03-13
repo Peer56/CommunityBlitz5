@@ -161,5 +161,9 @@ Win the chapter.[X]
 
 #include "chapter_names.txt"
 
+
+#include "Dancerstxt.txt"
+
 #include "soundroom_text.txt"
+
 
