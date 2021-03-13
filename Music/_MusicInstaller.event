@@ -55,7 +55,7 @@ POP
 
 // Venus Lighthouse (Golden Sun)
 {
-SongTable(0x9,gsvenuslighthousefevd,1)
+SongTable(VenusLighthouse,gsvenuslighthousefevd,1)
 #include "songs/gsvenuslighthousefevd.event"
 }
 // Praying Hands (Castlevania: Belmont's Revenge)
@@ -78,7 +78,7 @@ SongTable(0xc,lang2soldat,1)
 SongTable(0xd,tf3thegrubbybluedark,1)
 #include "songs/tf3thegrubbybluedark.event"
 }
-// For of Phantom (Ogre Battle (PS1))
+// Fog of Phantom (Ogre Battle (PS1))
 {
 SongTable(0x11,obps1fogofphantom,1)
 #include "songs/obps1fogofphantom.event"
@@ -128,7 +128,7 @@ SongTable(0x1e,InkMeUpSplatoon,1)
 
 // Add your song here!
 {
-SongTable(0xd,ys3wings,1)
+SongTable(0x1f,ys3wings,1)
 #include "songs/ys3wings.event"
 }
 

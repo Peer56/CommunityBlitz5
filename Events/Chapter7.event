@@ -1,4 +1,4 @@
-EventPointerTable(0x,ThisChapter)
+EventPointerTable(0x21,ThisChapter)
 
 ThisChapter:
 POIN TurnBasedEvents
@@ -19,7 +19,7 @@ CharacterBasedEvents:
 END_MAIN
 
 LocationBasedEvents:
-Village(0x8, Village, 19, 1)
+Village(0x8, VillageEvent, 19, 1)
 END_MAIN
 
 MiscBasedEvents:
@@ -54,7 +54,7 @@ Text(Ch7Ending)
 MNC2 8
 ENDA
 
-Village:
+VillageEvent:
 VillageEventItem(Ch7Village, Village, Unlock)
 
 // Units
@@ -66,11 +66,11 @@ UNIT Bastion Paladin 0x00 Level(10, Ally, 1) [15,18] 0x00 0x00 0x0 0x00 [] Attac
 UNIT Bastion Paladin 0x00 Level(10, Ally, 1) [18,19] 0x00 0x00 0x0 0x00 [] AttackInRangeAI
 UNIT Bastion Paladin 0x00 Level(10, Ally, 1) [15,19] 0x00 0x00 0x0 0x00 [] AttackInRangeAI
 UNIT Loretta Cleric 0x00 Level(8, Ally, 1) [14,2] 0x00 0x00 0x0 0x00 [Mend, Dracoshield] AttackInRangeAI
-UNIT Francine Asassin 0x00 Level(1, Ally, 1) [15,2] 0x00 0x00 0x0 0x00 [SteelSword, MasterSeal] AttackInRangeAI
+UNIT Francine Assassin 0x00 Level(1, Ally, 1) [15,2] 0x00 0x00 0x0 0x00 [SteelSword, MasterSeal] AttackInRangeAI
 UNIT
 
 Enemies:
-UNIT Westley Dancer 0x00 Level(12, Enemy, 1) [0,7] DropItem 0x00 0x0 0x00 [Elixer] GuardTileAI
+UNIT Westley Dancer 0x00 Level(12, Enemy, 1) [0,7] DropItem 0x00 0x0 0x00 [Elixir] GuardTileAI
 UNIT Ch7Enemies Fighter 0x00 Level(8, Enemy, 1) [6,7] 0x00 0x00 0x0 0x00 [SteelAxe] AttackInRangeAI
 UNIT Ch7Enemies Mercenary 0x00 Level(9, Enemy, 1) [5,11] 0x00 0x00 0x0 0x00 [PoisonSword] AttackInRangeAI
 UNIT Ch7Enemies Cavalier 0x00 Level(9, Enemy, 1) [8,12] 0x00 0x00 0x0 0x00 [Javelin] AttackInRangeAI

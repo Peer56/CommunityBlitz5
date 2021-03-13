@@ -1,58 +1,57 @@
-\\character descs
-#0x244
+
+## FrancineName
 Francine
 
-#0x25b
+## LorettaName
 Loretta
 
-#0x29f
+## FrancineDesc
 Loretta's very good ninja friend.[X]
 
-#0x2b3
+## LorettaDesc
 Francine's very good ninja friend.[X]
 
-#0x230
+## CharlesName
 Charles[X]
 
-#0x231
+## HosayName
 Hosay[X]
 
-#0x28b
+## CharlesDesc
 Playable Gargoyle.[X]
 
-#0x28c
+## HosayDesc
 Spooky Scary Skeleton who is very[NL]
 sad and emotional.[X]
 
-#0x239
+## WestleyName
 Westley[X]
 
-#0x294
+## WestleyDesc
 Not from the east.[X]
 
-//Chapter text
-##Ch7Op
+## Ch7Op
 [OpenMidRight][LoadActive][OpenMidLeft][LoadWoman4]
 And then she stabs herself, which in her defense,[NL]
 is pretty PLACEHOLDER.[A][X]
 
-##Ch7Village
+## Ch7Village
 [OpenMidRight][LoadActive][OpenMidLeft][LoadWoman3]
 And we'll put foxy in a category called PLACEHOLDER,[NL]
 because that's his name.[A][X]
 
-##Ch16Ending
+## Ch7Ending
 [OpenMidRight][LoadActive][OpenMidLeft][LoadWoman2]
 Not that long ago they released that PLACEHOLDER where you[NL]
 have to spin around in circles looking really scared.[A][X]
 
-//why are you going through my buildfile? if you're reading this DM me something silly
-
-##Ch16Op
+## Ch16Op
+# why are you going through my buildfile? if you're reading this DM me something silly
 [OpenMidRight][LoadActive][OpenMidLeft][LoadMan1]
 Back at it again at Krispy PLACEHOLDER.[A][X]
 
-##Ch16Ending
+## Ch16Ending
 [OpenMidRight][LoadActive][OpenMidLeft][LoadMan2]
 PLACEHOLDER work ahead?[NL]
 Well I sure hope it does.[A][X]
+

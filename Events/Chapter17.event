@@ -9,7 +9,7 @@
 // To do: unit data & other reinforcements ? 
 
 
-//EventPointerTable(0x   ,ThisChapter)
+EventPointerTable(0x4B,ThisChapter)
 
 ThisChapter:
 POIN TurnBasedEvents
@@ -42,8 +42,8 @@ END_MAIN
 
 MiscBasedEvents:
 CauseGameOverIfLordDies
-SeizeFlag(EndingScene)
-CheckThreeDead
+AFEV 0 EndingScene 3
+AFEV 0 CheckThreeDead 0
 END_MAIN
 
 Dunno:

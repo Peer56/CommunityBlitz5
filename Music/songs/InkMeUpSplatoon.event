@@ -8,7 +8,7 @@
 
         // .rodata
         // InkMeUpSplatoon
-        .align  2
+        ALIGN  2
 
 //****************** Track 0 (Midi-Chn.0) ******************//
 
@@ -2250,7 +2250,7 @@ InkMeUpSplatoon_3_39:
 
 //********************** End of Song ***********************//
 
-        .align  2
+        ALIGN  2
 InkMeUpSplatoon:
         BYTE   4                       // Num Tracks
         BYTE   0                       // Unknown
