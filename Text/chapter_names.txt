@@ -30,7 +30,7 @@
 10: [X]
 
 ## Ch11Name
-11: [X]
+11: Figure it Out[X]
 
 ## Ch12Name
 12: Tower of Darm[X]
@@ -48,7 +48,7 @@
 16: Betrayal[X]
 
 ## Ch17Name
-17: [X]
+17: Eternal Ritual[X]
 
 ## Ch18Name
 18: [X]
