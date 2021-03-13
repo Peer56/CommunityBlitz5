@@ -105,9 +105,10 @@ SongTable(0x1c,cvbrevilgods,0)
 }
 // Big Battle (Castlevania: Circle of the Moon)
 {
-SongTable(0x1d,cvcotmbigbattle,0)
+SongTable(0x1d,cvcotmbigbattle,1)
 #include "songs/cvcotmbigbattle.event"
 }
+
 
 // Action Game Master (Action 52)
 {
@@ -121,7 +122,10 @@ SongTable(0x30,eo2thefirstcampaign,0)
 }
 
 // Add your song here!
-
+{
+SongTable(0xd,ys3wings,1)
+#include "songs/ys3wings.event"
+}
 
 
 // --------------- PART 3: VOICE TABLES ---------------
@@ -810,6 +814,8 @@ GSSquareMacro(0x40,0xf0,0x10,0x80)
 
 GSSquare12p5:
 GSSquareMacro(0x20,0xf0,0x20,0x80)
+
+#include "SoundRoomInstaller.event"
 
 #else
 ERROR You are not assembling FE8 events!

@@ -1,4 +1,4 @@
-#define FreeSpace 0xb2a610
+#define FreeSpace 0x1000000
 #define FreeSpaceBLRange 0x1c1ec0
 
 #define ChapterTileset(chapter, object, palette, config) "PUSH; ORG 0x8b0890 + (148* chapter) + 4; SHORT object; BYTE palette config; POP"
@@ -274,3 +274,18 @@
 #define Ch18BossMug 83
 #define Ch20BossMug 84
 #define Ch21BossMug 85
+
+
+// Music Defs
+
+// Map Music
+#define VenusLighthouse 0x9
+#define PrayingHands 0xA
+#define WoodlandRuins 0xB
+#define Lang2Soldier 0xC
+#define TheBoysGotWings 0xD
+#define Cheetahmen 0x10
+#define BigBattle 0xE
+
+// Battle Music
+#define EvilGods 0x1C

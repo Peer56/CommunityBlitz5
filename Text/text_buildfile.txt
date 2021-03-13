@@ -160,3 +160,6 @@ Win the chapter.[X]
 #include "unitinfo_text.txt"
 
 #include "chapter_names.txt"
+
+#include "soundroom_text.txt"
+
