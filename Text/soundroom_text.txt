@@ -1,0 +1,23 @@
+## SongName_VenusLighthouse
+Venus Lighthouse[X]
+
+## SongName_EvilGods
+Evil Gods[X]
+
+## SongName_PrayingHands
+Praying Hands[X]
+
+## SongName_BigBattle
+Big Battle[X]
+
+## SongName_WoodlandRuins
+Woodland Ruins[X]
+
+## SongName_Lang2Soldier
+Soldier[X]
+
+## SongName_TheBoysGotWings
+The Boy's Got Wings[X]
+
+## SongName_Cheetahmen
+Cheetahmen[X]

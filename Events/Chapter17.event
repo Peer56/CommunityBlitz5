@@ -1,0 +1,203 @@
+// Eternal Ritual by Vesly
+// uses 1 recruitable (Zagan - Necromancer)
+// three demi bosses
+// and one generic enemy for everyone else 
+
+// Please set the death quotes for the three demi bosses to set flags 0xA, 0xB, and 0xC. 
+// I am not sure how to do that with buildfiles. 
+
+// To do: unit data & other reinforcements ? 
+
+
+//EventPointerTable(0x   ,ThisChapter)
+
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+  TurnEventEnemy(0x00, SpawnZagan, 1)
+  TurnEventPlayer(0x00, RespawnDemiA, 1, 255)
+  TurnEventPlayer(0x00, RespawnDemiB, 1, 255)
+  TurnEventPlayer(0x00, RespawnDemiC, 1, 255)
+END_MAIN
+
+
+
+LocationBasedEvents:
+Chest(Gleipnir,13,4)
+Chest(JunaFruit,12,24)
+Chest(Hammerne,6,8)
+Seize(3,EndingScene,13,1)
+Door(0,17)
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+SeizeFlag(EndingScene)
+CheckThreeDead
+END_MAIN
+
+Dunno:
+//DO NOT TOUCH
+WORD $00
+
+Tutorial:
+//DO NOT TOUCH
+WORD $00
+
+TrapData:
+END_MAIN
+
+ALIGN 4
+
+BeginningScene:
+LOAD1 0x1 Units
+ENUN
+LOAD1 0x1 StartingEnemies
+ENUN
+LOAD1 0x1 DemiA_UnitGroup
+LOAD1 0x1 DemiB_UnitGroup
+LOAD1 0x1 DemiC_UnitGroup
+ENUN
+TILECHANGE 0x0
+ENUT 0xF
+GotoPrepScreen
+NoFade
+ENDA
+
+SpawnZagan:
+LOAD1 0x1 ZaganUnitGroup
+ENUN
+NoFade
+ENDA
+
+RespawnDemiA:
+CHECK_EVENTID 0xD
+BNE 0x9000 0xC 0x0
+CHECK_ALIVE DemiA
+BNE 0x9000 0xC 0x0
+LOAD1 0x1 DemiA_UnitGroup
+ENUN
+TEXTSTART
+TEXTSHOW 0x9F7
+TEXTEND
+REMA
+ENUF 0xA
+LABEL 0x9000
+NoFade
+ENDA
+
+RespawnDemiB:
+CHECK_EVENTID 0xD
+BNE 0x9000 0xC 0x0
+CHECK_ALIVE DemiB
+BNE 0x9000 0xC 0x0
+LOAD1 0x1 DemiB_UnitGroup
+ENUN
+TEXTSTART
+TEXTSHOW 0x9F7
+TEXTEND
+REMA
+ENUF 0xB
+LABEL 0x9000
+NoFade
+ENDA
+
+RespawnDemiC:
+CHECK_EVENTID 0xD
+BNE 0x9000 0xC 0x0
+CHECK_ALIVE DemiC
+BNE 0x9000 0xC 0x0
+LOAD1 0x1 DemiC_UnitGroup
+ENUN
+TEXTSTART
+TEXTSHOW 0x9F7
+TEXTEND
+REMA
+ENUF 0xC
+LABEL 0x9000
+NoFade
+ENDA
+
+CheckThreeDead:
+CHECK_EVENTID 0xD
+BNE 0x9000 0xC 0x0
+CHECK_EVENTID 0xA
+BEQ 0x9000 0xC 0x0
+CHECK_EVENTID 0xB
+BEQ 0x9000 0xC 0x0
+CHECK_EVENTID 0xC
+BEQ 0x9000 0xC 0x0
+ENUT 0xD
+ENUF 0xF
+CAM1 [13,4]
+CUMO [13,4]
+STAL 22
+TILEREVERSE 0x0
+STAL 35
+LABEL 0x9000
+NoFade
+ENDA
+
+EndingScene:
+MNC2 18
+ENDA
+
+
+CharacterBasedEvents:
+CharacterEventBothWays(0x8,RecruitZagan,0,Zagan) //anyone to recruit
+END_MAIN
+
+RecruitZagan:
+MUSC 30
+CUSA Zagan
+EVBIT_T 0x7
+ENDA
+
+// Units
+
+Units: //12 deployment slots 
+UNIT Gunborg GunborgLord 0x00 Level(1, Ally, 0) [7,14] 0x00 0x00 0x0 0x00 [] AttackInRangeAI
+UNIT Bastion Paladin 0x00 Level(10, Ally, 1) [6,15] 0x00 0x00 0x0 0x00 [] AttackInRangeAI
+UNIT Bastion Paladin 0x00 Level(10, Ally, 1) [8,15] 0x00 0x00 0x0 0x00 [] AttackInRangeAI
+UNIT Bastion Paladin 0x00 Level(10, Ally, 1) [5,16] 0x00 0x00 0x0 0x00 [] AttackInRangeAI
+UNIT Bastion Paladin 0x00 Level(10, Ally, 1) [9,16] 0x00 0x00 0x0 0x00 [] AttackInRangeAI
+UNIT Bastion Paladin 0x00 Level(10, Ally, 1) [6,17] 0x00 0x00 0x0 0x00 [] AttackInRangeAI
+UNIT Bastion Paladin 0x00 Level(10, Ally, 1) [8,17] 0x00 0x00 0x0 0x00 [] AttackInRangeAI
+UNIT Bastion Paladin 0x00 Level(10, Ally, 1) [2,16] 0x00 0x00 0x0 0x00 [] AttackInRangeAI
+UNIT Bastion Paladin 0x00 Level(10, Ally, 1) [9,11] 0x00 0x00 0x0 0x00 [] AttackInRangeAI
+UNIT Bastion Paladin 0x00 Level(10, Ally, 1) [8,17] 0x00 0x00 0x0 0x00 [] AttackInRangeAI
+UNIT Bastion Paladin 0x00 Level(10, Ally, 1) [2,16] 0x00 0x00 0x0 0x00 [] AttackInRangeAI
+UNIT Bastion Paladin 0x00 Level(10, Ally, 1) [9,11] 0x00 0x00 0x0 0x00 [] AttackInRangeAI
+UNIT
+
+StartingEnemies: //placeholder from ch 19 copy 
+UNIT Ch19Enemies Hero 0x00 Level(12, Enemy, 1) [7,12] 0x00 0x00 0x0 0x00 [Audhulma,Tomahawk] PursueWithoutHeedAI
+UNIT
+
+ZaganUnitGroup:
+UNIT Zagan Necromancer 0x00 Level(12, Ally, 1) [9,18] 0x00 0x00 0x0 0x00 [Flux, Elixir] NoAI
+UNIT
+
+DemiA_UnitGroup:
+UNIT Ch19Phantoms Phantom 0x00 Level(20, Enemy, 1) [5,17] 0x00 0x00 0x0 0x00 [Nosferatu] PursueWithoutHeedAI
+UNIT
+
+DemiB_UnitGroup:
+UNIT Ch19Phantoms Phantom 0x00 Level(20, Enemy, 1) [5,17] 0x00 0x00 0x0 0x00 [Nosferatu] PursueWithoutHeedAI
+UNIT
+
+DemiC_UnitGroup:
+UNIT Ch19Phantoms Phantom 0x00 Level(20, Enemy, 1) [5,17] 0x00 0x00 0x0 0x00 [Nosferatu] PursueWithoutHeedAI
+UNIT
+
+

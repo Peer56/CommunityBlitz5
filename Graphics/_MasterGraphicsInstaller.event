@@ -10,7 +10,7 @@
 #define MapSprite16x32 1
 #define MapSprite32x32 2
 
-#define AnimTableEntry(index) "ORG ClassAnimTable + ((index-1) * 0x20)"
+#define AnimTableEntry(index) "ORG ClassAnimTable + ((index) * 0x20)"
 
 #define SwordAnim(Animation) "BYTE Swords 0x01 ; SHORT Animation"
 #define LanceAnim(Animation) "BYTE Lances 0x01 ; SHORT Animation"
@@ -28,7 +28,7 @@
 #define MagicAnim(Animation) "AnimaAnim(Animation); LightAnim(Animation); DarkAnim(Animation)"
 #define EndAnim "WORD 0"
 
-#define ClassAnimTable 0xC00008 //we shouldn't need to repoint this
+#define ClassAnimTable (0xc00008-0x20) //we shouldn't need to repoint this
 #define StandingMapSpriteTable 0x8AF880
 #define MovingMapSpriteTable 0x9A2E00
 
