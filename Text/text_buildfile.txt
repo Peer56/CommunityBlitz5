@@ -139,6 +139,11 @@ Defend[X]
 ## PlaceholderObjectiveText
 Who knows?[X]
 
+## Ch3VillageText
+[OpenMidRight][LoadActive][OpenMidLeft][LoadMan1]
+Placeholder?[N]
+I hardly knew her![A][X]
+
 ## ArriveText
 Arrive[X]
 
@@ -160,3 +165,10 @@ Win the chapter.[X]
 #include "unitinfo_text.txt"
 
 #include "chapter_names.txt"
+
+
+#include "Dancerstxt.txt"
+
+#include "soundroom_text.txt"
+
+

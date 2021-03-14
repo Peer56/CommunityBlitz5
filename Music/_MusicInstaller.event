@@ -24,9 +24,9 @@
 //installation of ipatix's sound mixer (required for GS synths)
 PUSH
 ORG $d01d0
-WORD $03006cb0; BYTE 0x18 0x02 //BYTE 0xb0 0x6c 0x00 0x03 0x18 0x02
+WORD $03006cb0; BYTE 0x18 0x02
 ORG $CF53C
-WORD $03006cb1 //BYTE 0xb1 0x6c 0x00 0x03
+WORD $03006cb1
 ORG $D01CC
 POIN Sound_Mixer_Dump
 POP
@@ -53,39 +53,84 @@ POP
 #define SFXGroup 6
 //#define VoicegroupOffset 0x207470 //if you want to use a static offset
 
+// Venus Lighthouse (Golden Sun)
 {
-SongTable(0x9,gsvenuslighthousefevd,1)
+SongTable(VenusLighthouse,gsvenuslighthousefevd,1)
 #include "songs/gsvenuslighthousefevd.event"
 }
+// Praying Hands (Castlevania: Belmont's Revenge)
 {
 SongTable(0xa,cvbrprayinghands,1)
 #include "songs/cvbrprayinghands.event"
 }
+// Woodland Ruins (Etrian Odyssey 2)
 {
 SongTable(0xb,eo2woodlandruins,1)
 #include "songs/eo2woodlandruins.event"
 }
+// Soldat (Langrisser 2)
 {
 SongTable(0xc,lang2soldat,1)
 #include "songs/lang2soldat.event"
 }
+// The Grubby Blue Dark (Thunder Force 3) (arrange credit: nZero)
+{
+SongTable(0xd,tf3thegrubbybluedark,1)
+#include "songs/tf3thegrubbybluedark.event"
+}
+// Fog of Phantom (Ogre Battle (PS1))
+{
+SongTable(0x11,obps1fogofphantom,1)
+#include "songs/obps1fogofphantom.event"
+}
+// Top Floor (Castlevania: Aria of Sorrow)
+{
+SongTable(0x12,cvaostopfloor,1)
+#include "songs/cvaostopfloor.event"
+}
+// Morgan (Langrisser 2)
+{
+SongTable(0x14,lang2morgan,1)
+#include "songs/lang2morgan.event"
+}
+// Hunger Made Them Desperate (Thunder Force 3) (arrange credit: nZero)
+{
+SongTable(0x16,tf3hungermadethemdesperate,1)
+#include "songs/tf3hungermadethemdesperate.event"
+}
+// Evil Gods (Castlevania: Belmont's Revenge)
 {
 SongTable(0x1c,cvbrevilgods,0)
 #include "songs/cvbrevilgods.event"
 }
+// Big Battle (Castlevania: Circle of the Moon)
 {
-SongTable(0x1d,cvcotmbigbattle,0)
+SongTable(0x1d,cvcotmbigbattle,1)
 #include "songs/cvcotmbigbattle.event"
 }
 
 
+// Action Game Master (Action 52)
 {
 SongTable(0x10,cheetahmen,1)
 #include "songs/cheetahmen.event"
 }
+// The First Campaign (Etrian Odyssey 2)
+{
+SongTable(0x30,eo2thefirstcampaign,0)
+#include "songs/eo2thefirstcampaign.event"
+}
+
+{
+SongTable(0x1e,InkMeUpSplatoon,1)
+#include "songs/InkMeUpSplatoon.event"
+}
 
 // Add your song here!
-
+{
+SongTable(0x1f,ys3wings,1)
+#include "songs/ys3wings.event"
+}
 
 
 // --------------- PART 3: VOICE TABLES ---------------
@@ -156,13 +201,13 @@ VoiceDirect(MusicVoices,0x6,0x3c,inst6,0x0,0x0,0x0,0xff,0xfa,0x0,0xc0)
 //7 harpsichord w/ loop - C2
 VoiceDirect(MusicVoices,0x7,0x3c,inst6,0x0,0x0,0x0,0xff,0xf5,0x80,0xc0)
 //8 celesta - C4
-VoiceDirect(MusicVoices,0x8,0x3c,0x04C4758,0x0,0x0,0x0,0xff,0x0,0xff,0xa5)
+VoiceDirect(MusicVoices,0x8,0x3c,0x04C4758,0x0,0x0,0x0,0xff,0xf5,0x0,0xd0)
 //9
 VoiceDummy(MusicVoices,0x9)
 //10 music box - C4
 VoiceDirect(MusicVoices,0xa,0x3c,0x02C0D0C,0x0,0x0,0x0,0xff,0x0,0xff,0xe0)
 //11 vibraphone (same sample as celesta? recommend use 8 instead) - C4
-VoiceDirect(MusicVoices,0xb,0x3c,0x04C4758C,0x0,0x0,0x0,0xff,0xf0,0x0,0xcc)
+VoiceDirect(MusicVoices,0xb,0x3c,0x04C4758,0x0,0x0,0x0,0xff,0xf0,0x0,0xd0)
 //12
 VoiceDummy(MusicVoices,0xc)
 //13 xylophone - C3
@@ -180,7 +225,7 @@ VoiceDirect(MusicVoices,0x12,0x3c,0x02B235C,0x0,0x0,0x0,0xff,0x0,0xff,0xb0)
 //19 church organ - C3-C4
 VoiceMulti(MusicVoices,0x13,OrganTable,C3toC4Chart)
 //20 church organ (kept for compatibility purposes; use 19 instead) - C4
-VoiceDirect(MusicVoices,0x14,0x3c,0x0293544,0x0,0x0,0x0,0xff,0x0,0xff,0xc0)
+VoiceMulti(MusicVoices,0x14,OrganTable,C3toC4Chart)
 //21 accordion - G2
 VoiceDirect(MusicVoices,0x15,0x3c,0x02AC868,0x0,0x0,0x0,0x40,0x0,0xff,0xa0)
 //22
@@ -342,8 +387,8 @@ VoiceMulti(MusicVoices,0x62,FrenchsectTable,FrenchsectChart)
 VoiceDirect(MusicVoices,0x63,0x3c,0x04D60BC,0x0,0x0,0x0,0x40,0xff,0x0,0xe0)
 //100 brightness - C4
 VoiceDirect(MusicVoices,0x64,0x3c,0x04BF480,0x0,0x0,0x0,0xff,0xfc,0x40,0xe0)
-//101 brass section (kept for compatibility purposes; use 61 instead)
-VoiceMulti(MusicVoices,0x65,BrassTable,BrassChart)
+//101 (kept for compatibility purposes; use 60 instead)
+VoiceMulti(MusicVoices,0x65,FrenchsectTable,FrenchsectChart)
 //102 trombone 2 (kept for compatibility purposes; use 66 instead) - C3
 VoiceDirect(MusicVoices,0x66,0x3c,0x0265DDC,0x0,0x0,0x0,0x40,0x0,0xff,0xd0)
 //103 (kept for compatibility purposes; use 30 instead)
@@ -402,7 +447,7 @@ VoiceDrum(MusicVoices,0x7f,0x0222FB0)
 ORG MusicVoices+0x600
 
 PianoTable:
-VoiceDirect(PianoTable,0x0,0x3c,inst0n0,0x0,0x0,0x0,0xff,0xf8,0x0,0xc0)
+VoiceDirect(PianoTable,0x0,0x3c,inst0n0,0x0,0x0,0x0,0xff,0xf7,0x0,0xc0)
 VoiceDirect(PianoTable,0x1,0x3c,inst0n0,0x0,0x0,0x0,0xff,0xf7,0x0,0xc8)
 VoiceDirect(PianoTable,0x2,0x3c,inst0n1,0x0,0x0,0x0,0xff,0xf7,0x0,0xcc)
 VoiceDirect(PianoTable,0x3,0x3c,inst0n1,0x0,0x0,0x0,0xff,0xf6,0x0,0xd0)
@@ -775,7 +820,8 @@ GSSquareMacro(0x40,0xf0,0x10,0x80)
 GSSquare12p5:
 GSSquareMacro(0x20,0xf0,0x20,0x80)
 
+#include "SoundRoomInstaller.event"
+
 #else
 ERROR You are not assembling FE8 events!
 #endif
-

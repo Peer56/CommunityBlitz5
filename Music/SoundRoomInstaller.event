@@ -29,7 +29,21 @@ POP
 
 ALIGN 4
 SoundRoomList:
-
+SoundRoomEntry(VenusLighthouse,0,SongName_VenusLighthouse)
+SoundRoomEntry(EvilGods,0,SongName_EvilGods)
+SoundRoomEntry(PrayingHands,0,SongName_PrayingHands)
+SoundRoomEntry(BigBattle,0,SongName_BigBattle)
+SoundRoomEntry(WoodlandRuins,0,SongName_WoodlandRuins)
+SoundRoomEntry(Lang2Soldier,0,SongName_Lang2Soldier)
+SoundRoomEntry(TheBoysGotWings,0,SongName_TheBoysGotWings)
+SoundRoomEntry(Cheetahmen,0,SongName_Cheetahmen)
+SoundRoomEntry(GrubbyBlueDark,0,SongName_GrubbyBlueDark)
+SoundRoomEntry(FogOfPhantom,0,SongName_FogOfPhantom)
+SoundRoomEntry(TopFloor,0,SongName_TopFloor)
+SoundRoomEntry(Morgan,0,SongName_Morgan)
+SoundRoomEntry(HungerMadeThemDesperate,0,SongName_HungerMadeThemDesperate)
+SoundRoomEntry(InkMeUp,0,SongName_InkMeUp)
+SoundRoomEntry(TheBoysGotWings,0,SongName_TheBoysGotWings)
 
 SoundRoomTerminator
 

@@ -1,4 +1,4 @@
-#define FreeSpace 0xb2a610
+#define FreeSpace 0x1000000
 #define FreeSpaceBLRange 0x1c1ec0
 
 #define ChapterTileset(chapter, object, palette, config) "PUSH; ORG 0x8b0890 + (148* chapter) + 4; SHORT object; BYTE palette config; POP"
@@ -31,17 +31,17 @@
 
 #include "EngineHacks/SkillSystem/skill_definitions.event"
 
-#define __DEBUG__ // Uncomment to get the Debug startup menu :p
+// #define __DEBUG__ // Uncomment to get the Debug startup menu :p
 
 // As chapters are finished, uncomment their defs here; controls event installer
 
 // #define CHAPTER_1
 // #define CHAPTER_2
-// #define CHAPTER_3
+#define CHAPTER_3
 // #define CHAPTER_4
 #define CHAPTER_5
 // #define CHAPTER_6
-// #define CHAPTER_7
+#define CHAPTER_7
 #define CHAPTER_8
 // #define CHAPTER_9
 // #define CHAPTER_10
@@ -51,7 +51,7 @@
 // #define CHAPTER_14
 // #define CHAPTER_15
 // #define CHAPTER_16
-// #define CHAPTER_17
+#define CHAPTER_17
 // #define CHAPTER_18
 #define CHAPTER_19
 // #define CHAPTER_20
@@ -98,7 +98,7 @@
 #define Ch15Playable2 35
 #define Charles 36
 #define Hosay 37
-#define Ch17Playable1 38
+#define Zagan 38
 #define Ch17Playable2 39
 #define Ch18Playable1 40
 #define Ch18Playable2 41
@@ -111,7 +111,7 @@
 //Bosses
 #define Mulch 64
 #define Kitabei 65
-#define Ch3Boss 66
+#define Peter 66
 #define Susie 67
 #define Calanthia 68
 #define Ch6Eusebios 69
@@ -126,12 +126,15 @@
 #define Ch14Boss1 78
 #define Ch14Boss2 79
 #define Ch15Boss 80
-#define Darlas 81
+#define Darias 81
 #define Ch17Boss 82
 #define Ch18Boss 83
 #define Ch19Eusebios 84
 #define Ch20Boss 85
 #define Ch21Boss 86
+#define DemiA 87
+#define DemiB 88
+#define DemiC 89
 
 //NPCs
 //start these at 96
@@ -151,7 +154,7 @@
 #define Ch5Generics2 137
 #define Ch6Generics1 138
 #define Ch6Generics2 139
-#define Ch7Generics1 140
+#define Ch7Enemies 140
 #define Ch7Generics2 141
 #define Ch8Generics1 142
 #define Ch8Generics2 143
@@ -242,7 +245,7 @@
 #define Ch15Playable2Mug 35
 #define CharlesMug 36
 #define HosayMug 37
-#define Ch17Playable1Mug 38
+#define ZaganMug 38
 #define Ch17Playable2Mug 39
 #define Ch18Playable1Mug 40
 #define Ch18Playable2Mug 41
@@ -254,7 +257,7 @@
 
 #define MulchMug 64
 #define KitabeiMug 65
-#define Ch3BossMug 66
+#define PeterMug 66
 #define SusieMug 67
 #define CalanthiaMug 68
 #define EusebiosMug 69
@@ -269,8 +272,32 @@
 #define Ch14Boss1Mug 78
 #define Ch14Boss2Mug 79
 #define Ch15BossMug 80
-#define DarlasMug 81
+#define DariasMug 81
 #define Ch17BossMug 82
 #define Ch18BossMug 83
 #define Ch20BossMug 84
 #define Ch21BossMug 85
+
+
+// Music Defs
+
+// Map Music
+#define VenusLighthouse 0x9
+#define PrayingHands 0xA
+#define WoodlandRuins 0xB
+#define Lang2Soldier 0xC
+#define Cheetahmen 0x10
+#define BigBattle 0xE
+#define GrubbyBlueDark 0xD
+#define FogOfPhantom 0x11
+#define TopFloor 0x12
+#define Morgan 0x14
+#define HungerMadeThemDesperate 0x16
+#define InkMeUp 0x1E
+#define TheBoysGotWings 0x1f
+
+// Battle Music
+#define EvilGods 0x1C
+#define TheFirstCampaign 0x30
+
+

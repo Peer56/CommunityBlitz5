@@ -1,0 +1,45 @@
+## SongName_VenusLighthouse
+Venus Lighthouse[X]
+
+## SongName_EvilGods
+Evil Gods[X]
+
+## SongName_PrayingHands
+Praying Hands[X]
+
+## SongName_BigBattle
+Big Battle[X]
+
+## SongName_WoodlandRuins
+Woodland Ruins[X]
+
+## SongName_Lang2Soldier
+Soldat[X]
+
+## SongName_TheBoysGotWings
+The Boy's Got Wings[X]
+
+## SongName_Cheetahmen
+Action Game Master[X]
+
+## SongName_GrubbyBlueDark
+The Grubby Blue Dark[X]
+
+## SongName_FogOfPhantom
+Fog of Phantom[X]
+
+## SongName_TopFloor
+Top Floor[X]
+
+## SongName_Morgan
+Morgan[X]
+
+## SongName_HungerMadeThemDesperate
+Hunger Made Them Desperate[X]
+
+## SongName_TheFirstCampaign
+The First Campaign[X]
+
+## SongName_InkMeUp
+Ink Me Up[X]
+
