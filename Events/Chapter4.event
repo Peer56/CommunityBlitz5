@@ -1,0 +1,101 @@
+EventPointerTable(0x14,ThisChapter)
+
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+TurnEventPlayer(0x00, RecruitAllies, 1)
+END_MAIN
+
+LocationBasedEvents:
+Seize(17,2)
+Armory(ArmoryItems,10,6)
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno:
+WORD $00
+
+Tutorial:
+WORD $00
+
+TrapData:
+END_MAIN
+
+ALIGN 4
+
+BeginningScene:
+LOAD1 0x1 Units
+LOAD1 0x1 EnemyUnits
+GotoPrepScreen
+ENDA
+
+RecruitAllies:
+CUSA Calvin
+CUSA Hobbes
+ENDA
+
+EndingScene:
+MNCH 5
+ENDA
+
+CharacterBasedEvents:
+END_MAIN
+
+// Units
+
+Units:
+UNIT Gunborg GunborgLord 0x00 Level(1, Ally, 0) [1,8] 0x00 0x00 0x0 0x00 [] AttackInRangeAI
+UNIT Bastion Paladin 0x00 Level(10, Ally, 1) [0,7] 0x00 0x00 0x0 0x00 [] AttackInRangeAI
+UNIT Bastion Paladin 0x00 Level(10, Ally, 1) [1,7] 0x00 0x00 0x0 0x00 [] AttackInRangeAI
+UNIT Bastion Paladin 0x00 Level(10, Ally, 1) [2,8] 0x00 0x00 0x0 0x00 [] AttackInRangeAI
+UNIT Bastion Paladin 0x00 Level(10, Ally, 1) [1,9] 0x00 0x00 0x0 0x00 [] AttackInRangeAI
+UNIT Bastion Paladin 0x00 Level(10, Ally, 1) [2,9] 0x00 0x00 0x0 0x00 [] AttackInRangeAI
+UNIT
+
+EnemyUnits:
+UNIT Calvin Cyclops 0x00 Level(1, NPC, 0) [4,8] 0x00 0x00 0x0 0x00 [IronAxe, Hatchet, Hammer, HoplonGuard] NoAI
+UNIT Hobbes Mogall 0x00 Level(5, NPC, 0) [5,9] 0x00 0x00 0x0 0x00 [EvilEye, CrimsonEye] NoAI
+
+UNIT Susie Sage_F 0x00 Level(1, Enemy, 0) [17,2] DropItem 0x00 0x0 0x00 [Bolting,Fimbulvetr,Excalibur] GuardTileAI
+
+UNIT Ch04Generic1 Soldier 0x00 Level(6, Enemy, 1) [3,5] 0x00 0x00 0x0 0x00 [SteelLance] AttackInRangeAI
+UNIT Ch04Generic1 Knight 0x00 Level(5, Enemy, 1) [5,6] DropItem 0x00 0x0 0x00 [BrightLance] AttackInRangeAI
+UNIT Ch04Generic1 Fighter 0x00 Level(4, Enemy, 1) [6,4] 0b 0x00 0x0 0x00 [IronAxe] AttackInRangeAI
+UNIT Ch04Generic1 Archer 0x00 Level(5, Enemy, 1) [7,2] 0x00 0x00 0x0 0x00 [IronBow] AttackInRangeAI
+
+UNIT Ch04Generic1 Fighter 0x00 Level(6, Enemy, 1) [8,4] 0x00 0x00 0x0 0x00 [SteelAxe] AttackInRangeAI
+UNIT Ch04Generic1 Brigand 0x00 Level(4, Enemy, 1) [10,2] 0x00 0x00 0x0 0x00 [HandAxe] AttackInRangeAI
+
+UNIT Ch04Generic1 Fighter 0x00 Level(5, Enemy, 1) [12,8] DropItem 0x00 0x0 0x00 [Fiendcleaver] AttackInRangeAI
+UNIT Ch04Generic1 Myrmidon 0x00 Level(6, Enemy, 1) [14,7] DropItem 0x00 0x0 0x00 [SilverBlade] AttackInRangeAI
+
+UNIT Ch04Generic1 Archer 0x00 Level(5, Enemy, 1) [15,8] DropItem 0x00 0x0 0x00 [BeaconBow] AttackInRangeAI
+UNIT Ch04Generic1 Mercenary 0x00 Level(5, Enemy, 1) [15,4] DropItem 0x00 0x0 0x00 [WindSword] AttackInRangeAI
+UNIT Ch04Generic1 Fighter 0x00 Level(5, Enemy, 1) [17,7] DropItem 0x00 0x0 0x00 [Swordslayer] AttackInRangeAI
+UNIT Ch04Generic1 Myrmidon 0x00 Level(7, Enemy, 1) [17,4] DropItem 0x00 0x0 0x00 [Shadowkiller] AttackInRangeAI
+UNIT Ch04Generic1 Mage 0x00 Level(6, Enemy, 1) [14,1] 0x00 0x00 0x0 0x00 [Elfire] AttackInRangeAI
+UNIT Ch04Generic1 Mage 0x00 Level(7, Enemy, 1) [19,2] 0x00 0x00 0x0 0x00 [Fimbulvetr] AttackInRangeAI
+
+UNIT Ch04Generic1 PegasusKnight 0x00 Level(5, Enemy, 1) [11,1] 0x00 0x00 0x0 0x00 [SteelLance] AttackInRangeAI
+UNIT Ch04Generic1 PegasusKnight 0x00 Level(5, Enemy, 1) [18,9] 0x00 0x00 0x0 0x00 [Javelin] AttackInRangeAI
+UNIT
+
+// Shop Data
+ALIGN 4
+ArmoryItems:
+SHLI IronAxe SteelAxe SilverAxe BraveAxe KillerAxe Halberd Hammer DevilAxe HandAxe Tomahawk Swordreaver Swordslayer DragonAxe BattleAxe BodyRing
+ALIGN 4
+

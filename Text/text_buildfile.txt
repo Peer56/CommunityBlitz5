@@ -159,6 +159,13 @@ Seize Points[X]
 ## UMDesc_Win
 Win the chapter.[X]
 
+## Chapter6_LeftVillage
+[OpenMidRight][LoadActive][OpenMidLeft][LoadMan2]
+Placeholder text[A][X]
+
+## Chapter6_RightVillage
+[OpenMidRight][LoadActive][OpenMidLeft][LoadWoman2]
+Placeholder text[A][X]
 
 #include "skilldesc_text.txt"
 

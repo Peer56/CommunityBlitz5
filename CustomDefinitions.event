@@ -38,9 +38,9 @@
 // #define CHAPTER_1
 // #define CHAPTER_2
 #define CHAPTER_3
-// #define CHAPTER_4
+#define CHAPTER_4
 #define CHAPTER_5
-// #define CHAPTER_6
+#define CHAPTER_6
 #define CHAPTER_7
 #define CHAPTER_8
 // #define CHAPTER_9
@@ -139,6 +139,8 @@
 //NPCs
 //start these at 96
 
+#define Ch6NPC 96
+
 
 //Generics
 
@@ -148,11 +150,11 @@
 #define Ch2Generics2 131
 #define Ch3Generics1 132
 #define Ch3Generics2 133
-#define Ch4Generics1 134
+#define Ch04Generic1 134
 #define Ch4Generics2 135
 #define Ch5Enemies 136
 #define Ch5Generics2 137
-#define Ch6Generics1 138
+#define Ch6Enemy 138
 #define Ch6Generics2 139
 #define Ch7Enemies 140
 #define Ch7Generics2 141
