@@ -60,75 +60,75 @@ SongTable(VenusLighthouse,gsvenuslighthousefevd,1)
 }
 // Praying Hands (Castlevania: Belmont's Revenge)
 {
-SongTable(0xa,cvbrprayinghands,1)
+SongTable(PrayingHands,cvbrprayinghands,1)
 #include "songs/cvbrprayinghands.event"
 }
 // Woodland Ruins (Etrian Odyssey 2)
 {
-SongTable(0xb,eo2woodlandruins,1)
+SongTable(WoodlandRuins,eo2woodlandruins,1)
 #include "songs/eo2woodlandruins.event"
 }
 // Soldat (Langrisser 2)
 {
-SongTable(0xc,lang2soldat,1)
+SongTable(Lang2Soldier,lang2soldat,1)
 #include "songs/lang2soldat.event"
 }
 // The Grubby Blue Dark (Thunder Force 3) (arrange credit: nZero)
 {
-SongTable(0xd,tf3thegrubbybluedark,1)
+SongTable(GrubbyBlueDark,tf3thegrubbybluedark,1)
 #include "songs/tf3thegrubbybluedark.event"
 }
 // Fog of Phantom (Ogre Battle (PS1))
 {
-SongTable(0x11,obps1fogofphantom,1)
+SongTable(FogOfPhantom,obps1fogofphantom,1)
 #include "songs/obps1fogofphantom.event"
 }
 // Top Floor (Castlevania: Aria of Sorrow)
 {
-SongTable(0x12,cvaostopfloor,1)
+SongTable(TopFloor,cvaostopfloor,1)
 #include "songs/cvaostopfloor.event"
 }
 // Morgan (Langrisser 2)
 {
-SongTable(0x14,lang2morgan,1)
+SongTable(Morgan,lang2morgan,1)
 #include "songs/lang2morgan.event"
 }
 // Hunger Made Them Desperate (Thunder Force 3) (arrange credit: nZero)
 {
-SongTable(0x16,tf3hungermadethemdesperate,1)
+SongTable(HungerMadeThemDesperate,tf3hungermadethemdesperate,1)
 #include "songs/tf3hungermadethemdesperate.event"
 }
 // Evil Gods (Castlevania: Belmont's Revenge)
 {
-SongTable(0x1c,cvbrevilgods,0)
+SongTable(EvilGods,cvbrevilgods,0)
 #include "songs/cvbrevilgods.event"
 }
 // Big Battle (Castlevania: Circle of the Moon)
 {
-SongTable(0x1d,cvcotmbigbattle,1)
+SongTable(BigBattle,cvcotmbigbattle,1)
 #include "songs/cvcotmbigbattle.event"
 }
 
 
 // Action Game Master (Action 52)
 {
-SongTable(0x10,cheetahmen,1)
+SongTable(Cheetahmen,cheetahmen,1)
 #include "songs/cheetahmen.event"
 }
 // The First Campaign (Etrian Odyssey 2)
 {
-SongTable(0x30,eo2thefirstcampaign,0)
+SongTable(TheFirstCampaign,eo2thefirstcampaign,0)
 #include "songs/eo2thefirstcampaign.event"
 }
 
 {
-SongTable(0x1e,InkMeUpSplatoon,1)
+SongTable(InkMeUp,InkMeUpSplatoon,1)
 #include "songs/InkMeUpSplatoon.event"
 }
 
 // Add your song here!
 {
-SongTable(0x1f,ys3wings,1)
+SongTable(TheBoysGotWings,ys3wings,1)
 #include "songs/ys3wings.event"
 }
 

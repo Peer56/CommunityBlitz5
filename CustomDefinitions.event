@@ -289,7 +289,7 @@
 #define WoodlandRuins 0xB
 #define Lang2Soldier 0xC
 #define Cheetahmen 0x10
-#define BigBattle 0xE
+#define BigBattle 0x1D
 #define GrubbyBlueDark 0xD
 #define FogOfPhantom 0x11
 #define TopFloor 0x12
