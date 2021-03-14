@@ -1,0 +1,305 @@
+## FrancineName
+Francine[X]
+
+## LorettaName
+Loretta[X]
+
+## FrancineDesc
+Loretta's very good ninja friend.[X]
+
+## LorettaDesc
+Francine's very good ninja friend.[X]
+
+## CharlesName
+Charles[X]
+
+## HosayName
+Hosay[X]
+
+## CharlesDesc
+Playable Gargoyle.[X]
+
+## HosayDesc
+Spooky Scary Skeleton who is very[NL]
+sad and emotional.[X]
+
+## WestleyName
+Westley[X]
+
+## WestleyDesc
+Not from the east.[X]
+
+## GunborgName
+Gunborg[X]
+
+## GunborgDesc
+Not a gun cyborg[X]
+
+## BastionName
+Bastion[X]
+
+## BastionDesc
+Definitely not hollow[X]
+
+## AldricName
+Aldric[X]
+
+## AldricDesc
+more like aldrip amirite[X]
+
+## ScullyName
+Scully[X]
+
+## ScullyDesc
+from fcire fcemblem 13[X]
+
+## WilburName
+Wilbur[X]
+
+## WilburDesc
+i dont have anything witty here[X]
+
+## PaulaName
+Paula[X]
+
+## PaulaDesc
+A great swordfighter known[N]
+predominantly as 'The Crimson'[X]
+
+## SerahltaName
+Seralta[X]
+
+## SerahltaDesc
+Local thief with an[N]
+affinity for blades.[X]
+
+## YinName
+Yin[X]
+
+## YinDesc
+Yang's other half[X]
+
+## YangName
+Yang[X]
+
+## YangDesc
+Yin's other half[X]
+
+## CalvinName
+Calvin[X]
+
+## CalvinDesc
+[X]
+
+## HobbesName
+Hobbes[X]
+
+## HobbesDesc
+[X]
+
+## YaraName
+Yara[X]
+
+## YaraDesc
+[X]
+
+## ErgonName
+Ergon[X]
+
+## ErgonDesc
+[X]
+
+## VultureName
+Vulture[X]
+
+## VultureDesc
+[X]
+
+## OuderenName
+Ouderen[X]
+
+## OuderenDesc
+[X]
+
+## JamieName
+Jamie[X]
+
+## JamieDesc
+next time on mythconfirmers[X]
+
+## ViridiaName
+Viridia[X]
+
+## ViridiaDesc
+[X]
+
+## SunshineName
+Sunshine[X]
+
+## SunshineDesc
+not as alcoholic as moonshine[X]
+
+## PeteName
+Pete[X]
+
+## PeteDesc
+not of the shanty variety[X]
+
+## GaspardName
+Gaspard[X]
+
+## GaspardDesc
+[X]
+
+## DogiName
+Dogi[X]
+
+## DogiDesc
+[X]
+
+## FeenaName
+Feena[X]
+
+## FeenaDesc
+[X]
+
+## KartreName
+Kartre[X]
+
+## KartreDesc
+[X]
+
+## BarlaName
+Barla[X]
+
+## BarlaDesc
+[X]
+
+## RenaldoName
+Renaldo[X]
+
+## RenaldoDesc
+[X]
+
+## AyeshaName
+Ayesha[X]
+
+## AyeshaDesc
+[X]
+
+## FranklinName
+Franklin[X]
+
+## FranklinDesc
+[X]
+
+## ZaganName
+Zagan[X]
+
+## ZaganDesc
+[X]
+
+## WulframName
+Wulfram[X]
+
+## WulframDesc
+[X]
+
+## AgvaldtName
+Agvaldt[X]
+
+## AgvaldtDesc
+[X]
+
+## XholtName
+Xholt[X]
+
+## XholtDesc
+[X]
+
+
+## MulchName
+Mulch[X]
+
+## MulchDesc
+[X]
+
+## KitabeiName
+Kitabei[X]
+
+## KitabeiDesc
+A blade enthusiast searching[N]
+for a rare sword.[X]
+
+## PeterName
+Peter[X]
+
+## PeterDesc
+[X]
+
+## SushieName
+Sushie[X]
+
+## SushieDesc
+yum[X]
+
+## CalanthiaName
+Calanthia[X]
+
+## CalanthiaDesc
+[X]
+
+## EusebiosName
+Eusebios[X]
+
+## EusebiosDesc1
+[X]
+
+## EusebiosDesc2
+he's finally back,[N]
+and about time too[X]
+
+## PinkusName
+Pinkus[X]
+
+## PinkusDesc
+pepto bismol mage[X]
+
+## NegajName
+Negaj[X]
+
+## NegajDesc
+[X]
+
+## OttoName
+Otto[X]
+
+## OttoDesc
+[X]
+
+## DarkTovahName
+Dark Tovah[X]
+
+## DarkTovahDesc
+[X]
+
+## RandalName
+Randal[X]
+
+## RandalDesc
+[X]
+
+## DariasName
+Darias[X]
+
+## DariasDesc
+[X]
+
+
+## SusieName
+Susie[X]
+
+## SusieDesc
+[X]
+
+
