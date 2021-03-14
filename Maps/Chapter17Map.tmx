@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="30" height="30" tilewidth="16" tileheight="16" infinite="0" nextlayerid="7" nextobjectid="1">
+<map version="1.2" tiledversion="1.3.3" orientation="orthogonal" renderorder="right-down" width="30" height="30" tilewidth="16" tileheight="16" infinite="0" nextlayerid="7" nextobjectid="1">
  <tileset firstgid="1" name="6C006D6E" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
-  <image source="../../tilesets/6C006D6E.png" trans="ffffff" width="512" height="512"/>
+  <image source="../../../../FE8 - Mountainous - 6c006d6e.png" trans="ffffff" width="512" height="512"/>
  </tileset>
  <layer id="1" name="Tile Layer 1" width="30" height="30">
   <properties>
@@ -319,7 +319,7 @@
    <tile gid="1006"/>
    <tile gid="501"/>
    <tile gid="1007"/>
-   <tile gid="907"/>
+   <tile gid="1008"/>
    <tile gid="972"/>
    <tile gid="976"/>
    <tile gid="972"/>
@@ -404,7 +404,7 @@
    <tile gid="131"/>
    <tile gid="114"/>
    <tile gid="78"/>
-   <tile gid="993"/>
+   <tile gid="961"/>
    <tile gid="907"/>
    <tile gid="807"/>
    <tile gid="961"/>
@@ -671,7 +671,7 @@
    <tile gid="938"/>
    <tile gid="654"/>
    <tile gid="171"/>
-   <tile gid="655"/>
+   <tile gid="685"/>
    <tile gid="560"/>
    <tile gid="588"/>
    <tile gid="578"/>
@@ -700,8 +700,8 @@
    <tile gid="1004"/>
    <tile gid="970"/>
    <tile gid="166"/>
-   <tile gid="67"/>
-   <tile gid="680"/>
+   <tile gid="745"/>
+   <tile gid="746"/>
    <tile gid="744"/>
    <tile gid="560"/>
    <tile gid="588"/>
@@ -729,8 +729,8 @@
    <tile gid="507"/>
    <tile gid="508"/>
    <tile gid="1002"/>
-   <tile gid="745"/>
-   <tile gid="746"/>
+   <tile gid="680"/>
+   <tile gid="131"/>
    <tile gid="494"/>
    <tile gid="457"/>
    <tile gid="498"/>
@@ -765,7 +765,7 @@
    <tile gid="457"/>
    <tile gid="497"/>
    <tile gid="648"/>
-   <tile gid="961"/>
+   <tile gid="163"/>
    <tile gid="163"/>
    <tile gid="100"/>
    <tile gid="137"/>
@@ -866,7 +866,7 @@
    <tile gid="213"/>
    <tile gid="55"/>
    <tile gid="163"/>
-   <tile gid="654"/>
+   <tile gid="686"/>
    <tile gid="117"/>
    <tile gid="119"/>
    <tile gid="166"/>
@@ -903,7 +903,7 @@
    <tile gid="100"/>
    <tile gid="198"/>
    <tile gid="43"/>
-   <tile gid="655"/>
+   <tile gid="686"/>
    <tile gid="496"/>
    <tile gid="425"/>
    <tile gid="593"/>
