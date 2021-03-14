@@ -1,0 +1,124 @@
+#include EAstdlib.event
+
+EventPointerTable(0x07,Chapter20Events)
+
+Chapter20Events:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+Units:
+UNIT Gunborg EphraimLord 0x00 Level(1, Ally, 0) [17,4] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Bastion Knight Gunborg Level(1, Ally, 0) [18,3] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Bastion Knight Gunborg Level(1, Ally, 0) [17,2] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Bastion Knight Gunborg Level(1, Ally, 0) [15,2] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Bastion Knight Gunborg Level(1, Ally, 0) [18,1] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Bastion Knight Gunborg Level(1, Ally, 0) [17,0] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Bastion Knight Gunborg Level(1, Ally, 0) [19,0] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Bastion Knight Gunborg Level(1, Ally, 0) [16,1] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Bastion Knight Gunborg Level(1, Ally, 0) [14,3] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Bastion Knight Gunborg Level(1, Ally, 0) [13,3] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Bastion Knight Gunborg Level(1, Ally, 0) [14,1] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Bastion Knight Gunborg Level(1, Ally, 0) [15,0] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Bastion Knight Gunborg Level(1, Ally, 0) [19,2] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT
+
+
+TurnBasedEvents:
+END_MAIN
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+SecretShop(RuinsShop,2,0)
+Vendor(ch20Vendor,11,10)
+Village(0x0,Ch20MiddleVillage,8,11)
+Village(0x0,Ch20CornerVillage,1,22)
+//Use Seize until chapter events are finished
+Seize(3,EndingScene,8,2) //temporary
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+AFEV 0xb ClearMirage1 0x8
+END_MAIN
+
+Dunno:
+//DO NOT TOUCH
+WORD $00
+
+Tutorial:
+//DO NOT TOUCH
+WORD $00
+
+TrapData:
+END_MAIN
+
+ALIGN 4
+
+BeginningScene:
+LOAD1 0x1 Units
+ENUN
+LOAD1 0x1 StartingEnemies
+ENUN
+GotoPrepScreen
+NoFade
+ENDA
+
+EndingScene:
+//go to next chapter
+ENDA
+
+// Events
+Ch20MiddleVillage:
+//VillageEventItem(textid,Village,BraveAxe)
+ENDA
+
+Ch20CornerVillage:
+//VillageEventMoney(textid,Village,10000)
+ENDA
+
+ClearMirage1:
+ENDA
+
+
+// Manual Movement
+
+// Scripted Fights
+
+// Units
+StartingEnemies:
+UNIT Ch20Boss Maelduin 0x00 Level(13, Enemy, 1) [16,13] 0x00 0x00 0x0 0x00 [SilverAxe] GuardTileAI 
+UNIT Ch20Generics1 Sniper 0x00 Level(13, Enemy, 1) [12,8] 0x00 0x00 0x0 0x00 [Longbow] AttackInRangeAI 
+UNIT Ch20Generics1 Sniper 0x00 Level(13, Enemy, 1) [6,2] 0x00 0x00 0x0 0x00 [SilverBow] AttackInRangeAI 
+UNIT Ch20Generics1 Sniper 0x00 Level(13, Enemy, 1) [10,2] 0x00 0x00 0x0 0x00 [SilverBow] AttackInRangeAI 
+UNIT Ch20Generics1 Sage 0x00 Level(13, Enemy, 1) [19,16] 0x00 0x00 0x0 0x00 [Elfire] ChaseOnceApproachedAI 
+UNIT Ch20Generics1 Wight 0x00 Level(13, Enemy, 1) [13,14] 0x00 0x00 0x0 0x00 [SilverLance] DefaultAI 
+UNIT Ch20Generics1 Wight 0x00 Level(13, Enemy, 1) [17,15] 0x00 0x00 0x0 0x00 [SilverLance] DefaultAI 
+UNIT Ch20Generics1 Warrior 0x00 Level(13, Enemy, 1) [12,15] 0x00 0x00 0x0 0x00 [Swordreaver] DefaultAI 
+UNIT Ch20Generics1 Druid 0x00 Level(13, Enemy, 1) [15,11] 0x00 0x00 0x0 0x00 [Fenrir] DefaultAI 
+UNIT Ch20Generics1 Berserker 0x00 Level(13, Enemy, 1) [1,1] 0x00 0x00 0x0 0x00 [SilverAxe] LootingThiefAI 
+UNIT
+
+MirageEnemies1:
+UNIT
+
+NewAllies:
+UNIT
+
+// Shop Data
+ALIGN 4
+RuinsShop:
+SHLI LightBrand SecretBook Talisman MasterSeal
+ch20Vendor:
+SHLI Elfire Fimbulvetr Divine Aura Flux Fenrir Heal Mend Recover Elixir
+
+// MESSAGE Events end at offset currentOffset
