@@ -1,9 +1,9 @@
 //Event file generated from Sappy .s format.
         #include "MPlayDef.event"
 
-        #define    tf3thegrubbybluedark_grp  voicegroup000
+        #define    tf3thegrubbybluedark_grp  MusicVoices
         #define    tf3thegrubbybluedark_pri  0
-        #define    tf3thegrubbybluedark_rev  0
+        #define    tf3thegrubbybluedark_rev  0x80
         #define    tf3thegrubbybluedark_key  0
 
         // .rodata
@@ -17,9 +17,9 @@ tf3thegrubbybluedark_0:
 // 000   ----------------------------------------
         BYTE   TEMPO   160/2
         BYTE           VOICE   39
-        BYTE           VOL     42
+        BYTE           VOL     40
         BYTE           BENDR   24
-        BYTE           N96     An1   v125
+        BYTE           N96     An1   v100
         BYTE   W96
 // 001   ----------------------------------------
         BYTE           N24
@@ -32,7 +32,7 @@ tf3thegrubbybluedark_0:
         BYTE   W24
 // 002   ----------------------------------------
 tf3thegrubbybluedark_0_LOOP:
-        BYTE           N12     An1   v125
+        BYTE           N12     An1   v100
         BYTE   W12
         BYTE           N06     An2
         BYTE   W12
@@ -50,7 +50,7 @@ tf3thegrubbybluedark_0_LOOP:
         BYTE   W12
 // 003   ----------------------------------------
 tf3thegrubbybluedark_0_3:
-        BYTE           N12     An1   v125
+        BYTE           N12     An1   v100
         BYTE   W12
         BYTE           N06     An2
         BYTE   W12
@@ -69,7 +69,7 @@ tf3thegrubbybluedark_0_3:
         BYTE   PEND
 // 004   ----------------------------------------
 tf3thegrubbybluedark_0_4:
-        BYTE           N12     Fn1   v125
+        BYTE           N12     Fn1   v100
         BYTE   W12
         BYTE           N06     Fn2
         BYTE   W12
@@ -88,7 +88,7 @@ tf3thegrubbybluedark_0_4:
         BYTE   PEND
 // 005   ----------------------------------------
 tf3thegrubbybluedark_0_5:
-        BYTE           N12     Fn1   v125
+        BYTE           N12     Fn1   v100
         BYTE   W12
         BYTE           N06     Fn2
         BYTE   W12
@@ -107,7 +107,7 @@ tf3thegrubbybluedark_0_5:
         BYTE   PEND
 // 006   ----------------------------------------
 tf3thegrubbybluedark_0_6:
-        BYTE           N12     An1   v125
+        BYTE           N12     An1   v100
         BYTE   W12
         BYTE           N06     An2
         BYTE   W12
@@ -156,7 +156,7 @@ tf3thegrubbybluedark_0_6:
          POIN2  tf3thegrubbybluedark_0_4
 // 017   ----------------------------------------
 tf3thegrubbybluedark_0_17:
-        BYTE           N12     Fn1   v125
+        BYTE           N12     Fn1   v100
         BYTE   W12
         BYTE           N06     Fn2
         BYTE   W12
@@ -175,7 +175,7 @@ tf3thegrubbybluedark_0_17:
         BYTE   PEND
 // 018   ----------------------------------------
 tf3thegrubbybluedark_0_18:
-        BYTE           N12     Dn1   v125
+        BYTE           N12     Dn1   v100
         BYTE   W12
         BYTE           N06     Dn2
         BYTE   W12
@@ -197,7 +197,7 @@ tf3thegrubbybluedark_0_18:
          POIN2  tf3thegrubbybluedark_0_18
 // 020   ----------------------------------------
 tf3thegrubbybluedark_0_20:
-        BYTE           N12     En1   v125
+        BYTE           N12     En1   v100
         BYTE   W12
         BYTE           N06     En2
         BYTE   W12
@@ -250,11 +250,41 @@ tf3thegrubbybluedark_0_20:
         BYTE   PATT
          POIN2  tf3thegrubbybluedark_0_20
 // 028   ----------------------------------------
-        BYTE   PATT
-         POIN2  tf3thegrubbybluedark_0_6
+        BYTE           N12     An1   v100
+        BYTE   W12
+        BYTE           N06     An2   v125
+        BYTE   W12
+        BYTE           N12     An1
+        BYTE   W12
+        BYTE           N06     An2
+        BYTE   W12
+        BYTE           N12     An1
+        BYTE   W12
+        BYTE           N06     An2
+        BYTE   W12
+        BYTE           N12     An1
+        BYTE   W12
+        BYTE           N06     An2
+        BYTE   W12
 // 029   ----------------------------------------
-        BYTE   PATT
-         POIN2  tf3thegrubbybluedark_0_6
+tf3thegrubbybluedark_0_29:
+        BYTE           N12     An1   v125
+        BYTE   W12
+        BYTE           N06     An2
+        BYTE   W12
+        BYTE           N12     An1
+        BYTE   W12
+        BYTE           N06     An2
+        BYTE   W12
+        BYTE           N12     An1
+        BYTE   W12
+        BYTE           N06     An2
+        BYTE   W12
+        BYTE           N12     An1
+        BYTE   W12
+        BYTE           N06     An2
+        BYTE   W12
+        BYTE   PEND
 // 030   ----------------------------------------
 tf3thegrubbybluedark_0_30:
         BYTE           N12     Gn1   v125
@@ -278,11 +308,43 @@ tf3thegrubbybluedark_0_30:
         BYTE   PATT
          POIN2  tf3thegrubbybluedark_0_30
 // 032   ----------------------------------------
-        BYTE   PATT
-         POIN2  tf3thegrubbybluedark_0_4
+tf3thegrubbybluedark_0_32:
+        BYTE           N12     Fn1   v125
+        BYTE   W12
+        BYTE           N06     Fn2
+        BYTE   W12
+        BYTE           N12     Fn1
+        BYTE   W12
+        BYTE           N06     Fn2
+        BYTE   W12
+        BYTE           N12     Fn1
+        BYTE   W12
+        BYTE           N06     Fn2
+        BYTE   W12
+        BYTE           N12     Fn1
+        BYTE   W12
+        BYTE           N06     Fn2
+        BYTE   W12
+        BYTE   PEND
 // 033   ----------------------------------------
-        BYTE   PATT
-         POIN2  tf3thegrubbybluedark_0_20
+tf3thegrubbybluedark_0_33:
+        BYTE           N12     En1   v125
+        BYTE   W12
+        BYTE           N06     En2
+        BYTE   W12
+        BYTE           N12     En1
+        BYTE   W12
+        BYTE           N06     En2
+        BYTE   W12
+        BYTE           N12     En1
+        BYTE   W12
+        BYTE           N06     En2
+        BYTE   W12
+        BYTE           N12     En1
+        BYTE   W12
+        BYTE           N06     En2
+        BYTE   W12
+        BYTE   PEND
 // 034   ----------------------------------------
         BYTE   PATT
          POIN2  tf3thegrubbybluedark_0_30
@@ -291,22 +353,22 @@ tf3thegrubbybluedark_0_30:
          POIN2  tf3thegrubbybluedark_0_30
 // 036   ----------------------------------------
         BYTE   PATT
-         POIN2  tf3thegrubbybluedark_0_4
+         POIN2  tf3thegrubbybluedark_0_32
 // 037   ----------------------------------------
         BYTE   PATT
-         POIN2  tf3thegrubbybluedark_0_20
+         POIN2  tf3thegrubbybluedark_0_33
 // 038   ----------------------------------------
         BYTE   PATT
-         POIN2  tf3thegrubbybluedark_0_4
+         POIN2  tf3thegrubbybluedark_0_32
 // 039   ----------------------------------------
         BYTE   PATT
          POIN2  tf3thegrubbybluedark_0_30
 // 040   ----------------------------------------
         BYTE   PATT
-         POIN2  tf3thegrubbybluedark_0_6
+         POIN2  tf3thegrubbybluedark_0_29
 // 041   ----------------------------------------
         BYTE   PATT
-         POIN2  tf3thegrubbybluedark_0_6
+         POIN2  tf3thegrubbybluedark_0_29
 // 042   ----------------------------------------
 tf3thegrubbybluedark_0_42:
         BYTE           N12     An1   v125
@@ -365,10 +427,10 @@ tf3thegrubbybluedark_0_42:
         BYTE   W12
 // 046   ----------------------------------------
         BYTE   PATT
-         POIN2  tf3thegrubbybluedark_0_6
+         POIN2  tf3thegrubbybluedark_0_29
 // 047   ----------------------------------------
         BYTE   PATT
-         POIN2  tf3thegrubbybluedark_0_6
+         POIN2  tf3thegrubbybluedark_0_29
 // 048   ----------------------------------------
         BYTE   GoTo
          POIN2  tf3thegrubbybluedark_0_LOOP
@@ -382,7 +444,7 @@ tf3thegrubbybluedark_1:
         BYTE           VOICE   62
         BYTE           0xCD   0x08 0x20
         BYTE           0xCD   0x09 0x10
-        BYTE           VOL     48
+        BYTE           VOL     42
         BYTE           BENDR   16
         BYTE           PAN     c_v-20
         BYTE   W96
@@ -1179,6 +1241,7 @@ tf3thegrubbybluedark_2_33:
         BYTE   PATT
          POIN2  tf3thegrubbybluedark_2_33
 // 038   ----------------------------------------
+tf3thegrubbybluedark_2_38:
         BYTE           N10     Cn3   v123
         BYTE   W06
         BYTE           VOL     12
@@ -1213,6 +1276,7 @@ tf3thegrubbybluedark_2_33:
         BYTE   W01
         BYTE           VOL     21
         BYTE   W11
+        BYTE   PEND
 // 039   ----------------------------------------
         BYTE   PATT
          POIN2  tf3thegrubbybluedark_2_31
@@ -1414,7 +1478,7 @@ tf3thegrubbybluedark_3:
         BYTE   KEYSH   tf3thegrubbybluedark_key+0
 // 000   ----------------------------------------
         BYTE           VOICE   48
-        BYTE           VOL     24
+        BYTE           VOL     22
         BYTE           PAN     c_v-41
         BYTE           BENDR   38
         BYTE   W96
@@ -1578,35 +1642,35 @@ tf3thegrubbybluedark_3_6:
 // 030   ----------------------------------------
 tf3thegrubbybluedark_3_30:
         BYTE           N10     Dn3   v123
-        BYTE           VOL     12
+        BYTE           VOL     11
         BYTE   W06
-        BYTE                   11
+        BYTE                   10
         BYTE   W06
         BYTE           N10     Gn3
-        BYTE           VOL     10
-        BYTE   W12
-        BYTE           N10     Bn3
+        BYTE   W06
         BYTE           VOL     9
         BYTE   W06
-        BYTE                   8
+        BYTE           N10     Bn3
+        BYTE           VOL     8
+        BYTE   W06
+        BYTE                   7
         BYTE   W06
         BYTE           N10     Gn3
-        BYTE           VOL     7
-        BYTE   W12
-        BYTE           N10     Dn3
+        BYTE   W06
         BYTE           VOL     6
         BYTE   W06
-        BYTE                   5
-        BYTE   W06
+        BYTE           N10     Dn3
+        BYTE           VOL     5
+        BYTE   W12
         BYTE           N10     Gn3
         BYTE   W01
         BYTE           VOL     4
-        BYTE   W11
-        BYTE           N10     Bn3
-        BYTE   W01
-        BYTE           VOL     3
         BYTE   W06
-        BYTE                   2
+        BYTE                   3
+        BYTE   W05
+        BYTE           N10     Bn3
+        BYTE   W07
+        BYTE           VOL     2
         BYTE   W05
         BYTE           N10     Gn3
         BYTE   W01
@@ -1621,111 +1685,75 @@ tf3thegrubbybluedark_3_31:
         BYTE                   1
         BYTE   W06
         BYTE           N10     Gn3
+        BYTE   W06
         BYTE           VOL     2
-        BYTE   W12
+        BYTE   W06
         BYTE           N10     Bn3
         BYTE           VOL     3
-        BYTE   W06
-        BYTE                   4
-        BYTE   W06
-        BYTE           N10     Gn3
-        BYTE           VOL     5
         BYTE   W12
+        BYTE           N10     Gn3
+        BYTE           VOL     4
+        BYTE   W06
+        BYTE                   5
+        BYTE   W06
         BYTE           N10     Dn3
         BYTE           VOL     6
-        BYTE   W06
-        BYTE                   7
-        BYTE   W06
+        BYTE   W12
         BYTE           N10     Gn3
         BYTE   W01
-        BYTE           VOL     8
-        BYTE   W11
-        BYTE           N10     Bn3
-        BYTE   W01
-        BYTE           VOL     9
+        BYTE           VOL     7
         BYTE   W06
-        BYTE                   10
+        BYTE                   8
+        BYTE   W05
+        BYTE           N10     Bn3
+        BYTE   W07
+        BYTE           VOL     9
         BYTE   W05
         BYTE           N10     Gn3
         BYTE   W01
-        BYTE           VOL     11
+        BYTE           VOL     10
         BYTE   W09
-        BYTE                   12
+        BYTE                   11
         BYTE   W02
         BYTE   PEND
 // 032   ----------------------------------------
-tf3thegrubbybluedark_3_32:
-        BYTE           N10     Cn3   v123
-        BYTE   W06
-        BYTE           VOL     13
-        BYTE   W06
-        BYTE           N10     Fn3
-        BYTE           VOL     14
-        BYTE   W12
-        BYTE           N10     An3
-        BYTE           VOL     15
-        BYTE   W06
-        BYTE                   16
-        BYTE   W06
-        BYTE           N10     Fn3
-        BYTE           VOL     17
-        BYTE   W12
-        BYTE           N10     Cn3
-        BYTE           VOL     18
-        BYTE   W06
-        BYTE                   19
-        BYTE   W06
-        BYTE           N10     Fn3
-        BYTE   W01
-        BYTE           VOL     20
-        BYTE   W11
-        BYTE           N10     An3
-        BYTE   W01
-        BYTE           VOL     21
-        BYTE   W06
-        BYTE                   22
-        BYTE   W05
-        BYTE           N10     Fn3
-        BYTE   W01
-        BYTE           VOL     23
-        BYTE   W11
-        BYTE   PEND
+        BYTE   PATT
+         POIN2  tf3thegrubbybluedark_2_38
 // 033   ----------------------------------------
 tf3thegrubbybluedark_3_33:
         BYTE           N10     Bn2   v123
-        BYTE           VOL     24
-        BYTE   W06
-        BYTE                   23
-        BYTE   W06
-        BYTE           N10     En3
         BYTE           VOL     22
-        BYTE   W12
-        BYTE           N10     Gs3
-        BYTE           VOL     21
         BYTE   W06
-        BYTE                   20
+        BYTE                   21
         BYTE   W06
         BYTE           N10     En3
+        BYTE   W06
+        BYTE           VOL     20
+        BYTE   W06
+        BYTE           N10     Gs3
         BYTE           VOL     19
         BYTE   W12
-        BYTE           N10     Bn2
+        BYTE           N10     En3
         BYTE           VOL     18
         BYTE   W06
         BYTE                   17
         BYTE   W06
-        BYTE           N10     En3
-        BYTE   W01
+        BYTE           N10     Bn2
         BYTE           VOL     16
-        BYTE   W11
-        BYTE           N10     Gs3
+        BYTE   W12
+        BYTE           N10     En3
         BYTE   W01
         BYTE           VOL     15
         BYTE   W06
         BYTE                   14
         BYTE   W05
+        BYTE           N10     Gs3
+        BYTE   W07
+        BYTE           VOL     13
+        BYTE   W05
         BYTE           N10     En3
         BYTE   W01
-        BYTE           VOL     13
+        BYTE           VOL     12
         BYTE   W11
         BYTE   PEND
 // 034   ----------------------------------------
@@ -1736,121 +1764,87 @@ tf3thegrubbybluedark_3_33:
          POIN2  tf3thegrubbybluedark_3_31
 // 036   ----------------------------------------
         BYTE   PATT
-         POIN2  tf3thegrubbybluedark_3_32
+         POIN2  tf3thegrubbybluedark_2_38
 // 037   ----------------------------------------
         BYTE   PATT
          POIN2  tf3thegrubbybluedark_3_33
 // 038   ----------------------------------------
-        BYTE           N10     Cn3   v123
-        BYTE           VOL     12
-        BYTE   W06
-        BYTE                   11
-        BYTE   W06
-        BYTE           N10     Fn3
-        BYTE           VOL     10
-        BYTE   W12
-        BYTE           N10     An3
-        BYTE           VOL     9
-        BYTE   W06
-        BYTE                   8
-        BYTE   W06
-        BYTE           N10     Fn3
-        BYTE           VOL     7
-        BYTE   W12
-        BYTE           N10     Cn3
-        BYTE           VOL     6
-        BYTE   W06
-        BYTE                   5
-        BYTE   W06
-        BYTE           N10     Fn3
-        BYTE   W01
-        BYTE           VOL     4
-        BYTE   W11
-        BYTE           N10     An3
-        BYTE   W01
-        BYTE           VOL     3
-        BYTE   W06
-        BYTE                   2
-        BYTE   W05
-        BYTE           N10     Fn3
-        BYTE   W01
-        BYTE           VOL     1
-        BYTE   W11
+        BYTE   PATT
+         POIN2  tf3thegrubbybluedark_2_32
 // 039   ----------------------------------------
         BYTE   PATT
          POIN2  tf3thegrubbybluedark_3_31
 // 040   ----------------------------------------
         BYTE           N10     En3   v123
         BYTE   W06
+        BYTE           VOL     12
+        BYTE   W06
+        BYTE           N10     An3
+        BYTE   W06
         BYTE           VOL     13
         BYTE   W06
-        BYTE           N10     An3
-        BYTE           VOL     14
-        BYTE   W12
         BYTE           N10     Cn4
-        BYTE           VOL     15
+        BYTE           VOL     14
         BYTE   W06
-        BYTE                   16
+        BYTE                   15
         BYTE   W06
         BYTE           N10     An3
+        BYTE   W06
+        BYTE           VOL     16
+        BYTE   W06
+        BYTE           N10     En3
         BYTE           VOL     17
         BYTE   W12
-        BYTE           N10     En3
+        BYTE           N10     An3
+        BYTE   W01
         BYTE           VOL     18
         BYTE   W06
         BYTE                   19
-        BYTE   W06
-        BYTE           N10     An3
-        BYTE   W01
-        BYTE           VOL     20
-        BYTE   W11
+        BYTE   W05
         BYTE           N10     Cn4
-        BYTE   W01
-        BYTE           VOL     21
-        BYTE   W06
-        BYTE                   22
+        BYTE   W07
+        BYTE           VOL     20
         BYTE   W05
         BYTE           N10     An3
         BYTE   W01
-        BYTE           VOL     23
+        BYTE           VOL     21
         BYTE   W11
 // 041   ----------------------------------------
         BYTE           N10     En3
-        BYTE           VOL     24
-        BYTE   W06
-        BYTE                   23
-        BYTE   W06
-        BYTE           N10     An3
         BYTE           VOL     22
-        BYTE   W12
-        BYTE           N10     Cn4
-        BYTE           VOL     21
         BYTE   W06
-        BYTE                   20
+        BYTE                   21
         BYTE   W06
         BYTE           N10     An3
+        BYTE   W06
+        BYTE           VOL     20
+        BYTE   W06
+        BYTE           N10     Cn4
         BYTE           VOL     19
         BYTE   W12
-        BYTE           N10     En3
+        BYTE           N10     An3
         BYTE           VOL     18
         BYTE   W06
         BYTE                   17
         BYTE   W06
-        BYTE           N10     An3
-        BYTE   W01
+        BYTE           N10     En3
         BYTE           VOL     16
-        BYTE   W11
-        BYTE           N10     Cn4
+        BYTE   W12
+        BYTE           N10     An3
         BYTE   W01
         BYTE           VOL     15
         BYTE   W06
         BYTE                   14
         BYTE   W05
+        BYTE           N10     Cn4
+        BYTE   W07
+        BYTE           VOL     13
+        BYTE   W05
         BYTE           N10     An3
         BYTE   W01
-        BYTE           VOL     13
+        BYTE           VOL     12
         BYTE   W10
-        BYTE                   24
+        BYTE                   22
         BYTE   W01
 // 042   ----------------------------------------
 tf3thegrubbybluedark_3_42:
@@ -1977,7 +1971,7 @@ tf3thegrubbybluedark_4:
         BYTE   KEYSH   tf3thegrubbybluedark_key+0
 // 000   ----------------------------------------
         BYTE           VOICE   81
-        BYTE           VOL     36
+        BYTE           VOL     30
         BYTE           BENDR   24
         BYTE   W01
         BYTE           TIE     En1   v095
@@ -2111,44 +2105,42 @@ tf3thegrubbybluedark_4:
         BYTE                   c_v+63
         BYTE   W24
         BYTE   W02
-        BYTE           VOL     35
+        BYTE           VOL     29
         BYTE   W02
-        BYTE                   34
-        BYTE   W01
-        BYTE                   33
-        BYTE   W02
-        BYTE                   31
-        BYTE   W01
-        BYTE                   30
-        BYTE   W02
-        BYTE                   29
-        BYTE   W01
         BYTE                   28
-        BYTE   W02
+        BYTE   W01
         BYTE                   27
-        BYTE   W01
-        BYTE                   26
         BYTE   W02
-        BYTE                   25
+        BYTE                   26
         BYTE   W01
+        BYTE                   25
+        BYTE   W02
         BYTE                   24
+        BYTE   W01
+        BYTE                   23
         BYTE   W02
         BYTE                   22
         BYTE   W01
         BYTE                   21
-        BYTE   W02
+        BYTE   W03
         BYTE                   20
-        BYTE   W01
+        BYTE   W02
         BYTE                   19
+        BYTE   W01
+        BYTE                   18
+        BYTE   W02
+        BYTE                   17
+        BYTE   W01
+        BYTE                   16
         BYTE   W01
         BYTE           EOT
         BYTE           EOT     En1
-        BYTE           VOL     18
+        BYTE           VOL     15
         BYTE   W01
 // 002   ----------------------------------------
 tf3thegrubbybluedark_4_LOOP:
         BYTE   W01
-        BYTE           VOL     36
+        BYTE           VOL     30
         BYTE           BEND    c_v+0
         BYTE           TIE     An3   v095
         BYTE           TIE     En3
@@ -2455,7 +2447,7 @@ tf3thegrubbybluedark_4_42:
         BYTE           EOT
         BYTE   W17
 // 048   ----------------------------------------
-        BYTE           VOL     18
+        BYTE           VOL     15
         BYTE           BEND    c_v+63
         BYTE   GoTo
          POIN2  tf3thegrubbybluedark_4_LOOP
@@ -2970,7 +2962,7 @@ tf3thegrubbybluedark_6:
         BYTE   KEYSH   tf3thegrubbybluedark_key+0
 // 000   ----------------------------------------
         BYTE           VOICE   62
-        BYTE           VOL     36
+        BYTE           VOL     30
         BYTE           BENDR   24
         BYTE           PAN     c_v+32
         BYTE           TIE     An1   v115
@@ -3105,39 +3097,37 @@ tf3thegrubbybluedark_6:
         BYTE                   c_v+63
         BYTE   W24
         BYTE   W02
-        BYTE           VOL     35
+        BYTE           VOL     29
         BYTE   W02
-        BYTE                   34
-        BYTE   W01
-        BYTE                   33
-        BYTE   W02
-        BYTE                   31
-        BYTE   W01
-        BYTE                   30
-        BYTE   W02
-        BYTE                   29
-        BYTE   W01
         BYTE                   28
-        BYTE   W02
+        BYTE   W01
         BYTE                   27
-        BYTE   W01
-        BYTE                   26
         BYTE   W02
-        BYTE                   25
+        BYTE                   26
         BYTE   W01
+        BYTE                   25
+        BYTE   W02
         BYTE                   24
+        BYTE   W01
+        BYTE                   23
         BYTE   W02
         BYTE                   22
         BYTE   W01
         BYTE                   21
-        BYTE   W02
+        BYTE   W03
         BYTE                   20
+        BYTE   W02
+        BYTE                   19
+        BYTE   W01
+        BYTE                   18
+        BYTE   W02
+        BYTE                   17
         BYTE   W01
         BYTE           EOT
         BYTE           EOT     An1
-        BYTE           VOL     19
+        BYTE           VOL     16
         BYTE   W01
-        BYTE                   36
+        BYTE                   30
         BYTE           BEND    c_v+0
         BYTE   W01
 // 002   ----------------------------------------
@@ -3500,7 +3490,7 @@ tf3thegrubbybluedark_7:
         BYTE   KEYSH   tf3thegrubbybluedark_key+0
 // 000   ----------------------------------------
         BYTE           VOICE   124
-        BYTE           VOL     46
+        BYTE           VOL     40
         BYTE           N06     Cn1   v058
         BYTE   W96
 // 001   ----------------------------------------
@@ -3808,7 +3798,7 @@ tf3thegrubbybluedark_8:
         BYTE   KEYSH   tf3thegrubbybluedark_key+0
 // 000   ----------------------------------------
         BYTE           VOICE   124
-        BYTE           VOL     32
+        BYTE           VOL     30
         BYTE   W96
 // 001   ----------------------------------------
         BYTE   W96
