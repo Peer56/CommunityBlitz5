@@ -46,7 +46,7 @@
 
 // As chapters are finished, uncomment their defs here; controls event installer
 
-// #define CHAPTER_1
+#define CHAPTER_1
 #define CHAPTER_2
 #define CHAPTER_3
 #define CHAPTER_4
