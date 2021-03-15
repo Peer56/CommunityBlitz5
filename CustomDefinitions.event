@@ -31,7 +31,7 @@
 
 #include "EngineHacks/SkillSystem/skill_definitions.event"
 
-// #define __DEBUG__ // Uncomment to get the Debug startup menu :p
+ #define __DEBUG__ // Uncomment to get the Debug startup menu :p
 
 //Useful macros
 #define GiveItem(Item,Character) "CALL $591F40; SMOV 0x3 Item ; GIVEITEMTO Character"
@@ -46,7 +46,7 @@
 
 // As chapters are finished, uncomment their defs here; controls event installer
 
-// #define CHAPTER_1
+#define CHAPTER_1
 #define CHAPTER_2
 #define CHAPTER_3
 #define CHAPTER_4
@@ -105,8 +105,8 @@
 #define Barla 31
 #define Renaldo 32
 #define Ch14Playable2 33
-#define Ch15Playable1 34
-#define Ch15Playable2 35
+#define Ayesha 34
+#define Franklin 35
 #define Charles 36
 #define Hosay 37
 #define Zagan 38
@@ -254,8 +254,8 @@
 #define BarlaMug 31
 #define RenaldoMug 32
 #define Ch14Playable2Mug 33
-#define Ch15Playable1Mug 34
-#define Ch15Playable2Mug 35
+#define AyeshaMug 34
+#define FranklinMug 35
 #define CharlesMug 36
 #define HosayMug 37
 #define ZaganMug 38

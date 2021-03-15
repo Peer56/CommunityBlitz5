@@ -97,7 +97,7 @@ BNE 9000 s0 sC
 SVAL s3 Spear
 GIVEITEM Gunborg
 LABEL 9000
-MNCH 7
+MNC2 6
 ENDA
 
 Units:

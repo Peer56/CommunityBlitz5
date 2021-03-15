@@ -2250,7 +2250,7 @@ InkMeUpSplatoon_3_39:
 
 //********************** End of Song ***********************//
 
-        ALIGN  2
+        ALIGN  4
 InkMeUpSplatoon:
         BYTE   4                       // Num Tracks
         BYTE   0                       // Unknown
