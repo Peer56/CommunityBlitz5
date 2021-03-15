@@ -46,7 +46,7 @@ ENDA
 EndingScene:
 SVAL s3 RedGem
 GIVEITEM Gunborg
-MNCH 1
+MNC2 1
 ENDA
 
 HurryUp:

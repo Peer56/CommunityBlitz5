@@ -51,7 +51,7 @@ ENDA
 
 EndingScene:
 Text(Ch7Ending)
-MNC2 8
+MNC2 7
 ENDA
 
 VillageEvent:
