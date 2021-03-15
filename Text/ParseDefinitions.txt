@@ -88,4 +88,10 @@
 [LoadGreenSoldier] = [LoadFace][0x6F][0x1]
 [LoadPurpleSoldier] = [LoadFace][0x70][0x1]
 [LoadWhiteSoldier] = [LoadFace][0x71][0x1]
+[LoadZagan] = [LoadFace][0x26][0x1]
+[LoadInigo] = [LoadFace][0x27][0x1]
+[LoadBorgas] = [LoadFace][0x52][0x1]
+[LoadDemiA] = [LoadFace][0x57][0x1]
+[LoadDemiB] = [LoadFace][0x58][0x1]
+[LoadDemiC] = [LoadFace][0x59][0x1]
 
