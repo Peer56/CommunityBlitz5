@@ -1,0 +1,1574 @@
+//Event file generated from Sappy .s format.
+        #include "MPlayDef.event"
+
+        #define    mml2elysiumbattle_grp  MusicVoices
+        #define    mml2elysiumbattle_pri  0
+        #define    mml2elysiumbattle_rev  0x80
+        #define    mml2elysiumbattle_key  0
+
+        // .rodata
+        // mml2elysiumbattle
+        ALIGN 4
+
+//****************** Track 0 (Midi-Chn.0) ******************//
+
+mml2elysiumbattle_0:
+        BYTE   KEYSH   mml2elysiumbattle_key+0
+// 000   ----------------------------------------
+        BYTE   TEMPO   136/2
+        BYTE           VOICE   48
+        BYTE           VOL     24
+        BYTE           MOD     32
+        BYTE           LFOS     1
+        BYTE           MODT    mod_pan
+        BYTE           N04     En3   v127
+        BYTE   W06
+        BYTE                   En3
+        BYTE   W06
+        BYTE                   As3
+        BYTE   W06
+        BYTE                   As3
+        BYTE   W06
+        BYTE                   En4
+        BYTE   W06
+        BYTE                   En4
+        BYTE   W06
+        BYTE                   Fn3
+        BYTE   W06
+        BYTE                   Fn3
+        BYTE   W06
+        BYTE                   Bn3
+        BYTE   W06
+        BYTE                   Bn3
+        BYTE   W06
+        BYTE                   Fn4
+        BYTE   W06
+        BYTE                   Fn4
+        BYTE   W06
+        BYTE                   En3
+        BYTE   W06
+        BYTE                   En3
+        BYTE   W06
+        BYTE                   As3
+        BYTE   W06
+        BYTE                   As3
+        BYTE   W06
+// 001   ----------------------------------------
+mml2elysiumbattle_0_1:
+        BYTE           N04     En3   v127
+        BYTE   W06
+        BYTE                   En3
+        BYTE   W06
+        BYTE                   As3
+        BYTE   W06
+        BYTE                   As3
+        BYTE   W06
+        BYTE                   En4
+        BYTE   W06
+        BYTE                   En4
+        BYTE   W06
+        BYTE                   Fn3
+        BYTE   W06
+        BYTE                   Fn3
+        BYTE   W06
+        BYTE                   Bn3
+        BYTE   W06
+        BYTE                   Bn3
+        BYTE   W06
+        BYTE                   Fn4
+        BYTE   W06
+        BYTE                   Fn4
+        BYTE   W06
+        BYTE                   En3
+        BYTE   W06
+        BYTE                   En3
+        BYTE   W06
+        BYTE                   As3
+        BYTE   W06
+        BYTE                   As3
+        BYTE   W06
+        BYTE   PEND
+// 002   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_0_1
+// 003   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_0_1
+// 004   ----------------------------------------
+mml2elysiumbattle_0_LOOP:
+        BYTE           N04     En3   v127
+        BYTE   W06
+        BYTE                   En3
+        BYTE   W06
+        BYTE                   As3
+        BYTE   W06
+        BYTE                   As3
+        BYTE   W06
+        BYTE                   En4
+        BYTE   W06
+        BYTE                   En4
+        BYTE   W06
+        BYTE                   Fn3
+        BYTE   W06
+        BYTE                   Fn3
+        BYTE   W06
+        BYTE                   Bn3
+        BYTE   W06
+        BYTE                   Bn3
+        BYTE   W06
+        BYTE                   Fn4
+        BYTE   W06
+        BYTE                   Fn4
+        BYTE   W06
+        BYTE                   En3
+        BYTE   W06
+        BYTE                   En3
+        BYTE   W06
+        BYTE                   As3
+        BYTE   W06
+        BYTE                   As3
+        BYTE   W06
+// 005   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_0_1
+// 006   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_0_1
+// 007   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_0_1
+// 008   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_0_1
+// 009   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_0_1
+// 010   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_0_1
+// 011   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_0_1
+// 012   ----------------------------------------
+mml2elysiumbattle_0_12:
+        BYTE           N04     Fn3   v127
+        BYTE   W06
+        BYTE                   Fn3
+        BYTE   W06
+        BYTE                   Cn4
+        BYTE   W06
+        BYTE                   Cn4
+        BYTE   W06
+        BYTE                   Fn4
+        BYTE   W06
+        BYTE                   Fn4
+        BYTE   W06
+        BYTE                   Fn3
+        BYTE   W06
+        BYTE                   Fn3
+        BYTE   W06
+        BYTE                   Cs4
+        BYTE   W06
+        BYTE                   Cs4
+        BYTE   W06
+        BYTE                   Fs4
+        BYTE   W06
+        BYTE                   Fs4
+        BYTE   W06
+        BYTE                   Fn3
+        BYTE   W06
+        BYTE                   Fn3
+        BYTE   W06
+        BYTE                   Cs4
+        BYTE   W06
+        BYTE                   Cs4
+        BYTE   W06
+        BYTE   PEND
+// 013   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_0_12
+// 014   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_0_12
+// 015   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_0_12
+// 016   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_0_12
+// 017   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_0_12
+// 018   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_0_12
+// 019   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_0_12
+// 020   ----------------------------------------
+mml2elysiumbattle_0_20:
+        BYTE           N04     Fs3   v127
+        BYTE   W06
+        BYTE                   Fs3
+        BYTE   W06
+        BYTE                   Cs4
+        BYTE   W06
+        BYTE                   Cs4
+        BYTE   W06
+        BYTE                   Fs4
+        BYTE   W06
+        BYTE                   Fs4
+        BYTE   W06
+        BYTE                   Fs3
+        BYTE   W06
+        BYTE                   Fs3
+        BYTE   W06
+        BYTE                   Cs4
+        BYTE   W06
+        BYTE                   Cs4
+        BYTE   W06
+        BYTE                   Gn4
+        BYTE   W06
+        BYTE                   Gn4
+        BYTE   W06
+        BYTE                   Fs3
+        BYTE   W06
+        BYTE                   Fs3
+        BYTE   W06
+        BYTE                   Cs4
+        BYTE   W06
+        BYTE                   Cs4
+        BYTE   W06
+        BYTE   PEND
+// 021   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_0_20
+// 022   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_0_20
+// 023   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_0_20
+// 024   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_0_20
+// 025   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_0_20
+// 026   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_0_20
+// 027   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_0_20
+// 028   ----------------------------------------
+        BYTE   GoTo
+         POIN2  mml2elysiumbattle_0_LOOP
+        BYTE   W04
+        BYTE   FINE
+
+//****************** Track 1 (Midi-Chn.1) ******************//
+
+mml2elysiumbattle_1:
+        BYTE   KEYSH   mml2elysiumbattle_key+0
+// 000   ----------------------------------------
+        BYTE           VOICE   60
+        BYTE           VOL     48
+        BYTE   W96
+// 001   ----------------------------------------
+        BYTE   W96
+// 002   ----------------------------------------
+        BYTE   W96
+// 003   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE                   33
+        BYTE   W01
+// 004   ----------------------------------------
+mml2elysiumbattle_1_LOOP:
+        BYTE           N24     En3   v112
+        BYTE   W03
+        BYTE           VOL     39
+        BYTE   W02
+        BYTE                   42
+        BYTE   W03
+        BYTE                   45
+        BYTE   W03
+        BYTE                   48
+        BYTE   W13
+        BYTE           N12     An2
+        BYTE   W12
+        BYTE           N24     Ds3
+        BYTE   W24
+        BYTE                   An2
+        BYTE   W24
+        BYTE                   Dn3
+        BYTE   W12
+// 005   ----------------------------------------
+        BYTE   W12
+        BYTE                   An2
+        BYTE   W24
+        BYTE                   Ds3
+        BYTE   W24
+        BYTE           N36     En3
+        BYTE   W23
+        BYTE           VOL     42
+        BYTE   W03
+        BYTE                   36
+        BYTE   W03
+        BYTE                   33
+        BYTE   W03
+        BYTE                   30
+        BYTE   W03
+        BYTE                   48
+        BYTE   W01
+// 006   ----------------------------------------
+        BYTE           N24
+        BYTE   W24
+        BYTE           N12     An2
+        BYTE   W12
+        BYTE           N24     Ds3
+        BYTE   W24
+        BYTE                   An2
+        BYTE   W24
+        BYTE                   Dn3
+        BYTE   W12
+// 007   ----------------------------------------
+        BYTE   W12
+        BYTE                   An2
+        BYTE   W24
+        BYTE                   Ds3
+        BYTE   W24
+        BYTE           N36     En3
+        BYTE   W23
+        BYTE           VOL     42
+        BYTE   W03
+        BYTE                   36
+        BYTE   W03
+        BYTE                   33
+        BYTE   W03
+        BYTE                   30
+        BYTE   W03
+        BYTE                   35
+        BYTE   W01
+// 008   ----------------------------------------
+        BYTE                   40
+        BYTE           TIE     En3   v100
+        BYTE   W03
+        BYTE           VOL     33
+        BYTE   W02
+        BYTE                   36
+        BYTE   W03
+        BYTE                   39
+        BYTE   W04
+        BYTE                   42
+        BYTE   W02
+        BYTE                   45
+        BYTE   W03
+        BYTE                   47
+        BYTE   W04
+        BYTE                   48
+        BYTE   W72
+        BYTE   W03
+// 009   ----------------------------------------
+mml2elysiumbattle_1_9:
+        BYTE           VOL     47
+        BYTE   W02
+        BYTE                   46
+        BYTE   W03
+        BYTE                   45
+        BYTE   W03
+        BYTE                   44
+        BYTE   W03
+        BYTE                   42
+        BYTE   W03
+        BYTE                   39
+        BYTE   W04
+        BYTE                   36
+        BYTE   W02
+        BYTE                   33
+        BYTE   W03
+        BYTE                   32
+        BYTE   W04
+        BYTE                   30
+        BYTE   W02
+        BYTE                   29
+        BYTE   W03
+        BYTE                   28
+        BYTE   W04
+        BYTE                   27
+        BYTE   W02
+        BYTE                   26
+        BYTE   W05
+        BYTE                   25
+        BYTE   W02
+        BYTE                   24
+        BYTE   W01
+        BYTE                   23
+        BYTE   W13
+        BYTE                   22
+        BYTE   W12
+        BYTE                   21
+        BYTE   W12
+        BYTE                   18
+        BYTE   W04
+        BYTE                   15
+        BYTE   W02
+        BYTE                   12
+        BYTE   W03
+        BYTE                   9
+        BYTE   W04
+        BYTE   PEND
+// 010   ----------------------------------------
+        BYTE           EOT     En3
+        BYTE   W96
+// 011   ----------------------------------------
+        BYTE   W96
+// 012   ----------------------------------------
+        BYTE           N24     Fn3   v112
+        BYTE   W03
+        BYTE           VOL     39
+        BYTE   W02
+        BYTE                   42
+        BYTE   W03
+        BYTE                   45
+        BYTE   W03
+        BYTE                   48
+        BYTE   W13
+        BYTE           N12     As2
+        BYTE   W12
+        BYTE           N24     En3
+        BYTE   W24
+        BYTE                   As2
+        BYTE   W24
+        BYTE                   Ds3
+        BYTE   W12
+// 013   ----------------------------------------
+        BYTE   W12
+        BYTE                   As2
+        BYTE   W24
+        BYTE                   En3
+        BYTE   W24
+        BYTE           N36     Fn3
+        BYTE   W23
+        BYTE           VOL     42
+        BYTE   W03
+        BYTE                   36
+        BYTE   W03
+        BYTE                   33
+        BYTE   W03
+        BYTE                   30
+        BYTE   W03
+        BYTE                   48
+        BYTE   W01
+// 014   ----------------------------------------
+        BYTE           N24
+        BYTE   W24
+        BYTE           N12     As2
+        BYTE   W12
+        BYTE           N24     En3
+        BYTE   W24
+        BYTE                   As2
+        BYTE   W24
+        BYTE                   Ds3
+        BYTE   W12
+// 015   ----------------------------------------
+        BYTE   W12
+        BYTE                   As2
+        BYTE   W24
+        BYTE                   En3
+        BYTE   W24
+        BYTE           N36     Fn3
+        BYTE   W23
+        BYTE           VOL     42
+        BYTE   W03
+        BYTE                   36
+        BYTE   W03
+        BYTE                   33
+        BYTE   W03
+        BYTE                   30
+        BYTE   W03
+        BYTE                   35
+        BYTE   W01
+// 016   ----------------------------------------
+        BYTE                   40
+        BYTE           TIE     Fn3   v127
+        BYTE   W03
+        BYTE           VOL     33
+        BYTE   W02
+        BYTE                   36
+        BYTE   W03
+        BYTE                   39
+        BYTE   W04
+        BYTE                   42
+        BYTE   W02
+        BYTE                   45
+        BYTE   W03
+        BYTE                   47
+        BYTE   W04
+        BYTE                   48
+        BYTE   W72
+        BYTE   W03
+// 017   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_1_9
+// 018   ----------------------------------------
+        BYTE           EOT     Fn3
+        BYTE   W96
+// 019   ----------------------------------------
+        BYTE   W96
+// 020   ----------------------------------------
+        BYTE           VOL     40
+        BYTE           TIE     Fs3   v127
+        BYTE   W03
+        BYTE           VOL     33
+        BYTE   W02
+        BYTE                   36
+        BYTE   W03
+        BYTE                   39
+        BYTE   W04
+        BYTE                   42
+        BYTE   W02
+        BYTE                   45
+        BYTE   W03
+        BYTE                   47
+        BYTE   W04
+        BYTE                   48
+        BYTE   W72
+        BYTE   W03
+// 021   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_1_9
+// 022   ----------------------------------------
+        BYTE           EOT     Fs3
+        BYTE   W96
+// 023   ----------------------------------------
+        BYTE   W96
+// 024   ----------------------------------------
+        BYTE   W96
+// 025   ----------------------------------------
+        BYTE   W96
+// 026   ----------------------------------------
+        BYTE   W96
+// 027   ----------------------------------------
+        BYTE   W96
+// 028   ----------------------------------------
+        BYTE           VOL     33
+        BYTE   GoTo
+         POIN2  mml2elysiumbattle_1_LOOP
+        BYTE   W04
+        BYTE   FINE
+
+//****************** Track 2 (Midi-Chn.2) ******************//
+
+mml2elysiumbattle_2:
+        BYTE   KEYSH   mml2elysiumbattle_key+0
+// 000   ----------------------------------------
+        BYTE           VOICE   47
+        BYTE           VOL     46
+        BYTE           N24     Gs2   v100
+        BYTE   W24
+        BYTE           N12     En2
+        BYTE   W12
+        BYTE           N24     Gs2
+        BYTE   W24
+        BYTE           N12     En2
+        BYTE   W12
+        BYTE                   Gs2
+        BYTE   W12
+        BYTE                   En2
+        BYTE   W12
+// 001   ----------------------------------------
+mml2elysiumbattle_2_1:
+        BYTE           N24     Gs2   v100
+        BYTE   W24
+        BYTE           N12     En2
+        BYTE   W12
+        BYTE           N24     Gs2
+        BYTE   W24
+        BYTE           N12     En2
+        BYTE   W12
+        BYTE           N24     Gs2
+        BYTE   W24
+        BYTE   PEND
+// 002   ----------------------------------------
+mml2elysiumbattle_2_2:
+        BYTE           N24     Gs2   v100
+        BYTE   W24
+        BYTE           N12     En2
+        BYTE   W12
+        BYTE           N24     Gs2
+        BYTE   W24
+        BYTE           N12     En2
+        BYTE   W12
+        BYTE                   Gs2
+        BYTE   W12
+        BYTE                   En2
+        BYTE   W12
+        BYTE   PEND
+// 003   ----------------------------------------
+mml2elysiumbattle_2_3:
+        BYTE           N24     Gs2   v100
+        BYTE   W24
+        BYTE           N12     En2
+        BYTE   W12
+        BYTE           N24     Gs2
+        BYTE   W24
+        BYTE           N12     En2
+        BYTE   W12
+        BYTE           N08     Bn2
+        BYTE   W08
+        BYTE                   As2
+        BYTE   W08
+        BYTE                   An2
+        BYTE   W08
+        BYTE   PEND
+// 004   ----------------------------------------
+mml2elysiumbattle_2_LOOP:
+        BYTE           N24     Gs2   v100
+        BYTE   W24
+        BYTE           N12     En2
+        BYTE   W12
+        BYTE           N24     Gs2
+        BYTE   W24
+        BYTE           N12     En2
+        BYTE   W12
+        BYTE                   Gs2
+        BYTE   W12
+        BYTE                   En2
+        BYTE   W12
+// 005   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_2_1
+// 006   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_2_2
+// 007   ----------------------------------------
+mml2elysiumbattle_2_7:
+        BYTE           N24     Gs2   v100
+        BYTE   W24
+        BYTE           N12     En2
+        BYTE   W12
+        BYTE           N24     Gs2
+        BYTE   W24
+        BYTE           N12     En2
+        BYTE   W12
+        BYTE           N08     Gs2
+        BYTE   W08
+        BYTE                   Gs2
+        BYTE   W08
+        BYTE                   Gs2
+        BYTE   W08
+        BYTE   PEND
+// 008   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_2_2
+// 009   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_2_1
+// 010   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_2_2
+// 011   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_2_3
+// 012   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_2_2
+// 013   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_2_1
+// 014   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_2_2
+// 015   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_2_7
+// 016   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_2_2
+// 017   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_2_1
+// 018   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_2_2
+// 019   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_2_3
+// 020   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_2_2
+// 021   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_2_1
+// 022   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_2_2
+// 023   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_2_7
+// 024   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_2_2
+// 025   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_2_1
+// 026   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_2_2
+// 027   ----------------------------------------
+        BYTE           N24     Gs2   v100
+        BYTE   W24
+        BYTE           N08     En2
+        BYTE   W08
+        BYTE                   Gs2
+        BYTE   W08
+        BYTE                   En2
+        BYTE   W08
+        BYTE                   Gs2
+        BYTE   W08
+        BYTE                   En2
+        BYTE   W08
+        BYTE                   Gs2
+        BYTE   W08
+        BYTE                   Bn2
+        BYTE   W08
+        BYTE                   As2
+        BYTE   W08
+        BYTE                   An2
+        BYTE   W08
+// 028   ----------------------------------------
+        BYTE   GoTo
+         POIN2  mml2elysiumbattle_2_LOOP
+        BYTE   W04
+        BYTE   FINE
+
+//****************** Track 3 (Midi-Chn.3) ******************//
+
+mml2elysiumbattle_3:
+        BYTE   KEYSH   mml2elysiumbattle_key+0
+// 000   ----------------------------------------
+        BYTE           VOICE   48
+        BYTE           VOL     20
+        BYTE           PAN     c_v-16
+        BYTE   W84
+        BYTE           N06     Gs1   v127
+        BYTE   W06
+        BYTE                   As1
+        BYTE   W06
+// 001   ----------------------------------------
+mml2elysiumbattle_3_1:
+        BYTE           N06     Bn1   v127
+        BYTE   W84
+        BYTE                   Bn1
+        BYTE   W06
+        BYTE                   As1
+        BYTE   W06
+        BYTE   PEND
+// 002   ----------------------------------------
+mml2elysiumbattle_3_2:
+        BYTE           N06     Gs1   v127
+        BYTE   W84
+        BYTE                   Gs1
+        BYTE   W06
+        BYTE                   As1
+        BYTE   W06
+        BYTE   PEND
+// 003   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_3_1
+// 004   ----------------------------------------
+mml2elysiumbattle_3_LOOP:
+        BYTE   W84
+        BYTE           N06     Gs1   v127
+        BYTE   W06
+        BYTE                   As1
+        BYTE   W06
+// 005   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_3_1
+// 006   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_3_2
+// 007   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_3_1
+// 008   ----------------------------------------
+        BYTE   W84
+        BYTE           N06     Gs1   v127
+        BYTE   W06
+        BYTE                   As1
+        BYTE   W06
+// 009   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_3_1
+// 010   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_3_2
+// 011   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_3_1
+// 012   ----------------------------------------
+mml2elysiumbattle_3_12:
+        BYTE           N12     As1   v127
+        BYTE   W84
+        BYTE           N06
+        BYTE   W06
+        BYTE                   Cn2
+        BYTE   W06
+        BYTE   PEND
+// 013   ----------------------------------------
+mml2elysiumbattle_3_13:
+        BYTE           N06     Cs2   v127
+        BYTE   W84
+        BYTE                   Cs2
+        BYTE   W06
+        BYTE                   Cn2
+        BYTE   W06
+        BYTE   PEND
+// 014   ----------------------------------------
+mml2elysiumbattle_3_14:
+        BYTE           N06     As1   v127
+        BYTE   W84
+        BYTE                   As1
+        BYTE   W06
+        BYTE                   Cn2
+        BYTE   W06
+        BYTE   PEND
+// 015   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_3_13
+// 016   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_3_12
+// 017   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_3_13
+// 018   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_3_14
+// 019   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_3_13
+// 020   ----------------------------------------
+mml2elysiumbattle_3_20:
+        BYTE           N06     Bn1   v127
+        BYTE   W84
+        BYTE                   Bn1
+        BYTE   W06
+        BYTE                   Cs2
+        BYTE   W06
+        BYTE   PEND
+// 021   ----------------------------------------
+mml2elysiumbattle_3_21:
+        BYTE           N06     Dn2   v127
+        BYTE   W84
+        BYTE                   Dn2
+        BYTE   W06
+        BYTE                   Cs2
+        BYTE   W06
+        BYTE   PEND
+// 022   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_3_20
+// 023   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_3_21
+// 024   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_3_20
+// 025   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_3_21
+// 026   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_3_20
+// 027   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_3_21
+// 028   ----------------------------------------
+        BYTE   GoTo
+         POIN2  mml2elysiumbattle_3_LOOP
+        BYTE   W04
+        BYTE   FINE
+
+//****************** Track 4 (Midi-Chn.4) ******************//
+
+mml2elysiumbattle_4:
+        BYTE   KEYSH   mml2elysiumbattle_key+0
+// 000   ----------------------------------------
+        BYTE           VOICE   124
+        BYTE           VOL     32
+        BYTE   W96
+// 001   ----------------------------------------
+        BYTE   W72
+        BYTE           N48     An2   v127
+        BYTE   W24
+// 002   ----------------------------------------
+        BYTE   W96
+// 003   ----------------------------------------
+        BYTE   W24
+        BYTE                   Cs2
+        BYTE   W72
+// 004   ----------------------------------------
+mml2elysiumbattle_4_LOOP:
+        BYTE           N48     An2   v127
+        BYTE   W96
+// 005   ----------------------------------------
+mml2elysiumbattle_4_5:
+        BYTE   W60
+        BYTE           N18     Cs2   v127
+        BYTE   W18
+        BYTE                   Cs2
+        BYTE   W18
+        BYTE   PEND
+// 006   ----------------------------------------
+        BYTE           N48     An2
+        BYTE   W96
+// 007   ----------------------------------------
+        BYTE   W96
+// 008   ----------------------------------------
+        BYTE                   An2
+        BYTE   W96
+// 009   ----------------------------------------
+        BYTE   W96
+// 010   ----------------------------------------
+        BYTE   W96
+// 011   ----------------------------------------
+        BYTE   W96
+// 012   ----------------------------------------
+        BYTE                   An2
+        BYTE   W96
+// 013   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_4_5
+// 014   ----------------------------------------
+        BYTE           N48     An2   v127
+        BYTE   W96
+// 015   ----------------------------------------
+        BYTE   W96
+// 016   ----------------------------------------
+        BYTE                   An2
+        BYTE   W96
+// 017   ----------------------------------------
+        BYTE   W96
+// 018   ----------------------------------------
+        BYTE   W96
+// 019   ----------------------------------------
+        BYTE   W96
+// 020   ----------------------------------------
+        BYTE                   An2
+        BYTE   W96
+// 021   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_4_5
+// 022   ----------------------------------------
+        BYTE           N48     An2   v127
+        BYTE   W96
+// 023   ----------------------------------------
+        BYTE   W96
+// 024   ----------------------------------------
+        BYTE                   An2
+        BYTE   W96
+// 025   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_4_5
+// 026   ----------------------------------------
+        BYTE           N48     An2   v127
+        BYTE   W96
+// 027   ----------------------------------------
+        BYTE   W72
+        BYTE           N24     An2   v064
+        BYTE   W24
+// 028   ----------------------------------------
+        BYTE   GoTo
+         POIN2  mml2elysiumbattle_4_LOOP
+        BYTE   W04
+        BYTE   FINE
+
+//****************** Track 5 (Midi-Chn.5) ******************//
+
+mml2elysiumbattle_5:
+        BYTE   KEYSH   mml2elysiumbattle_key+0
+// 000   ----------------------------------------
+        BYTE           VOICE   60
+        BYTE           VOL     24
+        BYTE   W96
+// 001   ----------------------------------------
+        BYTE   W96
+// 002   ----------------------------------------
+        BYTE   W96
+// 003   ----------------------------------------
+        BYTE   W96
+// 004   ----------------------------------------
+mml2elysiumbattle_5_LOOP:
+        BYTE   W11
+        BYTE           VOL     17
+        BYTE   W01
+        BYTE           N24     En3   v112
+        BYTE   W03
+        BYTE           VOL     20
+        BYTE   W02
+        BYTE                   21
+        BYTE   W03
+        BYTE                   23
+        BYTE   W03
+        BYTE                   24
+        BYTE   W13
+        BYTE           N12     An2
+        BYTE   W12
+        BYTE           N24     Ds3
+        BYTE   W24
+        BYTE                   An2
+        BYTE   W24
+// 005   ----------------------------------------
+mml2elysiumbattle_5_5:
+        BYTE           N24     Dn3   v112
+        BYTE   W24
+        BYTE                   An2
+        BYTE   W24
+        BYTE                   Ds3
+        BYTE   W24
+        BYTE           N36     En3
+        BYTE   W23
+        BYTE           VOL     21
+        BYTE   W01
+        BYTE   PEND
+// 006   ----------------------------------------
+        BYTE   W02
+        BYTE                   18
+        BYTE   W03
+        BYTE                   17
+        BYTE   W03
+        BYTE                   15
+        BYTE   W03
+        BYTE                   24
+        BYTE   W01
+        BYTE           N24
+        BYTE   W24
+        BYTE           N12     An2
+        BYTE   W12
+        BYTE           N24     Ds3
+        BYTE   W24
+        BYTE                   An2
+        BYTE   W24
+// 007   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_5_5
+// 008   ----------------------------------------
+        BYTE   W02
+        BYTE           VOL     18
+        BYTE   W03
+        BYTE                   17
+        BYTE   W03
+        BYTE                   15
+        BYTE   W03
+        BYTE                   14
+        BYTE   W01
+        BYTE                   20
+        BYTE           TIE     En3   v100
+        BYTE   W03
+        BYTE           VOL     17
+        BYTE   W02
+        BYTE                   18
+        BYTE   W03
+        BYTE                   20
+        BYTE   W04
+        BYTE                   21
+        BYTE   W02
+        BYTE                   23
+        BYTE   W07
+        BYTE                   24
+        BYTE   W60
+        BYTE   W03
+// 009   ----------------------------------------
+mml2elysiumbattle_5_9:
+        BYTE   W12
+        BYTE           VOL     23
+        BYTE   W08
+        BYTE                   22
+        BYTE   W03
+        BYTE                   21
+        BYTE   W03
+        BYTE                   20
+        BYTE   W04
+        BYTE                   18
+        BYTE   W02
+        BYTE                   17
+        BYTE   W03
+        BYTE                   16
+        BYTE   W04
+        BYTE                   15
+        BYTE   W04
+        BYTE                   14
+        BYTE   W07
+        BYTE                   13
+        BYTE   W05
+        BYTE                   12
+        BYTE   W04
+        BYTE                   11
+        BYTE   W36
+        BYTE                   9
+        BYTE   W01
+        BYTE   PEND
+// 010   ----------------------------------------
+        BYTE   W03
+        BYTE                   8
+        BYTE   W02
+        BYTE                   6
+        BYTE   W03
+        BYTE                   5
+        BYTE   W04
+        BYTE           EOT     En3
+        BYTE   W84
+// 011   ----------------------------------------
+        BYTE   W96
+// 012   ----------------------------------------
+        BYTE   W12
+        BYTE           N24     Fn3   v112
+        BYTE   W03
+        BYTE           VOL     20
+        BYTE   W02
+        BYTE                   21
+        BYTE   W03
+        BYTE                   23
+        BYTE   W03
+        BYTE                   24
+        BYTE   W13
+        BYTE           N12     As2
+        BYTE   W12
+        BYTE           N24     En3
+        BYTE   W24
+        BYTE                   As2
+        BYTE   W24
+// 013   ----------------------------------------
+mml2elysiumbattle_5_13:
+        BYTE           N24     Ds3   v112
+        BYTE   W24
+        BYTE                   As2
+        BYTE   W24
+        BYTE                   En3
+        BYTE   W24
+        BYTE           N36     Fn3
+        BYTE   W23
+        BYTE           VOL     21
+        BYTE   W01
+        BYTE   PEND
+// 014   ----------------------------------------
+        BYTE   W02
+        BYTE                   18
+        BYTE   W03
+        BYTE                   17
+        BYTE   W03
+        BYTE                   15
+        BYTE   W03
+        BYTE                   24
+        BYTE   W01
+        BYTE           N24
+        BYTE   W24
+        BYTE           N12     As2
+        BYTE   W12
+        BYTE           N24     En3
+        BYTE   W24
+        BYTE                   As2
+        BYTE   W24
+// 015   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_5_13
+// 016   ----------------------------------------
+        BYTE   W02
+        BYTE           VOL     18
+        BYTE   W03
+        BYTE                   17
+        BYTE   W03
+        BYTE                   15
+        BYTE   W03
+        BYTE                   14
+        BYTE   W01
+        BYTE                   20
+        BYTE           TIE     Fn3   v127
+        BYTE   W03
+        BYTE           VOL     17
+        BYTE   W02
+        BYTE                   18
+        BYTE   W03
+        BYTE                   20
+        BYTE   W04
+        BYTE                   21
+        BYTE   W02
+        BYTE                   23
+        BYTE   W07
+        BYTE                   24
+        BYTE   W60
+        BYTE   W03
+// 017   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_5_9
+// 018   ----------------------------------------
+        BYTE   W03
+        BYTE           VOL     8
+        BYTE   W02
+        BYTE                   6
+        BYTE   W03
+        BYTE                   5
+        BYTE   W04
+        BYTE           EOT     Fn3
+        BYTE   W84
+// 019   ----------------------------------------
+        BYTE   W96
+// 020   ----------------------------------------
+        BYTE   W12
+        BYTE           VOL     20
+        BYTE           TIE     Fs3   v127
+        BYTE   W03
+        BYTE           VOL     17
+        BYTE   W02
+        BYTE                   18
+        BYTE   W03
+        BYTE                   20
+        BYTE   W04
+        BYTE                   21
+        BYTE   W02
+        BYTE                   23
+        BYTE   W07
+        BYTE                   24
+        BYTE   W60
+        BYTE   W03
+// 021   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_5_9
+// 022   ----------------------------------------
+        BYTE   W03
+        BYTE           VOL     8
+        BYTE   W02
+        BYTE                   6
+        BYTE   W03
+        BYTE                   5
+        BYTE   W04
+        BYTE           EOT     Fs3
+        BYTE   W84
+// 023   ----------------------------------------
+        BYTE   W96
+// 024   ----------------------------------------
+        BYTE   W96
+// 025   ----------------------------------------
+        BYTE   W96
+// 026   ----------------------------------------
+        BYTE   W96
+// 027   ----------------------------------------
+        BYTE   W96
+// 028   ----------------------------------------
+        BYTE           VOL     24
+        BYTE   GoTo
+         POIN2  mml2elysiumbattle_5_LOOP
+        BYTE   W04
+        BYTE   FINE
+
+//****************** Track 6 (Midi-Chn.6) ******************//
+
+mml2elysiumbattle_6:
+        BYTE   KEYSH   mml2elysiumbattle_key+0
+// 000   ----------------------------------------
+        BYTE           VOICE   48
+        BYTE           VOL     18
+        BYTE           MOD     64
+        BYTE           LFOS     1
+        BYTE           MODT    mod_pan
+        BYTE   W06
+        BYTE           N04     En3   v127
+        BYTE   W06
+        BYTE                   En3
+        BYTE   W06
+        BYTE                   As3
+        BYTE   W06
+        BYTE                   As3
+        BYTE   W06
+        BYTE                   En4
+        BYTE   W06
+        BYTE                   En4
+        BYTE   W06
+        BYTE                   Fn3
+        BYTE   W06
+        BYTE                   Fn3
+        BYTE   W06
+        BYTE                   Bn3
+        BYTE   W06
+        BYTE                   Bn3
+        BYTE   W06
+        BYTE                   Fn4
+        BYTE   W06
+        BYTE                   Fn4
+        BYTE   W06
+        BYTE                   En3
+        BYTE   W06
+        BYTE                   En3
+        BYTE   W06
+        BYTE                   As3
+        BYTE   W06
+// 001   ----------------------------------------
+mml2elysiumbattle_6_1:
+        BYTE           N04     As3   v127
+        BYTE   W06
+        BYTE                   En3
+        BYTE   W06
+        BYTE                   En3
+        BYTE   W06
+        BYTE                   As3
+        BYTE   W06
+        BYTE                   As3
+        BYTE   W06
+        BYTE                   En4
+        BYTE   W06
+        BYTE                   En4
+        BYTE   W06
+        BYTE                   Fn3
+        BYTE   W06
+        BYTE                   Fn3
+        BYTE   W06
+        BYTE                   Bn3
+        BYTE   W06
+        BYTE                   Bn3
+        BYTE   W06
+        BYTE                   Fn4
+        BYTE   W06
+        BYTE                   Fn4
+        BYTE   W06
+        BYTE                   En3
+        BYTE   W06
+        BYTE                   En3
+        BYTE   W06
+        BYTE                   As3
+        BYTE   W06
+        BYTE   PEND
+// 002   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_6_1
+// 003   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_6_1
+// 004   ----------------------------------------
+mml2elysiumbattle_6_LOOP:
+        BYTE           N04     As3   v127
+        BYTE   W06
+        BYTE                   En3
+        BYTE   W06
+        BYTE                   En3
+        BYTE   W06
+        BYTE                   As3
+        BYTE   W06
+        BYTE                   As3
+        BYTE   W06
+        BYTE                   En4
+        BYTE   W06
+        BYTE                   En4
+        BYTE   W06
+        BYTE                   Fn3
+        BYTE   W06
+        BYTE                   Fn3
+        BYTE   W06
+        BYTE                   Bn3
+        BYTE   W06
+        BYTE                   Bn3
+        BYTE   W06
+        BYTE                   Fn4
+        BYTE   W06
+        BYTE                   Fn4
+        BYTE   W06
+        BYTE                   En3
+        BYTE   W06
+        BYTE                   En3
+        BYTE   W06
+        BYTE                   As3
+        BYTE   W06
+// 005   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_6_1
+// 006   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_6_1
+// 007   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_6_1
+// 008   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_6_1
+// 009   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_6_1
+// 010   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_6_1
+// 011   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_6_1
+// 012   ----------------------------------------
+        BYTE           N04     As3   v127
+        BYTE   W06
+        BYTE                   Fn3
+        BYTE   W06
+        BYTE                   Fn3
+        BYTE   W06
+        BYTE                   Cn4
+        BYTE   W06
+        BYTE                   Cn4
+        BYTE   W06
+        BYTE                   Fn4
+        BYTE   W06
+        BYTE                   Fn4
+        BYTE   W06
+        BYTE                   Fn3
+        BYTE   W06
+        BYTE                   Fn3
+        BYTE   W06
+        BYTE                   Cs4
+        BYTE   W06
+        BYTE                   Cs4
+        BYTE   W06
+        BYTE                   Fs4
+        BYTE   W06
+        BYTE                   Fs4
+        BYTE   W06
+        BYTE                   Fn3
+        BYTE   W06
+        BYTE                   Fn3
+        BYTE   W06
+        BYTE                   Cs4
+        BYTE   W06
+// 013   ----------------------------------------
+mml2elysiumbattle_6_13:
+        BYTE           N04     Cs4   v127
+        BYTE   W06
+        BYTE                   Fn3
+        BYTE   W06
+        BYTE                   Fn3
+        BYTE   W06
+        BYTE                   Cn4
+        BYTE   W06
+        BYTE                   Cn4
+        BYTE   W06
+        BYTE                   Fn4
+        BYTE   W06
+        BYTE                   Fn4
+        BYTE   W06
+        BYTE                   Fn3
+        BYTE   W06
+        BYTE                   Fn3
+        BYTE   W06
+        BYTE                   Cs4
+        BYTE   W06
+        BYTE                   Cs4
+        BYTE   W06
+        BYTE                   Fs4
+        BYTE   W06
+        BYTE                   Fs4
+        BYTE   W06
+        BYTE                   Fn3
+        BYTE   W06
+        BYTE                   Fn3
+        BYTE   W06
+        BYTE                   Cs4
+        BYTE   W06
+        BYTE   PEND
+// 014   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_6_13
+// 015   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_6_13
+// 016   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_6_13
+// 017   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_6_13
+// 018   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_6_13
+// 019   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_6_13
+// 020   ----------------------------------------
+mml2elysiumbattle_6_20:
+        BYTE           N04     Cs4   v127
+        BYTE   W06
+        BYTE                   Fs3
+        BYTE   W06
+        BYTE                   Fs3
+        BYTE   W06
+        BYTE                   Cs4
+        BYTE   W06
+        BYTE                   Cs4
+        BYTE   W06
+        BYTE                   Fs4
+        BYTE   W06
+        BYTE                   Fs4
+        BYTE   W06
+        BYTE                   Fs3
+        BYTE   W06
+        BYTE                   Fs3
+        BYTE   W06
+        BYTE                   Cs4
+        BYTE   W06
+        BYTE                   Cs4
+        BYTE   W06
+        BYTE                   Gn4
+        BYTE   W06
+        BYTE                   Gn4
+        BYTE   W06
+        BYTE                   Fs3
+        BYTE   W06
+        BYTE                   Fs3
+        BYTE   W06
+        BYTE                   Cs4
+        BYTE   W06
+        BYTE   PEND
+// 021   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_6_20
+// 022   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_6_20
+// 023   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_6_20
+// 024   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_6_20
+// 025   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_6_20
+// 026   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_6_20
+// 027   ----------------------------------------
+        BYTE   PATT
+         POIN2  mml2elysiumbattle_6_20
+// 028   ----------------------------------------
+        BYTE           N04     Cs4   v127
+        BYTE   GoTo
+         POIN2  mml2elysiumbattle_6_LOOP
+        BYTE   W04
+        BYTE   FINE
+
+
+//********************** End of Song ***********************//
+
+        ALIGN 4
+mml2elysiumbattle:
+        BYTE   7                       // Num Tracks
+        BYTE   0                       // Unknown
+        BYTE   mml2elysiumbattle_pri   // Priority
+        BYTE   mml2elysiumbattle_rev   // Reverb
+
+        POIN2   mml2elysiumbattle_grp  
+
+        POIN2   mml2elysiumbattle_0
+        POIN2   mml2elysiumbattle_1
+        POIN2   mml2elysiumbattle_2
+        POIN2   mml2elysiumbattle_3
+        POIN2   mml2elysiumbattle_4
+        POIN2   mml2elysiumbattle_5
+        POIN2   mml2elysiumbattle_6
+
+        

@@ -4,7 +4,7 @@
 	#define	gsvenuslighthousefevd_grp  MusicVoices
 	#define	gsvenuslighthousefevd_pri  0
 	#define	gsvenuslighthousefevd_rev  0x80
-	#define	gsvenuslighthousefevd_mvl  80
+	#define	gsvenuslighthousefevd_mvl  65
 	#define	gsvenuslighthousefevd_key  0
 	#define	gsvenuslighthousefevd_tbs  1
 	#define	gsvenuslighthousefevd_exg  0
