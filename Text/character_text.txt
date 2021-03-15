@@ -27,7 +27,7 @@ sad and emotional.[X]
 Westley[X]
 
 ## WestleyDesc
-Not from the east.[X]
+He cannot swim.[X]
 
 ## GunborgName
 Gunborg[X]
