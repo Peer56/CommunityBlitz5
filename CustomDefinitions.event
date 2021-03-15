@@ -31,7 +31,7 @@
 
 #include "EngineHacks/SkillSystem/skill_definitions.event"
 
-// #define __DEBUG__ // Uncomment to get the Debug startup menu :p
+ #define __DEBUG__ // Uncomment to get the Debug startup menu :p
 
 //Useful macros
 #define GiveItem(Item,Character) "CALL $591F40; SMOV 0x3 Item ; GIVEITEMTO Character"
