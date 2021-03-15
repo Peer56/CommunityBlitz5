@@ -33,14 +33,25 @@
 
 // #define __DEBUG__ // Uncomment to get the Debug startup menu :p
 
+//Useful macros
+#define GiveItem(Item,Character) "CALL $591F40; SMOV 0x3 Item ; GIVEITEMTO Character"
+#define GiveGold(money) "SVAL 0x3 money; GIVEITEMTOMAIN 0"
+#define EndConvo "CALL $9EE2C4"
+#define ClearAllUnits "CLEA 0x0; CLEE 0x0; CLEN 0x0"
+#define FadeOutMusic "MUSCMID 0x7FFF"
+#define ScrollBoxText(textID) "CenterTutorialTextBox; TUTORIALTEXTBOXSTART; TEXTSHOW textID; TEXTEND; REMA"
+#define Coords(xcoord,ycoord) "(ycoord<<16)|xcoord"
+#define MakeSuspendSave "ASMC 0xB5D5D"
+//End of useful macros
+
 // As chapters are finished, uncomment their defs here; controls event installer
 
 // #define CHAPTER_1
-// #define CHAPTER_2
+#define CHAPTER_2
 #define CHAPTER_3
-// #define CHAPTER_4
+#define CHAPTER_4
 #define CHAPTER_5
-// #define CHAPTER_6
+#define CHAPTER_6
 #define CHAPTER_7
 #define CHAPTER_8
 // #define CHAPTER_9
@@ -48,7 +59,7 @@
 // #define CHAPTER_11
 #define CHAPTER_12
 // #define CHAPTER_13
-// #define CHAPTER_14
+#define CHAPTER_14
 // #define CHAPTER_15
 // #define CHAPTER_16
 #define CHAPTER_17
@@ -139,6 +150,8 @@
 //NPCs
 //start these at 96
 
+#define Ch6NPC 96
+
 
 //Generics
 
@@ -148,11 +161,11 @@
 #define Ch2Generics2 131
 #define Ch3Generics1 132
 #define Ch3Generics2 133
-#define Ch4Generics1 134
+#define Ch04Generic1 134
 #define Ch4Generics2 135
 #define Ch5Enemies 136
 #define Ch5Generics2 137
-#define Ch6Generics1 138
+#define Ch6Enemy 138
 #define Ch6Generics2 139
 #define Ch7Enemies 140
 #define Ch7Generics2 141
@@ -287,7 +300,7 @@
 #define WoodlandRuins 0xB
 #define Lang2Soldier 0xC
 #define Cheetahmen 0x10
-#define BigBattle 0xE
+#define BigBattle 0x1D
 #define GrubbyBlueDark 0xD
 #define FogOfPhantom 0x11
 #define TopFloor 0x12

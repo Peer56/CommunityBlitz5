@@ -159,6 +159,27 @@ Seize Points[X]
 ## UMDesc_Win
 Win the chapter.[X]
 
+## Chapter6_LeftVillage
+[OpenMidRight][LoadActive][OpenMidLeft][LoadMan2]
+Placeholder text[A][X]
+
+## Chapter6_RightVillage
+[OpenMidRight][LoadActive][OpenMidLeft][LoadWoman2]
+Placeholder text[A][X]
+
+## HalberdierName
+Halberdier[X]
+
+## HalberdierDesc
+beeg lance man. +crit[X]
+
+## Ch14Village1
+[OpenMidRight][LoadActive][OpenMidLeft][LoadWoman2]
+when the placeholder text is sus!][A][X]
+
+## Ch14Village2
+[OpenMidRight][LoadActive][OpenMidLeft][LoadWoman4]
+You must construct additional placeholders.[X]
 
 #include "skilldesc_text.txt"
 
@@ -166,6 +187,7 @@ Win the chapter.[X]
 
 #include "chapter_names.txt"
 
+#include "character_text.txt"
 
 #include "Dancerstxt.txt"
 

@@ -16,7 +16,15 @@ TurnBasedEvents:
 END_MAIN
 
 CharacterBasedEvents:
+CharacterEventBothWays(8,RecruitFeenaEvent,Dogi,Feena)
 END_MAIN
+
+ALIGN 4
+RecruitFeenaEvent:
+FACTION_BLUE Feena
+NoFade
+ENDA
+
 
 LocationBasedEvents:
 Chest(MasterSeal,1,14)
@@ -58,8 +66,12 @@ UNIT Bastion Knight 0 Level(0,Ally,0) [17,13] 0 0 0 1 NoItems NoAI
 UNIT
 
 ALIGN 4
-NewUnits:
+NewUnit1:
 UNIT Dogi Berserker 0 Level(5,Ally,0) [16,9] 0 0 0 1 [BattleAxe,HandAxe,DragonAxe] NoAI
+UNIT
+
+ALIGN 4
+NewUnit2:
 UNIT Feena Sage_F 0 Level(3,NPC,0) [5,14] 0 0 0 1 [Physic,Divine,Thunder] NeverMoveAI
 UNIT
 
@@ -111,12 +123,16 @@ ALIGN 4
 BeginningScene:
 LOAD1 0 Units1
 ENUN
-LOAD1 0 NewUnits
+LOAD1 0 NewUnit2
 ENUN
 LOAD1 0 EnemyUnits
 ENUN
 
-GotoPrepScreen
+CALL $591FD8 //GotoPrepScreen
+
+LOAD1 0 NewUnit1
+ENUN
+
 
 NoFade
 ENDA

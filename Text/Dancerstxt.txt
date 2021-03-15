@@ -1,34 +1,4 @@
 
-## FrancineName
-Francine
-
-## LorettaName
-Loretta
-
-## FrancineDesc
-Loretta's very good ninja friend.[X]
-
-## LorettaDesc
-Francine's very good ninja friend.[X]
-
-## CharlesName
-Charles[X]
-
-## HosayName
-Hosay[X]
-
-## CharlesDesc
-Playable Gargoyle.[X]
-
-## HosayDesc
-Spooky Scary Skeleton who is very[NL]
-sad and emotional.[X]
-
-## WestleyName
-Westley[X]
-
-## WestleyDesc
-Not from the east.[X]
 
 ## Ch7Op
 [OpenMidRight][LoadFace][0x1][0x1][OpenMidLeft][LoadWoman4]
