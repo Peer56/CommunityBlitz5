@@ -77,6 +77,6 @@ UNIT Ch7Enemies Cavalier 0x00 Level(9, Enemy, 1) [8,12] 0x00 0x00 0x0 0x00 [Jave
 UNIT Ch7Enemies Mage 0x00 Level(10, Enemy, 1) [19,5] 0x00 0x00 0x0 0x00 [Thunder] AttackInRangeAI
 UNIT Ch7Enemies Soldier 0x00 Level(8, Enemy, 1) [15,8] 0x00 0x00 0x0 0x00 [SteelLance] AttackInRangeAI
 UNIT Ch7Enemies Shaman 0x00 Level(11, Enemy, 1) [19,11] 0x00 0x00 0x0 0x00 [Nosferatu] AttackInRangeAI
-UNIT Ch7Enemies Archer 0x00 Level(10, Enemy, 1) [5,14] 0x00 0x00 0x0 0x00 [IronBow] AttackInRangeAI
+UNIT Ch7Enemies Archer 0x00 Level(10, Enemy, 1) [6,13] 0x00 0x00 0x0 0x00 [IronBow] AttackInRangeAI
 UNIT Ch7Enemies Myrmidon 0x00 Level(9, Enemy, 1) [14,8] 0x00 0x00 0x0 0x00 [SteelSword] AttackInRangeAI
 UNIT
