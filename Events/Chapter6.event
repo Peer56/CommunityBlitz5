@@ -1,0 +1,198 @@
+EventPointerTable(0x1E,ThisChapter)
+
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+  TurnEventPlayer(0x00, LoadCavaliersNearBoss, 2, 6)
+  TurnEventPlayer(0x00, LoadVulture, 3)
+  TurnEventPlayer(0x00, LoadWallsOfBrigands, 4)
+  TurnEventPlayer(0x00, LoadBackReinforcements, 7)
+  TurnEventPlayer(0x00, FinalDeath, 10)
+  TurnEventPlayer(0x03, EndingScene, 11)
+  TurnEventPlayer(0x00, LoadCavaliersNearBoss, 9, 12)
+END_MAIN
+
+CharacterBasedEvents:
+CharacterEventBothWays(0x8,SummonTheGreenies,Gunborg,Ouderen)
+END_MAIN
+
+LocationBasedEvents:
+Chest(BlueGem,2,7)
+Chest(KillerBow,3,9)
+Chest(Elixir,16,11)
+Village(0x9,VillageLeft,2,15)
+Village(0xA,VillageRight,14,17)
+END_MAIN
+
+VillageLeft:
+VillageEventItem(Chapter6_LeftVillage, Village, MasterSeal)
+
+VillageRight:
+VillageEventItem(Chapter6_RightVillage, Village, Rapier)
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+DefeatBoss(EndingScene)
+END_MAIN
+
+Dunno:
+//DO NOT TOUCH
+WORD $00
+
+Tutorial:
+//DO NOT TOUCH
+WORD $00
+
+TrapData:
+END_MAIN
+
+ALIGN 4
+
+BeginningScene:
+LOAD1 0x1 Units
+LOAD1 0x1 GreenUnits
+LOAD1 0x1 StartingEnemies
+GotoPrepScreen
+ENDA
+
+SummonTheGreenies:
+LOAD1 0x1 HelpfulGreenUnits
+ENDA
+
+LoadVulture:
+LOAD1 0x1 VultureUnitGroup
+ENDA
+
+LoadCavaliersNearBoss:
+LOAD1 0x1 CavaliersNearBoss
+ENDA
+
+LoadWallsOfBrigands:
+LOAD1 0x1 WallsOfBrigands
+ENDA
+
+LoadBackReinforcements:
+LOAD1 0x1 BackReinforcements
+ENDA
+
+FinalDeath:
+LOAD1 0x1 BackReinforcements
+LOAD1 0x1 Assassins
+LOAD1 0x1 WallsOfBrigands
+ENDA
+
+EndingScene:
+CHECK_EVENTID 0x08
+BNE 9000 s0 sC
+SVAL s3 Spear
+GIVEITEM Gunborg
+LABEL 9000
+MNC2 6
+ENDA
+
+Units:
+UNIT Gunborg GunborgLord 0x00 Level(1, Ally, 0) [10,8] 0x00 0x00 0x0 0x00 [] AttackInRangeAI
+UNIT Bastion Paladin 0x00 Level(10, Ally, 1) [9,7] 0x00 0x00 0x0 0x00 [] AttackInRangeAI
+UNIT Bastion Paladin 0x00 Level(10, Ally, 1) [9,9] 0x00 0x00 0x0 0x00 [] AttackInRangeAI
+UNIT Bastion Paladin 0x00 Level(10, Ally, 1) [11,7] 0x00 0x00 0x0 0x00 [] AttackInRangeAI
+UNIT Bastion Paladin 0x00 Level(10, Ally, 1) [11,9] 0x00 0x00 0x0 0x00 [] AttackInRangeAI
+UNIT Bastion Paladin 0x00 Level(10, Ally, 1) [8,7] 0x00 0x00 0x0 0x00 [] AttackInRangeAI
+UNIT Bastion Paladin 0x00 Level(10, Ally, 1) [8,8] 0x00 0x00 0x0 0x00 [] AttackInRangeAI
+UNIT Bastion Paladin 0x00 Level(10, Ally, 1) [12,7] 0x00 0x00 0x0 0x00 [] AttackInRangeAI
+UNIT Bastion Paladin 0x00 Level(10, Ally, 1) [12,8] 0x00 0x00 0x0 0x00 [] AttackInRangeAI
+UNIT Bastion Paladin 0x00 Level(10, Ally, 1) [8,4] 0x00 0x00 0x0 0x00 [] AttackInRangeAI
+UNIT Bastion Paladin 0x00 Level(10, Ally, 1) [12,4] 0x00 0x00 0x0 0x00 [] AttackInRangeAI
+UNIT
+
+GreenUnits:
+UNIT Ouderen General 0x00 Level(1, NPC, 0) [10,6] 0x00 0x00 0x0 0x00 [Spear,IronSword] NeverMoveAI
+UNIT Ch6NPC Knight 0x00 Level(5, NPC, 0) [16,6] 0x00 0x00 0x0 0x00 [IronLance] NeverMoveAI
+UNIT Ch6NPC Knight 0x00 Level(5, NPC, 0) [16,8] 0x00 0x00 0x0 0x00 [IronLance] NeverMoveAI
+UNIT Ch6NPC Knight 0x00 Level(5, NPC, 0) [2,9] 0x00 0x00 0x0 0x00 [IronLance] NeverMoveAI
+UNIT Ch6NPC Knight 0x00 Level(5, NPC, 0) [10,15] 0x00 0x00 0x0 0x00 [IronLance] NeverMoveAI
+UNIT
+
+HelpfulGreenUnits:
+UNIT Ch6NPC Priest 0x00 Level(5, NPC, 0) [6,8] 0x00 0x00 0x0 0x00 [Physic,Sleep] NeverMoveAI
+UNIT Ch6NPC Priest 0x00 Level(5, NPC, 0) [15,7] 0x00 0x00 0x0 0x00 [Physic,Sleep] NeverMoveAI
+UNIT Ch6NPC Mercenary 0x00 Level(8, NPC, 0) [8,6] 0x00 0x00 0x0 0x00 [SilverSword,Lancereaver] PursueWithoutHeedAI
+UNIT Ch6NPC Soldier 0x00 Level(8, NPC, 0) [12,6] 0x00 0x00 0x0 0x00 [Javelin,Axereaver] PursueWithoutHeedAI
+UNIT
+
+StartingEnemies:
+UNIT Ch6Eusebios Monk 0x00 Level(9, Enemy, 0) [0,18] 0x02 0x00 0x0 0x00 [Nosferatu] NeverMoveAI
+UNIT Ch6Enemy GreatKnight 0x00 Level(1, Enemy, 0) [10,17] 0x02 0x00 0x0 0x00 [HeavySpear,Armorslayer,Hammer,SilverBow] NeverMoveAI
+UNIT Ch6Enemy Monk 0x00 Level(6, Enemy, 0) [8,20] 0x02 0x00 0x0 0x00 [Purge,LightRune] NeverMoveAI
+UNIT Ch6Enemy Monk 0x00 Level(6, Enemy, 0) [17,4] 0x00 0x00 0x0 0x00 [Aura] PursueWithoutHeedAI
+UNIT Ch6Enemy Monk 0x00 Level(6, Enemy, 0) [17,3] 0x00 0x00 0x0 0x00 [Shine] PursueWithoutHeedAI
+UNIT Ch6Enemy Monk 0x00 Level(6, Enemy, 0) [13,20] 0x00 0x00 0x0 0x00 [Shine] PursueWithoutHeedAI
+UNIT Ch6Enemy Monk 0x00 Level(6, Enemy, 0) [9,18] 0x00 0x00 0x0 0x00 [Shine] PursueWithoutHeedAI
+UNIT Ch6Enemy Monk 0x00 Level(6, Enemy, 0) [14,19] 0x02 0x00 0x0 0x00 [Divine,PureWater] PursueWithoutHeedAI
+UNIT Ch6Enemy Monk 0x00 Level(6, Enemy, 0) [15,18] 0x00 0x00 0x0 0x00 [Lightning] PursueWithoutHeedAI
+UNIT Ch6Enemy Thief 0x00 Level(6, Enemy, 0) [4,11] 0x00 0x00 0x0 0x00 [Armorslayer,Lockpick,Torch] LootingThiefAI
+UNIT Ch6Enemy Thief 0x00 Level(6, Enemy, 0) [16,4] 0x00 0x00 0x0 0x00 [Armorslayer,Lockpick,Torch] LootingThiefAI
+UNIT Ch6Enemy Brigand 0x00 Level(6, Enemy, 0) [3,20] 0x00 0x00 0x0 0x00 [Hammer,Torch] BrigandAI
+UNIT Ch6Enemy Brigand 0x00 Level(6, Enemy, 0) [19,16] 0x00 0x00 0x0 0x00 [Hammer,Torch] BrigandAI
+UNIT Ch6Enemy Brigand 0x00 Level(6, Enemy, 0) [0,9] 0x00 0x00 0x0 0x00 [Hammer] PursueWithoutHeedAI
+UNIT Ch6Enemy Brigand 0x00 Level(6, Enemy, 0) [1,10] 0x00 0x00 0x0 0x00 [Hammer] PursueWithoutHeedAI
+UNIT Ch6Enemy Brigand 0x00 Level(6, Enemy, 0) [2,11] 0x00 0x00 0x0 0x00 [Hammer] PursueWithoutHeedAI
+UNIT Ch6Enemy Brigand 0x00 Level(6, Enemy, 0) [0,9] 0x00 0x00 0x0 0x00 [Hammer] PursueWithoutHeedAI
+UNIT Ch6Enemy Brigand 0x00 Level(6, Enemy, 0) [9,14] 0x00 0x00 0x0 0x00 [Hammer,DevilAxe] PursueWithoutHeedAI
+UNIT Ch6Enemy Brigand 0x00 Level(6, Enemy, 0) [11,14] 0x00 0x00 0x0 0x00 [Hammer,HandAxe] PursueWithoutHeedAI
+UNIT Ch6Enemy Brigand 0x00 Level(6, Enemy, 0) [7,11] 0x00 0x00 0x0 0x00 [Hammer,HandAxe] PursueWithoutHeedAI
+UNIT Ch6Enemy Brigand 0x00 Level(6, Enemy, 0) [13,11] 0x00 0x00 0x0 0x00 [Hammer,HandAxe] PursueWithoutHeedAI
+UNIT Ch6Enemy Brigand 0x00 Level(6, Enemy, 0) [11,18] 0x00 0x00 0x0 0x00 [Hammer,HandAxe] PursueWithoutHeedAI
+UNIT Ch6Enemy Cavalier 0x00 Level(6, Enemy, 0) [10,14] 0x00 0x00 0x0 0x00 [HeavySpear,Armorslayer] PursueWithoutHeedAI
+UNIT Ch6Enemy Cavalier 0x00 Level(6, Enemy, 0) [0,17] 0x00 0x00 0x0 0x00 [HeavySpear,SteelSword] PursueWithoutHeedAI
+UNIT Ch6Enemy Cavalier 0x00 Level(6, Enemy, 0) [0,19] 0x00 0x00 0x0 0x00 [Armorslayer,Javelin] PursueWithoutHeedAI
+UNIT Ch6Enemy Cavalier 0x00 Level(6, Enemy, 0) [5,15] 0x00 0x00 0x0 0x00 [HeavySpear,Armorslayer] PursueWithoutHeedAI
+UNIT Ch6Enemy Cavalier 0x00 Level(6, Enemy, 0) [5,16] 0x00 0x00 0x0 0x00 [HeavySpear,Armorslayer] PursueWithoutHeedAI
+UNIT Ch6Enemy Cavalier 0x00 Level(6, Enemy, 0) [5,17] 0x00 0x00 0x0 0x00 [HeavySpear,Armorslayer] PursueWithoutHeedAI
+UNIT Ch6Enemy Cavalier 0x00 Level(6, Enemy, 0) [6,4] 0x00 0x00 0x0 0x00 [Armorslayer,Zanbato,Wyrmslayer,SlimSword] PursueWithoutHeedAI
+UNIT Ch6Enemy Cavalier 0x00 Level(6, Enemy, 0) [14,3] 0x00 0x00 0x0 0x00 [HeavySpear,PureWater,PureWater,PureWater] PursueWithoutHeedAI
+UNIT
+
+CavaliersNearBoss:
+UNIT Ch6Enemy Cavalier 0x00 Level(6, Enemy, 0) [0,17] 0x00 0x00 0x0 0x00 [HeavySpear,SteelSword] PursueWithoutHeedAI
+UNIT Ch6Enemy Cavalier 0x00 Level(6, Enemy, 0) [0,19] 0x00 0x00 0x0 0x00 [Armorslayer,Javelin] PursueWithoutHeedAI
+UNIT Ch6Enemy Monk 0x00 Level(6, Enemy, 0) [16,3] 0x00 0x00 0x0 0x00 [Lightning] PursueWithoutHeedAI
+UNIT
+
+WallsOfBrigands:
+UNIT Ch6Enemy Brigand 0x00 Level(6, Enemy, 0) [0,3] 0x00 0x00 0x0 0x00 [Hammer] PursueWithoutHeedAI
+UNIT Ch6Enemy Brigand 0x00 Level(6, Enemy, 0) [0,4] 0x00 0x00 0x0 0x00 [Hammer] PursueWithoutHeedAI
+UNIT Ch6Enemy Brigand 0x00 Level(6, Enemy, 0) [0,5] 0x00 0x00 0x0 0x00 [Hammer] PursueWithoutHeedAI
+UNIT Ch6Enemy Brigand 0x00 Level(6, Enemy, 0) [19,6] 0x00 0x00 0x0 0x00 [Hammer] PursueWithoutHeedAI
+UNIT Ch6Enemy Brigand 0x00 Level(6, Enemy, 0) [19,7] 0x00 0x00 0x0 0x00 [Hammer] PursueWithoutHeedAI
+UNIT Ch6Enemy Brigand 0x00 Level(6, Enemy, 0) [19,8] 0x00 0x00 0x0 0x00 [Hammer] PursueWithoutHeedAI
+UNIT
+
+BackReinforcements:
+UNIT Ch6Enemy Monk 0x00 Level(6, Enemy, 0) [9,0] 0x00 0x00 0x0 0x00 [Lightning] PursueWithoutHeedAI
+UNIT Ch6Enemy Monk 0x00 Level(6, Enemy, 0) [10,0] 0x00 0x00 0x0 0x00 [Lightning] PursueWithoutHeedAI
+UNIT Ch6Enemy Monk 0x00 Level(6, Enemy, 0) [11,0] 0x00 0x00 0x0 0x00 [Lightning] PursueWithoutHeedAI
+UNIT Ch6Enemy Brigand 0x00 Level(6, Enemy, 0) [9,1] 0x00 0x00 0x0 0x00 [Hammer] PursueWithoutHeedAI
+UNIT Ch6Enemy Brigand 0x00 Level(6, Enemy, 0) [10,1] 0x00 0x00 0x0 0x00 [Hammer] PursueWithoutHeedAI
+UNIT Ch6Enemy Brigand 0x00 Level(6, Enemy, 0) [11,1] 0x00 0x00 0x0 0x00 [Hammer] PursueWithoutHeedAI
+UNIT Ch6Enemy Cavalier 0x00 Level(6, Enemy, 0) [12,20] 0x00 0x00 0x0 0x00 [Armorslayer,SilverSword] PursueWithoutHeedAI
+UNIT Ch6Enemy Cavalier 0x00 Level(6, Enemy, 0) [13,20] 0x00 0x00 0x0 0x00 [Armorslayer,SlimLance] PursueWithoutHeedAI
+UNIT
+
+Assassins:
+UNIT Ch6Enemy Cavalier 0x00 Level(6, Enemy, 0) [8,6] 0x00 0x00 0x0 0x00 [Armorslayer] PursueWithoutHeedAI
+UNIT Ch6Enemy Thief 0x00 Level(6, Enemy, 0) [12,6] 0x00 0x00 0x0 0x00 [Armorslayer] PursueWithoutHeedAI
+UNIT
+
+VultureUnitGroup:
+UNIT Vulture Archer 0x00 Level(7, Ally, 0) [4,11] 0x00 0x00 0x0 0x00 [ShortBow,Longbow,ChestKey] PursueWithoutHeedAI
+UNIT
