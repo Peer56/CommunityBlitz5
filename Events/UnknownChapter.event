@@ -1,0 +1,145 @@
+//EventPointerTable(0x,ThisChapter)
+
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+
+#define EarlyGameLevel 5
+#define EarlyGameLevel2 7
+
+
+//haven't set village text yet / village target by brigands events 
+
+
+
+TurnBasedEvents:
+TURN 0x0 NWFortReinforceEvent [4,0] 0x0
+TURN 0x0 NEFortReinforceEvent [3,0] 0x0
+TURN 0x0 SEFortReinforceEvent [2,0] 0x0
+
+TURN 0x0 NWFortReinforceEvent [8,0] 0x0
+TURN 0x0 NEFortReinforceEvent [7,0] 0x0
+TURN 0x0 SEFortReinforceEvent [5,0] 0x0
+END_MAIN
+
+NWFortReinforceEvent:
+ReinforcementEvent(NWUnit)
+
+NEFortReinforceEvent:
+ReinforcementEvent(NEUnit)
+
+SEFortReinforceEvent:
+ReinforcementEvent(SEUnit)
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+Village(0x8,VillageEventNorth,1,3)
+Village(0x9,VillageEventSE,9,10)
+END_MAIN
+
+VillageEventNorth:
+VillageEventItem(Ch3VillageText, Village, Zanbato)
+
+VillageEventSE:
+VillageEventItem(Ch3VillageText, Village, Zanbato)
+
+
+
+
+MiscBasedEvents:
+DefeatBoss(EndingScene)
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno1:
+END_MAIN
+
+Dunno2:
+END_MAIN
+
+Dunno3:
+END_MAIN
+
+Traps1:
+END_MAIN
+
+Traps2:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+Units:
+UNIT Eirika EphraimLord 0x00 Level(1, Ally, 0) [1,17] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth EphraimMasterLord Gunborg Level(1, Ally, 0) [0,18] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth EphraimMasterLord Gunborg Level(1, Ally, 0) [2,18] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth EphraimMasterLord Gunborg Level(1, Ally, 0) [1,19] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth EphraimMasterLord Gunborg Level(1, Ally, 0) [14,17] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth EphraimMasterLord Gunborg Level(1, Ally, 0) [13,18] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth EphraimMasterLord Gunborg Level(1, Ally, 0) [12,19] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT
+
+// These enemies are meant to be pretty weak for an early game chapter. Low lvl + poor equipment. 
+
+Enemies:
+UNIT Ch19Enemies Myrmidon 0x00 Level(EarlyGameLevel, Enemy, 1) [7,10] 0x00 0x00 0x0 0x00 [SlimSword] GroupOneAI
+UNIT Ch19Enemies Soldier 0x00 Level(EarlyGameLevel2, Enemy, 1) [9,12] 0x00 0x00 0x0 0x00 [SlimLance] GroupOneAI
+
+UNIT Ch19Enemies Mercenary 0x00 Level(EarlyGameLevel2, Enemy, 1) [4,6] 0x00 0x00 0x0 0x00 [IronSword] GroupTwoAI
+UNIT Ch19Enemies Thief 0x00 Level(EarlyGameLevel2, Enemy, 1) [6,6] 0x00 0x00 0x0 0x00 [SlimSword] GroupTwoAI
+
+UNIT Ch19Enemies Myrmidon 0x00 Level(EarlyGameLevel, Enemy, 1) [12,9] 0x00 0x00 0x0 0x00 [SlimSword] GroupThreeAI
+UNIT Ch19Enemies Archer 0x00 Level(EarlyGameLevel, Enemy, 1) [14,8] 0x00 0x00 0x0 0x00 [PoisonBow] GroupThreeAI
+
+UNIT Ch19Enemies Thief 0x00 Level(EarlyGameLevel, Enemy, 1) [13,5] 0x00 0x00 0x0 0x00 [SlimSword] GroupFourAI
+UNIT Ch19Enemies Mage 0x00 Level(EarlyGameLevel, Enemy, 1) [11,4] 0x00 0x00 0x0 0x00 [Fire] GroupFourAI
+UNIT Ch19Enemies Cavalier 0x00 Level(EarlyGameLevel, Enemy, 1) [13,2] 0x00 0x00 0x0 0x00 [IronLance, IronSword] GroupFourAI
+
+UNIT Ch19Enemies Fighter 0x00 Level(EarlyGameLevel2, Enemy, 1) [5,1] 0x00 0x00 0x0 0x00 [IronAxe] GroupFiveAI
+UNIT Ch19Enemies WyvernRider 0x00 Level(EarlyGameLevel2, Enemy, 1) [9,1] 0x00 0x00 0x0 0x00 [SlimLance] GroupFiveAI
+
+UNIT Ch19Enemies Archer 0x00 Level(EarlyGameLevel, Enemy, 1) [0,5] 0x00 0x00 0x0 0x00 [IronBow] AttackInRangeAI
+UNIT Ch19Enemies Brigand 0x00 Level(EarlyGameLevel2, Enemy, 1) [13,14] 0x00 0x00 0x0 0x00 0x22 0x00 0x00 0x00 0x00 0x04 0x04 0x00 //poison axe, attack village 
+UNIT Ch19Enemies Rogue 0x00 Level(1, Enemy, 1) [7,2] 0x00 0x00 0x0 0x00 [PoisonSword] NeverMoveAI //boss 
+UNIT
+
+NWUnit
+UNIT Ch19Enemies Soldier 0x00 Level(EarlyGameLevel, Enemy, 1) [4,4] 0x00 0x00 0x0 0x00 [Javelin] PursueWithoutHeedAI
+UNIT
+
+NEUnit
+UNIT Ch19Enemies Soldier 0x00 Level(EarlyGameLevel, Enemy, 1) [10,4] 0x00 0x00 0x0 0x00 [IronLance] PursueWithoutHeedAI
+UNIT
+
+SEUnit
+UNIT Ch19Enemies Cavalier 0x00 Level(EarlyGameLevel, Enemy, 1) [13,9] 0x00 0x00 0x0 0x00 [SlimLance] PursueWithoutHeedAI
+UNIT
+
+
+
+
+BeginningScene:
+LOAD1 0x1 Units
+ENUN
+LOAD1 0x1 Enemies
+ENUN
+NoFade
+GotoPrepScreen
+ENDA
+
+EndingScene:
+MNC2 2
+NoFade
+ENDA
+

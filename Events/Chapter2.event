@@ -1,0 +1,157 @@
+// Chapter 2 for FEU Community Blitz 5
+// By Pandan
+EventPointerTable(0xA, ThisChapter)
+
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno1 Dunno2 Dunno3
+POIN Tutorial
+POIN Traps1 Traps2
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+ALIGN 4
+
+TurnBasedEvents:
+TURN 0x0 SoldierReinforcement [2,0] 0x0
+//TURN 0x0 BrigandReinforcement [3,0] 0x0
+//TURN 0x0 PegasusReinforcement [5,0] 0x0
+//TURN 0x0 BossChangeAI [6,0] 0x0
+TURN 0x0 CavalierReinforcement [8,0] 0x0
+END_MAIN
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+Chest(IronBlade,0,1)
+Chest(LightBrand,1,0)
+Door(2,2)
+//Seize
+Seize(12,6)
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+AREA 0x10 HiddenItem [18,15] [18,15]
+END_MAIN
+
+Dunno1:
+END_MAIN
+
+Dunno2:
+END_MAIN
+
+Dunno3:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+Traps1:
+ENDTRAP
+ALIGN 4
+
+Traps2:
+ENDTRAP
+ALIGN 4
+
+HiddenItem:
+GiveItem(Nidhogg,0xFFFF)
+ENDA
+
+SoldierReinforcement:
+ReinforcementEvent(SoldierReinforcementUnit)
+ENDA
+
+ThiefReinforcement:
+ReinforcementEvent(ThiefReinforcementUnit)
+ENDA
+
+CavalierReinforcement:
+ReinforcementEvent(CavalierReinforcementUnit)
+ENDA
+
+SoldierReinforcementUnit:
+UNIT 0x72 Soldier 0x00 Level(2,Enemy,True) [0,16] 0x00 0x00 0x0 0x00 [IronLance] PursueWithoutHeedAI
+UNIT 0x72 Mercenary 0x00 Level(2,Enemy,True) [0,15] 0x00 0x00 0x0 0x00 [IronSword] PursueWithoutHeedAI
+UNIT
+
+ThiefReinforcementUnit:
+UNIT 0x72 Thief 0x00 Level(2,Enemy,True) [3,0] 0x00 0x00 0x0 0x00 [IronSword, Lockpick] [ThiefActionThenEscape,Pursue]
+UNIT
+
+ALIGN 4
+Chapter2EnemyEscapePoints:
+EscapePoint(3,0,NoMove)
+EscapePointEnd
+
+EscapePointPointerTable(1,Chapter2EnemyEscapePoints)
+
+
+CavalierReinforcementUnit:
+UNIT 0x73 Cavalier 0x00 Level(2,Enemy,True) [11,7] 0x00 0x00 0x0 0x00 [IronLance] PursueWithoutHeedAI
+UNIT 0x73 Cavalier 0x00 Level(2,Enemy,True) [13,7] 0x00 0x00 0x0 0x00 [IronSword] PursueWithoutHeedAI
+
+// Player Units (Pre-loaded ch1 crew)
+Units:
+UNIT 0x01 0x01 0x00 Level(1, Ally, False) [15,16] 0x00 0x00 0x0 0x00 [0x00] NoAI
+UNIT 0x02 0x01 0x00 Level(1, Ally, False) [15,15] 0x00 0x00 0x0 0x00 [0x00] NoAI
+UNIT 0x02 0x01 0x00 Level(1, Ally, False) [15,14] 0x00 0x00 0x0 0x00 [0x00] NoAI
+UNIT 0x02 0x01 0x00 Level(1, Ally, False) [16,16] 0x00 0x00 0x0 0x00 [0x00] NoAI
+UNIT 0x02 0x01 0x00 Level(1, Ally, False) [16,17] 0x00 0x00 0x0 0x00 [0x00] NoAI
+UNIT
+
+// New Units Paula and Serahlta
+NewUnits:
+UNIT Paula Myrmidon_F 0x00 Level(2, Ally, False) [13,17] 0 0 0 0 [KillingEdge, Vulnerary] NeverMoveAI // Paula
+UNIT Serahlta Thief 0x00 Level(2, Ally, False) [14,16] 0 0 0 0 [IronSword, Lockpick, Vulnerary] NeverMoveAI	 // Serahlta
+UNIT
+
+// Enemies
+Enemies:
+UNIT Kitabei Myrmidon 0x00 Level(5, Enemy, False) [12,6] 2 0 0 0 [LightBrand] NeverMoveAI //LightBrand should be droppable
+UNIT 0x72 Monk 0x00 Level(2, Enemy, True) [16,11] 0 0 0 0 [Lightning] ChaseOnceApproachedAI
+UNIT 0x72 Fighter 0x00 Level(2, Enemy, True) [17,8] 0 0 0 0 [IronAxe] ChaseOnceApproachedAI  
+UNIT 0x72 Myrmidon 0x00 Level(2, Enemy, True) [17,5] 2 0 0 0 [IronBlade] ChaseOnceApproachedAI  
+UNIT 0x72 Knight 0x00 Level(3, Enemy, True) [11,12] 0 0 0 0 [Javelin, Vulnerary] NeverMoveAI  
+UNIT 0x72 Knight 0x00 Level(3, Enemy, True) [10,12] 0 0 0 0 [Javelin] NeverMoveAI
+UNIT 0x72 Fighter 0x00 Level(2, Enemy, True) [10,16] 0 0 0 0 [IronAxe] ChaseOnceApproachedAI  
+UNIT 0x72 Myrmidon 0x00 Level(2, Enemy, True) [9,15] 0 0 0 0 [IronSword] ChaseOnceApproachedAI  
+UNIT 0x72 Soldier 0x00 Level(2, Enemy, True) [2,16] 0 0 0 0 [IronLance] ChaseOnceApproachedAI  
+UNIT 0x72 Soldier 0x00 Level(2, Enemy, True) [1,14] 0 0 0 0 [IronLance] ChaseOnceApproachedAI  
+UNIT 0x72 Myrmidon 0x00 Level(2, Enemy, True) [3,8] 0 0 0 0 [IronSword] ChaseOnceApproachedAI  
+UNIT 0x72 Soldier 0x00 Level(2, Enemy, True) [2,7] 2 0 0 0 [HeavySpear] ChaseOnceApproachedAI  
+UNIT 0x72 Archer 0x00 Level(2, Enemy, True) [0,9] 0 0 0 0 [IronBow] ChaseOnceApproachedAI  
+UNIT 0x72 Monk 0x00 Level(2, Enemy, True) [5,8] 0 0 0 0 [Lightning] ChaseOnceApproachedAI  
+UNIT 0x72 Monk 0x00 Level(2, Enemy, True) [5,10] 0 0 0 0 [Lightning] ChaseOnceApproachedAI  
+UNIT 0x72 Cavalier 0x00 Level(2, Enemy, True) [0,3] 0 0 0 0 [KillingEdge, RedGem] ChaseOnceApproachedAI  
+UNIT 0x72 Cavalier 0x00 Level(2, Enemy, True) [4,5] 0 0 0 0 [IronSword] ChaseOnceApproachedAI  
+UNIT 0x72 Cavalier 0x00 Level(2, Enemy, True) [8,7] 0 0 0 0 [IronLance] ChaseOnceApproachedAI  
+UNIT 0x72 Cavalier 0x00 Level(2, Enemy, True) [8,11] 0 0 0 0 [IronSword] ChaseOnceApproachedAI  
+UNIT 0x72 Myrmidon 0x00 Level(2, Enemy, True) [12,2] 0 0 0 0 [IronSword] ChaseOnceApproachedAI  
+UNIT 0x72 Monk 0x00 Level(2, Enemy, True) [13,1] 0 0 0 0 [Lightning] ChaseOnceApproachedAI    
+UNIT 0x72 Monk 0x00 Level(2, Enemy, True) [14,5] 0 0 0 0 [Lightning] ChaseOnceApproachedAI    
+UNIT 0x72 Archer 0x00 Level(2, Enemy, True) [14,7] 0 0 0 0 [Longbow] ChaseOnceApproachedAI    
+UNIT
+
+
+ALIGN 4
+BeginningScene:
+LOAD1 0x1 NewUnits
+ENUN
+LOAD1 0x1 Enemies
+ENUN
+//Text(Ch2Opening)
+GotoPrepScreen
+NoFade
+ENDA
+
+EndingScene:
+//Text(Ch2Ending)
+MNC2 2
+ENDA

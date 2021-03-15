@@ -53,72 +53,125 @@ POP
 #define SFXGroup 6
 //#define VoicegroupOffset 0x207470 //if you want to use a static offset
 
-// Venus Lighthouse (Golden Sun)
+// Venus Lighthouse (Golden Sun) - player phase
 {
 SongTable(VenusLighthouse,gsvenuslighthousefevd,1)
 #include "songs/gsvenuslighthousefevd.event"
 }
-// Praying Hands (Castlevania: Belmont's Revenge)
+// Praying Hands (Castlevania: Belmont's Revenge) - player phase
 {
 SongTable(PrayingHands,cvbrprayinghands,1)
 #include "songs/cvbrprayinghands.event"
 }
-// Woodland Ruins (Etrian Odyssey 2)
+// Wall of Defense (Ogre Battle (PS1)) - player phase
+{
+SongTable(WallOfDefense,obps1wallofdefense,1)
+#include "songs/obps1wallofdefense.event"
+}
+// Hydra (Thunder Force 3) - player phase
+{
+SongTable(Hydra,tf3hydra,1)
+#include "songs/tf3hydra.event"
+}
+// Woodland Ruins (Etrian Odyssey 2) - player phase
 {
 SongTable(WoodlandRuins,eo2woodlandruins,1)
 #include "songs/eo2woodlandruins.event"
 }
-// Soldat (Langrisser 2)
+// Soldat (Langrisser 2) - player phase
 {
 SongTable(Lang2Soldier,lang2soldat,1)
 #include "songs/lang2soldat.event"
 }
-// The Grubby Blue Dark (Thunder Force 3) (arrange credit: nZero)
+// The Grubby Blue Dark (Thunder Force 3) (arrange credit: nZero) - player phase
 {
 SongTable(GrubbyBlueDark,tf3thegrubbybluedark,1)
 #include "songs/tf3thegrubbybluedark.event"
 }
-// Fog of Phantom (Ogre Battle (PS1))
+// Fog of Phantom (Ogre Battle (PS1)) - player phase fog of war
 {
 SongTable(FogOfPhantom,obps1fogofphantom,1)
 #include "songs/obps1fogofphantom.event"
 }
-// Top Floor (Castlevania: Aria of Sorrow)
+// Top Floor (Castlevania: Aria of Sorrow) - player phase
 {
 SongTable(TopFloor,cvaostopfloor,1)
 #include "songs/cvaostopfloor.event"
 }
-// Morgan (Langrisser 2)
+// Distant Roads but evil - player phase endgame
+{
+SongTable(0xe,themostdistantroad,1)
+#include "songs/themostdistantroad.event"
+}
+// Morgan (Langrisser 2) - enemy phase
 {
 SongTable(Morgan,lang2morgan,1)
 #include "songs/lang2morgan.event"
 }
-// Hunger Made Them Desperate (Thunder Force 3) (arrange credit: nZero)
+// At a Place Nobody Knows (Mega Man Legends) - enemy phase
+{
+SongTable(AtAPlaceNobodyKnows,mmlataplacenobodyknows,1)
+#include "songs/mmlataplacenobodyknows.event"
+}
+// Elysium Battle (Mega Man Legends 2) - enemy phase
+{
+SongTable(Elysium,mml2elysiumbattle,1)
+#include "songs/mml2elysiumbattle.event"
+}
+// Bloodpool (Act Raiser) - enemy phase
+{
+SongTable(Bloodpool,arbloodpool,1)
+#include "songs/arbloodpool.event"
+}
+// Hunger Made Them Desperate (Thunder Force 3) (arrange credit: nZero) - enemy phase endgame
 {
 SongTable(HungerMadeThemDesperate,tf3hungermadethemdesperate,1)
 #include "songs/tf3hungermadethemdesperate.event"
 }
-// Evil Gods (Castlevania: Belmont's Revenge)
+// Boss (Shatterhand) - boss
+{
+SongTable(Shatterhand,shatterhandboss,0)
+#include "songs/shatterhandboss.event"
+}
+// Evil Gods (Castlevania: Belmont's Revenge) - powerful boss
 {
 SongTable(EvilGods,cvbrevilgods,0)
 #include "songs/cvbrevilgods.event"
 }
-// Big Battle (Castlevania: Circle of the Moon)
+// Big Battle (Castlevania: Circle of the Moon) - for Zaim's chapter
 {
 SongTable(BigBattle,cvcotmbigbattle,1)
 #include "songs/cvcotmbigbattle.event"
 }
-
-
-// Action Game Master (Action 52)
+// Binding Vow but doesn't take 1000 years to start up/I ran out of ideas - ally phase
+{
+SongTable(0xf,bindingneckties,1)
+#include "songs/bindingneckties.event"
+}
+// Action Game Master (Action 52) - victory is near
 {
 SongTable(Cheetahmen,cheetahmen,1)
 #include "songs/cheetahmen.event"
 }
-// The First Campaign (Etrian Odyssey 2)
+// Thrust the Sword of Justice (Star Ocean: The Second Story) - generic attack
+{
+SongTable(0x19,so2battle,0)
+#include "songs/so2battle.event"
+}
+// Chivalry and Savagery (Ogre Battle (PS1)) - generic defense
+{
+SongTable(0x1a,obps1chivalryandsavagery,0)
+#include "songs/obps1chivalryandsavagery.event"
+}
+// The First Campaign (Etrian Odyssey 2) - recruitment
 {
 SongTable(TheFirstCampaign,eo2thefirstcampaign,0)
 #include "songs/eo2thefirstcampaign.event"
+}
+// Requiem (Langrisser 2) - unit died
+{
+SongTable(0x3f,lang2requiem,0)
+#include "songs/lang2requiem.event"
 }
 
 {
@@ -126,11 +179,13 @@ SongTable(InkMeUp,InkMeUpSplatoon,1)
 #include "songs/InkMeUpSplatoon.event"
 }
 
-// Add your song here!
 {
 SongTable(TheBoysGotWings,ys3wings,1)
 #include "songs/ys3wings.event"
 }
+
+
+// Add your song here!
 
 
 // --------------- PART 3: VOICE TABLES ---------------

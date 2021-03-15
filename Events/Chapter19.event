@@ -110,7 +110,7 @@ ENDA
 AREA 0x3 EndingScene [7,0] [7,0]
 
 EndingScene:
-MNCH 20
+MNC2 19
 ENDA
 
 // Events

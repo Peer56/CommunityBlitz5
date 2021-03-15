@@ -245,3 +245,6 @@ POP
     #include "Necessary/SuspendDebuffs/SuspendExpansion.event"
 
   #endif // USE_SAVE_EXPANSION
+
+  ALIGN 4
+  #include "ExternalHacks/GroupAI/GroupAI.event"
