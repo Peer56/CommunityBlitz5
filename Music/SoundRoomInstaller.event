@@ -29,20 +29,38 @@ POP
 
 ALIGN 4
 SoundRoomList:
+
+//Map Music
+SoundRoomEntry(WallOfDefense,0,SongName_WallOfDefense)
+SoundRoomEntry(Hydra,0,SongName_Hydra)
 SoundRoomEntry(VenusLighthouse,0,SongName_VenusLighthouse)
-SoundRoomEntry(EvilGods,0,SongName_EvilGods)
 SoundRoomEntry(PrayingHands,0,SongName_PrayingHands)
-SoundRoomEntry(BigBattle,0,SongName_BigBattle)
 SoundRoomEntry(WoodlandRuins,0,SongName_WoodlandRuins)
 SoundRoomEntry(Lang2Soldier,0,SongName_Lang2Soldier)
-SoundRoomEntry(Cheetahmen,0,SongName_Cheetahmen)
 SoundRoomEntry(GrubbyBlueDark,0,SongName_GrubbyBlueDark)
+SoundRoomEntry(TheMostDistantRoad,0,SongName_TheMostDistantRoad)
+SoundRoomEntry(Cheetahmen,0,SongName_Cheetahmen)
 SoundRoomEntry(FogOfPhantom,0,SongName_FogOfPhantom)
 SoundRoomEntry(TopFloor,0,SongName_TopFloor)
+SoundRoomEntry(AtAPlaceNobodyKnows,0,SongName_AtAPlaceNobodyKnows)
 SoundRoomEntry(Morgan,0,SongName_Morgan)
+SoundRoomEntry(Bloodpool,0,SongName_Bloodpool)
 SoundRoomEntry(HungerMadeThemDesperate,0,SongName_HungerMadeThemDesperate)
+SoundRoomEntry(Elysium,0,SongName_Elysium)
+SoundRoomEntry(BigBattle,0,SongName_BigBattle)
 SoundRoomEntry(InkMeUp,0,SongName_InkMeUp)
 SoundRoomEntry(TheBoysGotWings,0,SongName_TheBoysGotWings)
+
+//Battle Music
+SoundRoomEntry(SwordOfJustice,0,SongName_SwordOfJustice)
+SoundRoomEntry(ChivalryAndSavagery,0,SongName_ChivalryAndSavagery)
+SoundRoomEntry(Shatterhand,0,SongName_Shatterhand)
+SoundRoomEntry(EvilGods,0,SongName_EvilGods)
+
+//Other Music
+SoundRoomEntry(TheFirstCampaign,0,SongName_TheFirstCampaign)
+SoundRoomEntry(Lang2Requiem,0,SongName_Lang2Requiem)
+
 
 SoundRoomTerminator
 
