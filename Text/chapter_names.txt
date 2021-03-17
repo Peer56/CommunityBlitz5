@@ -30,7 +30,7 @@
 10: [X]
 
 ## Ch11Name
-11: Figure it Out[X]
+11: Gold Rush[X]
 
 ## Ch12Name
 12: Tower of Darm[X]
@@ -39,10 +39,10 @@
 13: Temple Siege[X]
 
 ## Ch14Name
-14: [X]
+14: Howling Valley[X]
 
 ## Ch15Name
-15: [X]
+15: Keep It Lowkey[X]
 
 ## Ch16Name
 16: Betrayal[X]
@@ -51,7 +51,7 @@
 17: Eternal Ritual[X]
 
 ## Ch18Name
-18: [X]
+18: King's Cave[X]
 
 ## Ch19Name
 19: Ascendance[X]

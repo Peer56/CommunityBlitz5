@@ -1,14 +1,14 @@
 ## Ch7Op
-[OpenFarRight][LoadFace][LorettaPortrait][0x1][OpenRight][LoadFace][FrancinePortrait][0x1][OpenMidLeft][LoadFace][WestleyPortrait][0x1]
+[OpenFarRight][LoadLoretta][OpenRight][LoadFrancine][OpenMidLeft][LoadWestley]
 [OpenMidLeft]Stop right there, easterners![A]
 [OpenRight]No, I don't think we will.[A]
-[OpenMidLeft]I didn't want to do this, but it is necessary.[NLA]
+[OpenMidLeft]I didn't want to do this, but it is necessary.[ANL]
 Face my western army![A]
 [OpenFarRight]If you or your army gets near us,[NL] 
 I will beat you to death.[A]
-[OpenMidLeft]But you're a cleric?
-[OpenFarRight]Dang. You have a point. 
-[OpenMidLeft][ClearFace][OpenMidLeft][LoadFace][GunborgPortrait][0x1]
+[OpenMidLeft]But you're a cleric?[A]
+[OpenFarRight]Dang. You have a point.[A]
+[OpenMidLeft][ClearFace][OpenMidLeft][LoadGunborg]
 [OpenMidLeft]Hello, what is transpiring here?[A]
 [OpenRight]This mean man from the west is bullying us easterners.[A]
 [OpenMidLeft]Damn, that sucks. Want us to kill him for you?[A]
@@ -20,7 +20,7 @@ I don't want to buy any Girl Scout Cookies.[A]
 Go away. Here, take this and leave me alone.[A][X]
 
 ## Ch7Ending
-[OpenFarRight][LoadFace][LorettaPortrait][0x1][OpenRight][LoadFace][FrancinePortrait][0x1][OpenMidLeft][LoadFace][WestleyPortrait][0x1]
+[OpenFarRight][LoadLoretta][OpenRight][LoadFrancine][OpenMidLeft][LoadWestley]
 [OpenMidLeft]I'm sorry for trying to murder you.[A]
 [OpenFarRight]It's okay.[NL]
 We needed an excuse to join Gunborg anyways.[A]
@@ -34,7 +34,7 @@ We needed an excuse to join Gunborg anyways.[A]
 [OpenLeft]*Glub Glub*[A][X]
 
 ## Ch16Op
-[OpenFarRight][LoadFace][Charles][0x1][OpenRight][LoadFace][Hosay][0x1][OpenMidLeft][LoadFace][Darias][0x1]
+[OpenFarRight][LoadCharles][OpenRight][LoadHosay][OpenMidLeft][LoadDarias]
 [OpenRight]Darias, how could you betray us?[A]
 [OpenMidLeft]It was easy.[A]
 [OpenRight]You were my best friend![A]
@@ -43,15 +43,15 @@ We needed an excuse to join Gunborg anyways.[A]
 [OpenMidLeft]You must.[A][X]
 
 ## Ch16Ending
-[OpenFarRight][LoadFace][Charles][0x1][OpenRight][LoadFace][Hosay][0x1]
+[OpenFarRight][LoadCharles][OpenRight][LoadHosay]
 [OpenRight]Darias...[A]
 [OpenFarRight]He was a fool.[A]
 [OpenRight]I thought we were friends...[A]
 [OpenFarRight]My condolences.[A]
 [OpenRight]Alright, enough crying.[A]
-[OpenMidLeft][LoadFace][Gunborg][0x1]
+[OpenMidLeft][LoadGunborg]
 [OpenMidLeft]You only shed a single tear.[A]
 [OpenRight]From this day forward, I will live for him![A]
 [OpenMidLeft]What are you talking about?[A]
 [OpenRight]Nothing will stop me![A]
-[OpenMidLeft]*Sigh*
+[OpenMidLeft]*Sigh*[A][X]

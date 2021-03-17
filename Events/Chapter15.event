@@ -1,4 +1,4 @@
-EventPointerTable(EventPointer, PointerList)
+EventPointerTable(0x41, PointerList)
 
 PointerList:
 	POIN TurnBasedEvents
@@ -70,7 +70,7 @@ VillageEvent:
 
 UnitsVill:
 	UNIT Franklin Valkyrie Gunborg Level(11,Ally,False) [8,2] 0x00 0x00 0x0 0x00 [Shine,Physic,Vulnerary] NoAI
-	UNIT Theodore Bishop Gunborg Level (11, Ally, False) [8,4] 0x00 0x00 0x0 0x00 [Divine,Mend,Vulnerary] NoAI
+	UNIT Theodore Bishop Gunborg Level(11, Ally, False) [8,4] 0x00 0x00 0x0 0x00 [Divine,Mend,Vulnerary] NoAI
 	UNIT
 
 Traps1:
@@ -88,6 +88,6 @@ BeginningScene:
 	ENDA
 
 EndingScene:
-	MNC2 next_chapter
+	MNC2 15
 	NoFade
 	ENDA
