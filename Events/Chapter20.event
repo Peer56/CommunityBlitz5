@@ -1,6 +1,28 @@
 #include EAstdlib.event
 
-EventPointerTable(0x07,Chapter20Events)
+EventPointerTable(0x5A,Chapter20Events)
+
+//Chapter Specific Definitions
+	//Map Changes
+	#define Mirage1ID 0x4
+	#define Mirage2ID 0x5
+	#define Mirage3ID 0x6
+	#define Mirage4ID 0x7
+	#define Mirage5ID 0x8
+	#define FinalMirageID 0x9
+
+	//Event IDs
+	#define Mirage1Flag 0x8
+	#define Mirage2Flag 0x9
+	#define Mirage3Flag 0xA
+	#define Mirage4Flag 0xB
+	#define Mirage5Flag 0xC
+	#define FinalMirageFlag 0xD
+	#define SeizeFlag 0xE
+	//#define SecretShopFlag 0xE
+
+	//Other
+	#define Ch20GenericsLvl 13
 
 Chapter20Events:
 POIN TurnBasedEvents
@@ -30,7 +52,6 @@ UNIT Bastion Knight Gunborg Level(1, Ally, 0) [15,0] 0x00 0x00 0x0 0x00 [0x00] N
 UNIT Bastion Knight Gunborg Level(1, Ally, 0) [19,2] 0x00 0x00 0x0 0x00 [0x00] NoAI 
 UNIT
 
-
 TurnBasedEvents:
 END_MAIN
 
@@ -42,13 +63,16 @@ SecretShop(RuinsShop,2,0)
 Vendor(ch20Vendor,11,10)
 Village(0x0,Ch20MiddleVillage,8,11)
 Village(0x0,Ch20CornerVillage,1,22)
-//Use Seize until chapter events are finished
-Seize(3,EndingScene,8,2) //temporary
+Seize(Mirage1Flag,ClearMirage1,16,13)
+Seize(Mirage2Flag,ClearMirage2,18,21)
+Seize(Mirage3Flag,ClearMirage3,12,21)
+Seize(Mirage4Flag,ClearMirage4,2,18)
+Seize(Mirage5Flag,ClearMirage5,2,7)
+Seize(SeizeFlag,SeizeEvent,8,2)
 END_MAIN
 
 MiscBasedEvents:
 CauseGameOverIfLordDies
-AFEV 0xb ClearMirage1 0x8
 END_MAIN
 
 Dunno:
@@ -69,15 +93,30 @@ LOAD1 0x1 Units
 ENUN
 LOAD1 0x1 StartingEnemies
 ENUN
+
+ENUT Mirage2Flag
+ENUT Mirage3Flag
+ENUT Mirage4Flag
+ENUT Mirage5Flag
+ENUT FinalMirageFlag
+
+COUNTER_SET 0x0 0x0
+WEATHER SandStorm
 GotoPrepScreen
 NoFade
 ENDA
 
 EndingScene:
 //go to next chapter
+MNC2 20
 ENDA
 
 // Events
+SeizeEvent:
+ENUT 0x3
+CALL EndingScene
+ENDA
+
 Ch20MiddleVillage:
 //VillageEventItem(textid,Village,BraveAxe)
 ENDA
@@ -87,37 +126,149 @@ Ch20CornerVillage:
 ENDA
 
 ClearMirage1:
+CAMERA [14,16]
+STAL3 5
+TILECHANGE Mirage1ID
+STAL3 10
+LOAD1 0x0 MirageEnemies1
+ENUN
+ENUF Mirage2Flag
+ENUF Mirage3Flag
+ENUF Mirage4Flag
+
+COUNTER_INC 0x0
+NoFade
 ENDA
 
+ClearMirage2:
+TILECHANGE Mirage2ID
+COUNTER_INC 0x0
+CALL StartMirage5
+NoFade
+ENDA
+
+ClearMirage3:
+CAMERA [9,14]
+STAL3 4
+TILECHANGE Mirage3ID
+STAL3 4
+COUNTER_INC 0x0
+CALL StartMirage5
+NoFade
+ENDA
+
+ClearMirage4:
+TILECHANGE Mirage4ID
+STAL3 4
+COUNTER_INC 0x0
+CALL StartMirage5
+NoFade
+ENDA
+
+StartMirage5:
+SVAL s1 True
+CHECK_EVENTID Mirage5Flag
+IFNE 4 sC s1
+	GOTO 1
+LABEL 4
+SVAL s1 True
+CHECK_EVENTID FinalMirageFlag
+IFNE 3 sC s1
+	GOTO 1
+LABEL 3
+//unset flag if over 3 points seized
+COUNTER_CHECK 0x0
+SVAL 0x1 3
+IFLT 2 sC s1
+	GOTO 1
+LABEL 2
+ENUF Mirage5Flag
+CAMERA [2,7]
+STAL3 4
+LOAD1 0x0 MirageEnemies5
+ENUN
+LABEL 1
+ENDA
+
+ClearMirage5:
+TILECHANGE Mirage5ID
+CALL ClearFinalMirage
+NoFade
+ENDA
+
+ClearFinalMirage:
+CAMERA [8,0]
+STAL3 8
+//play some kind of sound and/or visual effect
+TILECHANGE FinalMirageID
+STAL3 4
+LOAD1 0x0 FinalMirageEnemies
+ENUN
+ENUF SeizeFlag
+WEATHER Clear
+// STAL3 8
+// WEATHER Flames
+ENDA
 
 // Manual Movement
 
 // Scripted Fights
 
 // Units
+NewAllies:
+UNIT
+
 StartingEnemies:
-UNIT Ch20Boss Maelduin 0x00 Level(13, Enemy, 1) [16,13] 0x00 0x00 0x0 0x00 [SilverAxe] GuardTileAI 
-UNIT Ch20Generics1 Sniper 0x00 Level(13, Enemy, 1) [12,8] 0x00 0x00 0x0 0x00 [Longbow] AttackInRangeAI 
-UNIT Ch20Generics1 Sniper 0x00 Level(13, Enemy, 1) [6,2] 0x00 0x00 0x0 0x00 [SilverBow] AttackInRangeAI 
-UNIT Ch20Generics1 Sniper 0x00 Level(13, Enemy, 1) [10,2] 0x00 0x00 0x0 0x00 [SilverBow] AttackInRangeAI 
-UNIT Ch20Generics1 Sage 0x00 Level(13, Enemy, 1) [19,16] 0x00 0x00 0x0 0x00 [Elfire] ChaseOnceApproachedAI 
-UNIT Ch20Generics1 Wight 0x00 Level(13, Enemy, 1) [13,14] 0x00 0x00 0x0 0x00 [SilverLance] DefaultAI 
-UNIT Ch20Generics1 Wight 0x00 Level(13, Enemy, 1) [17,15] 0x00 0x00 0x0 0x00 [SilverLance] DefaultAI 
-UNIT Ch20Generics1 Warrior 0x00 Level(13, Enemy, 1) [12,15] 0x00 0x00 0x0 0x00 [Swordreaver] DefaultAI 
-UNIT Ch20Generics1 Druid 0x00 Level(13, Enemy, 1) [15,11] 0x00 0x00 0x0 0x00 [Fenrir] DefaultAI 
-UNIT Ch20Generics1 Berserker 0x00 Level(13, Enemy, 1) [1,1] 0x00 0x00 0x0 0x00 [SilverAxe] LootingThiefAI 
+UNIT Ch20Generics2 Maelduin 0x00 Level(13, Enemy, 1) [16,13] 0x00 0x00 0x0 0x00 [SilverAxe] GuardTileAI 
+UNIT Ch20Generics1 Sniper Ch20Boss Level(Ch20GenericsLvl, Enemy, 1) [12,8] 0x00 0x00 0x0 0x00 [Longbow] AttackInRangeAI 
+UNIT Ch20Generics1 Sniper Ch20Boss Level(Ch20GenericsLvl, Enemy, 1) [6,2] 0x00 0x00 0x0 0x00 [SilverBow] AttackInRangeAI 
+UNIT Ch20Generics1 Sniper Ch20Boss Level(Ch20GenericsLvl, Enemy, 1) [10,2] 0x00 0x00 0x0 0x00 [SilverBow] AttackInRangeAI 
+UNIT Ch20Generics1 Sage Ch20Boss Level(Ch20GenericsLvl, Enemy, 1) [19,16] 0x00 0x00 0x0 0x00 [Elfire] ChaseOnceApproachedAI 
+UNIT Ch20Generics1 Wight Ch20Boss Level(Ch20GenericsLvl, Enemy, 1) [13,14] 0x00 0x00 0x0 0x00 [SilverLance] DefaultAI 
+UNIT Ch20Generics1 Wight Ch20Boss Level(Ch20GenericsLvl, Enemy, 1) [17,15] 0x00 0x00 0x0 0x00 [SilverLance] DefaultAI 
+UNIT Ch20Generics1 Warrior Ch20Boss Level(Ch20GenericsLvl, Enemy, 1) [12,15] 0x00 0x00 0x0 0x00 [Swordreaver] DefaultAI 
+UNIT Ch20Generics1 Druid Ch20Boss Level(Ch20GenericsLvl, Enemy, 1) [15,11] 0x00 0x00 0x0 0x00 [Fenrir] DefaultAI 
+UNIT Ch20Generics1 Berserker Ch20Boss Level(Ch20GenericsLvl, Enemy, 1) [1,1] 0x00 0x00 0x0 0x00 [SilverAxe] LootingThiefAI 
+UNIT Ch20Generics1 Berserker Ch20Boss Level(Ch20GenericsLvl, Enemy, 1) [3,3] 0x00 0x00 0x0 0x00 [SilverAxe] LootingThiefAI 
 UNIT
 
 MirageEnemies1:
+UNIT Ch20Generics2 Maelduin 0x00 Level(13, Enemy, 1) [18,21] 0x00 0x00 0x0 0x00 [SilverAxe] GuardTileAI 
+UNIT Ch20Generics2 Maelduin 0x00 Level(13, Enemy, 1) [12,21] 0x00 0x00 0x0 0x00 [SilverAxe] GuardTileAI 
+UNIT Ch20Generics2 Maelduin 0x00 Level(13, Enemy, 1) [2,18] 0x00 0x00 0x0 0x00 [SilverAxe] GuardTileAI 
+UNIT Ch20Generics1 Sniper Ch20Boss Level(Ch20GenericsLvl,Enemy,1) [12,24] 0x00 0x00 0x0 0x00 [SilverBow] NoAI
+UNIT Ch20Generics1 Sniper Ch20Boss Level(Ch20GenericsLvl,Enemy,1) [18,24] 0x00 0x00 0x0 0x00 [SilverBow] NoAI
+UNIT Ch20Generics1 General Ch20Boss Level(Ch20GenericsLvl,Enemy,1) [3,23] 0x00 0x00 0x0 0x00 [DragonAxe,Horseslayer] AttackInRangeAI
+UNIT Ch20Generics1 Halberdier Ch20Boss Level(Ch20GenericsLvl,Enemy,1) [6,18] 0x00 0x00 0x0 0x00 [SilverLance] ChaseOnceApproachedAI
+UNIT Ch20Generics1 Halberdier Ch20Boss Level(Ch20GenericsLvl,Enemy,1) [8,16] 0x00 0x00 0x0 0x00 [Spear] ChaseOnceApproachedAI
 UNIT
 
-NewAllies:
+MirageEnemies2:
+UNIT
+
+MirageEnemies3:
+UNIT
+
+MirageEnemies4:
+UNIT
+
+MirageEnemies5:
+UNIT Ch20Generics2 Maelduin Ch20Boss Level(Ch20GenericsLvl,Enemy,True) [2,7] 0x00 0x00 0x0 0x00 [SilverAxe] NeverMoveAI
+UNIT
+
+FinalMirageEnemies:
+UNIT Ch20Boss Warrior 0x00 Level(13, Enemy, 1) [8,2] 0x00 0x00 0x0 0x00 [SilverAxe,Tomahawk] NeverMoveAI 
+UNIT Ch20Generics1 Ranger Ch20Boss Level(Ch20GenericsLvl,Enemy,1) [7,4] 0x00 0x00 0x0 0x00 [SilverSword,SteelBow] AttackInRangeAI
+UNIT Ch20Generics1 Ranger Ch20Boss Level(Ch20GenericsLvl,Enemy,1) [9,4] 0x00 0x00 0x0 0x00 [SilverSword,SteelBow] AttackInRangeAI
+UNIT Ch20Generics1 Druid Ch20Boss Level(Ch20GenericsLvl,Enemy,1) [6,1] 0x00 0x00 0x0 0x00 [Nosferatu] ChaseOnceApproachedAI
+UNIT Ch20Generics1 Druid Ch20Boss Level(Ch20GenericsLvl,Enemy,1) [10,1] 0x00 0x00 0x0 0x00 [Nosferatu] ChaseOnceApproachedAI
 UNIT
 
 // Shop Data
 ALIGN 4
 RuinsShop:
-SHLI LightBrand SecretBook Talisman MasterSeal
+SHLI LightBrand WindSword Nosferatu Fortify SecretBook Talisman MasterSeal
+
 ch20Vendor:
 SHLI Elfire Fimbulvetr Divine Aura Flux Fenrir Heal Mend Recover Elixir
 
