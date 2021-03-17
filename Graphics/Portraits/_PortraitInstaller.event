@@ -213,11 +213,6 @@ ALIGN 4
 OuderenPortrait:
 #incext PortraitFormatter "Ouderen.png"
 
-setMugEntry(OuderenMug,OuderenPortrait,2,6,3,4)
-ALIGN 4
-OuderenPortrait:
-#incext PortraitFormatter "Ouderen.png"
-
 setMugEntry(JamieMug,JamiePortrait,2,6,3,4)
 ALIGN 4
 JamiePortrait:
@@ -237,11 +232,6 @@ setMugEntry(RenaldoMug,RenaldoPortrait,2,6,3,4)
 ALIGN 4
 RenaldoPortrait:
 #incext PortraitFormatter "Renaldo.png"
-
-setMugEntry(ZaganMug,ZaganPortrait,2,6,3,4)
-ALIGN 4
-ZaganPortrait:
-#incext PortraitFormatter "Zagan.png"
 
 setMugEntry(GemMug,GemPortrait,2,6,3,4)
 ALIGN 4
