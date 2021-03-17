@@ -1,13 +1,13 @@
-//EventPointerTable(0x,ThisChapter)
+EventPointerTable(0x67,ThisChapter)
 
 ThisChapter:
 POIN TurnBasedEvents
 POIN CharacterBasedEvents
 POIN LocationBasedEvents
 POIN MiscBasedEvents
-POIN Dunno Dunno Dunno
+POIN Dunno1 Dunno2 Dunno3
 POIN Tutorial
-POIN TrapData TrapData
+POIN Traps1 Traps2
 POIN Units Units
 POIN $0 $0 $0 $0 $0 $0
 POIN BeginningScene EndingScene
@@ -58,7 +58,7 @@ VillageEventNorth:
 VillageEventItem(ChUnknownVillage1, Village, HandAxe)
 
 VillageEventSE:
-VillageEventItem(ChUnknownVillage2, Village, SwordSlayer)
+VillageEventItem(ChUnknownVillage2, Village, Swordslayer)
 
 
 
@@ -124,15 +124,15 @@ UNIT UnkChGenerics1 Brigand 0x00 Level(EarlyGameLevel2, Enemy, 1) [13,14] 0x00 0
 UNIT Borgas Rogue 0x00 Level(1, Enemy, 0) [7,2] 0x00 0x00 0x0 0x00 [PoisonSword] NeverMoveAI //boss 
 UNIT
 
-NWUnit
+NWUnit:
 UNIT UnkChGenerics1 Soldier 0x00 Level(EarlyGameLevel, Enemy, 1) [4,4] 0x00 0x00 0x0 0x00 [Javelin] PursueWithoutHeedAI
 UNIT
 
-NEUnit
+NEUnit:
 UNIT UnkChGenerics1 Soldier 0x00 Level(EarlyGameLevel, Enemy, 1) [10,4] 0x00 0x00 0x0 0x00 [IronLance] PursueWithoutHeedAI
 UNIT
 
-SEUnit
+SEUnit:
 UNIT UnkChGenerics1 Cavalier 0x00 Level(EarlyGameLevel, Enemy, 1) [13,9] 0x00 0x00 0x0 0x00 [SlimLance] PursueWithoutHeedAI
 UNIT
 
@@ -149,7 +149,7 @@ GotoPrepScreen
 ENDA
 
 EndingScene:
-MNC2 2
+MNC2 5
 NoFade
 ENDA
 

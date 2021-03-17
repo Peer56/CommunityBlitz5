@@ -54,7 +54,7 @@ GotoPrepScreen
 ENDA
 
 EndingScene:
-MNC2 5
+MNC2 21 //todo: make this conditional 21 (ch5x) or 5 (ch6)
 ENDA:
 
 RecruitYara:
