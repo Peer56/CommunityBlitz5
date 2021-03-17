@@ -322,4 +322,8 @@ Borgas[X]
 ## BorgasDesc
 [X]
 
+## GemName
+Gem[X]
 
+## GemDesc
+[X]
