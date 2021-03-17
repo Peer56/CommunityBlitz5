@@ -1,0 +1,144 @@
+EventPointerTable(0x2A, PointerList)
+
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno1 Dunno2 Dunno3 Tutorial
+POIN Traps1 Traps2
+POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+POIN $0 $0 $0
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+END_MAIN
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+
+//top left room
+Chest(BlueGem,2,4)
+Chest(OrionsBolt,4,4)
+Chest(OceanSeal,1,5)
+Chest(KnightsCrest,3,5)
+Chest(OceanSeal,0,6)
+Chest(MasterSeal,2,6)
+Chest(GuidingRing,4,6)
+Chest(MasterSeal,1,7)
+Chest(MasterSeal,3,7)
+Chest(GuidingRing,0,8)
+Chest(WhiteGem,2,8)
+
+//along the right
+Chest(BlueGem,23,7)
+Chest(OceanSeal,23,11)
+
+//along the bottom
+Chest(KnightsCrest,1,11)
+Chest(HeroCrest,5,11)
+Chest(GuidingRing,9,11)
+Chest(MasterSeal,13,11)
+
+//doors
+Door(1,13)
+Door(5,13)
+Door(9,13)
+Door(13,13)
+Door(19,7)
+Door(19,11)
+Door(0,3)
+
+//shops
+Armory(ArmoryItemList,22,2)
+Vendor(VendorItemList,23,0)
+
+//seize
+Seize(7,1)
+
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno1:
+END_MAIN
+
+Dunno2:
+END_MAIN
+
+Dunno3:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+ALIGN 4
+Units1:
+UNIT Gunborg GunborgLord 0 Level(0,Ally,0) [14,21] 0 0 0 1 NoItems NoAI
+UNIT Bastion Knight 0 Level(0,Ally,0) [12,21] 0 0 0 1 NoItems NoAI
+UNIT Bastion Knight 0 Level(0,Ally,0) [10,21] 0 0 0 1 NoItems NoAI
+UNIT Bastion Knight 0 Level(0,Ally,0) [11,22] 0 0 0 1 NoItems NoAI
+UNIT Bastion Knight 0 Level(0,Ally,0) [13,22] 0 0 0 1 NoItems NoAI
+UNIT Bastion Knight 0 Level(0,Ally,0) [12,23] 0 0 0 1 NoItems NoAI
+UNIT Bastion Knight 0 Level(0,Ally,0) [10,23] 0 0 0 1 NoItems NoAI
+UNIT Bastion Knight 0 Level(0,Ally,0) [11,24] 0 0 0 1 NoItems NoAI
+UNIT Bastion Knight 0 Level(0,Ally,0) [13,24] 0 0 0 1 NoItems NoAI
+UNIT Bastion Knight 0 Level(0,Ally,0) [9,24] 0 0 0 1 NoItems NoAI
+UNIT Bastion Knight 0 Level(0,Ally,0) [9,22] 0 0 0 1 NoItems NoAI
+UNIT Bastion Knight 0 Level(0,Ally,0) [14,23] 0 0 0 1 NoItems NoAI
+UNIT
+
+ALIGN 4
+NewUnits:
+UNIT Ch10Playable1 Dancer 0 Level(5,Ally,0) [8,24] 0 0 0 1 [PureWater,ChestKey_5,ChestKey_5] NoAI
+UNIT Gaspard Brigand 0 Level(15,Ally,0) [16,24] 0 0 0 1 [SteelAxe,Tomahawk,ChestKey_5,ChestKey_5] NoAI
+UNIT
+
+
+ALIGN 4
+EnemyUnits:
+UNIT Otto Cavalier 0 Level(20,Enemy,0) [7,1] 0 0 0 1 [ShortSpear,Runesword] NeverMoveAI
+UNIT
+
+Traps1:
+ENDTRAP
+ALIGN 4
+
+Traps2:
+ENDTRAP
+ALIGN 4
+
+ALIGN 4
+BeginningScene:
+LOAD1 0 EnemyUnits
+ENUN
+LOAD1 0 NewUnits
+ENUN
+
+CALL $591FD8 //GotoPrepScreen
+
+NoFade
+ENDA
+
+ALIGN 4
+EndingScene:
+
+MNC2 10
+
+NoFade
+ENDA
+
+ALIGN 4
+ArmoryItemList:
+SHLI SteelSword SteelLance SteelAxe SteelBow LightBrand Javelin HandAxe Longbow
+
+ALIGN 4
+VendorItemList:
+SHLI Thunder Divine Flux Mend Elfire Purge Restore TorchStaff Vulnerary Elixir
+
+ALIGN 4
