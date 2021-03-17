@@ -15,12 +15,12 @@ ALIGN 4
 WulframPortrait:
 #incext PortraitFormatter "Wulfram.png"
 
-setMugEntry(DarkTovahMug,DarkTovahPortrait,2,6,3,4)
+setMugEntry(DarkTovahMug,DarkTovahPortrait,3,6,3,4)
 ALIGN 4
 DarkTovahPortrait:
 #incext PortraitFormatter "DarkTovah.png"
 
-setMugEntry(DogiMug,DogiPortrait,3,6,3,4)
+setMugEntry(DogiMug,DogiPortrait,3,5,3,3)
 ALIGN 4
 DogiPortrait:
 #incext PortraitFormatter "Dogi.png"
@@ -50,12 +50,12 @@ ALIGN 4
 PinkusPortrait:
 #incext PortraitFormatter "Pinkus.png"
 
-setMugEntry(ErgonMug,ErgonPortrait,2,6,3,4)
+setMugEntry(ErgonMug,ErgonPortrait,3,6,3,3)
 ALIGN 4
 ErgonPortrait:
 #incext PortraitFormatter "Ergon.png"
 
-setMugEntry(YaraMug,YaraPortrait,2,6,3,4)
+setMugEntry(YaraMug,YaraPortrait,3,7,3,5)
 ALIGN 4
 YaraPortrait:
 #incext PortraitFormatter "Yara.png"
@@ -95,17 +95,17 @@ ALIGN 4
 CharlesPortrait:
 #incext PortraitFormatter "Charles.png"
 
-setMugEntry(SerahltaMug,SerahltaPortrait,2,6,3,4)
+setMugEntry(SerahltaMug,SerahltaPortrait,3,5,3,3)
 ALIGN 4
 SerahltaPortrait:
 #incext PortraitFormatter "Serahlta.png"
 
-setMugEntry(PaulaMug,PaulaPortrait,2,6,3,4)
+setMugEntry(PaulaMug,PaulaPortrait,2,5,3,3)
 ALIGN 4
 PaulaPortrait:
 #incext PortraitFormatter "Paula.png"
 
-setMugEntry(KitabeiMug,KitabeiPortrait,2,6,3,4)
+setMugEntry(KitabeiMug,KitabeiPortrait,3,5,3,3)
 ALIGN 4
 KitabeiPortrait:
 #incext PortraitFormatter "Kitabei.png"
@@ -143,5 +143,107 @@ ALIGN 4
 DemiCPortrait:
 #incext PortraitFormatter "DemiC.png"
 
+setMugEntry(DihardMug,DihardPortrait,2,6,3,4)
+ALIGN 4
+DihardPortrait:
+#incext PortraitFormatter "Dihard.png"
 
+setMugEntry(FranklinMug,FranklinPortrait,2,6,3,4)
+ALIGN 4
+FranklinPortrait:
+#incext PortraitFormatter "Franklin.png"
 
+setMugEntry(TheodoreMug,LamarPortrait,2,6,3,4)
+ALIGN 4
+LamarPortrait:
+#incext PortraitFormatter "Lamar.png"
+
+setMugEntry(AldricMug,AldricPortrait,2,5,2,3)
+ALIGN 4
+AldricPortrait:
+#incext PortraitFormatter "Aldric.png"
+
+setMugEntry(BastionMug,BastionPortrait,2,4,3,2)
+ALIGN 4
+BastionPortrait:
+#incext PortraitFormatter "Bastion.png"
+
+setMugEntry(ScullyMug,ScullyPortrait,3,6,3,4)
+ALIGN 4
+ScullyPortrait:
+#incext PortraitFormatter "Scully.png"
+
+setMugEntry(WilburMug,WilburPortrait,2,6,3,4)
+ALIGN 4
+WilburPortrait:
+#incext PortraitFormatter "Wilbur.png"
+
+setMugEntry(GunborgMug,GunborgPortrait,3,6,3,4)
+ALIGN 4
+GunborgPortrait:
+#incext PortraitFormatter "Gunborg.png"
+
+setMugEntry(YinMug,YinPortrait,2,6,3,4)
+ALIGN 4
+YinPortrait:
+#incext PortraitFormatter "Yin.png"
+
+setMugEntry(YangMug,YangPortrait,2,6,3,4)
+ALIGN 4
+YangPortrait:
+#incext PortraitFormatter "Yang.png"
+
+setMugEntry(CalvinMug,CalvinPortrait,2,4,2,2)
+ALIGN 4
+CalvinPortrait:
+#incext PortraitFormatter "Calvin.png"
+
+setMugEntry(HobbesMug,HobbesPortrait,2,7,2,3)
+ALIGN 4
+HobbesPortrait:
+#incext PortraitFormatter "Hobbes.png"
+
+setMugEntry(VultureMug,VulturePortrait,3,5,3,3)
+ALIGN 4
+VulturePortrait:
+#incext PortraitFormatter "Vulture.png"
+
+setMugEntry(OuderenMug,OuderenPortrait,3,5,2,3)
+ALIGN 4
+OuderenPortrait:
+#incext PortraitFormatter "Ouderen.png"
+
+setMugEntry(JamieMug,JamiePortrait,2,5,3,3)
+ALIGN 4
+JamiePortrait:
+#incext PortraitFormatter "Jamie.png"
+
+setMugEntry(SunshineMug,SunshinePortrait,2,6,3,4)
+ALIGN 4
+SunshinePortrait:
+#incext PortraitFormatter "Sunshine.png"
+
+setMugEntry(GaspardMug,GaspardPortrait,3,5,3,3)
+ALIGN 4
+GaspardPortrait:
+#incext PortraitFormatter "Gaspard.png"
+
+setMugEntry(RenaldoMug,RenaldoPortrait,2,5,3,3)
+ALIGN 4
+RenaldoPortrait:
+#incext PortraitFormatter "Renaldo.png"
+
+setMugEntry(GemMug,GemPortrait,3,6,3,4)
+ALIGN 4
+GemPortrait:
+#incext PortraitFormatter "Gem.png"
+
+setMugEntry(AgvaldtMug,AgvaldtPortrait,2,6,2,2)
+ALIGN 4
+AgvaldtPortrait:
+#incext PortraitFormatter "Agvaldt.png"
+
+setMugEntry(XholtMug,XholtPortrait,2,6,3,4)
+ALIGN 4
+XholtPortrait:
+#incext PortraitFormatter "Xholt.png"

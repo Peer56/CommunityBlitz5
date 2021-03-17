@@ -199,15 +199,18 @@ They.. call me.[A][X]
 
 ## ChUnknownVillage1
 [OpenMidRight][LoadActive][OpenMidLeft][LoadWoman3]
-Take this.[X]
+Take this.[A][X]
 
 ## ChUnknownVillage2
 [OpenMidRight][LoadActive][OpenMidLeft][LoadWoman4]
-Plot? What plot?[X]
+Plot? What plot?[A][X]
 
 ## Ch18GemRecruitText
 [OpenMidRight][LoadGunborg][OpenMidLeft][LoadGem]
 ok i'll join you now[A][X]
+
+## GenericDeathQuote
+Oof[A][X]
 
 #include "skilldesc_text.txt"
 
