@@ -1,5 +1,6 @@
 EventPointerTable(0x67,ThisChapter)
 
+ALIGN 4
 ThisChapter:
 POIN TurnBasedEvents
 POIN CharacterBasedEvents
