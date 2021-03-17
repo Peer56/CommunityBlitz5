@@ -61,6 +61,7 @@ END_MAIN
 LocationBasedEvents:
 SecretShop(RuinsShop,2,0)
 Vendor(ch20Vendor,11,10)
+Armory(ch20Armory,6,22)
 Village(0x0,Ch20MiddleVillage,8,11)
 Village(0x0,Ch20CornerVillage,1,22)
 Seize(Mirage1Flag,ClearMirage1,16,13)
@@ -272,4 +273,6 @@ SHLI LightBrand WindSword Nosferatu Fortify SecretBook Talisman MasterSeal
 ch20Vendor:
 SHLI Elfire Fimbulvetr Divine Aura Flux Fenrir Heal Mend Recover Elixir
 
+ch20Armory:
+SHLI SilverSword SilverLance ShortSpear SilverAxe Handaxe SilverBow
 // MESSAGE Events end at offset currentOffset
