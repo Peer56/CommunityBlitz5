@@ -109,3 +109,39 @@ setMugEntry(KitabeiMug,KitabeiPortrait,2,6,3,4)
 ALIGN 4
 KitabeiPortrait:
 #incext PortraitFormatter "Kitabei.png"
+
+
+setMugEntry(BorgasMug,BorgasPortrait,3,5,3,3)
+ALIGN 4
+BorgasPortrait:
+#incext PortraitFormatter "Borgas.png"
+
+
+setMugEntry(InigoMug,InigoPortrait,3,5,3,3)
+ALIGN 4
+InigoPortrait:
+#incext PortraitFormatter "Inigo.png"
+
+
+setMugEntry(ZaganMug,ZaganPortrait,5,6,5,4)
+ALIGN 4
+ZaganPortrait:
+#incext PortraitFormatter "Zagan.png"
+
+setMugEntry(DemiAMug,DemiAPortrait,3,6,3,3)
+ALIGN 4
+DemiAPortrait:
+#incext PortraitFormatter "DemiA.png"
+
+setMugEntry(DemiBMug,DemiBPortrait,3,6,3,3)
+ALIGN 4
+DemiBPortrait:
+#incext PortraitFormatter "DemiB.png"
+
+setMugEntry(DemiCMug,DemiCPortrait,3,6,3,3)
+ALIGN 4
+DemiCPortrait:
+#incext PortraitFormatter "DemiC.png"
+
+
+
