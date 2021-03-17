@@ -247,3 +247,19 @@ setMugEntry(XholtMug,XholtPortrait,2,6,3,4)
 ALIGN 4
 XholtPortrait:
 #incext PortraitFormatter "Xholt.png"
+
+setMugEntry(KartreMug,KartrePortrait,2,5,3,3)
+ALIGN 4
+KartrePortrait:
+#incext PortraitFormatter "Kartre.png"
+
+setMugEntry(BarlaMug,BarlaPortrait,2,5,3,3)
+ALIGN 4
+BarlaPortrait:
+#incext PortraitFormatter "Barla.png"
+
+setMugEntry(RandalMug,RandalPortrait,2,6,3,4)
+ALIGN 4
+RandalPortrait:
+#incext PortraitFormatter "Randal.png"
+
