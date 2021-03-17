@@ -205,6 +205,9 @@ Take this.[X]
 [OpenMidRight][LoadActive][OpenMidLeft][LoadWoman4]
 Plot? What plot?[X]
 
+## Ch18GemRecruitText
+[OpenMidRight][LoadGunborg][OpenMidLeft][LoadGem]
+ok i'll join you now[A][X]
 
 #include "skilldesc_text.txt"
 

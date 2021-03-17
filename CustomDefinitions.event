@@ -63,7 +63,7 @@
 #define CHAPTER_15
 #define CHAPTER_16
 #define CHAPTER_17
-// #define CHAPTER_18
+#define CHAPTER_18
 #define CHAPTER_19
 // #define CHAPTER_20
 // #define CHAPTER_21
@@ -111,7 +111,7 @@
 #define Hosay 37
 #define Zagan 38
 #define Inigo 39
-#define Ch18Playable1 40
+#define Gem 40
 #define Ch18Playable2 41
 #define Wulfram 42
 #define Agvaldt 43
@@ -139,7 +139,7 @@
 #define Saramine 80
 #define Darias 81
 #define Borgas 82
-#define Ch18Boss 83
+#define Dihard 83
 #define Ch19Eusebios 84
 #define Ch20Boss 85
 #define Ch21Boss 86
@@ -260,7 +260,7 @@
 #define HosayMug 37
 #define ZaganMug 38
 #define InigoMug 39
-#define Ch18Playable1Mug 40
+#define GemMug 40
 #define Ch18Playable2Mug 41
 #define WulframMug 42
 #define AgvaldtMug 43
@@ -287,7 +287,7 @@
 #define SaramineMug 80
 #define DariasMug 81
 #define BorgasMug 82
-#define Ch18BossMug 83
+#define DihardMug 83
 #define Ch20BossMug 84
 #define Ch21BossMug 85
 #define DemiAMug 87

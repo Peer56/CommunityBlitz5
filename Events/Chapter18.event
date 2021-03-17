@@ -1,0 +1,171 @@
+
+////////////////////////////////////////////////////
+//                                                //
+// Disassembled with Nintenlord's Event Assembler //
+// Version: 11.0.0.0                              //
+// Game: FE8                                      //
+// File: FE8_clean.gba                            //
+// Offset: $9EC66C                                //
+//                                                //
+////////////////////////////////////////////////////
+
+EventPointerTable(0x4F, PointerList)
+
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno1 Dunno2 Dunno3 Tutorial
+POIN Traps1 Traps2
+POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+POIN $0 $0 $0
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+TURN 0x0 WaveFirst[4,0] 0x0
+TURN 0x0 WaveSecond[7,0] 0x0
+TURN 0x0 WaveThird[9,0] 0x0
+END_MAIN
+
+WaveFirst:
+ReinforcementEvent(Wave1)
+ENDA
+
+WaveSecond:
+ReinforcementEvent(Wave2)
+ENDA
+
+WaveThird:
+ReinforcementEvent(Wave3)
+ENDA
+
+CharacterBasedEvents:
+CharacterEventBothWays(0x7, GemGunborgRecruit, Gem, Gunborg)
+END_MAIN
+
+GemGunborgRecruit:
+Text(Ch18GemRecruitText)
+REMA
+FACTION_BLUE Gem
+NoFade
+ENDA
+
+LocationBasedEvents:
+Seize(8,1)
+Door(8,4)
+Door(0,17)
+Chest(SilverBlade,19,5)
+Chest(Speedwings,19,6)
+Chest(Naglfar,19,7)
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno1:
+END_MAIN
+
+Dunno2:
+END_MAIN
+
+Dunno3:
+END_MAIN
+
+Traps1:
+END_MAIN
+
+Traps2:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+Units1:
+UNIT Gunborg EphraimLord 0x00 Level(1, Ally, 0) [16,18] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth EphraimMasterLord Gunborg Level(1, Ally, 0) [16,19] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth EphraimMasterLord Gunborg Level(1, Ally, 0) [15,19] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth EphraimMasterLord Gunborg Level(1, Ally, 0) [18,18] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth EphraimMasterLord Gunborg Level(1, Ally, 0) [17,18] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth EphraimMasterLord Gunborg Level(1, Ally, 0) [15,18] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth EphraimMasterLord Gunborg Level(1, Ally, 0) [14,19] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth EphraimMasterLord Gunborg Level(1, Ally, 0) [19,19] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth EphraimMasterLord Gunborg Level(1, Ally, 0) [18,19] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth EphraimMasterLord Gunborg Level(1, Ally, 0) [13,18] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth EphraimMasterLord Gunborg Level(1, Ally, 0) [16,17] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT
+
+Greens:
+UNIT Gem Sniper_F 0x00 Level(15, NPC, 0) [0,16] 0x00 0x00 0x0 0x00 [Nidhogg, BeaconBow, SteelBow] NoAI 
+UNIT Glen Peer Gem Level(5, NPC, 1) [1,16] 0x00 0x00 0x0 0x00 [0x00] MoveWithLeaderAI 
+UNIT Zonta Queen Gem Level(5, NPC, 1) [2,16] 0x00 0x00 0x0 0x00 [0x00] MoveWithLeaderAI 
+UNIT
+
+Bad:
+UNIT Dihard Wight 0x00 Level(15, Enemy, 0) [8,1] 0x00 0x00 0x0 0x00 [Spear, BraveSword, Lancereaver, HeavySpear] GuardTileAI 
+UNIT 0x80 Wight Dihard Level(15, Enemy, 1) [14,5] 0x00 0x00 0x0 0x00 [Spear] GuardTileAI 
+UNIT 0x80 Wight Dihard Level(15, Enemy, 1) [16,1] 0x00 0x00 0x0 0x00 [Spear] GuardTileAI 
+UNIT 0x80 Wight Dihard Level(15, Enemy, 1) [6,17] 0x00 0x00 0x0 0x00 [Spear] GuardTileAI 
+UNIT 0x80 Wight Dihard Level(15, Enemy, 1) [4,10] 0x00 0x00 0x0 0x00 [Spear] GuardTileAI 
+UNIT 0x80 Wight Dihard Level(15, Enemy, 1) [16,13] 0x00 0x00 0x0 0x00 [Spear] GuardTileAI 
+UNIT 0x80 ArchMogall Dihard Level(15, Enemy, 1) [17,13] 0x00 0x00 0x0 0x00 [Nosferatu] GuardTileAI 
+UNIT 0x80 ArchMogall Dihard Level(15, Enemy, 1) [6,18] 0x00 0x00 0x0 0x00 [Nosferatu] GuardTileAI 
+UNIT 0x80 ArchMogall Dihard Level(15, Enemy, 1) [3,10] 0x00 0x00 0x0 0x00 [Nosferatu] GuardTileAI 
+UNIT 0x80 Druid Dihard Level(15, Enemy, 1) [12,10] 0x00 0x00 0x0 0x00 [Fenrir] AttackInRangeAI 
+UNIT 0x80 Druid Dihard Level(15, Enemy, 1) [12,0] 0x00 0x00 0x0 0x00 [Fenrir] AttackInRangeAI 
+UNIT 0x80 Druid Dihard Level(15, Enemy, 1) [5,4] 0x00 0x00 0x0 0x00 [Fenrir] AttackInRangeAI 
+UNIT 0x80 Druid Dihard Level(15, Enemy, 1) [0,7] 0x00 0x00 0x0 0x00 [Fenrir] AttackInRangeAI 
+UNIT 0x80 Druid Dihard Level(15, Enemy, 1) [11,16] 0x00 0x00 0x0 0x00 [Fenrir] AttackInRangeAI 
+UNIT 0x80 Hero Dihard Level(15, Enemy, 1) [9,19] 0x00 0x00 0x0 0x00 [SilverBlade] AttackInRangeAI 
+UNIT 0x80 Hero Dihard Level(15, Enemy, 1) [3,14] 0x00 0x00 0x0 0x00 [SilverBlade] AttackInRangeAI 
+UNIT 0x80 Hero Dihard Level(15, Enemy, 1) [1,19] 0x00 0x00 0x0 0x00 [SilverBlade] AttackInRangeAI 
+UNIT 0x80 Hero Dihard Level(15, Enemy, 1) [9,6] 0x00 0x00 0x0 0x00 [SilverBlade] AttackInRangeAI 
+UNIT 0x80 Hero Dihard Level(15, Enemy, 1) [16,9] 0x00 0x00 0x0 0x00 [SilverBlade] AttackInRangeAI 
+UNIT 0x80 WyvernLord Dihard Level(15, Enemy, 1) [2,0] 0x00 0x00 0x0 0x00 [BraveLance, ShortSpear] PursueWithoutHeedAI 
+UNIT 0x80 WyvernLord Dihard Level(15, Enemy, 1) [1,1] 0x00 0x00 0x0 0x00 [BraveLance, ShortSpear] PursueWithoutHeedAI 
+UNIT 0x80 WyvernLord Dihard Level(15, Enemy, 1) [0,2] 0x00 0x00 0x0 0x00 [BraveLance, ShortSpear] PursueWithoutHeedAI 
+UNIT 0x80 Maelduin Dihard Level(15, Enemy, 1) [18,7] 0x00 0x00 0x0 0x00 [BraveAxe, SilverBow] PursueWithoutHeedAI 
+UNIT 0x80 Maelduin Dihard Level(15, Enemy, 1) [18,6] 0x00 0x00 0x0 0x00 [BraveAxe, SilverBow] PursueWithoutHeedAI 
+UNIT 0x80 Maelduin Dihard Level(15, Enemy, 1) [18,5] 0x00 0x00 0x0 0x00 [BraveAxe, SilverBow] PursueWithoutHeedAI 
+UNIT 0x80 Sage_F Dihard Level(15, Enemy, 1) [8,2] 0x00 0x00 0x0 0x00 [Elfire, Berserk] GuardTileAI 
+UNIT
+
+Wave1:
+UNIT 0x80 WyvernLord Dihard Level(15, Enemy, 1) [0,0] 0x00 0x00 0x0 0x00 [BraveSword, ShortSpear] PursueWithoutHeedAI 
+UNIT 0x80 WyvernLord Dihard Level(15, Enemy, 1) [0,1] 0x00 0x00 0x0 0x00 [Lancereaver, ShortSpear] PursueWithoutHeedAI
+UNIT 0x80 Maelduin Dihard Level(15, Enemy, 1) [18,2] 0x00 0x00 0x0 0x00 [BraveAxe, SilverBow] PursueWithoutHeedAI 
+UNIT 0x80 Maelduin Dihard Level(15, Enemy, 1) [19,3] 0x00 0x00 0x0 0x00 [BraveAxe, BraveBow] PursueWithoutHeedAI 
+UNIT
+
+Wave2:
+UNIT 0x80 Hero Dihard Level(15, Enemy, 1) [0,0] 0x00 0x00 0x0 0x00 [Runesword, Halberd] PursueWithoutHeedAI 
+UNIT 0x80 Druid Dihard Level(15, Enemy, 1) [0,1] 0x00 0x00 0x0 0x00 [Fenrir] PursueWithoutHeedAI
+UNIT
+
+Wave3:
+UNIT 0x80 WyvernLord Dihard Level(15, Enemy, 1) [0,0] 0x00 0x00 0x0 0x00 [BraveLance, Spear, Armourslayer] PursueWithoutHeedAI 
+UNIT 0x80 WyvernLord Dihard Level(15, Enemy, 1) [0,1] 0x00 0x00 0x0 0x00 [BraveSword, WindSword, Horseslayer] PursueWithoutHeedAI
+UNIT 0x80 ArchMogall Dihard Level(15, Enemy, 1) [0,1] 0x00 0x00 0x0 0x00 [CrimsonEye] PursueWithoutHeedAI
+UNIT 0x80 Maelduin Dihard Level(15, Enemy, 1) [18,2] 0x00 0x00 0x0 0x00 [SilverAxe, BraveBow, Hammer] PursueWithoutHeedAI 
+UNIT 0x80 Maelduin Dihard Level(15, Enemy, 1) [19,3] 0x00 0x00 0x0 0x00 [BraveAxe, SilverBow, Swordslayer] PursueWithoutHeedAI 
+UNIT 0x80 Hero Dihard Level(15, Enemy, 1) [0,0] 0x00 0x00 0x0 0x00 [Runesword, SilverAxe] PursueWithoutHeedAI 
+UNIT 0x80 Druid Dihard Level(15, Enemy, 1) [0,1] 0x00 0x00 0x0 0x00 [Fenrir] PursueWithoutHeedAI
+UNIT
+
+BeginningScene:
+LOAD2 0x1 Units1
+ENUN
+LOAD1 0x1 Greens
+ENUN
+LOAD1 0x01 Bad
+ENUN
+NoFade
+GotoPrepScreen
+ENDA
+
+EndingScene:
+MNC2 18
+NoFade
+ENDA

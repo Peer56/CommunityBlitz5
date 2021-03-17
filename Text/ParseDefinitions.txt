@@ -101,3 +101,5 @@
 [LoadHosay] = [LoadFace][0x25][0x1]
 [LoadDarias] = [LoadFace][0x51][0x1]
 [LoadGunborg] = [LoadFace][0x1][0x1]
+[LoadGem] = [LoadFace][0x28][0x1]
+
