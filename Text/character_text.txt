@@ -193,12 +193,6 @@ Franklin[X]
 ## FranklinDesc
 [X]
 
-## ZaganName
-Zagan[X]
-
-## ZaganDesc
-[X]
-
 ## WulframName
 Wulfram[X]
 
@@ -300,6 +294,32 @@ Eye see you.[X]
 Susie[X]
 
 ## SusieDesc
+[X]
+
+
+## DemiName
+Cultist[X]
+
+## DemiDesc
+[X]
+
+## ZaganName
+Zagan[X]
+
+## ZaganDesc
+[X]
+
+## InigoName
+Inigo[X]
+
+## InigoDesc
+[X]
+
+
+## BorgasName
+Borgas[X]
+
+## BorgasDesc
 [X]
 
 
