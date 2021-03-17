@@ -94,4 +94,10 @@
 [LoadDemiA] = [LoadFace][0x57][0x1]
 [LoadDemiB] = [LoadFace][0x58][0x1]
 [LoadDemiC] = [LoadFace][0x59][0x1]
-
+[LoadLoretta] = [LoadFace][0x11][0x1]
+[LoadFrancine] = [LoadFace][0x10][0x1]
+[LoadWestley] = [LoadFace][0x46][0x1]
+[LoadCharles] = [LoadFace][0x24][0x1]
+[LoadHosay] = [LoadFace][0x25][0x1]
+[LoadDarias] = [LoadFace][0x51][0x1]
+[LoadGunborg] = [LoadFace][0x1][0x1]
