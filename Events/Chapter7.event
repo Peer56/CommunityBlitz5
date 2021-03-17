@@ -65,8 +65,8 @@ UNIT Bastion Paladin 0x00 Level(10, Ally, 1) [16,19] 0x00 0x00 0x0 0x00 [] Attac
 UNIT Bastion Paladin 0x00 Level(10, Ally, 1) [15,18] 0x00 0x00 0x0 0x00 [] AttackInRangeAI
 UNIT Bastion Paladin 0x00 Level(10, Ally, 1) [18,19] 0x00 0x00 0x0 0x00 [] AttackInRangeAI
 UNIT Bastion Paladin 0x00 Level(10, Ally, 1) [15,19] 0x00 0x00 0x0 0x00 [] AttackInRangeAI
-UNIT Loretta Cleric 0x00 Level(8, Ally, 1) [14,2] 0x00 0x00 0x0 0x00 [Mend, Dracoshield] AttackInRangeAI
-UNIT Francine Assassin 0x00 Level(1, Ally, 1) [15,2] 0x00 0x00 0x0 0x00 [SteelSword, MasterSeal] AttackInRangeAI
+UNIT Loretta Cleric 0x00 Level(8, Ally, 0) [14,2] 0x00 0x00 0x0 0x00 [Mend, Dracoshield] AttackInRangeAI
+UNIT Francine Assassin 0x00 Level(1, Ally, 0) [15,2] 0x00 0x00 0x0 0x00 [SteelSword, MasterSeal] AttackInRangeAI
 UNIT
 
 Enemies:
