@@ -181,6 +181,34 @@ when the placeholder text is sus!][A][X]
 [OpenMidRight][LoadActive][OpenMidLeft][LoadWoman4]
 You must construct additional placeholders.[X]
 
+## Ch17RespawnQuote
+[OpenMidRight][LoadDemiA]
+We are.. eternal...[A][X]
+
+## Ch17FinalQuote
+[OpenMidRight][LoadDemiA]
+We.. are...[A][X]
+
+## Ch17ZaganJoinQuote
+[OpenMidRight][LoadActive][OpenMidLeft][LoadZagan]
+I seek truth.[NL]
+I must find the ancient tome.[A][NL]
+You are headed to the template?[NL]
+Then let us cross paths.[A][NL]
+They.. call me.[A][X]
+
+## ChUnknownVillage1
+[OpenMidRight][LoadActive][OpenMidLeft][LoadWoman3]
+Take this.[X]
+
+## ChUnknownVillage2
+[OpenMidRight][LoadActive][OpenMidLeft][LoadWoman4]
+Plot? What plot?[X]
+
+## Ch18GemRecruitText
+[OpenMidRight][LoadGunborg][OpenMidLeft][LoadGem]
+ok i'll join you now[A][X]
+
 #include "skilldesc_text.txt"
 
 #include "unitinfo_text.txt"

@@ -27,7 +27,7 @@ sad and emotional.[X]
 Westley[X]
 
 ## WestleyDesc
-Not from the east.[X]
+He cannot swim.[X]
 
 ## GunborgName
 Gunborg[X]
@@ -181,22 +181,16 @@ Renaldo[X]
 ## RenaldoDesc
 [X]
 
-## AyeshaName
-Ayesha[X]
+## TheodoreName
+Theodore[X]
 
-## AyeshaDesc
+## TheodoreDesc
 [X]
 
 ## FranklinName
 Franklin[X]
 
 ## FranklinDesc
-[X]
-
-## ZaganName
-Zagan[X]
-
-## ZaganDesc
 [X]
 
 ## WulframName
@@ -293,13 +287,39 @@ Randal[X]
 Darias[X]
 
 ## DariasDesc
-[X]
+Eye see you.[X]
 
 
 ## SusieName
 Susie[X]
 
 ## SusieDesc
+[X]
+
+
+## DemiName
+Cultist[X]
+
+## DemiDesc
+[X]
+
+## ZaganName
+Zagan[X]
+
+## ZaganDesc
+[X]
+
+## InigoName
+Inigo[X]
+
+## InigoDesc
+[X]
+
+
+## BorgasName
+Borgas[X]
+
+## BorgasDesc
 [X]
 
 

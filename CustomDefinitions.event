@@ -60,10 +60,10 @@
 #define CHAPTER_12
 // #define CHAPTER_13
 #define CHAPTER_14
-// #define CHAPTER_15
-// #define CHAPTER_16
+#define CHAPTER_15
+#define CHAPTER_16
 #define CHAPTER_17
-// #define CHAPTER_18
+#define CHAPTER_18
 #define CHAPTER_19
 // #define CHAPTER_20
 // #define CHAPTER_21
@@ -105,13 +105,13 @@
 #define Barla 31
 #define Renaldo 32
 #define Ch14Playable2 33
-#define Ayesha 34
+#define Theodore 34
 #define Franklin 35
 #define Charles 36
 #define Hosay 37
 #define Zagan 38
-#define Ch17Playable2 39
-#define Ch18Playable1 40
+#define Inigo 39
+#define Gem 40
 #define Ch18Playable2 41
 #define Wulfram 42
 #define Agvaldt 43
@@ -136,10 +136,10 @@
 #define Randal 77
 #define Ch14Boss1 78
 #define Ch14Boss2 79
-#define Ch15Boss 80
+#define Saramine 80
 #define Darias 81
-#define Ch17Boss 82
-#define Ch18Boss 83
+#define Borgas 82
+#define Dihard 83
 #define Ch19Eusebios 84
 #define Ch20Boss 85
 #define Ch21Boss 86
@@ -183,12 +183,12 @@
 #define Ch13Generics2 153
 #define Ch14Generics1 154
 #define Ch14Generics2 155
-#define Ch15Generics1 156
+#define Ch15Generic1 156
 #define Ch15Generics2 157
-#define Ch16Generics1 158
+#define Ch16Enemies 158
 #define Ch16Generics2 159
 #define Ch17Generics1 160
-#define Ch17Generics2 161
+#define UnkChGenerics1 161
 #define Ch18Generics1 162
 #define Ch18Generics2 163
 #define Ch19Enemies 164
@@ -254,13 +254,13 @@
 #define BarlaMug 31
 #define RenaldoMug 32
 #define Ch14Playable2Mug 33
-#define AyeshaMug 34
+#define TheodoreMug 34
 #define FranklinMug 35
 #define CharlesMug 36
 #define HosayMug 37
 #define ZaganMug 38
-#define Ch17Playable2Mug 39
-#define Ch18Playable1Mug 40
+#define InigoMug 39
+#define GemMug 40
 #define Ch18Playable2Mug 41
 #define WulframMug 42
 #define AgvaldtMug 43
@@ -284,12 +284,15 @@
 #define RandalMug 77
 #define Ch14Boss1Mug 78
 #define Ch14Boss2Mug 79
-#define Ch15BossMug 80
+#define SaramineMug 80
 #define DariasMug 81
-#define Ch17BossMug 82
-#define Ch18BossMug 83
+#define BorgasMug 82
+#define DihardMug 83
 #define Ch20BossMug 84
 #define Ch21BossMug 85
+#define DemiAMug 87
+#define DemiBMug 88
+#define DemiCMug 89
 
 
 // Music Defs
