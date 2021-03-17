@@ -93,8 +93,8 @@
 #define Viridia 19
 #define Sunshine 20
 #define Pete 21
-#define Ch9Playable1 22
-#define Ch9Playable2 23
+#define Chenin 22
+#define Sangria 23
 #define Ch10Playable1 24
 #define Gaspard 25
 #define Ch11Playable1 26
@@ -221,46 +221,46 @@
 
 // Mug Defs
 
-#define GunborgMug 1 		// Needs Mug
-#define BastionMug 2 		// Needs Mug
-#define AldricMug 3 		// Needs Mug
-#define ScullyMug 4 		// Needs Mug
-#define WilburMug 5 		// Needs Mug
+#define GunborgMug 1 		
+#define BastionMug 2 		
+#define AldricMug 3 		
+#define ScullyMug 4 		
+#define WilburMug 5 		
 #define PaulaMug 6
 #define SerahltaMug 7
-#define YinMug 8 			// Needs Mug
-#define YangMug 9 			// Needs Mug
-#define CalvinMug 10 		// Needs Mug
-#define HobbesMug 11 		// Needs Mug
+#define YinMug 8 			
+#define YangMug 9 			
+#define CalvinMug 10 		
+#define HobbesMug 11 		
 #define YaraMug 12
 #define ErgonMug 13
-#define VultureMug 14 		// Needs Mug
-#define OuderenMug 15 		// Needs Mug
-#define FrancineMug 16 		// Needs Minimug
-#define LorettaMug 17 		// Needs Minimug
-#define JamieMug 18 		// Needs Mug
+#define VultureMug 14 		
+#define OuderenMug 15 		
+#define FrancineMug 16 		
+#define LorettaMug 17 		
+#define JamieMug 18 		
 #define ViridiaMug 19 
-#define SunshineMug 20 		// Needs Mug
+#define SunshineMug 20 		
 #define PeteMug 21
-#define Ch9Playable1Mug 22 
-#define Ch9Playable2Mug 23 
+#define CheninMug 22 
+#define SangriaMug 23 
 #define Ch10Playable1Mug 24 
-#define GaspardMug 25 		// Needs Mug
+#define GaspardMug 25 		
 #define Ch11Playable1Mug 26 
 #define Ch11Playable2Mug 27 
 #define DogiMug 28
 #define FeenaMug 29
 #define KartreMug 30
 #define BarlaMug 31
-#define RenaldoMug 32 		// Needs Mug
+#define RenaldoMug 32 		
 #define Ch14Playable2Mug 33 
 #define TheodoreMug 34 
 #define FranklinMug 35
 #define CharlesMug 36 
 #define HosayMug 37
-#define ZaganMug 38 		// Needs Mug
+#define ZaganMug 38 		
 #define InigoMug 39 
-#define GemMug 40 			// Needs Mug
+#define GemMug 40 			
 #define Ch18Playable2Mug 41 
 #define WulframMug 42
 #define AgvaldtMug 43 		// Needs Mug

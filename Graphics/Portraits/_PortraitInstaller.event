@@ -157,3 +157,103 @@ setMugEntry(TheodoreMug,LamarPortrait,2,6,3,4)
 ALIGN 4
 LamarPortrait:
 #incext PortraitFormatter "Lamar.png"
+
+setMugEntry(AldricMug,AldricPortrait,2,6,3,4)
+ALIGN 4
+AldricPortrait:
+#incext PortraitFormatter "Aldric.png"
+
+setMugEntry(BastionMug,BastionPortrait,2,6,3,4)
+ALIGN 4
+BastionPortrait:
+#incext PortraitFormatter "Bastion.png"
+
+setMugEntry(ScullyMug,ScullyPortrait,2,6,3,4)
+ALIGN 4
+ScullyPortrait:
+#incext PortraitFormatter "Scully.png"
+
+setMugEntry(WilburMug,WilburPortrait,2,6,3,4)
+ALIGN 4
+WilburPortrait:
+#incext PortraitFormatter "Wilbur.png"
+
+setMugEntry(GunborgMug,GunborgPortrait,2,6,3,4)
+ALIGN 4
+GunborgPortrait:
+#incext PortraitFormatter "Gunborg.png"
+
+setMugEntry(YinMug,YinPortrait,2,6,3,4)
+ALIGN 4
+YinPortrait:
+#incext PortraitFormatter "Yin.png"
+
+setMugEntry(YangMug,YangPortrait,2,6,3,4)
+ALIGN 4
+YangPortrait:
+#incext PortraitFormatter "Yang.png"
+
+setMugEntry(CalvinMug,CalvinPortrait,2,6,3,4)
+ALIGN 4
+CalvinPortrait:
+#incext PortraitFormatter "Calvin.png"
+
+setMugEntry(HobbesMug,HobbesPortrait,2,6,3,4)
+ALIGN 4
+HobbesPortrait:
+#incext PortraitFormatter "Hobbes.png"
+
+setMugEntry(VultureMug,VulturePortrait,2,6,3,4)
+ALIGN 4
+VulturePortrait:
+#incext PortraitFormatter "Vulture.png"
+
+setMugEntry(OuderenMug,OuderenPortrait,2,6,3,4)
+ALIGN 4
+OuderenPortrait:
+#incext PortraitFormatter "Ouderen.png"
+
+setMugEntry(OuderenMug,OuderenPortrait,2,6,3,4)
+ALIGN 4
+OuderenPortrait:
+#incext PortraitFormatter "Ouderen.png"
+
+setMugEntry(JamieMug,JamiePortrait,2,6,3,4)
+ALIGN 4
+JamiePortrait:
+#incext PortraitFormatter "Jamie.png"
+
+setMugEntry(SunshineMug,SunshinePortrait,2,6,3,4)
+ALIGN 4
+SunshinePortrait:
+#incext PortraitFormatter "Sunshine.png"
+
+setMugEntry(GaspardMug,GaspardPortrait,2,6,3,4)
+ALIGN 4
+GaspardPortrait:
+#incext PortraitFormatter "Gaspard.png"
+
+setMugEntry(RenaldoMug,RenaldoPortrait,2,6,3,4)
+ALIGN 4
+RenaldoPortrait:
+#incext PortraitFormatter "Renaldo.png"
+
+setMugEntry(ZaganMug,ZaganPortrait,2,6,3,4)
+ALIGN 4
+ZaganPortrait:
+#incext PortraitFormatter "Zagan.png"
+
+setMugEntry(GemMug,GemPortrait,2,6,3,4)
+ALIGN 4
+GemPortrait:
+#incext PortraitFormatter "Gem.png"
+
+setMugEntry(AgvaldtMug,AgvaldtPortrait,2,6,3,4)
+ALIGN 4
+AgvaldtPortrait:
+#incext PortraitFormatter "Agvaldt.png"
+
+setMugEntry(XholtMug,XholtPortrait,2,6,3,4)
+ALIGN 4
+XholtPortrait:
+#incext PortraitFormatter "Xholt.png"
