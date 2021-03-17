@@ -1,4 +1,4 @@
-EventPointerTable(0x,ThisChapter)
+EventPointerTable(0x47,ThisChapter)
 
 ThisChapter:
 POIN TurnBasedEvents
@@ -54,7 +54,7 @@ ENDA
 
 EndingScene:
 Text(Ch16Ending)
-MNC2 7
+MNC2 16
 ENDA
 
 // Units
@@ -71,11 +71,11 @@ UNIT
 Enemies:
 UNIT Darias Mogall 0x00 Level(18, Enemy, 1) [17,3] 0x00 0x0 0x00 [Nosferatu] NeverMoveAI
 UNIT Ch16Enemies Paladin 0x00 Level(14, Enemy, 1) [11,0] 0x00 0x00 0x0 0x00 [Spear] AttackInRangeAI
-UNIT Ch16Enemies Warrior 0x00 Level(10, Enemy, 1) [8,8] DropItem 0x00 0x00 0x0 0x00 [Longbow] AttackInRangeAI
+UNIT Ch16Enemies Warrior 0x00 Level(10, Enemy, 1) [8,8] 2 0x00 0x00 0x0 [Longbow] AttackInRangeAI
 UNIT Ch16Enemies 0x23 0x00 Level(11, Enemy, 1) [5,6] 0x00 0x00 0x0 0x00 [Horseslayer] AttackInRangeAI
 UNIT Ch16Enemies General 0x00 Level(13, Enemy, 1) [6,1] 0x00 0x00 0x0 0x00 [Hatchet] AttackInRangeAI
 UNIT Ch16Enemies Bishop 0x00 Level(13, Enemy, 1) [9,4] 0x00 0x00 0x0 0x00 [Aura,Sleep] AttackInRangeAI
-UNIT Ch16Enemies Mage Knight 0x00 Level(12, Enemy, 1) [15,13] 0x00 0x00 0x0 0x00 [Elfire] AttackInRangeAI
+UNIT Ch16Enemies MageKnight 0x00 Level(12, Enemy, 1) [15,13] 0x00 0x00 0x0 0x00 [Elfire] AttackInRangeAI
 UNIT Ch16Enemies Druid 0x00 Level(14, Enemy, 1) [5,8] 0x00 0x00 0x0 0x00 [Eclipse] AttackInRangeAI
 UNIT Ch16Enemies Halberdier 0x00 Level(15, Enemy, 1) [1,9] 0x00 0x00 0x0 0x00 [Axereaver] AttackInRangeAI
 UNIT

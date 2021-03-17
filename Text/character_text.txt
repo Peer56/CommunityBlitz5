@@ -181,10 +181,10 @@ Renaldo[X]
 ## RenaldoDesc
 [X]
 
-## AyeshaName
-Ayesha[X]
+## TheodoreName
+Theodore[X]
 
-## AyeshaDesc
+## TheodoreDesc
 [X]
 
 ## FranklinName
