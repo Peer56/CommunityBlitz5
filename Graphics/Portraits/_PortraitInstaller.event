@@ -203,12 +203,12 @@ ALIGN 4
 HobbesPortrait:
 #incext PortraitFormatter "Hobbes.png"
 
-setMugEntry(VultureMug,VulturePortrait,2,5,3,3)
+setMugEntry(VultureMug,VulturePortrait,3,5,3,3)
 ALIGN 4
 VulturePortrait:
 #incext PortraitFormatter "Vulture.png"
 
-setMugEntry(OuderenMug,OuderenPortrait,2,4,3,2)
+setMugEntry(OuderenMug,OuderenPortrait,3,5,2,3)
 ALIGN 4
 OuderenPortrait:
 #incext PortraitFormatter "Ouderen.png"
@@ -238,7 +238,7 @@ ALIGN 4
 GemPortrait:
 #incext PortraitFormatter "Gem.png"
 
-setMugEntry(AgvaldtMug,AgvaldtPortrait,2,4,2,2)
+setMugEntry(AgvaldtMug,AgvaldtPortrait,2,6,2,2)
 ALIGN 4
 AgvaldtPortrait:
 #incext PortraitFormatter "Agvaldt.png"
