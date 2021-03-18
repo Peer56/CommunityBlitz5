@@ -58,7 +58,7 @@
 #define CHAPTER_10
 // #define CHAPTER_11
 #define CHAPTER_12
-// #define CHAPTER_13
+#define CHAPTER_13
 #define CHAPTER_14
 #define CHAPTER_15
 #define CHAPTER_16
@@ -181,7 +181,7 @@
 #define Ch11Generics2 149
 #define Ch12Enemies 150
 #define Ch12Monsters 151
-#define Ch13Generics1 152
+#define Ch13Generic01 152
 #define Ch13Generics2 153
 #define Ch14Generics1 154
 #define Ch14Generics2 155
