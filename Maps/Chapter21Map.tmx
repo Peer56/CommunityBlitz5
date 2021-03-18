@@ -8,11 +8,11 @@
    <property name="Anims1" value="0"/>
    <property name="ChapterID" value="20"/>
    <property name="Main" value=""/>
-   <property name="MapChangesID" value="0x63"/>
-   <property name="MapID" value="0x62"/>
-   <property name="ObjectType1" value="0x5F"/>
-   <property name="PaletteID" value="0x60"/>
-   <property name="TileConfig" value="0x61"/>
+   <property name="MapChangesID" value="AssetCh21MapChanges"/>
+   <property name="MapID" value="AssetCh21Map"/>
+   <property name="ObjectType1" value="AssetDemonTempleObj"/>
+   <property name="PaletteID" value="AssetDemonTemplePal"/>
+   <property name="TileConfig" value="AssetDemonTempleConfig"/>
   </properties>
   <data encoding="csv">
 279,279,279,284,279,346,279,279,279,284,849,947,947,947,947,947,947,947,947,947,947,947,947,947,850,279,315,316,279,313,279,279,317,279,279,

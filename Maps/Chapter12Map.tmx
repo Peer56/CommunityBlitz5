@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="42" height="16" tilewidth="16" tileheight="16" infinite="0" nextlayerid="10" nextobjectid="1">
+<map version="1.4" tiledversion="1.4.3" orientation="orthogonal" renderorder="right-down" width="42" height="16" tilewidth="16" tileheight="16" infinite="0" nextlayerid="10" nextobjectid="1">
  <tileset firstgid="1" name="Valni1" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
   <image source="../../ItsAboutTime/Maps/tilesets/Valni1.png" width="512" height="512"/>
  </tileset>
@@ -8,8 +8,8 @@
    <property name="Anims1" value="AssetCh12Anims"/>
    <property name="ChapterID" value="11"/>
    <property name="Main" value=""/>
-   <property name="MapChangesID" value="0x32"/>
-   <property name="MapID" value="0x31"/>
+   <property name="MapChangesID" value="AssetCh12MapChanges"/>
+   <property name="MapID" value="AssetCh12Map"/>
    <property name="ObjectType" value="AssetCh12Obj"/>
    <property name="PaletteID" value="AssetTemplePal"/>
    <property name="TileConfig" value="AssetCh12Config"/>

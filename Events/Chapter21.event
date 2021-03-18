@@ -1,4 +1,4 @@
-EventPointerTable(0x5E, PointerList)
+EventPointerTable(AssetCh21Data, PointerList)
 
 PointerList:
 POIN TurnBasedEvents
