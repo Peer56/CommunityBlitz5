@@ -54,7 +54,7 @@
 #define CHAPTER_6
 #define CHAPTER_7
 #define CHAPTER_8
-// #define CHAPTER_9
+#define CHAPTER_9
 #define CHAPTER_10
 // #define CHAPTER_11
 #define CHAPTER_12
@@ -130,7 +130,7 @@
 #define Westley 70
 #define Negaj 71
 #define Pinkus 72
-#define Ch9Boss 73
+#define Merlot 73
 #define Otto 74
 #define Ch11Boss 75
 #define DarkTovah 76
@@ -152,6 +152,7 @@
 //start these at 96
 
 #define Ch6NPC 96
+#define Ch9Npcs1 97
 
 
 //Generics
@@ -278,7 +279,7 @@
 #define WestleyMug 70
 #define NegajMug 71
 #define PinkusMug 72
-#define Ch9BossMug 73
+#define MerlotMug 73
 #define OttoMug 74
 #define Ch11BossMug 75
 #define DarkTovahMug 76
