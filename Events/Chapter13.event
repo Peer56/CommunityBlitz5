@@ -1,0 +1,206 @@
+EventPointerTable(0x37,ThisChapter)
+
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN deploy deploy
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+Units:
+UNIT
+
+
+TurnBasedEvents:
+TurnEventPlayer(0x0,EventAfterExitingPrepScreen,1)
+TurnEventPlayer(0x00, Reinforcements1, 5)
+TurnEventPlayer(0x00, Reinforcements1, 7)
+TurnEventPlayer(0x00, Reinforcements1, 9)
+TurnEventPlayer(0x00, Reinforcements2, 10)
+TurnEventPlayer(0x00, Reinforcements2, 12)
+TurnEventPlayer(0x00, Reinforcements2, 14)
+END_MAIN
+
+Reinforcements1:
+ReinforcementEvent(reinforce)
+
+Reinforcements2:
+ReinforcementEvent(reinforce2)
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+Seize(15,14)
+Armory(ArmoryItems,6,1)
+Armory(ArmoryItems,25,1)
+Vendor(ShopItems,7,1)
+Vendor(ShopItems,26,1)
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno:
+//DO NOT TOUCH
+WORD $00
+
+Tutorial:
+//DO NOT TOUCH
+WORD $00
+
+TrapData:
+END_MAIN
+
+ALIGN 4
+
+BeginningScene:
+LOAD 0x1 deploy
+LOAD1 0x1 enemy
+ENUN
+GotoPrepScreen
+NoFade
+ENDA
+
+Turn5:
+LOAD1 0x1 reinforce
+ENDA
+
+Turn7:
+LOAD1 0x1 reinforce
+ENDA
+
+Turn9:
+LOAD1 0x1 reinforce
+ENDA
+
+Turn10:
+LOAD1 0x1 reinforce2
+ENDA
+
+Turn12:
+LOAD1 0x1 reinforce2
+ENDA
+
+Turn14:
+LOAD1 0x1 reinforce2
+ENDA
+
+EndingScene:
+MNC2 13
+ENDA
+
+// Events
+EventAfterExitingPrepScreen:
+LOAD1 0x1 new
+ENUN
+ENDA
+
+
+// Manual Movement
+
+// Scripted Fights
+
+// Units
+deploy:
+UNIT Gunborg GunborgLord 0x00 Level(1, Ally, 0) [3,2] 0x00 0x00 0x0 0x00 [0x00] NoAI
+UNIT Bastion Paladin 0x00 Level(1, Ally, 1) [2,1] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Bastion Paladin 0x00 Level(1, Ally, 1) [4,1] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Bastion Paladin 0x00 Level(1, Ally, 1) [1,2] 0x00 0x00 0x0 0x00 [0x00] NoAI  
+UNIT Bastion Paladin 0x00 Level(1, Ally, 1) [5,2] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Bastion Paladin 0x00 Level(1, Ally, 1) [2,3] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Bastion Paladin 0x00 Level(1, Ally, 1) [4,3] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Bastion Paladin 0x00 Level(1, Ally, 1) [24,1] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Bastion Paladin 0x00 Level(1, Ally, 1) [26,1] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Bastion Paladin 0x00 Level(1, Ally, 1) [23,2] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Bastion Paladin 0x00 Level(1, Ally, 1) [25,2] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Bastion Paladin 0x00 Level(1, Ally, 1) [27,2] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Bastion Paladin 0x00 Level(1, Ally, 1) [24,3] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Bastion Paladin 0x00 Level(1, Ally, 1) [26,3] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT
+
+new:
+UNIT Barla Swordmaster_F 0x00 Level(1, Ally, 0) [3,3] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Kartre Warrior 0x00 Level(1, Ally, 0) [25,3] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT
+
+enemy:
+UNIT Randal Berserker 0x00 Level(10, Enemy, 0) [15,14] 0x00 0x00 0x0 0x00 [KillerAxe, HandAxe, SilverCard] NeverMoveAI 
+UNIT Ch13Generic01 Druid 0x00 Level(10, Enemy, 1) [15,5] 0x00 0x00 0x0 0x00 [Flux, Silence, Sleep, Berserk] NeverMoveAI 
+UNIT Ch13Generic01 Druid 0x00 Level(10, Enemy, 1) [3,29] 0x00 0x00 0x0 0x00 [Flux, Silence, Sleep, Berserk] NeverMoveAI 
+UNIT Ch13Generic01 Druid 0x00 Level(10, Enemy, 1) [26,29] 0x00 0x00 0x0 0x00 [Flux, Silence, Sleep, Berserk] NeverMoveAI 
+UNIT Ch13Generic01 Sage 0x00 Level(10, Enemy, 1) [15,9] 0x00 0x00 0x0 0x00 [Bolting, Bolting] NeverMoveAI 
+UNIT Ch13Generic01 Sage 0x00 Level(10, Enemy, 1) [6,12] 0x00 0x00 0x0 0x00 [Bolting, Bolting] NeverMoveAI 
+UNIT Ch13Generic01 Sage 0x00 Level(10, Enemy, 1) [20,8] 0x00 0x00 0x0 0x00 [Bolting, Bolting] NeverMoveAI 
+UNIT Ch13Generic01 Bishop 0x00 Level(10, Enemy, 1) [17,6] 0x00 0x00 0x0 0x00 [Purge, Purge] NeverMoveAI 
+UNIT Ch13Generic01 Bishop 0x00 Level(10, Enemy, 1) [8,7] 0x00 0x00 0x0 0x00 [Purge, Purge] NeverMoveAI 
+UNIT Ch13Generic01 Sniper 0x00 Level(10, Enemy, 1) [9,12] 0x00 0x00 0x0 0x00 [Ballista, Ballista] NeverMoveAI 
+UNIT Ch13Generic01 Sniper 0x00 Level(10, Enemy, 1) [19,5] 0x00 0x00 0x0 0x00 [Ballista, Ballista] NeverMoveAI 
+UNIT Ch13Generic01 Fleet 0x00 Level(10, Enemy, 1) [14,29] 0x00 0x00 0x0 0x00 [IronBallista, IronBallista] NeverMoveAI 
+UNIT Ch13Generic01 PegasusKnight 0x00 Level(17, Enemy, 1) [11,8] 0x00 0x00 0x0 0x00 [SilverLance] PursueWithoutHeedAI 
+UNIT Ch13Generic01 PegasusKnight 0x00 Level(17, Enemy, 1) [9,10] 0x00 0x00 0x0 0x00 [SilverLance] PursueWithoutHeedAI 
+UNIT Ch13Generic01 PegasusKnight 0x00 Level(17, Enemy, 1) [21,10] 0x00 0x00 0x0 0x00 [SilverLance] PursueWithoutHeedAI 
+UNIT Ch13Generic01 PegasusKnight 0x00 Level(17, Enemy, 1) [23,12] 0x00 0x00 0x0 0x00 [SilverLance] PursueWithoutHeedAI 
+UNIT Ch13Generic01 FalcoKnight 0x00 Level(7, Enemy, 1) [10,9] 0x00 0x00 0x0 0x00 [BraveSword] PursueWithoutHeedAI 
+UNIT Ch13Generic01 FalcoKnight 0x00 Level(7, Enemy, 1) [22,11] 0x00 0x00 0x0 0x00 [BraveSword] PursueWithoutHeedAI 
+UNIT Ch13Generic01 WyvernRider 0x00 Level(17, Enemy, 1) [7,15] 0x00 0x00 0x0 0x00 [SteelLance] AttackInRangeAI 
+UNIT Ch13Generic01 WyvernRider 0x00 Level(17, Enemy, 1) [7,19] 0x00 0x00 0x0 0x00 [SteelLance] AttackInRangeAI 
+UNIT Ch13Generic01 WyvernRider 0x00 Level(17, Enemy, 1) [23,15] 0x00 0x00 0x0 0x00 [SteelLance] AttackInRangeAI 
+UNIT Ch13Generic01 WyvernRider 0x00 Level(17, Enemy, 1) [23,19] 0x00 0x00 0x0 0x00 [SteelLance] AttackInRangeAI 
+UNIT Ch13Generic01 WyvernLord 0x00 Level(7, Enemy, 1) [7,17] 0x00 0x00 0x0 0x00 [BraveLance] AttackInRangeAI 
+UNIT Ch13Generic01 WyvernLord 0x00 Level(7, Enemy, 1) [23,17] 0x00 0x00 0x0 0x00 [BraveLance] AttackInRangeAI 
+UNIT Ch13Generic01 Mercenary 0x00 Level(17, Enemy, 1) [2,9] 0x00 0x00 0x0 0x00 [SteelBlade] PursueWithoutHeedAI 
+UNIT Ch13Generic01 Archer 0x00 Level(17, Enemy, 1) [1,9] 0x00 0x00 0x0 0x00 [SteelBow] PursueWithoutHeedAI 
+UNIT Ch13Generic01 Fighter 0x00 Level(17, Enemy, 1) [3,8] 0x00 0x00 0x0 0x00 [Swordreaver] PursueWithoutHeedAI 
+UNIT Ch13Generic01 Fighter 0x00 Level(17, Enemy, 1) [28,13] 0x00 0x00 0x0 0x00 [Tomahawk] AttackInRangeAI 
+UNIT Ch13Generic01 Mercenary 0x00 Level(17, Enemy, 1) [28,12] 0x00 0x00 0x0 0x00 [Lancereaver] AttackInRangeAI 
+UNIT Ch13Generic01 Archer 0x00 Level(17, Enemy, 1) [27,14] 0x00 0x00 0x0 0x00 [KillerBow] AttackInRangeAI 
+UNIT Ch13Generic01 Cavalier 0x00 Level(17, Enemy, 1) [26,23] 0x00 0x00 0x0 0x00 [Spear] ChaseOnceApproachedAI 
+UNIT Ch13Generic01 Cavalier 0x00 Level(17, Enemy, 1) [27,23] 0x00 0x00 0x0 0x00 [SilverBlade] ChaseOnceApproachedAI 
+UNIT Ch13Generic01 Cavalier 0x00 Level(17, Enemy, 1) [28,23] 0x00 0x00 0x0 0x00 [LightBrand] ChaseOnceApproachedAI 
+UNIT Ch13Generic01 Cavalier 0x00 Level(17, Enemy, 1) [29,23] 0x00 0x00 0x0 0x00 [SilverLance] ChaseOnceApproachedAI 
+UNIT Ch13Generic01 Paladin 0x00 Level(7, Enemy, 1) [28,24] 0x00 0x00 0x0 0x00 [KillingEdge, Spear] ChaseOnceApproachedAI 
+UNIT Ch13Generic01 Cavalier 0x00 Level(17, Enemy, 1) [1,27] 0x00 0x00 0x0 0x00 [SilverBlade] ChaseOnceApproachedAI 
+UNIT Ch13Generic01 Cavalier 0x00 Level(17, Enemy, 1) [2,27] 0x00 0x00 0x0 0x00 [Runesword] ChaseOnceApproachedAI 
+UNIT Ch13Generic01 Cavalier 0x00 Level(17, Enemy, 1) [3,27] 0x00 0x00 0x0 0x00 [Horseslayer] ChaseOnceApproachedAI 
+UNIT Ch13Generic01 Cavalier 0x00 Level(17, Enemy, 1) [4,27] 0x00 0x00 0x0 0x00 [BraveLance] ChaseOnceApproachedAI 
+UNIT Ch13Generic01 Paladin 0x00 Level(7, Enemy, 1) [2,28] 0x00 0x00 0x0 0x00 [Lancereaver, Axereaver] ChaseOnceApproachedAI 
+UNIT Ch13Generic01 Knight 0x00 Level(17, Enemy, 1) [9,24] 0x00 0x00 0x0 0x00 [Javelin] NeverMoveAI 
+UNIT Ch13Generic01 Knight 0x00 Level(17, Enemy, 1) [11,24] 0x00 0x00 0x0 0x00 [Javelin] NeverMoveAI 
+UNIT Ch13Generic01 Knight 0x00 Level(17, Enemy, 1) [14,23] 0x00 0x00 0x0 0x00 [Javelin] NeverMoveAI 
+UNIT Ch13Generic01 Knight 0x00 Level(17, Enemy, 1) [16,23] 0x00 0x00 0x0 0x00 [Javelin] NeverMoveAI 
+UNIT Ch13Generic01 General 0x00 Level(17, Enemy, 1) [10,24] 0x00 0x00 0x0 0x00 [Tomahawk] NeverMoveAI 
+UNIT Ch13Generic01 General 0x00 Level(17, Enemy, 1) [15,23] 0x00 0x00 0x0 0x00 [Tomahawk] NeverMoveAI 
+UNIT Ch13Generic01 Fleet 0x00 Level(17, Enemy, 1) [15,18] 0x00 0x00 0x0 0x00 [Ballista] NeverMoveAI 
+UNIT Ch13Generic01 Swordmaster 0x00 Level(7, Enemy, 1) [12,20] 0x00 0x00 0x0 0x00 [Shamshir] AttackInRangeAI 
+UNIT Ch13Generic01 Warrior 0x00 Level(7, Enemy, 1) [13,19] 0x00 0x00 0x0 0x00 [DevilAxe] AttackInRangeAI 
+UNIT
+
+reinforce:
+UNIT Ch13Generic01 WyvernRider 0x00 Level(17, Enemy, 1) [14,0] 0x00 0x00 0x0 0x00 [SteelLance, Javelin] PursueWithoutHeedAI 
+UNIT Ch13Generic01 WyvernRider 0x00 Level(17, Enemy, 1) [15,1] 0x00 0x00 0x0 0x00 [SteelLance, Javelin] PursueWithoutHeedAI 
+UNIT Ch13Generic01 WyvernRider 0x00 Level(17, Enemy, 1) [16,0] 0x00 0x00 0x0 0x00 [SteelLance, Javelin] PursueWithoutHeedAI 
+UNIT
+
+reinforce2:
+UNIT Ch13Generic01 Paladin 0x00 Level(7, Enemy, 1) [11,12] 0x00 0x00 0x0 0x00 [SteelBlade, Javelin] PursueWithoutHeedAI 
+UNIT Ch13Generic01 Paladin 0x00 Level(7, Enemy, 1) [19,12] 0x00 0x00 0x0 0x00 [SteelBlade, Javelin] PursueWithoutHeedAI 
+UNIT Ch13Generic01 FalcoKnight 0x00 Level(7, Enemy, 1) [15,10] 0x00 0x00 0x0 0x00 [SilverLance, Javelin] PursueWithoutHeedAI 
+UNIT
+
+
+// Shop Data
+ALIGN 4
+ArmoryItems:
+SHLI Ballista IronBallista KillerBallista LightBrand Longbow Spear Tomahawk
+ALIGN 4
+ShopItems:
+SHLI Bolting Purge Eclipse Sleep Silence Berserk Physic Restore Nosferatu Thunder Shine Aura
+ALIGN 4
+
