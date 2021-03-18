@@ -1,5 +1,6 @@
 EventPointerTable(AssetCh21Data, PointerList)
 
+ALIGN 4
 PointerList:
 POIN TurnBasedEvents
 POIN CharacterBasedEvents
@@ -60,7 +61,7 @@ UNIT Bastion Knight 0 Level(0,Ally,0) [20,29] 0 0 0 1 NoItems NoAI
 UNIT
 
 ALIGN 4
-NewUnit:
+NewUnit1:
 UNIT Xholt Druid 0 Level(20,Ally,0) [16,29] 0 0 0 1 [Naglfar] NoAI
 UNIT
 
