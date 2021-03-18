@@ -56,7 +56,7 @@
 #define CHAPTER_8
 #define CHAPTER_9
 #define CHAPTER_10
-// #define CHAPTER_11
+#define CHAPTER_11
 #define CHAPTER_12
 #define CHAPTER_13
 #define CHAPTER_14
@@ -120,7 +120,7 @@
 #define AssetPlainsObj            $2E
 #define AssetPlainsPal            $2F
 #define AssetPlainsConfig         $30
-#define AssetCh11Map              $31 // vanilla eir ch10 map
+// crashes the game?              $31 // vanilla eir ch10 map
 #define AssetCh11MapChanges       $32 // vanilla eir ch10 map changes
 #define AssetCh11Data             $33 // vanilla eir ch10 data
 #define AssetPlainsPal2           $34
