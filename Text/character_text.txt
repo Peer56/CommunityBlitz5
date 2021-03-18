@@ -369,3 +369,33 @@ Merlot[X]
 
 ## MerlotDesc
 [X]
+
+## CheninName
+Chenin[X]
+
+## CheninDesc
+[X]
+
+## SangriaName
+Sangria[X]
+
+## SangriaDesc
+[X]
+
+## Ch14Boss1Name
+Place[X]
+
+## Ch14Boss1Desc
+[X]
+
+## Ch14Boss2Name
+Holder[X]
+
+## Ch14Boss2Desc
+[X]
+
+## DemonKingName
+Fomortiis[X]
+
+## DemonKingDesc
+making a cameo appearance[X]
