@@ -3,14 +3,14 @@
  <tileset firstgid="1" source="fields.tsx"/>
  <layer id="1" name="map" width="15" height="20">
   <properties>
-   <property name="Anims1" value="0x5"/>
+   <property name="Anims1" value="AssetWaterAnims"/>
    <property name="ChapterID" value="2"/>
    <property name="Main" value=""/>
-   <property name="MapChangesID" value="0xC"/>
-   <property name="MapID" value="0xB"/>
-   <property name="ObjectType" value="0x1"/>
-   <property name="PaletteID" value="0x2"/>
-   <property name="TileConfig" value="0x3"/>
+   <property name="MapChangesID" value="AssetCh03MapChanges"/>
+   <property name="MapID" value="AssetCh03Map"/>
+   <property name="ObjectType" value="AssetMountainsObj"/>
+   <property name="PaletteID" value="AssetMountainsPal"/>
+   <property name="TileConfig" value="AssetMountainsConfig"/>
   </properties>
   <data encoding="csv">
 783,678,230,26,281,317,934,317,216,214,23,721,67,71,7,
