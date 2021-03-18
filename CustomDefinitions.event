@@ -273,8 +273,8 @@
 //                                $C7 // vanilla melkaen coast map changes
 //                                $C8 // vanilla melkaen coast data
 //                                $C9 // vanilla cutscene map
-#define AssetCh30Map              $CA // vanilla interesting map
-#define AssetCh30MapChanges       $CB // vanilla interesting data
+//                                $CA // vanilla interesting map
+//                                $CB // vanilla interesting data
 #define AssetCastlePalCh25        $CC // vanilla debug map
 //                                $CD // vanilla debug data
 #define AssetFortPalRed           $CE
