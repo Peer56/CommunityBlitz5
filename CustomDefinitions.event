@@ -275,7 +275,7 @@
 //                                $C9 // vanilla cutscene map
 //                                $CA // vanilla interesting map
 //                                $CB // vanilla interesting data
-#define AssetCastlePalCh25        $CC // vanilla debug map
+//                                $CC // vanilla debug map
 //                                $CD // vanilla debug data
 #define AssetFortPalRed           $CE
 //                                $CF // vanilla eir ch11 map
