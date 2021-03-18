@@ -27,7 +27,7 @@
 9: [X]
 
 ## Ch10Name
-10: [X]
+10: A Promotion[X]
 
 ## Ch11Name
 11: Gold Rush[X]
@@ -63,5 +63,5 @@
 21: The Final Swear[X]
 
 ## Ch5xName
-5x: [X]
+5x: The Blindfolded Ranger[X]
 

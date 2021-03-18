@@ -41,12 +41,20 @@ ALIGN 4
 
 BeginningScene:
 Text(Ch7Op)
+
+
+LOAD1 0 Units
 ENUN
-LOAD1 0x1 Units
+
+LOAD1 0 Enemies
 ENUN
-LOAD1 0x1 Enemies
+
+CALL $591FD8 //GotoPrepScreen
+
+LOAD1 0 NewUnits
 ENUN
-GotoPrepScreen
+
+NoFade
 ENDA
 
 EndingScene:
@@ -60,11 +68,14 @@ VillageEventItem(Ch7Village, Village, Unlock)
 // Units
 Units:
 UNIT Gunborg Cavalier 0x00 Level(1, Ally, 0) [15,17] 0x00 0x00 0x0 0x00 [] AttackInRangeAI
-UNIT Bastion Paladin 0x00 Level(10, Ally, 1) [5,14] 0x00 0x00 0x0 0x00 [] AttackInRangeAI
+UNIT Bastion Paladin 0x00 Level(10, Ally, 1) [17,19] 0x00 0x00 0x0 0x00 [] AttackInRangeAI
 UNIT Bastion Paladin 0x00 Level(10, Ally, 1) [16,19] 0x00 0x00 0x0 0x00 [] AttackInRangeAI
 UNIT Bastion Paladin 0x00 Level(10, Ally, 1) [15,18] 0x00 0x00 0x0 0x00 [] AttackInRangeAI
 UNIT Bastion Paladin 0x00 Level(10, Ally, 1) [18,19] 0x00 0x00 0x0 0x00 [] AttackInRangeAI
 UNIT Bastion Paladin 0x00 Level(10, Ally, 1) [15,19] 0x00 0x00 0x0 0x00 [] AttackInRangeAI
+UNIT
+
+NewUnits:
 UNIT Loretta Cleric 0x00 Level(8, Ally, 0) [14,2] 0x00 0x00 0x0 0x00 [Mend, Dracoshield] AttackInRangeAI
 UNIT Francine Assassin 0x00 Level(1, Ally, 0) [15,2] 0x00 0x00 0x0 0x00 [SteelSword, MasterSeal] AttackInRangeAI
 UNIT

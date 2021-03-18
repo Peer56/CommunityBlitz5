@@ -67,6 +67,9 @@ EnemyUnits:
 
 VillageEvent:
 	LOAD1 UnitsVill 1
+	ENUN
+	NoFade
+	ENDA
 
 UnitsVill:
 	UNIT Franklin Valkyrie Gunborg Level(11,Ally,False) [8,2] 0x00 0x00 0x0 0x00 [Shine,Physic,Vulnerary] NoAI
