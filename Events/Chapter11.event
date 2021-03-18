@@ -1,0 +1,66 @@
+
+EventPointerTable(AssetCh11Data, ChapterInfo)
+
+ALIGN 4
+ChapterInfo:
+    POIN TurnEvents
+    POIN TalkEvents
+    POIN TileEvents
+    POIN ActionEvents
+    POIN NoEvents NoEvents NoEvents
+    POIN NoTutorials
+    POIN NoTraps NoTraps
+    POIN unDeployList unDeployList
+    POIN 0 0 0 0 0 0
+    POIN scBeginning scEnding
+
+ALIGN 4
+NoEvents:
+    END_MAIN
+
+ALIGN 4
+NoTutorials:
+    WORD 0
+
+ALIGN 4
+NoTraps:
+    ENDTRAP
+
+ALIGN 4
+TurnEvents:
+    END_MAIN
+
+ALIGN 4
+TalkEvents:
+    END_MAIN
+
+ALIGN 4
+TileEvents:
+    END_MAIN
+
+ALIGN 4
+ActionEvents:
+    END_MAIN
+
+ALIGN 4
+scBeginning:
+{
+#ifdef __DEBUG__
+    LOAD 1 unDeployList
+    ENUN
+#endif
+
+    GotoPrepScreen
+    ENDA
+}
+
+ALIGN 4
+scEnding:
+{
+    ENDA
+}
+
+ALIGN 4
+unDeployList:
+    UNIT Gunborg GunborgGreatLord Level(5, Ally, True) [6, 18] 0 [SilverSword, Elixir]
+    UNIT
