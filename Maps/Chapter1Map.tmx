@@ -5,14 +5,14 @@
  </tileset>
  <layer id="1" name="Tile Layer 1" width="19" height="14">
   <properties>
-   <property name="Anims1" value="0x12"/>
+   <property name="Anims1" value="AssetVillageAnims"/>
    <property name="ChapterID" value="0"/>
    <property name="Main" value=""/>
-   <property name="MapChangesID" value="6"/>
-   <property name="MapID" value="4"/>
-   <property name="ObjectType" value="0xE"/>
-   <property name="PaletteID" value="0xF"/>
-   <property name="TileConfig" value="0x10"/>
+   <property name="MapChangesID" value="AssetCh01MapChanges"/>
+   <property name="MapID" value="AssetCh01Map"/>
+   <property name="ObjectType" value="AssetVillageObj"/>
+   <property name="PaletteID" value="AssetVillagePal"/>
+   <property name="TileConfig" value="AssetVillageConfig"/>
   </properties>
   <data>
    <tile gid="513"/>

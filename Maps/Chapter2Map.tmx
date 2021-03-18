@@ -8,11 +8,11 @@
    <property name="Anims1" value="0"/>
    <property name="ChapterID" value="1"/>
    <property name="Main" value=""/>
-   <property name="MapChangesID" value="9"/>
-   <property name="MapID" value="8"/>
-   <property name="ObjectType" value="0x3C"/>
-   <property name="PaletteID" value="0x3D"/>
-   <property name="TileConfig" value="0x3E"/>
+   <property name="MapChangesID" value="AssetCh02MapChanges"/>
+   <property name="MapID" value="AssetCh02Map"/>
+   <property name="ObjectType" value="AssetFortObj"/>
+   <property name="PaletteID" value="AssetFortPal"/>
+   <property name="TileConfig" value="AssetFortConfig"/>
   </properties>
   <data>
    <tile gid="822"/>

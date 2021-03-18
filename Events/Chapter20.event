@@ -1,6 +1,6 @@
 #include EAstdlib.event
 
-EventPointerTable(0x5A,Chapter20Events)
+EventPointerTable(AssetCh20Data,Chapter20Events)
 
 //Chapter Specific Definitions
 	//Map Changes
