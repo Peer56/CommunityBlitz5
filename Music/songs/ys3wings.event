@@ -4,7 +4,7 @@
 	#define	ys3wings_grp  voicegroup000
 	#define	ys3wings_pri  0
 	#define	ys3wings_rev  0
-	#define	ys3wings_mvl  40
+	#define	ys3wings_mvl  127
 	#define	ys3wings_key  0
 	#define	ys3wings_tbs  1
 	#define	ys3wings_exg  0

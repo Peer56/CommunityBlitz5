@@ -1,0 +1,106 @@
+EventPointerTable(0x5E, PointerList)
+
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno1 Dunno2 Dunno3 Tutorial
+POIN Traps1 Traps2
+POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+POIN $0 $0 $0
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+END_MAIN
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+Door(2,25)
+Door(32,25)
+Chest(Boots,2,28)
+Chest(Hammerne,32,28)
+END_MAIN
+
+MiscBasedEvents:
+DefeatBoss(EndingScene)
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno1:
+END_MAIN
+
+Dunno2:
+END_MAIN
+
+Dunno3:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+ALIGN 4
+Units1:
+UNIT Gunborg GunborgLord 0 Level(0,Ally,0) [18,29] 0 0 0 1 NoItems NoAI
+UNIT Bastion Knight 0 Level(0,Ally,0) [17,30] 0 0 0 1 NoItems NoAI
+UNIT Bastion Knight 0 Level(0,Ally,0) [16,31] 0 0 0 1 NoItems NoAI
+UNIT Bastion Knight 0 Level(0,Ally,0) [18,31] 0 0 0 1 NoItems NoAI
+UNIT Bastion Knight 0 Level(0,Ally,0) [17,32] 0 0 0 1 NoItems NoAI
+UNIT Bastion Knight 0 Level(0,Ally,0) [15,32] 0 0 0 1 NoItems NoAI
+UNIT Bastion Knight 0 Level(0,Ally,0) [19,32] 0 0 0 1 NoItems NoAI
+UNIT Bastion Knight 0 Level(0,Ally,0) [15,30] 0 0 0 1 NoItems NoAI
+UNIT Bastion Knight 0 Level(0,Ally,0) [19,30] 0 0 0 1 NoItems NoAI
+UNIT Bastion Knight 0 Level(0,Ally,0) [14,31] 0 0 0 1 NoItems NoAI
+UNIT Bastion Knight 0 Level(0,Ally,0) [20,31] 0 0 0 1 NoItems NoAI
+UNIT Bastion Knight 0 Level(0,Ally,0) [14,29] 0 0 0 1 NoItems NoAI
+UNIT Bastion Knight 0 Level(0,Ally,0) [20,29] 0 0 0 1 NoItems NoAI
+UNIT
+
+ALIGN 4
+NewUnit:
+UNIT Xholt Druid 0 Level(20,Ally,0) [16,29] 0 0 0 1 [Naglfar] NoAI
+UNIT
+
+
+ALIGN 4
+EnemyUnits:
+UNIT Ch21Boss DemonKing 0 Level(20,Enemy,0) [17,3] 0 0 0 1 [DemonLight,Ravager,Nightmare] [0x14,0x03,0x4,0x20]
+UNIT
+
+Traps1:
+ENDTRAP
+ALIGN 4
+
+Traps2:
+ENDTRAP
+ALIGN 4
+
+ALIGN 4
+BeginningScene:
+LOAD1 0 Units1
+ENUN
+LOAD1 0 EnemyUnits
+ENUN
+
+CALL $591FD8 //GotoPrepScreen
+
+LOAD1 0 NewUnit1
+ENUN
+
+
+NoFade
+ENDA
+
+ALIGN 4
+EndingScene:
+
+MNC2 0
+
+NoFade
+ENDA
+
+
+
