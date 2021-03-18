@@ -1,6 +1,18 @@
 
 EventPointerTable(AssetCh11Data, ChapterInfo)
 
+#ifndef SetSymbolDefined
+  #define SetSymbolDefined
+  #define SetSymbol(name, val) "PUSH; ORG (val); name :; POP"
+#endif
+
+SetSymbol(cntKillCount, 0)
+SetSymbol(cntReinCount, 1)
+SetSymbol(cntReinNumLo, 2)
+SetSymbol(cntReinNumHi, 3)
+
+SetSymbol(flagEnemyDeath, 10)
+
 ALIGN 4
 ChapterInfo:
     POIN TurnEvents
@@ -28,6 +40,8 @@ NoTraps:
 
 ALIGN 4
 TurnEvents:
+    TURN 0 scCheckReinf [1, 0xFF] 0
+    TURN 3 scEnding [9] 0
     END_MAIN
 
 ALIGN 4
@@ -40,11 +54,118 @@ TileEvents:
 
 ALIGN 4
 ActionEvents:
+    AFEV 0 scOnEnemyDeath flagEnemyDeath
     END_MAIN
+
+ALIGN 4
+scIncKillCount:
+{
+    SetSymbol(end, 0)
+
+    // increment kill count
+    COUNTER_INC cntKillCount
+
+    // compare kill count to 4, end if it's lower
+    SVAL s1 4
+    COUNTER_CHECK cntKillCount
+    BLT end sC s1
+
+    // reset kill count and increase reinf count
+    COUNTER_SET cntKillCount 0
+    COUNTER_INC cntReinCount
+
+LABEL end
+    ENDA
+}
+
+ALIGN 4
+scResetCounters:
+{
+    COUNTER_SET cntKillCount 0
+    COUNTER_SET cntReinCount 0
+    COUNTER_SET cntReinNumLo 0
+    COUNTER_SET cntReinNumHi 0
+
+    ENDA
+}
+
+ALIGN 4
+scGetNextReinNum:
+{
+    SetSymbol(wrap,   0)
+    SetSymbol(return, 1)
+
+    COUNTER_CHECK cntReinNumLo
+    SVAL s1 15
+    BEQ wrap sC s1
+
+    COUNTER_INC cntReinNumLo
+
+LABEL return
+    // s1 = cntReinNumHi << 4
+    COUNTER_CHECK cntReinNumHi
+    SVAL s1 4
+    SLSL s1 sC s1
+
+    // sC = cntReinNumLo + (cntReinNumHi << 4)
+    COUNTER_CHECK cntReinNumLo
+    SADD sC sC s1
+
+    ENDA
+
+LABEL wrap
+    COUNTER_SET cntReinNumLo 0
+    COUNTER_INC cntReinNumHi
+
+    GOTO return
+}
+
+ALIGN 4
+scOnEnemyDeath:
+{
+    // allow the event to be run again, when another enemy dies
+    ENUF flagEnemyDeath
+
+    CALL scIncKillCount
+
+    NoFade
+    ENDA
+}
+
+ALIGN 4
+scCheckReinf:
+{
+    SetSymbol(lop, 0)
+    SetSymbol(end, 1)
+
+LABEL lop
+    COUNTER_CHECK cntReinCount
+
+    BEQ end sC s0
+
+    COUNTER_DEC cntReinCount
+
+    CALL scGetNextReinNum
+
+#ifdef __DEBUG__
+    SADD s3 sC s0
+    GIVEMONEY Gunborg
+#endif
+
+    // TODO: check sC to choose which reinf to load
+
+    GOTO lop
+
+LABEL end
+    NoFade
+    ENDA
+}
 
 ALIGN 4
 scBeginning:
 {
+    CALL scResetCounters
+
 #ifdef __DEBUG__
     LOAD 1 unDeployList
     ENUN
@@ -57,10 +178,22 @@ scBeginning:
 ALIGN 4
 scEnding:
 {
+    MNC2 11
     ENDA
 }
 
 ALIGN 4
 unDeployList:
-    UNIT Gunborg GunborgGreatLord Level(5, Ally, True) [6, 18] 0 [SilverSword, Elixir]
+    UNIT Gunborg  GunborgGreatLord Level(5,  Ally, True) [4,  16] 0 [SilverSword, Elixir]
+    UNIT Bastion  GreatKnight      Level(5,  Ally, True) [5,  16] 0 [SilverAxe, SilverLance, Elixir]
+    UNIT Aldric   General          Level(5,  Ally, True) [4,  17] 0 [SilverLance, SilverAxe, SilverSword, Elixir]
+    UNIT Scully   Warrior          Level(5,  Ally, True) [16, 2]  0 [SilverAxe, SilverBow, Elixir]
+    UNIT Wilbur   Bishop           Level(5,  Ally, True) [17, 2]  0 [Aura, Mend, Elixir]
+    UNIT Paula    Swordmaster_F    Level(5,  Ally, True) [16, 3]  0 [SilverSword, Shamshir, Runesword, Elixir]
+    UNIT Serahlta Rogue            Level(5,  Ally, True) [3,  2]  0 [SilverSword]
+    UNIT Yin      FalcoKnight      Level(5,  Ally, True) [2,  2]  0 [SilverSword, SilverLance, Spear, Elixir]
+    UNIT Yang     WyvernKnight_F   Level(5,  Ally, True) [3,  1]  0 [SilverLance, Spear, Elixir]
+    UNIT Calvin   Cyclops          Level(15, Ally, True) [16, 12] 0 [SilverAxe, Tomahawk, Elixir]
+    UNIT Hobbes   ArchMogall       Level(5,  Ally, True) [16, 13] 0 [EvilEye, CrimsonEye, Elixir]
+    UNIT Yara     Summoner         Level(5,  Ally, True) [17, 12] 0 [Nosferatu, Nosferatu, Elixir]
     UNIT
