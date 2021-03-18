@@ -217,6 +217,26 @@ just wiped out tomato town[A][X]
 [OpenMidRight][LoadActive][OpenMidLeft][LoadMan4]
 what the fuck are you doing in my house[A][X]
 
+## Ch9TopRightVilText
+[OpenMidRight][LoadActive][OpenMidLeft][LoadMan4]
+based[A][X]
+
+## Ch9MiddleVilText
+[OpenMidRight][LoadActive][OpenMidLeft][LoadWoman2]
+19 dollar Fortnite card, Who wants it?[A][X]
+
+## Ch9LeftVilText
+[OpenMidRight][LoadActive][OpenMidLeft][LoadWoman3]
+Life, Liberty,[N]
+and the Fursuit of Happiness[A][X]
+
+## Ch9BottomLeftVilText
+[OpenMidRight][LoadActive][OpenMidLeft][LoadMan1]
+I FEEL LIKE IM IN A FUCKING ASYLUM FULL[N]
+OF DEMENTIA RIDDEN OLD PEOPLE THAT CAN[A][N]
+DO NOTHING BUT REPEAT THE SAME FUCKING[N]
+WORDS ON LOOP LIKE A FUCKING BROKEN RECORD[A][X]
+
 ## GenericDeathQuote
 Oof[A][X]
 

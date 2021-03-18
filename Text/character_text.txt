@@ -357,3 +357,15 @@ Bandit[X]
 
 ## BanditDesc
 they do be thievin tho[X]
+
+## NPCName
+Villager[X]
+
+## NPCDesc
+[X]
+
+## MerlotName
+Merlot[X]
+
+## MerlotDesc
+[X]
