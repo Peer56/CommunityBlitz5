@@ -143,11 +143,15 @@ UNIT
 
 ALIGN 4
 BeginningScene:
-LOAD1 0x1 NewUnits
-ENUN
 LOAD1 0x1 Enemies
 ENUN
 //Text(Ch2Opening)
+
+CALL $591FD8 //GotoPrepScreen
+
+LOAD1 0x1 NewUnits
+ENUN
+
 NoFade
 ENDA
 
