@@ -20,12 +20,12 @@ TurnBasedEvents:
 END_MAIN
 
 CharacterBasedEvents:
-CharacterEventBothWays(0x8,RecruitErgon,Gunborg,Ergon)
+CharacterEventBothWays(8,RecruitErgon,Gunborg,Ergon)
 END_MAIN
 
 LocationBasedEvents:
 Seize(7, 17)
-Village(0x8, RecruitYara, 1, 11)
+Village(9, RecruitYara, 1, 11)
 END_MAIN
 
 MiscBasedEvents:

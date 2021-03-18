@@ -1,0 +1,140 @@
+EventPointerTable(AssetCh21Data, PointerList)
+
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno1 Dunno2 Dunno3 Tutorial
+POIN Traps1 Traps2
+POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+POIN $0 $0 $0
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+END_MAIN
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+Door(2,25)
+Door(32,25)
+Chest(Boots,2,28)
+Chest(Hammerne,32,28)
+END_MAIN
+
+MiscBasedEvents:
+DefeatBoss(EndingScene)
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno1:
+END_MAIN
+
+Dunno2:
+END_MAIN
+
+Dunno3:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+ALIGN 4
+Units1:
+UNIT Gunborg GunborgLord 0 Level(0,Ally,0) [18,29] 0 0 0 1 NoItems NoAI
+UNIT Bastion Knight 0 Level(0,Ally,0) [17,30] 0 0 0 1 NoItems NoAI
+UNIT Bastion Knight 0 Level(0,Ally,0) [16,31] 0 0 0 1 NoItems NoAI
+UNIT Bastion Knight 0 Level(0,Ally,0) [18,31] 0 0 0 1 NoItems NoAI
+UNIT Bastion Knight 0 Level(0,Ally,0) [17,32] 0 0 0 1 NoItems NoAI
+UNIT Bastion Knight 0 Level(0,Ally,0) [15,32] 0 0 0 1 NoItems NoAI
+UNIT Bastion Knight 0 Level(0,Ally,0) [19,32] 0 0 0 1 NoItems NoAI
+UNIT Bastion Knight 0 Level(0,Ally,0) [15,30] 0 0 0 1 NoItems NoAI
+UNIT Bastion Knight 0 Level(0,Ally,0) [19,30] 0 0 0 1 NoItems NoAI
+UNIT Bastion Knight 0 Level(0,Ally,0) [14,31] 0 0 0 1 NoItems NoAI
+UNIT Bastion Knight 0 Level(0,Ally,0) [20,31] 0 0 0 1 NoItems NoAI
+UNIT Bastion Knight 0 Level(0,Ally,0) [14,29] 0 0 0 1 NoItems NoAI
+UNIT Bastion Knight 0 Level(0,Ally,0) [20,29] 0 0 0 1 NoItems NoAI
+UNIT
+
+ALIGN 4
+NewUnit:
+UNIT Xholt Druid 0 Level(20,Ally,0) [16,29] 0 0 0 1 [Naglfar] NoAI
+UNIT
+
+
+ALIGN 4
+EnemyUnits:
+UNIT Ch21Boss DemonKing 0 Level(20,Enemy,0) [17,3] 0 0 0 1 [DemonLight,Ravager,Nightmare] [0x14,0x03,0x4,0x20]
+UNIT Ch21Generics1 Wight 0 Level(17,Enemy,1) [13,24] 0 0 0 1 [SilverSword] AttackInRangeAI
+UNIT Ch21Generics1 Wight_Bow 0 Level(18,Enemy,1) [24,21] 0 0 0 1 [SilverBow] AttackInRangeAI
+UNIT Ch21Generics1 Wight 0 Level(18,Enemy,1) [23,23] 0 0 0 1 [SilverLance] AttackInRangeAI
+UNIT Ch21Generics1 ArchMogall 0 Level(19,Enemy,1) [6,25] 0 0 0 1 [CrimsonEye] AttackInRangeAI
+UNIT Ch21Generics1 ArchMogall 0 Level(18,Enemy,1) [28,19] 0 0 0 1 [CrimsonEye] AttackInRangeAI
+UNIT Ch21Generics1 Wight_Bow 0 Level(17,Enemy,1) [5,21] 0 0 0 1 [Longbow] AttackInRangeAI
+UNIT Ch21Generics1 Gorgon 0 Level(17,Enemy,1) [2,27] 0 0 0 1 [Stone] AttackInRangeAI
+UNIT Ch21Generics1 Gorgon 0 Level(18,Enemy,1) [32,27] 0 0 0 1 [Shadowshot] AttackInRangeAI
+UNIT Ch21Generics1 ElderBael 0 Level(19,Enemy,1) [2,23] 0 0 0 1 [SharpClaw] AttackInRangeAI
+UNIT Ch21Generics1 DracoZombie 0 Level(19,Enemy,1) [32,19] 0 0 0 1 [WretchedAir] AttackInRangeAI
+UNIT Ch21Generics1 ElderBael 0 Level(17,Enemy,1) [7,19] 0 0 0 1 [SharpClaw] AttackInRangeAI
+UNIT Ch21Generics1 Wight 0 Level(18,Enemy,1) [28,17] 2 0 0 1 [Runesword] AttackInRangeAI
+UNIT Ch21Generics1 ElderBael 0 Level(19,Enemy,1) [7,15] 0 0 0 1 [SharpClaw] AttackInRangeAI
+UNIT Ch21Generics1 ElderBael 0 Level(20,Enemy,1) [2,15] 0 0 0 1 [SharpClaw] AttackInRangeAI
+UNIT Ch21Generics1 ArchMogall 0 Level(20,Enemy,1) [24,19] 0 0 0 1 [CrimsonEye] AttackInRangeAI
+UNIT Ch21Generics1 Entombed 0 Level(18,Enemy,1) [32,12] 0 0 0 1 [FetidClaw] AttackInRangeAI
+UNIT Ch21Generics1 Entombed 0 Level(19,Enemy,1) [2,12] 0 0 0 1 [FetidClaw] AttackInRangeAI
+UNIT Ch21Generics1 Wight 0 Level(19,Enemy,1) [17,13] 0 0 0 1 [ShortSpear] AttackInRangeAI
+UNIT Ch21Generics1 Entombed 0 Level(18,Enemy,1) [18,9] 0 0 0 1 [FetidClaw] AttackInRangeAI
+UNIT Ch21Generics1 ArchMogall 0 Level(19,Enemy,1) [24,10] 0 0 0 1 [Shadowshot,CrimsonEye] AttackInRangeAI
+UNIT Ch21Generics1 Wight_Bow 0 Level(20,Enemy,1) [5,18] 0 0 0 1 [KillerBow] AttackInRangeAI
+UNIT Ch21Generics1 Entombed 0 Level(20,Enemy,1) [29,17] 0 0 0 1 [FetidClaw] AttackInRangeAI
+UNIT Ch21Generics1 DracoZombie 0 Level(19,Enemy,1) [13,3] 0 0 0 1 [WretchedAir] AttackInRangeAI
+UNIT Ch21Generics1 Entombed 0 Level(19,Enemy,1) [2,5] 0 0 0 1 [FetidClaw] AttackInRangeAI
+UNIT Ch21Generics1 DracoZombie 0 Level(20,Enemy,1) [21,3] 0 0 0 1 [WretchedAir] AttackInRangeAI
+UNIT Ch21Generics1 Maelduin 0 Level(18,Enemy,1) [32,5] 0 0 0 1 [KillerAxe] AttackInRangeAI
+UNIT Ch21Generics1 Wight 0 Level(18,Enemy,1) [26,14] 0 0 0 1 [SilverLance] AttackInRangeAI
+UNIT Ch21Generics1 Maelduin 0 Level(18,Enemy,1) [11,15] 0 0 0 1 [SilverAxe] AttackInRangeAI
+UNIT Ch21Generics1 DracoZombie 0 Level(19,Enemy,1) [17,0] 0 0 0 1 [WretchedAir] AttackInRangeAI
+UNIT Ch21Generics1 Maelduin 0 Level(20,Enemy,1) [6,13] 0 0 0 1 [Tomahawk] AttackInRangeAI
+UNIT Ch21Generics1 Deathgoyle 0 Level(20,Enemy,1) [10,8] 0 0 0 1 [SilverLance] AttackInRangeAI
+UNIT Ch21Generics1 Deathgoyle 0 Level(19,Enemy,1) [23,8] 0 0 0 1 [SilverLance] AttackInRangeAI
+UNIT Ch21Generics1 Deathgoyle 0 Level(18,Enemy,1) [7,3] 2 0 0 1 [ShortSpear] AttackInRangeAI
+UNIT Ch21Generics1 Deathgoyle 0 Level(19,Enemy,1) [27,3] 0 0 0 1 [SilverLance] AttackInRangeAI
+UNIT
+
+Traps1:
+ENDTRAP
+ALIGN 4
+
+Traps2:
+ENDTRAP
+ALIGN 4
+
+ALIGN 4
+BeginningScene:
+LOAD1 0 Units1
+ENUN
+LOAD1 0 EnemyUnits
+ENUN
+
+CALL $591FD8 //GotoPrepScreen
+
+LOAD1 0 NewUnit1
+ENUN
+
+
+NoFade
+ENDA
+
+ALIGN 4
+EndingScene:
+
+MNC2 0
+
+NoFade
+ENDA
+
+
+
