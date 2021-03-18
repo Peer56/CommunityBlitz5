@@ -176,6 +176,6 @@ SHLI SteelSword SteelLance SteelAxe SteelBow LightBrand Javelin HandAxe Longbow
 
 ALIGN 4
 VendorItemList:
-SHLI Thunder Divine Flux Mend Elfire Purge Restore TorchStaff Vulnerary Elixir
+SHLI Thunder Divine Flux Mend Elfire Purge Restore TorchStaff Vulnerary Elixir MasterSeal
 
 ALIGN 4
