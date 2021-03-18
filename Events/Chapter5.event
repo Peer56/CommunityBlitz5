@@ -54,8 +54,14 @@ GotoPrepScreen
 ENDA
 
 EndingScene:
-MNC2 21 //todo: make this conditional 21 (ch5x) or 5 (ch6)
-ENDA:
+CHECK_ALIVE Yara
+BNE 21 s0 sC
+MNC2 5 //if dead goto ch5
+GOTO 22
+LABEL 21
+MNC2 21 //else go to ch5x
+LABEL 22
+ENDA
 
 RecruitYara:
 LoadReinforcements(YaraUnitGroup)
