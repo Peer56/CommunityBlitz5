@@ -108,7 +108,7 @@ ENDA
 
 EndingScene:
 //go to next chapter
-MNC2 0
+MNC2 20
 ENDA
 
 // Events

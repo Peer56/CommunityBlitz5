@@ -39,7 +39,7 @@ DeathQuoteList:
 DeathQuoteEntry(16,0xA,DemiA,GenericDeathQuote)
 DeathQuoteEntry(16,0xB,DemiB,GenericDeathQuote)
 DeathQuoteEntry(16,0xC,DemiC,GenericDeathQuote)
-
+DeathQuoteEntry(20,2,Ch21Boss,0)
 
 //chapter-specific player unit death quotes
 
