@@ -5,14 +5,14 @@
  </tileset>
  <layer id="1" name="Main" width="20" height="20">
   <properties>
-   <property name="Anims1" value="5"/>
+   <property name="Anims1" value="AssetWaterAnims"/>
    <property name="ChapterID" value="13"/>
    <property name="Main" value=""/>
-   <property name="MapChangesID" value="0x3A"/>
-   <property name="MapID" value="0x39"/>
-   <property name="ObjectType" value="0x1"/>
-   <property name="PaletteID" value="0x2"/>
-   <property name="TileConfig" value="0x3"/>
+   <property name="MapChangesID" value="AssetCh14MapChanges"/>
+   <property name="MapID" value="AssetCh14Map"/>
+   <property name="ObjectType" value="AssetMountainsObj"/>
+   <property name="PaletteID" value="AssetMountainsPal"/>
+   <property name="TileConfig" value="AssetMountainsConfig"/>
   </properties>
   <data encoding="base64" compression="zlib">
    eAF9k01qFFEUhSsKmcWM3IAQ/0aaJVhlSHRiegnpajC6jKrOSCduoap7GpAswkEcKETQBZiBAUcRMvP75F24NI2Dw/0797z3btXdvl1VTVVVs2JrfON1dhvOunzun9K7gDfDtsAe7eWt9ZBvfZVv7J06bF/80HiFVrdRVc+xGc+Id4H8OTgB9nuHiAfiUzhqyD9C5xy8xD9fwVbhqGnPkl77R7AAxqs66l3BPQRfqG8SN9gaPCHnGd457mo+6lrP9D5ZpyXvPNS7oP6pxOanIHQ9dwKCr1XvGHifmEdP3pkYX4Il/gVnfgMdsXXn9ZD8I/AYxPzibb7/HfwBq5axGj+Ad/xJ7k+pj9Ss75M7AC8K3/nVoCn2PXzjLewNOAN7cO8DNdW+wQb/Nflj8AbURSf+txnxDvwJ+Ih/F07oqHVCrDUvx+/UwvsNtPZrO9CDPAtjz7mmR43Q9b3BVyfPe156BuwI8iyMnY/z+F401TJ+yjm7wHr4mV+Tb0CehXsS+c/UlvR/LbxD/A9ATf0JsL8u9Sm2Bb7fN/h/3wP+V775F7kH3M1/UJ780DGOHQ3bkeuBvc7jlN4r4E7l+fjt5QQ/djTvt/6Axlj0nI///h0Q+2Sf9bfoWZfvG44Kz/3LqKl7rrYB2tinvKfxnqzlXjmX6NNOQQucn7o5zrrxLu8uYq/kz+iz/58Ofo8/B3leMc+OfOiGxjr+Ah37B6C+/TGfkdwC/C/OfPuD/xdnI7nA

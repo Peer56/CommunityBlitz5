@@ -70,6 +70,244 @@
 
 #define CHAPTER_5X
 
+//Chapter Asset Defs
+
+#define AssetMountainsObj         $01
+#define AssetMountainsPal         $02
+#define AssetMountainsConfig      $03
+#define AssetCh01Map              $04 // vanilla prologue map
+#define AssetWaterAnims           $05
+#define AssetCh01MapChanges       $06 // vanilla prologue map changes
+#define AssetCh01Data             $07 // vanilla prologue data
+#define AssetCh02Map              $08 // vanilla ch1 map
+#define AssetCh02MapChanges       $09 // vanilla ch1 map changes
+#define AssetCh02Data             $0A // vanilla ch1 data
+#define AssetCh03Map              $0B // vanilla ch2 map
+#define AssetCh03MapChanges       $0C // vanilla ch2 map changes
+#define AssetCh03Data             $0D // vanilla ch2 data
+#define AssetVillageObj           $0E
+#define AssetVillagePal           $0F
+#define AssetVillageConfig        $10
+#define AssetCh04Map              $11 // vanilla ch3 map
+#define AssetVillageAnims         $12
+#define AssetCh04MapChanges       $13 // vanilla ch3 map changes
+#define AssetCh04Data             $14 // vanilla ch3 data
+#define AssetCh05Map              $15 // vanilla ch4 map
+#define AssetCh05MapChanges       $16 // vanilla ch4 map changes
+#define AssetCh05Data             $17 // vanilla ch4 data
+#define AssetCastleObj            $18
+#define AssetCastlePal            $19
+#define AssetCastleConfig         $1A
+#define AssetCh05xMap             $1B // vanilla ch5x map
+#define AssetCastleAnims          $1C
+#define AssetCh05xMapChanges      $1D // vanilla ch5x map changes
+#define AssetCh05xData            $1E // vanilla ch5x data
+#define AssetCh06Map              $1F // vanilla ch5 map
+#define AssetCh06MapChanges       $20 // vanilla ch5 map changes
+#define AssetCh06Data             $21 // vanilla ch5 data
+#define AssetCh07Map              $22 // vanilla ch6 map
+#define AssetCh07MapChanges       $23 // vanilla ch6 map changes
+#define AssetCh07Data             $24 // vanilla ch6 data
+#define AssetCh08Map              $25 // vanilla ch7 map
+#define AssetCh08MapChanges       $26 // vanilla ch7 map changes
+#define AssetCh08Data             $27 // vanilla ch7 data
+#define AssetCh09Map              $28 // vanilla ch8 map
+#define AssetCh09MapChanges       $29 // vanilla ch8 map changes
+#define AssetCh09Data             $2A // vanilla ch8 data
+#define AssetCh10Map              $2B // vanilla eir ch9 map
+#define AssetCh10MapChanges       $2C // vanilla eir ch9 map changes
+#define AssetCh10Data             $2D // vanilla eir ch9 data
+#define AssetPlainsObj            $2E
+#define AssetPlainsPal            $2F
+#define AssetPlainsConfig         $30
+#define AssetCh11Map              $31 // vanilla eir ch10 map
+#define AssetCh11MapChanges       $32 // vanilla eir ch10 map changes
+#define AssetCh11Data             $33 // vanilla eir ch10 data
+#define AssetPlainsPal2           $34
+#define AssetCh12Map              $35 // vanilla eir ch12 map
+#define AssetCh12MapChanges       $36 // vanilla eir ch12 map changes
+#define AssetCh12Data             $37 // vanilla eir ch12 data
+#define AssetMountainsPalGreen    $38
+#define AssetCh13Map              $39 // vanilla eir ch13 map
+#define AssetCh13MapChanges       $3A // vanilla eir ch13 map changes
+#define AssetCh13Data             $3B // vanilla eir ch13 data
+#define AssetFortObj              $3C
+#define AssetFortPal              $3D
+#define AssetFortConfig           $3E
+#define AssetCh14Map              $3F // vanilla eir ch14 map
+#define AssetCh14MapChanges       $40 // vanilla eir ch14 map changes
+#define AssetCh14Data             $41 // vanilla eir ch14 data
+#define AssetDesertObj            $42
+#define AssetDesertPal            $43
+#define AssetDesertConfig         $44
+#define AssetCh15Map              $45 // vanilla ch15 map
+#define AssetCh15MapChanges       $46 // vanilla ch15 map changes
+#define AssetCh15Data             $47 // vanilla eir ch15 data
+#define AssetCastlePalWithOutside $48
+#define AssetCh16Map              $49 // vanilla ch16 map
+#define AssetCh16MapChanges       $4A // vanilla ch16 map changes
+#define AssetCh16Data             $4B // vanilla eir ch16 data
+#define AssetMountainsPalSwamp    $4C
+#define AssetCh17Map              $4D // vanilla ch17 map
+#define AssetCh17MapChanges       $4E // vanilla ch17 map changes
+#define AssetCh17Data             $4F // vanilla eir ch17 data
+#define AssetVolcanoObj           $50
+#define AssetVolcanoPal           $51
+#define AssetVolcanoConfig        $52
+#define AssetCh18Map              $53 // vanilla ch18 map
+#define AssetVolcanoPalAnims      $54
+#define AssetCh18MapChanges       $55 // vanilla ch18 map changes
+#define AssetCh18Data             $56 // vanilla eir ch18 data
+#define AssetCastlePalDarkBlue    $57
+#define AssetCh19Map              $58 // vanilla ch19 map
+#define AssetCh19MapChanges       $59 // vanilla ch19 map changes
+#define AssetCh19Data             $5A // vanilla eir ch19 data
+#define AssetMountainsPalPoison   $5B
+#define AssetCh20Map              $5C // vanilla ch20 map
+#define AssetCh20MapChanges       $5D // vanilla ch20 map changes
+#define AssetCh20Data             $5E // vanilla eir ch20 data
+#define AssetDemonTempleObj       $5F
+#define AssetDemonTemplePal       $60
+#define AssetDemonTempleConfig    $61
+#define AssetCh21Map              $62 // vanilla ch21 map
+#define AssetCh21MapChanges       $63 // vanilla ch21 map changes
+#define AssetCh21Data             $64 // vanilla eir ch21 data
+//                                $65 // vanilla ch21x map
+//                                $66 // vanilla ch21x map changes
+//                                $67 // vanilla eir ch21x data
+#define AssetFortPalRedHiContrast $68
+//                                $69 // vanilla eph ch9 map
+//                                $6A // vanilla eph ch9 map changes
+//                                $6B // vanilla eph ch9 data
+#define AssetShrineObj            $6C
+#define AssetShrinePal            $6D
+#define AssetShrineConfig         $6E
+//                                $6F // vanilla eph ch10 map
+//                                $70 // vanilla eph ch10 map changes
+//                                $71 // vanilla eph ch10 data
+#define AssetVillagePalOcean      $72
+//                                $73 // vanilla eph ch12 map
+//                                $74 // vanilla eph ch12 map changes
+//                                $75 // vanilla eph ch12 data
+//                                $76 // vanilla eph ch13 map
+//                                $77 // vanilla eph ch13 map changes
+//                                $78 // vanilla eph ch13 data
+#define AssetInteriorObj          $79
+#define AssetInteriorPal          $7A
+#define AssetInteriorConfig       $7B
+//                                $7C // vanilla eph ch14 map
+#define AssetInteriorAnims        $7D
+//                                $7E // vanilla eph ch14 map changes
+//                                $7F // vanilla eph ch14 data
+//                                $80 // vanilla eph ch15 data
+//                                $81 // vanilla eph ch16 data
+//                                $82 // vanilla eph ch17 data
+//                                $83 // vanilla eph ch18 data
+//                                $84 // vanilla eph ch19 data
+//                                $85 // vanilla eph ch20 data
+//                                $86 // vanilla eph ch21 data
+//                                $87 // vanilla eph ch21x data
+#define AssetTempleObj            $88
+#define AssetTemplePal            $89
+#define AssetTempleConfig         $8A
+//                                $8B // vanilla valni 1 map
+//                                $8C // vanilla valni 1 map changes
+//                                $8D // vanilla valni 1 data
+//                                $8E // vanilla valni 2 map
+//                                $8F // vanilla valni 2 map changes
+//                                $90 // vanilla valni 2 data
+//                                $91 // vanilla valni 3 map
+//                                $92 // vanilla valni 3 map changes
+//                                $93 // vanilla valni 3 data
+//                                $94 // vanilla valni 4 map
+//                                $95 // vanilla valni 4 map changes
+//                                $96 // vanilla valni 4 data
+//                                $97 // vanilla valni 5 map
+//                                $98 // vanilla valni 5 map changes
+//                                $99 // vanilla valni 5 data
+//                                $9A // vanilla valni 6 map
+//                                $9B // vanilla valni 6 map changes
+//                                $9C // vanilla valni 6 data
+//                                $9D // vanilla valni 7 map
+//                                $9E // vanilla valni 7 map changes
+//                                $9F // vanilla valni 7 data
+//                                $A0 // vanilla valni 8 map
+//                                $A1 // vanilla valni 8 map changes
+//                                $A2 // vanilla valni 8 data
+#define AssetShrinePalDark        $A3
+//                                $A4 // vanilla lagdou 1 map
+//                                $A5 // vanilla lagdou 1 map changes
+//                                $A6 // vanilla lagdou 1 data
+//                                $A7 // vanilla lagdou 2 map
+//                                $A8 // vanilla lagdou 2 map changes
+//                                $A9 // vanilla lagdou 2 data
+//                                $AA // vanilla lagdou 3 map
+//                                $AB // vanilla lagdou 3 map changes
+//                                $AC // vanilla lagdou 3 data
+//                                $AD // vanilla lagdou 4 map
+//                                $AE // vanilla lagdou 4 map changes
+//                                $AF // vanilla lagdou 4 data
+//                                $B0 // vanilla lagdou 5 map
+//                                $B1 // vanilla lagdou 5 map changes
+//                                $B2 // vanilla lagdou 5 data
+//                                $B3 // vanilla lagdou 6 map
+//                                $B4 // vanilla lagdou 6 map changes
+//                                $B5 // vanilla lagdou 6 data
+//                                $B6 // vanilla lagdou 7 map
+//                                $B7 // vanilla lagdou 7 map changes
+//                                $B8 // vanilla lagdou 7 data
+#define AssetCastlePalSepia       $B9
+//                                $BA // vanilla lagdou 8 map
+//                                $BB // vanilla lagdou 8 map changes
+//                                $BC // vanilla lagdou 8 data
+//                                $BD // vanilla lagdou 9 map
+//                                $BE // vanilla lagdou 9 map changes
+//                                $BF // vanilla lagdou 9 data
+//                                $C0 // vanilla lagdou 10 map
+//                                $C1 // vanilla lagdou 10 map changes
+//                                $C2 // vanilla lagdou 10 data
+//                                $C3 // vanilla castle frelia map
+//                                $C4 // vanilla castle frelia map changes
+//                                $C5 // vanilla castle frelia data
+//                                $C6 // vanilla melkaen coast map
+//                                $C7 // vanilla melkaen coast map changes
+//                                $C8 // vanilla melkaen coast data
+//                                $C9 // vanilla cutscene map
+#define AssetCh30Map              $CA // vanilla interesting map
+#define AssetCh30MapChanges       $CB // vanilla interesting data
+#define AssetCastlePalCh25        $CC // vanilla debug map
+//                                $CD // vanilla debug data
+#define AssetFortPalRed           $CE
+//                                $CF // vanilla eir ch11 map
+//                                $D0 // vanilla eir ch11 map changes
+//                                $D1 // vanilla eir ch11 data
+//                                $D2 // vanilla eph ch11 map
+#define AssetVillageAnims2        $D3
+//                                $D4 // vanilla eph ch11 map changes
+//                                $D5 // vanilla eph ch11 data
+#define AssetCh8Pal               $D6 // vanilla cutscene map
+#define AssetCh12Anims            $D7 // vanilla cutscene map
+#define AssetCh12Obj              $D8 // vanilla cutscene map
+#define AssetCh12Config           $D9 // vanilla cutscene map
+//                                $DA // vanilla cutscene map changes
+//                                $DB // vanilla cutscene map
+//                                $DC // vanilla cutscene map
+//                                $DD // vanilla cutscene map
+//                                $DE // vanilla cutscene map
+//                                $DF // vanilla cutscene map changes
+//                                $E0 // vanilla cutscene map
+//                                $E1 // vanilla cutscene map changes
+//                                $E2 // vanilla cutscene map
+//                                $E3 // vanilla cutscene map changes
+//                                $E4 // vanilla cutscene map
+//                                $E5 // vanilla cutscene map
+#define AssetInteriorPalSepia     $E6
+//                                $E7 // vanilla cutscene map
+//                                $E8 // vanilla cutscene map
+//                                $E9 // vanilla cutscene map
+#define AssetVillagePalSepia      $EA
+//                                $EB // vanilla cutscene map
+
 //Character Defs
 
 //Playables
