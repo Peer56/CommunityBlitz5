@@ -446,6 +446,7 @@
 #define Phantom GhostFighter //who the hell calls it a Ghost Fighter
 #define Dracozombie DracoZombie //grr
 #define Falcoknight FalcoKnight //grrrrrr
+#define MautheDoog Mauthedoog //grrrrrrrrrrrr
 #define Halberdier Cyclops_2 //good a spot as any
 
 #define LordSwordAnimID 1

@@ -49,3 +49,13 @@ DeathQuoteEntry(AnyCh,GameOverFlag,Gunborg,GenericDeathQuote)
 
 QuoteListEnd
 
+ALIGN 4
+OceanSealClassList:
+BYTE Brigand Pirate Thief Revenant Bonewalker Bonewalker_Bow Bael Mogall Tarvos MautheDoog Gargoyle 0
+
+
+ALIGN 4
+MasterSealClassList:
+BYTE Mercenary Mercenary_F Myrmidon Myrmidon_F Fighter Pirate Brigand Cavalier Cavalier_F Knight Knight_F Archer Archer_F PegasusKnight WyvernRider WyvernRider_F Priest Cleric Mage Mage_F Shaman Shaman_F Troubadour Thief Journeyman_1 Pupil_1 Recruit_1 Journeyman_2 Pupil_2 Recruit_2 Monk Revenant Bonewalker Bonewalker_Bow Bael Mogall Tarvos MautheDoog Gargoyle 0
+
+ALIGN 4
