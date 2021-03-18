@@ -1,4 +1,4 @@
-EventPointerTable(0x67,ThisChapter)
+EventPointerTable(AssetCh05xData,ThisChapter)
 
 ALIGN 4
 ThisChapter:

@@ -1,6 +1,6 @@
 // Chapter 2 for FEU Community Blitz 5
 // By Pandan
-EventPointerTable(0xA, ThisChapter)
+EventPointerTable(AssetCh02Data, ThisChapter)
 
 ThisChapter:
 POIN TurnBasedEvents

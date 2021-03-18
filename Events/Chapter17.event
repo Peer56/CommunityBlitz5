@@ -31,7 +31,7 @@
 
 
 
-EventPointerTable(0x4B,ThisChapter)
+EventPointerTable(AssetCh17Data,ThisChapter)
 
 ThisChapter:
 POIN TurnBasedEvents

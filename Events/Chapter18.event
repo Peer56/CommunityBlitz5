@@ -9,7 +9,7 @@
 //                                                //
 ////////////////////////////////////////////////////
 
-EventPointerTable(0x4F, PointerList)
+EventPointerTable(AssetCh18Data, PointerList)
 
 PointerList:
 POIN TurnBasedEvents

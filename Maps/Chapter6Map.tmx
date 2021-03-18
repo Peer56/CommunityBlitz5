@@ -5,14 +5,14 @@
  </tileset>
  <layer id="1" name="Tile Layer 1" width="20" height="21">
   <properties>
-   <property name="Anims1" value="5"/>
+   <property name="Anims1" value="AssetWaterAnims"/>
    <property name="ChapterID" value="5"/>
    <property name="Main" value=""/>
-   <property name="MapChangesID" value="0x1D"/>
-   <property name="MapID" value="0x1B"/>
-   <property name="ObjectType" value="0x6C"/>
-   <property name="PaletteID" value="0x6D"/>
-   <property name="TileConfig" value="0x6E"/>
+   <property name="MapChangesID" value="AssetCh06MapChanges"/>
+   <property name="MapID" value="AssetCh06Map"/>
+   <property name="ObjectType" value="AssetShrineObj"/>
+   <property name="PaletteID" value="AssetShrinePal"/>
+   <property name="TileConfig" value="AssetShrineConfig"/>
   </properties>
   <data>
    <tile gid="492"/>
