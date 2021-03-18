@@ -165,7 +165,7 @@ UNIT Ch19Enemies Hero 0x00 Level(12, Enemy, 1) [7,12] 0x00 0x00 0x0 0x00 [Audhul
 UNIT
 
 WulframUnitGroup:
-UNIT Wulfram GreatKnight 0x00 Level(12, Ally, 1) [9,18] 0x00 0x00 0x0 0x00 [BraveSword, Runesword, HoplonGuard, Elixir] NoAI
+UNIT Wulfram GreatKnight 0x00 Level(12, Ally, 1) [7,16] 0x00 0x00 1 REDA7R16 [BraveSword, Runesword, HoplonGuard, Elixir] NoAI
 UNIT
 
 TwoPhantoms:

@@ -102,8 +102,8 @@ UNIT Knoll MageKnight Eirika Level(10, Ally, 0) [8,9] 0x00 0x00 0x0 0x00 [Aircal
 UNIT
 
 Bad:
-UNIT Riev Swordmaster_F 0x00 Level(10, Enemy, 0) [1,1] 0x00 0x00 0x0 0x00 [WindSword, SilverSword, BraveSword, Armourslayer] AttackInRangeAI 
-UNIT Gheb Paladin Riev Level(10, Enemy, 0) [18,18] 0x00 0x00 0x0 0x00 [Spear, BraveLance, SilverBlade, LightBrand] AttackInRangeAI 
+UNIT Ch14Boss1 Swordmaster_F 0x00 Level(10, Enemy, 0) [1,1] 0x00 0x00 0x0 0x00 [WindSword, SilverSword, BraveSword, Armourslayer] AttackInRangeAI 
+UNIT Ch14Boss2 Paladin Riev Level(10, Enemy, 0) [18,18] 0x00 0x00 0x0 0x00 [Spear, BraveLance, SilverBlade, LightBrand] AttackInRangeAI 
 UNIT 0x80 Paladin Riev Level(10, Enemy, 0) [1,12] 0x00 0x00 0x0 0x00 [SilverLance, SteelBlade] PursueWithoutHeedAI 
 UNIT 0x80 Paladin Riev Level(10, Enemy, 0) [0,13] 0x00 0x00 0x0 0x00 [SilverLance, SteelBlade] PursueWithoutHeedAI 
 UNIT 0x80 Paladin Riev Level(10, Enemy, 0) [3,18] 0x00 0x00 0x0 0x00 [SilverLance, SteelBlade] PursueWithoutHeedAI 

@@ -140,6 +140,16 @@
 #define LightAffinity 6
 #define AnimaAffinity 7
 
+//Generic minimugs
+#define MinimugDefault 0
+#define MinimugDragonRed 1
+#define MinimugSoldierGreen 2
+#define MinimugSoldierRed 3
+#define MinimugMonsterRed 4
+#define MinimugShieldGreen 5
+#define MinimugShieldRed 6
+#define MinimugMonsterBlue 7
+
 #define negateByte(byte) "0x100-byte"
 #define IsPointer 0x8000000
 

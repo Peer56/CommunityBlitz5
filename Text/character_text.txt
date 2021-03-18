@@ -67,7 +67,7 @@ A great swordfighter known[N]
 predominantly as 'The Crimson'[X]
 
 ## SerahltaName
-Seralta[X]
+Serahtla[X]
 
 ## SerahltaDesc
 Local thief with an[N]
@@ -327,3 +327,33 @@ Gem[X]
 
 ## GemDesc
 [X]
+
+## SaramineName
+Saramine[X]
+
+## SaramineDesc
+[X]
+
+## DihardName
+Dihard[X]
+
+## DihardDesc
+a christmas movie[X]
+
+## SoldierName
+Soldier[X]
+
+## SoldierDesc
+enemy combatant[X]
+
+## MonsterName
+Monster[X]
+
+## MonsterDesc
+spooky[X]
+
+## BanditName
+Bandit[X]
+
+## BanditDesc
+they do be thievin tho[X]

@@ -209,6 +209,14 @@ Plot? What plot?[A][X]
 [OpenMidRight][LoadGunborg][OpenMidLeft][LoadGem]
 ok i'll join you now[A][X]
 
+## Ch1LeftVillageText
+[OpenMidRight][LoadActive][OpenMidLeft][LoadWoman2]
+just wiped out tomato town[A][X]
+
+## Ch1RightVillageText
+[OpenMidRight][LoadActive][OpenMidLeft][LoadMan4]
+what the fuck are you doing in my house[A][X]
+
 ## GenericDeathQuote
 Oof[A][X]
 

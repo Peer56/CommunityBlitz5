@@ -114,14 +114,15 @@ UNIT Ch3Generics1 Brigand Peter Level(2, Enemy, 1) [0,12] 0x00 0x00 0x0 0x00 [Ir
 UNIT
 
 BeginningScene:
-LOAD2 0x1 Units
-ENUN
-LOAD1 0x1 Pegs
-ENUN
 LOAD1 0x01 Bad
 ENUN
+
+CALL $591FD8 //GotoPrepScreen
+
+LOAD1 0x1 Pegs
+ENUN
+
 NoFade
-GotoPrepScreen
 ENDA
 
 EndingScene:
