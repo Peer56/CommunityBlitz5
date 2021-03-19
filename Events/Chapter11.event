@@ -40,8 +40,8 @@ NoTraps:
 
 ALIGN 4
 TurnEvents:
-    TURN 0 scCheckReinf [1, 0xFF] 0
     TURN 3 scEnding [9] 0
+    TURN 0 scCheckReinf [1, 0xFF] 0
     END_MAIN
 
 ALIGN 4
@@ -60,6 +60,9 @@ ActionEvents:
 ALIGN 4
 scIncKillCount:
 {
+    // increments cntKillCount
+    // if cntKillCount reaches 4, resets it and increments cntReinCount
+
     SetSymbol(end, 0)
 
     // increment kill count
@@ -81,6 +84,8 @@ LABEL end
 ALIGN 4
 scResetCounters:
 {
+    // resets all of this chapters counters to their initial value
+
     COUNTER_SET cntKillCount 0
     COUNTER_SET cntReinCount 0
     COUNTER_SET cntReinNumLo 0
@@ -92,9 +97,13 @@ scResetCounters:
 ALIGN 4
 scGetNextReinNum:
 {
+    // increments cntReinNumLo:cntReinNumHi
+    // ou: sC = reinforcement number (= current value of cntReinNumLo:cntReinNumHi)
+
     SetSymbol(wrap,   0)
     SetSymbol(return, 1)
 
+    // if cntReinNumLo reaches max (15), reset it and increment cntReinNumHi
     COUNTER_CHECK cntReinNumLo
     SVAL s1 15
     BEQ wrap sC s1
@@ -123,8 +132,11 @@ LABEL wrap
 ALIGN 4
 scOnEnemyDeath:
 {
+    // scene attached to enemy death flag
+    // increments kill count
+
     // allow the event to be run again, when another enemy dies
-    ENUF flagEnemyDeath
+    FLAG_F flagEnemyDeath
 
     CALL scIncKillCount
 
@@ -135,6 +147,9 @@ scOnEnemyDeath:
 ALIGN 4
 scCheckReinf:
 {
+    // scene attached to start of turn
+    // loads any queued reinforcements
+
     SetSymbol(lop, 0)
     SetSymbol(end, 1)
 
@@ -152,7 +167,8 @@ LABEL lop
     GIVEMONEY Gunborg
 #endif
 
-    // TODO: check sC to choose which reinf to load
+    SADD s2 sC s0
+    CALL scLoadReinforcements
 
     GOTO lop
 
@@ -164,9 +180,12 @@ LABEL end
 ALIGN 4
 scBeginning:
 {
+    // beginning scene
+
     CALL scResetCounters
 
 #ifdef __DEBUG__
+    // load in debug party
     LOAD 1 unDeployList
     ENUN
 #endif
@@ -178,7 +197,14 @@ scBeginning:
 ALIGN 4
 scEnding:
 {
-    MNC2 11
+    // ending scene
+
+    // set flag 3 just in case
+    // if this isn't set at the end of a chapter, turn count and beat time won't be registered
+    FLAG_T 3
+
+    GOTO_CHAPTER_NOWM 11
+
     ENDA
 }
 
