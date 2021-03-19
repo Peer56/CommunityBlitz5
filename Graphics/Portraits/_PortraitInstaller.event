@@ -143,17 +143,17 @@ ALIGN 4
 DemiCPortrait:
 #incext PortraitFormatter "DemiC.png"
 
-setMugEntry(DihardMug,DihardPortrait,2,6,3,4)
+setMugEntry(DihardMug,DihardPortrait,3,4,3,1)
 ALIGN 4
 DihardPortrait:
 #incext PortraitFormatter "Dihard.png"
 
-setMugEntry(FranklinMug,FranklinPortrait,2,6,3,4)
+setMugEntry(FranklinMug,FranklinPortrait,2,5,3,3)
 ALIGN 4
 FranklinPortrait:
 #incext PortraitFormatter "Franklin.png"
 
-setMugEntry(TheodoreMug,LamarPortrait,2,6,3,4)
+setMugEntry(TheodoreMug,LamarPortrait,2,5,3,3)
 ALIGN 4
 LamarPortrait:
 #incext PortraitFormatter "Lamar.png"
@@ -243,7 +243,7 @@ ALIGN 4
 AgvaldtPortrait:
 #incext PortraitFormatter "Agvaldt.png"
 
-setMugEntry(XholtMug,XholtPortrait,2,6,3,4)
+setMugEntry(XholtMug,XholtPortrait,2,6,2,4)
 ALIGN 4
 XholtPortrait:
 #incext PortraitFormatter "Xholt.png"
@@ -258,8 +258,58 @@ ALIGN 4
 BarlaPortrait:
 #incext PortraitFormatter "Barla.png"
 
-setMugEntry(RandalMug,RandalPortrait,2,6,3,4)
+setMugEntry(RandalMug,RandalPortrait,3,4,3,2)
 ALIGN 4
 RandalPortrait:
 #incext PortraitFormatter "Randal.png"
 
+setMugEntry(SangriaMug,SangriaPortrait,3,5,3,3)
+ALIGN 4
+SangriaPortrait:
+#incext PortraitFormatter "Sangria.png"
+
+setMugEntry(CheninMug,CheninPortrait,3,5,3,3)
+ALIGN 4
+CheninPortrait:
+#incext PortraitFormatter "Chenin.png"
+
+setMugEntry(MulchMug,MulchPortrait,3,5,3,3)
+ALIGN 4
+MulchPortrait:
+#incext PortraitFormatter "Mulch.png"
+
+setMugEntry(PeterMug,PeterPortrait,3,5,3,3)
+ALIGN 4
+PeterPortrait:
+#incext PortraitFormatter "Peter.png"
+
+setMugEntry(SusieMug,SusiePortrait,3,5,3,3)
+ALIGN 4
+SusiePortrait:
+#incext PortraitFormatter "Susie.png"
+
+setMugEntry(MerlotMug,MerlotPortrait,2,5,3,3)
+ALIGN 4
+MerlotPortrait:
+#incext PortraitFormatter "Merlot.png"
+
+setMugEntry(OttoMug,OttoPortrait,2,5,3,3)
+ALIGN 4
+OttoPortrait:
+#incext PortraitFormatter "Otto.png"
+
+setMugEntry(AkariMug,AkariPortrait,3,5,3,3)
+ALIGN 4
+AkariPortrait:
+#incext PortraitFormatter "Akari.png"
+
+setMugEntry(RhodesMug,RhodesPortrait,3,6,3,4)
+ALIGN 4
+RhodesPortrait:
+#incext PortraitFormatter "Rhodes.png"
+
+
+setMugEntry(SaramineMug,SaraminePortrait,3,6,3,4)
+ALIGN 4
+SaraminePortrait:
+#incext PortraitFormatter "Saramine.png"
