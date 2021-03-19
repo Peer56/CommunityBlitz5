@@ -588,11 +588,11 @@ unReinforcements07:
 ALIGN 4
 unReinforcements08:
     UNIT PID_BOSS  Bishop_F Level(5,  Enemy, True) POS_MID_SOUTH 0 1 mvMidSouthA [Aura]    [NoAI1, 12]
-    UNIT PID_BOSS  Bishop_F Level(5,  Enemy, True) POS_MID_SOUTH 0 1 mvMidNorthB [Aura]    [NoAI1, 12]
-    UNIT PID_BOSS  Bishop_F Level(5,  Enemy, True) POS_MID_SOUTH 0 1 mvMidNorthC [Aura]    [NoAI1, 12]
-    UNIT PID_BOSS  Cleric   Level(15, Enemy, True) POS_MID_SOUTH 0 1 mvMidNorthD [Fortify] [AttackInRange, 12]
-    UNIT PID_BOSS  Cleric   Level(15, Enemy, True) POS_MID_SOUTH 0 1 mvMidNorthE [Fortify] [AttackInRange, 12]
-    UNIT PID_BOSS  Cleric   Level(15, Enemy, True) POS_MID_SOUTH 0 1 mvMidNorthF [Fortify] [AttackInRange, 12]
+    UNIT PID_BOSS  Bishop_F Level(5,  Enemy, True) POS_MID_SOUTH 0 1 mvMidSouthB [Aura]    [NoAI1, 12]
+    UNIT PID_BOSS  Bishop_F Level(5,  Enemy, True) POS_MID_SOUTH 0 1 mvMidSouthC [Aura]    [NoAI1, 12]
+    UNIT PID_THIEF Cleric   Level(15, Enemy, True) POS_MID_SOUTH 0 1 mvMidSouthD [Fortify] [AttackInRange, 12]
+    UNIT PID_THIEF Cleric   Level(15, Enemy, True) POS_MID_SOUTH 0 1 mvMidSouthE [Fortify] [AttackInRange, 12]
+    UNIT PID_THIEF Cleric   Level(15, Enemy, True) POS_MID_SOUTH 0 1 mvMidSouthF [Fortify] [AttackInRange, 12]
     UNIT
 
 ALIGN 4
