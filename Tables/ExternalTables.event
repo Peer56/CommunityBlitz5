@@ -40,6 +40,11 @@ DeathQuoteEntry(16,0xA,DemiA,GenericDeathQuote)
 DeathQuoteEntry(16,0xB,DemiB,GenericDeathQuote)
 DeathQuoteEntry(16,0xC,DemiC,GenericDeathQuote)
 DeathQuoteEntry(20,2,Ch21Boss,0)
+DeathQuoteEntry(0,2,Mulch,GenericDeathQuote)
+DeathQuoteEntry(2,2,Peter,GenericDeathQuote)
+DeathQuoteEntry(21,2,Borgas,GenericDeathQuote)
+DeathQuoteEntry(8,2,Merlot,GenericDeathQuote)
+DeathQuoteEntry(15,2,Darias,GenericDeathQuote)
 
 //death quotes for chapter logic
 DeathQuoteEntry(10, 10, Ch11Generics1, 0)
