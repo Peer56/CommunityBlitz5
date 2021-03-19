@@ -6,12 +6,27 @@ EventPointerTable(AssetCh11Data, ChapterInfo)
   #define SetSymbol(name, val) "PUSH; ORG (val); name :; POP"
 #endif
 
+// ======================
+// = SYMBOL DEFINITIONS =
+// ======================
+
+// generic PIDs
+SetSymbol(PID_GUARD, Ch11Generics1)
+SetSymbol(PID_THIEF, Ch11Generics2)
+SetSymbol(PID_BOSS,  Ch11Boss)
+
+// counter ids
 SetSymbol(cntKillCount, 0)
 SetSymbol(cntReinCount, 1)
 SetSymbol(cntReinNumLo, 2)
 SetSymbol(cntReinNumHi, 3)
 
+// flag ids
 SetSymbol(flagEnemyDeath, 10)
+
+// ================
+// = CHAPTER INFO =
+// ================
 
 ALIGN 4
 ChapterInfo:
@@ -25,6 +40,10 @@ ChapterInfo:
     POIN unDeployList unDeployList
     POIN 0 0 0 0 0 0
     POIN scBeginning scEnding
+
+// ==============
+// = SCENE INFO =
+// ==============
 
 ALIGN 4
 NoEvents:
@@ -56,6 +75,10 @@ ALIGN 4
 ActionEvents:
     AFEV 0 scOnEnemyDeath flagEnemyDeath
     END_MAIN
+
+// ================
+// = EVENT SCENES =
+// ================
 
 ALIGN 4
 scIncKillCount:
@@ -130,6 +153,65 @@ LABEL wrap
 }
 
 ALIGN 4
+scLoadReinforcements:
+{
+    // loads next reinforcement group
+    // in: s2 = number
+
+    SetSymbol(case_01, 0)
+    SetSymbol(case_02, 1)
+    SetSymbol(case_03, 2)
+    SetSymbol(case_04, 3)
+    SetSymbol(case_05, 4)
+    SetSymbol(case_06, 5)
+    SetSymbol(case_07, 6)
+
+    SVAL s1 1
+    BEQ case_01 s2 s1
+
+    SVAL s1 2
+    BEQ case_02 s2 s1
+
+    SVAL s1 3
+    BEQ case_03 s2 s1
+
+    SVAL s1 4
+    BEQ case_04 s2 s1
+
+    SVAL s1 5
+    BEQ case_05 s2 s1
+
+    SVAL s1 6
+    BEQ case_06 s2 s1
+
+    SVAL s1 7
+    BEQ case_07 s2 s1
+
+    ENDA
+
+LABEL case_01
+    ENDA
+
+LABEL case_02
+    ENDA
+
+LABEL case_03
+    ENDA
+
+LABEL case_04
+    ENDA
+
+LABEL case_05
+    ENDA
+
+LABEL case_06
+    ENDA
+
+LABEL case_07
+    ENDA
+}
+
+ALIGN 4
 scOnEnemyDeath:
 {
     // scene attached to enemy death flag
@@ -167,8 +249,14 @@ LABEL lop
     GIVEMONEY Gunborg
 #endif
 
+    // enable camera following unit movement
+    EVBIT_T 9
+
     SADD s2 sC s0
     CALL scLoadReinforcements
+
+    // disable camera following unit movement
+    EVBIT_F 9
 
     GOTO lop
 
@@ -183,6 +271,9 @@ scBeginning:
     // beginning scene
 
     CALL scResetCounters
+
+    LOAD 1 unInitialEnemies
+    ENUN
 
 #ifdef __DEBUG__
     // load in debug party
@@ -208,6 +299,56 @@ scEnding:
     ENDA
 }
 
+// =================================
+// = POSITION AND REDA DEFINITIONS =
+// =================================
+
+#define POS_MID_SOUTH "[7, 11]"
+SetSymbol(mvMidSouthA, REDA8R11)
+SetSymbol(mvMidSouthB, REDA7R12)
+SetSymbol(mvMidSouthC, REDA8R12)
+SetSymbol(mvMidSouthD, REDA9R11)
+SetSymbol(mvMidSouthE, REDA6R11)
+SetSymbol(mvMidSouthF, REDA6R12)
+
+#define POS_MID_NORTH "[7, 5]"
+SetSymbol(mvMidNorthA, REDA8R5)
+SetSymbol(mvMidNorthB, REDA7R4)
+SetSymbol(mvMidNorthC, REDA8R4)
+SetSymbol(mvMidNorthD, REDA9R5)
+SetSymbol(mvMidNorthE, REDA7R4)
+SetSymbol(mvMidNorthF, REDA6R4)
+
+#define POS_MID_WEST "[3, 9]"
+SetSymbol(mvMidWestA, REDA3R8)
+SetSymbol(mvMidWestB, REDA2R9)
+SetSymbol(mvMidWestC, REDA2R8)
+SetSymbol(mvMidWestD, REDA3R7)
+SetSymbol(mvMidWestE, REDA2R10)
+SetSymbol(mvMidWestF, REDA3R10)
+
+#define POS_NORTH_EAST "[14, 5]"
+SetSymbol(mvNorthEastA, REDA14R4)
+SetSymbol(mvNorthEastB, REDA14R3)
+
+#define POS_SOUTH_EAST "[14, 17]"
+SetSymbol(mvSouthEastA, REDA14R16)
+SetSymbol(mvSouthEastB, REDA13R17)
+SetSymbol(mvSouthEastC, REDA13R16)
+SetSymbol(mvSouthEastD, REDA14R15)
+
+#define POS_SOUTH_LEFT "[8, 17]"
+SetSymbol(mvSouthLeftA, REDA8R17)
+SetSymbol(mvSouthLeftB, REDA8R16)
+
+#define POS_SOUTH_RIGHT "[9, 17]"
+SetSymbol(mvSouthRightA, REDA9R17)
+SetSymbol(mvSouthRightB, REDA9R16)
+
+// ===============
+// = UNIT GROUPS =
+// ===============
+
 ALIGN 4
 unDeployList:
     UNIT Gunborg  GunborgGreatLord Level(5,  Ally, True) [4,  16] 0 [SilverSword, Elixir]
@@ -223,3 +364,31 @@ unDeployList:
     UNIT Hobbes   ArchMogall       Level(5,  Ally, True) [16, 13] 0 [EvilEye, CrimsonEye, Elixir]
     UNIT Yara     Summoner         Level(5,  Ally, True) [17, 12] 0 [Nosferatu, Nosferatu, Elixir]
     UNIT
+
+ALIGN 4
+unInitialEnemies:
+    UNIT PID_GUARD Soldier Level(15, Enemy, True) [4,  13] 0 [SteelLance] [AttackInRange, Pursue]
+    UNIT PID_GUARD Soldier Level(15, Enemy, True) [5,  12] 0 [SteelLance] [AttackInRange, Pursue]
+    UNIT PID_GUARD Archer  Level(15, Enemy, True) [3,  11] 0 [SteelBow]   [AttackInRange, Pursue]
+    UNIT PID_GUARD Soldier Level(15, Enemy, True) [2,  5]  0 [SteelLance] [AttackInRange, Pursue]
+    UNIT PID_GUARD Soldier Level(15, Enemy, True) [3,  6]  0 [SteelLance] [AttackInRange, Pursue]
+    UNIT PID_GUARD Archer  Level(15, Enemy, True) [5,  5]  0 [SteelBow]   [AttackInRange, Pursue]
+    UNIT PID_GUARD Soldier Level(15, Enemy, True) [12, 2]  0 [SteelLance] [AttackInRange, Pursue]
+    UNIT PID_GUARD Soldier Level(15, Enemy, True) [11, 1]  0 [SteelLance] [AttackInRange, Pursue]
+    UNIT PID_GUARD Archer  Level(15, Enemy, True) [9,  3]  0 [SteelBow]   [AttackInRange, Pursue]
+    UNIT PID_GUARD Soldier Level(15, Enemy, True) [13, 13] 0 [SteelLance] [AttackInRange, Pursue]
+    UNIT PID_GUARD Soldier Level(15, Enemy, True) [11, 11] 0 [SteelLance] [AttackInRange, Pursue]
+    UNIT PID_GUARD Archer  Level(15, Enemy, True) [13, 16] 0 [SteelBow]   [AttackInRange, Pursue]
+    UNIT
+
+// ======================
+// = DEFINITION CLEANUP =
+// ======================
+
+#undef POS_MID_SOUTH
+#undef POS_MID_NORTH
+#undef POS_MID_WEST
+#undef POS_NORTH_EAST
+#undef POS_SOUTH_EAST
+#undef POS_SOUTH_LEFT
+#undef POS_SOUTH_RIGHT
