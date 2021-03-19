@@ -125,25 +125,29 @@ Ouderen[X]
 Jamie[X]
 
 ## JamieDesc
-next time on mythconfirmers[X]
+Virida's rabid and fiery subordinate.[N]
+The shoutiest vice-commander there is.[X]
 
 ## ViridiaName
 Viridia[X]
 
 ## ViridiaDesc
-[X]
+The commander of the Noellia Knights.[N]
+Manipulative and smooth talking.[X]
 
 ## SunshineName
 Sunshine[X]
 
 ## SunshineDesc
-not as alcoholic as moonshine[X]
+The princess of Noellia. Admist all the[N]
+chaos, finding a hubby is her priority.[X]
 
 ## PeteName
 Pete[X]
 
 ## PeteDesc
-not of the shanty variety[X]
+The former prince of Augma, now a merc.[N]
+He revels in the darkness and edge.[X]
 
 ## GaspardName
 Gaspard[X]
@@ -179,7 +183,8 @@ Barla[X]
 Renaldo[X]
 
 ## RenaldoDesc
-[X]
+Noellia's Knights true commander, he's[N]
+nonchalant about the surrounding mess.[X]
 
 ## TheodoreName
 Theodore[X]
@@ -257,13 +262,15 @@ and about time too[X]
 Pinkus[X]
 
 ## PinkusDesc
-pepto bismol mage[X]
+A monster tamer who travels the seas[N]
+looking to add to his unusual crew.[X]
 
 ## NegajName
 Negaj[X]
 
 ## NegajDesc
-[X]
+Pete's former jagen, now turned zombie.[N]
+Smells like expired yogurt, very dutty.[X]
 
 ## OttoName
 Otto[X]
@@ -326,7 +333,8 @@ Borgas[X]
 Gem[X]
 
 ## GemDesc
-[X]
+The warrior queen of Augma and Pete's[N]
+elder sis. Here to rhyme gum and bum.[X]
 
 ## SaramineName
 Saramine[X]
@@ -338,7 +346,8 @@ Saramine[X]
 Dihard[X]
 
 ## DihardDesc
-a christmas movie[X]
+The king of the corrupted Badmania.[N]
+Stealing a legendary blade Lich'd him.[X]
 
 ## SoldierName
 Soldier[X]
@@ -399,3 +408,17 @@ Fomortiis[X]
 
 ## DemonKingDesc
 making a cameo appearance[X]
+
+## AkariName
+Akari[X]
+
+## AkariDesc
+Pete's former goth gf who turned out to[N]
+be too goth and ended up betraying him.[X]
+
+## RhodesName
+Rhodes[X]
+
+## RhodesDesc
+The prince of Badmania. Now he's the bf[N]
+of Akari. Very not epic style.[X]
