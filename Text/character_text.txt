@@ -417,3 +417,14 @@ Rhodes[X]
 ## RhodesDesc
 [X]
 
+## Ch11GuardName
+Guard[X]
+
+## Ch11GuardDesc
+[X]
+
+## Ch11ThiefName
+Thief[X]
+
+## Ch11ThiefDesc
+[X]
