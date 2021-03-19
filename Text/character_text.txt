@@ -113,41 +113,39 @@ Ergon[X]
 Vulture[X]
 
 ## VultureDesc
-[X]
+A gang member and thief from[N]
+near Akharas. Out of his depth.[X]
 
 ## OuderenName
 Ouderen[X]
 
 ## OuderenDesc
-[X]
+An elderly general of the Kingdom.[N]
+He has served for over 50 years.[X]
 
 ## JamieName
 Jamie[X]
 
 ## JamieDesc
-Virida's rabid and fiery subordinate.[N]
-The shoutiest vice-commander there is.[X]
+next time on mythconfirmers[X]
 
 ## ViridiaName
 Viridia[X]
 
 ## ViridiaDesc
-The commander of the Noellia Knights.[N]
-Manipulative and smooth talking.[X]
+[X]
 
 ## SunshineName
 Sunshine[X]
 
 ## SunshineDesc
-The princess of Noellia. Admist all the[N]
-chaos, finding a hubby is her priority.[X]
+not as alcoholic as moonshine[X]
 
 ## PeteName
 Pete[X]
 
 ## PeteDesc
-The former prince of Augma, now a merc.[N]
-He revels in the darkness and edge.[X]
+not of the shanty variety[X]
 
 ## GaspardName
 Gaspard[X]
@@ -183,8 +181,7 @@ Barla[X]
 Renaldo[X]
 
 ## RenaldoDesc
-Noellia's Knights true commander, he's[N]
-nonchalant about the surrounding mess.[X]
+[X]
 
 ## TheodoreName
 Theodore[X]
@@ -202,13 +199,15 @@ Franklin[X]
 Wulfram[X]
 
 ## WulframDesc
-[X]
+A hero of ancient myth. Desires[N]
+the toppling of all tyrants.[X]
 
 ## AgvaldtName
 Agvaldt[X]
 
 ## AgvaldtDesc
-[X]
+A monster of ancient myth.[N]
+His burning rage consumes all.[X]
 
 ## XholtName
 Xholt[X]
@@ -252,25 +251,24 @@ Calanthia[X]
 Eusebios[X]
 
 ## EusebiosDesc1
-[X]
+An acolyte of the Cult, sent[N]
+to assist the Imperial advance.[X]
 
 ## EusebiosDesc2
-he's finally back,[N]
-and about time too[X]
+An elder of the Cult, returned from[N]
+the dead and channeling great power.[X]
 
 ## PinkusName
 Pinkus[X]
 
 ## PinkusDesc
-A monster tamer who travels the seas[N]
-looking to add to his unusual crew.[X]
+pepto bismol mage[X]
 
 ## NegajName
 Negaj[X]
 
 ## NegajDesc
-Pete's former jagen, now turned zombie.[N]
-Smells like expired yogurt, very dutty.[X]
+[X]
 
 ## OttoName
 Otto[X]
@@ -333,8 +331,7 @@ Borgas[X]
 Gem[X]
 
 ## GemDesc
-The warrior queen of Augma and Pete's[N]
-elder sis. Here to rhyme gum and bum.[X]
+[X]
 
 ## SaramineName
 Saramine[X]
@@ -346,8 +343,7 @@ Saramine[X]
 Dihard[X]
 
 ## DihardDesc
-The king of the corrupted Badmania.[N]
-Stealing a legendary blade Lich'd him.[X]
+a christmas movie[X]
 
 ## SoldierName
 Soldier[X]
@@ -413,15 +409,13 @@ making a cameo appearance[X]
 Akari[X]
 
 ## AkariDesc
-Pete's former goth gf who turned out to[N]
-be too goth and ended up betraying him.[X]
+[X]
 
 ## RhodesName
 Rhodes[X]
 
 ## RhodesDesc
-The prince of Badmania. Now he's the bf[N]
-of Akari. Very not epic style.[X]
+[X]
 
 ## Ch11GuardName
 Guard[X]
