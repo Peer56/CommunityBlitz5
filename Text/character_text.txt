@@ -422,3 +422,15 @@ Rhodes[X]
 ## RhodesDesc
 The prince of Badmania. Now he's the bf[N]
 of Akari. Very not epic style.[X]
+
+## Ch11GuardName
+Guard[X]
+
+## Ch11GuardDesc
+[X]
+
+## Ch11ThiefName
+Thief[X]
+
+## Ch11ThiefDesc
+[X]
