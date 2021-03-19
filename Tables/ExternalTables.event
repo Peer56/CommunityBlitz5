@@ -41,6 +41,11 @@ DeathQuoteEntry(16,0xB,DemiB,GenericDeathQuote)
 DeathQuoteEntry(16,0xC,DemiC,GenericDeathQuote)
 DeathQuoteEntry(20,2,Ch21Boss,0)
 
+//death quotes for chapter logic
+DeathQuoteEntry(10, 10, Ch11Generics1, 0)
+DeathQuoteEntry(10, 10, Ch11Generics2, 0)
+DeathQuoteEntry(10, 10, Ch11Boss,      0)
+
 //chapter-specific player unit death quotes
 
 
