@@ -404,3 +404,16 @@ Fomortiis[X]
 
 ## DemonKingDesc
 making a cameo appearance[X]
+
+## AkariName
+Akari[X]
+
+## AkariDesc
+[X]
+
+## RhodesName
+Rhodes[X]
+
+## RhodesDesc
+[X]
+
