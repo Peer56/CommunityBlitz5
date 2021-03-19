@@ -456,7 +456,7 @@ SetSymbol(mvMidNorthA, REDA8R5)
 SetSymbol(mvMidNorthB, REDA7R4)
 SetSymbol(mvMidNorthC, REDA8R4)
 SetSymbol(mvMidNorthD, REDA9R5)
-SetSymbol(mvMidNorthE, REDA7R4)
+SetSymbol(mvMidNorthE, REDA6R5)
 SetSymbol(mvMidNorthF, REDA6R4)
 
 #define POS_MID_WEST "[3, 9]"
