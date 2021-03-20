@@ -268,7 +268,7 @@ UNIT
 // Shop Data
 ALIGN 4
 RuinsShop:
-SHLI WindSword RuneSword Nosferatu Fortify Sleep Berserk Rescue SecretBook Talisman MasterSeal
+SHLI WindSword Runesword Nosferatu Fortify Sleep Berserk Rescue SecretBook Talisman MasterSeal
 
 ch20Vendor:
 SHLI Elfire Fimbulvetr Divine Aura Flux Fenrir Heal Mend Recover Restore Elixir
