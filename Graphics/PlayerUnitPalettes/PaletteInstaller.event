@@ -15,3 +15,9 @@ Scully_Fighter:
 Wilbur_Priest:
 	#incbin "./_palettes/Wilbur_Priest.lzpal" 
 
+Paula_Myrmidon:
+	#incbin "./_palettes/Paula_Myrmidon.lzpal" 
+
+Serahlta_Thief:
+	#incbin "./_palettes/Serahlta_Thief.lzpal" 
+

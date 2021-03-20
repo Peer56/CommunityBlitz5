@@ -19,3 +19,11 @@
 // Wilbur_Priest
 	setPalette(0xD,Wilbur_Priest)
 	setCBSP(0xD,Wilbur,0x1,Priest)
+
+// Paula_Myrmidon
+	setPalette(0x10,Paula_Myrmidon)
+	setCBSP(0x10,Paula,0x1,Myrmidon_F)
+
+// Serahlta_Thief
+	setPalette(0x13,Serahlta_Thief)
+	setCBSP(0x13,Serahlta,0x1,Thief)
