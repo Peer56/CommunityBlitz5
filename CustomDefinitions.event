@@ -56,7 +56,7 @@
 #define CHAPTER_8
 #define CHAPTER_9
 #define CHAPTER_10
-// #define CHAPTER_11
+#define CHAPTER_11
 #define CHAPTER_12
 #define CHAPTER_13
 #define CHAPTER_14
@@ -373,8 +373,8 @@
 #define Ch11Boss 75
 #define DarkTovah 76
 #define Randal 77
-#define Ch14Boss1 78
-#define Ch14Boss2 79
+#define Akari 78
+#define Rhodes 79
 #define Saramine 80
 #define Darias 81
 #define Borgas 82
@@ -523,8 +523,8 @@
 #define Ch11BossMug 75
 #define DarkTovahMug 76
 #define RandalMug 77
-#define Ch14Boss1Mug 78
-#define Ch14Boss2Mug 79
+#define AkariMug 78
+#define RhodesMug 79
 #define SaramineMug 80
 #define DariasMug 81
 #define BorgasMug 82

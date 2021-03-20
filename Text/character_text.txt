@@ -113,13 +113,15 @@ Ergon[X]
 Vulture[X]
 
 ## VultureDesc
-[X]
+A gang member and thief from[N]
+near Akharas. Out of his depth.[X]
 
 ## OuderenName
 Ouderen[X]
 
 ## OuderenDesc
-[X]
+An elderly general of the Kingdom.[N]
+He has served for over 50 years.[X]
 
 ## JamieName
 Jamie[X]
@@ -197,13 +199,15 @@ Franklin[X]
 Wulfram[X]
 
 ## WulframDesc
-[X]
+A hero of ancient myth. Desires[N]
+the toppling of all tyrants.[X]
 
 ## AgvaldtName
 Agvaldt[X]
 
 ## AgvaldtDesc
-[X]
+A monster of ancient myth.[N]
+His burning rage consumes all.[X]
 
 ## XholtName
 Xholt[X]
@@ -247,11 +251,12 @@ Calanthia[X]
 Eusebios[X]
 
 ## EusebiosDesc1
-[X]
+An acolyte of the Cult, sent[N]
+to assist the Imperial advance.[X]
 
 ## EusebiosDesc2
-he's finally back,[N]
-and about time too[X]
+An elder of the Cult, returned from[N]
+the dead and channeling great power.[X]
 
 ## PinkusName
 Pinkus[X]
@@ -399,3 +404,27 @@ Fomortiis[X]
 
 ## DemonKingDesc
 making a cameo appearance[X]
+
+## AkariName
+Akari[X]
+
+## AkariDesc
+[X]
+
+## RhodesName
+Rhodes[X]
+
+## RhodesDesc
+[X]
+
+## Ch11GuardName
+Guard[X]
+
+## Ch11GuardDesc
+[X]
+
+## Ch11ThiefName
+Thief[X]
+
+## Ch11ThiefDesc
+[X]
