@@ -12,3 +12,12 @@ Kitabei_Myrmidon:
 Peter_Soldier:
 	#incbin "./_palettes/Peter_Soldier.lzpal" 
 
+Susie_Sage:
+	#incbin "./_palettes/Susie_Sage.lzpal" 
+
+Calanthia_Cavalier:
+	#incbin "./_palettes/Calanthia_Cavalier.lzpal" 
+
+Eusebios_Monk:
+	#incbin "./_palettes/Eusebios_Monk.lzpal" 
+

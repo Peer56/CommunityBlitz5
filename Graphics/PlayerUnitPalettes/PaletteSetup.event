@@ -35,3 +35,15 @@
 // Yang_PegasusKnight
 	setPalette(0x19,Yang_PegasusKnight)
 	setCBSP(0x19,Yang,0x1,PegasusKnight)
+
+// Ergon_Soldier
+	setPalette(0x1C,Ergon_Soldier)
+	setCBSP(0x1C,Ergon,0x1,Soldier)
+
+// Vulture_Archer
+	setPalette(0x1F,Vulture_Archer)
+	setCBSP(0x1F,Vulture,0x1,Archer)
+
+// Ouderen_General
+	setPalette(0x22,Ouderen_General)
+	setCBSP(0x22,Ouderen,0x3,General)

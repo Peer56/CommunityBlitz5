@@ -27,3 +27,12 @@ Yin_PegasusKnight:
 Yang_PegasusKnight:
 	#incbin "./_palettes/Yang_PegasusKnight.lzpal" 
 
+Ergon_Soldier:
+	#incbin "./_palettes/Ergon_Soldier.lzpal" 
+
+Vulture_Archer:
+	#incbin "./_palettes/Vulture_Archer.lzpal" 
+
+Ouderen_General:
+	#incbin "./_palettes/Ouderen_General.lzpal" 
+
