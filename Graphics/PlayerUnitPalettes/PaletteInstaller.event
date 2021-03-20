@@ -21,3 +21,9 @@ Paula_Myrmidon:
 Serahlta_Thief:
 	#incbin "./_palettes/Serahlta_Thief.lzpal" 
 
+Yin_PegasusKnight:
+	#incbin "./_palettes/Yin_PegasusKnight.lzpal" 
+
+Yang_PegasusKnight:
+	#incbin "./_palettes/Yang_PegasusKnight.lzpal" 
+

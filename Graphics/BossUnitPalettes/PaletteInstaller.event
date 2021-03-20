@@ -9,3 +9,6 @@ Mulch_Mercenary:
 Kitabei_Myrmidon:
 	#incbin "./_palettes/Kitabei_Myrmidon.lzpal" 
 
+Peter_Soldier:
+	#incbin "./_palettes/Peter_Soldier.lzpal" 
+

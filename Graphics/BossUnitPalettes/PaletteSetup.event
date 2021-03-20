@@ -11,3 +11,7 @@
 // Kitabei_Myrmidon
 	setPalette(0x91,Kitabei_Myrmidon)
 	setCBSP(0x91,Kitabei,0x1,Myrmidon)
+
+// Peter_Soldier
+	setPalette(0x92,Peter_Soldier)
+	setCBSP(0x92,Peter,0x1,Soldier)
