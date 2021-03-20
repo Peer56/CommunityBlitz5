@@ -248,3 +248,5 @@ POP
 
   ALIGN 4
   #include "ExternalHacks/GroupAI/GroupAI.event"
+
+  #include "SupplyFix.event"
