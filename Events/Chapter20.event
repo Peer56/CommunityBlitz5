@@ -274,5 +274,5 @@ ch20Vendor:
 SHLI Elfire Fimbulvetr Divine Aura Flux Fenrir Heal Mend Recover Restore Elixir
 
 ch20Armory:
-SHLI SteelSword LanceReaver SilverSword SteelLance Axereaver SilverLance ShortSpear SteelAxe Swordreaver SilverAxe HandAxe ShortBow SteelBow SilverBow
+SHLI SteelSword Lancereaver SilverSword SteelLance Axereaver SilverLance ShortSpear SteelAxe Swordreaver SilverAxe HandAxe ShortBow SteelBow SilverBow
 // MESSAGE Events end at offset currentOffset
