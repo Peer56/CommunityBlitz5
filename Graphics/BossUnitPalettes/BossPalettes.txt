@@ -1,0 +1,23 @@
+//Boss Palettes
+
+//Chapter 1 Boss
+# char{0x90} "Mulch_Mercenary" set{Mulch,0x1,Mercenary}
+5553FF7F2C256C250C5298775D22B709F36ED1317F5F1826EE04FF3EE818A514
+
+#char{0x91} "Kitabei_Myrmidon" set{Kitabei,0x1,Myrmidon}
+5553FF7FFF6B1F4B2E19114A4C35C7289F1BDB0A3802B83E33326C252925A514
+
+#char{0x92} "Peter_Soldier" set{Peter,0x1,Soldier}
+007EFF7FFF6B1F4B2E19FB3E76328F0D7B6FB5568C31BD56F83D3325CC18A514
+
+/*
+#char{0x93} "Susie_Sage" set{Susie,0x1,Sage_F}
+
+#char{0x94}
+#char{0x95}
+#char{0x96}
+#char{0x97}
+#char{0x98}
+#char{0x99}
+#char{0x9A}
+*/
