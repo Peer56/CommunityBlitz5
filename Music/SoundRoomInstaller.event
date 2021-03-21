@@ -50,6 +50,7 @@ SoundRoomEntry(Elysium,0,SongName_Elysium)
 SoundRoomEntry(BigBattle,0,SongName_BigBattle)
 SoundRoomEntry(InkMeUp,0,SongName_InkMeUp)
 SoundRoomEntry(TheBoysGotWings,0,SongName_TheBoysGotWings)
+SoundRoomEntry(StraightToTheTop,0,SongName_StraightToTheTop)
 
 //Battle Music
 SoundRoomEntry(SwordOfJustice,0,SongName_SwordOfJustice)

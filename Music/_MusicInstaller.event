@@ -184,6 +184,11 @@ SongTable(TheBoysGotWings,ys3wings,1)
 #include "songs/ys3wings.event"
 }
 
+{
+SongTable(StraightToTheTop,aelevate,0)
+#include "songs/aelevate.event"
+}
+
 
 // Add your song here!
 
