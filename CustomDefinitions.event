@@ -558,6 +558,7 @@
 #define BigBattle 0x1D
 #define InkMeUp 0x1E
 #define TheBoysGotWings 0x1f
+#define StraightToTheTop 0x20
 
 // Battle Music
 #define SwordOfJustice 0x19
