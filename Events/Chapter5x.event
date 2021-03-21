@@ -14,8 +14,8 @@ POIN $0 $0 $0 $0 $0 $0
 POIN BeginningScene EndingScene
 
 
-#define EarlyGameLevel 5
-#define EarlyGameLevel2 7
+#define EarlyGameLevel 18
+#define EarlyGameLevel2 20
 
 
 //haven't set village target by brigands events 
@@ -98,7 +98,7 @@ UNIT Bastion Knight 0 Level(0,Ally,0) [3,14] 0 0 0 1 NoItems NoAI
 UNIT
 
 InigoPlayableUnitGroup:
-UNIT Inigo Ranger 0 Level(1,Ally,0) [6,14] 0 0 0 1 [ShortBow, IronSword, Vulnerary] NoAI
+UNIT Inigo Ranger 0 Level(1,Ally,0) [6,14] 0 0 0 1 [SteelBow, SlimSword, Vulnerary] NoAI
 UNIT
 
 // These enemies are meant to be pretty weak for an early game chapter. Low lvl + poor equipment. 
@@ -122,7 +122,7 @@ UNIT UnkChGenerics1 WyvernRider 0x00 Level(EarlyGameLevel2, Enemy, 1) [9,1] 0x00
 
 UNIT UnkChGenerics1 Archer 0x00 Level(EarlyGameLevel, Enemy, 1) [0,5] 0x00 0x00 0x0 0x00 [IronBow] AttackInRangeAI
 UNIT UnkChGenerics1 Brigand 0x00 Level(EarlyGameLevel2, Enemy, 1) [13,14] 0x00 0x00 0x0 0x00 0x22 0x00 0x00 0x00 0x00 0x04 0x04 0x00 //poison axe, attack village 
-UNIT Borgas Rogue 0x00 Level(1, Enemy, 0) [7,2] 0x00 0x00 0x0 0x00 [PoisonSword] NeverMoveAI //boss 
+UNIT Borgas Rogue 0x00 Level(1, Enemy, 0) [7,2] 0x00 0x00 0x0 0x00 [WindSword] NeverMoveAI //boss 
 UNIT
 
 NWUnit:
