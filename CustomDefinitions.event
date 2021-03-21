@@ -334,7 +334,7 @@
 #define Pete 21
 #define Chenin 22
 #define Sangria 23
-#define Ch10Playable1 24
+#define Marissa 24
 #define Gaspard 25
 #define Ch11Playable1 26
 #define Ch11Playable2 27
@@ -485,7 +485,7 @@
 #define PeteMug 21
 #define CheninMug 22 
 #define SangriaMug 23 
-#define Ch10Playable1Mug 24 
+#define MarissaMug 24 
 #define GaspardMug 25 		
 #define Ch11Playable1Mug 26 
 #define Ch11Playable2Mug 27 
