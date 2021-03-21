@@ -1,0 +1,96 @@
+EventPointerTable(AssetCh15Data, PointerList)
+
+PointerList:
+	POIN TurnBasedEvents
+	POIN CharacterBasedEvents
+	POIN LocationBasedEvents
+	POIN MiscBasedEvents
+	POIN Dunno1 Dunno2 Dunno3 Tutorial
+	POIN Traps1 Traps2
+	POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+	POIN $0 $0 $0
+	POIN $0 $0 $0
+	POIN BeginningScene EndingScene
+	
+TurnBasedEvents:
+
+	END_MAIN
+
+ALIGN 32
+CharacterBasedEvents:
+
+	END_MAIN
+
+MiscBasedEvents:
+	CauseGameOverIfLordDies
+	DefeatAll(EndingScene)
+	END_MAIN
+
+LocationBasedEvents:
+	Village(0x10,VillageEvent,9,1)
+	Chest(Purge,1,1)
+	END_MAIN
+
+Dunno1:
+
+	END_MAIN
+
+Dunno2:
+
+	END_MAIN
+
+Dunno3:
+
+	END_MAIN
+
+Tutorial:
+
+	END_MAIN
+
+Units1:
+	UNIT Gunborg GunborgLord 0x00 Level(1, Ally, 0) [13,2] 0x00 0x00 0x0 0x00 [] AttackInRangeAI
+	UNIT Bastion Paladin 0x00 Level(10, Ally, 1) [14,1] 0x00 0x00 0x0 0x00 [] AttackInRangeAI
+	UNIT Bastion Paladin 0x00 Level(10, Ally, 1) [12,1] 0x00 0x00 0x0 0x00 [] AttackInRangeAI
+	UNIT Bastion Paladin 0x00 Level(10, Ally, 1) [13,0] 0x00 0x00 0x0 0x00 [] AttackInRangeAI
+	UNIT
+
+EnemyUnits:
+	UNIT Saramine Sage_F Saramine Level(7,Enemy,False) [1,9] 0x02 0x00 0x0 0x00 [Bolting,Thunder,Warp] GuardTileAI
+	UNIT Ch15Generic1 Sniper Saramine Level(5,Enemy,True)[0,4] 0x00 0x00 0x0 0x00 [SteelBow] AttackInRangeAI
+	UNIT Ch15Generic1 Mercenary Saramine Level(12,Enemy,True)[7,7] 0x00 0x00 0x0 0x00 [IronBlade] AttackInRangeAI
+	UNIT Ch15Generic1 Brigand Saramine Level(12,Enemy,True) [6,5] 0x00 0x00 0x0 0x00 [SteelAxe] AttackInRangeAI
+	UNIT Ch15Generic1 Cavalier_F Saramine Level(12,Enemy,True) [3,8] 0x00 0x00 0x0 0x00 [SteelLance,DoorKey] AttackInRangeAI
+	UNIT Ch15Generic1 PegasusKnight Saramine Level(12,Enemy,True) [3,0] 0x00 0x00 0x0 0x00 [SlimLance] AttackInRangeAI
+	UNIT Ch15Generic1 Myrmidon Saramine Level(12,Enemy,True) [14,5] 0x00 0x00 0x0 0x00 [SlimSword] AttackInRangeAI
+	UNIT Ch15Generic1 Fighter Saramine Level(12,Enemy,True) [7,9] 0x02 0x00 0x0 0x00 [BattleAxe,ChestKey] AttackInRangeAI
+	UNIT
+
+VillageEvent:
+	LOAD1 UnitsVill 1
+	ENUN
+	NoFade
+	ENDA
+
+UnitsVill:
+	UNIT Franklin Valkyrie Gunborg Level(11,Ally,False) [8,2] 0x00 0x00 0x0 0x00 [Shine,Physic,Vulnerary] NoAI
+	UNIT Theodore Bishop Gunborg Level(11, Ally, False) [8,4] 0x00 0x00 0x0 0x00 [Divine,Mend,Vulnerary] NoAI
+	UNIT
+
+Traps1:
+	ENDTRAP
+	ALIGN 4
+
+Traps2:
+	ENDTRAP
+	ALIGN 4
+
+BeginningScene:
+	LOAD1 0x1 EnemyUnits
+	ENUN
+	GotoPrepScreen
+	ENDA
+
+EndingScene:
+	MNC2 15
+	NoFade
+	ENDA

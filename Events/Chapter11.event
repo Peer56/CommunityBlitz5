@@ -1,0 +1,663 @@
+
+EventPointerTable(AssetCh11Data, ChapterInfo)
+
+#ifndef SetSymbolDefined
+  #define SetSymbolDefined
+  #define SetSymbol(name, val) "PUSH; ORG (val); name :; POP"
+#endif
+
+// ======================
+// = SYMBOL DEFINITIONS =
+// ======================
+
+// generic PIDs
+SetSymbol(PID_GUARD, Ch11Generics1)
+SetSymbol(PID_THIEF, Ch11Generics2)
+SetSymbol(PID_BOSS,  Ch11Boss)
+
+// counter ids
+SetSymbol(cntKillCount, 0)
+SetSymbol(cntReinCount, 1)
+SetSymbol(cntReinNumLo, 2)
+SetSymbol(cntReinNumHi, 3)
+
+// flag ids
+SetSymbol(flagEnemyDeath, 10)
+
+// ================
+// = CHAPTER INFO =
+// ================
+
+ALIGN 4
+ChapterInfo:
+    POIN TurnEvents
+    POIN TalkEvents
+    POIN TileEvents
+    POIN ActionEvents
+    POIN NoEvents NoEvents NoEvents
+    POIN NoTutorials
+    POIN NoTraps NoTraps
+    POIN unDeployList unDeployList
+    POIN 0 0 0 0 0 0
+    POIN scBeginning scEnding
+
+// ==============
+// = SCENE INFO =
+// ==============
+
+ALIGN 4
+NoEvents:
+    END_MAIN
+
+ALIGN 4
+NoTutorials:
+    WORD 0
+
+ALIGN 4
+NoTraps:
+    ENDTRAP
+
+ALIGN 4
+TurnEvents:
+    TURN 3 scEnding     [9]       0
+    TURN 0 scCheckReinf [1, 0xFF] 0
+    TURN 0 scThiefReinf [4]       0
+    END_MAIN
+
+ALIGN 4
+TalkEvents:
+    END_MAIN
+
+ALIGN 4
+TileEvents:
+    Chest(Fortify, 6, 7)
+    END_MAIN
+
+ALIGN 4
+ActionEvents:
+    AFEV 0 scOnEnemyDeath flagEnemyDeath
+    END_MAIN
+
+// =================
+// = ESCAPE POINTS =
+// =================
+
+ALIGN 4
+EscapePointList:
+    EscapePoint(3,  17, MoveDown)
+    EscapePoint(4,  17, MoveDown)
+    EscapePoint(5,  17, MoveDown)
+    EscapePoint(6,  17, MoveDown)
+    EscapePoint(1,  0,  MoveUp)
+    EscapePoint(2,  0,  MoveUp)
+    EscapePoint(3,  0,  MoveUp)
+    EscapePoint(4,  0,  MoveUp)
+    EscapePoint(17, 2,  MoveRight)
+    EscapePoint(17, 3,  MoveRight)
+    EscapePoint(17, 4,  MoveRight)
+    EscapePoint(17, 7,  MoveRight)
+    EscapePoint(17, 8,  MoveRight)
+    EscapePoint(17, 9,  MoveRight)
+    EscapePoint(17, 10, MoveRight)
+    EscapePoint(17, 11, MoveRight)
+    EscapePoint(17, 12, MoveRight)
+    EscapePoint(17, 13, MoveRight)
+    EscapePoint(17, 14, MoveRight)
+    EscapePoint(9,  0,  MoveUp)
+    EscapePoint(10, 0,  MoveUp)
+    EscapePoint(0,  6,  MoveLeft)
+    EscapePoint(0,  7,  MoveLeft)
+    EscapePoint(0,  8,  MoveLeft)
+    EscapePointEnd
+
+EscapePointPointerTable(10, EscapePointList)
+
+// ================
+// = EVENT SCENES =
+// ================
+
+ALIGN 4
+scIncKillCount:
+{
+    // increments cntKillCount
+    // if cntKillCount reaches 4, resets it and increments cntReinCount
+
+    SetSymbol(end, 0)
+
+    // increment kill count
+    COUNTER_INC cntKillCount
+
+    // compare kill count to 4, end if it's lower
+    SVAL s1 4
+    COUNTER_CHECK cntKillCount
+    BLT end sC s1
+
+    // reset kill count and increase reinf count
+    COUNTER_SET cntKillCount 0
+    COUNTER_INC cntReinCount
+
+LABEL end
+    ENDA
+}
+
+ALIGN 4
+scResetCounters:
+{
+    // resets all of this chapters counters to their initial value
+
+    COUNTER_SET cntKillCount 0
+    COUNTER_SET cntReinCount 0
+    COUNTER_SET cntReinNumLo 0
+    COUNTER_SET cntReinNumHi 0
+
+    ENDA
+}
+
+ALIGN 4
+scGetNextReinNum:
+{
+    // increments cntReinNumLo:cntReinNumHi
+    // ou: sC = reinforcement number (= current value of cntReinNumLo:cntReinNumHi)
+
+    SetSymbol(wrap,   0)
+    SetSymbol(return, 1)
+
+    // if cntReinNumLo reaches max (15), reset it and increment cntReinNumHi
+    COUNTER_CHECK cntReinNumLo
+    SVAL s1 15
+    BEQ wrap sC s1
+
+    COUNTER_INC cntReinNumLo
+
+LABEL return
+    // s1 = cntReinNumHi << 4
+    COUNTER_CHECK cntReinNumHi
+    SVAL s1 4
+    SLSL s1 sC s1
+
+    // sC = cntReinNumLo + (cntReinNumHi << 4)
+    COUNTER_CHECK cntReinNumLo
+    SADD sC sC s1
+
+    ENDA
+
+LABEL wrap
+    COUNTER_SET cntReinNumLo 0
+    COUNTER_INC cntReinNumHi
+
+    GOTO return
+}
+
+ALIGN 4
+scLoadReinforcements:
+{
+    // loads next reinforcement group
+    // in: s2 = number
+
+    SetSymbol(case_01, 0)
+    SetSymbol(case_02, 1)
+    SetSymbol(case_03, 2)
+    SetSymbol(case_04, 3)
+    SetSymbol(case_05, 4)
+    SetSymbol(case_06, 5)
+    SetSymbol(case_07, 6)
+    SetSymbol(case_08, 7)
+    SetSymbol(case_09, 8)
+    SetSymbol(case_10, 9)
+    SetSymbol(case_11, 10)
+    SetSymbol(case_12, 11)
+    SetSymbol(case_13, 12)
+    SetSymbol(case_14, 13)
+    SetSymbol(case_15, 14)
+
+    SVAL s1 1
+    BEQ case_01 s2 s1
+
+    SVAL s1 2
+    BEQ case_02 s2 s1
+
+    SVAL s1 3
+    BEQ case_03 s2 s1
+
+    SVAL s1 4
+    BEQ case_04 s2 s1
+
+    SVAL s1 5
+    BEQ case_05 s2 s1
+
+    SVAL s1 6
+    BEQ case_06 s2 s1
+
+    SVAL s1 7
+    BEQ case_07 s2 s1
+
+    SVAL s1 8
+    BEQ case_08 s2 s1
+
+    SVAL s1 9
+    BEQ case_09 s2 s1
+
+    SVAL s1 10
+    BEQ case_10 s2 s1
+
+    SVAL s1 11
+    BEQ case_11 s2 s1
+
+    SVAL s1 12
+    BEQ case_12 s2 s1
+
+    SVAL s1 13
+    BEQ case_13 s2 s1
+
+    SVAL s1 14
+    BEQ case_14 s2 s1
+
+    SVAL s1 15
+    BEQ case_15 s2 s1
+
+    ENDA
+
+LABEL case_01
+    LOAD 1 unReinforcements01
+    ENUN
+    ENDA
+
+LABEL case_02
+    LOAD 1 unReinforcements02
+    ENUN
+    ENDA
+
+LABEL case_03
+    LOAD 1 unReinforcements03
+    ENUN
+    ENDA
+
+LABEL case_04
+    LOAD 1 unReinforcements04
+    ENUN
+    ENDA
+
+LABEL case_05
+    LOAD 1 unReinforcements05
+    ENUN
+    ENDA
+
+LABEL case_06
+    LOAD 1 unReinforcements06
+    ENUN
+    ENDA
+
+LABEL case_07
+    LOAD 1 unReinforcements07
+    ENUN
+    ENDA
+
+LABEL case_08
+    LOAD 1 unReinforcements08
+    ENUN
+    ENDA
+
+LABEL case_09
+    LOAD 1 unReinforcements09
+    ENUN
+    ENDA
+
+LABEL case_10
+    LOAD 1 unReinforcements10
+    ENUN
+    ENDA
+
+LABEL case_11
+    LOAD 1 unReinforcements11
+    ENUN
+    ENDA
+
+LABEL case_12
+    LOAD 1 unReinforcements12
+    ENUN
+    ENDA
+
+LABEL case_13
+    LOAD 1 unReinforcements13
+    ENUN
+    ENDA
+
+LABEL case_14
+    LOAD 1 unReinforcements14
+    ENUN
+    ENDA
+
+LABEL case_15
+    LOAD 1 unReinforcements15
+    ENUN
+    ENDA
+}
+
+ALIGN 4
+scOnEnemyDeath:
+{
+    // scene attached to enemy death flag
+    // increments kill count
+
+    // allow the event to be run again, when another enemy dies
+    FLAG_F flagEnemyDeath
+
+    CALL scIncKillCount
+
+    NoFade
+    ENDA
+}
+
+ALIGN 4
+scCheckReinf:
+{
+    // scene attached to start of turn
+    // loads any queued reinforcements
+
+    SetSymbol(lop, 0)
+    SetSymbol(end, 1)
+
+LABEL lop
+    COUNTER_CHECK cntReinCount
+
+    BEQ end sC s0
+
+    COUNTER_DEC cntReinCount
+
+    CALL scGetNextReinNum
+
+#ifdef __DEBUG__
+    SADD s3 sC s0
+    GIVEMONEY Gunborg
+#endif
+
+    // enable camera following unit movement
+    EVBIT_T 9
+
+    SADD s2 sC s0
+    CALL scLoadReinforcements
+
+    // disable camera following unit movement
+    EVBIT_F 9
+
+    GOTO lop
+
+LABEL end
+    NoFade
+    ENDA
+}
+
+ALIGN 4
+scThiefReinf:
+{
+    // load thief reinforcement in chest room
+
+    // enable camera following unit movement
+    EVBIT_T 9
+
+    LOAD 1 unThiefReinforcement
+    ENUN
+
+    // disable camera following unit movement
+    EVBIT_F 9
+
+    NoFade
+    ENDA
+}
+
+ALIGN 4
+scBeginning:
+{
+    // beginning scene
+
+    CALL scResetCounters
+
+    LOAD 1 unInitialEnemies
+    ENUN
+
+#ifdef __DEBUG__
+    // load in debug party
+    LOAD 1 unDeployList
+    ENUN
+#endif
+
+    GotoPrepScreen
+    ENDA
+}
+
+ALIGN 4
+scEnding:
+{
+    // ending scene
+
+    // set flag 3 just in case
+    // if this isn't set at the end of a chapter, turn count and beat time won't be registered
+    FLAG_T 3
+
+    GOTO_CHAPTER_NOWM 11
+
+    ENDA
+}
+
+// =================================
+// = POSITION AND REDA DEFINITIONS =
+// =================================
+
+#define POS_MID_SOUTH "[7, 11]"
+SetSymbol(mvMidSouthA, REDA8R11)
+SetSymbol(mvMidSouthB, REDA7R12)
+SetSymbol(mvMidSouthC, REDA8R12)
+SetSymbol(mvMidSouthD, REDA9R11)
+SetSymbol(mvMidSouthE, REDA6R11)
+SetSymbol(mvMidSouthF, REDA6R12)
+
+#define POS_MID_NORTH "[7, 5]"
+SetSymbol(mvMidNorthA, REDA8R5)
+SetSymbol(mvMidNorthB, REDA7R4)
+SetSymbol(mvMidNorthC, REDA8R4)
+SetSymbol(mvMidNorthD, REDA9R5)
+SetSymbol(mvMidNorthE, REDA6R5)
+SetSymbol(mvMidNorthF, REDA6R4)
+
+#define POS_MID_WEST "[3, 9]"
+SetSymbol(mvMidWestA, REDA3R8)
+SetSymbol(mvMidWestB, REDA2R9)
+SetSymbol(mvMidWestC, REDA2R8)
+SetSymbol(mvMidWestD, REDA3R7)
+SetSymbol(mvMidWestE, REDA2R10)
+SetSymbol(mvMidWestF, REDA3R10)
+
+#define POS_NORTH_EAST "[14, 5]"
+SetSymbol(mvNorthEastA, REDA14R4)
+SetSymbol(mvNorthEastB, REDA14R3)
+
+#define POS_SOUTH_EAST "[14, 17]"
+SetSymbol(mvSouthEastA, REDA14R16)
+SetSymbol(mvSouthEastB, REDA13R17)
+SetSymbol(mvSouthEastC, REDA13R16)
+SetSymbol(mvSouthEastD, REDA14R15)
+
+#define POS_SOUTH_LEFT "[8, 17]"
+SetSymbol(mvSouthLeftA, REDA8R17)
+SetSymbol(mvSouthLeftB, REDA8R16)
+
+#define POS_SOUTH_RIGHT "[9, 17]"
+SetSymbol(mvSouthRightA, REDA9R17)
+SetSymbol(mvSouthRightB, REDA9R16)
+
+// ===============
+// = UNIT GROUPS =
+// ===============
+
+ALIGN 4
+unDeployList:
+    UNIT Gunborg  GunborgGreatLord Level(5,  Ally, True) [4,  16] 0 [SilverSword, Elixir]
+    UNIT Bastion  GreatKnight      Level(5,  Ally, True) [5,  16] 0 [SilverAxe, SilverLance, Elixir]
+    UNIT Aldric   General          Level(5,  Ally, True) [4,  17] 0 [SilverLance, SilverAxe, SilverSword, Elixir]
+    UNIT Scully   Warrior          Level(5,  Ally, True) [16, 2]  0 [SilverAxe, SilverBow, Elixir]
+    UNIT Wilbur   Bishop           Level(5,  Ally, True) [17, 2]  0 [Aura, Mend, Elixir]
+    UNIT Paula    Swordmaster_F    Level(5,  Ally, True) [16, 3]  0 [SilverSword, Shamshir, Runesword, Elixir]
+    UNIT Serahlta Rogue            Level(5,  Ally, True) [3,  2]  0 [SilverSword]
+    UNIT Yin      FalcoKnight      Level(5,  Ally, True) [2,  2]  0 [SilverSword, SilverLance, Spear, Elixir]
+    UNIT Yang     WyvernKnight_F   Level(5,  Ally, True) [3,  1]  0 [SilverLance, Spear, Elixir]
+    UNIT Calvin   Cyclops          Level(15, Ally, True) [16, 12] 0 [SilverAxe, Tomahawk, Elixir]
+    UNIT Hobbes   ArchMogall       Level(5,  Ally, True) [16, 13] 0 [EvilEye, CrimsonEye, Elixir]
+    UNIT Yara     Summoner         Level(5,  Ally, True) [17, 12] 0 [Nosferatu, Nosferatu, Elixir]
+    UNIT
+
+ALIGN 4
+unInitialEnemies:
+    UNIT PID_GUARD Soldier Level(15, Enemy, True) [4,  13] 0 [SteelLance] [AttackInRange, Pursue]
+    UNIT PID_GUARD Soldier Level(15, Enemy, True) [5,  12] 0 [SteelLance] [AttackInRange, Pursue]
+    UNIT PID_GUARD Archer  Level(15, Enemy, True) [3,  11] 0 [SteelBow]   [AttackInRange, Pursue]
+    UNIT PID_GUARD Soldier Level(15, Enemy, True) [2,  5]  0 [SteelLance] [AttackInRange, Pursue]
+    UNIT PID_GUARD Soldier Level(15, Enemy, True) [3,  6]  0 [SteelLance] [AttackInRange, Pursue]
+    UNIT PID_GUARD Archer  Level(15, Enemy, True) [5,  5]  0 [SteelBow]   [AttackInRange, Pursue]
+    UNIT PID_GUARD Soldier Level(15, Enemy, True) [12, 2]  0 [SteelLance] [AttackInRange, Pursue]
+    UNIT PID_GUARD Soldier Level(15, Enemy, True) [11, 1]  0 [SteelLance] [AttackInRange, Pursue]
+    UNIT PID_GUARD Archer  Level(15, Enemy, True) [9,  3]  0 [SteelBow]   [AttackInRange, Pursue]
+    UNIT PID_GUARD Soldier Level(15, Enemy, True) [13, 13] 0 [SteelLance] [AttackInRange, Pursue]
+    UNIT PID_GUARD Soldier Level(15, Enemy, True) [11, 11] 0 [SteelLance] [AttackInRange, Pursue]
+    UNIT PID_GUARD Archer  Level(15, Enemy, True) [13, 16] 0 [SteelBow]   [AttackInRange, Pursue]
+    UNIT
+
+ALIGN 4
+unThiefReinforcement:
+    UNIT PID_THIEF Thief Level(15, Enemy, True) [6, 9] 0 1 REDA6R9 [KillingEdge, Lockpick] [NoAI1, 5]
+    UNIT
+
+ALIGN 4
+unReinforcements01:
+    UNIT PID_BOSS  General Level(5,  Enemy, True) POS_MID_WEST 0 1 mvMidWestA [HandAxe]    [NoAI1, 12]
+    UNIT PID_BOSS  General Level(5,  Enemy, True) POS_MID_WEST 0 1 mvMidWestB [Javelin]    [NoAI1, 12]
+    UNIT PID_THIEF Knight  Level(15, Enemy, True) POS_MID_WEST 0 1 mvMidWestC [SteelLance] [AttackInRange, 12]
+    UNIT PID_THIEF Knight  Level(15, Enemy, True) POS_MID_WEST 0 1 mvMidWestD [SteelLance] [AttackInRange, 12]
+    UNIT PID_THIEF Knight  Level(15, Enemy, True) POS_MID_WEST 0 1 mvMidWestE [SteelLance] [AttackInRange, 12]
+    UNIT
+
+ALIGN 4
+unReinforcements02:
+    UNIT PID_BOSS  Paladin     Level(5,  Enemy, True) POS_MID_SOUTH 0 1 mvMidSouthA [Javelin]    [NoAI1, 12]
+    UNIT PID_BOSS  GreatKnight Level(5,  Enemy, True) POS_MID_SOUTH 0 1 mvMidSouthB [HandAxe]    [NoAI1, 12]
+    UNIT PID_THIEF Cavalier    Level(15, Enemy, True) POS_MID_SOUTH 0 1 mvMidSouthC [SteelSword] [AttackInRange, 12]
+    UNIT PID_THIEF Cavalier    Level(15, Enemy, True) POS_MID_SOUTH 0 1 mvMidSouthD [SteelLance] [AttackInRange, 12]
+    UNIT PID_THIEF Cavalier    Level(15, Enemy, True) POS_MID_SOUTH 0 1 mvMidSouthE [SteelSword] [AttackInRange, 12]
+    UNIT
+
+ALIGN 4
+unReinforcements03:
+    UNIT PID_BOSS  Warrior Level(5,  Enemy, True) POS_MID_NORTH 0 1 mvMidNorthA [HandAxe, SteelBow] [NoAI1, 12]
+    UNIT PID_BOSS  Warrior Level(5,  Enemy, True) POS_MID_NORTH 0 1 mvMidNorthB [HandAxe, SteelBow] [NoAI1, 12]
+    UNIT PID_THIEF Fighter Level(15, Enemy, True) POS_MID_NORTH 0 1 mvMidNorthC [SteelAxe]          [AttackInRange, 12]
+    UNIT PID_THIEF Fighter Level(15, Enemy, True) POS_MID_NORTH 0 1 mvMidNorthD [SteelAxe]          [AttackInRange, 12]
+    UNIT PID_THIEF Fighter Level(15, Enemy, True) POS_MID_NORTH 0 1 mvMidNorthE [SteelAxe]          [AttackInRange, 12]
+    UNIT
+
+ALIGN 4
+unReinforcements04:
+    UNIT PID_BOSS  Hero      Level(5,  Enemy, True) POS_NORTH_EAST 0 1 mvNorthEastA [HandAxe]    [NoAI1, 12]
+    UNIT PID_THIEF Mercenary Level(15, Enemy, True) POS_NORTH_EAST 0 1 mvNorthEastB [SteelSword] [AttackInRange, 12]
+    UNIT
+
+ALIGN 4
+unReinforcements05:
+    UNIT PID_BOSS  Sniper Level(5,  Enemy, True) POS_SOUTH_EAST 0 1 mvSouthEastA [SilverBow] [NoAI1, 12]
+    UNIT PID_BOSS  Sniper Level(5,  Enemy, True) POS_SOUTH_EAST 0 1 mvSouthEastB [SilverBow] [NoAI1, 12]
+    UNIT PID_THIEF Archer Level(15, Enemy, True) POS_SOUTH_EAST 0 1 mvSouthEastC [SteelBow]  [AttackInRange, 12]
+    UNIT PID_THIEF Archer Level(15, Enemy, True) POS_SOUTH_EAST 0 1 mvSouthEastD [SteelBow]  [AttackInRange, 12]
+    UNIT
+
+ALIGN 4
+unReinforcements06:
+    UNIT PID_BOSS  MageKnight Level(5,  Enemy, True) POS_MID_WEST 0 1 mvMidWestA [Fimbulvetr] [NoAI1, 12]
+    UNIT PID_BOSS  MageKnight Level(5,  Enemy, True) POS_MID_WEST 0 1 mvMidWestB [Fimbulvetr] [NoAI1, 12]
+    UNIT PID_THIEF Brigand    Level(15, Enemy, True) POS_MID_WEST 0 1 mvMidWestC [SteelAxe]   [NoAI1, 14]
+    UNIT PID_THIEF Mage       Level(15, Enemy, True) POS_MID_WEST 0 1 mvMidWestD [Thunder]    [AttackInRange, 12]
+    UNIT PID_THIEF Mage       Level(15, Enemy, True) POS_MID_WEST 0 1 mvMidWestE [Thunder]    [AttackInRange, 12]
+    UNIT
+
+ALIGN 4
+unReinforcements07:
+    UNIT PID_BOSS  WyvernLord   Level(5,  Enemy, True) POS_MID_NORTH 2 1 mvMidNorthA [Runesword]  [NoAI1, 12]
+    UNIT PID_BOSS  WyvernKnight Level(5,  Enemy, True) POS_MID_NORTH 0 1 mvMidNorthB [ShortSpear] [NoAI1, 12]
+    UNIT PID_THIEF WyvernRider  Level(15, Enemy, True) POS_MID_NORTH 0 1 mvMidNorthC [SteelLance] [AttackInRange, 12]
+    UNIT PID_THIEF WyvernRider  Level(15, Enemy, True) POS_MID_NORTH 0 1 mvMidNorthD [SteelLance] [AttackInRange, 12]
+    UNIT PID_THIEF WyvernRider  Level(15, Enemy, True) POS_MID_NORTH 0 1 mvMidNorthE [SteelLance] [AttackInRange, 12]
+    UNIT
+
+ALIGN 4
+unReinforcements08:
+    UNIT PID_BOSS  Bishop_F Level(5,  Enemy, True) POS_MID_SOUTH 0 1 mvMidSouthA [Aura]    [NoAI1, 12]
+    UNIT PID_BOSS  Bishop_F Level(5,  Enemy, True) POS_MID_SOUTH 0 1 mvMidSouthB [Aura]    [NoAI1, 12]
+    UNIT PID_BOSS  Bishop_F Level(5,  Enemy, True) POS_MID_SOUTH 0 1 mvMidSouthC [Aura]    [NoAI1, 12]
+    UNIT PID_THIEF Cleric   Level(15, Enemy, True) POS_MID_SOUTH 0 1 mvMidSouthD [Fortify] [AttackInRange, 12]
+    UNIT PID_THIEF Cleric   Level(15, Enemy, True) POS_MID_SOUTH 0 1 mvMidSouthE [Fortify] [AttackInRange, 12]
+    UNIT PID_THIEF Cleric   Level(15, Enemy, True) POS_MID_SOUTH 0 1 mvMidSouthF [Fortify] [AttackInRange, 12]
+    UNIT
+
+ALIGN 4
+unReinforcements09:
+    UNIT PID_GUARD Soldier Level(15, Enemy, True) POS_SOUTH_LEFT  0 1 mvSouthLeftA  [SilverLance] [AttackInRange, Pursue]
+    UNIT PID_GUARD Soldier Level(15, Enemy, True) POS_SOUTH_LEFT  0 1 mvSouthLeftB  [SilverLance] [AttackInRange, Pursue]
+    UNIT PID_GUARD Soldier Level(15, Enemy, True) POS_SOUTH_RIGHT 0 1 mvSouthRightA [SilverLance] [AttackInRange, Pursue]
+    UNIT PID_GUARD Soldier Level(15, Enemy, True) POS_SOUTH_RIGHT 0 1 mvSouthRightB [SilverLance] [AttackInRange, Pursue]
+    UNIT
+
+ALIGN 4
+unReinforcements10:
+    UNIT PID_BOSS  Berserker Level(5,  Enemy, True) POS_NORTH_EAST 2 1 mvNorthEastA [Tomahawk]  [NoAI1, 12]
+    UNIT PID_THIEF Brigand   Level(15, Enemy, True) POS_NORTH_EAST 0 1 mvNorthEastB [KillerAxe] [NoAI1, 14]
+    UNIT
+
+ALIGN 4
+unReinforcements11:
+    UNIT PID_BOSS Druid Level(5, Enemy, True) POS_SOUTH_EAST 0 1 mvSouthEastA [Nosferatu] [NoAI1, 12]
+    UNIT PID_BOSS Druid Level(5, Enemy, True) POS_SOUTH_EAST 0 1 mvSouthEastB [Nosferatu] [NoAI1, 12]
+    UNIT PID_BOSS Druid Level(5, Enemy, True) POS_SOUTH_EAST 0 1 mvSouthEastC [Nosferatu] [NoAI1, 12]
+    UNIT
+
+ALIGN 4
+unReinforcements12:
+    UNIT PID_BOSS FalcoKnight   Level(5,  Enemy, True) POS_MID_SOUTH 0 1 mvMidSouthA [WindSword]  [NoAI1, 12]
+    UNIT PID_BOSS FalcoKnight   Level(5,  Enemy, True) POS_MID_SOUTH 0 1 mvMidSouthB [WindSword]  [NoAI1, 12]
+    UNIT PID_BOSS PegasusKnight Level(15, Enemy, True) POS_MID_SOUTH 0 1 mvMidSouthC [SteelLance] [AttackInRange, 12]
+    UNIT PID_BOSS PegasusKnight Level(15, Enemy, True) POS_MID_SOUTH 0 1 mvMidSouthD [SteelLance] [AttackInRange, 12]
+    UNIT PID_BOSS PegasusKnight Level(15, Enemy, True) POS_MID_SOUTH 0 1 mvMidSouthE [SteelLance] [AttackInRange, 12]
+    UNIT
+
+ALIGN 4
+unReinforcements13:
+    UNIT PID_THIEF Fleet  Level(15, Enemy, True) POS_MID_NORTH 0 1 mvMidNorthA [Ballista] [AttackInRange, 12]
+    UNIT PID_THIEF Pirate Level(15, Enemy, True) POS_MID_NORTH 0 1 mvMidNorthB [SteelAxe] [AttackInRange, 12]
+    UNIT PID_THIEF Pirate Level(15, Enemy, True) POS_MID_NORTH 0 1 mvMidNorthC [SteelAxe] [AttackInRange, 12]
+    UNIT PID_THIEF Pirate Level(15, Enemy, True) POS_MID_NORTH 0 1 mvMidNorthD [SteelAxe] [AttackInRange, 12]
+    UNIT PID_THIEF Pirate Level(15, Enemy, True) POS_MID_NORTH 0 1 mvMidNorthE [SteelAxe] [AttackInRange, 12]
+    UNIT
+
+ALIGN 4
+unReinforcements14:
+    UNIT PID_BOSS  Rogue    Level(5,  Enemy, True) POS_MID_WEST 0 1 mvMidWestA [SilverSword] [NoAI1, 12]
+    UNIT PID_BOSS  Assassin Level(5,  Enemy, True) POS_MID_WEST 2 1 mvMidWestB [KillingEdge] [NoAI1, 12]
+    UNIT PID_THIEF Thief    Level(15, Enemy, True) POS_MID_WEST 0 1 mvMidWestC [SilverSword] [AttackInRange, 12]
+    UNIT PID_THIEF Thief    Level(15, Enemy, True) POS_MID_WEST 0 1 mvMidWestD [SilverSword] [AttackInRange, 12]
+    UNIT PID_THIEF Thief    Level(15, Enemy, True) POS_MID_WEST 0 1 mvMidWestE [SilverSword] [AttackInRange, 12]
+    UNIT
+
+ALIGN 4
+unReinforcements15:
+    UNIT PID_THIEF Troubadour Level(1, Enemy, True) POS_SOUTH_EAST 2 1 mvSouthEastA [Warp] [AttackInRange, 12]
+    UNIT PID_THIEF Troubadour Level(1, Enemy, True) POS_SOUTH_EAST 2 1 mvSouthEastB [Warp] [AttackInRange, 12]
+    UNIT PID_THIEF Troubadour Level(1, Enemy, True) POS_SOUTH_EAST 2 1 mvSouthEastC [Warp] [AttackInRange, 12]
+    UNIT
+
+// ======================
+// = DEFINITION CLEANUP =
+// ======================
+
+#undef POS_MID_SOUTH
+#undef POS_MID_NORTH
+#undef POS_MID_WEST
+#undef POS_NORTH_EAST
+#undef POS_SOUTH_EAST
+#undef POS_SOUTH_LEFT
+#undef POS_SOUTH_RIGHT

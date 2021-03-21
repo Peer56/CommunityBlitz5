@@ -24,13 +24,13 @@
 8: Thunderin' Bones[X]
 
 ## Ch9Name
-9: [X]
+9: Rivers in a Dry Land[X]
 
 ## Ch10Name
-10: [X]
+10: A Promotion[X]
 
 ## Ch11Name
-11: Figure it Out[X]
+11: Gold Rush[X]
 
 ## Ch12Name
 12: Tower of Darm[X]
@@ -39,10 +39,10 @@
 13: Temple Siege[X]
 
 ## Ch14Name
-14: [X]
+14: Howling Valley[X]
 
 ## Ch15Name
-15: [X]
+15: Keep It Lowkey[X]
 
 ## Ch16Name
 16: Betrayal[X]
@@ -51,7 +51,7 @@
 17: Eternal Ritual[X]
 
 ## Ch18Name
-18: [X]
+18: King's Cave[X]
 
 ## Ch19Name
 19: Ascendance[X]
@@ -62,4 +62,6 @@
 ## Ch21Name
 21: The Final Swear[X]
 
+## Ch5xName
+5x: The Blindfolded Ranger[X]
 

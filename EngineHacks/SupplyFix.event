@@ -1,0 +1,15 @@
+
+// removes hardcoded checks for chapter 5x (hopefully)
+// hack by stan
+
+PUSH
+
+    // do not display 0 gold in 5x
+    ORG $024DF2
+        SHORT $46C0 // nop
+
+    // allow convoy access in 5x
+    ORG $03164E
+        SHORT $E003 // b 0x08031658
+
+POP

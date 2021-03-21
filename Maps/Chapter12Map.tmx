@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="42" height="16" tilewidth="16" tileheight="16" infinite="0" nextlayerid="10" nextobjectid="1">
+<map version="1.4" tiledversion="1.4.3" orientation="orthogonal" renderorder="right-down" width="42" height="16" tilewidth="16" tileheight="16" infinite="0" nextlayerid="10" nextobjectid="1">
  <tileset firstgid="1" name="Valni1" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
   <image source="../../ItsAboutTime/Maps/tilesets/Valni1.png" width="512" height="512"/>
  </tileset>
  <layer id="1" name="Main" width="42" height="16">
   <properties>
-   <property name="Anims1" value="0xD7"/>
+   <property name="Anims1" value="AssetCh12Anims"/>
    <property name="ChapterID" value="11"/>
    <property name="Main" value=""/>
-   <property name="MapChangesID" value="0x32"/>
-   <property name="MapID" value="0x31"/>
-   <property name="ObjectType" value="0x88"/>
-   <property name="PaletteID" value="0x89"/>
-   <property name="TileConfig" value="0x8A"/>
+   <property name="MapChangesID" value="AssetCh12MapChanges"/>
+   <property name="MapID" value="AssetCh12Map"/>
+   <property name="ObjectType" value="AssetCh12Obj"/>
+   <property name="PaletteID" value="AssetTemplePal"/>
+   <property name="TileConfig" value="AssetCh12Config"/>
   </properties>
   <data encoding="csv">
 204,115,462,52,463,115,490,204,204,460,461,490,204,204,332,333,490,204,204,225,226,490,489,204,230,231,490,489,489,225,231,171,161,163,305,305,305,305,305,165,167,98,

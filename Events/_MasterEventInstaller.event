@@ -127,3 +127,9 @@
 		#include "Chapter21.event"
 	}
 #endif // CHAPTER_21
+
+#ifdef CHAPTER_5X
+	{
+		#include "Chapter5x.event"
+	}
+#endif // CHAPTER_5X

@@ -43,3 +43,35 @@ The First Campaign[X]
 ## SongName_InkMeUp
 Ink Me Up[X]
 
+## SongName_WallOfDefense
+Wall of Defense[X]
+
+## SongName_Hydra
+Hydra[X]
+
+## SongName_TheMostDistantRoad
+The Most Distant Road[X]
+
+## SongName_AtAPlaceNobodyKnows
+At A Place Nobody Knows[X]
+
+## SongName_Bloodpool
+Bloodpool[X]
+
+## SongName_Elysium
+Elysium[X]
+
+## SongName_SwordOfJustice
+Sword of Justice[X]
+
+## SongName_ChivalryAndSavagery
+Chivalry and Savagery[X]
+
+## SongName_Shatterhand
+Shatterhand[X]
+
+## SongName_Lang2Requiem
+Requiem[X]
+
+## SongName_StraightToTheTop
+Straight to the Top[X]

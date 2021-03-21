@@ -5,3 +5,67 @@ defWeaponDebuffs(2,0,0,0,3,3,0) //0x2: Iron Shuriken debuff.
 defWeaponDebuffs(3,0,0,0,4,4,0) //0x3: Steel Shuriken debuff.
 defWeaponDebuffs(0,0,4,0,4,4,0) //0x4: Silver Shuriken debuff.
 defWeaponDebuffs(4,0,4,0,4,4,0) //0x5: Pebble debuff.
+
+
+PUSH
+ORG $846AC
+POIN BattleQuoteList
+ORG $8472C
+POIN DeathQuoteList
+POP
+
+#define BattleQuoteEntry(chID,flagID,attacker,defender,textID) "SHORT attacker defender chID flagID textID 0; WORD 0"
+#define BattleQuoteEvent(chID,flagID,attacker,defender,eventPtr) "SHORT attacker defender chID flagID 0 0; POIN eventPtr"
+#define BattleQuoteEntryBothWays(chID,flagID,attacker,defender,textID) "SHORT attacker defender chID flagID textID 0; WORD 0; SHORT defender attacker chID flagID textID 0; WORD 0"
+#define BattleQuoteEventBothWays(chID,flagID,attacker,defender,eventPtr) "SHORT attacker defender chID flagID 0 0; POIN eventPtr; SHORT defender attacker chID flagID 0 0; POIN eventPtr"
+#define DeathQuoteEntry(chID,flagID,unitID,textID) "SHORT unitID; BYTE 0xFF chID; SHORT flagID textID; WORD 0"
+#define DeathQuoteEvent(chID,flagID,unitID,eventPtr) "SHORT unitID; BYTE 0xFF chID; SHORT flagID 0; POIN eventPtr"
+#define QuoteListEnd "WORD 0xFFFFFFFF 0xFFFFFFFF 0xFFFFFFFF 0xFFFFFFFF"
+
+#define GameOverFlag 0x65
+#define AnyCh 0xFF
+#define AnyChar 0
+
+//-1 is "any chapter" for battle or death quote
+
+ALIGN 4
+BattleQuoteList:
+QuoteListEnd
+
+ALIGN 4
+DeathQuoteList:
+
+//boss death quotes
+DeathQuoteEntry(16,0xA,DemiA,GenericDeathQuote)
+DeathQuoteEntry(16,0xB,DemiB,GenericDeathQuote)
+DeathQuoteEntry(16,0xC,DemiC,GenericDeathQuote)
+DeathQuoteEntry(20,2,Ch21Boss,0)
+DeathQuoteEntry(0,2,Mulch,GenericDeathQuote)
+DeathQuoteEntry(2,2,Peter,GenericDeathQuote)
+DeathQuoteEntry(21,2,Borgas,GenericDeathQuote)
+DeathQuoteEntry(8,2,Merlot,GenericDeathQuote)
+DeathQuoteEntry(15,2,Darias,GenericDeathQuote)
+
+//death quotes for chapter logic
+DeathQuoteEntry(10, 10, Ch11Generics1, 0)
+DeathQuoteEntry(10, 10, Ch11Generics2, 0)
+DeathQuoteEntry(10, 10, Ch11Boss,      0)
+
+//chapter-specific player unit death quotes
+
+
+//player unit death quotes
+DeathQuoteEntry(AnyCh,GameOverFlag,Gunborg,GenericDeathQuote)
+
+QuoteListEnd
+
+ALIGN 4
+OceanSealClassList:
+BYTE Brigand Pirate Thief Revenant Bonewalker Bonewalker_Bow Bael Mogall Tarvos MautheDoog Gargoyle 0
+
+
+ALIGN 4
+MasterSealClassList:
+BYTE Mercenary Mercenary_F Myrmidon Myrmidon_F Fighter Pirate Brigand Cavalier Cavalier_F Knight Knight_F Archer Archer_F PegasusKnight WyvernRider WyvernRider_F Priest Cleric Mage Mage_F Shaman Shaman_F Troubadour Thief Journeyman_1 Pupil_1 Recruit_1 Journeyman_2 Pupil_2 Recruit_2 Monk Revenant Bonewalker Bonewalker_Bow Bael Mogall Tarvos MautheDoog Gargoyle Soldier 0
+
+ALIGN 4
