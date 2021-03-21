@@ -103,13 +103,15 @@ and Calvin's best friend.[X]
 Yara[X]
 
 ## YaraDesc
-[X]
+A mage from the distant[N]
+deserts of Delan.[X]
 
 ## ErgonName
 Ergon[X]
 
 ## ErgonDesc
-[X]
+Uninteresting even by
+soldier standards.[X]
 
 ## VultureName
 Vulture[X]
@@ -247,7 +249,8 @@ yum[X]
 Calanthia[X]
 
 ## CalanthiaDesc
-[X]
+Wants to kill. And the 
+map is fields tileset. Yep.[X]
 
 ## EusebiosName
 Eusebios[X]
