@@ -30,6 +30,7 @@ LocationBasedEvents:
 Chest(BlueGem,2,7)
 Chest(KillerBow,3,9)
 Chest(Elixir,16,11)
+Door(16,5)
 Village(0x9,VillageLeft,2,15)
 Village(0xA,VillageRight,14,17)
 END_MAIN
