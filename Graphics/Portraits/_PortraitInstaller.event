@@ -183,7 +183,7 @@ ALIGN 4
 GunborgPortrait:
 #incext PortraitFormatter "Gunborg.png"
 
-setMugEntry(YinMug,YinPortrait,2,6,3,4)
+setMugEntry(YinMug,YinPortrait,3,6,3,4)
 ALIGN 4
 YinPortrait:
 #incext PortraitFormatter "Yin.png"
