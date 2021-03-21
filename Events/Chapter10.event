@@ -96,7 +96,7 @@ UNIT
 
 ALIGN 4
 NewUnits:
-UNIT Ch10Playable1 Dancer 0 Level(5,Ally,0) [8,24] 0 0 0 1 [PureWater,ChestKey_5,ChestKey_5] NoAI
+UNIT Marissa Dancer 0 Level(5,Ally,0) [8,24] 0 0 0 1 [PureWater,ChestKey_5,ChestKey_5] NoAI
 UNIT Gaspard Brigand 0 Level(15,Ally,0) [16,24] 0 0 0 1 [SteelAxe,Tomahawk,ChestKey_5,ChestKey_5] NoAI
 UNIT
 
