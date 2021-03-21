@@ -77,7 +77,7 @@ UNIT Ch04Generic1 Fighter 0x00 Level(4, Enemy, 1) [6,4] 0b 0x00 0x0 0x00 [IronAx
 UNIT Ch04Generic1 Archer 0x00 Level(5, Enemy, 1) [7,2] 0x00 0x00 0x0 0x00 [IronBow] AttackInRangeAI
 
 UNIT Ch04Generic1 Fighter 0x00 Level(6, Enemy, 1) [8,4] 0x00 0x00 0x0 0x00 [SteelAxe] AttackInRangeAI
-UNIT Ch04Generic1 Brigand 0x00 Level(4, Enemy, 1) [10,2] 0x00 0x00 0x0 0x00 [HandAxe] AttackInRangeAI
+UNIT Ch04Generic1 Brigand 0x00 Level(4, Enemy, 1) [10,3] 0x00 0x00 0x0 0x00 [HandAxe] AttackInRangeAI
 
 UNIT Ch04Generic1 Fighter 0x00 Level(5, Enemy, 1) [12,8] DropItem 0x00 0x0 0x00 [Fiendcleaver] AttackInRangeAI
 UNIT Ch04Generic1 Myrmidon 0x00 Level(6, Enemy, 1) [14,7] DropItem 0x00 0x0 0x00 [SilverBlade] AttackInRangeAI
