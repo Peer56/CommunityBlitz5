@@ -358,6 +358,9 @@
 #define Ch20Playable2 45
 #define Xholt 46
 
+#define CheninSummon 59
+#define YaraSummon 60
+
 //Bosses
 #define Mulch 64
 #define Kitabei 65
