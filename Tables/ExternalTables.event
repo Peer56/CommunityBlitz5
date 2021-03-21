@@ -68,6 +68,11 @@ ForceDeployList:
 ForceDeployEntry(Gunborg,AnyCh)
 QuoteListEnd
 
+#define PromotionOptionsTable $95DFA4
+#define SetPromotionOptions(class,option1,option2) "PUSH;ORG PromotionOptionsTable + (class * 2);BYTE option1 option2; POP"
+
+SetPromotionOptions(Soldier,Halberdier,General)
+SetPromotionOptions(Pupil_1,Mage_F,Shaman_F)
 
 ALIGN 4
 OceanSealClassList:
