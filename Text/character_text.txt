@@ -154,7 +154,7 @@ Gaspard[X]
 
 ## GaspardDesc
 [X]
-7
+
 ## DogiName
 Dogi[X]
 
