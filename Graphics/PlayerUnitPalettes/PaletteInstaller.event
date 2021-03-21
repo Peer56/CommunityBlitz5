@@ -36,3 +36,24 @@ Vulture_Archer:
 Ouderen_General:
 	#incbin "./_palettes/Ouderen_General.lzpal" 
 
+Yara_Pupil:
+	#incbin "./_palettes/Yara_Pupil.lzpal" 
+
+Yara_Mage:
+	#incbin "./_palettes/Yara_Mage.lzpal" 
+
+Yara_Shaman:
+	#incbin "./_palettes/Yara_Shaman.lzpal" 
+
+Yara_Sage:
+	#incbin "./_palettes/Yara_Sage.lzpal" 
+
+Yara_MageKnight:
+	#incbin "./_palettes/Yara_MageKnight.lzpal" 
+
+Yara_Druid:
+	#incbin "./_palettes/Yara_Druid.lzpal" 
+
+Yara_Summoner:
+	#incbin "./_palettes/Yara_Summoner.lzpal" 
+
