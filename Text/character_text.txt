@@ -154,7 +154,7 @@ Gaspard[X]
 
 ## GaspardDesc
 [X]
-
+7
 ## DogiName
 Dogi[X]
 
@@ -277,6 +277,13 @@ Otto[X]
 
 ## OttoDesc
 [X]
+
+## MarissaName
+Marissa[X]
+
+## MarissaDesc
+Known as "The Crimson Flash"[N]
+for the speed of her dancing.[X]
 
 ## DarkTovahName
 Dark Tovah[X]
