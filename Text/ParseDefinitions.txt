@@ -102,4 +102,4 @@
 [LoadDarias] = [LoadFace][0x51][0x1]
 [LoadGunborg] = [LoadFace][0x1][0x1]
 [LoadGem] = [LoadFace][0x28][0x1]
-
+[LoadOuderen] = [LoadFace][0xF][0x1]
