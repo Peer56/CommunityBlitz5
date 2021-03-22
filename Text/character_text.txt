@@ -173,13 +173,15 @@ Feena[X]
 Kartre[X]
 
 ## KartreDesc
-[X]
+He thinks dying his hair will
+help him sneak into the hack.[X]
 
 ## BarlaName
 Barla[X]
 
 ## BarlaDesc
-[X]
+She went along with her husband
+because it looked like fun.[X]
 
 ## RenaldoName
 Renaldo[X]
@@ -298,7 +300,8 @@ Dark Tovah[X]
 Randal[X]
 
 ## RandalDesc
-[X]
+A total snitch. Plans to tell
+on Kartre for sneaking in here.[X]
 
 ## DariasName
 Darias[X]
