@@ -36,7 +36,7 @@ Vendor(Shop2List, 14, 16)
 Armory(ArmoryList, 13, 5)
 Chest(BodyRing,24,6)
 Chest(LightRune,16,10)
-Chest(MemberCard,17,17)
+Chest(MemberCard,24,19)
 END_MAIN
 
 Village1:
