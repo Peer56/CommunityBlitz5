@@ -89,7 +89,43 @@
 # char{0x38} "Sunshine_Valkyrie" set{Sunshine,0x3,Valkyrie}
 # char{0x39} "Sunshine_MageKnight" set{Sunshine,0x4,MageKnight_F}
 
-#char{0x3D}
-#char{0x3E}
-#char{0x3F}
+# char{0x3D} "Chenin_Shaman" set{Chenin,0x1,Shaman}
+# char{0x3E} "Chenin_Druid" set{Chenin,0x3,Druid}
+# char{0x3F} "Chenin_Summoner" set{Chenin,0x4,Summoner}
+
+# char{0x40} "Sangria_WyvernLord" set{Sangria,0x3,WyvernLord_F}
+# char{0x41} "Marissa_Dancer" set{Marissa,0x1,Dancer}
+
+# char{0x42} "Gaspard_Brigand" set{Gaspard,0x1,Brigand}
+# char{0x43} "Gaspard_Berserker" set{Gaspard,0x3,Berserker}
+# char{0x44} "Gaspard_Warrior" set{Gaspard,0x4,Warrior}
+
+# char{0x45}
+# char{0x46}
+# char{0x47}
+# char{0x48}
+# char{0x49}
+# char{0x4A}
+
+# char{0x4B} "Dogi_Berserker" set{Dogi,0x3,Berserker}
+# char{0x4C} "Feena_Sage" set{Feena,0x3,Sage_F}
+# char{0x4D} "Kartre_Warrior" set{Kartre,0x3,Warrior}
+# char{0x4E} "Barla_Swordmaster" set{Barla,0x3,Swordmaster_F}
+# char{0x4F} "Renaldo_MageKnight" set{Renaldo,0x3,MageKnight}
+# char{0x50}
+# char{0x51}
+# char{0x52}
+# char{0x53} "Theodore_Halberdier" set{Theodore,0x3,Halberdier}
+# char{0x54} "Franklin_Mercenary" set{Franklin,0x1,Mercenary}
+# char{0x55} "Franklin_Hero" set{Franklin,0x3,Hero}
+# char{0x56} "Franklin_Ranger" set{Franklin,0x4,Ranger}
+# char{0x57} "Charles_Gargoyle" set{Charles,0x1,Gargoyle}
+# char{0x58} "Charles_Deathgoyle" set{Charles,0x3,Deathgoyle}
+# char{0x59} "Hosay_Wight" set{Hosay,0x3,Wight}
+# char{0x5A} "Zagan_Necromancer" set{Zagan,0x3,Necromancer}
+# char{0x5B} "Inigo_Ranger" set{Inigo,0x3,Ranger}
+# char{0x5C}
+# char{0x5D}
+# char{0x5E}
+# char{0x5F}
 */
