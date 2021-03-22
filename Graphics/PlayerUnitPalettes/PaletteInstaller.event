@@ -57,3 +57,21 @@ Yara_Druid:
 Yara_Summoner:
 	#incbin "./_palettes/Yara_Summoner.lzpal" 
 
+Viridia_Cavalier:
+	#incbin "./_palettes/Viridia_Cavalier.lzpal" 
+
+Viridia_Paladin:
+	#incbin "./_palettes/Viridia_Paladin.lzpal" 
+
+Viridia_GreatKnight:
+	#incbin "./_palettes/Viridia_GreatKnight.lzpal" 
+
+Pete_Mercenary:
+	#incbin "./_palettes/Pete_Mercenary.lzpal" 
+
+Pete_Hero:
+	#incbin "./_palettes/Pete_Hero.lzpal" 
+
+Pete_Ranger:
+	#incbin "./_palettes/Pete_Ranger.lzpal" 
+

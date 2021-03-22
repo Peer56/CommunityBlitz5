@@ -75,3 +75,27 @@
 // Yara_Summoner
 	setPalette(0x2C,Yara_Summoner)
 	setCBSP(0x2C,Yara,0x6,Summoner_F)
+
+// Viridia_Cavalier
+	setPalette(0x34,Viridia_Cavalier)
+	setCBSP(0x34,Viridia,0x1,Cavalier_F)
+
+// Viridia_Paladin
+	setPalette(0x35,Viridia_Paladin)
+	setCBSP(0x35,Viridia,0x3,Paladin_F)
+
+// Viridia_GreatKnight
+	setPalette(0x36,Viridia_GreatKnight)
+	setCBSP(0x36,Viridia,0x4,GreatKnight_F)
+
+// Pete_Mercenary
+	setPalette(0x3A,Pete_Mercenary)
+	setCBSP(0x3A,Pete,0x1,Mercenary)
+
+// Pete_Hero
+	setPalette(0x3B,Pete_Hero)
+	setCBSP(0x3B,Pete,0x3,Hero)
+
+// Pete_Ranger
+	setPalette(0x3C,Pete_Ranger)
+	setCBSP(0x3C,Pete,0x4,Ranger)

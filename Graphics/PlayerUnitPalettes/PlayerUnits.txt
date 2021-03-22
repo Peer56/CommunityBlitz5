@@ -57,6 +57,20 @@
 # char{0x2C} "Yara_Summoner" set{Yara,0x6,Summoner_F}
 5553FF7FFF6B1F4B2E19FF1B9E1A8A6BC8357F12295F884EB55A0E460721A520
 
+# char{0x34} "Viridia_Cavalier" set{Viridia,0x1,Cavalier_F}
+5553FE573D430E7F9029A655B325EA1C98430E43043A05255736D1310B1DA514
+# char{0x35} "Viridia_Paladin" set{Viridia,0x3,Paladin_F}
+5553BE4BFF5BBA2ED32DFF339125EA1CF26B094B25324531D63E11326D21A514
+# char{0x36} "Viridia_GreatKnight" set{Viridia,0x4,GreatKnight_F}
+5553DE7BFF5B1F4BB229196B50568941E5241C01B9001400114327324529A514
+
+# char{0x3A} "Pete_Mercenary" set{Pete,0x1,Mercenary}
+5553FF7FEE20F920B041FA625F33B71557563F42DF5F9629F0101F4B8D1CA514
+# char{0x3B} "Pete_Hero" set{Pete,0x3,Hero}
+5553FF7FFF6B1F4B2E1DFF26B71532113E6F7A5AB3419F4E7B35F028372EA514
+# char{0x3C} "Pete_Ranger" set{Pete,0x4,Ranger}
+5553FF7F9F5FBD2ED135D020FE1633151B77565A6E5589349946783D091DA514
+
 /*
 # char{0x23} "Cavlin_Cyclops" set{Cavlin,0x3,Cyclops}
 # char{0x24} "Hobbes_Mogall" set{Hobbes,0x1,Mogall}
@@ -64,4 +78,18 @@
 
 # char{0x2D} "Francine_Assassin" set{Francine,0x3,Assassin_F}
 # char{0x2E} "Loretta_Cleric" set{Loretta,0x1,Cleric}
+# char{0x2F} "Loretta_Bishop" set{Loretta,0x3,Bishop_F}
+# char{0x30} "Loretta_Valkyrie" set{Loretta,0x4,Valkyrie}
+
+# char{0x31} "Jamie_Cavalier" set{Jamie,0x1,Cavalier}
+# char{0x32} "Jamie_Paladin" set{Jamie,x03,Paladin}
+# char{0x33} "Jamie_GreatKnight" set{Jamie,0x4,GreatKnight}
+
+# char{0x37} "Sunshine_Troubadour" set{Sunshine,0x1,Troubadour}
+# char{0x38} "Sunshine_Valkyrie" set{Sunshine,0x3,Valkyrie}
+# char{0x39} "Sunshine_MageKnight" set{Sunshine,0x4,MageKnight_F}
+
+#char{0x3D}
+#char{0x3E}
+#char{0x3F}
 */
