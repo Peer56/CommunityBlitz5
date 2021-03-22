@@ -13,3 +13,9 @@ PUSH
         SHORT $E003 // b 0x08031658
 
 POP
+
+//fix pupil->shaman(f) keeping anima rank
+PUSH
+    ORG $02BE60
+        BYTE Shaman_F
+POP
