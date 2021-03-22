@@ -64,7 +64,34 @@ END_MAIN
 
 MiscBasedEvents:
 CauseGameOverIfLordDies
+AFEV 0 PromoteActive 0
 END_MAIN
+
+PromoteActive:
+SVAL 0x2 0x0
+CALL 0x9EE1B8 //player unit stops here only 
+COUNTER_CHECK 0x0
+SVAL 0x7 0x8
+BGT 0x63 0xC 0x7
+EVBIT_F 0x2
+TEXTSTART
+TEXTSHOW 0x88C
+TEXTEND
+REMA
+SVAL 0x7 0x1
+BNE 0x63 0xC 0x7
+TEXTSTART
+TEXTSHOW 0x9DF
+TEXTEND
+REMA
+MUSC 0x32
+ASMC 0x080CCA15 //NewPromotion
+ASMC 0x80790a5 //MU_EndAll //deselect unit
+COUNTER_ADD 0x0 0x0
+LABEL 0x63
+NoFade
+ENDA
+
 
 Dunno1:
 END_MAIN
@@ -137,6 +164,7 @@ ALIGN 4
 
 ALIGN 4
 BeginningScene:
+COUNTER_SET 0 0
 LOAD1 0 EnemyUnits
 ENUN
 LOAD1 0 NewUnits
