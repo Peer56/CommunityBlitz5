@@ -62,7 +62,10 @@ ALIGN 4
 
 BeginningScene:
 LOAD 0x1 deploy
+ENUN
 LOAD1 0x1 enemy
+ENUN
+LOAD1 0x1 EnemyUnits2
 ENUN
 GotoPrepScreen
 NoFade
@@ -126,8 +129,8 @@ UNIT Bastion Paladin 0x00 Level(1, Ally, 1) [26,3] 0x00 0x00 0x0 0x00 [0x00] NoA
 UNIT
 
 new:
-UNIT Barla Swordmaster_F 0x00 Level(1, Ally, 0) [3,3] 0x00 0x00 0x0 0x00 [0x00] NoAI 
-UNIT Kartre Warrior 0x00 Level(1, Ally, 0) [25,3] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Barla Swordmaster_F 0x00 Level(1, Ally, 0) [3,3] 0x00 0x00 0x0 0x00 [Shamshir,Purge,GoldGem,HoplonGuard] NoAI 
+UNIT Kartre Warrior 0x00 Level(1, Ally, 0) [25,3] 0x00 0x00 0x0 0x00 [BraveAxe,KillerBow,Ballista,IronBallista] NoAI 
 UNIT
 
 enemy:
@@ -155,6 +158,9 @@ UNIT Ch13Generic01 WyvernRider 0x00 Level(17, Enemy, 1) [23,15] 0x00 0x00 0x0 0x
 UNIT Ch13Generic01 WyvernRider 0x00 Level(17, Enemy, 1) [23,19] 0x00 0x00 0x0 0x00 [SteelLance] AttackInRangeAI 
 UNIT Ch13Generic01 WyvernLord 0x00 Level(7, Enemy, 1) [7,17] 0x00 0x00 0x0 0x00 [BraveLance] AttackInRangeAI 
 UNIT Ch13Generic01 WyvernLord 0x00 Level(7, Enemy, 1) [23,17] 0x00 0x00 0x0 0x00 [BraveLance] AttackInRangeAI 
+UNIT
+
+EnemyUnits2:
 UNIT Ch13Generic01 Mercenary 0x00 Level(17, Enemy, 1) [2,9] 0x00 0x00 0x0 0x00 [SteelBlade] PursueWithoutHeedAI 
 UNIT Ch13Generic01 Archer 0x00 Level(17, Enemy, 1) [1,9] 0x00 0x00 0x0 0x00 [SteelBow] PursueWithoutHeedAI 
 UNIT Ch13Generic01 Fighter 0x00 Level(17, Enemy, 1) [3,8] 0x00 0x00 0x0 0x00 [Swordreaver] PursueWithoutHeedAI 

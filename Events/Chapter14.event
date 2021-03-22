@@ -98,41 +98,41 @@ UNIT Seth EphraimMasterLord Eirika Level(1, Ally, 0) [5,8] 0x00 0x00 0x0 0x00 [0
 UNIT
 
 MageMan:
-UNIT Knoll MageKnight Eirika Level(10, Ally, 0) [8,9] 0x00 0x00 0x0 0x00 [Aircalibur, Fire, Mend] NoAI 
+UNIT Renaldo MageKnight Eirika Level(10, Ally, 0) [8,9] 0x00 0x00 0x0 0x00 [Aircalibur, Fire, Mend] NoAI 
 UNIT
 
 Bad:
 UNIT Akari Swordmaster_F 0x00 Level(10, Enemy, 0) [1,1] 0x00 0x00 0x0 0x00 [WindSword, SilverSword, BraveSword, Armourslayer] AttackInRangeAI 
 UNIT Rhodes Paladin Riev Level(10, Enemy, 0) [18,18] 0x00 0x00 0x0 0x00 [Spear, BraveLance, SilverBlade, LightBrand] AttackInRangeAI 
-UNIT 0x80 Paladin Riev Level(10, Enemy, 0) [1,12] 0x00 0x00 0x0 0x00 [SilverLance, SteelBlade] PursueWithoutHeedAI 
-UNIT 0x80 Paladin Riev Level(10, Enemy, 0) [0,13] 0x00 0x00 0x0 0x00 [SilverLance, SteelBlade] PursueWithoutHeedAI 
-UNIT 0x80 Paladin Riev Level(10, Enemy, 0) [3,18] 0x00 0x00 0x0 0x00 [SilverLance, SteelBlade] PursueWithoutHeedAI 
-UNIT 0x80 Paladin Riev Level(10, Enemy, 0) [4,17] 0x00 0x00 0x0 0x00 [SilverLance, SteelBlade] PursueWithoutHeedAI 
-UNIT 0x80 Paladin Riev Level(10, Enemy, 0) [5,0] 0x00 0x00 0x0 0x00 [SilverLance, SteelBlade] PursueWithoutHeedAI 
-UNIT 0x80 Paladin Riev Level(10, Enemy, 0) [15,0] 0x00 0x00 0x0 0x00 [SilverLance, SteelBlade] PursueWithoutHeedAI 
-UNIT 0x80 Swordmaster Riev Level(10, Enemy, 0) [6,1] 0x00 0x00 0x0 0x00 [SilverSword] PursueWithoutHeedAI 
-UNIT 0x80 Swordmaster Riev Level(10, Enemy, 0) [7,0] 0x00 0x00 0x0 0x00 [SilverSword] PursueWithoutHeedAI 
-UNIT 0x80 Swordmaster Riev Level(10, Enemy, 0) [14,1] 0x00 0x00 0x0 0x00 [SilverSword] PursueWithoutHeedAI 
-UNIT 0x80 Swordmaster Riev Level(10, Enemy, 0) [15,2] 0x00 0x00 0x0 0x00 [SilverSword] PursueWithoutHeedAI 
-UNIT 0x80 Swordmaster Riev Level(10, Enemy, 0) [1,14] 0x00 0x00 0x0 0x00 [SilverSword] PursueWithoutHeedAI 
-UNIT 0x80 Swordmaster Riev Level(10, Enemy, 0) [4,19] 0x00 0x00 0x0 0x00 [SilverSword] PursueWithoutHeedAI 
-UNIT 0x80 Sage Riev Level(10, Enemy, 0) [18,5] 0x00 0x00 0x0 0x00 [Elfire] AttackInRangeAI 
-UNIT 0x80 Sage Riev Level(10, Enemy, 0) [0,17] 0x00 0x00 0x0 0x00 [Elfire] AttackInRangeAI 
-UNIT 0x80 Sage Riev Level(10, Enemy, 0) [8,18] 0x00 0x00 0x0 0x00 [Elfire] AttackInRangeAI 
-UNIT 0x80 Sage Riev Level(10, Enemy, 0) [10,1] 0x00 0x00 0x0 0x00 [Elfire] AttackInRangeAI 
-UNIT 0x80 Sage Riev Level(10, Enemy, 0) [18,12] 0x00 0x00 0x0 0x00 [Elfire] AttackInRangeAI 
-UNIT 0x80 Sage Riev Level(10, Enemy, 0) [0,2] 0x00 0x00 0x0 0x00 [Fimbulvetr, Berserk] AttackInRangeAI 
-UNIT 0x80 Sage Riev Level(10, Enemy, 0) [19,19] 0x00 0x00 0x0 0x00 [Fimbulvetr, Berserk] AttackInRangeAI 
-UNIT 0x80 Warrior Riev Level(10, Enemy, 0) [15,10] 0x00 0x00 0x0 0x00 [SilverAxe, Tomahawk] AttackInRangeAI 
-UNIT 0x80 Warrior Riev Level(10, Enemy, 0) [1,9] 0x00 0x00 0x0 0x00 [SilverAxe, Tomahawk] AttackInRangeAI 
-UNIT 0x80 Warrior Riev Level(10, Enemy, 0) [6,5] 0x00 0x00 0x0 0x00 [SilverAxe, Tomahawk] AttackInRangeAI 
-UNIT 0x80 Warrior Riev Level(10, Enemy, 0) [10,4] 0x00 0x00 0x0 0x00 [SilverAxe, Tomahawk] AttackInRangeAI 
-UNIT 0x80 Warrior Riev Level(10, Enemy, 0) [12,15] 0x00 0x00 0x0 0x00 [SilverAxe, Tomahawk] AttackInRangeAI 
-UNIT 0x80 Warrior Riev Level(10, Enemy, 0) [12,19] 0x00 0x00 0x0 0x00 [SilverAxe, Tomahawk] GuardTileAI 
-UNIT 0x80 Warrior Riev Level(10, Enemy, 0) [12,1] 0x00 0x00 0x0 0x00 [SilverAxe, Tomahawk] GuardTileAI 
-UNIT 0x80 Warrior Riev Level(10, Enemy, 0) [13,0] 0x00 0x00 0x0 0x00 [SilverAxe, Tomahawk] GuardTileAI 
-UNIT 0x80 Warrior Riev Level(10, Enemy, 0) [19,16] 0x00 0x00 0x0 0x00 [SilverAxe, BraveBow] AttackInRangeAI 
-UNIT 0x80 Warrior Riev Level(10, Enemy, 0) [0,0] 0x00 0x00 0x0 0x00 [SilverAxe, BraveBow] AttackInRangeAI 
+UNIT 0x80 Paladin Riev Level(10, Enemy, 1) [1,12] 0x00 0x00 0x0 0x00 [SilverLance, SteelBlade] PursueWithoutHeedAI 
+UNIT 0x80 Paladin Riev Level(10, Enemy, 1) [0,13] 0x00 0x00 0x0 0x00 [SilverLance, SteelBlade] PursueWithoutHeedAI 
+UNIT 0x80 Paladin Riev Level(10, Enemy, 1) [3,18] 0x00 0x00 0x0 0x00 [SilverLance, SteelBlade] PursueWithoutHeedAI 
+UNIT 0x80 Paladin Riev Level(10, Enemy, 1) [4,17] 0x00 0x00 0x0 0x00 [SilverLance, SteelBlade] PursueWithoutHeedAI 
+UNIT 0x80 Paladin Riev Level(10, Enemy, 1) [5,0] 0x00 0x00 0x0 0x00 [SilverLance, SteelBlade] PursueWithoutHeedAI 
+UNIT 0x80 Paladin Riev Level(10, Enemy, 1) [15,0] 0x00 0x00 0x0 0x00 [SilverLance, SteelBlade] PursueWithoutHeedAI 
+UNIT 0x80 Swordmaster Riev Level(10, Enemy, 1) [6,1] 0x00 0x00 0x0 0x00 [SilverSword] PursueWithoutHeedAI 
+UNIT 0x80 Swordmaster Riev Level(10, Enemy, 1) [7,0] 0x00 0x00 0x0 0x00 [SilverSword] PursueWithoutHeedAI 
+UNIT 0x80 Swordmaster Riev Level(10, Enemy, 1) [14,1] 0x00 0x00 0x0 0x00 [SilverSword] PursueWithoutHeedAI 
+UNIT 0x80 Swordmaster Riev Level(10, Enemy, 1) [15,2] 0x00 0x00 0x0 0x00 [SilverSword] PursueWithoutHeedAI 
+UNIT 0x80 Swordmaster Riev Level(10, Enemy, 1) [1,14] 0x00 0x00 0x0 0x00 [SilverSword] PursueWithoutHeedAI 
+UNIT 0x80 Swordmaster Riev Level(10, Enemy, 1) [4,19] 0x00 0x00 0x0 0x00 [SilverSword] PursueWithoutHeedAI 
+UNIT 0x80 Sage Riev Level(10, Enemy, 1) [18,5] 0x00 0x00 0x0 0x00 [Elfire] AttackInRangeAI 
+UNIT 0x80 Sage Riev Level(10, Enemy, 1) [0,17] 0x00 0x00 0x0 0x00 [Elfire] AttackInRangeAI 
+UNIT 0x80 Sage Riev Level(10, Enemy, 1) [8,18] 0x00 0x00 0x0 0x00 [Elfire] AttackInRangeAI 
+UNIT 0x80 Sage Riev Level(10, Enemy, 1) [10,1] 0x00 0x00 0x0 0x00 [Elfire] AttackInRangeAI 
+UNIT 0x80 Sage Riev Level(10, Enemy, 1) [18,12] 0x00 0x00 0x0 0x00 [Elfire] AttackInRangeAI 
+UNIT 0x80 Sage Riev Level(10, Enemy, 1) [0,2] 0x00 0x00 0x0 0x00 [Fimbulvetr, Berserk] AttackInRangeAI 
+UNIT 0x80 Sage Riev Level(10, Enemy, 1) [19,19] 0x00 0x00 0x0 0x00 [Fimbulvetr, Berserk] AttackInRangeAI 
+UNIT 0x80 Warrior Riev Level(10, Enemy, 1) [15,10] 0x00 0x00 0x0 0x00 [SilverAxe, Tomahawk] AttackInRangeAI 
+UNIT 0x80 Warrior Riev Level(10, Enemy, 1) [1,9] 0x00 0x00 0x0 0x00 [SilverAxe, Tomahawk] AttackInRangeAI 
+UNIT 0x80 Warrior Riev Level(10, Enemy, 1) [6,5] 0x00 0x00 0x0 0x00 [SilverAxe, Tomahawk] AttackInRangeAI 
+UNIT 0x80 Warrior Riev Level(10, Enemy, 1) [10,4] 0x00 0x00 0x0 0x00 [SilverAxe, Tomahawk] AttackInRangeAI 
+UNIT 0x80 Warrior Riev Level(10, Enemy, 1) [12,15] 0x00 0x00 0x0 0x00 [SilverAxe, Tomahawk] AttackInRangeAI 
+UNIT 0x80 Warrior Riev Level(10, Enemy, 1) [12,19] 0x00 0x00 0x0 0x00 [SilverAxe, Tomahawk] GuardTileAI 
+UNIT 0x80 Warrior Riev Level(10, Enemy, 1) [12,1] 0x00 0x00 0x0 0x00 [SilverAxe, Tomahawk] GuardTileAI 
+UNIT 0x80 Warrior Riev Level(10, Enemy, 1) [13,0] 0x00 0x00 0x0 0x00 [SilverAxe, Tomahawk] GuardTileAI 
+UNIT 0x80 Warrior Riev Level(10, Enemy, 1) [19,16] 0x00 0x00 0x0 0x00 [SilverAxe, BraveBow] AttackInRangeAI 
+UNIT 0x80 Warrior Riev Level(10, Enemy, 1) [0,0] 0x00 0x00 0x0 0x00 [SilverAxe, BraveBow] AttackInRangeAI 
 UNIT
 
 BeginningScene:
