@@ -74,6 +74,7 @@ QuoteListEnd
 
 SetPromotionOptions(Soldier,Halberdier,General)
 SetPromotionOptions(Pupil_1,Mage_F,Shaman_F)
+SetPromotionOptions(Shaman_F,Druid_F,Summoner_F)
 
 ALIGN 4
 OceanSealClassList:
