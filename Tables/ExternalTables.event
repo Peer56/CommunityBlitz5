@@ -87,6 +87,7 @@ BYTE Mercenary Mercenary_F Myrmidon Myrmidon_F Fighter Pirate Brigand Cavalier C
 ALIGN 4
 
 PUSH
+
     // summoner list
     // up to 3 entries, more and we need to repoint
 
@@ -94,5 +95,16 @@ PUSH
         //   summoner summonee
         BYTE Chenin   CheninSummon
         BYTE Yara     YaraSummon
-        BYTE 0 0 // end
+        BYTE Zagan    ZaganSummon
+        BYTE 0        0 // end
+
+    // trainee promotion list
+    // fixed 3 entries, need asm rework for more
+
+    ORG $20704C
+        //   character level class   padding
+        BYTE Yara      10    Pupil_1 0
+        BYTE 0         10    0       0
+        BYTE 0         10    0       0
+
 POP
