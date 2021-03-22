@@ -331,7 +331,8 @@ Zagan[X]
 Inigo[X]
 
 ## InigoDesc
-[X]
+Wears a blindfold to hone[N]
+his hearing & skill.[X]
 
 
 ## BorgasName
