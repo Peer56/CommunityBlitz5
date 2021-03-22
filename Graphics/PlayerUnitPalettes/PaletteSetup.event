@@ -35,3 +35,67 @@
 // Yang_PegasusKnight
 	setPalette(0x19,Yang_PegasusKnight)
 	setCBSP(0x19,Yang,0x1,PegasusKnight)
+
+// Ergon_Soldier
+	setPalette(0x1C,Ergon_Soldier)
+	setCBSP(0x1C,Ergon,0x1,Soldier)
+
+// Vulture_Archer
+	setPalette(0x1F,Vulture_Archer)
+	setCBSP(0x1F,Vulture,0x1,Archer)
+
+// Ouderen_General
+	setPalette(0x22,Ouderen_General)
+	setCBSP(0x22,Ouderen,0x3,General)
+
+// Yara_Pupil
+	setPalette(0x26,Yara_Pupil)
+	setCBSP(0x26,Yara,0x0,Pupil_1)
+
+// Yara_Mage
+	setPalette(0x27,Yara_Mage)
+	setCBSP(0x27,Yara,0x1,Mage_F)
+
+// Yara_Shaman
+	setPalette(0x28,Yara_Shaman)
+	setCBSP(0x28,Yara,0x2,Shaman_F)
+
+// Yara_Sage
+	setPalette(0x29,Yara_Sage)
+	setCBSP(0x29,Yara,0x3,Sage_F)
+
+// Yara_MageKnight
+	setPalette(0x2A,Yara_MageKnight)
+	setCBSP(0x2A,Yara,0x5,MageKnight_F)
+
+// Yara_Druid
+	setPalette(0x2B,Yara_Druid)
+	setCBSP(0x2B,Yara,0x5,Druid_F)
+
+// Yara_Summoner
+	setPalette(0x2C,Yara_Summoner)
+	setCBSP(0x2C,Yara,0x6,Summoner_F)
+
+// Viridia_Cavalier
+	setPalette(0x34,Viridia_Cavalier)
+	setCBSP(0x34,Viridia,0x1,Cavalier_F)
+
+// Viridia_Paladin
+	setPalette(0x35,Viridia_Paladin)
+	setCBSP(0x35,Viridia,0x3,Paladin_F)
+
+// Viridia_GreatKnight
+	setPalette(0x36,Viridia_GreatKnight)
+	setCBSP(0x36,Viridia,0x4,GreatKnight_F)
+
+// Pete_Mercenary
+	setPalette(0x3A,Pete_Mercenary)
+	setCBSP(0x3A,Pete,0x1,Mercenary)
+
+// Pete_Hero
+	setPalette(0x3B,Pete_Hero)
+	setCBSP(0x3B,Pete,0x3,Hero)
+
+// Pete_Ranger
+	setPalette(0x3C,Pete_Ranger)
+	setCBSP(0x3C,Pete,0x4,Ranger)

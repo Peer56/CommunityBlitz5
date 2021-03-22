@@ -26,3 +26,106 @@
 
 # char{0x19} "Yang_PegasusKnight" set{Yang,0x1,PegasusKnight}
 5553FF7F70219E36FF6BFF3F4A293142C8109F051A05F85A5646153222316310
+
+# char{0x1C} "Ergon_Soldier" set{Ergon,0x1,Soldier}
+007EFF7FFF5F1F3F2E19FB3E76328F0D9577F06EE9519E1AF909B40DF018A514
+
+# char{0x1F} "Vulture_Archer" set{Vulture,0x1,Archer}
+5553FF7FFF6B1F4B2E195F4AB8353325F85E534A7B6F5D76F861934D0F39A514
+
+# char{0x22} "Ouderen_General" set{Ouderen,0x3,General}
+007EFF7FBB7714635429EE1C704EAA355C5BD3252C25FE26F13D8E310921A514
+
+# char{0x26} "Yara_Pupil" set{Yara,0x0,Pupil_1}
+5553FF7F3F535A32CB148A6BE85AC535512118670E46072175638E466721A514
+
+# char{0x27} "Yara_Mage" set{Yara,0x1,Mage_F}
+5553FF7F3F535A32CB148A6BE85AC53518670E460721512178638E466721A514
+
+# char{0x28} "Yara_Shaman" set{Yara,0x2,Shaman_F}
+5553FF7F3F535922CB147B1BE85AC53518670E46072175638E4667210415A514
+
+# char{0x29} "Yara_Sage" set{Yara,0x3,Sage_F}
+5553FF7FDE42D6292E198A6BE85AC835B55A0E460721186778638E466721A514
+
+# char{0x2A} "Yara_MageKnight" set{Yara,0x5,MageKnight_F}
+5553FF7F3F535A325121CB14486725420E4607212D5F484675638E466721A514
+
+# char{0x2B} "Yara_Druid" set{Yara,0x5,Druid_F}
+5553FF7F3F535A32CB148A6BE85A4C4D75638E466721185B52420E3A0721A514
+
+# char{0x2C} "Yara_Summoner" set{Yara,0x6,Summoner_F}
+5553FF7FFF6B1F4B2E19FF1B9E1A8A6BC8357F12295F884EB55A0E460721A520
+
+# char{0x34} "Viridia_Cavalier" set{Viridia,0x1,Cavalier_F}
+5553FE573D430E7F9029A655B325EA1C98430E43043A05255736D1310B1DA514
+# char{0x35} "Viridia_Paladin" set{Viridia,0x3,Paladin_F}
+5553BE4BFF5BBA2ED32DFF339125EA1CF26B094B25324531D63E11326D21A514
+# char{0x36} "Viridia_GreatKnight" set{Viridia,0x4,GreatKnight_F}
+5553DE7BFF5B1F4BB229196B50568941E5241C01B9001400114327324529A514
+
+# char{0x3A} "Pete_Mercenary" set{Pete,0x1,Mercenary}
+5553FF7FEE20F920B041FA625F33B71557563F42DF5F9629F0101F4B8D1CA514
+# char{0x3B} "Pete_Hero" set{Pete,0x3,Hero}
+5553FF7FFF6B1F4B2E1DFF26B71532113E6F7A5AB3419F4E7B35F028372EA514
+# char{0x3C} "Pete_Ranger" set{Pete,0x4,Ranger}
+5553FF7F9F5FBD2ED135D020FE1633151B77565A6E5589349946783D091DA514
+
+/*
+# char{0x23} "Cavlin_Cyclops" set{Cavlin,0x3,Cyclops}
+# char{0x24} "Hobbes_Mogall" set{Hobbes,0x1,Mogall}
+# char{0x25} "Hobbes_ArchMogall" set{Hobbes,0x3,ArchMogall}
+
+# char{0x2D} "Francine_Assassin" set{Francine,0x3,Assassin_F}
+# char{0x2E} "Loretta_Cleric" set{Loretta,0x1,Cleric}
+# char{0x2F} "Loretta_Bishop" set{Loretta,0x3,Bishop_F}
+# char{0x30} "Loretta_Valkyrie" set{Loretta,0x4,Valkyrie}
+
+# char{0x31} "Jamie_Cavalier" set{Jamie,0x1,Cavalier}
+# char{0x32} "Jamie_Paladin" set{Jamie,x03,Paladin}
+# char{0x33} "Jamie_GreatKnight" set{Jamie,0x4,GreatKnight}
+
+# char{0x37} "Sunshine_Troubadour" set{Sunshine,0x1,Troubadour}
+# char{0x38} "Sunshine_Valkyrie" set{Sunshine,0x3,Valkyrie}
+# char{0x39} "Sunshine_MageKnight" set{Sunshine,0x4,MageKnight_F}
+
+# char{0x3D} "Chenin_Shaman" set{Chenin,0x1,Shaman}
+# char{0x3E} "Chenin_Druid" set{Chenin,0x3,Druid}
+# char{0x3F} "Chenin_Summoner" set{Chenin,0x4,Summoner}
+
+# char{0x40} "Sangria_WyvernLord" set{Sangria,0x3,WyvernLord_F}
+# char{0x41} "Marissa_Dancer" set{Marissa,0x1,Dancer}
+
+# char{0x42} "Gaspard_Brigand" set{Gaspard,0x1,Brigand}
+# char{0x43} "Gaspard_Berserker" set{Gaspard,0x3,Berserker}
+# char{0x44} "Gaspard_Warrior" set{Gaspard,0x4,Warrior}
+
+# char{0x45}
+# char{0x46}
+# char{0x47}
+# char{0x48}
+# char{0x49}
+# char{0x4A}
+
+# char{0x4B} "Dogi_Berserker" set{Dogi,0x3,Berserker}
+# char{0x4C} "Feena_Sage" set{Feena,0x3,Sage_F}
+# char{0x4D} "Kartre_Warrior" set{Kartre,0x3,Warrior}
+# char{0x4E} "Barla_Swordmaster" set{Barla,0x3,Swordmaster_F}
+# char{0x4F} "Renaldo_MageKnight" set{Renaldo,0x3,MageKnight}
+# char{0x50}
+# char{0x51}
+# char{0x52}
+# char{0x53} "Theodore_Halberdier" set{Theodore,0x3,Halberdier}
+# char{0x54} "Franklin_Mercenary" set{Franklin,0x1,Mercenary}
+# char{0x55} "Franklin_Hero" set{Franklin,0x3,Hero}
+# char{0x56} "Franklin_Ranger" set{Franklin,0x4,Ranger}
+# char{0x57} "Charles_Gargoyle" set{Charles,0x1,Gargoyle}
+# char{0x58} "Charles_Deathgoyle" set{Charles,0x3,Deathgoyle}
+# char{0x59} "Hosay_Wight" set{Hosay,0x3,Wight}
+# char{0x5A} "Zagan_Necromancer" set{Zagan,0x3,Necromancer}
+# char{0x5B} "Inigo_Ranger" set{Inigo,0x3,Ranger}
+# char{0x5C}
+# char{0x5D}
+# char{0x5E}
+# char{0x5F}
+*/
