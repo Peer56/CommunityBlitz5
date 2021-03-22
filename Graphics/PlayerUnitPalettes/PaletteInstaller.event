@@ -57,6 +57,15 @@ Yara_Druid:
 Yara_Summoner:
 	#incbin "./_palettes/Yara_Summoner.lzpal" 
 
+Loretta_Cleric:
+	#incbin "./_palettes/Loretta_Cleric.lzpal" 
+
+Loretta_Bishop:
+	#incbin "./_palettes/Loretta_Bishop.lzpal" 
+
+Loretta_Valkyrie:
+	#incbin "./_palettes/Loretta_Valkyrie.lzpal" 
+
 Viridia_Cavalier:
 	#incbin "./_palettes/Viridia_Cavalier.lzpal" 
 
