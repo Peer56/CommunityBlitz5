@@ -360,6 +360,7 @@
 
 #define CheninSummon 59
 #define YaraSummon 60
+#define ZaganSummon 61
 
 //Bosses
 #define Mulch 64
