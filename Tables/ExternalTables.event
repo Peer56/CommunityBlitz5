@@ -33,6 +33,7 @@ POP
 
 ALIGN 4
 BattleQuoteList:
+BattleQuoteEntryBothWays(0,1,Mulch,AnyChar,MulchBattleQuote)
 QuoteListEnd
 
 ALIGN 4
@@ -43,7 +44,7 @@ DeathQuoteEntry(16,0xA,DemiA,GenericDeathQuote)
 DeathQuoteEntry(16,0xB,DemiB,GenericDeathQuote)
 DeathQuoteEntry(16,0xC,DemiC,GenericDeathQuote)
 DeathQuoteEntry(20,2,Ch21Boss,0)
-DeathQuoteEntry(0,2,Mulch,GenericDeathQuote)
+DeathQuoteEntry(0,2,Mulch,MulchDeathQuote)
 DeathQuoteEntry(2,2,Peter,GenericDeathQuote)
 DeathQuoteEntry(21,2,Borgas,GenericDeathQuote)
 DeathQuoteEntry(8,2,Merlot,GenericDeathQuote)
