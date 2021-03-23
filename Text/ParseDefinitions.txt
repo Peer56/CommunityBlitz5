@@ -107,4 +107,4 @@
 [LoadAldric] = [LoadFace][0x3][0x1]
 [LoadScully] = [LoadFace][0x4][0x1]
 [LoadWilbur] = [LoadFace][0x5][0x1]
-[LoadMulch] = [LoadFace][0x5][0x40]
+[LoadMulch] = [LoadFace][0x40][0x1]
