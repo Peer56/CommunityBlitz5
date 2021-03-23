@@ -218,7 +218,7 @@ Plot? What plot?[A][X]
 [OpenMidRight][LoadGunborg][OpenMidLeft][LoadGem]
 ok i'll join you now[A][X]
 
-## Ch1_Beginning
+## Chapter1_Beginning
 [OpenMidRight][LoadGunborg]
 The Demon King took over[NL]
 my family and killed my...[A][NL]
@@ -241,7 +241,7 @@ Fine, fine...[A][NL]
 With me, knights![NL]
 We shall slay the enemy![A][X]
 
-## Ch1_Ending
+## Chapter1_Ending
 [OpenMidRight][LoadGunborg]
 [ToggleSmile]We won![A][NL]
 [OpenLeft][LoadScully]

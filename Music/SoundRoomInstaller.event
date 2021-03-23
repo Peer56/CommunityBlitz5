@@ -61,6 +61,7 @@ SoundRoomEntry(EvilGods,0,SongName_EvilGods)
 //Other Music
 SoundRoomEntry(TheFirstCampaign,0,SongName_TheFirstCampaign)
 SoundRoomEntry(Lang2Requiem,0,SongName_Lang2Requiem)
+SoundRoomEntry(IevanPolkka,0,SongName_IevanPolkka)
 
 
 SoundRoomTerminator
