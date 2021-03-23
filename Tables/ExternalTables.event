@@ -12,6 +12,8 @@ ORG $846AC
 POIN BattleQuoteList
 ORG $8472C
 POIN DeathQuoteList
+ORG $8483C
+POIN ForceDeployList
 POP
 
 #define BattleQuoteEntry(chID,flagID,attacker,defender,textID) "SHORT attacker defender chID flagID textID 0; WORD 0"
@@ -21,6 +23,7 @@ POP
 #define DeathQuoteEntry(chID,flagID,unitID,textID) "SHORT unitID; BYTE 0xFF chID; SHORT flagID textID; WORD 0"
 #define DeathQuoteEvent(chID,flagID,unitID,eventPtr) "SHORT unitID; BYTE 0xFF chID; SHORT flagID 0; POIN eventPtr"
 #define QuoteListEnd "WORD 0xFFFFFFFF 0xFFFFFFFF 0xFFFFFFFF 0xFFFFFFFF"
+#define ForceDeployEntry(unitID,chapterID) "SHORT unitID; BYTE 0xFF chapterID"
 
 #define GameOverFlag 0x65
 #define AnyCh 0xFF
@@ -50,6 +53,7 @@ DeathQuoteEntry(15,2,Darias,GenericDeathQuote)
 DeathQuoteEntry(10, 10, Ch11Generics1, 0)
 DeathQuoteEntry(10, 10, Ch11Generics2, 0)
 DeathQuoteEntry(10, 10, Ch11Boss,      0)
+DeathQuoteEntry(6,GameOverFlag,Ouderen,OuderenCh6DeathQuote)
 
 //chapter-specific player unit death quotes
 
@@ -58,6 +62,18 @@ DeathQuoteEntry(10, 10, Ch11Boss,      0)
 DeathQuoteEntry(AnyCh,GameOverFlag,Gunborg,GenericDeathQuote)
 
 QuoteListEnd
+
+
+ALIGN 4
+ForceDeployList:
+ForceDeployEntry(Gunborg,AnyCh)
+QuoteListEnd
+
+#define PromotionOptionsTable $95DFA4
+#define SetPromotionOptions(class,option1,option2) "PUSH;ORG PromotionOptionsTable + (class * 2);BYTE option1 option2; POP"
+
+SetPromotionOptions(Soldier,Halberdier,General)
+SetPromotionOptions(Pupil_1,Mage_F,Shaman_F)
 
 ALIGN 4
 OceanSealClassList:
@@ -69,3 +85,14 @@ MasterSealClassList:
 BYTE Mercenary Mercenary_F Myrmidon Myrmidon_F Fighter Pirate Brigand Cavalier Cavalier_F Knight Knight_F Archer Archer_F PegasusKnight WyvernRider WyvernRider_F Priest Cleric Mage Mage_F Shaman Shaman_F Troubadour Thief Journeyman_1 Pupil_1 Recruit_1 Journeyman_2 Pupil_2 Recruit_2 Monk Revenant Bonewalker Bonewalker_Bow Bael Mogall Tarvos MautheDoog Gargoyle Soldier 0
 
 ALIGN 4
+
+PUSH
+    // summoner list
+    // up to 3 entries, more and we need to repoint
+
+    ORG $95F5A4
+        //   summoner summonee
+        BYTE Chenin   CheninSummon
+        BYTE Yara     YaraSummon
+        BYTE 0 0 // end
+POP

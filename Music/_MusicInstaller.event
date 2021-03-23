@@ -185,9 +185,10 @@ SongTable(TheBoysGotWings,ys3wings,1)
 }
 
 {
-SongTable(IevanPolkka,IevanPolkka,1)
-#include "songs/IevanPolkka.event"
+SongTable(StraightToTheTop,aelevate,0)
+#include "songs/aelevate.event"
 }
+
 
 // Add your song here!
 

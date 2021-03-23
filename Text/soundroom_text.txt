@@ -72,3 +72,6 @@ Shatterhand[X]
 
 ## SongName_Lang2Requiem
 Requiem[X]
+
+## SongName_StraightToTheTop
+Straight to the Top[X]

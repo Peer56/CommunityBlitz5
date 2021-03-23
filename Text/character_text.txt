@@ -89,25 +89,29 @@ Yin's other half[X]
 Calvin[X]
 
 ## CalvinDesc
-[X]
+A mischievious cyclops[N]
+with authority issues.[X]
 
 ## HobbesName
 Hobbes[X]
 
 ## HobbesDesc
-[X]
+A philosophical mogall[N]
+and Calvin's best friend.[X]
 
 ## YaraName
 Yara[X]
 
 ## YaraDesc
-[X]
+A mage from the distant[N]
+deserts of Delan.[X]
 
 ## ErgonName
 Ergon[X]
 
 ## ErgonDesc
-[X]
+Uninteresting even by
+soldier standards.[X]
 
 ## VultureName
 Vulture[X]
@@ -245,7 +249,8 @@ yum[X]
 Calanthia[X]
 
 ## CalanthiaDesc
-[X]
+Wants to kill. And the 
+map is fields tileset. Yep.[X]
 
 ## EusebiosName
 Eusebios[X]
@@ -276,6 +281,13 @@ Otto[X]
 ## OttoDesc
 [X]
 
+## MarissaName
+Marissa[X]
+
+## MarissaDesc
+Known as "The Crimson Flash"[N]
+for the speed of her dancing.[X]
+
 ## DarkTovahName
 Dark Tovah[X]
 
@@ -299,7 +311,8 @@ Eye see you.[X]
 Susie[X]
 
 ## SusieDesc
-[X]
+Framed Calvin for[N]
+the "Noodle Incident"[X]
 
 
 ## DemiName

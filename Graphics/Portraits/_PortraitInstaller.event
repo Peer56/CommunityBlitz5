@@ -308,8 +308,12 @@ ALIGN 4
 RhodesPortrait:
 #incext PortraitFormatter "Rhodes.png"
 
-
 setMugEntry(SaramineMug,SaraminePortrait,3,6,3,4)
 ALIGN 4
 SaraminePortrait:
 #incext PortraitFormatter "Saramine.png"
+
+setMugEntry(MarissaMug,MarissaPortrait,2,6,3,4)
+ALIGN 4
+MarissaPortrait:
+#incext PortraitFormatter "Marissa.png"

@@ -30,6 +30,7 @@ LocationBasedEvents:
 Chest(BlueGem,2,7)
 Chest(KillerBow,3,9)
 Chest(Elixir,16,11)
+Door(16,5)
 Village(0x9,VillageLeft,2,15)
 Village(0xA,VillageRight,14,17)
 END_MAIN
@@ -116,17 +117,17 @@ UNIT
 
 GreenUnits:
 UNIT Ouderen General 0x00 Level(1, NPC, 0) [10,6] 0x00 0x00 0x0 0x00 [Spear,IronSword] NeverMoveAI
-UNIT Ch6NPC Knight 0x00 Level(5, NPC, 0) [16,6] 0x00 0x00 0x0 0x00 [IronLance] NeverMoveAI
-UNIT Ch6NPC Knight 0x00 Level(5, NPC, 0) [16,8] 0x00 0x00 0x0 0x00 [IronLance] NeverMoveAI
-UNIT Ch6NPC Knight 0x00 Level(5, NPC, 0) [2,9] 0x00 0x00 0x0 0x00 [IronLance] NeverMoveAI
-UNIT Ch6NPC Knight 0x00 Level(5, NPC, 0) [10,15] 0x00 0x00 0x0 0x00 [IronLance] NeverMoveAI
+UNIT Ch6NPC Knight 0x00 Level(5, NPC, 1) [16,6] 0x00 0x00 0x0 0x00 [IronLance] NeverMoveAI
+UNIT Ch6NPC Knight 0x00 Level(5, NPC, 1) [16,8] 0x00 0x00 0x0 0x00 [IronLance] NeverMoveAI
+UNIT Ch6NPC Knight 0x00 Level(5, NPC, 1) [2,9] 0x00 0x00 0x0 0x00 [IronLance] NeverMoveAI
+UNIT Ch6NPC Knight 0x00 Level(5, NPC, 1) [10,15] 0x00 0x00 0x0 0x00 [IronLance] NeverMoveAI
 UNIT
 
 HelpfulGreenUnits:
-UNIT Ch6NPC Priest 0x00 Level(5, NPC, 0) [6,8] 0x00 0x00 0x0 0x00 [Physic,Sleep] NeverMoveAI
-UNIT Ch6NPC Priest 0x00 Level(5, NPC, 0) [15,7] 0x00 0x00 0x0 0x00 [Physic,Sleep] NeverMoveAI
-UNIT Ch6NPC Mercenary 0x00 Level(8, NPC, 0) [8,6] 0x00 0x00 0x0 0x00 [SilverSword,Lancereaver] PursueWithoutHeedAI
-UNIT Ch6NPC Soldier 0x00 Level(8, NPC, 0) [12,6] 0x00 0x00 0x0 0x00 [Javelin,Axereaver] PursueWithoutHeedAI
+UNIT Ch6NPC Priest 0x00 Level(5, NPC, 1) [6,8] 0x00 0x00 0x0 0x00 [Physic,Sleep] NeverMoveAI
+UNIT Ch6NPC Priest 0x00 Level(5, NPC, 1) [15,7] 0x00 0x00 0x0 0x00 [Physic,Sleep] NeverMoveAI
+UNIT Ch6NPC Mercenary 0x00 Level(8, NPC, 1) [8,6] 0x00 0x00 0x0 0x00 [SilverSword,Lancereaver] PursueWithoutHeedAI
+UNIT Ch6NPC Soldier 0x00 Level(8, NPC, 1) [12,6] 0x00 0x00 0x0 0x00 [Javelin,Axereaver] PursueWithoutHeedAI
 UNIT
 
 StartingEnemies:
