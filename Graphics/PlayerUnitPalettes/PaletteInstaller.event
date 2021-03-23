@@ -27,3 +27,60 @@ Yin_PegasusKnight:
 Yang_PegasusKnight:
 	#incbin "./_palettes/Yang_PegasusKnight.lzpal" 
 
+Ergon_Soldier:
+	#incbin "./_palettes/Ergon_Soldier.lzpal" 
+
+Vulture_Archer:
+	#incbin "./_palettes/Vulture_Archer.lzpal" 
+
+Ouderen_General:
+	#incbin "./_palettes/Ouderen_General.lzpal" 
+
+Yara_Pupil:
+	#incbin "./_palettes/Yara_Pupil.lzpal" 
+
+Yara_Mage:
+	#incbin "./_palettes/Yara_Mage.lzpal" 
+
+Yara_Shaman:
+	#incbin "./_palettes/Yara_Shaman.lzpal" 
+
+Yara_Sage:
+	#incbin "./_palettes/Yara_Sage.lzpal" 
+
+Yara_MageKnight:
+	#incbin "./_palettes/Yara_MageKnight.lzpal" 
+
+Yara_Druid:
+	#incbin "./_palettes/Yara_Druid.lzpal" 
+
+Yara_Summoner:
+	#incbin "./_palettes/Yara_Summoner.lzpal" 
+
+Loretta_Cleric:
+	#incbin "./_palettes/Loretta_Cleric.lzpal" 
+
+Loretta_Bishop:
+	#incbin "./_palettes/Loretta_Bishop.lzpal" 
+
+Loretta_Valkyrie:
+	#incbin "./_palettes/Loretta_Valkyrie.lzpal" 
+
+Viridia_Cavalier:
+	#incbin "./_palettes/Viridia_Cavalier.lzpal" 
+
+Viridia_Paladin:
+	#incbin "./_palettes/Viridia_Paladin.lzpal" 
+
+Viridia_GreatKnight:
+	#incbin "./_palettes/Viridia_GreatKnight.lzpal" 
+
+Pete_Mercenary:
+	#incbin "./_palettes/Pete_Mercenary.lzpal" 
+
+Pete_Hero:
+	#incbin "./_palettes/Pete_Hero.lzpal" 
+
+Pete_Ranger:
+	#incbin "./_palettes/Pete_Ranger.lzpal" 
+

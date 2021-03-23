@@ -167,6 +167,15 @@ Placeholder text[A][X]
 [OpenMidRight][LoadActive][OpenMidLeft][LoadWoman2]
 Placeholder text[A][X]
 
+## OuderenCh6DeathQuote
+[OpenMidRight][LoadOuderen]
+Ungh[ToggleMouthMove]...[ToggleMouthMove][A][NL]
+Have I truly[ToggleMouthMove]...[ToggleMouthMove] fought for[NL]
+the Kingdom for all my life[ToggleMouthMove]...[ToggleMouthMove][A][NL]
+only to die here?[A][NL]
+This armor[ToggleMouthMove]...[ToggleMouthMove] too[NL]
+heavy[ToggleMouthMove]...[ToggleMouthMove] [CloseEyes]I can't[ToggleMouthMove]...[ToggleMouthMove][A][X]
+
 ## HalberdierName
 Halberdier[X]
 

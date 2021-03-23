@@ -81,7 +81,7 @@ ENDA
 
 Turn6:
 TILECHANGE 4
-LOAD1 0x1 Turn7Reinforcements
+LOAD1 0x1 Turn6Reinforcements
 ENDA
 
 Turn7:
@@ -147,14 +147,14 @@ UNIT Bastion Paladin 0x00 Level(10, Ally, 1) [9,16] 0x00 0x00 0x0 0x00 [] Attack
 UNIT Bastion Paladin 0x00 Level(10, Ally, 1) [6,17] 0x00 0x00 0x0 0x00 [] AttackInRangeAI
 UNIT Bastion Paladin 0x00 Level(10, Ally, 1) [8,17] 0x00 0x00 0x0 0x00 [] AttackInRangeAI
 UNIT Bastion Paladin 0x00 Level(10, Ally, 1) [2,16] 0x00 0x00 0x0 0x00 [] AttackInRangeAI
-UNIT Bastion Paladin 0x00 Level(10, Ally, 1) [9,11] 0x00 0x00 0x0 0x00 [] AttackInRangeAI
+UNIT Bastion Paladin 0x00 Level(10, Ally, 1) [10,15] 0x00 0x00 0x0 0x00 [] AttackInRangeAI
 UNIT
 
 StartingEnemies:
-UNIT Ch19Eusebios Bishop 0x00 Level(20, Enemy, 1) [7,0] 0x00 0x00 0x0 0x00 [Purge,Nosferatu,Ivaldi,HoplonGuard] GuardTileAI
-UNIT Ch19Enemies Dracozombie 0x00 Level(12, Enemy, 1) [6,0] 0x00 0x00 0x0 0x00 [WretchedAir] GuardTileAI
-UNIT Ch19Enemies Dracozombie 0x00 Level(12, Enemy, 1) [7,1] 0x00 0x00 0x0 0x00 [WretchedAir] GuardTileAI
-UNIT Ch19Enemies Dracozombie 0x00 Level(12, Enemy, 1) [8,0] 0x00 0x00 0x0 0x00 [WretchedAir] GuardTileAI
+UNIT Ch19Eusebios Bishop 0x00 Level(20, Enemy, 1) [7,0] 0x00 0x00 0x0 0x00 [Purge,Nosferatu,Ivaldi,HoplonGuard] NeverMoveAI
+UNIT Ch19Enemies Dracozombie 0x00 Level(12, Enemy, 1) [6,0] 0x00 0x00 0x0 0x00 [WretchedAir] NeverMoveAI
+UNIT Ch19Enemies Dracozombie 0x00 Level(12, Enemy, 1) [7,1] 0x00 0x00 0x0 0x00 [WretchedAir] NeverMoveAI
+UNIT Ch19Enemies Dracozombie 0x00 Level(12, Enemy, 1) [8,0] 0x00 0x00 0x0 0x00 [WretchedAir] NeverMoveAI
 UNIT Ch19Enemies General 0x00 Level(12, Enemy, 1) [5,14] 0x00 0x00 0x0 0x00 [BraveSword,Spear,KillerAxe] PursueWithoutHeedAI
 UNIT Ch19Enemies General 0x00 Level(12, Enemy, 1) [9,14] 0x00 0x00 0x0 0x00 [BraveSword,Tomahawk,HeavySpear] PursueWithoutHeedAI
 UNIT Ch19Enemies Paladin 0x00 Level(12, Enemy, 1) [4,13] 0x00 0x00 0x0 0x00 [ShortSpear,BraveSword] PursueWithoutHeedAI
@@ -196,15 +196,15 @@ UNIT
 
 Turn6Reinforcements:
 UNIT Ch19Enemies Gorgon 0x00 Level(12, Enemy, 1) [5,5] 0x00 0x00 0x0 0x00 [Shadowshot,Stone,DemonSurge] PursueWithoutHeedAI
-UNIT Agvaldt Manakete_2 0x00 Level(19, Enemy, 1) [7,5] 0x00 0x00 0x0 0x00 [WretchedAir] PursueWithoutHeedAI
+UNIT Agvaldt Manakete_2 0x00 Level(19, Enemy, 0) [7,5] 0x00 0x00 0x0 0x00 [WretchedAir] PursueWithoutHeedAI
 UNIT Ch19Enemies Gorgon 0x00 Level(12, Enemy, 1) [9,5] 0x00 0x00 0x0 0x00 [Shadowshot,Stone,DemonSurge] PursueWithoutHeedAI
 UNIT Ch19Enemies Cyclops 0x00 Level(12, Enemy, 1) [7,12] 0x00 0x00 0x0 0x00 [BraveAxe] PursueWithoutHeedAI
 UNIT
 
 Turn7Reinforcements:
 UNIT Ch19Enemies Druid 0x00 Level(12, Enemy, 1) [6,4] 0x00 0x00 0x0 0x00 [Naglfar] PursueWithoutHeedAI
-UNIT Ch19Enemies Sage 0x00 Level(12, Enemy, 1) [7,4] 0x00 0x00 0x0 0x00 [Excalibur] PursueWithoutHeedAI
-UNIT Ch19Enemies Valkyrie 0x00 Level(12, Enemy, 1) [8,4] 0x00 0x00 0x0 0x00 [Ivaldi] PursueWithoutHeedAI
+UNIT Ch19Enemies Sage 0x00 Level(12, Enemy, 1) [7,4] 0x02 0x00 0x0 0x00 [Excalibur] PursueWithoutHeedAI
+UNIT Ch19Enemies Valkyrie 0x00 Level(12, Enemy, 1) [8,4] 0x02 0x00 0x0 0x00 [Ivaldi] PursueWithoutHeedAI
 UNIT Ch19Enemies Maelduin 0x00 Level(12, Enemy, 1) [7,11] 0x00 0x00 0x0 0x00 [Nidhogg] PursueWithoutHeedAI
 UNIT
 
