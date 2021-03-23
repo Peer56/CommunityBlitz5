@@ -70,7 +70,7 @@ CauseGameOverIfLordDies
 END_MAIN
 
 CheckSeize1:
-CHECK_EVENTID 0xF
+CHECK_EVENTID 0xC
 BEQ 0x0 0xc 0x0
   //if boat 2 is also seized
   CALL EndingScene
@@ -79,7 +79,7 @@ NoFade
 ENDA
 
 CheckSeize2:
-CHECK_EVENTID 0x10
+CHECK_EVENTID 0xB
 BEQ 0x0 0xc 0x0
   //if boat 1 is also seized
   CALL EndingScene
