@@ -59,9 +59,13 @@ LOAD1 0x1 TheGang
 ENUN
 LOAD1 0x1 Baddies
 ENUN
+MUSC 0x25
+Text(Chapter1_Beginning)
 ENDA
 
 EndingScene:
+MUSC 31
+Text(Chapter1_Ending)
 CHECK_EVENTID 0x8
 BNE 21 s0 sC
 MNC2 1 //if lower village with Elixir was skipped, go to ch 2 

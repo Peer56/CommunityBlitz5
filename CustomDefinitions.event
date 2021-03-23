@@ -574,4 +574,5 @@
 // Other Music
 #define TheFirstCampaign 0x30
 #define Lang2Requiem 0x3F
+#define IevanPolkka 0x40
 
