@@ -268,6 +268,22 @@ just wiped out tomato town[A][X]
 [OpenMidRight][LoadActive][OpenMidLeft][LoadMan4]
 what the fuck are you doing in my house[A][X]
 
+##  MulchBattleQuote
+[OpenMidLeft][LoadMulch]
+Bwahaha![A][NL]
+You're fools, every one of you![A][NL]
+You face Mulch,[NL]
+the [ToggleRed]Hellfire Frog[ToggleRed]![A][NL]
+My sword shall tear through[NL]
+your flesh as you die screaming![A][X]
+
+## MulchDeathQuote
+[OpenMidLeft][LoadMulch]
+What sort of name[ToggleMouthMove]...[ToggleMouthMove] was[NL]
+[ToggleRed]Hellfire Frog[ToggleRed][ToggleMouthMove]...[ToggleMouthMove] anyway?[A][NL]
+Should've gone with[ToggleMouthMove]...[ToggleMouthMove][NL]
+[CloseEyes]something cooler[ToggleMouthMove]...[ToggleMouthMove][A][X]
+
 ## Ch9TopRightVilText
 [OpenMidRight][LoadActive][OpenMidLeft][LoadMan4]
 based[A][X]
