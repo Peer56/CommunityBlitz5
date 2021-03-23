@@ -432,7 +432,7 @@
 #define Ch16Enemies 158
 #define Ch16Generics2 159
 #define Ch17Generics1 160
-#define UnkChGenerics1 161
+#define Ch17Generics2 161
 #define Ch18Generics1 162
 #define Ch18Generics2 163
 #define Ch19Enemies 164
@@ -441,6 +441,7 @@
 #define Ch20Generics2 167
 #define Ch21Generics1 168
 #define Ch21Generics2 169
+#define UnkChGenerics1 170
 
 
 // Class Definitions
