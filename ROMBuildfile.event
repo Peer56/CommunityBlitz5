@@ -37,6 +37,8 @@
     //Events
 	#include "Events/_MasterEventInstaller.event"
 	MESSAGE Used event space ends at currentOffset
+
+	#include "Quality of life improvements.event"
 	
 	
     MESSAGE Used free space ends at currentOffset

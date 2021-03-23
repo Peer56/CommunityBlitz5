@@ -14,9 +14,9 @@ POIN $0 $0 $0 $0 $0 $0
 POIN BeginningScene EndingScene
 
 
-#define EarlyGameLevel 5
-#define EarlyGameLevel2 8
-#define EarlyGameLevel3 10
+#define EarlyGameLevel 2
+#define EarlyGameLevel2 4
+#define EarlyGameLevel3 6
 
 
 //haven't set village target by brigands events 
@@ -107,12 +107,12 @@ UNIT Ch17Generics1 Soldier 0x00 Level(EarlyGameLevel3, Enemy, 1) [7,10] 0x00 0x0
 UNIT Ch17Generics1 Soldier 0x00 Level(EarlyGameLevel2, Enemy, 1) [9,12] 0x00 0x00 0x0 0x00 [IronLance] GroupOneAI
 
 UNIT Ch17Generics1 Mercenary 0x00 Level(EarlyGameLevel, Enemy, 1) [4,5] 0x00 0x00 0x0 0x00 [SlimSword] GroupTwoAI
-UNIT Ch17Generics1 Thief 0x00 Level(EarlyGameLevel2, Enemy, 1) [6,6] 0x00 0x00 0x0 0x00 [PoisonSword] GroupTwoAI
+UNIT Ch17Generics1 Thief 0x00 Level(EarlyGameLevel2, Enemy, 1) [6,6] DropItem 0x00 0x0 0x00 [PoisonSword] GroupTwoAI
 
 UNIT Ch17Generics1 Myrmidon 0x00 Level(EarlyGameLevel, Enemy, 1) [12,9] 0x00 0x00 0x0 0x00 [SlimSword] GroupThreeAI
 UNIT Ch17Generics1 Archer 0x00 Level(EarlyGameLevel2, Enemy, 1) [14,8] 0x00 0x00 0x0 0x00 [PoisonBow] GroupThreeAI
 
-UNIT Ch17Generics1 Thief 0x00 Level(EarlyGameLevel, Enemy, 1) [13,5] 0x00 0x00 0x0 0x00 [SlimSword] GroupFourAI
+UNIT Ch17Generics1 Thief 0x00 Level(EarlyGameLevel, Enemy, 1) [13,5] DropItem 0x00 0x0 0x00 [SlimSword] GroupFourAI 
 UNIT UnkChGenerics1 Mage 0x00 Level(EarlyGameLevel3, Enemy, 1) [11,4] 0x00 0x00 0x0 0x00 [Fire] GroupFourAI
 UNIT UnkChGenerics1 Cavalier 0x00 Level(EarlyGameLevel3, Enemy, 1) [13,2] 0x00 0x00 0x0 0x00 [IronLance, IronSword] GroupFourAI
 
@@ -121,7 +121,7 @@ UNIT UnkChGenerics1 WyvernRider 0x00 Level(EarlyGameLevel2, Enemy, 1) [9,1] 0x00
 
 UNIT Ch17Generics1 Archer 0x00 Level(EarlyGameLevel, Enemy, 1) [0,5] 0x00 0x00 0x0 0x00 [IronBow] AttackInRangeAI
 UNIT Ch17Generics1 Brigand 0x00 Level(EarlyGameLevel2, Enemy, 1) [13,14] 0x00 0x00 0x0 0x00 0x22 0x00 0x00 0x00 0x00 0x04 0x04 0x00 //poison axe, attack village 
-UNIT Borgas Rogue 0x00 Level(1, Enemy, 0) [7,2] 0x00 0x00 0x0 0x00 [WindSword] NeverMoveAI //boss 
+UNIT Borgas Rogue 0x00 Level(1, Enemy, 0) [7,2] 0x00 0x00 0x0 0x00 [SteelSword, WindSword] NeverMoveAI //boss 
 UNIT
 
 NWUnit:
