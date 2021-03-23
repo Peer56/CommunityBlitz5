@@ -1,0 +1,800 @@
+//Event file generated from Sappy .s format.
+	#include "MPlayDef.event"
+
+	#define	IevanPolka_grp  voicegroup000
+	#define	IevanPolka_pri  0
+	#define	IevanPolka_rev  0
+	#define	IevanPolka_mvl  127
+	#define	IevanPolka_key  0
+	#define	IevanPolka_tbs  1
+	#define	IevanPolka_exg  0
+	#define	IevanPolka_cmp  1
+
+	// .rodata
+	//	IevanPolka
+	ALIGN 4
+
+//**************** Track 1 (Midi-Chn.1) ****************//
+
+IevanPolka_1:
+	BYTE	KEYSH   IevanPolka_key+0
+IevanPolka_1_B1:
+// 000   ----------------------------------------
+	BYTE	TEMPO   120*IevanPolka_tbs/2
+	BYTE		VOICE   0
+	BYTE		PAN     c_v+0
+	BYTE		VOL     100*IevanPolka_mvl/mxv
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W96
+// 008   ----------------------------------------
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W96
+// 012   ----------------------------------------
+	BYTE	W96
+// 013   ----------------------------------------
+	BYTE		N11     Cs4   v080
+	BYTE	W12
+	BYTE		        Fs4 
+	BYTE	W12
+	BYTE		N17   
+	BYTE	W18
+	BYTE		N05     Gs4 
+	BYTE	W06
+	BYTE		        An4 
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N11     Fs4 
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W06
+	BYTE		        An4 
+	BYTE	W06
+// 014   ----------------------------------------
+	BYTE		N11     Gs4 
+	BYTE	W12
+	BYTE		        En4 
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Gs4 
+	BYTE	W12
+	BYTE		N05     An4 
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N11     Fs4 
+	BYTE	W12
+	BYTE		N17   
+	BYTE	W18
+	BYTE		N05   
+	BYTE	W06
+// 015   ----------------------------------------
+	BYTE		N11     Cs4 
+	BYTE	W12
+	BYTE		        Fs4 
+	BYTE	W12
+	BYTE		N17   
+	BYTE	W18
+	BYTE		N05     Gs4 
+	BYTE	W06
+	BYTE		N11     An4 
+	BYTE	W12
+	BYTE		N05     Fs4 
+	BYTE	W06
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		        An4 
+	BYTE	W06
+// 016   ----------------------------------------
+	BYTE		        Cs5 
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		        Bn4 
+	BYTE	W06
+	BYTE		N11     An4 
+	BYTE	W12
+	BYTE		        Gs4 
+	BYTE	W12
+	BYTE		        An4 
+	BYTE	W12
+	BYTE		N05     Fs4 
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W06
+	BYTE		        An4 
+	BYTE	W06
+// 017   ----------------------------------------
+IevanPolka_1_017:
+	BYTE		N11     Cs5   v080
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Bn4 
+	BYTE	W12
+	BYTE		        An4 
+	BYTE	W12
+	BYTE		        Gs4 
+	BYTE	W12
+	BYTE		N05     En4 
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W06
+	BYTE		        Gs4 
+	BYTE	W06
+	BYTE	PEND
+// 018   ----------------------------------------
+	BYTE		        Bn4 
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		        An4 
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		        Gs4 
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N11     An4 
+	BYTE	W12
+	BYTE		N05     Fs4 
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N17   
+	BYTE	W18
+	BYTE		N05   
+	BYTE	W06
+// 019   ----------------------------------------
+	BYTE	PATT
+	 POIN2	IevanPolka_1_017
+// 020   ----------------------------------------
+	BYTE		N05     Bn4   v080
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		        An4 
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		        Gs4 
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N11     An4 
+	BYTE	W12
+	BYTE		N05     Fs4 
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N22   
+	BYTE	W22
+	BYTE	GoTo
+	 POIN2	IevanPolka_1_B1
+IevanPolka_1_B2:
+	BYTE	FINE
+
+//**************** Track 2 (Midi-Chn.2) ****************//
+
+IevanPolka_2:
+	BYTE	KEYSH   IevanPolka_key+0
+IevanPolka_2_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   73
+	BYTE		VOL     100*IevanPolka_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W90
+	BYTE		N05     Fs3   v080
+	BYTE	W06
+// 004   ----------------------------------------
+	BYTE		N11     Cs3 
+	BYTE	W12
+	BYTE		        Fs3 
+	BYTE	W12
+	BYTE		N17   
+	BYTE	W18
+	BYTE		N05     Gs3 
+	BYTE	W06
+	BYTE		        An3 
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		        Fs3 
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W06
+	BYTE		        An3 
+	BYTE	W06
+// 005   ----------------------------------------
+	BYTE		N11     Gs3 
+	BYTE	W12
+	BYTE		        En3 
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Gs3 
+	BYTE	W12
+	BYTE		        An3 
+	BYTE	W12
+	BYTE		        Fs3 
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+// 006   ----------------------------------------
+	BYTE		N11     Cs3 
+	BYTE	W12
+	BYTE		        Fs3 
+	BYTE	W12
+	BYTE		N17   
+	BYTE	W18
+	BYTE		N05     Gs3 
+	BYTE	W06
+	BYTE		N11     An3 
+	BYTE	W12
+	BYTE		N05     Fs3 
+	BYTE	W06
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		        An3 
+	BYTE	W06
+// 007   ----------------------------------------
+	BYTE		        Cs4 
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		        Bn3 
+	BYTE	W06
+	BYTE		        An3 
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		        Gs3 
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N11     An3 
+	BYTE	W12
+	BYTE		        Fs3 
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W06
+	BYTE		        An3 
+	BYTE	W06
+// 008   ----------------------------------------
+	BYTE		N11     Cs4 
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Bn3 
+	BYTE	W12
+	BYTE		        An3 
+	BYTE	W12
+	BYTE		        Gs3 
+	BYTE	W12
+	BYTE		N05     En3 
+	BYTE	W06
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		        Gs3 
+	BYTE	W06
+// 009   ----------------------------------------
+	BYTE		        Bn3 
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		        An3 
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		        Gs3 
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N11     An3 
+	BYTE	W12
+	BYTE		N05     Fs3 
+	BYTE	W06
+	BYTE		N22   
+	BYTE	W24
+	BYTE		N05     An3 
+	BYTE	W06
+// 010   ----------------------------------------
+	BYTE		N11     Cs4 
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Bn3 
+	BYTE	W12
+	BYTE		        An3 
+	BYTE	W12
+	BYTE		        Gs3 
+	BYTE	W12
+	BYTE		        En3 
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W06
+	BYTE		        Gs3 
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+// 011   ----------------------------------------
+	BYTE		        Bn3 
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		        An3 
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		        Gs3 
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N11     An3 
+	BYTE	W12
+	BYTE		N05     Fs3 
+	BYTE	W06
+	BYTE		N22   
+	BYTE	W24
+	BYTE		N05   
+	BYTE	W06
+// 012   ----------------------------------------
+	BYTE		        Bn3 
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		        An3 
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		        Gs3 
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N11     An3 
+	BYTE	W12
+	BYTE		N05     Fs3 
+	BYTE	W06
+	BYTE		N22   
+	BYTE	W30
+// 013   ----------------------------------------
+	BYTE	W96
+// 014   ----------------------------------------
+	BYTE	W96
+// 015   ----------------------------------------
+	BYTE	W96
+// 016   ----------------------------------------
+	BYTE	W96
+// 017   ----------------------------------------
+	BYTE	W96
+// 018   ----------------------------------------
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE	W96
+// 020   ----------------------------------------
+	BYTE	W92
+	BYTE	W02
+	BYTE	GoTo
+	 POIN2	IevanPolka_2_B1
+IevanPolka_2_B2:
+	BYTE	FINE
+
+//**************** Track 3 (Midi-Chn.3) ****************//
+
+IevanPolka_3:
+	BYTE	KEYSH   IevanPolka_key+0
+IevanPolka_3_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   0
+	BYTE		VOL     100*IevanPolka_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE	W12
+	BYTE		N11     Fs2   v080
+	BYTE		N11     An2 
+	BYTE		N11     Cs3 
+	BYTE	W24
+	BYTE		        Fs2 
+	BYTE		N11     An2 
+	BYTE		N11     Cs3 
+	BYTE	W24
+	BYTE		        Fs2 
+	BYTE		N11     An2 
+	BYTE		N11     Cs3 
+	BYTE	W24
+	BYTE		        Fs2 
+	BYTE		N11     An2 
+	BYTE		N11     Cs3 
+	BYTE	W12
+// 001   ----------------------------------------
+IevanPolka_3_001:
+	BYTE	W12
+	BYTE		N11     Fs2   v080
+	BYTE		N11     An2 
+	BYTE		N11     Cs3 
+	BYTE	W24
+	BYTE		        Fs2 
+	BYTE		N11     An2 
+	BYTE		N11     Cs3 
+	BYTE	W24
+	BYTE		        Fs2 
+	BYTE		N11     An2 
+	BYTE		N11     Cs3 
+	BYTE	W24
+	BYTE		        Fs2 
+	BYTE		N11     An2 
+	BYTE		N11     Cs3 
+	BYTE	W12
+	BYTE	PEND
+// 002   ----------------------------------------
+	BYTE	PATT
+	 POIN2	IevanPolka_3_001
+// 003   ----------------------------------------
+	BYTE	W12
+	BYTE		N11     Fs2   v080
+	BYTE		N11     An2 
+	BYTE		N11     Cs3 
+	BYTE	W24
+	BYTE		        Fs2 
+	BYTE		N11     An2 
+	BYTE		N11     Cs3 
+	BYTE	W12
+	BYTE		N22     Fs2 
+	BYTE		N22     An2 
+	BYTE		N22     Cs3 
+	BYTE	W48
+// 004   ----------------------------------------
+	BYTE	PATT
+	 POIN2	IevanPolka_3_001
+// 005   ----------------------------------------
+IevanPolka_3_005:
+	BYTE	W12
+	BYTE		N11     En2   v080
+	BYTE		N11     Gs2 
+	BYTE		N11     Cs3 
+	BYTE	W24
+	BYTE		        En2 
+	BYTE		N11     Gs2 
+	BYTE		N11     Cs3 
+	BYTE	W24
+	BYTE		        Fs2 
+	BYTE		N11     An2 
+	BYTE		N11     Cs3 
+	BYTE	W24
+	BYTE		        Fs2 
+	BYTE		N11     An2 
+	BYTE		N11     Cs3 
+	BYTE	W12
+	BYTE	PEND
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	IevanPolka_3_001
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	IevanPolka_3_005
+// 008   ----------------------------------------
+IevanPolka_3_008:
+	BYTE	W12
+	BYTE		N11     Fs2   v080
+	BYTE		N11     An2 
+	BYTE		N11     Cs3 
+	BYTE	W24
+	BYTE		        Fs2 
+	BYTE		N11     An2 
+	BYTE		N11     Cs3 
+	BYTE	W24
+	BYTE		        En2 
+	BYTE		N11     Gs2 
+	BYTE		N11     Cs3 
+	BYTE	W24
+	BYTE		        En2 
+	BYTE		N11     Gs2 
+	BYTE		N11     Cs3 
+	BYTE	W12
+	BYTE	PEND
+// 009   ----------------------------------------
+	BYTE	PATT
+	 POIN2	IevanPolka_3_005
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	IevanPolka_3_008
+// 011   ----------------------------------------
+IevanPolka_3_011:
+	BYTE	W12
+	BYTE		N11     En2   v080
+	BYTE		N11     Gs2 
+	BYTE		N11     Cs3 
+	BYTE	W24
+	BYTE		        En2 
+	BYTE		N11     Gs2 
+	BYTE		N11     Cs3 
+	BYTE	W12
+	BYTE		N22     Fs2 
+	BYTE		N22     An2 
+	BYTE		N22     Cs3 
+	BYTE	W48
+	BYTE	PEND
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	IevanPolka_3_011
+// 013   ----------------------------------------
+IevanPolka_3_013:
+	BYTE		N22     Fs2   v080
+	BYTE	W24
+	BYTE		N11     Cs2 
+	BYTE	W12
+	BYTE		        En2 
+	BYTE	W12
+	BYTE		N22     Fs2 
+	BYTE	W24
+	BYTE		N11     Cs2 
+	BYTE	W12
+	BYTE		        En2 
+	BYTE	W12
+	BYTE	PEND
+// 014   ----------------------------------------
+IevanPolka_3_014:
+	BYTE		N22     Cs2   v080
+	BYTE	W24
+	BYTE		N11     En2 
+	BYTE	W12
+	BYTE		        Cs2 
+	BYTE	W12
+	BYTE		N22     Fs2 
+	BYTE	W24
+	BYTE		N11     Cs2 
+	BYTE	W12
+	BYTE		        En2 
+	BYTE	W12
+	BYTE	PEND
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	IevanPolka_3_013
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	IevanPolka_3_014
+// 017   ----------------------------------------
+IevanPolka_3_017:
+	BYTE		N22     Fs2   v080
+	BYTE	W24
+	BYTE		N11     Cs2 
+	BYTE	W12
+	BYTE		        En2 
+	BYTE	W12
+	BYTE		N22     Cs2 
+	BYTE	W24
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        En2 
+	BYTE	W12
+	BYTE	PEND
+// 018   ----------------------------------------
+	BYTE	PATT
+	 POIN2	IevanPolka_3_014
+// 019   ----------------------------------------
+	BYTE	PATT
+	 POIN2	IevanPolka_3_017
+// 020   ----------------------------------------
+	BYTE		N22     Cs2   v080
+	BYTE	W24
+	BYTE		N11     En2 
+	BYTE	W12
+	BYTE		        Cs2 
+	BYTE	W12
+	BYTE		N22     Fs2 
+	BYTE	W44
+	BYTE	W02
+	BYTE	GoTo
+	 POIN2	IevanPolka_3_B1
+IevanPolka_3_B2:
+	BYTE	FINE
+
+//**************** Track 4 (Midi-Chn.4) ****************//
+
+IevanPolka_4:
+	BYTE	KEYSH   IevanPolka_key+0
+IevanPolka_4_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   56
+	BYTE		VOL     100*IevanPolka_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE		N22     Fs1   v080
+	BYTE	W24
+	BYTE		        Cs1 
+	BYTE	W24
+	BYTE		        Fs1 
+	BYTE	W24
+	BYTE		        Cs1 
+	BYTE	W24
+// 001   ----------------------------------------
+IevanPolka_4_001:
+	BYTE		N22     Fs1   v080
+	BYTE	W24
+	BYTE		        Cs1 
+	BYTE	W24
+	BYTE		        Fs1 
+	BYTE	W24
+	BYTE		        Cs1 
+	BYTE	W24
+	BYTE	PEND
+// 002   ----------------------------------------
+	BYTE	PATT
+	 POIN2	IevanPolka_4_001
+// 003   ----------------------------------------
+	BYTE		N22     Fs1   v080
+	BYTE	W24
+	BYTE		        Cs1 
+	BYTE	W24
+	BYTE		        Fs1 
+	BYTE	W48
+// 004   ----------------------------------------
+	BYTE	PATT
+	 POIN2	IevanPolka_4_001
+// 005   ----------------------------------------
+IevanPolka_4_005:
+	BYTE		N22     En1   v080
+	BYTE	W24
+	BYTE		        Cs1 
+	BYTE	W24
+	BYTE		        Fs1 
+	BYTE	W24
+	BYTE		        Cs1 
+	BYTE	W24
+	BYTE	PEND
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	IevanPolka_4_001
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	IevanPolka_4_005
+// 008   ----------------------------------------
+IevanPolka_4_008:
+	BYTE		N22     Fs1   v080
+	BYTE	W24
+	BYTE		        Cs1 
+	BYTE	W24
+	BYTE		        En1 
+	BYTE	W24
+	BYTE		        Cs1 
+	BYTE	W24
+	BYTE	PEND
+// 009   ----------------------------------------
+	BYTE	PATT
+	 POIN2	IevanPolka_4_005
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	IevanPolka_4_008
+// 011   ----------------------------------------
+IevanPolka_4_011:
+	BYTE		N22     En1   v080
+	BYTE	W24
+	BYTE		        Cs1 
+	BYTE	W24
+	BYTE		        Fs1 
+	BYTE	W48
+	BYTE	PEND
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	IevanPolka_4_011
+// 013   ----------------------------------------
+	BYTE	W96
+// 014   ----------------------------------------
+	BYTE	W96
+// 015   ----------------------------------------
+	BYTE	W96
+// 016   ----------------------------------------
+	BYTE	W96
+// 017   ----------------------------------------
+	BYTE	W96
+// 018   ----------------------------------------
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE	W96
+// 020   ----------------------------------------
+	BYTE	W92
+	BYTE	W02
+	BYTE	GoTo
+	 POIN2	IevanPolka_4_B1
+IevanPolka_4_B2:
+	BYTE	FINE
+
+//******************************************************//
+	ALIGN 4
+
+IevanPolka:
+	BYTE	4	// NumTrks
+	BYTE	0	// NumBlks
+	BYTE	IevanPolka_pri	// Priority
+	BYTE	IevanPolka_rev	// Reverb.
+
+	POIN2	IevanPolka_grp
+
+	POIN2	IevanPolka_1
+	POIN2	IevanPolka_2
+	POIN2	IevanPolka_3
+	POIN2	IevanPolka_4
+
+	
