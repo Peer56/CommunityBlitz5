@@ -76,6 +76,18 @@
 	setPalette(0x2C,Yara_Summoner)
 	setCBSP(0x2C,Yara,0x6,Summoner_F)
 
+// Loretta_Cleric
+	setPalette(0x2E,Loretta_Cleric)
+	setCBSP(0x2E,Loretta,0x1,Cleric)
+
+// Loretta_Bishop
+	setPalette(0x2F,Loretta_Bishop)
+	setCBSP(0x2F,Loretta,0x3,Bishop_F)
+
+// Loretta_Valkyrie
+	setPalette(0x30,Loretta_Valkyrie)
+	setCBSP(0x30,Loretta,0x4,Valkyrie)
+
 // Viridia_Cavalier
 	setPalette(0x34,Viridia_Cavalier)
 	setCBSP(0x34,Viridia,0x1,Cavalier_F)
