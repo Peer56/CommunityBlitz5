@@ -57,6 +57,13 @@
 # char{0x2C} "Yara_Summoner" set{Yara,0x6,Summoner_F}
 5553FF7FFF6B1F4B2E19FF1B9E1A8A6BC8357F12295F884EB55A0E460721A520
 
+# char{0x2E} "Loretta_Cleric" set{Loretta,0x1,Cleric}
+5553FF7FFF6B1F4B2E19124E6E392B39FB3E352AD26AF86F945FCA36072AA514
+# char{0x2F} "Loretta_Bishop" set{Loretta,0x3,Bishop_F}
+5553FF7FFF6BBF222E19124E6E39FF0BD5091B7F3666D16B2B4FC642C42DA514
+# char{0x30} "Loretta_Valkyrie" set{Loretta,0x4,Valkyrie}
+5553FF7FDF57DD3A501DCA41124E6E39B6670F4B2A3E4119FA7F33778531A514
+
 # char{0x34} "Viridia_Cavalier" set{Viridia,0x1,Cavalier_F}
 5553FE573D430E7F9029A655B325EA1C98430E43043A05255736D1310B1DA514
 # char{0x35} "Viridia_Paladin" set{Viridia,0x3,Paladin_F}
@@ -77,10 +84,6 @@
 # char{0x25} "Hobbes_ArchMogall" set{Hobbes,0x3,ArchMogall}
 
 # char{0x2D} "Francine_Assassin" set{Francine,0x3,Assassin_F}
-# char{0x2E} "Loretta_Cleric" set{Loretta,0x1,Cleric}
-# char{0x2F} "Loretta_Bishop" set{Loretta,0x3,Bishop_F}
-# char{0x30} "Loretta_Valkyrie" set{Loretta,0x4,Valkyrie}
-
 # char{0x31} "Jamie_Cavalier" set{Jamie,0x1,Cavalier}
 # char{0x32} "Jamie_Paladin" set{Jamie,x03,Paladin}
 # char{0x33} "Jamie_GreatKnight" set{Jamie,0x4,GreatKnight}
