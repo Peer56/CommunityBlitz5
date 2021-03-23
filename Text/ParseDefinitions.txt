@@ -103,3 +103,7 @@
 [LoadGunborg] = [LoadFace][0x1][0x1]
 [LoadGem] = [LoadFace][0x28][0x1]
 [LoadOuderen] = [LoadFace][0xF][0x1]
+[LoadBastion] = [LoadFace][0x2][0x1]
+[LoadAldric] = [LoadFace][0x3][0x1]
+[LoadScully] = [LoadFace][0x4][0x1]
+[LoadWilbur] = [LoadFace][0x5][0x1]

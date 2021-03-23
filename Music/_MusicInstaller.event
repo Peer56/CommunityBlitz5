@@ -189,7 +189,7 @@ SongTable(StraightToTheTop,aelevate,0)
 #include "songs/aelevate.event"
 }
 {
-SongTable(IevanPolkka,IevanPolkka,1)
+SongTable(IevanPolkka,IevanPolka,1)
 #include "songs/IevanPolkka.event"
 }
 
