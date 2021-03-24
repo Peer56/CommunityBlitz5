@@ -69,6 +69,7 @@
 #define CHAPTER_21
 
 #define CHAPTER_5X
+#define CHAPTER_21X
 
 //Chapter Asset Defs
 
@@ -172,9 +173,9 @@
 #define AssetCh21Map              $62 // vanilla ch21 map
 #define AssetCh21MapChanges       $63 // vanilla ch21 map changes
 #define AssetCh21Data             $64 // vanilla eir ch21 data
-//                                $65 // vanilla ch21x map
-//                                $66 // vanilla ch21x map changes
-//                                $67 // vanilla eir ch21x data
+#define AssetCh21xMap             $65 // vanilla ch21x map
+#define AssetCh21xMapChanges      $66 // vanilla ch21x map changes
+#define AssetCh21xData            $67 // vanilla eir ch21x data
 #define AssetFortPalRedHiContrast $68
 //                                $69 // vanilla eph ch9 map
 //                                $6A // vanilla eph ch9 map changes
@@ -389,6 +390,7 @@
 #define DemiA 87
 #define DemiB 88
 #define DemiC 89
+#define SuperMulch 90
 
 //NPCs
 //start these at 96
@@ -453,6 +455,7 @@
 #define Falcoknight FalcoKnight //grrrrrr
 #define MautheDoog Mauthedoog //grrrrrrrrrrrr
 #define Halberdier Cyclops_2 //good a spot as any
+#define WightBow Wight_Bow
 
 #define LordSwordAnimID 1
 #define LordUnarmedAnimID 2
@@ -463,7 +466,7 @@
 
 #define HoplonGuard HoplonShield //I too like naming things not what they're called
 #define LongBow Longbow
-
+#define Hellfang HellFang
 
 // Mug Defs
 
