@@ -3,17 +3,44 @@
 
 ALIGN 4
 
+Gunborg_Lord:
+	#incbin "./_palettes/Gunborg_Lord.lzpal" 
+
 Bastion_Knight:
 	#incbin "./_palettes/Bastion_Knight.lzpal" 
+
+Bastion_General:
+	#incbin "./_palettes/Bastion_General.lzpal" 
+
+Bastion_GreatKnight:
+	#incbin "./_palettes/Bastion_GreatKnight.lzpal" 
 
 Aldric_Knight:
 	#incbin "./_palettes/Aldric_Knight.lzpal" 
 
+Aldric_General:
+	#incbin "./_palettes/Aldric_General.lzpal" 
+
+Aldric_GreatKnight:
+	#incbin "./_palettes/Aldric_GreatKnight.lzpal" 
+
 Scully_Fighter:
 	#incbin "./_palettes/Scully_Fighter.lzpal" 
 
+Scully_Warrior:
+	#incbin "./_palettes/Scully_Warrior.lzpal" 
+
+Scully_Hero:
+	#incbin "./_palettes/Scully_Hero.lzpal" 
+
 Wilbur_Priest:
 	#incbin "./_palettes/Wilbur_Priest.lzpal" 
+
+Wilbur_Bishop:
+	#incbin "./_palettes/Wilbur_Bishop.lzpal" 
+
+Wilbur_Sage:
+	#incbin "./_palettes/Wilbur_Sage.lzpal" 
 
 Paula_Myrmidon:
 	#incbin "./_palettes/Paula_Myrmidon.lzpal" 
