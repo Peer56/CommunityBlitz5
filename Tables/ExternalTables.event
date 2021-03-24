@@ -49,6 +49,7 @@ DeathQuoteEntry(2,2,Peter,GenericDeathQuote)
 DeathQuoteEntry(21,2,Borgas,GenericDeathQuote)
 DeathQuoteEntry(8,2,Merlot,GenericDeathQuote)
 DeathQuoteEntry(15,2,Darias,GenericDeathQuote)
+DeathQuoteEntry(5,2,Ch6Eusebios,GenericDeathQuote) //defend ch to end on boss death
 
 //death quotes for chapter logic
 DeathQuoteEntry(10, 10, Ch11Generics1, 0)
