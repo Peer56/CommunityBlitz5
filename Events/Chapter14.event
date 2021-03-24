@@ -43,8 +43,8 @@ ALIGN 4
 
 MiscBasedEvents:
 CauseGameOverIfLordDies
-AFEV 0xC Boss1Killed 0x10
-AFEV 0xD Boss2Killed 0x11
+AFEV 0x0 Boss1Killed 0x10
+AFEV 0x0 Boss2Killed 0x11
 END_MAIN
 
 Boss1Killed:
