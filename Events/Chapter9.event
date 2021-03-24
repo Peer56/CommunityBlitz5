@@ -77,26 +77,22 @@ BottomLeftVil:
 VillageEventItem(Ch9BottomLeftVilText, Village, RedGem)
 
 Turn1:
-LOAD1 0x1 CheninUnit
+ReinforcementEvent(CheninUnit)
 
 Turn2:
-LOAD1 0x1 Turn2Reinforcements
-ENDA
+ReinforcementEvent(Turn2Reinforcements)
 
 Turn3:
-LOAD1 0x1 Turn3Reinforcements
-ENDA
+ReinforcementEvent(Turn3Reinforcements)
 
 Turn4:
-LOAD1 0x1 Turn4Reinforcements
-ENDA
+ReinforcementEvent(Turn4Reinforcements)
 
 Turn5:
-LOAD1 0x1 Turn5Reinforcements
-ENDA
+ReinforcementEvent(Turn5Reinforcements)
 
 Turn6:
-LOAD1 0x1 Turn6Reinforcements
+ReinforcementEvent(Turn6Reinforcements)
 
 RecruitSangria:
 CUSA Sangria
@@ -155,14 +151,14 @@ UNIT
 
 NPCUnits:
 
-UNIT Ch9Npcs1 Fighter 0x00 Level(8, Enemy, 1) [17,13] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI
-UNIT Ch9Npcs1 Fighter 0x00 Level(8, Enemy, 1) [16,11] 0x00 0x00 0x0 0x00 [SteelBlade] AttackInRangeAI
-UNIT Ch9Npcs1 Knight 0x00 Level(8, Enemy, 1) [15,9] 0x00 0x00 0x0 0x00 [IronLance,Javelin] NeverMoveAI
-UNIT Ch9Npcs1 Knight 0x00 Level(8, Enemy, 1) [16,9] 0x00 0x00 0x0 0x00 [IronLance,Javelin] NeverMoveAI
+UNIT Ch9Npcs1 Fighter 0x00 Level(8, NPC, 1) [17,13] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI
+UNIT Ch9Npcs1 Fighter 0x00 Level(8, NPC, 1) [16,11] 0x00 0x00 0x0 0x00 [SteelBlade] AttackInRangeAI
+UNIT Ch9Npcs1 Knight 0x00 Level(8, NPC, 1) [15,9] 0x00 0x00 0x0 0x00 [IronLance,Javelin] NeverMoveAI
+UNIT Ch9Npcs1 Knight 0x00 Level(8, NPC, 1) [16,9] 0x00 0x00 0x0 0x00 [IronLance,Javelin] NeverMoveAI
 UNIT
 
 CheninUnit:
-UNIT Chenin Shaman 0x00 Level(8, Ally, 0) [18,9] 0x00 0x00 0x0 0x00 [Flux,Nosferatu] NoAI
+UNIT Chenin Shaman 0x00 Level(8, Ally, 1) [18,9] 0x00 0x00 0x0 0x00 [Flux,Nosferatu] NoAI
 UNIT
 
 Turn2Reinforcements:
