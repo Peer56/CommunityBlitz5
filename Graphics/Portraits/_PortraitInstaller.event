@@ -288,7 +288,7 @@ ALIGN 4
 SusiePortrait:
 #incext PortraitFormatter "Susie.png"
 
-setMugEntry(MerlotMug,MerlotPortrait,2,5,3,3)
+setMugEntry(MerlotMug,MerlotPortrait,3,5,3,3)
 ALIGN 4
 MerlotPortrait:
 #incext PortraitFormatter "Merlot.png"
