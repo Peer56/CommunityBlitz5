@@ -80,27 +80,27 @@ NoFade
 ENDA
 
 Turn2:
-LOAD1 0x1 Turn2Reinforcements
+ReinforcementEvent(Turn2Reinforcements)
 NoFade
 ENDA
 
 Turn3:
-LOAD1 0x1 Turn3Reinforcements
+ReinforcementEvent(Turn3Reinforcements)
 NoFade
 ENDA
 
 Turn4:
-LOAD1 0x1 Turn4Reinforcements
+ReinforcementEvent(Turn4Reinforcements)
 NoFade
 ENDA
 
 Turn5:
-LOAD1 0x1 Turn5Reinforcements
+ReinforcementEvent(Turn5Reinforcements)
 NoFade
 ENDA
 
 AntiTurtle:
-LOAD1 0x1 BackReinforcements
+ReinforcementEvent(BackReinforcements)
 NoFade
 ENDA
 
