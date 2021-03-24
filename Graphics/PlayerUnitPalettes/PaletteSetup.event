@@ -4,21 +4,57 @@
 #include "PaletteDefinitions.event"
 #include "PaletteInstaller.event"
 
+// Gunborg_Lord
+	setPalette(0x1,Gunborg_Lord)
+	setCBSP(0x1,Gunborg,0x1,GunborgLord)
+
 // Bastion_Knight
-	setPalette(0x4,Bastion_Knight)
-	setCBSP(0x4,Bastion,0x1,Knight)
+	setPalette(0x3,Bastion_Knight)
+	setCBSP(0x3,Bastion,0x1,Knight)
+
+// Bastion_General
+	setPalette(0x4,Bastion_General)
+	setCBSP(0x4,Bastion,0x3,General)
+
+// Bastion_GreatKnight
+	setPalette(0x5,Bastion_GreatKnight)
+	setCBSP(0x5,Bastion,0x4,GreatKnight)
 
 // Aldric_Knight
-	setPalette(0x7,Aldric_Knight)
-	setCBSP(0x7,Aldric,0x1,Knight)
+	setPalette(0x6,Aldric_Knight)
+	setCBSP(0x6,Aldric,0x1,Knight)
+
+// Aldric_General
+	setPalette(0x7,Aldric_General)
+	setCBSP(0x7,Aldric,0x3,General)
+
+// Aldric_GreatKnight
+	setPalette(0x8,Aldric_GreatKnight)
+	setCBSP(0x8,Aldric,0x4,GreatKnight)
 
 // Scully_Fighter
-	setPalette(0xA,Scully_Fighter)
-	setCBSP(0xA,Scully,0x1,Fighter)
+	setPalette(0x9,Scully_Fighter)
+	setCBSP(0x9,Scully,0x1,Fighter)
+
+// Scully_Warrior
+	setPalette(0xA,Scully_Warrior)
+	setCBSP(0xA,Scully,0x3,Warrior)
+
+// Scully_Hero
+	setPalette(0xB,Scully_Hero)
+	setCBSP(0xB,Scully,0x4,Hero)
 
 // Wilbur_Priest
-	setPalette(0xD,Wilbur_Priest)
-	setCBSP(0xD,Wilbur,0x1,Priest)
+	setPalette(0xC,Wilbur_Priest)
+	setCBSP(0xC,Wilbur,0x1,Priest)
+
+// Wilbur_Bishop
+	setPalette(0xD,Wilbur_Bishop)
+	setCBSP(0xD,Wilbur,0x3,Bishop)
+
+// Wilbur_Sage
+	setPalette(0xE,Wilbur_Sage)
+	setCBSP(0xE,Wilbur,0x4,Sage)
 
 // Paula_Myrmidon
 	setPalette(0x10,Paula_Myrmidon)
