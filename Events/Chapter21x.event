@@ -1,4 +1,4 @@
-EventPointerTable(AssetCh21xData, PointerList)
+EventPointerTable(AssetCh25Data, PointerList)
 
 ALIGN 4
 PointerList:
