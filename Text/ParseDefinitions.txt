@@ -108,3 +108,4 @@
 [LoadScully] = [LoadFace][0x4][0x1]
 [LoadWilbur] = [LoadFace][0x5][0x1]
 [LoadMulch] = [LoadFace][0x40][0x1]
+[LoadXholt] = [LoadFace][0x2E][0x1]
