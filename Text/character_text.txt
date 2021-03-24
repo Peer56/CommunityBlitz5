@@ -110,7 +110,7 @@ deserts of Delan.[X]
 Ergon[X]
 
 ## ErgonDesc
-Uninteresting even by
+Uninteresting even by[N]
 soldier standards.[X]
 
 ## VultureName
@@ -159,32 +159,33 @@ He revels in the darkness and edge.[X]
 Gaspard[X]
 
 ## GaspardDesc
-[X]
+Something should go here. Maybe.[X]
 
 ## DogiName
 Dogi[X]
 
 ## DogiDesc
-[X]
+It's Ys cameo hour![X]
 
 ## FeenaName
 Feena[X]
 
 ## FeenaDesc
-[X]
+Probably not the[N]
+pink-haired dancer.[X]
 
 ## KartreName
 Kartre[X]
 
 ## KartreDesc
-He thinks dying his hair will
+He thinks dying his hair will[N]
 help him sneak into the hack.[X]
 
 ## BarlaName
 Barla[X]
 
 ## BarlaDesc
-She went along with her husband
+She went along with her husband[N]
 because it looked like fun.[X]
 
 ## RenaldoName
@@ -198,13 +199,14 @@ nonchalant about the surrounding mess.[X]
 Theodore[X]
 
 ## TheodoreDesc
-[X]
+Theodore is theorising a[N]
+description.[X]
 
 ## FranklinName
 Franklin[X]
 
 ## FranklinDesc
-[X]
+It's Fail-proof Franklin![X]
 
 ## WulframName
 Wulfram[X]
@@ -246,7 +248,7 @@ for a rare sword.[X]
 Peter[X]
 
 ## PeterDesc
-[X]
+Is he in blue? Don't ask me.[X]
 
 ## SushieName
 Sushie[X]
@@ -303,7 +305,7 @@ for the speed of her dancing.[X]
 Dark Tovah[X]
 
 ## DarkTovahDesc
-[X]
+Tovah, but edgier. Maybe.[X]
 
 ## RandalName
 Randal[X]
@@ -330,7 +332,8 @@ the "Noodle Incident"[X]
 Cultist[X]
 
 ## DemiDesc
-[X]
+Doma Faithful? Lopt Sect? Grimleal?[N]
+Slithers? He's like those guys.[X]
 
 ## ZaganName
 Zagan[X]
@@ -350,7 +353,8 @@ his hearing & skill.[X]
 Borgas[X]
 
 ## BorgasDesc
-[X]
+A bandit from Novingale, Ternon.[N]
+Somehow on (CONTINENT NAME).[X]
 
 ## GemName
 Gem[X]
@@ -363,7 +367,7 @@ elder sis. Here to rhyme gum and bum.[X]
 Saramine[X]
 
 ## SaramineDesc
-[X]
+Sara... Mine... Hm.[X]
 
 ## DihardName
 Dihard[X]
@@ -394,37 +398,37 @@ they do be thievin tho[X]
 Villager[X]
 
 ## NPCDesc
-[X]
+What? It's a civilian.[X]
 
 ## MerlotName
 Merlot[X]
 
 ## MerlotDesc
-[X]
+Awful lot of mers there.[X]
 
 ## CheninName
 Chenin[X]
 
 ## CheninDesc
-[X]
+Chenin may have a big chin.[X]
 
 ## SangriaName
 Sangria[X]
 
 ## SangriaDesc
-[X]
+Fear Sangria's anger.[X]
 
 ## Ch14Boss1Name
 Place[X]
 
 ## Ch14Boss1Desc
-[X]
+This text is[X]
 
 ## Ch14Boss2Name
 Holder[X]
 
 ## Ch14Boss2Desc
-[X]
+a placeholder![X]
 
 ## DemonKingName
 Formortiis[X]
@@ -451,13 +455,14 @@ of Akari. Very not epic style.[X]
 Guard[X]
 
 ## Ch11GuardDesc
-[X]
+A guy defending a place.[X]
 
 ## Ch11ThiefName
 Thief[X]
 
 ## Ch11ThiefDesc
-[X]
+Trying to run off with some[N]
+treasure![X]
 
 ## MulchDesc2
 His true form.[X]
