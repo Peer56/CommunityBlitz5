@@ -310,7 +310,7 @@ THAT CAN DO NOTHING BUT REPEAT[N]
 THE SAME FUCKING WORDS ON LOOP[A][N]
 LIKE A FUCKING BROKEN RECORD[A][X]
 
-##Ch21_StartingScene
+## Ch21_StartingScene
 [OpenMidRight][LoadGunborg]
 At last, we're here...[A]
 the lair of the Demon King.[AN]
@@ -337,7 +337,7 @@ Let us destroy this fiend together![AN]
 [ToggleColorInvert]MWAHAHA![A]
 YOU WILL NEVER DEFEAT ME![ToggleColorInvert][A][X]
 
-##Ch21_TimeLoop
+## Ch21_TimeLoop
 [OpenFarLeft][LoadXholt]
 [OpenLeft][LoadBastion]
 [OpenMidRight][LoadGunborg]
