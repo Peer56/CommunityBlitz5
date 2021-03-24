@@ -143,8 +143,8 @@ UNIT Ch13Generic01 Sage 0x00 Level(10, Enemy, 1) [6,12] 0x00 0x00 0x0 0x00 [Bolt
 UNIT Ch13Generic01 Sage 0x00 Level(10, Enemy, 1) [20,8] 0x00 0x00 0x0 0x00 [Bolting, Bolting] NeverMoveAI 
 UNIT Ch13Generic01 Bishop 0x00 Level(10, Enemy, 1) [17,6] 0x00 0x00 0x0 0x00 [Purge, Purge] NeverMoveAI 
 UNIT Ch13Generic01 Bishop 0x00 Level(10, Enemy, 1) [8,7] 0x00 0x00 0x0 0x00 [Purge, Purge] NeverMoveAI 
-UNIT Ch13Generic01 Sniper 0x00 Level(10, Enemy, 1) [9,12] 0x00 0x00 0x0 0x00 [Ballista, Ballista] NeverMoveAI 
-UNIT Ch13Generic01 Sniper 0x00 Level(10, Enemy, 1) [19,5] 0x00 0x00 0x0 0x00 [Ballista, Ballista] NeverMoveAI 
+UNIT Ch13Generic01 Fleet 0x00 Level(10, Enemy, 1) [9,12] 0x00 0x00 0x0 0x00 [Ballista, Ballista] NeverMoveAI 
+UNIT Ch13Generic01 Fleet 0x00 Level(10, Enemy, 1) [19,5] 0x00 0x00 0x0 0x00 [Ballista, Ballista] NeverMoveAI 
 UNIT Ch13Generic01 Fleet 0x00 Level(10, Enemy, 1) [14,29] 0x00 0x00 0x0 0x00 [IronBallista, IronBallista] NeverMoveAI 
 UNIT Ch13Generic01 PegasusKnight 0x00 Level(17, Enemy, 1) [11,8] 0x00 0x00 0x0 0x00 [SilverLance] PursueWithoutHeedAI 
 UNIT Ch13Generic01 PegasusKnight 0x00 Level(17, Enemy, 1) [9,10] 0x00 0x00 0x0 0x00 [SilverLance] PursueWithoutHeedAI 
