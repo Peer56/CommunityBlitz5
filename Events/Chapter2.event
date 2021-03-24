@@ -77,12 +77,12 @@ ReinforcementEvent(CavalierReinforcementUnit)
 ENDA
 
 SoldierReinforcementUnit:
-UNIT 0x72 Soldier 0x00 Level(2,Enemy,True) [0,16] 0x00 0x00 0x0 0x00 [IronLance] PursueWithoutHeedAI
-UNIT 0x72 Mercenary 0x00 Level(2,Enemy,True) [0,15] 0x00 0x00 0x0 0x00 [IronSword] PursueWithoutHeedAI
+UNIT Ch2Generics1 Soldier 0x00 Level(2,Enemy,True) [0,16] 0x00 0x00 0x0 0x00 [IronLance] PursueWithoutHeedAI
+UNIT Ch2Generics1 Mercenary 0x00 Level(2,Enemy,True) [0,15] 0x00 0x00 0x0 0x00 [IronSword] PursueWithoutHeedAI
 UNIT
 
 ThiefReinforcementUnit:
-UNIT 0x72 Thief 0x00 Level(2,Enemy,True) [3,0] 0x00 0x00 0x0 0x00 [IronSword, Lockpick] [ThiefActionThenEscape,Pursue]
+UNIT Ch2Generics1 Thief 0x00 Level(2,Enemy,True) [3,0] 0x00 0x00 0x0 0x00 [IronSword, Lockpick] [ThiefActionThenEscape,Pursue]
 UNIT
 
 ALIGN 4
@@ -116,28 +116,28 @@ UNIT
 // Enemies
 Enemies:
 UNIT Kitabei Myrmidon 0x00 Level(5, Enemy, False) [12,6] 2 0 0 0 [LightBrand] NeverMoveAI //LightBrand should be droppable
-UNIT 0x72 Monk 0x00 Level(2, Enemy, True) [16,11] 0 0 0 0 [Lightning] ChaseOnceApproachedAI
-UNIT 0x72 Fighter 0x00 Level(2, Enemy, True) [17,8] 0 0 0 0 [IronAxe] ChaseOnceApproachedAI  
-UNIT 0x72 Myrmidon 0x00 Level(2, Enemy, True) [17,5] 2 0 0 0 [IronBlade] ChaseOnceApproachedAI  
-UNIT 0x72 Knight 0x00 Level(3, Enemy, True) [11,12] 0 0 0 0 [Javelin, Vulnerary] NeverMoveAI  
-UNIT 0x72 Knight 0x00 Level(3, Enemy, True) [10,12] 0 0 0 0 [Javelin] NeverMoveAI
-UNIT 0x72 Fighter 0x00 Level(2, Enemy, True) [10,16] 0 0 0 0 [IronAxe] ChaseOnceApproachedAI  
-UNIT 0x72 Myrmidon 0x00 Level(2, Enemy, True) [9,15] 0 0 0 0 [IronSword] ChaseOnceApproachedAI  
-UNIT 0x72 Soldier 0x00 Level(2, Enemy, True) [2,16] 0 0 0 0 [IronLance] ChaseOnceApproachedAI  
-UNIT 0x72 Soldier 0x00 Level(2, Enemy, True) [1,14] 0 0 0 0 [IronLance] ChaseOnceApproachedAI  
-UNIT 0x72 Myrmidon 0x00 Level(2, Enemy, True) [3,8] 0 0 0 0 [IronSword] ChaseOnceApproachedAI  
-UNIT 0x72 Soldier 0x00 Level(2, Enemy, True) [2,7] 2 0 0 0 [HeavySpear] ChaseOnceApproachedAI  
-UNIT 0x72 Archer 0x00 Level(2, Enemy, True) [0,9] 0 0 0 0 [IronBow] ChaseOnceApproachedAI  
-UNIT 0x72 Monk 0x00 Level(2, Enemy, True) [5,8] 0 0 0 0 [Lightning] ChaseOnceApproachedAI  
-UNIT 0x72 Monk 0x00 Level(2, Enemy, True) [5,10] 0 0 0 0 [Lightning] ChaseOnceApproachedAI  
-UNIT 0x72 Cavalier 0x00 Level(2, Enemy, True) [0,3] 0 0 0 0 [KillingEdge, RedGem] ChaseOnceApproachedAI  
-UNIT 0x72 Cavalier 0x00 Level(2, Enemy, True) [4,5] 0 0 0 0 [IronSword] ChaseOnceApproachedAI  
-UNIT 0x72 Cavalier 0x00 Level(2, Enemy, True) [8,7] 0 0 0 0 [IronLance] ChaseOnceApproachedAI  
-UNIT 0x72 Cavalier 0x00 Level(2, Enemy, True) [8,11] 0 0 0 0 [IronSword] ChaseOnceApproachedAI  
-UNIT 0x72 Myrmidon 0x00 Level(2, Enemy, True) [12,2] 0 0 0 0 [IronSword] ChaseOnceApproachedAI  
-UNIT 0x72 Monk 0x00 Level(2, Enemy, True) [13,1] 0 0 0 0 [Lightning] ChaseOnceApproachedAI    
-UNIT 0x72 Monk 0x00 Level(2, Enemy, True) [14,5] 0 0 0 0 [Lightning] ChaseOnceApproachedAI    
-UNIT 0x72 Archer 0x00 Level(2, Enemy, True) [14,7] 0 0 0 0 [Longbow] ChaseOnceApproachedAI    
+UNIT Ch2Generics1 Monk 0x00 Level(2, Enemy, True) [16,11] 0 0 0 0 [Lightning] ChaseOnceApproachedAI
+UNIT Ch2Generics1 Fighter 0x00 Level(2, Enemy, True) [17,8] 0 0 0 0 [IronAxe] ChaseOnceApproachedAI  
+UNIT Ch2Generics1 Myrmidon 0x00 Level(2, Enemy, True) [17,5] 2 0 0 0 [IronBlade] ChaseOnceApproachedAI  
+UNIT Ch2Generics1 Knight 0x00 Level(3, Enemy, True) [11,12] 0 0 0 0 [Javelin, Vulnerary] NeverMoveAI  
+UNIT Ch2Generics1 Knight 0x00 Level(3, Enemy, True) [10,12] 0 0 0 0 [Javelin] NeverMoveAI
+UNIT Ch2Generics1 Fighter 0x00 Level(2, Enemy, True) [10,16] 0 0 0 0 [IronAxe] ChaseOnceApproachedAI  
+UNIT Ch2Generics1 Myrmidon 0x00 Level(2, Enemy, True) [9,15] 0 0 0 0 [IronSword] ChaseOnceApproachedAI  
+UNIT Ch2Generics1 Soldier 0x00 Level(2, Enemy, True) [2,16] 0 0 0 0 [IronLance] ChaseOnceApproachedAI  
+UNIT Ch2Generics1 Soldier 0x00 Level(2, Enemy, True) [1,14] 0 0 0 0 [IronLance] ChaseOnceApproachedAI  
+UNIT Ch2Generics1 Myrmidon 0x00 Level(2, Enemy, True) [3,8] 0 0 0 0 [IronSword] ChaseOnceApproachedAI  
+UNIT Ch2Generics1 Soldier 0x00 Level(2, Enemy, True) [2,7] 2 0 0 0 [HeavySpear] ChaseOnceApproachedAI  
+UNIT Ch2Generics1 Archer 0x00 Level(2, Enemy, True) [0,9] 0 0 0 0 [IronBow] ChaseOnceApproachedAI  
+UNIT Ch2Generics1 Monk 0x00 Level(2, Enemy, True) [5,8] 0 0 0 0 [Lightning] ChaseOnceApproachedAI  
+UNIT Ch2Generics1 Monk 0x00 Level(2, Enemy, True) [5,10] 0 0 0 0 [Lightning] ChaseOnceApproachedAI  
+UNIT Ch2Generics1 Cavalier 0x00 Level(2, Enemy, True) [0,3] 0 0 0 0 [KillingEdge, RedGem] ChaseOnceApproachedAI  
+UNIT Ch2Generics1 Cavalier 0x00 Level(2, Enemy, True) [4,5] 0 0 0 0 [IronSword] ChaseOnceApproachedAI  
+UNIT Ch2Generics1 Cavalier 0x00 Level(2, Enemy, True) [8,7] 0 0 0 0 [IronLance] ChaseOnceApproachedAI  
+UNIT Ch2Generics1 Cavalier 0x00 Level(2, Enemy, True) [8,11] 0 0 0 0 [IronSword] ChaseOnceApproachedAI  
+UNIT Ch2Generics1 Myrmidon 0x00 Level(2, Enemy, True) [12,2] 0 0 0 0 [IronSword] ChaseOnceApproachedAI  
+UNIT Ch2Generics1 Monk 0x00 Level(2, Enemy, True) [13,1] 0 0 0 0 [Lightning] ChaseOnceApproachedAI    
+UNIT Ch2Generics1 Monk 0x00 Level(2, Enemy, True) [14,5] 0 0 0 0 [Lightning] ChaseOnceApproachedAI    
+UNIT Ch2Generics1 Archer 0x00 Level(2, Enemy, True) [14,7] 0 0 0 0 [Longbow] ChaseOnceApproachedAI    
 UNIT
 
 

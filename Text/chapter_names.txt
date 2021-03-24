@@ -57,7 +57,7 @@
 19: Ascendance[X]
 
 ## Ch20Name
-20: [X]
+20: Desert Mirage[X]
 
 ## Ch21Name
 21: The Final Swear[X]
@@ -65,3 +65,5 @@
 ## Ch5xName
 1x: The Blindfolded Ranger[X]
 
+## Ch21xName
+21x: The Real Ending[X]
