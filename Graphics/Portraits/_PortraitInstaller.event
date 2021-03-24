@@ -283,7 +283,7 @@ ALIGN 4
 PeterPortrait:
 #incext PortraitFormatter "Peter.png"
 
-setMugEntry(SusieMug,SusiePortrait,3,5,3,3)
+setMugEntry(SusieMug,SusiePortrait,2,6,3,4)
 ALIGN 4
 SusiePortrait:
 #incext PortraitFormatter "Susie.png"
