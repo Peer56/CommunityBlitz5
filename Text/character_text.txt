@@ -390,28 +390,28 @@ Villager[X]
 Merlot[X]
 
 ## MerlotDesc
-Owner of a rival winery.
+Owner of a rival winery.[N]
 Pompus and pretentious.[X]
 
 ## CheninName
 Chenin[X]
 
 ## CheninDesc
-Founder of the Spirit of
+Founder of the Spirit of[N]
 the River. Meticulous.[X]
 
 ## SangriaName
 Sangria[X]
 
 ## SangriaDesc
-An impatient sellsword.
+An impatient sellsword.[N]
 Dislikes sweet drinks.[X]
 
 ## SauvignonName
 Sauvignon[X]
 
 ##SauvignonDesc
-Cousin of Chenin.
+Cousin of Chenin.[N]
 Stubborn and unmovable.[X]
 
 ## Ch14Boss1Name
