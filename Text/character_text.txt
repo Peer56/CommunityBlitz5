@@ -404,19 +404,29 @@ What? It's a civilian.[X]
 Merlot[X]
 
 ## MerlotDesc
-Awful lot of mers there.[X]
+Owner of a rival winery.[N]
+Pompus and pretentious.[X]
 
 ## CheninName
 Chenin[X]
 
 ## CheninDesc
-Chenin may have a big chin.[X]
+Founder of the Spirit of[N]
+the River. Meticulous.[X]
 
 ## SangriaName
 Sangria[X]
 
 ## SangriaDesc
-Fear Sangria's anger.[X]
+An impatient sellsword.[N]
+Dislikes sweet drinks.[X]
+
+## SauvignonName
+Sauvignon[X]
+
+##SauvignonDesc
+Cousin of Chenin.[N]
+Stubborn and unmovable.[X]
 
 ## Ch14Boss1Name
 Place[X]

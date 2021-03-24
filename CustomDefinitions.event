@@ -397,7 +397,7 @@
 
 #define Ch6NPC 96
 #define Ch9Npcs1 97
-
+#define Sauvignon 98
 
 //Generics
 
