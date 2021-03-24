@@ -58,6 +58,7 @@ DeathQuoteEntry(10, 10, Ch11Generics1, 0)
 DeathQuoteEntry(10, 10, Ch11Generics2, 0)
 DeathQuoteEntry(10, 10, Ch11Boss,      0)
 DeathQuoteEntry(6,GameOverFlag,Ouderen,OuderenCh6DeathQuote)
+DeathQuoteEntry(9,GameOverFlag,Sauvignon,GenericDeathQuote)
 
 //chapter-specific player unit death quotes
 
