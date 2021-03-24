@@ -2,6 +2,13 @@
 //Install with Event Assembler
 PUSH
 
+
+
+//Fix demon king forcing animations on
+ORG 0x57BB9
+BYTE 0xE0
+
+
 //Fix Stone's map animation crashing no$ due to a bad decompression
 ORG $7E2B4
 BYTE 0x8
