@@ -223,7 +223,7 @@ ALIGN 4
 SunshinePortrait:
 #incext PortraitFormatter "Sunshine.png"
 
-setMugEntry(GaspardMug,GaspardPortrait,3,5,3,3)
+setMugEntry(GaspardMug,GaspardPortrait,2,5,3,3)
 ALIGN 4
 GaspardPortrait:
 #incext PortraitFormatter "Gaspard.png"

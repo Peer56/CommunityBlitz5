@@ -45,23 +45,53 @@ Wilbur_Sage:
 Paula_Myrmidon:
 	#incbin "./_palettes/Paula_Myrmidon.lzpal" 
 
+Paula_Assassin:
+	#incbin "./_palettes/Paula_Assassin.lzpal" 
+
+Paula_Swordmaster:
+	#incbin "./_palettes/Paula_Swordmaster.lzpal" 
+
 Serahlta_Thief:
 	#incbin "./_palettes/Serahlta_Thief.lzpal" 
+
+Serahlta_Assassin:
+	#incbin "./_palettes/Serahlta_Assassin.lzpal" 
+
+Serahlta_Rogue:
+	#incbin "./_palettes/Serahlta_Rogue.lzpal" 
 
 Yin_PegasusKnight:
 	#incbin "./_palettes/Yin_PegasusKnight.lzpal" 
 
+Yin_FalcoKnight:
+	#incbin "./_palettes/Yin_FalcoKnight.lzpal" 
+
+Yin_WyvernKnight:
+	#incbin "./_palettes/Yin_WyvernKnight.lzpal" 
+
 Yang_PegasusKnight:
 	#incbin "./_palettes/Yang_PegasusKnight.lzpal" 
+
+Yang_FalcoKnight:
+	#incbin "./_palettes/Yang_FalcoKnight.lzpal" 
+
+Yang_WyvernKnight:
+	#incbin "./_palettes/Yang_WyvernKnight.lzpal" 
+
+Cavlin_Cyclops:
+	#incbin "./_palettes/Cavlin_Cyclops.lzpal" 
+
+Hobbes_Mogall:
+	#incbin "./_palettes/Hobbes_Mogall.lzpal" 
 
 Ergon_Soldier:
 	#incbin "./_palettes/Ergon_Soldier.lzpal" 
 
-Vulture_Archer:
-	#incbin "./_palettes/Vulture_Archer.lzpal" 
+Ergon_Halberdier:
+	#incbin "./_palettes/Ergon_Halberdier.lzpal" 
 
-Ouderen_General:
-	#incbin "./_palettes/Ouderen_General.lzpal" 
+Ergon_General:
+	#incbin "./_palettes/Ergon_General.lzpal" 
 
 Yara_Pupil:
 	#incbin "./_palettes/Yara_Pupil.lzpal" 
@@ -84,6 +114,21 @@ Yara_Druid:
 Yara_Summoner:
 	#incbin "./_palettes/Yara_Summoner.lzpal" 
 
+Vulture_Archer:
+	#incbin "./_palettes/Vulture_Archer.lzpal" 
+
+Vulture_Sniper:
+	#incbin "./_palettes/Vulture_Sniper.lzpal" 
+
+Vulture_Ranger:
+	#incbin "./_palettes/Vulture_Ranger.lzpal" 
+
+Ouderen_General:
+	#incbin "./_palettes/Ouderen_General.lzpal" 
+
+Francine_Assasin:
+	#incbin "./_palettes/Francine_Assasin.lzpal" 
+
 Loretta_Cleric:
 	#incbin "./_palettes/Loretta_Cleric.lzpal" 
 
@@ -92,6 +137,15 @@ Loretta_Bishop:
 
 Loretta_Valkyrie:
 	#incbin "./_palettes/Loretta_Valkyrie.lzpal" 
+
+Jamie_Cavalier:
+	#incbin "./_palettes/Jamie_Cavalier.lzpal" 
+
+Jamie_Paladin:
+	#incbin "./_palettes/Jamie_Paladin.lzpal" 
+
+Jamie_GreatKnight:
+	#incbin "./_palettes/Jamie_GreatKnight.lzpal" 
 
 Viridia_Cavalier:
 	#incbin "./_palettes/Viridia_Cavalier.lzpal" 
@@ -102,6 +156,15 @@ Viridia_Paladin:
 Viridia_GreatKnight:
 	#incbin "./_palettes/Viridia_GreatKnight.lzpal" 
 
+Sunshine_Troubadour:
+	#incbin "./_palettes/Sunshine_Troubadour.lzpal" 
+
+Sunshine_Valkyrie:
+	#incbin "./_palettes/Sunshine_Valkyrie.lzpal" 
+
+Sunshine_MageKnight:
+	#incbin "./_palettes/Sunshine_MageKnight.lzpal" 
+
 Pete_Mercenary:
 	#incbin "./_palettes/Pete_Mercenary.lzpal" 
 
@@ -110,4 +173,37 @@ Pete_Hero:
 
 Pete_Ranger:
 	#incbin "./_palettes/Pete_Ranger.lzpal" 
+
+Chenin_Shaman:
+	#incbin "./_palettes/Chenin_Shaman.lzpal" 
+
+Chenin_Druid:
+	#incbin "./_palettes/Chenin_Druid.lzpal" 
+
+Chenin_Summoner:
+	#incbin "./_palettes/Chenin_Summoner.lzpal" 
+
+Sangria_WyvernLord:
+	#incbin "./_palettes/Sangria_WyvernLord.lzpal" 
+
+Marissa_Dancer:
+	#incbin "./_palettes/Marissa_Dancer.lzpal" 
+
+Gaspard_Brigand:
+	#incbin "./_palettes/Gaspard_Brigand.lzpal" 
+
+Gaspard_Berserker:
+	#incbin "./_palettes/Gaspard_Berserker.lzpal" 
+
+Gaspard_Warrior:
+	#incbin "./_palettes/Gaspard_Warrior.lzpal" 
+
+Dogi_Berserker:
+	#incbin "./_palettes/Dogi_Berserker.lzpal" 
+
+Feena_Sage:
+	#incbin "./_palettes/Feena_Sage.lzpal" 
+
+Inigo_Ranger:
+	#incbin "./_palettes/Inigo_Ranger.lzpal" 
 
