@@ -29,6 +29,7 @@ END_MAIN
 
 
 LocationBasedEvents:
+Seize(12,6)
 END_MAIN
 
 MiscBasedEvents:
