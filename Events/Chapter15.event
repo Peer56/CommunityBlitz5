@@ -66,7 +66,7 @@ EnemyUnits:
 	UNIT
 
 VillageEvent:
-	LOAD1 UnitsVill 1
+	LOAD1 1 UnitsVill
 	ENUN
 	NoFade
 	ENDA

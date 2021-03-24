@@ -154,8 +154,8 @@ EARTHQUAKE_END
 STAL 20
 TILECHANGE 7 //activate gate
 STAL 20
-
 NoFade
 ENUN
+ENDA
 
 
