@@ -42,23 +42,59 @@
 # char{0x10} "Paula_Myrmidon" set{Paula,0x1,Myrmidon_F}
 5553FF7FFF6B1F4B2E19DC351725D2145F63783AD32513774F5ECB454829A514
 
+# char{0x11} "Paula Assassin" set{Paula,0x3,Assassin_F}
+5553FF7F9D5FFB4648294F5E17259014567B6F5ECB45CB45372ED3252C25A514
+
+# char{0x12} "Paula Swordmaster" set{Paula,0x4,Swordmaster_F}
+5553FF7FDF57BC369125DC3517259014767F6F5ECA49F56E4F5ECB4548290000
+
 # char{0x13} "Serahlta_Thief" set{Serahlta,0x1,Thief}
 5553FF7F9F57DC360821607AE2616541567B6F5E88416C2510364F3E892DA514
 
-# char{0x16} "Yin_PegasusKnight" set{Yin,0x1,PegasusKnight}
+# char{0x14} "Serahlta Assassin" set{Serahlta,0x3,Assassin}
+5553FF7F9D5FFB460821103665410425567B6F5E6C256C25EC39882D041DA514
+
+# char{0x15} "Serahlta Rogue" set{Serahlta,0x4,Rogue}
+5553FF7FFF6B99422E1910366C25082165410425EF3D2925162EB3212C25A514
+
+# char{0x16} "Yin PegasusKnight" set{Yin,0x1,PegasusKnight}
 007EFF7F70219E36FF6BFF3FB356796FC810706E8A551677D16E6C6222316310
 
-# char{0x19} "Yang_PegasusKnight" set{Yang,0x1,PegasusKnight}
+# char{0x17} "Yin FalcoKnight" set{Yin,0x3,FalcoKnight}
+55539B7B70219E36FF6BFF0FB356796FC8109E360B4E1677D16E6C6266396310
+
+# char{0x18} "Yin WyvernKnight" set{Yin,0x4,WyvernKnight_F}
+5553FF7F0B4EAE6A183A1E4BB02D586B1663586B967BAE6A0B4E6639C810A514
+
+# char{0x19} "Yang PegasusKnight" set{Yang,0x1,PegasusKnight}
 5553FF7F70219E36FF6BFF3F4A293142C8109F051A05F85A5646153222316310
 
-# char{0x1C} "Ergon_Soldier" set{Ergon,0x1,Soldier}
+# char{0x1A} "Yang FalcoKnight" set{Yang,0x3,FalcoKnight}
+55535B6770219E36FF6BFF0F4A293142C8109E363A0DF85A56461532D4046310
+
+# char{0x1B} "Yang WyvernKnight" set{Yang,0x4,WyvernKnight_F}
+5553FF7F3A0D9F05183A1E4BB02D31428C2D31423F229F053A0DD404C810A514
+
+# char{0x1C} "Ergon Soldier" set{Ergon,0x1,Soldier}
 007EFF7FFF5F1F3F2E19FB3E76328F0D9577F06EE9519E1AF909B40DF018A514
+
+# char{0x1D} "Ergon Halberdier" set{Ergon,0x3,Halberdier}
+8C2EFF6B1E4B182A2E195C0AB70DF0181C3F342A6D15D36E4F5E894DFF7FA514
+
+# char{0x1E} "Ergon General" set{Ergon,0x4,General}
+5553FF7FBD5FDA3A4F5E894DB315A90059676E5AAA41967B5C0AB70DF018A514
 
 # char{0x1F} "Vulture_Archer" set{Vulture,0x1,Archer}
 5553FF7FFF6B1F4B2E195F4AB8353325F85E534A7B6F5D76F861934D0F39A514
 
 # char{0x22} "Ouderen_General" set{Ouderen,0x3,General}
 007EFF7FBB7714635429EE1C704EAA355C5BD3252C25FE26F13D8E310921A514
+
+# char{0x23} "Cavlin Cyclops" set{Calvin,0x3,Cyclops}
+5553FF7FD3322C2687210821D3322C268721DD4F192B120A007CB5149010A514
+
+# char{0x24} "Hobbes Mogall" set{Hobbes,0x1,Mogall} set{Hobbes,0x3,ArchMogall}
+5553FF7F7B6FD65A4F4F4A42A731A514E7608748C879FF03C879E7608748A514
 
 # char{0x26} "Yara_Pupil" set{Yara,0x0,Pupil_1}
 5553FF7F3F535A32CB148A6BE85AC535512118670E46072175638E466721A514
@@ -102,10 +138,11 @@
 # char{0x3C} "Pete_Ranger" set{Pete,0x4,Ranger}
 5553FF7F9F5FBD2ED135D020FE1633151B77565A6E5589349946783D091DA514
 
+# char{0x5B} "Inigo Ranger" set{Inigo,0x3,Ranger}
+5553FF7FFF4BBD2EF41D5219CE45082DD3734A5F884AE635FC2298212D11A514
+
 /*
-# char{0x23} "Cavlin_Cyclops" set{Cavlin,0x3,Cyclops}
-# char{0x24} "Hobbes_Mogall" set{Hobbes,0x1,Mogall}
-# char{0x25} "Hobbes_ArchMogall" set{Hobbes,0x3,ArchMogall}
+# char{0x25} "Hobbes ArchMogall" set{Hobbes,0x3,ArchMogall}
 
 # char{0x2D} "Francine_Assassin" set{Francine,0x3,Assassin_F}
 # char{0x31} "Jamie_Cavalier" set{Jamie,0x1,Cavalier}
@@ -150,7 +187,7 @@
 # char{0x58} "Charles_Deathgoyle" set{Charles,0x3,Deathgoyle}
 # char{0x59} "Hosay_Wight" set{Hosay,0x3,Wight}
 # char{0x5A} "Zagan_Necromancer" set{Zagan,0x3,Necromancer}
-# char{0x5B} "Inigo_Ranger" set{Inigo,0x3,Ranger}
+
 # char{0x5C}
 # char{0x5D}
 # char{0x5E}

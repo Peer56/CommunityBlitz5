@@ -8,22 +8,26 @@
 	setPalette(0x90,Mulch_Mercenary)
 	setCBSP(0x90,Mulch,0x1,Mercenary)
 
+// Borgas_Rogue
+	setPalette(0x19,Borgas_Rogue)
+	setCBSP(0x19,Borgas,0x3,Rogue)
+
 // Kitabei_Myrmidon
-	setPalette(0x91,Kitabei_Myrmidon)
-	setCBSP(0x91,Kitabei,0x1,Myrmidon)
+	setPalette(0x92,Kitabei_Myrmidon)
+	setCBSP(0x92,Kitabei,0x1,Myrmidon)
 
 // Peter_Soldier
-	setPalette(0x92,Peter_Soldier)
-	setCBSP(0x92,Peter,0x1,Soldier)
+	setPalette(0x93,Peter_Soldier)
+	setCBSP(0x93,Peter,0x1,Soldier)
 
 // Susie_Sage
-	setPalette(0x93,Susie_Sage)
-	setCBSP(0x93,Susie,0x1,Sage_F)
+	setPalette(0x94,Susie_Sage)
+	setCBSP(0x94,Susie,0x1,Sage_F)
 
 // Calanthia_Cavalier
-	setPalette(0x94,Calanthia_Cavalier)
-	setCBSP(0x94,Calanthia,0x1,Cavalier_F)
+	setPalette(0x95,Calanthia_Cavalier)
+	setCBSP(0x95,Calanthia,0x1,Cavalier_F)
 
 // Eusebios_Monk
-	setPalette(0x95,Eusebios_Monk)
-	setCBSP(0x95,Ch6Eusebios,0x1,Monk)
+	setPalette(0x96,Eusebios_Monk)
+	setCBSP(0x96,Ch6Eusebios,0x1,Monk)

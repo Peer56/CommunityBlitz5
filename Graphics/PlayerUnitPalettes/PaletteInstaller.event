@@ -45,23 +45,59 @@ Wilbur_Sage:
 Paula_Myrmidon:
 	#incbin "./_palettes/Paula_Myrmidon.lzpal" 
 
+Paula_Assassin:
+	#incbin "./_palettes/Paula_Assassin.lzpal" 
+
+Paula_Swordmaster:
+	#incbin "./_palettes/Paula_Swordmaster.lzpal" 
+
 Serahlta_Thief:
 	#incbin "./_palettes/Serahlta_Thief.lzpal" 
+
+Serahlta_Assassin:
+	#incbin "./_palettes/Serahlta_Assassin.lzpal" 
+
+Serahlta_Rogue:
+	#incbin "./_palettes/Serahlta_Rogue.lzpal" 
 
 Yin_PegasusKnight:
 	#incbin "./_palettes/Yin_PegasusKnight.lzpal" 
 
+Yin_FalcoKnight:
+	#incbin "./_palettes/Yin_FalcoKnight.lzpal" 
+
+Yin_WyvernKnight:
+	#incbin "./_palettes/Yin_WyvernKnight.lzpal" 
+
 Yang_PegasusKnight:
 	#incbin "./_palettes/Yang_PegasusKnight.lzpal" 
 
+Yang_FalcoKnight:
+	#incbin "./_palettes/Yang_FalcoKnight.lzpal" 
+
+Yang_WyvernKnight:
+	#incbin "./_palettes/Yang_WyvernKnight.lzpal" 
+
 Ergon_Soldier:
 	#incbin "./_palettes/Ergon_Soldier.lzpal" 
+
+Ergon_Halberdier:
+	#incbin "./_palettes/Ergon_Halberdier.lzpal" 
+
+Ergon_General:
+	#incbin "./_palettes/Ergon_General.lzpal" 
 
 Vulture_Archer:
 	#incbin "./_palettes/Vulture_Archer.lzpal" 
 
 Ouderen_General:
 	#incbin "./_palettes/Ouderen_General.lzpal" 
+
+Cavlin_Cyclops:
+	#incbin "./_palettes/Cavlin_Cyclops.lzpal" 
+
+Hobbes_Mogall:
+	#incbin "./_palettes/Hobbes_Mogall.lzpal" 
 
 Yara_Pupil:
 	#incbin "./_palettes/Yara_Pupil.lzpal" 
@@ -110,4 +146,7 @@ Pete_Hero:
 
 Pete_Ranger:
 	#incbin "./_palettes/Pete_Ranger.lzpal" 
+
+Inigo_Ranger:
+	#incbin "./_palettes/Inigo_Ranger.lzpal" 
 
