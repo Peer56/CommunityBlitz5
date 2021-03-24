@@ -104,98 +104,174 @@
 	setPalette(0x1B,Yang_WyvernKnight)
 	setCBSP(0x1B,Yang,0x4,WyvernKnight_F)
 
-// Ergon_Soldier
-	setPalette(0x1C,Ergon_Soldier)
-	setCBSP(0x1C,Ergon,0x1,Soldier)
-
-// Ergon_Halberdier
-	setPalette(0x1D,Ergon_Halberdier)
-	setCBSP(0x1D,Ergon,0x3,Halberdier)
-
-// Ergon_General
-	setPalette(0x1E,Ergon_General)
-	setCBSP(0x1E,Ergon,0x4,General)
-
-// Vulture_Archer
-	setPalette(0x1F,Vulture_Archer)
-	setCBSP(0x1F,Vulture,0x1,Archer)
-
-// Ouderen_General
-	setPalette(0x22,Ouderen_General)
-	setCBSP(0x22,Ouderen,0x3,General)
-
 // Cavlin_Cyclops
-	setPalette(0x23,Cavlin_Cyclops)
-	setCBSP(0x23,Calvin,0x3,Cyclops)
+	setPalette(0x1C,Cavlin_Cyclops)
+	setCBSP(0x1C,Calvin,0x3,Cyclops)
 
 // Hobbes_Mogall
-	setPalette(0x24,Hobbes_Mogall)
-	setCBSP(0x24,Hobbes,0x1,Mogall)
-	setCBSP(0x24,Hobbes,0x3,ArchMogall)
+	setPalette(0x1D,Hobbes_Mogall)
+	setCBSP(0x1D,Hobbes,0x1,Mogall)
+	setCBSP(0x1D,Hobbes,0x3,ArchMogall)
+
+// Ergon_Soldier
+	setPalette(0x1E,Ergon_Soldier)
+	setCBSP(0x1E,Ergon,0x1,Soldier)
+
+// Ergon_Halberdier
+	setPalette(0x1F,Ergon_Halberdier)
+	setCBSP(0x1F,Ergon,0x3,Halberdier)
+
+// Ergon_General
+	setPalette(0x20,Ergon_General)
+	setCBSP(0x20,Ergon,0x4,General)
 
 // Yara_Pupil
-	setPalette(0x26,Yara_Pupil)
-	setCBSP(0x26,Yara,0x0,Pupil_1)
+	setPalette(0x21,Yara_Pupil)
+	setCBSP(0x21,Yara,0x0,Pupil_1)
 
 // Yara_Mage
-	setPalette(0x27,Yara_Mage)
-	setCBSP(0x27,Yara,0x1,Mage_F)
+	setPalette(0x22,Yara_Mage)
+	setCBSP(0x22,Yara,0x1,Mage_F)
 
 // Yara_Shaman
-	setPalette(0x28,Yara_Shaman)
-	setCBSP(0x28,Yara,0x2,Shaman_F)
+	setPalette(0x23,Yara_Shaman)
+	setCBSP(0x23,Yara,0x2,Shaman_F)
 
 // Yara_Sage
-	setPalette(0x29,Yara_Sage)
-	setCBSP(0x29,Yara,0x3,Sage_F)
+	setPalette(0x24,Yara_Sage)
+	setCBSP(0x24,Yara,0x3,Sage_F)
 
 // Yara_MageKnight
-	setPalette(0x2A,Yara_MageKnight)
-	setCBSP(0x2A,Yara,0x5,MageKnight_F)
+	setPalette(0x25,Yara_MageKnight)
+	setCBSP(0x25,Yara,0x5,MageKnight_F)
 
 // Yara_Druid
-	setPalette(0x2B,Yara_Druid)
-	setCBSP(0x2B,Yara,0x5,Druid_F)
+	setPalette(0x26,Yara_Druid)
+	setCBSP(0x26,Yara,0x5,Druid_F)
 
 // Yara_Summoner
-	setPalette(0x2C,Yara_Summoner)
-	setCBSP(0x2C,Yara,0x6,Summoner_F)
+	setPalette(0x27,Yara_Summoner)
+	setCBSP(0x27,Yara,0x6,Summoner_F)
+
+// Vulture_Archer
+	setPalette(0x28,Vulture_Archer)
+	setCBSP(0x28,Vulture,0x1,Archer)
+
+// Vulture_Sniper
+	setPalette(0x29,Vulture_Sniper)
+	setCBSP(0x29,Vulture,0x3,Sniper)
+
+// Vulture_Ranger
+	setPalette(0x2A,Vulture_Ranger)
+	setCBSP(0x2A,Vulture,0x4,Ranger)
+
+// Ouderen_General
+	setPalette(0x2B,Ouderen_General)
+	setCBSP(0x2B,Ouderen,0x3,General)
+
+// Francine_Assasin
+	setPalette(0x2C,Francine_Assasin)
+	setCBSP(0x2C,Francine,0x3,Assassin_F)
 
 // Loretta_Cleric
-	setPalette(0x2E,Loretta_Cleric)
-	setCBSP(0x2E,Loretta,0x1,Cleric)
+	setPalette(0x2D,Loretta_Cleric)
+	setCBSP(0x2D,Loretta,0x1,Cleric)
 
 // Loretta_Bishop
-	setPalette(0x2F,Loretta_Bishop)
-	setCBSP(0x2F,Loretta,0x3,Bishop_F)
+	setPalette(0x2E,Loretta_Bishop)
+	setCBSP(0x2E,Loretta,0x3,Bishop_F)
 
 // Loretta_Valkyrie
-	setPalette(0x30,Loretta_Valkyrie)
-	setCBSP(0x30,Loretta,0x4,Valkyrie)
+	setPalette(0x2F,Loretta_Valkyrie)
+	setCBSP(0x2F,Loretta,0x4,Valkyrie)
+
+// Jamie_Cavalier
+	setPalette(0x30,Jamie_Cavalier)
+	setCBSP(0x30,Jamie,0x1,Cavalier)
+
+// Jamie_Paladin
+	setPalette(0x31,Jamie_Paladin)
+	setCBSP(0x31,Jamie,0x3,Paladin)
+
+// Jamie_GreatKnight
+	setPalette(0x32,Jamie_GreatKnight)
+	setCBSP(0x32,Jamie,0x4,GreatKnight)
 
 // Viridia_Cavalier
-	setPalette(0x34,Viridia_Cavalier)
-	setCBSP(0x34,Viridia,0x1,Cavalier_F)
+	setPalette(0x33,Viridia_Cavalier)
+	setCBSP(0x33,Viridia,0x1,Cavalier_F)
 
 // Viridia_Paladin
-	setPalette(0x35,Viridia_Paladin)
-	setCBSP(0x35,Viridia,0x3,Paladin_F)
+	setPalette(0x34,Viridia_Paladin)
+	setCBSP(0x34,Viridia,0x3,Paladin_F)
 
 // Viridia_GreatKnight
-	setPalette(0x36,Viridia_GreatKnight)
-	setCBSP(0x36,Viridia,0x4,GreatKnight_F)
+	setPalette(0x35,Viridia_GreatKnight)
+	setCBSP(0x35,Viridia,0x4,GreatKnight_F)
+
+// Sunshine_Troubadour
+	setPalette(0x36,Sunshine_Troubadour)
+	setCBSP(0x36,Sunshine,0x1,Troubadour)
+
+// Sunshine_Valkyrie
+	setPalette(0x37,Sunshine_Valkyrie)
+	setCBSP(0x37,Sunshine,0x3,Valkyrie)
+
+// Sunshine_MageKnight
+	setPalette(0x38,Sunshine_MageKnight)
+	setCBSP(0x38,Sunshine,0x4,MageKnight_F)
 
 // Pete_Mercenary
-	setPalette(0x3A,Pete_Mercenary)
-	setCBSP(0x3A,Pete,0x1,Mercenary)
+	setPalette(0x39,Pete_Mercenary)
+	setCBSP(0x39,Pete,0x1,Mercenary)
 
 // Pete_Hero
-	setPalette(0x3B,Pete_Hero)
-	setCBSP(0x3B,Pete,0x3,Hero)
+	setPalette(0x3A,Pete_Hero)
+	setCBSP(0x3A,Pete,0x3,Hero)
 
 // Pete_Ranger
-	setPalette(0x3C,Pete_Ranger)
-	setCBSP(0x3C,Pete,0x4,Ranger)
+	setPalette(0x3B,Pete_Ranger)
+	setCBSP(0x3B,Pete,0x4,Ranger)
+
+// Chenin_Shaman
+	setPalette(0x3D,Chenin_Shaman)
+	setCBSP(0x3D,Chenin,0x1,Shaman)
+
+// Chenin_Druid
+	setPalette(0x3E,Chenin_Druid)
+	setCBSP(0x3E,Chenin,0x3,Druid)
+
+// Chenin_Summoner
+	setPalette(0x3F,Chenin_Summoner)
+	setCBSP(0x3F,Chenin,0x4,Summoner)
+
+// Sangria_WyvernLord
+	setPalette(0x40,Sangria_WyvernLord)
+	setCBSP(0x40,Sangria,0x3,WyvernLord_F)
+
+// Marissa_Dancer
+	setPalette(0x41,Marissa_Dancer)
+	setCBSP(0x41,Marissa,0x1,Dancer)
+
+// Gaspard_Brigand
+	setPalette(0x42,Gaspard_Brigand)
+	setCBSP(0x42,Gaspard,0x1,Brigand)
+
+// Gaspard_Berserker
+	setPalette(0x43,Gaspard_Berserker)
+	setCBSP(0x43,Gaspard,0x3,Berserker)
+
+// Gaspard_Warrior
+	setPalette(0x44,Gaspard_Warrior)
+	setCBSP(0x44,Gaspard,0x4,Warrior)
+
+// Dogi_Berserker
+	setPalette(0x4B,Dogi_Berserker)
+	setCBSP(0x4B,Dogi,0x3,Berserker)
+
+// Feena_Sage
+	setPalette(0x4C,Feena_Sage)
+	setCBSP(0x4C,Feena,0x3,Sage_F)
 
 // Inigo_Ranger
 	setPalette(0x5B,Inigo_Ranger)

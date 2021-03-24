@@ -24,3 +24,21 @@ Calanthia_Cavalier:
 Eusebios_Monk:
 	#incbin "./_palettes/Eusebios_Monk.lzpal" 
 
+Westley_Dancer:
+	#incbin "./_palettes/Westley_Dancer.lzpal" 
+
+Negaj_Hero:
+	#incbin "./_palettes/Negaj_Hero.lzpal" 
+
+Pinkus_Druid:
+	#incbin "./_palettes/Pinkus_Druid.lzpal" 
+
+Merlot_MageKnight:
+	#incbin "./_palettes/Merlot_MageKnight.lzpal" 
+
+Otto_Cavalier:
+	#incbin "./_palettes/Otto_Cavalier.lzpal" 
+
+Dark_Tovah_Druid:
+	#incbin "./_palettes/Dark_Tovah_Druid.lzpal" 
+

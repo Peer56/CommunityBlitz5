@@ -1,5 +1,6 @@
 //Player Units
 
+//Chapter 1
 # char{0x1} "Gunborg Lord" set{Gunborg,0x1,GunborgLord}
 5553FF7FFF6B1F4B91250F1D7621CB189877F36E2D56EF6262526839E52CA514
 
@@ -39,6 +40,8 @@
 # char{0xE} "Wilbur Sage" set{Wilbur,0x4,Sage}
 5553FF7FFF6B1F4B2E195425D118AE146C5AE84947252F4F8A2A08228411A514
 
+//Chapter 2
+
 # char{0x10} "Paula_Myrmidon" set{Paula,0x1,Myrmidon_F}
 5553FF7FFF6B1F4B2E19DC351725D2145F63783AD32513774F5ECB454829A514
 
@@ -56,6 +59,8 @@
 
 # char{0x15} "Serahlta Rogue" set{Serahlta,0x4,Rogue}
 5553FF7FFF6B99422E1910366C25082165410425EF3D2925162EB3212C25A514
+
+//Chapter 3
 
 # char{0x16} "Yin PegasusKnight" set{Yin,0x1,PegasusKnight}
 007EFF7F70219E36FF6BFF3FB356796FC810706E8A551677D16E6C6222316310
@@ -75,94 +80,141 @@
 # char{0x1B} "Yang WyvernKnight" set{Yang,0x4,WyvernKnight_F}
 5553FF7F3A0D9F05183A1E4BB02D31428C2D31423F229F053A0DD404C810A514
 
-# char{0x1C} "Ergon Soldier" set{Ergon,0x1,Soldier}
-007EFF7FFF5F1F3F2E19FB3E76328F0D9577F06EE9519E1AF909B40DF018A514
+//Chapter 4
 
-# char{0x1D} "Ergon Halberdier" set{Ergon,0x3,Halberdier}
-8C2EFF6B1E4B182A2E195C0AB70DF0181C3F342A6D15D36E4F5E894DFF7FA514
-
-# char{0x1E} "Ergon General" set{Ergon,0x4,General}
-5553FF7FBD5FDA3A4F5E894DB315A90059676E5AAA41967B5C0AB70DF018A514
-
-# char{0x1F} "Vulture_Archer" set{Vulture,0x1,Archer}
-5553FF7FFF6B1F4B2E195F4AB8353325F85E534A7B6F5D76F861934D0F39A514
-
-# char{0x22} "Ouderen_General" set{Ouderen,0x3,General}
-007EFF7FBB7714635429EE1C704EAA355C5BD3252C25FE26F13D8E310921A514
-
-# char{0x23} "Cavlin Cyclops" set{Calvin,0x3,Cyclops}
+# char{0x1C} "Cavlin Cyclops" set{Calvin,0x3,Cyclops}
 5553FF7FD3322C2687210821D3322C268721DD4F192B120A007CB5149010A514
 
-# char{0x24} "Hobbes Mogall" set{Hobbes,0x1,Mogall} set{Hobbes,0x3,ArchMogall}
+# char{0x1D} "Hobbes Mogall" set{Hobbes,0x1,Mogall} set{Hobbes,0x3,ArchMogall}
 5553FF7F7B6FD65A4F4F4A42A731A514E7608748C879FF03C879E7608748A514
 
-# char{0x26} "Yara_Pupil" set{Yara,0x0,Pupil_1}
+//Chapter 5
+
+# char{0x1E} "Ergon Soldier" set{Ergon,0x1,Soldier}
+007EFF7FFF5F1F3F2E19FB3E76328F0D9577F06EE9519E1AF909B40DF018A514
+
+# char{0x1F} "Ergon Halberdier" set{Ergon,0x3,Halberdier}
+8C2EFF6B1E4B182A2E195C0AB70DF0181C3F342A6D15D36E4F5E894DFF7FA514
+
+# char{0x20} "Ergon General" set{Ergon,0x4,General}
+5553FF7FBD5FDA3A4F5E894DB315A90059676E5AAA41967B5C0AB70DF018A514
+
+# char{0x21} "Yara_Pupil" set{Yara,0x0,Pupil_1}
 5553FF7F3F535A32CB148A6BE85AC535512118670E46072175638E466721A514
 
-# char{0x27} "Yara_Mage" set{Yara,0x1,Mage_F}
+# char{0x22} "Yara_Mage" set{Yara,0x1,Mage_F}
 5553FF7F3F535A32CB148A6BE85AC53518670E460721512178638E466721A514
 
-# char{0x28} "Yara_Shaman" set{Yara,0x2,Shaman_F}
+# char{0x23} "Yara_Shaman" set{Yara,0x2,Shaman_F}
 5553FF7F3F535922CB147B1BE85AC53518670E46072175638E4667210415A514
 
-# char{0x29} "Yara_Sage" set{Yara,0x3,Sage_F}
+# char{0x24} "Yara_Sage" set{Yara,0x3,Sage_F}
 5553FF7FDE42D6292E198A6BE85AC835B55A0E460721186778638E466721A514
 
-# char{0x2A} "Yara_MageKnight" set{Yara,0x5,MageKnight_F}
+# char{0x25} "Yara_MageKnight" set{Yara,0x5,MageKnight_F}
 5553FF7F3F535A325121CB14486725420E4607212D5F484675638E466721A514
 
-# char{0x2B} "Yara_Druid" set{Yara,0x5,Druid_F}
+# char{0x26} "Yara_Druid" set{Yara,0x5,Druid_F}
 5553FF7F3F535A32CB148A6BE85A4C4D75638E466721185B52420E3A0721A514
 
-# char{0x2C} "Yara_Summoner" set{Yara,0x6,Summoner_F}
+# char{0x27} "Yara_Summoner" set{Yara,0x6,Summoner_F}
 5553FF7FFF6B1F4B2E19FF1B9E1A8A6BC8357F12295F884EB55A0E460721A520
 
-# char{0x2E} "Loretta_Cleric" set{Loretta,0x1,Cleric}
+//Chapter 6
+
+# char{0x28} "Vulture Archer" set{Vulture,0x1,Archer}
+5553FF7FFF6B1F4B2E195F4AB8353325F85E534A7B6F5D76F861934D0F39A514
+
+# char{0x29} "Vulture Sniper" set{Vulture,0x3,Sniper}
+5553FF7FFF6B1F4B2E195F4AB835302532464B29E81C9B6EF861934D0F39A514
+
+# char{0x2A} "Vulture Ranger" set{Vulture,0x4,Ranger}
+5553FF7FFF4BBD2EF41D4B29B83530259B6EF861934D0F39FC2232462D11A514
+
+# char{0x2B} "Ouderen General" set{Ouderen,0x3,General}
+007EFF7FBB7714635429EE1C704EAA355C5BD3252C25FE26F13D8E310921A514
+
+//Chapter 7
+
+# char{0x2C} "Francine Assasin" set{Francine,0x3,Assassin_F}
+5553FF7F9D5FFB46C640EF71B9107410567B6F5E296D296D39739466AD41A514
+
+# char{0x2D} "Loretta_Cleric" set{Loretta,0x1,Cleric}
 5553FF7FFF6B1F4B2E19124E6E392B39FB3E352AD26AF86F945FCA36072AA514
-# char{0x2F} "Loretta_Bishop" set{Loretta,0x3,Bishop_F}
+# char{0x2E} "Loretta_Bishop" set{Loretta,0x3,Bishop_F}
 5553FF7FFF6BBF222E19124E6E39FF0BD5091B7F3666D16B2B4FC642C42DA514
-# char{0x30} "Loretta_Valkyrie" set{Loretta,0x4,Valkyrie}
+# char{0x2F} "Loretta_Valkyrie" set{Loretta,0x4,Valkyrie}
 5553FF7FDF57DD3A501DCA41124E6E39B6670F4B2A3E4119FA7F33778531A514
 
-# char{0x34} "Viridia_Cavalier" set{Viridia,0x1,Cavalier_F}
+//Chapter 8
+
+# char{0x30} "Jamie_Cavalier" set{Jamie,0x1,Cavalier}
+5553FF7FFF5BAA4AF431E635B50CAF085925B50CAF088A101D4736324E1DA514
+# char{0x31} "Jamie_Paladin" set{Jamie,0x3,Paladin}
+5553FF7FFF6FBD2EB12DFF27AA4AE6355925B50CAF088A10FB7FF2662C4EA514
+# char{0x32} "Jamie_GreatKnight" set{Jamie,0x4,GreatKnight}
+5553DE7BFF5B1F4BB229196B52568C41E7301F4BFF5BE730B50CAF088A10A514
+
+# char{0x33} "Viridia_Cavalier" set{Viridia,0x1,Cavalier_F}
 5553FE573D430E7F9029A655B325EA1C98430E43043A05255736D1310B1DA514
-# char{0x35} "Viridia_Paladin" set{Viridia,0x3,Paladin_F}
+# char{0x34} "Viridia_Paladin" set{Viridia,0x3,Paladin_F}
 5553BE4BFF5BBA2ED32DFF339125EA1CF26B094B25324531D63E11326D21A514
-# char{0x36} "Viridia_GreatKnight" set{Viridia,0x4,GreatKnight_F}
+# char{0x35} "Viridia_GreatKnight" set{Viridia,0x4,GreatKnight_F}
 5553DE7BFF5B1F4BB229196B50568941E5241C01B9001400114327324529A514
 
-# char{0x3A} "Pete_Mercenary" set{Pete,0x1,Mercenary}
+# char{0x36} "Sunshine_Troubadour" set{Sunshine,0x1,Troubadour}
+5553FF7FFF6BFE3E501DFF0FFD149008357B4E6E836522411A43552EEA14A514
+# char{0x37} "Sunshine_Valkyrie" set{Sunshine,0x3,Valkyrie}
+5553FF7FDF57DD3A501DCA41FD149008357B4E6E83652241FA7F33770641A514
+# char{0x38} "Sunshine_MageKnight" set{Sunshine,0x4,MageKnight_F}
+5553FF7FDF57DD3A162E4E1DFD149008357B4E6E83652241357B4E6E6749A514
+
+# char{0x39} "Pete_Mercenary" set{Pete,0x1,Mercenary}
 5553FF7FEE20F920B041FA625F33B71557563F42DF5F9629F0101F4B8D1CA514
-# char{0x3B} "Pete_Hero" set{Pete,0x3,Hero}
+# char{0x3A} "Pete_Hero" set{Pete,0x3,Hero}
 5553FF7FFF6B1F4B2E1DFF26B71532113E6F7A5AB3419F4E7B35F028372EA514
-# char{0x3C} "Pete_Ranger" set{Pete,0x4,Ranger}
+# char{0x3B} "Pete_Ranger" set{Pete,0x4,Ranger}
 5553FF7F9F5FBD2ED135D020FE1633151B77565A6E5589349946783D091DA514
+
+//Chapter 9
+
+# char{0x3D} "Chenin_Shaman" set{Chenin,0x1,Shaman}
+5553FF7FFF6BDF2E2E197B1B3A16A514104ACE410829BA3DF5286F186210A514
+# char{0x3E} "Chenin_Druid" set{Chenin,0x3,Druid}
+765EA514FF6BBA3D2E195A2AD3252C257356CE410829BA3DF5286F186210A514
+# char{0x3F} "Chenin_Summoner" set{Chenin,0x4,Summoner}
+765EFF7FFF6B1F4B2E195A2AD325104A0829CB7F104A0829BA41F5286F18A514
+
+# char{0x40} "Sangria_WyvernLord" set{Sangria,0x3,WyvernLord_F}
+5553916EA771E57E183A1E4BB02D0A6E445DF759FA6E124E6D39E930A514A514
+
+//Chapter 10
+
+# char{0x41} "Marissa_Dancer" set{Marissa,0x1,Dancer}
+5553FF7FFF6B1F4B2E191F7E5A6D3045F05E09420421FF1BBA7F1067294EA514
+
+# char{0x42} "Gaspard_Brigand" set{Gaspard,0x1,Brigand}
+5553FF7FFF6B1D475A32D6215611CC08B97B14736F5E2E19DB775767714EA514
+
+# char{0x43} "Gaspard_Berserker" set{Gaspard,0x3,Berserker}
+5553FF7FFF6B1D47392EB51D2E192E199877F36E2D56FF075767714EAC35A514
+
+# char{0x44} "Gaspard_Warrior" set{Gaspard,0x4,Warrior}
+5553FF7FFF6BFF465A32D6212E197A6B987FD1660C5210465767714EAC35A514
+
+# char{0x4B} "Dogi_Berserker" set{Dogi,0x3,Berserker}
+5553FF7FFF6B1D47392EB51D2E192E199877F36E2D56FF077232CB254821A514
+
+# char{0x4C} "Feena_Sage" set{Feena,0x3,Sage_F}
+5553FF7FFF6B1F4B2E19357B4E6E8B493F479D2ED325FF5EFE7F357BED5DA514
+
+//Chapter 1x
 
 # char{0x5B} "Inigo Ranger" set{Inigo,0x3,Ranger}
 5553FF7FFF4BBD2EF41D5219CE45082DD3734A5F884AE635FC2298212D11A514
 
 /*
 # char{0x25} "Hobbes ArchMogall" set{Hobbes,0x3,ArchMogall}
-
-# char{0x2D} "Francine_Assassin" set{Francine,0x3,Assassin_F}
-# char{0x31} "Jamie_Cavalier" set{Jamie,0x1,Cavalier}
-# char{0x32} "Jamie_Paladin" set{Jamie,x03,Paladin}
-# char{0x33} "Jamie_GreatKnight" set{Jamie,0x4,GreatKnight}
-
-# char{0x37} "Sunshine_Troubadour" set{Sunshine,0x1,Troubadour}
-# char{0x38} "Sunshine_Valkyrie" set{Sunshine,0x3,Valkyrie}
-# char{0x39} "Sunshine_MageKnight" set{Sunshine,0x4,MageKnight_F}
-
-# char{0x3D} "Chenin_Shaman" set{Chenin,0x1,Shaman}
-# char{0x3E} "Chenin_Druid" set{Chenin,0x3,Druid}
-# char{0x3F} "Chenin_Summoner" set{Chenin,0x4,Summoner}
-
-# char{0x40} "Sangria_WyvernLord" set{Sangria,0x3,WyvernLord_F}
-# char{0x41} "Marissa_Dancer" set{Marissa,0x1,Dancer}
-
-# char{0x42} "Gaspard_Brigand" set{Gaspard,0x1,Brigand}
-# char{0x43} "Gaspard_Berserker" set{Gaspard,0x3,Berserker}
-# char{0x44} "Gaspard_Warrior" set{Gaspard,0x4,Warrior}
 
 # char{0x45}
 # char{0x46}
@@ -171,8 +223,6 @@
 # char{0x49}
 # char{0x4A}
 
-# char{0x4B} "Dogi_Berserker" set{Dogi,0x3,Berserker}
-# char{0x4C} "Feena_Sage" set{Feena,0x3,Sage_F}
 # char{0x4D} "Kartre_Warrior" set{Kartre,0x3,Warrior}
 # char{0x4E} "Barla_Swordmaster" set{Barla,0x3,Swordmaster_F}
 # char{0x4F} "Renaldo_MageKnight" set{Renaldo,0x3,MageKnight}

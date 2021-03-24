@@ -31,3 +31,27 @@
 // Eusebios_Monk
 	setPalette(0x96,Eusebios_Monk)
 	setCBSP(0x96,Ch6Eusebios,0x1,Monk)
+
+// Westley_Dancer
+	setPalette(0x96,Westley_Dancer)
+	setCBSP(0x96,Westley,0x1,Dancer)
+
+// Negaj_Hero
+	setPalette(0x97,Negaj_Hero)
+	setCBSP(0x97,Negaj,0x3,Hero)
+
+// Pinkus_Druid
+	setPalette(0x98,Pinkus_Druid)
+	setCBSP(0x98,Pinkus,0x3,Druid)
+
+// Merlot_MageKnight
+	setPalette(0x99,Merlot_MageKnight)
+	setCBSP(0x99,Merlot,0x3,MageKnight)
+
+// Otto_Cavalier
+	setPalette(0x9A,Otto_Cavalier)
+	setCBSP(0x9A,Otto,0x1,Cavalier)
+
+// Dark_Tovah_Druid
+	setPalette(0x9B,Dark_Tovah_Druid)
+	setCBSP(0x9B,DarkTovah,0x3,Druid_F)
