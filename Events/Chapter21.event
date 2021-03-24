@@ -127,7 +127,8 @@ LOAD1 0 Units1
 ENUN
 LOAD1 0 EnemyUnits
 ENUN
-
+MUSC The_Final_Battle
+Text(Ch21_StartingScene)
 CALL $591FD8 //GotoPrepScreen
 
 LOAD1 0 NewUnit1
@@ -141,11 +142,14 @@ ALIGN 4
 EndingScene:
 SVAL s1 6
 CHECK_TURNS
-BGT 9000 s1 sC
+BGT 9000 sC s1
 MNC2 23
 GOTO 2000
 LABEL 9000
-MNC2 0
+MUSC 0xFFFF
+Text(Ch21_TimeLoop)
+SVAL s3 Warp
+GIVEITEM Gunborg
 LABEL 2000
 NoFade
 ENDA

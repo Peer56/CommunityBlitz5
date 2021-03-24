@@ -173,7 +173,7 @@ ALIGN 4
 ScullyPortrait:
 #incext PortraitFormatter "Scully.png"
 
-setMugEntry(WilburMug,WilburPortrait,2,6,3,4)
+setMugEntry(WilburMug,WilburPortrait,3,7,3,5)
 ALIGN 4
 WilburPortrait:
 #incext PortraitFormatter "Wilbur.png"
@@ -283,7 +283,7 @@ ALIGN 4
 PeterPortrait:
 #incext PortraitFormatter "Peter.png"
 
-setMugEntry(SusieMug,SusiePortrait,2,6,3,3)
+setMugEntry(SusieMug,SusiePortrait,2,6,3,4)
 ALIGN 4
 SusiePortrait:
 #incext PortraitFormatter "Susie.png"

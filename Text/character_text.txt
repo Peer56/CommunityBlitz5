@@ -369,14 +369,12 @@ Saramine[X]
 ## SaramineDesc
 Sara... Mine... Hm.[X]
 
+## DihardName
+Dihard[X]
+
 ## DihardDesc
 The king of the corrupted Badmania.[N]
 Stealing a legendary blade Lich'd him.[X]
-
-## DihardName
-#a christmas movie
-#Which murders character limit
-XmasFilm[X]
 
 ## SoldierName
 Soldier[X]

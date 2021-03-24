@@ -116,7 +116,6 @@ Text(Ch21x_Beginning)
 CALL $591FD8 //GotoPrepScreen
 ENUN
 
-
 NoFade
 ENDA
 
@@ -124,7 +123,10 @@ ALIGN 4
 EndingScene:
 MUSC 41
 Text(Ch21x_Ending)
-MNC2 0
+ASMC 0x85C71 //0x381F5 0x37CF9 
+STAL 240
+EVBIT_F 0x2
+MNTS 0x1 //return to title screen
 
 NoFade
 ENDA
