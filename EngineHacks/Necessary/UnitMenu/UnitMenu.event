@@ -66,8 +66,13 @@ UnitMenuTable:
   //MenuCommand(DualAtkTxtID,DualAtkDescId,0,DualAtkCheck,DualAtkSelected) 
   
   
-  MenuCommand(0x67A, 0x6CC, BlueText, $22FDC, $23020)
   // UM_Seize
+  MenuCommand(0x67A, 0x6CC, BlueText, $22FDC, $23020)
+  
+  #ifdef EVERYONE_SEIZE
+    MenuCommand(0x67A, 0x6CC, GreenText,ESeizeUsability, $23020)
+  #endif
+  
   #ifdef ESCAPE_ARRIVE
     MenuCommand(ArriveName, ArriveDesc, BlueText, ArriveCommandUsability, ArriveCommandEffect)
     MenuCommand(EscapeName, EscapeDesc, BlueText, EscapeCommandUsability, EscapeCommandEffect)

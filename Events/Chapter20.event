@@ -64,11 +64,11 @@ Vendor(ch20Vendor,11,10)
 Armory(ch20Armory,6,22)
 Village(0x0,Ch20MiddleVillage,8,11)
 Village(0x0,Ch20CornerVillage,1,22)
-Seize(Mirage1Flag,ClearMirage1,16,13)
-Seize(Mirage2Flag,ClearMirage2,18,21)
-Seize(Mirage3Flag,ClearMirage3,12,21)
-Seize(Mirage4Flag,ClearMirage4,2,18)
-Seize(Mirage5Flag,ClearMirage5,2,7)
+Seize2(Mirage1Flag,ClearMirage1,16,13)
+Seize2(Mirage2Flag,ClearMirage2,18,21)
+Seize2(Mirage3Flag,ClearMirage3,12,21)
+Seize2(Mirage4Flag,ClearMirage4,2,18)
+Seize2(Mirage5Flag,ClearMirage5,2,7)
 Seize(SeizeFlag,SeizeEvent,8,2)
 END_MAIN
 
@@ -255,6 +255,10 @@ UNIT
 
 MirageEnemies5:
 UNIT Ch20Generics2 Maelduin Ch20Boss Level(Ch20GenericsLvl,Enemy,True) [2,7] 0x00 0x00 0x0 0x00 [SilverAxe] NeverMoveAI
+UNIT Ch20Generics1 ArchMogall Ch20Boss Level(Ch20GenericsLvl,Enemy,True) [2,5] 0x00 0x00 0x0 0x00 [EvilEye] AttackInRangeAI
+UNIT Ch20Generics1 Halberdier Ch20Boss Level(Ch20GenericsLvl,Enemy,True) [3,6] 0x00 0x00 0x0 0x00 [SilverLance] ChaseOnceApproachedAI
+UNIT Ch20Generics1 Halberdier Ch20Boss Level(Ch20GenericsLvl,Enemy,True) [0,6] 0x00 0x00 0x0 0x00 [Spear] AttackInRangeAI
+UNIT
 UNIT
 
 FinalMirageEnemies:
