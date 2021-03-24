@@ -119,19 +119,22 @@ a skill when used.[X]
 ## Ch8VillageText1
 # this was just placeholder text, let's spice it up a bit :)
 [OpenMidRight][LoadActive][OpenMidLeft][LoadWoman4]
-This is placeholder text![A][X]
+This text is a placeholder![A][X]
 
 ## Ch8VillageText2
 [OpenMidRight][LoadActive][OpenMidLeft][LoadWoman3]
-This is placeholder text![A][X]
+Do I say something useful? ...Nah.[N]
+I'll just hold this place.[A][X]
 
 ## Ch8VillageText3
 [OpenMidRight][LoadActive][OpenMidLeft][LoadMan2]
-This is placeholder text![A][X]
+What? No budget for an Arch Rant?[N]
+What the hell?! This sucks![A][X]
 
 ## Ch8VillageText4
 [OpenMidRight][LoadActive][OpenMidLeft][LoadMan4]
-This is placeholder text![A][X]
+Holy Holepunch, Gunborg! We've[N]
+reached PLACEHOLDER![A][X]
 
 ## DefendText
 Defend[X]
@@ -161,11 +164,13 @@ Win the chapter.[X]
 
 ## Chapter6_LeftVillage
 [OpenMidRight][LoadActive][OpenMidLeft][LoadMan2]
-Placeholder text[A][X]
+Clearly, you've walked[N]
+to the left.[A][X]
 
 ## Chapter6_RightVillage
 [OpenMidRight][LoadActive][OpenMidLeft][LoadWoman2]
-Placeholder text[A][X]
+Clearly, you've walked[N]
+to the right.[A][X]
 
 ## OuderenCh6DeathQuote
 [OpenMidRight][LoadOuderen]
@@ -410,6 +415,7 @@ A dance that increases[N]
 allies' dodge for a turn.[X]
 
 ## GenericDeathQuote
+[Right][LoadCurrent]
 Oof[A][X]
 
 #include "skilldesc_text.txt"
