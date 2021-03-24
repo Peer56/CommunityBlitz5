@@ -131,25 +131,29 @@ He has served for over 50 years.[X]
 Jamie[X]
 
 ## JamieDesc
-next time on mythconfirmers[X]
+Virida's rabid and fiery subordinate.[N]
+The shoutiest vice-commander there is.[X]
 
 ## ViridiaName
 Viridia[X]
 
 ## ViridiaDesc
-[X]
+The commander of the Noellia Knights.[N]
+Manipulative and smooth talking.[X]
 
 ## SunshineName
 Sunshine[X]
 
 ## SunshineDesc
-not as alcoholic as moonshine[X]
+The princess of Noellia. Admist all the[N]
+chaos, finding a hubby is her priority.[X]
 
 ## PeteName
 Pete[X]
 
 ## PeteDesc
-not of the shanty variety[X]
+The former prince of Augma, now a merc.[N]
+He revels in the darkness and edge.[X]
 
 ## GaspardName
 Gaspard[X]
@@ -187,7 +191,8 @@ because it looked like fun.[X]
 Renaldo[X]
 
 ## RenaldoDesc
-[X]
+Noellia's Knights true commander, he's[N]
+nonchalant about the surrounding mess.[X]
 
 ## TheodoreName
 Theodore[X]
@@ -219,14 +224,16 @@ His burning rage consumes all.[X]
 Xholt[X]
 
 ## XholtDesc
-[X]
+Sorcerer-king of the desert lands, he[N]
+tolerates no fiend stealing his throne.[X]
 
 
 ## MulchName
 Mulch[X]
 
 ## MulchDesc
-[X]
+A sword for hire. Dumb as a[N]
+brick, and so is his name.[X]
 
 ## KitabeiName
 Kitabei[X]
@@ -269,13 +276,15 @@ the dead and channeling great power.[X]
 Pinkus[X]
 
 ## PinkusDesc
-pepto bismol mage[X]
+A monster tamer who travels the seas[N]
+looking to add to his unusual crew.[X]
 
 ## NegajName
 Negaj[X]
 
 ## NegajDesc
-[X]
+Pete's former jagen, now turned zombie.[N]
+Smells like expired yogurt, very dutty.[X]
 
 ## OttoName
 Otto[X]
@@ -317,7 +326,6 @@ Susie[X]
 Framed Calvin for[N]
 the "Noodle Incident"[X]
 
-
 ## DemiName
 Cultist[X]
 
@@ -328,7 +336,8 @@ Cultist[X]
 Zagan[X]
 
 ## ZaganDesc
-[X]
+A Caelin bandit. Fights for pleasure[N]
+more than mone- wait, wrong game[X]
 
 ## InigoName
 Inigo[X]
@@ -336,7 +345,6 @@ Inigo[X]
 ## InigoDesc
 Wears a blindfold to hone[N]
 his hearing & skill.[X]
-
 
 ## BorgasName
 Borgas[X]
@@ -348,7 +356,8 @@ Borgas[X]
 Gem[X]
 
 ## GemDesc
-[X]
+The warrior queen of Augma and Pete's[N]
+elder sis. Here to rhyme gum and bum.[X]
 
 ## SaramineName
 Saramine[X]
@@ -357,7 +366,8 @@ Saramine[X]
 [X]
 
 ## DihardName
-Dihard[X]
+The king of the corrupted Badmania.[N]
+Stealing a legendary blade Lich'd him.[X]
 
 ## DihardDesc
 a christmas movie[X]
@@ -417,22 +427,25 @@ Holder[X]
 [X]
 
 ## DemonKingName
-Fomortiis[X]
+Formortiis[X]
 
 ## DemonKingDesc
-making a cameo appearance[X]
+The giant demon that makes all the rules.[N]
+Desires to bend the world to his will.[X]
 
 ## AkariName
 Akari[X]
 
 ## AkariDesc
-[X]
+Pete's former goth gf who turned out to[N]
+be too goth and ended up betraying him.[X]
 
 ## RhodesName
 Rhodes[X]
 
 ## RhodesDesc
-[X]
+The prince of Badmania. Now he's the bf[N]
+of Akari. Very not epic style.[X]
 
 ## Ch11GuardName
 Guard[X]
