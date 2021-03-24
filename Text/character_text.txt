@@ -407,6 +407,13 @@ Sangria[X]
 An impatient sellsword.
 Dislikes sweet drinks.[X]
 
+## SauvignonName
+Sauvignon[X]
+
+##SauvignonDesc
+Cousin of Chenin.
+Stubborn and unmovable.[X]
+
 ## Ch14Boss1Name
 Place[X]
 
