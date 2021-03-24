@@ -65,3 +65,5 @@
 ## Ch5xName
 1x: The Blindfolded Ranger[X]
 
+## Ch21xName
+21x: The Real Ending[X]
