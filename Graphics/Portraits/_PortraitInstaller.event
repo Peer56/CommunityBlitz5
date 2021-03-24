@@ -263,7 +263,7 @@ ALIGN 4
 RandalPortrait:
 #incext PortraitFormatter "Randal.png"
 
-setMugEntry(SangriaMug,SangriaPortrait,3,5,3,3)
+setMugEntry(SangriaMug,SangriaPortrait,4,5,4,3)
 ALIGN 4
 SangriaPortrait:
 #incext PortraitFormatter "Sangria.png"
