@@ -258,7 +258,7 @@ yum[X]
 Calanthia[X]
 
 ## CalanthiaDesc
-Wants to kill. And the 
+Wants to kill. And the[N]
 map is fields tileset. Yep.[X]
 
 ## EusebiosName
@@ -366,11 +366,11 @@ Saramine[X]
 [X]
 
 ## DihardName
-The king of the corrupted Badmania.[N]
-Stealing a legendary blade Lich'd him.[X]
+Dihard[X]
 
 ## DihardDesc
-a christmas movie[X]
+The king of the corrupted Badmania.[N]
+Stealing a legendary blade Lich'd him.[X]
 
 ## SoldierName
 Soldier[X]
