@@ -127,7 +127,8 @@ LOAD1 0 Units1
 ENUN
 LOAD1 0 EnemyUnits
 ENUN
-
+MUSC The_Final_Battle
+Text(Ch21_StartingScene)
 CALL $591FD8 //GotoPrepScreen
 
 LOAD1 0 NewUnit1
@@ -145,11 +146,10 @@ BGT 9000 sC s1
 MNC2 23
 GOTO 2000
 LABEL 9000
-ASMC 0x85C71 //0x381F5 0x37CF9 
-STAL 240
-EVBIT_F 0x2
-MNTS 0x1 //return to title screen
-
+MUSC FF
+Text(Ch21_TimeLoop)
+SVAL s3 Warp
+GIVEITEM Gunborg
 LABEL 2000
 NoFade
 ENDA
