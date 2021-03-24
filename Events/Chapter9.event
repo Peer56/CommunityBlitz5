@@ -20,11 +20,12 @@ TurnBasedEvents:
   TurnEventPlayer(0x00, Turn3, 3)
   TurnEventPlayer(0x00, Turn4, 4)
   TurnEventPlayer(0x00, Turn5, 5)
-  TurnEventPlayer(0x00, Turn6, 6)
+  TurnEventPlayer(0x00, AntiTurtle, 6, 8)
+  TurnEventPlayer(0x00, DryRiver, 8)
 END_MAIN
 
 CharacterBasedEvents:
-CharacterEventBothWays(0x8,RecruitSangria,Gunborg,Sangria)
+CharacterEventBothWays(0xB,RecruitSangria,Gunborg,Sangria)
 END_MAIN
 
 LocationBasedEvents:
@@ -71,32 +72,46 @@ LeftVil:
 VillageEventItem(Ch9LeftVilText, Village, Eclipse)
 
 BottomLeftVil:
-VillageEventItem(Ch9BottomLeftVilText, Village, RedGem)
+VillageEventItem(Ch9BottomLeftVilText, Village, BlueGem)
 
 Turn1:
 LOAD1 0x1 CheninUnit
+NoFade
+ENDA
 
 Turn2:
 LOAD1 0x1 Turn2Reinforcements
+NoFade
 ENDA
 
 Turn3:
 LOAD1 0x1 Turn3Reinforcements
+NoFade
 ENDA
 
 Turn4:
 LOAD1 0x1 Turn4Reinforcements
+NoFade
 ENDA
 
 Turn5:
 LOAD1 0x1 Turn5Reinforcements
+NoFade
 ENDA
 
-Turn6:
-LOAD1 0x1 Turn6Reinforcements
+AntiTurtle:
+LOAD1 0x1 BackReinforcements
+NoFade
+ENDA
+
+DryRiver:
+TILECHANGE 8
+NoFade
+ENDA
 
 RecruitSangria:
 CUSA Sangria
+NoFade
 ENDA
 
 // Units
@@ -129,13 +144,13 @@ UNIT Ch9Generics1 Mercenary 0x00 Level(8, Enemy, 1) [11,18] 0x00 0x00 0x0 0x00 [
 UNIT Ch9Generics1 Knight 0x00 Level(8, Enemy, 1) [2,3] 0x00 0x00 0x0 0x00 [ShortSpear] NeverMoveAI
 UNIT Ch9Generics1 Knight 0x00 Level(8, Enemy, 1) [3,2] 0x00 0x00 0x0 0x00 [ShortSpear] NeverMoveAI
 UNIT Ch9Generics1 Soldier 0x00 Level(8, Enemy, 1) [13,6] 0x00 0x00 0x0 0x00 [SteelLance] AttackInRangeAI 
-UNIT Ch9Generics1 Mage 0x00 Level(8, Enemy, 1) [16,5] 0x00 0x00 0x0 0x00 [ShortSpear] AttackInRangeAI 
+UNIT Ch9Generics1 Mage 0x00 Level(8, Enemy, 1) [16,5] 0x00 0x00 0x0 0x00 [Thunder] AttackInRangeAI 
 UNIT Ch9Generics1 Knight 0x00 Level(8, Enemy, 1) [6,10] 0x00 0x00 0x0 0x00 [SteelLance] AttackInRangeAI
 UNIT Ch9Generics1 Soldier 0x00 Level(8, Enemy, 1) [14,2] 0x00 0x00 0x0 0x00 [SteelLance] AttackInRangeAI
 UNIT Ch9Generics1 Cavalier 0x00 Level(8, Enemy, 1) [9,19] 0x00 0x00 0x0 0x00 [SteelLance] AttackInRangeAI
 UNIT Ch9Generics1 Mercenary 0x00 Level(8, Enemy, 1) [3,19] 0x00 0x00 0x0 0x00 [SteelSword] AttackInRangeAI
 UNIT Ch9Generics1 Soldier 0x00 Level(8, Enemy, 1) [4,14] 0x00 0x00 0x0 0x00 [SteelLance] AttackInRangeAI
-UNIT Ch9Generics1 Archer 0x00 Level(8, Enemy, 1) [14,12] 0x00 0x00 0x0 0x00 [SteelBow] AttackInRangeAI
+UNIT Ch9Generics1 Archer 0x00 Level(8, Enemy, 1) [14,12] 0x00 0x00 0x0 0x00 [SteelBow] [0x00,0x0D,0x00,0x00]
 UNIT Ch9Generics1 Fighter 0x00 Level(8, Enemy, 1) [3,8] 0x00 0x00 0x0 0x00 [SteelAxe] AttackInRangeAI
 UNIT Ch9Generics1 Cavalier 0x00 Level(8, Enemy, 1) [9,4] 0x00 0x00 0x0 0x00 [SteelLance,SteelSword] AttackInRangeAI
 UNIT Ch9Generics1 Archer 0x00 Level(8, Enemy, 1) [3,6] 0x00 0x00 0x0 0x00 [SteelBow] AttackInRangeAI
@@ -152,14 +167,15 @@ UNIT
 
 NPCUnits:
 
-UNIT Ch9Npcs1 Fighter 0x00 Level(8, Enemy, 1) [17,13] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI
-UNIT Ch9Npcs1 Fighter 0x00 Level(8, Enemy, 1) [16,11] 0x00 0x00 0x0 0x00 [SteelBlade] AttackInRangeAI
-UNIT Ch9Npcs1 Knight 0x00 Level(8, Enemy, 1) [15,9] 0x00 0x00 0x0 0x00 [IronLance,Javelin] NeverMoveAI
-UNIT Ch9Npcs1 Knight 0x00 Level(8, Enemy, 1) [16,9] 0x00 0x00 0x0 0x00 [IronLance,Javelin] NeverMoveAI
+UNIT Sauvignon Mage_F 0x00 Level(10, NPC, 0) [18,9] 0x00 0x00 0x0 0x00 [Thunder] NeverMoveAI
+UNIT Ch9Npcs1 Fighter 0x00 Level(8, NPC, 1) [17,13] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI
+UNIT Ch9Npcs1 Mercenary 0x00 Level(8, NPC, 1) [16,11] 0x00 0x00 0x0 0x00 [SteelBlade] AttackInRangeAI
+UNIT Ch9Npcs1 Knight 0x00 Level(8, NPC, 1) [15,9] 0x00 0x00 0x0 0x00 [IronLance,Javelin] NeverMoveAI
+UNIT Ch9Npcs1 Knight 0x00 Level(8, NPC, 1) [16,9] 0x00 0x00 0x0 0x00 [IronLance,Javelin] NeverMoveAI
 UNIT
 
 CheninUnit:
-UNIT Chenin Shaman 0x00 Level(8, Ally, 0) [18,9] 0x00 0x00 0x0 0x00 [Flux,Nosferatu] NoAI
+UNIT Chenin Shaman 0x00 Level(8, Ally, 0) [18,10] 0x00 0x00 0x0 0x00 [Flux,Nosferatu] NoAI
 UNIT
 
 Turn2Reinforcements:
@@ -174,16 +190,15 @@ UNIT Ch9Generics1 Brigand 0 Level(8, Enemy, 1) [1,19] 0x00 0x00 0x0 0x00 [SteelA
 UNIT
 
 Turn4Reinforcements:
-UNIT Ch9Generics1 Brigand 0 Level(8, Enemy, 1) [0,4] 0x00 0x00 0x0 0x00 [SteelAxe] LootingThiefAI
+UNIT Ch9Generics1 Brigand 0 Level(8, Enemy, 1) [0,5] 0x00 0x00 0x0 0x00 [SteelAxe] LootingThiefAI
 UNIT
 
 Turn5Reinforcements:
 UNIT Ch9Generics1 Brigand 0 Level(8, Enemy, 1) [19,0] 0x00 0x00 0x0 0x00 [SteelAxe] LootingThiefAI
 UNIT
 
-Turn6Reinforcements:
-UNIT Ch9Generics1 Cavalier 0x00 Level(8, Enemy, 1) [18,19] 0x00 0x00 0x0 0x00 [SteelLance,KillingEdge] PursueWithoutHeedAI 
-UNIT Ch9Generics1 Knight 0x00 Level(8, Enemy, 1) [17,19] 0x00 0x00 0x0 0x00 [KillerLance] PursueWithoutHeedAI 
-UNIT Ch9Generics1 Mage 0x00 Level(8, Enemy, 1) [19,19] 0x00 0x00 0x0 0x00 [Elfire] PursueWithoutHeedAI 
+BackReinforcements:
+UNIT Ch9Generics1 Cavalier 0x00 Level(8, Enemy, 1) [18,19] 0x00 0x00 0x0 0x00 [SteelLance,KillingEdge] [0x00,0x0D,0x00,0x00] 
+UNIT Ch9Generics1 Knight 0x00 Level(8, Enemy, 1) [17,19] 0x00 0x00 0x0 0x00 [KillerLance] [0x00,0x0D,0x00,0x00] 
+UNIT Ch9Generics1 Mage 0x00 Level(8, Enemy, 1) [19,19] 0x00 0x00 0x0 0x00 [Elfire] [0x00,0x0D,0x00,0x00] 
 UNIT
-
