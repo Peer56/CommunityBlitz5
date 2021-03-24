@@ -110,7 +110,7 @@ deserts of Delan.[X]
 Ergon[X]
 
 ## ErgonDesc
-Uninteresting even by
+Uninteresting even by[N]
 soldier standards.[X]
 
 ## VultureName
@@ -177,14 +177,14 @@ Feena[X]
 Kartre[X]
 
 ## KartreDesc
-He thinks dying his hair will
+He thinks dying his hair will[N]
 help him sneak into the hack.[X]
 
 ## BarlaName
 Barla[X]
 
 ## BarlaDesc
-She went along with her husband
+She went along with her husband[N]
 because it looked like fun.[X]
 
 ## RenaldoName
@@ -258,7 +258,7 @@ yum[X]
 Calanthia[X]
 
 ## CalanthiaDesc
-Wants to kill. And the 
+Wants to kill. And the[N]
 map is fields tileset. Yep.[X]
 
 ## EusebiosName
@@ -365,12 +365,14 @@ Saramine[X]
 ## SaramineDesc
 [X]
 
-## DihardName
+## DihardDesc
 The king of the corrupted Badmania.[N]
 Stealing a legendary blade Lich'd him.[X]
 
-## DihardDesc
-a christmas movie[X]
+## DihardName
+#a christmas movie
+#Which murders character limit
+XmasFilm[X]
 
 ## SoldierName
 Soldier[X]
