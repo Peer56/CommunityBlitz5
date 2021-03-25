@@ -56,12 +56,12 @@ Units1:
 
 EnemyUnits:
 	UNIT Saramine Sage_F Saramine Level(7,Enemy,False) [1,9] 0x02 0x00 0x0 0x00 [Bolting,Thunder,Warp] GuardTileAI
-	UNIT Ch15Generic1 Sniper Saramine Level(5,Enemy,True)[0,4] 0x00 0x00 0x0 0x00 [SteelBow] AttackInRangeAI
-	UNIT Ch15Generic1 Mercenary Saramine Level(12,Enemy,True)[7,7] 0x00 0x00 0x0 0x00 [IronBlade] AttackInRangeAI
-	UNIT Ch15Generic1 Brigand Saramine Level(12,Enemy,True) [6,5] 0x00 0x00 0x0 0x00 [SteelAxe] AttackInRangeAI
-	UNIT Ch15Generic1 Cavalier_F Saramine Level(12,Enemy,True) [3,8] 0x00 0x00 0x0 0x00 [SteelLance,DoorKey] AttackInRangeAI
-	UNIT Ch15Generic1 PegasusKnight Saramine Level(12,Enemy,True) [3,0] 0x00 0x00 0x0 0x00 [SlimLance] AttackInRangeAI
-	UNIT Ch15Generic1 Myrmidon Saramine Level(12,Enemy,True) [14,5] 0x00 0x00 0x0 0x00 [SlimSword] AttackInRangeAI
+	UNIT Ch15Generic1 Sniper Saramine Level(5,Enemy,True)[0,4] 0x00 0x00 0x0 0x00 [SilverBow] AttackInRangeAI
+	UNIT Ch15Generic1 Mercenary Saramine Level(12,Enemy,True)[7,7] 0x00 0x00 0x0 0x00 [Audhulma] AttackInRangeAI
+	UNIT Ch15Generic1 Brigand Saramine Level(12,Enemy,True) [6,5] 0x00 0x00 0x0 0x00 [BraveAxe] AttackInRangeAI
+	UNIT Ch15Generic1 Cavalier_F Saramine Level(12,Enemy,True) [3,8] 0x02 0x00 0x0 0x00 [Vidofnir,DoorKey] AttackInRangeAI
+	UNIT Ch15Generic1 PegasusKnight Saramine Level(12,Enemy,True) [3,0] 0x00 0x00 0x0 0x00 [SilverLance] AttackInRangeAI
+	UNIT Ch15Generic1 Myrmidon Saramine Level(12,Enemy,True) [14,5] 0x00 0x00 0x0 0x00 [KillingEdge] AttackInRangeAI
 	UNIT Ch15Generic1 Fighter Saramine Level(12,Enemy,True) [7,9] 0x02 0x00 0x0 0x00 [BattleAxe,ChestKey] AttackInRangeAI
 	UNIT
 
