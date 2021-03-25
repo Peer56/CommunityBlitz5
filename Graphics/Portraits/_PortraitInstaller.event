@@ -223,7 +223,7 @@ ALIGN 4
 SunshinePortrait:
 #incext PortraitFormatter "Sunshine.png"
 
-setMugEntry(GaspardMug,GaspardPortrait,3,5,3,3)
+setMugEntry(GaspardMug,GaspardPortrait,2,5,3,3)
 ALIGN 4
 GaspardPortrait:
 #incext PortraitFormatter "Gaspard.png"
@@ -263,7 +263,7 @@ ALIGN 4
 RandalPortrait:
 #incext PortraitFormatter "Randal.png"
 
-setMugEntry(SangriaMug,SangriaPortrait,3,5,3,3)
+setMugEntry(SangriaMug,SangriaPortrait,4,5,4,3)
 ALIGN 4
 SangriaPortrait:
 #incext PortraitFormatter "Sangria.png"
@@ -288,7 +288,7 @@ ALIGN 4
 SusiePortrait:
 #incext PortraitFormatter "Susie.png"
 
-setMugEntry(MerlotMug,MerlotPortrait,2,5,3,3)
+setMugEntry(MerlotMug,MerlotPortrait,3,5,3,3)
 ALIGN 4
 MerlotPortrait:
 #incext PortraitFormatter "Merlot.png"

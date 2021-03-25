@@ -19,3 +19,17 @@ PUSH
     ORG $02BE60
         BYTE Shaman_F
 POP
+
+//Fix demon king forcing animations on by sme
+PUSH
+	ORG 0x57BB9
+		BYTE 0xE0
+POP
+
+//Fix archer/sniper ballista palette
+PUSH
+	ORG 0x0599B6
+		BYTE 0x14 0xE0
+POP
+
+

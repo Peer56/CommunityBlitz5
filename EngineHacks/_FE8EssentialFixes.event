@@ -2,6 +2,11 @@
 //Install with Event Assembler
 PUSH
 
+
+
+
+
+
 //Fix Stone's map animation crashing no$ due to a bad decompression
 ORG $7E2B4
 BYTE 0x8

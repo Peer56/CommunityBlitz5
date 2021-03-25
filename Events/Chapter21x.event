@@ -14,7 +14,7 @@ POIN $0 $0 $0
 POIN BeginningScene EndingScene
 
 TurnBasedEvents:
-TurnEventPlayer(0x00, EndlessReinforcements, 2, 200)
+TurnEventPlayer(0x00, EndlessReinforcements, 3, 200)
 END_MAIN
 
 CharacterBasedEvents:
@@ -62,39 +62,31 @@ UNIT
 
 ALIGN 4
 EnemyUnits:
-UNIT SuperMulch Hero 0 Level(30,Enemy,0) [8,3] 0 0 0 1 [Runesword,HoplonGuard] NeverMoveAI
-UNIT Ch21Generics1 DracoZombie 0 Level(19,Enemy,1) [7,3] 0 0 0 1 [WretchedAir] NeverMoveAI
-UNIT Ch21Generics1 DracoZombie 0 Level(19,Enemy,1) [8,4] 0 0 0 1 [WretchedAir] NeverMoveAI
-UNIT Ch21Generics1 DracoZombie 0 Level(19,Enemy,1) [9,3] 0 0 0 1 [WretchedAir] NeverMoveAI
-UNIT Ch21Generics1 Wight 0 Level(19,Enemy,1) [7,5] 0 0 0 1 [Audhulma] PursueWithoutHeedAI
-UNIT Ch21Generics1 Wight 0 Level(19,Enemy,1) [9,5] 0 0 0 1 [Vidofnir] PursueWithoutHeedAI
-UNIT Ch21Generics1 WightBow 0 Level(19,Enemy,1) [7,4] 0 0 0 1 [Nidhogg] PursueWithoutHeedAI
-UNIT Ch21Generics1 WightBow 0 Level(19,Enemy,1) [7,4] 0 0 0 1 [Nidhogg] PursueWithoutHeedAI
-UNIT Ch21Generics1 Cyclops 0 Level(19,Enemy,1) [7,7] 0 0 0 1 [Garm,Tomahawk] NeverMoveAI
-UNIT Ch21Generics1 ElderBael 0 Level(19,Enemy,1) [7,7] 0 0 0 1 [FetidClaw] NeverMoveAI
-UNIT Ch21Generics1 Cyclops 0 Level(19,Enemy,1) [9,7] 0 0 0 1 [Garm,Tomahawk] NeverMoveAI
-UNIT Ch21Generics1 Gorgon 0 Level(19,Enemy,1) [8,6] 0 0 0 1 [Shadowshot,DemonSurge,Stone] NeverMoveAI
-UNIT Ch21Generics1 Entombed 0 Level(19,Enemy,1) [5,8] 0 0 0 1 [FetidClaw] PursueWithoutHeedAI
-UNIT Ch21Generics1 Entombed 0 Level(19,Enemy,1) [5,10] 0 0 0 1 [FetidClaw] PursueWithoutHeedAI
-UNIT Ch21Generics1 Entombed 0 Level(19,Enemy,1) [11,8] 0 0 0 1 [FetidClaw] PursueWithoutHeedAI
-UNIT Ch21Generics1 Entombed 0 Level(19,Enemy,1) [11,10] 0 0 0 1 [FetidClaw] PursueWithoutHeedAI
-UNIT Ch21Generics1 Maelduin 0 Level(19,Enemy,1) [5,9] 0 0 0 1 [Garm,Nidhogg] PursueWithoutHeedAI
-UNIT Ch21Generics1 Maelduin 0 Level(19,Enemy,1) [11,9] 0 0 0 1 [Nidhogg,Garm] PursueWithoutHeedAI
-UNIT Ch21Generics1 ArchMogall 0 Level(19,Enemy,1) [8,13] 0 0 0 1 [Shadowshot,Stone,DemonSurge] PursueWithoutHeedAI
-UNIT Ch21Generics1 Gwyllgi 0 Level(19,Enemy,1) [7,9] 0 0 0 1 [Hellfang] PursueWithoutHeedAI
-UNIT Ch21Generics1 Gwyllgi 0 Level(19,Enemy,1) [9,9] 0 0 0 1 [Hellfang] PursueWithoutHeedAI
-UNIT Ch21Generics1 DracoZombie 0 Level(19,Enemy,1) [8,10] 0 0 0 1 [Nightmare,WretchedAir] NeverMoveAI
+UNIT SuperMulch Hero 0 Level(30,Enemy,0) [8,3] 0 0 0 1 [Runesword] NeverMoveAI
+UNIT Ch21Generics1 DracoZombie 0 Level(15,Enemy,1) [7,3] 0 0 0 1 [WretchedAir] NeverMoveAI
+UNIT Ch21Generics1 ElderBael 0 Level(15,Enemy,1) [8,4] 0 0 0 1 [FetidClaw,Nightmare] NeverMoveAI
+UNIT Ch21Generics1 DracoZombie 0 Level(15,Enemy,1) [9,3] 0 0 0 1 [WretchedAir] NeverMoveAI
+UNIT Ch21Generics1 Wight 0 Level(15,Enemy,1) [7,5] 0 0 0 1 [Audhulma] PursueWithoutHeedAI
+UNIT Ch21Generics1 WightBow 0 Level(15,Enemy,1) [9,5] 0 0 0 1 [Nidhogg] PursueWithoutHeedAI
+UNIT Ch21Generics1 Deathgoyle 0 Level(15,Enemy,1) [7,7] 0 0 0 1 [Vidofnir,Spear] NeverMoveAI
+UNIT Ch21Generics1 Cyclops 0 Level(15,Enemy,1) [9,7] 0 0 0 1 [Garm,Tomahawk] NeverMoveAI
+UNIT Ch21Generics1 Gorgon 0 Level(15,Enemy,1) [8,6] 0 0 0 1 [Shadowshot,DemonSurge,Stone] NeverMoveAI
+UNIT Ch21Generics1 Entombed 0 Level(15,Enemy,1) [5,8] 0 0 0 1 [FetidClaw] PursueWithoutHeedAI
+UNIT Ch21Generics1 Entombed 0 Level(15,Enemy,1) [11,10] 0 0 0 1 [FetidClaw] PursueWithoutHeedAI
+UNIT Ch21Generics1 Maelduin 0 Level(15,Enemy,1) [5,9] 0 0 0 1 [Garm,Nidhogg] PursueWithoutHeedAI
+UNIT Ch21Generics1 Maelduin 0 Level(15,Enemy,1) [11,9] 0 0 0 1 [Nidhogg,Garm] PursueWithoutHeedAI
+UNIT Ch21Generics1 ArchMogall 0 Level(15,Enemy,1) [8,13] 0 0 0 1 [Shadowshot,Stone,DemonSurge] PursueWithoutHeedAI
+UNIT Ch21Generics1 Gwyllgi 0 Level(15,Enemy,1) [7,9] 0 0 0 1 [Hellfang] PursueWithoutHeedAI
+UNIT Ch21Generics1 Gwyllgi 0 Level(15,Enemy,1) [9,9] 0 0 0 1 [Hellfang] PursueWithoutHeedAI
 UNIT
 
 TheReinforcements:
-UNIT Ch21Generics1 Gorgon 0 Level(19,Enemy,1) [3,2] 0 0 0 1 [Shadowshot,Stone,Nightmare] PursueWithoutHeedAI
-UNIT Ch21Generics1 Gorgon 0 Level(19,Enemy,1) [13,2] 0 0 0 1 [DemonLight,Shadowshot,Stone] PursueWithoutHeedAI
-UNIT Ch21Generics1 DracoZombie 0 Level(19,Enemy,1) [3,4] 0 0 0 1 [WretchedAir] PursueWithoutHeedAI
-UNIT Ch21Generics1 DracoZombie 0 Level(19,Enemy,1) [13,4] 0 0 0 1 [WretchedAir] PursueWithoutHeedAI
-UNIT Ch21Generics1 Deathgoyle 0 Level(19,Enemy,1) [4,7] 0 0 0 1 [Vidofnir] PursueWithoutHeedAI
-UNIT Ch21Generics1 Deathgoyle 0 Level(19,Enemy,1) [12,7] 0 0 0 1 [Vidofnir] PursueWithoutHeedAI
-UNIT Ch21Generics1 Phantom 0 Level(19,Enemy,1) [0,13] 0 0 0 1 [Garm] PursueWithoutHeedAI
-UNIT Ch21Generics1 Phantom 0 Level(19,Enemy,1) [16,13] 0 0 0 1 [Garm] PursueWithoutHeedAI
+UNIT Ch21Generics1 Gwyllgi 0 Level(15,Enemy,1) [3,2] 0 0 0 1 [Hellfang] PursueWithoutHeedAI
+UNIT Ch21Generics1 Gwyllgi 0 Level(15,Enemy,1) [13,2] 0 0 0 1 [Hellfang] PursueWithoutHeedAI
+UNIT Ch21Generics1 Entombed 0 Level(15,Enemy,1) [3,4] 0 0 0 1 [FetidClaw] PursueWithoutHeedAI
+UNIT Ch21Generics1 Entombed 0 Level(15,Enemy,1) [13,4] 0 0 0 1 [FetidClaw] PursueWithoutHeedAI
+UNIT Ch21Generics1 Phantom 0 Level(15,Enemy,1) [4,7] 0 0 0 1 [Garm] PursueWithoutHeedAI
+UNIT Ch21Generics1 Phantom 0 Level(15,Enemy,1) [12,7] 0 0 0 1 [Garm] PursueWithoutHeedAI
 UNIT
 
 Traps1:
