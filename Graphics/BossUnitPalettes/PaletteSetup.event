@@ -9,8 +9,8 @@
 	setCBSP(0x90,Mulch,0x1,Mercenary)
 
 // Borgas_Rogue
-	setPalette(0x19,Borgas_Rogue)
-	setCBSP(0x19,Borgas,0x3,Rogue)
+	setPalette(0xA2,Borgas_Rogue)
+	setCBSP(0xA2,Borgas,0x3,Rogue)
 
 // Kitabei_Myrmidon
 	setPalette(0x92,Kitabei_Myrmidon)
@@ -53,5 +53,45 @@
 	setCBSP(0x9A,Otto,0x1,Cavalier)
 
 // Dark_Tovah_Druid
-	setPalette(0x9B,Dark_Tovah_Druid)
-	setCBSP(0x9B,DarkTovah,0x3,Druid_F)
+	setPalette(0x9C,Dark_Tovah_Druid)
+	setCBSP(0x9C,DarkTovah,0x3,Druid_F)
+
+// Randal_Berserker
+	setPalette(0x9D,Randal_Berserker)
+	setCBSP(0x9D,Randal,0x3,Berserker)
+
+// Akari_Swordmaster
+	setPalette(0x9E,Akari_Swordmaster)
+	setCBSP(0x9E,Akari,0x3,Swordmaster_F)
+
+// Rhodes_Paladin
+	setPalette(0x9F,Rhodes_Paladin)
+	setCBSP(0x9F,Rhodes,0x3,Paladin)
+
+// Saramine_Sage
+	setPalette(0xA0,Saramine_Sage)
+	setCBSP(0xA0,Saramine,0x3,Sage_F)
+
+// DemiA_Shaman
+	setPalette(0xA3,DemiA_Shaman)
+	setCBSP(0xA3,DemiA,0x1,Shaman)
+
+// DemiB_Shaman
+	setPalette(0xA4,DemiB_Shaman)
+	setCBSP(0xA4,DemiB,0x1,Shaman)
+
+// DemiC_Shaman
+	setPalette(0xA5,DemiC_Shaman)
+	setCBSP(0xA5,DemiC,0x1,Shaman)
+
+// Dihard_Wight
+	setPalette(0xA6,Dihard_Wight)
+	setCBSP(0xA6,Dihard,0x3,Wight)
+
+// Eusebios_Bishop
+	setPalette(0xA7,Eusebios_Bishop)
+	setCBSP(0xA7,Ch19Eusebios,0x3,Bishop)
+
+// Super_Mulch_Hero
+	setPalette(0xAA,Super_Mulch_Hero)
+	setCBSP(0xAA,SuperMulch,0x3,Hero)

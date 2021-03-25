@@ -42,3 +42,33 @@ Otto_Cavalier:
 Dark_Tovah_Druid:
 	#incbin "./_palettes/Dark_Tovah_Druid.lzpal" 
 
+Randal_Berserker:
+	#incbin "./_palettes/Randal_Berserker.lzpal" 
+
+Akari_Swordmaster:
+	#incbin "./_palettes/Akari_Swordmaster.lzpal" 
+
+Rhodes_Paladin:
+	#incbin "./_palettes/Rhodes_Paladin.lzpal" 
+
+Saramine_Sage:
+	#incbin "./_palettes/Saramine_Sage.lzpal" 
+
+DemiA_Shaman:
+	#incbin "./_palettes/DemiA_Shaman.lzpal" 
+
+DemiB_Shaman:
+	#incbin "./_palettes/DemiB_Shaman.lzpal" 
+
+DemiC_Shaman:
+	#incbin "./_palettes/DemiC_Shaman.lzpal" 
+
+Dihard_Wight:
+	#incbin "./_palettes/Dihard_Wight.lzpal" 
+
+Eusebios_Bishop:
+	#incbin "./_palettes/Eusebios_Bishop.lzpal" 
+
+Super_Mulch_Hero:
+	#incbin "./_palettes/Super_Mulch_Hero.lzpal" 
+

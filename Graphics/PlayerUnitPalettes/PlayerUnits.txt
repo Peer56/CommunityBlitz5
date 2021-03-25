@@ -202,14 +202,58 @@
 # char{0x44} "Gaspard_Warrior" set{Gaspard,0x4,Warrior}
 5553FF7FFF6BFF465A32D6212E197A6B987FD1660C5210465767714EAC35A514
 
+//Chapter 12
+
 # char{0x4B} "Dogi_Berserker" set{Dogi,0x3,Berserker}
 5553FF7FFF6BFF465A32D6212E195A4A987FD1660C52D539BC1A3912B30DA514
 
 # char{0x4C} "Feena_Sage" set{Feena,0x3,Sage_F}
 5553FF7FFF6B1F4B2E19357B4E6E8B493F479D2ED325FF5EFE7F357BED5DA514
 
-//Chapter 1x
+//Chapter 13
+# char{0x4D} "Kartre_Warrior" set{Kartre,0x3,Warrior}
+5553FF7FFF6BFF465A32D6212E197A6B987FD1660C521046B16FE95AC03DA514
+# char{0x4E} "Barla_Swordmaster" set{Barla,0x3,Swordmaster_F}
+5553FF7FFF4FFC2E91257726F21D6C21767F6F5ECA49DE7BD877125F0621A514
 
+//Chapter 14
+//Chapter 15
+# char{0x53} "Theodore Bishop" set{Theodore,0x3,Bishop}
+5553FF7FFF6BFF322F1957044C0CFF0B386F7A7B935E7A7B935E935E8B35A514
+
+# char{0x54} "Franklin Valkyrie" set{Franklin,0x1,Mercenary}
+5553FF7F5A2E73150E15CA41F34DE924B87B53738C5AA73DFA7F3377452DA514
+
+//Chapter 16
+# char{0x57} "Charles Gargoyle" set{Charles,0x1,Gargoyle} set{Charles,0x3,Deathgoyle}
+5553FF7FFE7F186B945AFA188F0C567B2D56113E2A255B67B756113E2A25A514
+
+# char{0x59} "Hosay_Wight" set{Hosay,0x3,Wight}
+5553FF7FAF352C25E91CFB7F136B67357836D3252C253963954EAF35E91CA514
+
+//Chapter 17
+# char{0x5A} "Zagan_Necromancer" set{Zagan,0x3,Necromancer}
+5553FF7FFF6B1F4BD429FF1B9E1A544AD0395629F21CCE18D2496F3D0C31A514
+
+//Chapter 18
+//# char{0x5B} "Gem Sniper" set{Gem,0x3,Sniper_F}
+
+//Chapter 19
+# char{0x5C} "Wulfram GreatKnight" set{Wulfram,0x3,GreatKnight}
+5553DE7BFF5B1F4BB229196B52568C41E7301F4BFF5BE73014537042CC31A514
+
+# char{0x5D} "Agvaldt Manakete" set{Agvaldt,0x1,Manakete_2}
+55531221AE14AA1CF94E54367C67195B2E2EAB257C675436F94ED1292C25A514
+
+//Chapter 20
+# char{0x5E} "Xholt Druid" set{Xholt,0x3,Druid}
+765EA514FF6B6B4D2E19FF1B9E1A520913426D2D0A216B4DE734A5286210A514
+
+//Chapter 21
+
+//Chapter 21x
+
+//Chapter 1x
 # char{0x5B} "Inigo Ranger" set{Inigo,0x3,Ranger}
 5553FF7FFF4BBD2EF41D5219CE45082DD3734A5F884AE635FC2298212D11A514
 
@@ -223,23 +267,13 @@
 # char{0x49}
 # char{0x4A}
 
-# char{0x4D} "Kartre_Warrior" set{Kartre,0x3,Warrior}
-# char{0x4E} "Barla_Swordmaster" set{Barla,0x3,Swordmaster_F}
 # char{0x4F} "Renaldo_MageKnight" set{Renaldo,0x3,MageKnight}
 # char{0x50}
 # char{0x51}
 # char{0x52}
-# char{0x53} "Theodore_Halberdier" set{Theodore,0x3,Halberdier}
-# char{0x54} "Franklin_Mercenary" set{Franklin,0x1,Mercenary}
 # char{0x55} "Franklin_Hero" set{Franklin,0x3,Hero}
 # char{0x56} "Franklin_Ranger" set{Franklin,0x4,Ranger}
-# char{0x57} "Charles_Gargoyle" set{Charles,0x1,Gargoyle}
-# char{0x58} "Charles_Deathgoyle" set{Charles,0x3,Deathgoyle}
-# char{0x59} "Hosay_Wight" set{Hosay,0x3,Wight}
-# char{0x5A} "Zagan_Necromancer" set{Zagan,0x3,Necromancer}
-
-# char{0x5C}
-# char{0x5D}
+# char{0x58} "Charles_Deathgoyle" 
 # char{0x5E}
 # char{0x5F}
 */
