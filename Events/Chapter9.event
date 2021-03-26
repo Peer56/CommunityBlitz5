@@ -162,7 +162,7 @@ UNIT Ch9Generics1 Fighter 0x00 Level(14, Enemy, 1) [7,2] 0x00 0x00 0x0 0x00 [Ste
 UNIT Ch9Generics1 Cavalier 0x00 Level(14, Enemy, 1) [0,16] 0x00 0x00 0x0 0x00 [SteelLance,SteelSword] AttackInRangeAI
 UNIT Ch9Generics1 Knight 0x00 Level(14, Enemy, 1) [14,5] 0x00 0x00 0x0 0x00 [SteelLance] PursueWithoutHeedAI 
 UNIT Ch9Generics1 Mage 0x00 Level(14, Enemy, 1) [1,11] 0x00 0x00 0x0 0x00 [Thunder] AttackInRangeAI 
-UNIT Ch9Generics1 Soldier 0x00 Level(14, Enemy, 1) [7,18] 0x00 0x00 0x0 0x00 [KillerLance,GoddessIcon] AttackInRangeAI 
+UNIT Ch9Generics1 Soldier 0x00 Level(14, Enemy, 1) [7,12] 0x00 0x00 0x0 0x00 [KillerLance,GoddessIcon] AttackInRangeAI 
 UNIT
 
 NPCUnits:
