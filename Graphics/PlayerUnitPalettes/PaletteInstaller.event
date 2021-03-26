@@ -204,6 +204,36 @@ Dogi_Berserker:
 Feena_Sage:
 	#incbin "./_palettes/Feena_Sage.lzpal" 
 
+Kartre_Warrior:
+	#incbin "./_palettes/Kartre_Warrior.lzpal" 
+
+Barla_Swordmaster:
+	#incbin "./_palettes/Barla_Swordmaster.lzpal" 
+
+Theodore_Bishop:
+	#incbin "./_palettes/Theodore_Bishop.lzpal" 
+
+Franklin_Valkyrie:
+	#incbin "./_palettes/Franklin_Valkyrie.lzpal" 
+
+Charles_Gargoyle:
+	#incbin "./_palettes/Charles_Gargoyle.lzpal" 
+
+Hosay_Wight:
+	#incbin "./_palettes/Hosay_Wight.lzpal" 
+
+Zagan_Necromancer:
+	#incbin "./_palettes/Zagan_Necromancer.lzpal" 
+
+Wulfram_GreatKnight:
+	#incbin "./_palettes/Wulfram_GreatKnight.lzpal" 
+
+Agvaldt_Manakete:
+	#incbin "./_palettes/Agvaldt_Manakete.lzpal" 
+
+Xholt_Druid:
+	#incbin "./_palettes/Xholt_Druid.lzpal" 
+
 Inigo_Ranger:
 	#incbin "./_palettes/Inigo_Ranger.lzpal" 
 

@@ -273,6 +273,47 @@
 	setPalette(0x4C,Feena_Sage)
 	setCBSP(0x4C,Feena,0x3,Sage_F)
 
+// Kartre_Warrior
+	setPalette(0x4D,Kartre_Warrior)
+	setCBSP(0x4D,Kartre,0x3,Warrior)
+
+// Barla_Swordmaster
+	setPalette(0x4E,Barla_Swordmaster)
+	setCBSP(0x4E,Barla,0x3,Swordmaster_F)
+
+// Theodore_Bishop
+	setPalette(0x53,Theodore_Bishop)
+	setCBSP(0x53,Theodore,0x3,Bishop)
+
+// Franklin_Valkyrie
+	setPalette(0x54,Franklin_Valkyrie)
+	setCBSP(0x54,Franklin,0x1,Mercenary)
+
+// Charles_Gargoyle
+	setPalette(0x57,Charles_Gargoyle)
+	setCBSP(0x57,Charles,0x1,Gargoyle)
+	setCBSP(0x57,Charles,0x3,Deathgoyle)
+
+// Hosay_Wight
+	setPalette(0x59,Hosay_Wight)
+	setCBSP(0x59,Hosay,0x3,Wight)
+
+// Zagan_Necromancer
+	setPalette(0x5A,Zagan_Necromancer)
+	setCBSP(0x5A,Zagan,0x3,Necromancer)
+
+// Wulfram_GreatKnight
+	setPalette(0x5C,Wulfram_GreatKnight)
+	setCBSP(0x5C,Wulfram,0x3,GreatKnight)
+
+// Agvaldt_Manakete
+	setPalette(0x5D,Agvaldt_Manakete)
+	setCBSP(0x5D,Agvaldt,0x1,Manakete_2)
+
+// Xholt_Druid
+	setPalette(0x5E,Xholt_Druid)
+	setCBSP(0x5E,Xholt,0x3,Druid)
+
 // Inigo_Ranger
 	setPalette(0x5B,Inigo_Ranger)
 	setCBSP(0x5B,Inigo,0x3,Ranger)
