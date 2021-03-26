@@ -32,4 +32,8 @@ PUSH
 		BYTE 0x14 0xE0
 POP
 
-
+//Fix Hammerne
+PUSH 
+	ORG $2F2E6
+	BYTE 0x0 0x78
+POP
