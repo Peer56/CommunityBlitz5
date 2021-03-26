@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="2021.02.15" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="20" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="7" nextobjectid="1">
+<map version="1.2" tiledversion="1.3.3" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="20" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="7" nextobjectid="1">
  <tileset firstgid="1" name="50005152" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
-  <image source="../../VBA-Wizardryless/Chapters/Tilesets/Volcano-50005152.png" width="512" height="512"/>
+  <image source="../../../../../Tilesets/FE8 - Lava Cave - 50005152.png" width="512" height="512"/>
  </tileset>
  <layer id="1" name="Main" width="20" height="20">
   <properties>
@@ -15,7 +15,7 @@
    <property name="TileConfig" value="AssetVolcanoConfig"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eAFdlD1szWEUh/+INEEEg1hd6W3chBAsNi2Dgc3ASBrCYGMWkUrU2KrRWiUhqoySJm209zaVNDUQFh+JVnzG1+J54v0l/xienPOe97y/95zz/u+dXFFVvauqahtM4t/CrltZVY9gNewr1rXxcXhYOIR9xpkZmC1WjUtoHICDcBKOkLcezD9W7E5sh1z1JkDNadaPsXWs7XCNbvwmOalxqOS77gH1FkBN64++dXnH/1o/iXlfF5wH89vkurbnBryCRTBuny1889R0bo1Snz1vgfvVv16t8wk51mXvnumFihzrewodyFyN9bA3SEoTuxX68aegPpP41mRPsYkvcad3NTj3AP899grMgf2mJ+9bAM/rq+X6Qzmvb6yut4G9PnTaEJ30ZL5z85vI96DNOyc//TbQsLbLsAzRsZ7UZe4nND7DF/gK32CcePLzLn6H3j9X7Gt8teqxo6x3wW7YBHtgL9hn+u/Gb4N2FAbhLrwE66rHnM1mYiMwBDfhBvhteLeaeRetbz4Gvvsbct5CPZbZDLN/HNRSQ9S8gL1Y1upvh8z4HTO0vsyjhV/vve675wz3wwnwnHeshdPo+L343eXNrnG3vY6yfxucidwBZ5NvZhg/NU/gq3UK5sHfRd6shZa92ruzHivoOxv7So3WlbVvbL/L4H56/oh2ZpGcWL8/67N/e7Yu/Xliv7HP4Q/Y3wA617HW7Cycg9/nGegr2JPn/X2rZ336xvy9Z/7ea+5Z7Ax2I7YLvpM3zVpN973L8/5H5JvQN3aO/Cb7np8tueb3E+8B3+0e6x/YTtmfwnre3l4UfmGNOQe1rmKXtDAAarq3A6K7Bj/vps4ieF+smn8BBfzgew==
+   eAFNlDtolFEQRn8VCaiIWoitC9nFBUVRGzsNFhbaWWipBEULO61FJIKxTNQybYyCYoyWQiDBZDdECLFQtPEBJuIj4qvxHHI/+IvDzJ0797szc//dyTVVtbJulUn8EfxNa6vqKayHg8W6Nj4OTwpHsS85MwOzxapxFY3DRfMM9jh5m8H8k8XuwXbJVW8C1Jxm/Qxbx9qOFVJnk5zUOFTyXbdAvQVQ0/qjb13eUdfrRfc3Me/rgUtgfodc1/bcgLewCMbts41vnprqNUp99rwDHlWrvVrnc3Ksy949cwQqcqzvBXQhczXWYm+QlCZ2J/TjT0F9JvGtyZ5iE1/iTu9qcO4x/ifsdZgD+01P3rcAntdXy/Xncl7fWF1vC3t96HQgOunJfOfmN5HvQZt3Tn76baBhbddgGaJjPanL3K9ofIPv8ANWYJx48vMufofeP1fsO3y16rETrPfCPtgG++EA2Gf678XvgHYUBuEBvAHrqseczXZid2AI7sJt8NvwbjXzLlrffAx89/fkfIB6LLMZZv8UqKWGqHkZe6Ws1d8FmfFHZmh9mUcbv9573XfPGR6C0+A579gI59Dxe/G7y5vd5G57HWX/HjgTuQ/OJt/MMH5qnsBX6yzMg7+LvFkbLXu1d2c9VtB3NvaVGq0ra9/YfpfB/fT8Be3MIjmxfn/WZ//2bF3688T+Yl/BP7C/AXRuYa3ZWTgHv8/z0FewJ8/7+1bP+vSN+XvP/L3X3AvYGexWbA/8JG+atZrue5fn/Y/IN6Fv7CL5TfY9P1tyze8n3gLf7SHrX9hu2Z/Cet7eXhf+YI05B7VuYJe0MABqurcborsBP++mziJ4X6ya/wFCF+ZW
   </data>
  </layer>
  <layer id="2" name="Door1" width="20" height="20" visible="0">

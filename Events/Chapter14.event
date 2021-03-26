@@ -43,8 +43,8 @@ ALIGN 4
 
 MiscBasedEvents:
 CauseGameOverIfLordDies
-AFEV 0xC Boss1Killed 0x10
-AFEV 0xD Boss2Killed 0x11
+AFEV 0x0 Boss1Killed 0x10
+AFEV 0x0 Boss2Killed 0x11
 END_MAIN
 
 Boss1Killed:
@@ -98,7 +98,7 @@ UNIT Seth EphraimMasterLord Eirika Level(1, Ally, 0) [5,8] 0x00 0x00 0x0 0x00 [0
 UNIT
 
 MageMan:
-UNIT Renaldo MageKnight Eirika Level(10, Ally, 0) [8,9] 0x00 0x00 0x0 0x00 [Aircalibur, Fire, Mend] NoAI 
+UNIT Renaldo MageKnight Eirika Level(10, Ally, 1) [8,9] 0x00 0x00 0x0 0x00 [Aircalibur, Fire, Mend] NoAI 
 UNIT
 
 Bad:

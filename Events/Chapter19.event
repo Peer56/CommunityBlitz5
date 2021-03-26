@@ -26,9 +26,8 @@ TurnBasedEvents:
   TurnEventPlayer(0x00, EndlessPhantoms, 11, 255)
 END_MAIN
 
-
-
 LocationBasedEvents:
+Seize(7,0)
 END_MAIN
 
 MiscBasedEvents:

@@ -59,9 +59,25 @@ LOAD1 0x1 TheGang
 ENUN
 LOAD1 0x1 Baddies
 ENUN
+MUSC 0x25
+Text(Chapter1_Beginning)
 ENDA
 
 EndingScene:
+MUSC 31
+Text(Chapter1_Ending)
+CHECK_EVENTID 0x8
+BNE 21 s0 sC
+MNC2 1 //if lower village with Elixir was skipped, go to ch 2 
+// note that in ch 1 it would also turn flag 0x8 on if the villages were destroyed,
+// but because no enemies are set to attack the villages, it doesn't actually matter 
+GOTO 22
+LABEL 21
+MNC2 21 //else go to ch5x
+LABEL 22
+ENDA
+
+
 MNC2 1
 ENDA
 

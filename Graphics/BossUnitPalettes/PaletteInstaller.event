@@ -6,9 +6,69 @@ ALIGN 4
 Mulch_Mercenary:
 	#incbin "./_palettes/Mulch_Mercenary.lzpal" 
 
+Borgas_Rogue:
+	#incbin "./_palettes/Borgas_Rogue.lzpal" 
+
 Kitabei_Myrmidon:
 	#incbin "./_palettes/Kitabei_Myrmidon.lzpal" 
 
 Peter_Soldier:
 	#incbin "./_palettes/Peter_Soldier.lzpal" 
+
+Susie_Sage:
+	#incbin "./_palettes/Susie_Sage.lzpal" 
+
+Calanthia_Cavalier:
+	#incbin "./_palettes/Calanthia_Cavalier.lzpal" 
+
+Eusebios_Monk:
+	#incbin "./_palettes/Eusebios_Monk.lzpal" 
+
+Westley_Dancer:
+	#incbin "./_palettes/Westley_Dancer.lzpal" 
+
+Negaj_Hero:
+	#incbin "./_palettes/Negaj_Hero.lzpal" 
+
+Pinkus_Druid:
+	#incbin "./_palettes/Pinkus_Druid.lzpal" 
+
+Merlot_MageKnight:
+	#incbin "./_palettes/Merlot_MageKnight.lzpal" 
+
+Otto_Cavalier:
+	#incbin "./_palettes/Otto_Cavalier.lzpal" 
+
+Dark_Tovah_Druid:
+	#incbin "./_palettes/Dark_Tovah_Druid.lzpal" 
+
+Randal_Berserker:
+	#incbin "./_palettes/Randal_Berserker.lzpal" 
+
+Akari_Swordmaster:
+	#incbin "./_palettes/Akari_Swordmaster.lzpal" 
+
+Rhodes_Paladin:
+	#incbin "./_palettes/Rhodes_Paladin.lzpal" 
+
+Saramine_Sage:
+	#incbin "./_palettes/Saramine_Sage.lzpal" 
+
+DemiA_Shaman:
+	#incbin "./_palettes/DemiA_Shaman.lzpal" 
+
+DemiB_Shaman:
+	#incbin "./_palettes/DemiB_Shaman.lzpal" 
+
+DemiC_Shaman:
+	#incbin "./_palettes/DemiC_Shaman.lzpal" 
+
+Dihard_Wight:
+	#incbin "./_palettes/Dihard_Wight.lzpal" 
+
+Eusebios_Bishop:
+	#incbin "./_palettes/Eusebios_Bishop.lzpal" 
+
+Super_Mulch_Hero:
+	#incbin "./_palettes/Super_Mulch_Hero.lzpal" 
 

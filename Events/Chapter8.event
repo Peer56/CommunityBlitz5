@@ -36,7 +36,7 @@ Vendor(Shop2List, 14, 16)
 Armory(ArmoryList, 13, 5)
 Chest(BodyRing,24,6)
 Chest(LightRune,16,10)
-Chest(MemberCard,17,17)
+Chest(MemberCard,24,19)
 END_MAIN
 
 Village1:
@@ -70,7 +70,7 @@ CauseGameOverIfLordDies
 END_MAIN
 
 CheckSeize1:
-CHECK_EVENTID 0xF
+CHECK_EVENTID 0xC
 BEQ 0x0 0xc 0x0
   //if boat 2 is also seized
   CALL EndingScene
@@ -79,7 +79,7 @@ NoFade
 ENDA
 
 CheckSeize2:
-CHECK_EVENTID 0x10
+CHECK_EVENTID 0xB
 BEQ 0x0 0xc 0x0
   //if boat 1 is also seized
   CALL EndingScene

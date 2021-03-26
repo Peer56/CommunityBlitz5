@@ -33,6 +33,7 @@ POP
 
 ALIGN 4
 BattleQuoteList:
+BattleQuoteEntryBothWays(0,1,Mulch,AnyChar,MulchBattleQuote)
 QuoteListEnd
 
 ALIGN 4
@@ -43,17 +44,21 @@ DeathQuoteEntry(16,0xA,DemiA,GenericDeathQuote)
 DeathQuoteEntry(16,0xB,DemiB,GenericDeathQuote)
 DeathQuoteEntry(16,0xC,DemiC,GenericDeathQuote)
 DeathQuoteEntry(20,2,Ch21Boss,0)
-DeathQuoteEntry(0,2,Mulch,GenericDeathQuote)
+DeathQuoteEntry(0,2,Mulch,MulchDeathQuote)
 DeathQuoteEntry(2,2,Peter,GenericDeathQuote)
 DeathQuoteEntry(21,2,Borgas,GenericDeathQuote)
 DeathQuoteEntry(8,2,Merlot,GenericDeathQuote)
 DeathQuoteEntry(15,2,Darias,GenericDeathQuote)
+DeathQuoteEntry(5,2,Ch6Eusebios,GenericDeathQuote) //defend ch to end on boss death
+DeathQuoteEntry(13,0x10,Akari,GenericDeathQuote)
+DeathQuoteEntry(13,0x11,Rhodes,GenericDeathQuote)
 
 //death quotes for chapter logic
 DeathQuoteEntry(10, 10, Ch11Generics1, 0)
 DeathQuoteEntry(10, 10, Ch11Generics2, 0)
 DeathQuoteEntry(10, 10, Ch11Boss,      0)
 DeathQuoteEntry(6,GameOverFlag,Ouderen,OuderenCh6DeathQuote)
+DeathQuoteEntry(9,GameOverFlag,Sauvignon,GenericDeathQuote)
 
 //chapter-specific player unit death quotes
 
@@ -74,6 +79,7 @@ QuoteListEnd
 
 SetPromotionOptions(Soldier,Halberdier,General)
 SetPromotionOptions(Pupil_1,Mage_F,Shaman_F)
+SetPromotionOptions(Shaman_F,Druid_F,Summoner_F)
 
 ALIGN 4
 OceanSealClassList:
@@ -87,6 +93,7 @@ BYTE Mercenary Mercenary_F Myrmidon Myrmidon_F Fighter Pirate Brigand Cavalier C
 ALIGN 4
 
 PUSH
+
     // summoner list
     // up to 3 entries, more and we need to repoint
 
@@ -94,5 +101,16 @@ PUSH
         //   summoner summonee
         BYTE Chenin   CheninSummon
         BYTE Yara     YaraSummon
-        BYTE 0 0 // end
+        BYTE Zagan    ZaganSummon
+        BYTE 0        0 // end
+
+    // trainee promotion list
+    // fixed 3 entries, need asm rework for more
+
+    ORG $20704C
+        //   character level class   padding
+        BYTE Yara      10    Pupil_1 0
+        BYTE 0         10    0       0
+        BYTE 0         10    0       0
+
 POP

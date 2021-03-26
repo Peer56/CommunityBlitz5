@@ -69,6 +69,7 @@
 #define CHAPTER_21
 
 #define CHAPTER_5X
+#define CHAPTER_21X
 
 //Chapter Asset Defs
 
@@ -172,9 +173,9 @@
 #define AssetCh21Map              $62 // vanilla ch21 map
 #define AssetCh21MapChanges       $63 // vanilla ch21 map changes
 #define AssetCh21Data             $64 // vanilla eir ch21 data
-//                                $65 // vanilla ch21x map
-//                                $66 // vanilla ch21x map changes
-//                                $67 // vanilla eir ch21x data
+#define AssetCh21xMap             $65 // vanilla ch21x map
+#define AssetCh21xMapChanges      $66 // vanilla ch21x map changes
+#define AssetCh21xData            $67 // vanilla eir ch21x data
 #define AssetFortPalRedHiContrast $68
 //                                $69 // vanilla eph ch9 map
 //                                $6A // vanilla eph ch9 map changes
@@ -360,6 +361,7 @@
 
 #define CheninSummon 59
 #define YaraSummon 60
+#define ZaganSummon 61
 
 //Bosses
 #define Mulch 64
@@ -388,13 +390,14 @@
 #define DemiA 87
 #define DemiB 88
 #define DemiC 89
+#define SuperMulch 90
 
 //NPCs
 //start these at 96
 
 #define Ch6NPC 96
 #define Ch9Npcs1 97
-
+#define Sauvignon 98
 
 //Generics
 
@@ -431,7 +434,7 @@
 #define Ch16Enemies 158
 #define Ch16Generics2 159
 #define Ch17Generics1 160
-#define UnkChGenerics1 161
+#define Ch17Generics2 161
 #define Ch18Generics1 162
 #define Ch18Generics2 163
 #define Ch19Enemies 164
@@ -440,6 +443,7 @@
 #define Ch20Generics2 167
 #define Ch21Generics1 168
 #define Ch21Generics2 169
+#define UnkChGenerics1 170
 
 
 // Class Definitions
@@ -451,6 +455,7 @@
 #define Falcoknight FalcoKnight //grrrrrr
 #define MautheDoog Mauthedoog //grrrrrrrrrrrr
 #define Halberdier Cyclops_2 //good a spot as any
+#define WightBow Wight_Bow
 
 #define LordSwordAnimID 1
 #define LordUnarmedAnimID 2
@@ -461,7 +466,7 @@
 
 #define HoplonGuard HoplonShield //I too like naming things not what they're called
 #define LongBow Longbow
-
+#define Hellfang HellFang
 
 // Mug Defs
 
@@ -499,6 +504,7 @@
 #define RenaldoMug 32 		
 #define Ch14Playable2Mug 33 
 #define TheodoreMug 34 
+#define LamarMug TheodoreMug //bruh names are arbitrary changing the name def doesnt change the character name
 #define FranklinMug 35
 #define CharlesMug 36 
 #define HosayMug 37
@@ -572,4 +578,5 @@
 // Other Music
 #define TheFirstCampaign 0x30
 #define Lang2Requiem 0x3F
+#define IevanPolkka 0x40
 
