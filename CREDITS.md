@@ -25,5 +25,6 @@ adding yourself!
 - L95: made dracozombie mug
 - LaurentLacroix: made part of Vulture portrait
 - PhantomSentine: made GroupAI
+- Eldritch Abomination
 
 \*insert skill system credits here*
