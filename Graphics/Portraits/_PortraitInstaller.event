@@ -163,7 +163,7 @@ ALIGN 4
 AldricPortrait:
 #incext PortraitFormatter "Aldric.png"
 
-setMugEntry(BastionMug,BastionPortrait,2,5,3,3)
+setMugEntry(BastionMug,BastionPortrait,3,5,3,3)
 ALIGN 4
 BastionPortrait:
 #incext PortraitFormatter "Bastion.png"
