@@ -22,8 +22,11 @@ adding yourself!
 # Other
 
 - Peerless: made ch1 map
-- L95: made dracozombie mug
+- L95: dracozombie, mogall and cyclops portraits
 - LaurentLacroix: made part of Vulture portrait
 - PhantomSentine: made GroupAI
+- Eldritch Abomination: FE7 portraits with FE8 colors
+- DerTheVaporeon: portrait
+- hypergammaspaces: portrait
 
 \*insert skill system credits here*
