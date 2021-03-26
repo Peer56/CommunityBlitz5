@@ -199,7 +199,7 @@ UNIT
 
 BackReinforcements:
 UNIT Ch9Generics1 Cavalier 0x00 Level(14, Enemy, 1) [18,19] 0x00 0x00 0x0 0x00 [SteelLance,KillingEdge] PursueWithoutHeedAI
-UNIT Ch9Generics1 Knight 0x00 Level(14, Enemy, 1) [17,19] 0x00 0x00 0x0 0x00 [KillerLance] PursueWithoutHeedAI
+UNIT Ch9Generics1 Knight 0x00 Level(14, Enemy, 1) [17,19] 0x00 0x00 0x0 0x00 [BraveLance] PursueWithoutHeedAI
 UNIT Ch9Generics1 Mage 0x00 Level(14, Enemy, 1) [19,19] 0x00 0x00 0x0 0x00 [Elfire] PursueWithoutHeedAI
 UNIT
 
