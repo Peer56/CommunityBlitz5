@@ -504,6 +504,7 @@
 #define RenaldoMug 32 		
 #define Ch14Playable2Mug 33 
 #define TheodoreMug 34 
+#define LamarMug TheodoreMug //bruh names are arbitrary changing the name def doesnt change the character name
 #define FranklinMug 35
 #define CharlesMug 36 
 #define HosayMug 37
