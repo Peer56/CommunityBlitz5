@@ -195,12 +195,11 @@ Renaldo[X]
 Noellia's Knights true commander, he's[N]
 nonchalant about the surrounding mess.[X]
 
-## TheodoreName
-Theodore[X]
+## LamarName
+Lamar[X]
 
-## TheodoreDesc
-Theodore is theorising a[N]
-description.[X]
+## LamarDesc
+[X]
 
 ## FranklinName
 Franklin[X]
