@@ -70,6 +70,7 @@ TalkEvents:
 
 ALIGN 4
 TileEvents:
+    Door(5, 10)
     Chest(Fortify, 6, 7)
     END_MAIN
 
