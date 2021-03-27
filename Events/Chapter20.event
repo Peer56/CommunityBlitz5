@@ -237,8 +237,8 @@ UNIT Ch20Generics1 Sniper Ch20Boss Level(GenLvl, Enemy, 1) [6,2] 0x00 0x00 0x0 0
 UNIT Ch20Generics1 Sniper Ch20Boss Level(GenLvl, Enemy, 1) [10,2] 0x00 0x00 0x0 0x00 [SilverBow] PursueWithoutHeedAI 
 UNIT Ch20Generics1 Berserker Ch20Boss Level(GenLvl, Enemy, 1) [1,1] 0x2 0x00 0x0 0x00 [BattleAxe,BlueGem] LootingThiefAI 
 UNIT Ch20Generics1 Berserker Ch20Boss Level(GenLvl, Enemy, 1) [3,3] 0x00 0x00 0x0 0x00 [SilverAxe] LootingThiefAI 
-UNIT Ch20Generics1 Druid_F Ch20Boss Level(GenLvl,Enemy,1) [4,4] 0x2 0x00 0x00 0x0 0x00 [Luna,Rescue] NoAI
-UNIT Ch20Generics1 Bishop_F Ch20Boss Level(GenLvl,Enemy,1) [5,9] 0x2 0x00 0x00 0x0 0x00 [Purge,Sleep] GuardTileAI
+UNIT Ch20Generics1 Druid_F Ch20Boss Level(GenLvl,Enemy,1) [4,4] 0x2 0x00 0x00 0x00 [Luna,Rescue] NoAI
+UNIT Ch20Generics1 Bishop_F Ch20Boss Level(GenLvl,Enemy,1) [5,9] 0x2 0x00 0x00 0x00 [Purge,Sleep] GuardTileAI
 UNIT Ch20Generics1 General Miniboss Level(GenLvl,Enemy,1) [3,23] 0x00 0x00 0x0 0x00 [DragonAxe,Horseslayer] AttackInRangeAI
 UNIT
 
