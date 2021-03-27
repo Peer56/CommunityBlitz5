@@ -115,8 +115,9 @@ EndingScene:
 //go to next chapter
 COUNTER_CHECK 0x0
 SVAL s1 5
-IFEQ sC s1 7
-	SVAL s3 Sieglinde
+IFEQ 7 sC s1
+	//If all points seized give item
+	SVAL s3 Audhulma //Sieglinde
 	GIVEITEMTO Gunborg
 LABEL 7
 MNC2 20
@@ -148,21 +149,20 @@ ENUN
 
 ENUF Mirage2Flag
 ENUF Mirage3Flag
-ENUF Mirage4Flag
 
 COUNTER_INC 0x0
 
 CURSOR [18,21]
-STAL3 12
+STAL3 24
 CURSOR [12,21]
-STAL3 12
+STAL3 24
 NoFade
 ENDA
 
 ClearMirage2:
 TILECHANGE Mirage2ID
 COUNTER_INC 0x0
-CALL StartMirage5
+CALL Counter_Mirage
 NoFade
 ENDA
 
@@ -172,40 +172,47 @@ STAL3 4
 TILECHANGE Mirage3ID
 STAL3 4
 COUNTER_INC 0x0
-CALL StartMirage5
+CALL Counter_Mirage
 NoFade
 ENDA
 
 ClearMirage4:
 TILECHANGE Mirage4ID
-STAL3 4
+STAL3 24
 COUNTER_INC 0x0
-CALL StartMirage5
+CALL Counter_Mirage
 NoFade
 ENDA
 
-StartMirage5:
-SVAL s1 True
-CHECK_EVENTID Mirage5Flag
-IFNE 4 sC s1
-	GOTO 1
-LABEL 4
-SVAL s1 True
-CHECK_EVENTID FinalMirageFlag
-IFNE 3 sC s1
-	GOTO 1
-LABEL 3
-//unset flag if over 3 points seized
+Counter_Mirage:
 COUNTER_CHECK 0x0
-SVAL 0x1 3
-IFLT 2 sC s1
+SVAL s1 2
+IFEQ 3 sC s1
+	ENUF Mirage4Flag
+	CAMERA [2,18]
+	STAL3 12
+	LOAD1 0x0 MirageEnemies4
+	ENUN
 	GOTO 1
+
+LABEL 3
+COUNTER_CHECK 0x0
+SVAL s1 3
+IFEQ 2 sC s1 
+	ENUF Mirage5Flag
+	CAMERA [2,7]
+	STAL3 4
+	LOAD1 0x0 MirageEnemies5
+	ENUN
+	GOTO 1
+
 LABEL 2
-ENUF Mirage5Flag
-CAMERA [2,7]
-STAL3 4
-LOAD1 0x0 MirageEnemies5
-ENUN
+/*
+COUNTER_CHECK 0x0
+SVAL s1 4
+IFEQ 1 sC s1
+	//do stuff
+*/	
 LABEL 1
 ENDA
 
