@@ -113,6 +113,12 @@ ENDA
 
 EndingScene:
 //go to next chapter
+COUNTER_CHECK 0x0
+SVAL s1 5
+IFEQ sC s1 7
+	SVAL s3 Sieglinde
+	GIVEITEMTO Gunborg
+LABEL 7
 MNC2 20
 ENDA
 
@@ -205,6 +211,7 @@ ENDA
 
 ClearMirage5:
 TILECHANGE Mirage5ID
+COUNTER_INC 0x0
 CALL ClearFinalMirage
 NoFade
 ENDA
