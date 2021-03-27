@@ -317,3 +317,8 @@ setMugEntry(MarissaMug,MarissaPortrait,2,6,3,4)
 ALIGN 4
 MarissaPortrait:
 #incext PortraitFormatter "Marissa.png"
+
+setMugEntry(FatuusMug,FatuusPortrait,2,6,2,4)
+ALIGN 4
+FatuusPortrait:
+#incext PortraitFormatter "Fatuus.png"
