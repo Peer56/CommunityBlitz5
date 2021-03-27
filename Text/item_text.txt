@@ -1,0 +1,48 @@
+## MasterKeyName
+Master Key[X]
+
+## MasterKeyDesc
+A key capable of unlocking[N]
+both doors and chests.[X]
+
+## MineName
+Mine[X]
+
+## MineDesc
+A trap that damages units[N]
+that step on it.[X]
+
+## LightRuneName
+Light Rune[X]
+
+## LightRuneDesc
+A device that blocks units[N]
+from entering spaces.[X]
+
+## FillasMightName
+Filla's Might[X]
+
+## FillasMightDesc
+A dance that increases[N]
+allies' attack for a turn.[X]
+
+## NinissGraceName
+Ninis's Grace[X]
+
+## NinissGraceDesc
+A dance that increases[N]
+allies' defenses for a turn.[X]
+
+## ThorsIreName
+Thor's Ire[X]
+
+## ThorsIreDesc
+A dance that increases[N]
+critical hit % for a turn.[X]
+
+## SetsLitanyName
+Set's Litany[X]
+
+## SetsLitanyDesc
+A dance that increases[N]
+allies' dodge for a turn.[X]
