@@ -1,7 +1,7 @@
 
 # Community Blitz 5: ~~Madam Gunborg's Blitzarre Adventure~~ Redemption
 
-[Main discussion on Fire Emblem Universe]() //todo: post link here
+[Main discussion on Fire Emblem Universe](https://feuniverse.us/t/fe8-community-blitz-5-redemption-v1-1/11674) //todo: post link here
 
 ## What is this?
 
