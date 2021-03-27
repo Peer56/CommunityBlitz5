@@ -50,13 +50,14 @@ DeathQuoteEntry(21,2,Borgas,GenericDeathQuote)
 DeathQuoteEntry(8,2,Merlot,GenericDeathQuote)
 DeathQuoteEntry(15,2,Darias,GenericDeathQuote)
 DeathQuoteEntry(5,2,Ch6Eusebios,GenericDeathQuote) //defend ch to end on boss death
-DeathQuoteEntry(13,0x10,Akari,GenericDeathQuote)
-DeathQuoteEntry(13,0x11,Rhodes,GenericDeathQuote)
+DeathQuoteEntry(23,0x2,SuperMulch,GenericDeathQuote)
 
 //death quotes for chapter logic
 DeathQuoteEntry(10, 10, Ch11Generics1, 0)
 DeathQuoteEntry(10, 10, Ch11Generics2, 0)
 DeathQuoteEntry(10, 10, Ch11Boss,      0)
+DeathQuoteEntry(13,0x10,Akari,GenericDeathQuote)
+DeathQuoteEntry(13,0x11,Rhodes,GenericDeathQuote)
 DeathQuoteEntry(6,GameOverFlag,Ouderen,OuderenCh6DeathQuote)
 DeathQuoteEntry(9,GameOverFlag,Sauvignon,GenericDeathQuote)
 
