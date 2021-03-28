@@ -243,7 +243,7 @@ ALIGN 4
 AgvaldtPortrait:
 #incext PortraitFormatter "Agvaldt.png"
 
-setMugEntry(XholtMug,XholtPortrait,2,6,2,4)
+setMugEntry(XholtMug,XholtPortrait,2,5,3,3)
 ALIGN 4
 XholtPortrait:
 #incext PortraitFormatter "Xholt.png"
