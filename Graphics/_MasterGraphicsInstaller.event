@@ -80,3 +80,7 @@ SwordAnim(LordSwordAnimID)
 UnarmedAnim(LordUnarmedAnimID)
 EndAnim
 
+Swordmaster_F_Anims:
+SwordAnim(0x17)
+MagicAnim(0x17) //for barla's light rank
+UnarmedAnim(0x18)
