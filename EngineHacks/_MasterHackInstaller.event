@@ -123,6 +123,9 @@ POP
   //Escape-Arrive
   #include "ExternalHacks/EscapeArrive/EscapeArrive.event"
   
+  //Everyone Can Seize
+  #include "ExternalHacks/EveryoneCanSeize/EveryoneSeize.event"
+  
   //Debuffs
   #include "Necessary/SuspendDebuffs/Debuffs.event"
 

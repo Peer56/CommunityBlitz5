@@ -385,7 +385,7 @@
 #define Borgas 82
 #define Dihard 83
 #define Ch19Eusebios 84
-#define Ch20Boss 85
+#define Fatuus 85
 #define Ch21Boss 86
 #define DemiA 87
 #define DemiB 88
@@ -539,7 +539,7 @@
 #define BorgasMug 82
 #define DihardMug 83
 #define Ch20BossMug 84
-#define Ch21BossMug 85
+#define FatuusMug 85
 #define DemiAMug 87
 #define DemiBMug 88
 #define DemiCMug 89
