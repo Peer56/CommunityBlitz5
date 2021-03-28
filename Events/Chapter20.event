@@ -117,9 +117,11 @@ COUNTER_CHECK 0x0
 SVAL s1 5
 IFEQ 7 sC s1
 	//If all points seized give item
-	SVAL s3 Audhulma //Sieglinde
+	SVAL s3 Garm
 	GIVEITEMTO Gunborg
 LABEL 7
+SVAL s3 Sieglinde
+GIVEITEMTO Gunborg
 MNC2 20
 ENDA
 
