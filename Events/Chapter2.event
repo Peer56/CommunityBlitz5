@@ -94,8 +94,8 @@ EscapePointPointerTable(1,Chapter2EnemyEscapePoints)
 
 
 CavalierReinforcementUnit:
-UNIT 0x73 Cavalier 0x00 Level(2,Enemy,True) [11,7] 0x00 0x00 0x0 0x00 [IronLance] PursueWithoutHeedAI
-UNIT 0x73 Cavalier 0x00 Level(2,Enemy,True) [13,7] 0x00 0x00 0x0 0x00 [IronSword] PursueWithoutHeedAI
+UNIT Ch2Generics1 Cavalier 0x00 Level(2,Enemy,True) [11,7] 0x00 0x00 0x0 0x00 [IronLance] PursueWithoutHeedAI
+UNIT Ch2Generics1 Cavalier 0x00 Level(2,Enemy,True) [13,7] 0x00 0x00 0x0 0x00 [IronSword] PursueWithoutHeedAI
 UNIT
 
 // Player Units (Pre-loaded ch1 crew)
