@@ -1,0 +1,19 @@
+/*
+List of all known location event command ids
+LOCA eventid offset [x,y] commandID //<--- this part
+
+0x10	Visit (House)
+0x11	Seize
+0x12	Door
+0x13	Escape (Hack)
+0x14	Chest
+0x16	Armory
+0x17	Vendor
+0x18	SecretShop
+0x19	Arrive (Hack)?
+
+0x20	Visit (Village)
+
+0x22	Stairs (Hack)?
+0x23	Occupy (Hack,seize without the lord requirement)
+*/

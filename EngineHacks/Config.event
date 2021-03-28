@@ -132,6 +132,10 @@
 // /this adds entries to the Unit Menu and normally conflicts with Lunge and Stairs. Install here to avoid the conflicts.
 // #define ESCAPE_ARRIVE
 
+// If uncommented, Everyone Can Seize will be implemented.
+// This adds a second seize command that all units can use
+#define EVERYONE_SEIZE
+
 // If uncommented, Leadership Stars will be implemented.
 // Go to LeadershipStars/LeadershipStars.event to edit settings.
 // #define LEADERSHIP_STARS
