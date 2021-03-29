@@ -461,6 +461,7 @@
 #define LordUnarmedAnimID 2
 #define HalbLanceAnimID 3
 #define HalbUnarmedAnimID 4
+#define TroubadourMagicAnimID 6
 
 // Item Definitions
 
