@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.4" tiledversion="1.4.3" orientation="orthogonal" renderorder="right-down" width="35" height="33" tilewidth="16" tileheight="16" infinite="0" nextlayerid="6" nextobjectid="1">
  <tileset firstgid="1" name="5F006061" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
-  <image source="../../tilesets/5F006061.png" width="512" height="512"/>
+  <image source="5F006061.png" width="512" height="512"/>
  </tileset>
  <layer id="1" name="Tile Layer 1" width="35" height="33">
   <properties>
