@@ -69,6 +69,9 @@ Dihard_Wight:
 Eusebios_Bishop:
 	#incbin "./_palettes/Eusebios_Bishop.lzpal" 
 
+Fatuus_Warrior:
+	#incbin "./_palettes/Fatuus_Warrior.lzpal" 
+
 Super_Mulch_Hero:
 	#incbin "./_palettes/Super_Mulch_Hero.lzpal" 
 

@@ -92,6 +92,10 @@
 	setPalette(0xA7,Eusebios_Bishop)
 	setCBSP(0xA7,Ch19Eusebios,0x3,Bishop)
 
+// Fatuus_Warrior
+	setPalette(0xA8,Fatuus_Warrior)
+	setCBSP(0xA8,Fatuus,0x3,Warrior)
+
 // Super_Mulch_Hero
 	setPalette(0xAA,Super_Mulch_Hero)
 	setCBSP(0xAA,SuperMulch,0x3,Hero)
