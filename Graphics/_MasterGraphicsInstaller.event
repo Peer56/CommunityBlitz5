@@ -45,7 +45,9 @@
 {
 #include "HalbUnarmedAnim.event" //written over eirika lord unarmed
 }
-
+{
+#include "TroubadourMagicAnim.event"
+}
 ALIGN 4
 HalbStandingMapSprite:
 #incext Png2Dmp "HalbStand.png" --lz77
@@ -80,3 +82,14 @@ SwordAnim(LordSwordAnimID)
 UnarmedAnim(LordUnarmedAnimID)
 EndAnim
 
+Swordmaster_F_Anims:
+SwordAnim(0x17)
+MagicAnim(0x17) //for barla's light rank
+UnarmedAnim(0x18)
+EndAnim
+
+TroubadourAnims:
+StaffAnim(0x86)
+MagicAnim(TroubadourMagicAnimID)
+UnarmedAnim(0x85)
+EndAnim

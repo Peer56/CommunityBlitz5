@@ -1,0 +1,14 @@
+## Chapter20Village1
+[OpenMidRight][LoadActive]
+[OpenMidLeft][LoadMan5]
+That madman has been torturing [N]
+us with this endless sandstorm [AN]
+and his playlist of sandstorm related [N]
+music. I haven't slept in days! [AN]
+Please put an end to this madness![A][X]
+
+## Chapter20Village2
+[OpenMidRight][LoadActive]
+[OpenMidLeft][LoadWoman2]
+I don't need this anymore.[AN]
+Take it.[A][X]

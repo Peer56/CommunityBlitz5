@@ -21,8 +21,10 @@ EventPointerTable(AssetCh20Data,Chapter20Events)
 	#define SeizeFlag 0xE
 	//#define SecretShopFlag 0xE
 
+	//Units
+	#define Miniboss Ch20Generics2
 	//Other
-	#define Ch20GenericsLvl 13
+	#define GenLvl 15
 
 Chapter20Events:
 POIN TurnBasedEvents
@@ -64,11 +66,11 @@ Vendor(ch20Vendor,11,10)
 Armory(ch20Armory,6,22)
 Village(0x0,Ch20MiddleVillage,8,11)
 Village(0x0,Ch20CornerVillage,1,22)
-Seize(Mirage1Flag,ClearMirage1,16,13)
-Seize(Mirage2Flag,ClearMirage2,18,21)
-Seize(Mirage3Flag,ClearMirage3,12,21)
-Seize(Mirage4Flag,ClearMirage4,2,18)
-Seize(Mirage5Flag,ClearMirage5,2,7)
+Seize2(Mirage1Flag,ClearMirage1,16,13)
+Seize2(Mirage2Flag,ClearMirage2,18,21)
+Seize2(Mirage3Flag,ClearMirage3,12,21)
+Seize2(Mirage4Flag,ClearMirage4,2,18)
+Seize2(Mirage5Flag,ClearMirage5,2,7)
 Seize(SeizeFlag,SeizeEvent,8,2)
 END_MAIN
 
@@ -90,9 +92,12 @@ END_MAIN
 ALIGN 4
 
 BeginningScene:
+WEATHER SandStorm
 LOAD1 0x1 Units
 ENUN
 LOAD1 0x1 StartingEnemies
+ENUN
+LOAD1 0x1 MirageEnemies1
 ENUN
 
 ENUT Mirage2Flag
@@ -102,13 +107,21 @@ ENUT Mirage5Flag
 ENUT FinalMirageFlag
 
 COUNTER_SET 0x0 0x0
-WEATHER SandStorm
-GotoPrepScreen
+PREP
 NoFade
 ENDA
 
 EndingScene:
 //go to next chapter
+COUNTER_CHECK 0x0
+SVAL s1 5
+IFEQ 7 sC s1
+	//If all points seized give item
+	SVAL s3 Garm
+	GIVEITEMTO Gunborg
+LABEL 7
+SVAL s3 Sieglinde
+GIVEITEMTO Gunborg
 MNC2 20
 ENDA
 
@@ -119,11 +132,11 @@ CALL EndingScene
 ENDA
 
 Ch20MiddleVillage:
-//VillageEventItem(textid,Village,BraveAxe)
+VillageEventItem(Chapter20Village1,Village,BraveAxe)
 ENDA
 
 Ch20CornerVillage:
-//VillageEventMoney(textid,Village,10000)
+VillageEventMoney(Chapter20Village2,Village,10000)
 ENDA
 
 ClearMirage1:
@@ -131,20 +144,27 @@ CAMERA [14,16]
 STAL3 5
 TILECHANGE Mirage1ID
 STAL3 10
-LOAD1 0x0 MirageEnemies1
+LOAD1 0x0 MirageEnemies2
 ENUN
+LOAD1 0x0 MirageEnemies3
+ENUN
+
 ENUF Mirage2Flag
 ENUF Mirage3Flag
-ENUF Mirage4Flag
 
 COUNTER_INC 0x0
+
+CURSOR [18,21]
+STAL3 24
+CURSOR [12,21]
+STAL3 24
 NoFade
 ENDA
 
 ClearMirage2:
 TILECHANGE Mirage2ID
 COUNTER_INC 0x0
-CALL StartMirage5
+CALL Counter_Mirage
 NoFade
 ENDA
 
@@ -154,45 +174,53 @@ STAL3 4
 TILECHANGE Mirage3ID
 STAL3 4
 COUNTER_INC 0x0
-CALL StartMirage5
+CALL Counter_Mirage
 NoFade
 ENDA
 
 ClearMirage4:
 TILECHANGE Mirage4ID
-STAL3 4
+STAL3 24
 COUNTER_INC 0x0
-CALL StartMirage5
+CALL Counter_Mirage
 NoFade
 ENDA
 
-StartMirage5:
-SVAL s1 True
-CHECK_EVENTID Mirage5Flag
-IFNE 4 sC s1
-	GOTO 1
-LABEL 4
-SVAL s1 True
-CHECK_EVENTID FinalMirageFlag
-IFNE 3 sC s1
-	GOTO 1
-LABEL 3
-//unset flag if over 3 points seized
+Counter_Mirage:
 COUNTER_CHECK 0x0
-SVAL 0x1 3
-IFLT 2 sC s1
+SVAL s1 2
+IFEQ 3 sC s1
+	ENUF Mirage4Flag
+	CAMERA [2,18]
+	STAL3 12
+	LOAD1 0x0 MirageEnemies4
+	ENUN
 	GOTO 1
+
+LABEL 3
+COUNTER_CHECK 0x0
+SVAL s1 3
+IFEQ 2 sC s1 
+	ENUF Mirage5Flag
+	CAMERA [2,7]
+	STAL3 4
+	LOAD1 0x0 MirageEnemies5
+	ENUN
+	GOTO 1
+
 LABEL 2
-ENUF Mirage5Flag
-CAMERA [2,7]
-STAL3 4
-LOAD1 0x0 MirageEnemies5
-ENUN
+/*
+COUNTER_CHECK 0x0
+SVAL s1 4
+IFEQ 1 sC s1
+	//do stuff
+*/	
 LABEL 1
 ENDA
 
 ClearMirage5:
 TILECHANGE Mirage5ID
+COUNTER_INC 0x0
 CALL ClearFinalMirage
 NoFade
 ENDA
@@ -220,49 +248,79 @@ NewAllies:
 UNIT
 
 StartingEnemies:
-UNIT Ch20Generics2 Maelduin 0x00 Level(13, Enemy, 1) [16,13] 0x00 0x00 0x0 0x00 [SilverAxe] GuardTileAI 
-UNIT Ch20Generics1 Sniper Ch20Boss Level(Ch20GenericsLvl, Enemy, 1) [12,8] 0x00 0x00 0x0 0x00 [Longbow] AttackInRangeAI 
-UNIT Ch20Generics1 Sniper Ch20Boss Level(Ch20GenericsLvl, Enemy, 1) [6,2] 0x00 0x00 0x0 0x00 [SilverBow] AttackInRangeAI 
-UNIT Ch20Generics1 Sniper Ch20Boss Level(Ch20GenericsLvl, Enemy, 1) [10,2] 0x00 0x00 0x0 0x00 [SilverBow] AttackInRangeAI 
-UNIT Ch20Generics1 Sage Ch20Boss Level(Ch20GenericsLvl, Enemy, 1) [19,16] 0x00 0x00 0x0 0x00 [Elfire] ChaseOnceApproachedAI 
-UNIT Ch20Generics1 Wight Ch20Boss Level(Ch20GenericsLvl, Enemy, 1) [13,14] 0x00 0x00 0x0 0x00 [SilverLance] DefaultAI 
-UNIT Ch20Generics1 Wight Ch20Boss Level(Ch20GenericsLvl, Enemy, 1) [17,15] 0x00 0x00 0x0 0x00 [SilverLance] DefaultAI 
-UNIT Ch20Generics1 Warrior Ch20Boss Level(Ch20GenericsLvl, Enemy, 1) [12,15] 0x00 0x00 0x0 0x00 [Swordreaver] DefaultAI 
-UNIT Ch20Generics1 Druid Ch20Boss Level(Ch20GenericsLvl, Enemy, 1) [15,11] 0x00 0x00 0x0 0x00 [Fenrir] DefaultAI 
-UNIT Ch20Generics1 Berserker Ch20Boss Level(Ch20GenericsLvl, Enemy, 1) [1,1] 0x00 0x00 0x0 0x00 [SilverAxe] LootingThiefAI 
-UNIT Ch20Generics1 Berserker Ch20Boss Level(Ch20GenericsLvl, Enemy, 1) [3,3] 0x00 0x00 0x0 0x00 [SilverAxe] LootingThiefAI 
+UNIT Ch20Generics1 Sniper Fatuus Level(GenLvl, Enemy, 1) [12,8] 0x00 0x00 0x0 0x00 [Longbow] AttackInRangeAI 
+UNIT Ch20Generics1 Sniper Fatuus Level(GenLvl, Enemy, 1) [6,2] 0x00 0x00 0x0 0x00 [SilverBow] PursueWithoutHeedAI 
+UNIT Ch20Generics1 Sniper Fatuus Level(GenLvl, Enemy, 1) [10,2] 0x00 0x00 0x0 0x00 [SilverBow] PursueWithoutHeedAI 
+UNIT Ch20Generics1 Berserker Fatuus Level(GenLvl, Enemy, 1) [1,1] 0x2 0x00 0x0 0x00 [BattleAxe,BlueGem] LootingThiefAI 
+UNIT Ch20Generics1 Berserker Fatuus Level(GenLvl, Enemy, 1) [3,3] 0x00 0x00 0x0 0x00 [SilverAxe] LootingThiefAI 
+UNIT Ch20Generics1 Druid_F Fatuus Level(GenLvl,Enemy,1) [4,4] 0x2 0x00 0x00 0x00 [Luna,Rescue] NoAI
+UNIT Ch20Generics1 Bishop_F Fatuus Level(GenLvl,Enemy,1) [5,9] 0x2 0x00 0x00 0x00 [Purge,Sleep] GuardTileAI
+UNIT Ch20Generics1 General Miniboss Level(GenLvl,Enemy,1) [3,23] 0x00 0x00 0x0 0x00 [DragonAxe,Horseslayer] AttackInRangeAI
 UNIT
 
 MirageEnemies1:
-UNIT Ch20Generics2 Maelduin 0x00 Level(13, Enemy, 1) [18,21] 0x00 0x00 0x0 0x00 [SilverAxe] GuardTileAI 
-UNIT Ch20Generics2 Maelduin 0x00 Level(13, Enemy, 1) [12,21] 0x00 0x00 0x0 0x00 [SilverAxe] GuardTileAI 
-UNIT Ch20Generics2 Maelduin 0x00 Level(13, Enemy, 1) [2,18] 0x00 0x00 0x0 0x00 [SilverAxe] GuardTileAI 
-UNIT Ch20Generics1 Sniper Ch20Boss Level(Ch20GenericsLvl,Enemy,1) [12,24] 0x00 0x00 0x0 0x00 [SilverBow] NoAI
-UNIT Ch20Generics1 Sniper Ch20Boss Level(Ch20GenericsLvl,Enemy,1) [18,24] 0x00 0x00 0x0 0x00 [SilverBow] NoAI
-UNIT Ch20Generics1 General Ch20Boss Level(Ch20GenericsLvl,Enemy,1) [3,23] 0x00 0x00 0x0 0x00 [DragonAxe,Horseslayer] AttackInRangeAI
-UNIT Ch20Generics1 Halberdier Ch20Boss Level(Ch20GenericsLvl,Enemy,1) [6,18] 0x00 0x00 0x0 0x00 [SilverLance] ChaseOnceApproachedAI
-UNIT Ch20Generics1 Halberdier Ch20Boss Level(Ch20GenericsLvl,Enemy,1) [8,16] 0x00 0x00 0x0 0x00 [Spear] ChaseOnceApproachedAI
+UNIT Miniboss Berserker 0x0 Level(11, Enemy, 1) [16,13] 0x00 0x00 0x0 0x00 [BraveAxe] NeverMoveAI 
+UNIT Ch20Generics1 Halberdier Miniboss Level(GenLvl,Enemy,1) [14,11] 0x00 0x00 0x0 0x00 [ShortSpear] AttackInRangeAI
+UNIT Ch20Generics1 Halberdier Miniboss Level(GenLvl,Enemy,1) [16,11] 0x00 0x00 0x0 0x00 [SteelLance] PursueWithoutHeedAI
+UNIT Ch20Generics1 Warrior Miniboss Level(GenLvl,Enemy,1) [15,14] 0x00 0x00 0x0 0x00 [HandAxe] AttackInRangeAI
+UNIT Ch20Generics1 Warrior Miniboss Level(GenLvl,Enemy,1) [17,14] 0x00 0x00 0x0 0x00 [Halberd] PursueWithoutHeedAI
+UNIT Ch20Generics1 Sniper Miniboss Level(GenLvl,Enemy,1) [13,14] 0x00 0x00 0x0 0x00 [Longbow] AttackInRangeAI
+UNIT Ch20Generics1 Paladin Miniboss Level(GenLvl,Enemy,1) [13,15] 0x00 0x00 0x0 0x00 [SteelSword] ChaseOnceApproachedAI
+UNIT Ch20Generics1 Paladin Miniboss Level(GenLvl,Enemy,1) [19,15] 0x00 0x00 0x0 0x00 [SteelLance] ChaseOnceApproachedAI
 UNIT
 
 MirageEnemies2:
+UNIT Miniboss Swordmaster 0x0 Level(12, Enemy, 1) [18,21] 0x00 0x00 0x0 0x00 [LightBrand] NeverMoveAI
+UNIT Ch20Generics1 Sniper Miniboss Level(GenLvl,Enemy,1) [18,23] 0x00 0x00 0x0 0x00 [SilverBow] NoAI
+UNIT Ch20Generics1 General Miniboss Level(GenLvl,Enemy,1) [18,20] 0x00 0x0 0x0 0x0 [ShortSpear] NeverMoveAI
+UNIT Ch20Generics1 Warrior Miniboss Level(GenLvl,Enemy,1) [18,18] 0x0 0x0 0x0 0x0 [SteelAxe] NoAI
+UNIT Ch20Generics1 Sage Miniboss Level(GenLvl,Enemy,1) [16,22] 0x0 0x0 0x0 0x00 [Divine] ChaseOnceApproachedAI
+UNIT Ch20Generics1 Paladin Miniboss Level(GenLvl,Enemy,1) [16,20] 0x0 0x0 0x0 0x0 [SteelSword] AttackInRangeAI
+UNIT Ch20Generics1 Halberdier Miniboss Level(GenLvl,Enemy,1) [17,20] 0x0 0x0 0x0 0x0 [HeavySpear] ChaseOnceApproachedAI
 UNIT
 
 MirageEnemies3:
-UNIT
+UNIT Miniboss Halberdier 0x00 Level(13, Enemy, 1) [12,21] 0x00 0x00 0x0 0x00 [Spear] GuardTileAI 
+UNIT Ch20Generics1 Sniper Miniboss Level(GenLvl,Enemy,1) [12,24] 0x00 0x00 0x0 0x00 [SilverBow] AttackInRangeAI
+UNIT Ch20Generics1 Sage Miniboss Level(GenLvl,Enemy,1) [14,24] 0x00 0x00 0x0 0x00 [Thunder,Physic] AttackInRangeAI
+UNIT Ch20Generics1 WyvernKnight Miniboss Level(GenLvl,Enemy,1) [9,24] 0x0 0x0 0x0 0x0 [Axereaver] AttackInRangeAI
+UNIT Ch20Generics1 Druid Miniboss Level(GenLvl,Enemy,1) [8,20] 0x0 0x0 0x0 0x00 [Nosferatu] AttackInRangeAI
+UNIT Ch20Generics1 Hero Miniboss Level(GenLvl,Enemy,1) [11,18] 0x0 0x0 0x0 0x0 [LightBrand] NoAI
+UNIT Ch20Generics1 Warrior Miniboss Level(GenLvl,Enemy,1) [14,21] 0x0 0x0 0x0 0x0 [Tomahawk] NoAI
+UNIT Ch20Generics1 General Miniboss Level(GenLvl,Enemy,1) [12,21] 0x0 0x0 0x0 0x0 [ShortSpear,Horseslayer] NeverMoveAI
+UNIT Ch20Generics1 Paladin Miniboss Level(GenLvl,Enemy,1) [9,18] 0x0 0x0 0x0 0x0 [Armorslayer] ChaseOnceApproachedAI
+UNIT 
 
 MirageEnemies4:
+UNIT Miniboss Sage_F 0x00 Level(14, Enemy, 1) [2,18] 0x00 0x00 0x0 0x00 [Fimbulvetr] GuardTileAI 
+UNIT Ch20Generics1 FalcoKnight Miniboss Level(GenLvl,Enemy,1) [0,18] 0x00 0x00 0x0 0x00 [SilverLance] ChaseOnceApproachedAI
+UNIT Ch20Generics1 FalcoKnight Miniboss Level(GenLvl,Enemy,1) [0,16] 0x00 0x00 0x0 0x00 [Spear] AttackInRangeAI
+UNIT Ch20Generics1 GreatKnight Miniboss Level(GenLvl,Enemy,1) [4,19] 0x00 0x00 0x0 0x00 [BrightLance] AttackInRangeAI
+UNIT Ch20Generics1 Swordmaster Miniboss Level(GenLvl,Enemy,1) [3,19] 0x00 0x00 0x0 0x00 [ShadowKiller,SilverBlade] AttackInRangeAI
+UNIT Ch20Generics1 Sniper Miniboss Level(GenLvl,Enemy,1) [2,19] 0x00 0x00 0x0 0x00 [BeaconBow] AttackInRangeAI
+UNIT Ch20Generics1 Warrior Miniboss Level(GenLvl,Enemy,1) [3,15] 0x00 0x00 0x0 0x00 [FiendCleaver] PursueWithoutHeedAI
+UNIT Ch20Generics1 Hero Miniboss Level(GenLvl,Enemy,1) [2,14] 0x00 0x0 0x0 0x0 [WindSword] ChaseOnceApproachedAI
+UNIT Ch20Generics1 Sage Miniboss Level(GenLvl,Enemy,1) [2,16] 0x00 0x0 0x0 0x0 [Fimbulvetr] ChaseOnceApproachedAI
 UNIT
 
 MirageEnemies5:
-UNIT Ch20Generics2 Maelduin Ch20Boss Level(Ch20GenericsLvl,Enemy,True) [2,7] 0x00 0x00 0x0 0x00 [SilverAxe] NeverMoveAI
+UNIT Miniboss Paladin_F Miniboss Level(15,Enemy,True) [2,7] 0x00 0x00 0x0 0x00 [Spear,BraveLance] NeverMoveAI
+UNIT Ch20Generics1 WyvernLord Miniboss Level(GenLvl,Enemy,True) [0,2] 0x00 0x00 0x0 0x00 [SilverLance] AttackInRangeAI
+UNIT Ch20Generics1 WyvernLord Miniboss Level(GenLvl,Enemy,True) [2,2] 0x00 0x00 0x0 0x00 [SilverLance] AttackInRangeAI
+UNIT Ch20Generics1 Halberdier Miniboss Level(GenLvl,Enemy,True) [3,6] 0x00 0x00 0x0 0x00 [SilverLance] ChaseOnceApproachedAI
+UNIT Ch20Generics1 Halberdier Miniboss Level(GenLvl,Enemy,True) [0,6] 0x00 0x00 0x0 0x00 [Spear] AttackInRangeAI
+UNIT Ch20Generics1 Warrior Miniboss Level(GenLvl,Enemy,True) [1,8] 0x0 0x0 0x0 0x0 [Hammer] AttackInRangeAI
+UNIT Ch20Generics1 Hero Miniboss Level(GenLvl,Enemy,1) [3,9] 0x0 0x0 0x0 0x0 [Armorslayer] AttackInRangeAI
+UNIT Ch20Generics1 Sniper Miniboss Level(GenLvl,Enemy,1) [4,8] 0x0 0x0 0x0 0x0 [SilverBow] ChaseOnceApproachedAI
+UNIT Ch20Generics1 Sniper Miniboss Level(GenLvl,Enemy,1) [2,4] 0x0 0x0 0x0 0x0 [Longbow] AttackInRangeAI
 UNIT
 
 FinalMirageEnemies:
-UNIT Ch20Boss Warrior 0x00 Level(13, Enemy, 1) [8,2] 0x00 0x00 0x0 0x00 [SilverAxe,Tomahawk] NeverMoveAI 
-UNIT Ch20Generics1 Ranger Ch20Boss Level(Ch20GenericsLvl,Enemy,1) [7,4] 0x00 0x00 0x0 0x00 [SilverSword,SteelBow] AttackInRangeAI
-UNIT Ch20Generics1 Ranger Ch20Boss Level(Ch20GenericsLvl,Enemy,1) [9,4] 0x00 0x00 0x0 0x00 [SilverSword,SteelBow] AttackInRangeAI
-UNIT Ch20Generics1 Druid Ch20Boss Level(Ch20GenericsLvl,Enemy,1) [6,1] 0x00 0x00 0x0 0x00 [Nosferatu] ChaseOnceApproachedAI
-UNIT Ch20Generics1 Druid Ch20Boss Level(Ch20GenericsLvl,Enemy,1) [10,1] 0x00 0x00 0x0 0x00 [Nosferatu] ChaseOnceApproachedAI
+UNIT Fatuus Warrior 0x00 Level(16, Enemy, 0) [8,2] 0x00 0x00 0x0 0x00 [Tomahawk,Swordslayer,BraveAxe] NeverMoveAI 
+UNIT Ch20Generics1 Ranger Fatuus Level(GenLvl,Enemy,1) [7,4] 0x00 0x00 0x0 0x00 [SilverSword,SteelBow] AttackInRangeAI
+UNIT Ch20Generics1 Ranger Fatuus Level(GenLvl,Enemy,1) [9,4] 0x00 0x00 0x0 0x00 [SilverSword,SteelBow] AttackInRangeAI
+UNIT Ch20Generics1 Druid Fatuus Level(GenLvl,Enemy,1) [6,1] 0x00 0x00 0x0 0x00 [Nosferatu] ChaseOnceApproachedAI
+UNIT Ch20Generics1 Druid Fatuus Level(GenLvl,Enemy,1) [10,1] 0x00 0x00 0x0 0x00 [Nosferatu] ChaseOnceApproachedAI
 UNIT
 
 // Shop Data

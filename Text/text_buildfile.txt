@@ -172,15 +172,6 @@ to the left.[A][X]
 Clearly, you've walked[N]
 to the right.[A][X]
 
-## OuderenCh6DeathQuote
-[OpenMidRight][LoadOuderen]
-Ungh[ToggleMouthMove]...[ToggleMouthMove][A][NL]
-Have I truly[ToggleMouthMove]...[ToggleMouthMove] fought for[NL]
-the Kingdom for all my life[ToggleMouthMove]...[ToggleMouthMove][A][NL]
-only to die here?[A][NL]
-This armor[ToggleMouthMove]...[ToggleMouthMove] too[NL]
-heavy[ToggleMouthMove]...[ToggleMouthMove] [CloseEyes]I can't[ToggleMouthMove]...[ToggleMouthMove][A][X]
-
 ## HalberdierName
 Halberdier[X]
 
@@ -273,22 +264,6 @@ just wiped out tomato town[A][X]
 [OpenMidRight][LoadActive][OpenMidLeft][LoadMan4]
 what the fuck are you doing in my house[A][X]
 
-##  MulchBattleQuote
-[OpenMidLeft][LoadMulch]
-Bwahaha![A][NL]
-You're fools, every one of you![A][NL]
-You face Mulch,[NL]
-the [ToggleRed]Hellfire Frog[ToggleRed]![A][NL]
-My sword shall tear through[NL]
-your flesh as you die screaming![A][X]
-
-## MulchDeathQuote
-[OpenMidLeft][LoadMulch]
-What sort of name[ToggleMouthMove]...[ToggleMouthMove] was[NL]
-[ToggleRed]Hellfire Frog[ToggleRed][ToggleMouthMove]...[ToggleMouthMove] anyway?[A][NL]
-Should've gone with[ToggleMouthMove]...[ToggleMouthMove][NL]
-[CloseEyes]something cooler[ToggleMouthMove]...[ToggleMouthMove][A][X]
-
 ## Ch9TopRightVilText
 [OpenMidRight][LoadActive][OpenMidLeft][LoadMan4]
 based[A][X]
@@ -322,7 +297,7 @@ Really? We're doing that cliche now?[AN]
 [OpenMidLeft]
 I'm afraid so. To be fair,[N]
 the country part is true.[AN]
-I used to be sorcerer-king of the desert,
+I used to be sorcerer-king of the desert,[N]
 but the Demon King deposed me.[AN]
 [OpenMidRight]
 You look like a powerful wizard.[AN]
@@ -432,58 +407,9 @@ Come on. Let's go home together.[AN]
 I'm sure you have loads of[NL]
 stories of your adventures![A][X]
 
-## MasterKeyName
-Master Key[X]
+#include "battle_death_quotes.txt"
 
-## MasterKeyDesc
-A key capable of unlocking[N]
-both doors and chests.[X]
-
-## MineName
-Mine[X]
-
-## MineDesc
-A trap that damages units[N]
-that step on it.[X]
-
-## LightRuneName
-Light Rune[X]
-
-## LightRuneDesc
-A device that blocks units[N]
-from entering spaces.[X]
-
-## FillasMightName
-Filla's Might[X]
-
-## FillasMightDesc
-A dance that increases[N]
-allies' attack for a turn.[X]
-
-## NinissGraceName
-Ninis's Grace[X]
-
-## NinissGraceDesc
-A dance that increases[N]
-allies' defenses for a turn.[X]
-
-## ThorsIreName
-Thor's Ire[X]
-
-## ThorsIreDesc
-A dance that increases[N]
-critical hit % for a turn.[X]
-
-## SetsLitanyName
-Set's Litany[X]
-
-## SetsLitanyDesc
-A dance that increases[N]
-allies' dodge for a turn.[X]
-
-## GenericDeathQuote
-[Right][LoadCurrent]
-Oof[A][X]
+#include "item_text.txt"
 
 #include "skilldesc_text.txt"
 
@@ -495,5 +421,6 @@ Oof[A][X]
 
 #include "Dancerstxt.txt"
 
-#include "soundroom_text.txt"
+#include "ch20_text.txt"
 
+#include "soundroom_text.txt"

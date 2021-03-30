@@ -1,0 +1,21 @@
+//Secondary Seize command that allows anyone to seize
+
+#ifdef EVERYONE_SEIZE
+	//id for LOCA event
+	#define ESeizeID 0x1B
+	
+	//edit a jump table to max this use what seize does
+	PUSH
+	ORG ($8410C + (ESeizeID*4))
+	POIN $841AC
+	POP
+	
+	ESeizeUsability:
+	#include "EveryoneSeizeUsability.lyn.event"
+	WORD ESeizeID
+
+	#define Seize2(eventid,seizeX,seizeY) "LOCA eventid [seizeX,seizeY] ESeizeID"
+	#define Seize2(eventid,offset,seizeX,seizeY) "LOCA eventid offset [seizeX,seizeY] ESeizeID"
+
+//RunLocationEvents jump table; make eid less than 0x20?
+#endif

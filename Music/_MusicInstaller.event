@@ -185,7 +185,7 @@ SongTable(TheBoysGotWings,ys3wings,1)
 }
 
 {
-SongTable(StraightToTheTop,aelevate,0)
+SongTable(StraightToTheTop,aelevate,1)
 #include "songs/aelevate.event"
 }
 {

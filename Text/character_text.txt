@@ -473,5 +473,11 @@ Thief[X]
 Trying to run off with some[N]
 treasure![X]
 
+## FatuusName
+Fatuus[X]
+
+## FatuusDesc
+Controls the mirage desert[X]
+
 ## MulchDesc2
 His true form.[X]

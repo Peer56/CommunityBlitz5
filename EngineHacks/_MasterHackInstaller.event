@@ -123,6 +123,9 @@ POP
   //Escape-Arrive
   #include "ExternalHacks/EscapeArrive/EscapeArrive.event"
   
+  //Everyone Can Seize
+  #include "ExternalHacks/EveryoneCanSeize/EveryoneSeize.event"
+  
   //Debuffs
   #include "Necessary/SuspendDebuffs/Debuffs.event"
 
@@ -248,5 +251,10 @@ POP
 
   ALIGN 4
   #include "ExternalHacks/GroupAI/GroupAI.event"
+
+  //Fix the sound effect for aircalibur
+{
+  #include "ExternalHacks/Aircalibur/Aircalibur.txt"
+}
 
   #include "MiscFixes.event"

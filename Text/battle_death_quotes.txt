@@ -1,0 +1,34 @@
+
+##  MulchBattleQuote
+[OpenMidLeft][LoadMulch]
+Bwahaha![A][NL]
+You're fools, every one of you![A][NL]
+You face Mulch,[NL]
+the [ToggleRed]Hellfire Frog[ToggleRed]![A][NL]
+My sword shall tear through[NL]
+your flesh as you die screaming![A][X]
+
+## MulchDeathQuote
+[OpenMidLeft][LoadMulch]
+What sort of name[ToggleMouthMove]...[ToggleMouthMove] was[NL]
+[ToggleRed]Hellfire Frog[ToggleRed][ToggleMouthMove]...[ToggleMouthMove] anyway?[A][NL]
+Should've gone with[ToggleMouthMove]...[ToggleMouthMove][NL]
+[CloseEyes]something cooler[ToggleMouthMove]...[ToggleMouthMove][A][X]
+
+## OuderenCh6DeathQuote
+[OpenMidRight][LoadOuderen]
+Ungh[ToggleMouthMove]...[ToggleMouthMove][A][NL]
+Have I truly[ToggleMouthMove]...[ToggleMouthMove] fought for[NL]
+the Kingdom for all my life[ToggleMouthMove]...[ToggleMouthMove][A][NL]
+only to die here?[A][NL]
+This armor[ToggleMouthMove]...[ToggleMouthMove] too[NL]
+heavy[ToggleMouthMove]...[ToggleMouthMove] [CloseEyes]I can't[ToggleMouthMove]...[ToggleMouthMove][A][X]
+
+## SauvignonDeathQuote
+[OpenMidRight][LoadWoman5][CloseEyes]
+Where did this all go so wrong[ToggleMouthMove]...?[ToggleMouthMove][A][X]
+
+## GenericDeathQuote
+[Right][LoadCurrent]
+Oof[A][X]
+
