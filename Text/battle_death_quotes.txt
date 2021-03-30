@@ -24,6 +24,10 @@ only to die here?[A][NL]
 This armor[ToggleMouthMove]...[ToggleMouthMove] too[NL]
 heavy[ToggleMouthMove]...[ToggleMouthMove] [CloseEyes]I can't[ToggleMouthMove]...[ToggleMouthMove][A][X]
 
+## SauvignonDeathQuote
+[OpenMidRight][LoadWoman5][CloseEyes]
+Where did this all go so wrong[ToggleMouthMove]...?[ToggleMouthMove][A][X]
+
 ## GenericDeathQuote
 [Right][LoadCurrent]
 Oof[A][X]
