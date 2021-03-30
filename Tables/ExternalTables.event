@@ -60,7 +60,7 @@ DeathQuoteEntry(10, 10, Ch11Boss,      0)
 DeathQuoteEntry(13,0x10,Akari,GenericDeathQuote)
 DeathQuoteEntry(13,0x11,Rhodes,GenericDeathQuote)
 DeathQuoteEntry(6,GameOverFlag,Ouderen,OuderenCh6DeathQuote)
-DeathQuoteEntry(9,GameOverFlag,Sauvignon,GenericDeathQuote)
+DeathQuoteEntry(9,GameOverFlag,Sauvignon,SauvignonDeathQuote)
 
 //chapter-specific player unit death quotes
 
