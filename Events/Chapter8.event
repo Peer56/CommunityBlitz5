@@ -25,8 +25,8 @@ CharacterBasedEvents:
 END_MAIN
 
 LocationBasedEvents:
-Seize(0xB,CheckSeize1,24,1) //This can be used for multiple-seize chapters ala FE4.
-Seize(0xC,CheckSeize2,24,15) //This can be used for multiple-seize chapters ala FE4. 
+Seize2(0xB,CheckSeize1,24,1) //This can be used for multiple-seize chapters ala FE4.
+Seize2(0xC,CheckSeize2,24,15) //This can be used for multiple-seize chapters ala FE4. 
 Village(0x7,Village1,16,5)
 Village(0x8,Village2,5,11)
 Village(0x9,Village3,10,11)
