@@ -1,0 +1,29 @@
+//SoundSetup.txt
+
+#ifndef SoundMap
+	#define SoundMap
+	#define FE6_SoundEffectMap 0x398570
+	#define FE6_MusicTable 0x3994D8
+	#define FE7_SoundEffectMap 0x696D54
+	#define FE7_MusicTable 0x69D6E0
+	#define FE8_SoundEffectMap 0x212564
+	#define FE8_MusicTable 0x224470
+
+	#define SetVoice(Sound_Effect) "WORD 0x3C00; POIN Sound_Effect; WORD 0xFF00FF"
+
+	#ifdef _FE6_
+		#define SetTableVoice(VID, Sound_Effect) "ORG (FE6_SoundEffectMap + (VID * 0xC)); WORD 0x3C00; POIN Sound_Effect; WORD 0xFF00FF"
+		#define SetSound(MID, Sound, Priority) "ORG (FE6_MusicTable + (MID * 0x8)); POIN Sound; WORD Priority"
+	#endif
+
+	#ifdef _FE7_
+		#define SetTableVoice(VID, Sound_Effect) "ORG (FE7_SoundEffectMap + (VID * 0xC)); WORD 0x3C00; POIN Sound_Effect; WORD 0xFF00FF"
+		#define SetSound(MID, Sound, Priority) "ORG (FE7_MusicTable + (MID * 0x8)); POIN Sound; WORD Priority"
+	#endif
+
+	#ifdef _FE8_
+		#define SetTableVoice(VID, Sound_Effect) "ORG (FE8_SoundEffectMap + (VID * 0xC)); WORD 0x3C00; POIN Sound_Effect; WORD 0xFF00FF"
+		#define SetSound(MID, Sound, Priority) "ORG (FE8_MusicTable + (MID * 0x8)); POIN Sound; WORD Priority"
+	#endif
+
+#endif

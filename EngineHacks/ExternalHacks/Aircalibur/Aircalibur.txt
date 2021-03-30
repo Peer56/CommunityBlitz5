@@ -1,0 +1,62 @@
+//Aircalibur Sound Effect Installer
+
+
+#ifndef FreeSpace 	//write hack at this offset if assebmling from this file
+	#ifdef _FE7_
+		#define FreeSpace 0xD50000	//if assebmling in FE7
+	#endif
+	
+	#ifdef _FE8_
+		#define FreeSpace 0xB50000 //if assebmling in FE8
+	#endif
+	
+	ORG FreeSpace
+#endif
+
+#include SoundMacros.txt
+
+ALIGN 4
+
+#ifdef _FE8_	
+	AirSoundDump1:
+	#incbin "VoiceDump/Aircalibur1.dmp"
+	AirTrackDump1:
+	#incbin "TrackDump/AircaliburTrack1.dmp"
+	ALIGN 4
+	AirHeader1:
+	BYTE 0x1 //number of tracks
+	BYTE 0x0 0x14 0x0 //idk what this does but all sound effects seem to have it
+
+	//Instrument Map Pointer
+	POIN FE8_SoundEffectMap
+
+	//Track Pointer(s)
+	POIN AirTrackDump1
+	
+	PUSH
+	
+	SetTableVoice(0x15, AirSoundDump1)
+	SetSound(0x108, AirHeader1, 0x60006)
+	
+	POP
+	
+	AirSoundDump2:
+	#incbin "VoiceDump/Aircalibur2.dmp"
+	AirTrackDump2:
+	#incbin "TrackDump/AircaliburTrack2.dmp"
+	ALIGN 4
+	AirHeader2:
+	BYTE 0x1 //number of tracks
+	BYTE 0x0 0x14 0x0 //idk what this does but all sound effects seem to have it
+	POIN FE8_SoundEffectMap
+	POIN AirTrackDump2
+	
+	PUSH
+	
+	SetTableVoice(0x18, AirSoundDump2)
+	SetSound(0x109, AirHeader2, 0x60006)
+	
+	POP
+#else
+	MESSAGE "This is for FE8 only"
+#endif
