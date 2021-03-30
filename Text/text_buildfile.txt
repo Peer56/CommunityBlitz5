@@ -421,5 +421,6 @@ stories of your adventures![A][X]
 
 #include "Dancerstxt.txt"
 
-#include "soundroom_text.txt"
+#include "ch20_text.txt"
 
+#include "soundroom_text.txt"
