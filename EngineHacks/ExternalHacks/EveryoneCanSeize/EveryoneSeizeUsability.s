@@ -18,7 +18,7 @@ mov r1, #0x40
 and r0, r1
 cmp r0, #0x0
 beq FindCommand
-mov r0,#0x0 @return value
+mov r0,#0x3 @return value
 b End
 FindCommand:
 mov r0, #0x10
