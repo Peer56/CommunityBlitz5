@@ -83,7 +83,7 @@ UNIT Ch3Generics1 Soldier Peter Level(2, Enemy, 1) [13,13] 0x00 0x00 0x0 0x00 [I
 UNIT Ch3Generics1 Fighter Peter Level(2, Enemy, 1) [11,14] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI
 UNIT Ch3Generics1 Knight Peter Level(2, Enemy, 1) [3,10] DropItem 0x00 0x0 0x00 [Javelin, HeavySpear] NeverMoveAI
 UNIT Ch3Generics1 Archer Peter Level(3, Enemy, 1) [0,8] 0x00 0x00 0x0 0x00 [SteelBow, RedGem] AttackInRangeAI
-UNIT Ch3Generics1 Myrmidon Peter Level(2, Enemy, 1) [9,10] 0x00 0x00 0x0 0x00 [KillingEdge, Speedwings] AttackInRangeAI
+UNIT Ch3Generics1 Myrmidon Peter Level(2, Enemy, 1) [9,10] 0x00 0x00 0x0 0x00 [KillingEdge] AttackInRangeAI
 UNIT Ch3Generics1 Knight Peter Level(2, Enemy, 1) [2,10] 0x00 0x00 0x0 0x00 [Javelin, Horseslayer] AttackInRangeAI
 UNIT Ch3Generics1 Cavalier Peter Level(1, Enemy, 1) [11,8] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI
 UNIT Ch3Generics1 Cavalier Peter Level(1, Enemy, 1) [12,8] 0x00 0x00 0x0 0x00 [Armorslayer] AttackInRangeAI
@@ -98,7 +98,7 @@ UNIT Ch3Generics1 Mercenary Peter Level(3, Enemy, 1) [10,2] 0x00 0x00 0x0 0x00 [
 UNIT Ch3Generics1 Shaman Peter Level(3, Enemy, 1) [7,0] 0x00 0x00 0x0 0x00 [Flux] NeverMoveAI
 UNIT Ch3Generics1 Pirate Peter Level(2, Enemy, 1) [6,1] 0x00 0x00 0x0 0x00 [HandAxe] AttackInRangeAI
 UNIT Ch3Generics1 Soldier Peter Level(2, Enemy, 1) [12,11] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI
-UNIT Ch3Generics1 Fighter Peter Level(2, Enemy, 1) [10,5] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI
+UNIT Ch3Generics1 Fighter Peter Level(2, Enemy, 1) [10,5] 0x00 0x00 0x0 0x00 [IronAxe, Speedwings] AttackInRangeAI
 UNIT Ch3Generics1 Shaman Peter Level(2, Enemy, 1) [14,9] 0x00 0x00 0x0 0x00 [Flux]  AttackInRangeAI
 UNIT Ch3Generics1 Mercenary Peter Level(3, Enemy, 1) [1,3] DropItem 0x00 0x0 0x00 [LightBrand] NeverMoveAI
 UNIT

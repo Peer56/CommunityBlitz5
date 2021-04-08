@@ -45,8 +45,8 @@ SHORT 0 //nop the 0x200000
 // ORG $75d64
 // jumpToHack(AnimsOnPopupHack)
 
-ORG $17ef4
-jumpToHack(HookUnitLoading)
+//ORG $17ef4
+//jumpToHack(HookUnitLoading)
 
 ORG $2B3EC
 jumpToHack(Rerun_Battle_Calcs)
@@ -177,9 +177,9 @@ SkillAdder: //given chardata in r0, skill in r1, add skill if possible
 #incbin addSkill.dmp
 
 ALIGN 4
-HookUnitLoading:
-	#incbin "asm/HookUnitLoading.dmp"
-	POIN (AutoloadSkills|1)
+//HookUnitLoading:
+//	#incbin "asm/HookUnitLoading.dmp"
+//	POIN (AutoloadSkills|1)
 	// POIN (Skill_Getter|1)
 	// POIN ChargeupTable
 
