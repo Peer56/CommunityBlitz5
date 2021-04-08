@@ -292,7 +292,7 @@ UNIT Ch20Generics1 Paladin Miniboss Level(GenLvl,Enemy,1) [9,18] 0x0 0x0 0x0 0x0
 UNIT 
 
 MirageEnemies4:
-UNIT Miniboss Sage_F 0x00 Level(14, Enemy, 1) [2,18] 0x00 0x00 1 REDA2R18 [Fimbulvetr] GuardTileAI 
+UNIT Miniboss Sage_F 0x00 Level(14, Enemy, 1) [2,18] 0x00 0x00 1 REDA2R18 [Fimbulvetr] NeverMoveAI 
 UNIT Ch20Generics1 FalcoKnight Miniboss Level(GenLvl,Enemy,1) [0,18] 0x00 0x00 0x0 0x00 [SilverLance] ChaseOnceApproachedAI
 UNIT Ch20Generics1 FalcoKnight Miniboss Level(GenLvl,Enemy,1) [0,16] 0x00 0x00 0x0 0x00 [Spear] AttackInRangeAI
 UNIT Ch20Generics1 GreatKnight Miniboss Level(GenLvl,Enemy,1) [4,19] 0x00 0x00 0x0 0x00 [BrightLance] AttackInRangeAI
