@@ -2,13 +2,10 @@
 //put all the routines that should run 
 //when a unit is being loaded
 
-//hooks into LoadUnitStats routine
+//hooks into the InitUnitSupports routine
 PUSH
-	ORG $17E98
-	SHORT 0x1C20 0x0
-	callHack_r3(LoadNewUnitLoop)
-	//jump to end of routine
-	B($17EB4)
+	ORG $17EF4
+	jumpToHack(LoadNewUnitLoop)
 POP
 
 LoadNewUnitLoop:
@@ -16,13 +13,15 @@ LoadNewUnitLoop:
 POIN LoadNewUnitRoutines
 
 LoadNewUnitRoutines:
-POIN SetNewUnitExp
-POIN FloorUnitStats
+POIN InitUnitSkills|1
+POIN FloorUnitStats|1
 WORD 0x0 //terminator
 
 FloorUnitStats:
 #include "FloorUnitStats/FloorUnitStats.lyn.event"
 
-SetNewUnitExp:
-#include "SetNewUnitExp/InitUnitExp.lyn.event"
-POIN Class_Level_Cap_Table
+InitUnitSkills:
+#include "InitUnitSkills.lyn.event"
+	POIN (AutoloadSkills|1)
+	// POIN (Skill_Getter|1)
+	// POIN ChargeupTable
