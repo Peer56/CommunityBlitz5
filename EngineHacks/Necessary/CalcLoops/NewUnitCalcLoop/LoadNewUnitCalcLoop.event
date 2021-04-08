@@ -1,0 +1,28 @@
+//Unit Loading Routine Loop
+//put all the routines that should run 
+//when a unit is being loaded
+
+//hooks into LoadUnitStats routine
+PUSH
+	ORG $17E98
+	SHORT 0x1C20 0x0
+	callHack_r3(LoadNewUnitLoop)
+	//jump to end of routine
+	B($17EB4)
+POP
+
+LoadNewUnitLoop:
+#include "NewUnitCalcLoop.lyn.event"
+POIN LoadNewUnitRoutines
+
+LoadNewUnitRoutines:
+POIN SetNewUnitExp
+POIN FloorUnitStats
+WORD 0x0 //terminator
+
+FloorUnitStats:
+#include "FloorUnitStats/FloorUnitStats.lyn.event"
+
+SetNewUnitExp:
+#include "SetNewUnitExp/InitUnitExp.lyn.event"
+POIN Class_Level_Cap_Table

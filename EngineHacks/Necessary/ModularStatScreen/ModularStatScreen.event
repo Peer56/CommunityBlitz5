@@ -92,9 +92,9 @@
     ORG $2B9C4
       jumpToHack(Enemy_Autolevel)
 
-    ORG $17E98
-      callHack_r3(New_Unit_Exp)
-      SHORT 0xE005
+//    ORG $17E98
+//      callHack_r3(New_Unit_Exp)
+//      SHORT 0xE005
 	  
 	#ifdef ENABLE_PERSONAL_INFO
 	
