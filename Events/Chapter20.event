@@ -62,6 +62,7 @@ END_MAIN
 
 LocationBasedEvents:
 SecretShop(RuinsShop,2,0)
+SecretShop(HouseShop,5,24)
 Vendor(ch20Vendor,11,10)
 Armory(ch20Armory,6,22)
 Village(0x0,Ch20MiddleVillage,8,11)
@@ -327,6 +328,9 @@ UNIT
 ALIGN 4
 RuinsShop:
 SHLI WindSword Runesword Purge Bolting Nosferatu Eclipse Shadowshot Sleep Berserk Rescue Fortify SecretBook Talisman MasterSeal
+
+HouseShop:
+SHLI KillingEdge KillerLance KillerAxe KillerBow BraveSword BraveLance BraveAxe BraveBow Wyrmslayer DragonSpear DragonAxe
 
 ch20Vendor:
 SHLI Elfire Fimbulvetr Divine Aura Flux Fenrir Heal Mend Recover Restore Elixir ChestKey_5
