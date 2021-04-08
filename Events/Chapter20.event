@@ -55,6 +55,9 @@ UNIT Bastion Knight Gunborg Level(1, Ally, 0) [19,2] 0x00 0x00 0x0 0x00 [0x00] N
 UNIT
 
 TurnBasedEvents:
+TurnEventPlayer(0x0,LoadBishops,2)
+TurnEventPlayer(0x0,LoadBishops,6)
+TurnEventPlayer(0x0,LoadHorses,10)
 END_MAIN
 
 CharacterBasedEvents:
@@ -99,6 +102,8 @@ ENUN
 LOAD1 0x1 StartingEnemies
 ENUN
 LOAD1 0x1 MirageEnemies1
+ENUN
+LOAD1 0x1 WeHateFliers
 ENUN
 
 ENUT Mirage2Flag
@@ -234,11 +239,22 @@ TILECHANGE FinalMirageID
 STAL3 4
 LOAD1 0x0 FinalMirageEnemies
 ENUN
+LOAD1 0x0 WeHateFliers
+ENUN
 ENUF SeizeFlag
 WEATHER Clear
 // STAL3 8
 // WEATHER Flames
 ENDA
+
+AntiFlierReinforcements:
+ReinforcementEvent(WeHateFliers)
+
+LoadBishops:
+ReinforcementEvent(WeHateMonsters)
+
+LoadHorses:
+ReinforcementEvent(HorsesFromBehind)
 
 // Manual Movement
 
@@ -322,6 +338,25 @@ UNIT Ch20Generics1 Ranger Fatuus Level(GenLvl,Enemy,1) [7,4] 0x00 0x00 0x0 0x00 
 UNIT Ch20Generics1 Ranger Fatuus Level(GenLvl,Enemy,1) [9,4] 0x00 0x00 0x0 0x00 [SilverSword,SteelBow] AttackInRangeAI
 UNIT Ch20Generics1 Druid Fatuus Level(GenLvl,Enemy,1) [6,1] 0x00 0x00 0x0 0x00 [Nosferatu] ChaseOnceApproachedAI
 UNIT Ch20Generics1 Druid Fatuus Level(GenLvl,Enemy,1) [10,1] 0x00 0x00 0x0 0x00 [Nosferatu] ChaseOnceApproachedAI
+WeHateFliers:
+UNIT Ch20Generics1 Hero Fatuus Level(GenLvl,Enemy,1) [8,2] 0x0 0x00 1 REDA7R5 [WindSword] PursueWithoutHeedAI
+UNIT Ch20Generics1 Sage Fatuus Level(GenLvl,Enemy,1) [8,2] 0x0 0x00 1 REDA8R4 [Aircalibur] PursueWithoutHeedAI
+UNIT Ch20Generics1 Hero Fatuus Level(GenLvl,Enemy,1) [8,2] 0x0 0x00 1 REDA9R5 [WindSword] PursueWithoutHeedAI
+UNIT
+
+WeHateMonsters:
+UNIT Ch20Generics1 Bishop Fatuus Level(GenLvl,Enemy,1) [8,2] 0x0 0x00 1 REDA7R3 [Divine] PursueWithoutHeedAI
+UNIT Ch20Generics1 Bishop_F Fatuus Level(GenLvl,Enemy,1) [8,2] 0x0 0x00 1 REDA8R4 [Shine,Mend] NoAI
+UNIT Ch20Generics1 Bishop Fatuus Level(GenLvl,Enemy,1) [8,2] 0x0 0x00 1 REDA9R3 [Divine] PursueWithoutHeedAI
+UNIT
+
+HorsesFromBehind:
+UNIT Ch20Generics1 Ranger Fatuus Level(GenLvl,Enemy,1) [18,0] 0x0 0x00 1 REDA18R1 [SilverBow] PursueWithoutHeedAI
+UNIT Ch20Generics1 Paladin Fatuus Level(GenLvl,Enemy,1) [17,0] 0x0 0x00 1 REDA17R1 [Wyrmslayer,Spear] PursueWithoutHeedAI
+UNIT Ch20Generics1 Paladin Fatuus Level(GenLvl,Enemy,1) [19,0] 0x0 0x00 1 REDA19R1 [DragonSpear,LightBrand] PursueWithoutHeedAI
+UNIT Ch20Generics1 MageKnight Fatuus Level(GenLvl,Enemy,1) [18,0] 0x0 0x00 1 REDA17R0 [Fimbulvetr] PursueWithoutHeedAI
+UNIT Ch20Generics1 Valkyrie Fatuus Level(GenLvl,Enemy,1) [17,0] 0x0 0x00 1 REDA18R0 [Divine,Recover] NoAI
+UNIT Ch20Generics1 MageKnight Fatuus Level(GenLvl,Enemy,1) [19,0] 0x0 0x00 1 REDA19R0 [Fimbulvetr] PursueWithoutHeedAI
 UNIT
 
 // Shop Data
