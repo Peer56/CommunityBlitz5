@@ -21,3 +21,5 @@
 
 #include "HPRestorationCalcLoop/HPRestorationCalcLoop.event"
 
+#include "NewUnitCalcLoop/LoadNewUnitCalcLoop.event"
+
