@@ -23,8 +23,10 @@ EventPointerTable(AssetCh20Data,Chapter20Events)
 
 	//Units
 	#define Miniboss Ch20Generics2
+
 	//Other
 	#define GenLvl 15
+	#define RaidAndAttackAI [AttackInRange,BrigandMove,WithoutHeed,0x0]
 
 Chapter20Events:
 POIN TurnBasedEvents
@@ -55,6 +57,10 @@ UNIT Bastion Knight Gunborg Level(1, Ally, 0) [19,2] 0x00 0x00 0x0 0x00 [0x00] N
 UNIT
 
 TurnBasedEvents:
+TurnEventPlayer(0x0,LoadBishops,2)
+TurnEventPlayer(0x0,LoadAntiFlier,4)
+TurnEventPlayer(0x0,LoadBishops,6)
+TurnEventPlayer(0x0,LoadHorses,10)
 END_MAIN
 
 CharacterBasedEvents:
@@ -62,6 +68,7 @@ END_MAIN
 
 LocationBasedEvents:
 SecretShop(RuinsShop,2,0)
+SecretShop(HouseShop,5,24)
 Vendor(ch20Vendor,11,10)
 Armory(ch20Armory,6,22)
 Village(0x0,Ch20MiddleVillage,8,11)
@@ -99,6 +106,18 @@ LOAD1 0x1 StartingEnemies
 ENUN
 LOAD1 0x1 MirageEnemies1
 ENUN
+LOAD1 0x1 WeHateFliers
+ENUN
+
+CHECK_HARD
+IFNE 5 sC s0
+	LOAD1 0x1 HardModeEnemies
+	ENUN
+	GOTO 6
+LABEL 5
+	LOAD1 0x1 NormalEnemies
+	ENUN
+LABEL 6
 
 ENUT Mirage2Flag
 ENUT Mirage3Flag
@@ -132,7 +151,7 @@ CALL EndingScene
 ENDA
 
 Ch20MiddleVillage:
-VillageEventItem(Chapter20Village1,Village,BraveAxe)
+VillageEventItem(Chapter20Village1,Village,DelphiShield)
 ENDA
 
 Ch20CornerVillage:
@@ -233,11 +252,22 @@ TILECHANGE FinalMirageID
 STAL3 4
 LOAD1 0x0 FinalMirageEnemies
 ENUN
+LOAD1 0x0 WeHateFliers
+ENUN
 ENUF SeizeFlag
 WEATHER Clear
 // STAL3 8
 // WEATHER Flames
 ENDA
+
+LoadAntiFlier:
+ReinforcementEvent(WeHateFliers)
+
+LoadBishops:
+ReinforcementEvent(WeHateMonsters)
+
+LoadHorses:
+ReinforcementEvent(HorsesFromBehind)
 
 // Manual Movement
 
@@ -249,17 +279,32 @@ UNIT
 
 StartingEnemies:
 UNIT Ch20Generics1 Sniper Fatuus Level(GenLvl, Enemy, 1) [12,8] 0x00 0x00 0x0 0x00 [Longbow] AttackInRangeAI 
-UNIT Ch20Generics1 Sniper Fatuus Level(GenLvl, Enemy, 1) [6,2] 0x00 0x00 0x0 0x00 [SilverBow] PursueWithoutHeedAI 
-UNIT Ch20Generics1 Sniper Fatuus Level(GenLvl, Enemy, 1) [10,2] 0x00 0x00 0x0 0x00 [SilverBow] PursueWithoutHeedAI 
-UNIT Ch20Generics1 Berserker Fatuus Level(GenLvl, Enemy, 1) [1,1] 0x2 0x00 0x0 0x00 [BattleAxe,BlueGem] LootingThiefAI 
-UNIT Ch20Generics1 Berserker Fatuus Level(GenLvl, Enemy, 1) [3,3] 0x00 0x00 0x0 0x00 [SilverAxe] LootingThiefAI 
-UNIT Ch20Generics1 Druid_F Fatuus Level(GenLvl,Enemy,1) [4,4] 0x2 0x00 0x00 0x00 [Luna,Rescue] NoAI
-UNIT Ch20Generics1 Bishop_F Fatuus Level(GenLvl,Enemy,1) [5,9] 0x2 0x00 0x00 0x00 [Purge,Sleep] GuardTileAI
+UNIT Ch20Generics1 Sniper Fatuus Level(GenLvl, Enemy, 1) [6,2] 0x00 0x00 0x0 0x00 [SilverBow,Longbow] PursueWithoutHeedAI 
+UNIT Ch20Generics1 Sniper Fatuus Level(GenLvl, Enemy, 1) [10,2] 0x00 0x00 0x0 0x00 [SilverBow,Longbow] PursueWithoutHeedAI 
+UNIT Ch20Generics1 Sniper Fatuus Level(GenLvl,Enemy,1) [2,2] 0x2 0x00 0x0 0x00 [BraveBow] PursueWithoutHeedAI
+UNIT Ch20Generics1 Berserker Fatuus Level(GenLvl, Enemy, 1) [1,1] 0x2 0x00 0x0 0x00 [BattleAxe,BlueGem] RaidAndAttackAI
+UNIT Ch20Generics1 Berserker Fatuus Level(GenLvl, Enemy, 1) [3,3] 0x00 0x00 0x0 0x00 [SilverAxe] BrigandAI
+UNIT Ch20Generics1 Druid Fatuus Level(GenLvl,Enemy,1) [4,4] 0x2 0x00 0x00 0x00 [Luna,Speedwings,AngelicRobe] ChaseOnceApproachedAI
+UNIT Ch20Generics1 Bishop Fatuus Level(GenLvl,Enemy,1) [5,5] 0x00 0x00 0x00 0x00 [Divine,Recover] ChaseOnceApproachedAI
+UNIT Ch20Generics1 Bishop_F Fatuus Level(GenLvl,Enemy,1) [5,9] 0x2 0x00 0x00 0x00 [Purge,Physic,Sleep,Talisman] NeverMoveAI
 UNIT Ch20Generics1 General Miniboss Level(GenLvl,Enemy,1) [3,23] 0x00 0x00 0x0 0x00 [DragonAxe,Horseslayer] AttackInRangeAI
 UNIT
 
+NormalEnemies:
+UNIT Ch20Generics1 Druid_F Fatuus Level(GenLvl,Enemy,1) [0,0] 0x0 0x00 0x00 0x00 [Fenrir,Physic] ChaseOnceApproachedAI
+UNIT Ch20Generics1 Fleet Fatuus Level(GenLvl,Enemy,1) [0,3] 0x2 0x00 0x0 0x00 [Ballista,Longbow,WhiteGem] AttackInRangeAI
+UNIT Ch20Generics1 Bishop_F Fatuus Level(GenLvl,Enemy,1) [8,24] 0x0 0x00 0x00 0x00 [Divine,EnergyRing,Silence] ChaseOnceApproachedAI
+UNIT
+
+HardModeEnemies:
+UNIT Ch20Generics1 Sniper Fatuus Level(GenLvl, Enemy, 1) [9,12] 0x00 0x00 0x0 0x00 [Longbow] AttackInRangeAI 
+UNIT Ch20Generics1 Druid_F Fatuus Level(GenLvl,Enemy,1) [0,0] 0x0 0x00 0x00 0x00 [Fenrir,Bolting,Physic] ChaseOnceApproachedAI
+UNIT Ch20Generics1 Fleet Fatuus Level(GenLvl,Enemy,1) [0,3] 0x2 0x00 0x0 0x00 [Ballista,Longbow,WhiteGem] ChaseOnceApproachedAI
+UNIT Ch20Generics1 Bishop_F Fatuus Level(GenLvl,Enemy,1) [8,24] 0x0 0x00 0x00 0x00 [Shine,Purge,EnergyRing,Physic] ChaseOnceApproachedAI
+UNIT
+
 MirageEnemies1:
-UNIT Miniboss Berserker 0x0 Level(11, Enemy, 1) [16,13] 0x00 0x00 0x0 0x00 [BraveAxe] NeverMoveAI 
+UNIT Miniboss Berserker 0x0 Level(11, Enemy, 1) [16,13] 0x00 0x00 1 REDA16R13 [BraveAxe] NeverMoveAI 
 UNIT Ch20Generics1 Halberdier Miniboss Level(GenLvl,Enemy,1) [14,11] 0x00 0x00 0x0 0x00 [ShortSpear] AttackInRangeAI
 UNIT Ch20Generics1 Halberdier Miniboss Level(GenLvl,Enemy,1) [16,11] 0x00 0x00 0x0 0x00 [SteelLance] PursueWithoutHeedAI
 UNIT Ch20Generics1 Warrior Miniboss Level(GenLvl,Enemy,1) [15,14] 0x00 0x00 0x0 0x00 [HandAxe] AttackInRangeAI
@@ -270,7 +315,7 @@ UNIT Ch20Generics1 Paladin Miniboss Level(GenLvl,Enemy,1) [19,15] 0x00 0x00 0x0 
 UNIT
 
 MirageEnemies2:
-UNIT Miniboss Swordmaster 0x0 Level(12, Enemy, 1) [18,21] 0x00 0x00 0x0 0x00 [LightBrand] NeverMoveAI
+UNIT Miniboss Swordmaster 0x0 Level(12, Enemy, 1) [18,21] 0x00 0x00 1 REDA18R21 [LightBrand] NeverMoveAI
 UNIT Ch20Generics1 Sniper Miniboss Level(GenLvl,Enemy,1) [18,23] 0x00 0x00 0x0 0x00 [SilverBow] NoAI
 UNIT Ch20Generics1 General Miniboss Level(GenLvl,Enemy,1) [18,20] 0x00 0x0 0x0 0x0 [ShortSpear] NeverMoveAI
 UNIT Ch20Generics1 Warrior Miniboss Level(GenLvl,Enemy,1) [18,18] 0x0 0x0 0x0 0x0 [SteelAxe] NoAI
@@ -280,57 +325,84 @@ UNIT Ch20Generics1 Halberdier Miniboss Level(GenLvl,Enemy,1) [17,20] 0x0 0x0 0x0
 UNIT
 
 MirageEnemies3:
-UNIT Miniboss Halberdier 0x00 Level(13, Enemy, 1) [12,21] 0x00 0x00 0x0 0x00 [Spear] GuardTileAI 
-UNIT Ch20Generics1 Sniper Miniboss Level(GenLvl,Enemy,1) [12,24] 0x00 0x00 0x0 0x00 [SilverBow] AttackInRangeAI
-UNIT Ch20Generics1 Sage Miniboss Level(GenLvl,Enemy,1) [14,24] 0x00 0x00 0x0 0x00 [Thunder,Physic] AttackInRangeAI
-UNIT Ch20Generics1 WyvernKnight Miniboss Level(GenLvl,Enemy,1) [9,24] 0x0 0x0 0x0 0x0 [Axereaver] AttackInRangeAI
-UNIT Ch20Generics1 Druid Miniboss Level(GenLvl,Enemy,1) [8,20] 0x0 0x0 0x0 0x00 [Nosferatu] AttackInRangeAI
-UNIT Ch20Generics1 Hero Miniboss Level(GenLvl,Enemy,1) [11,18] 0x0 0x0 0x0 0x0 [LightBrand] NoAI
-UNIT Ch20Generics1 Warrior Miniboss Level(GenLvl,Enemy,1) [14,21] 0x0 0x0 0x0 0x0 [Tomahawk] NoAI
-UNIT Ch20Generics1 General Miniboss Level(GenLvl,Enemy,1) [12,21] 0x0 0x0 0x0 0x0 [ShortSpear,Horseslayer] NeverMoveAI
-UNIT Ch20Generics1 Paladin Miniboss Level(GenLvl,Enemy,1) [9,18] 0x0 0x0 0x0 0x0 [Armorslayer] ChaseOnceApproachedAI
+UNIT Miniboss Halberdier 0x00 Level(13, Enemy, 1) [12,21] 0x00 0x00 1 REDA12R21 [Spear] GuardTileAI 
+UNIT Ch20Generics1 Sniper Miniboss Level(GenLvl,Enemy,1) [12,24] 0x00 0x00 1 REDA12R24 [SilverBow] AttackInRangeAI
+UNIT Ch20Generics1 Sage Miniboss Level(GenLvl,Enemy,1) [14,24] 0x00 0x00 1 REDA14R24 [Thunder,Physic] AttackInRangeAI
+UNIT Ch20Generics1 WyvernKnight Miniboss Level(GenLvl,Enemy,1) [9,24] 0x0 0x0 1 REDA9R24 [Axereaver] AttackInRangeAI
+UNIT Ch20Generics1 Druid Miniboss Level(GenLvl,Enemy,1) [8,20] 0x0 0x0 1 REDA8R20 [Nosferatu] AttackInRangeAI
+UNIT Ch20Generics1 Hero Miniboss Level(GenLvl,Enemy,1) [11,18] 0x0 0x0 1 REDA11R18 [LightBrand] NoAI
+UNIT Ch20Generics1 Warrior Miniboss Level(GenLvl,Enemy,1) [14,21] 0x0 0x0 1 REDA14R21 [Tomahawk] NoAI
+UNIT Ch20Generics1 General Miniboss Level(GenLvl,Enemy,1) [12,21] 0x0 0x0 1 REDA12R21 [ShortSpear,Horseslayer] NeverMoveAI
+UNIT Ch20Generics1 Paladin Miniboss Level(GenLvl,Enemy,1) [9,18] 0x0 0x0 1 REDA9R18 [Armorslayer] ChaseOnceApproachedAI
 UNIT 
 
 MirageEnemies4:
-UNIT Miniboss Sage_F 0x00 Level(14, Enemy, 1) [2,18] 0x00 0x00 0x0 0x00 [Fimbulvetr] GuardTileAI 
+UNIT Miniboss Sage_F 0x00 Level(14, Enemy, 1) [2,18] 0x00 0x00 1 REDA2R18 [Fimbulvetr] NeverMoveAI 
 UNIT Ch20Generics1 FalcoKnight Miniboss Level(GenLvl,Enemy,1) [0,18] 0x00 0x00 0x0 0x00 [SilverLance] ChaseOnceApproachedAI
 UNIT Ch20Generics1 FalcoKnight Miniboss Level(GenLvl,Enemy,1) [0,16] 0x00 0x00 0x0 0x00 [Spear] AttackInRangeAI
 UNIT Ch20Generics1 GreatKnight Miniboss Level(GenLvl,Enemy,1) [4,19] 0x00 0x00 0x0 0x00 [BrightLance] AttackInRangeAI
 UNIT Ch20Generics1 Swordmaster Miniboss Level(GenLvl,Enemy,1) [3,19] 0x00 0x00 0x0 0x00 [ShadowKiller,SilverBlade] AttackInRangeAI
 UNIT Ch20Generics1 Sniper Miniboss Level(GenLvl,Enemy,1) [2,19] 0x00 0x00 0x0 0x00 [BeaconBow] AttackInRangeAI
 UNIT Ch20Generics1 Warrior Miniboss Level(GenLvl,Enemy,1) [3,15] 0x00 0x00 0x0 0x00 [FiendCleaver] PursueWithoutHeedAI
+UNIT Ch20Generics1 Warrior Miniboss Level(GenLvl,Enemy,1) [1,15] 0x00 0x00 0x0 0x00 [Swordslayer] ChaseOnceApproachedAI
 UNIT Ch20Generics1 Hero Miniboss Level(GenLvl,Enemy,1) [2,14] 0x00 0x0 0x0 0x0 [WindSword] ChaseOnceApproachedAI
 UNIT Ch20Generics1 Sage Miniboss Level(GenLvl,Enemy,1) [2,16] 0x00 0x0 0x0 0x0 [Fimbulvetr] ChaseOnceApproachedAI
 UNIT
 
 MirageEnemies5:
-UNIT Miniboss Paladin_F Miniboss Level(15,Enemy,True) [2,7] 0x00 0x00 0x0 0x00 [Spear,BraveLance] NeverMoveAI
+UNIT Miniboss Paladin_F Miniboss Level(15,Enemy,True) [2,7] 0x00 0x00 1 REDA2R7 [Spear,BraveLance] NeverMoveAI
 UNIT Ch20Generics1 WyvernLord Miniboss Level(GenLvl,Enemy,True) [0,2] 0x00 0x00 0x0 0x00 [SilverLance] AttackInRangeAI
 UNIT Ch20Generics1 WyvernLord Miniboss Level(GenLvl,Enemy,True) [2,2] 0x00 0x00 0x0 0x00 [SilverLance] AttackInRangeAI
 UNIT Ch20Generics1 Halberdier Miniboss Level(GenLvl,Enemy,True) [3,6] 0x00 0x00 0x0 0x00 [SilverLance] ChaseOnceApproachedAI
 UNIT Ch20Generics1 Halberdier Miniboss Level(GenLvl,Enemy,True) [0,6] 0x00 0x00 0x0 0x00 [Spear] AttackInRangeAI
-UNIT Ch20Generics1 Warrior Miniboss Level(GenLvl,Enemy,True) [1,8] 0x0 0x0 0x0 0x0 [Hammer] AttackInRangeAI
-UNIT Ch20Generics1 Hero Miniboss Level(GenLvl,Enemy,1) [3,9] 0x0 0x0 0x0 0x0 [Armorslayer] AttackInRangeAI
+UNIT Ch20Generics1 Warrior Miniboss Level(GenLvl,Enemy,True) [1,8] 0x0 0x0 0x0 0x0 [Hammer] PursueWithoutHeedAI
+UNIT Ch20Generics1 Hero Miniboss Level(GenLvl,Enemy,1) [3,9] 0x0 0x0 0x0 0x0 [Armorslayer] PursueWithoutHeedAI
 UNIT Ch20Generics1 Sniper Miniboss Level(GenLvl,Enemy,1) [4,8] 0x0 0x0 0x0 0x0 [SilverBow] ChaseOnceApproachedAI
 UNIT Ch20Generics1 Sniper Miniboss Level(GenLvl,Enemy,1) [2,4] 0x0 0x0 0x0 0x0 [Longbow] AttackInRangeAI
 UNIT
 
 FinalMirageEnemies:
-UNIT Fatuus Warrior 0x00 Level(16, Enemy, 0) [8,2] 0x00 0x00 0x0 0x00 [Tomahawk,Swordslayer,BraveAxe] NeverMoveAI 
-UNIT Ch20Generics1 Ranger Fatuus Level(GenLvl,Enemy,1) [7,4] 0x00 0x00 0x0 0x00 [SilverSword,SteelBow] AttackInRangeAI
-UNIT Ch20Generics1 Ranger Fatuus Level(GenLvl,Enemy,1) [9,4] 0x00 0x00 0x0 0x00 [SilverSword,SteelBow] AttackInRangeAI
-UNIT Ch20Generics1 Druid Fatuus Level(GenLvl,Enemy,1) [6,1] 0x00 0x00 0x0 0x00 [Nosferatu] ChaseOnceApproachedAI
-UNIT Ch20Generics1 Druid Fatuus Level(GenLvl,Enemy,1) [10,1] 0x00 0x00 0x0 0x00 [Nosferatu] ChaseOnceApproachedAI
+UNIT Fatuus Warrior 0x00 Level(16, Enemy, 0) [8,2] 0x00 0x00 1 REDA8R2 [Tomahawk,Swordslayer,BraveAxe] NeverMoveAI 
+UNIT Ch20Generics1 Ranger Fatuus Level(GenLvl,Enemy,1) [7,3] 0x00 0x00 1 REDA7R3 [SilverSword,SteelBow] AttackInRangeAI
+UNIT Ch20Generics1 Ranger Fatuus Level(GenLvl,Enemy,1) [9,3] 0x00 0x00 1 REDA9R3 [SilverSword,SteelBow] AttackInRangeAI
+UNIT Ch20Generics1 Druid Fatuus Level(GenLvl,Enemy,1) [6,1] 0x00 0x00 1 REDA6R1 [Nosferatu] ChaseOnceApproachedAI
+UNIT Ch20Generics1 Druid Fatuus Level(GenLvl,Enemy,1) [10,1] 0x00 0x00 1 REDA10R1 [Nosferatu] ChaseOnceApproachedAI
+UNIT Ch20Generics1 Summoner Fatuus Level(GenLvl,Enemy,1) [6,2] 0x00 0x00 1 REDA6R2 [Fenrir] AttackInRangeAI
+UNIT Ch20Generics1 Summoner Fatuus Level(GenLvl,Enemy,1) [10,2] 0x00 0x00 1 REDA10R2 [Fenrir] AttackInRangeAI
+UNIT
+
+WeHateFliers:
+UNIT Ch20Generics1 Hero Fatuus Level(GenLvl,Enemy,1) [8,2] 0x0 0x00 1 REDA7R5 [WindSword] PursueWithoutHeedAI
+UNIT Ch20Generics1 Sage Fatuus Level(GenLvl,Enemy,1) [8,2] 0x0 0x00 1 REDA8R4 [Aircalibur] PursueWithoutHeedAI
+UNIT Ch20Generics1 Hero Fatuus Level(GenLvl,Enemy,1) [8,2] 0x0 0x00 1 REDA9R5 [WindSword] PursueWithoutHeedAI
+UNIT
+
+WeHateMonsters:
+UNIT Ch20Generics1 Bishop Fatuus Level(GenLvl,Enemy,1) [8,2] 0x0 0x00 1 REDA7R3 [Divine] PursueWithoutHeedAI
+UNIT Ch20Generics1 Bishop_F Fatuus Level(GenLvl,Enemy,1) [8,2] 0x0 0x00 1 REDA8R4 [Shine,Mend] NoAI
+UNIT Ch20Generics1 Bishop Fatuus Level(GenLvl,Enemy,1) [8,2] 0x0 0x00 1 REDA9R3 [Divine] PursueWithoutHeedAI
+UNIT
+
+HorsesFromBehind:
+UNIT Ch20Generics1 Paladin Fatuus Level((GenLvl+3),Enemy,1) [17,0] 0x0 0x00 1 REDA17R1 [Wyrmslayer,Spear] PursueWithoutHeedAI
+UNIT Ch20Generics1 Ranger Fatuus Level((GenLvl+3),Enemy,1) [18,0] 0x0 0x00 1 REDA18R1 [SilverBow] PursueWithoutHeedAI
+UNIT Ch20Generics1 Paladin Fatuus Level((GenLvl+3),Enemy,1) [19,0] 0x0 0x00 1 REDA19R1 [DragonSpear,LightBrand] PursueWithoutHeedAI
+UNIT Ch20Generics1 MageKnight Fatuus Level((GenLvl+3),Enemy,1) [17,0] 0x0 0x00 1 REDA17R0 [Fimbulvetr] PursueWithoutHeedAI
+UNIT Ch20Generics1 Valkyrie Fatuus Level((GenLvl+3),Enemy,1) [18,0] 0x0 0x00 1 REDA18R0 [Divine,Recover] NoAI
+UNIT Ch20Generics1 MageKnight Fatuus Level((GenLvl+3),Enemy,1) [19,0] 0x0 0x00 1 REDA19R0 [Fimbulvetr] PursueWithoutHeedAI
 UNIT
 
 // Shop Data
 ALIGN 4
 RuinsShop:
-SHLI WindSword Runesword Nosferatu Fortify Sleep Berserk Rescue SecretBook Talisman MasterSeal
+SHLI WindSword Runesword Purge Bolting Nosferatu Eclipse Shadowshot Sleep Berserk Rescue Fortify SecretBook Talisman MasterSeal
+
+HouseShop:
+SHLI KillingEdge KillerLance KillerAxe KillerBow BraveSword BraveLance BraveAxe BraveBow Wyrmslayer DragonSpear DragonAxe
 
 ch20Vendor:
-SHLI Elfire Fimbulvetr Divine Aura Flux Fenrir Heal Mend Recover Restore Elixir
+SHLI Elfire Fimbulvetr Divine Aura Flux Fenrir Heal Mend Recover Restore Elixir ChestKey_5
 
 ch20Armory:
-SHLI SteelSword Lancereaver SilverSword SteelLance Axereaver SilverLance ShortSpear SteelAxe Swordreaver SilverAxe HandAxe ShortBow SteelBow SilverBow
+SHLI SteelSword Lancereaver SilverSword SteelLance Axereaver SilverLance ShortSpear SteelAxe Swordreaver SilverAxe HandAxe SteelBow SilverBow Longbow
 // MESSAGE Events end at offset currentOffset
