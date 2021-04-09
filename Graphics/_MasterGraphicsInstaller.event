@@ -93,3 +93,15 @@ StaffAnim(0x86)
 MagicAnim(TroubadourMagicAnimID)
 UnarmedAnim(0x85)
 EndAnim
+
+PUSH
+	ORG $8AF180 //Sniper Animations
+	BowAnim(0x2A)
+	UnarmedAnim(0x2B)
+	EndAnim
+
+	ORG $8AF198 //Sniper_F Animations
+	BowAnim(0x2C)
+	UnarmedAnim(0x2D)
+	EndAnim
+POP
