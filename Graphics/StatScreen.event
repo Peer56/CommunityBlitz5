@@ -1,0 +1,19 @@
+//Stat screen
+PUSH
+ORG $88620
+POIN RemoveGlowy
+ORG $88638 //original at $A03368
+POIN NewStatScreen
+ORG $88640	//original at $A06460
+POIN NewStatScreenPal
+//POIN TSA //original at $A05F10
+POP
+
+NewStatScreen:
+#incext Png2Dmp "StatScreen/Blitz5StatScreen.png" --lz77
+
+NewStatScreenPal:
+#incext Png2Dmp "StatScreen/Blitz5StatScreen.png" --palette-only
+
+RemoveGlowy:
+#incext Png2Dmp "StatScreen/RemoveGlowy.png" --lz77
