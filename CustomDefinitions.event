@@ -462,6 +462,8 @@
 #define HalbLanceAnimID 3
 #define HalbUnarmedAnimID 4
 #define TroubadourMagicAnimID 6
+#define DeathgoyleLanceAnimID 0xBF
+#define DeathgoyleUnarmedAnimID 0xC0
 
 // Item Definitions
 

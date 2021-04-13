@@ -9,3 +9,8 @@ pikmin for existing
 
 Zagan, DemiABC, Borgas - randomwizard
 Inigo - Randomwizard & peerless 
+
+//Battle Animations
+Troubadour[Magic] - Lisandra_Brave
+
+Deathgoyle - L95

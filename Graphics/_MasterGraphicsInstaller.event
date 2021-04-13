@@ -50,6 +50,12 @@
 {
 #include "TroubadourMagicAnim.event"
 }
+{
+#include "DeathgoyleLanceAnim.event"
+}
+{
+#include "DeathgoyleUnarmedAnim.event"
+}
 ALIGN 4
 HalbStandingMapSprite:
 #incext Png2Dmp "HalbStand.png" --lz77
