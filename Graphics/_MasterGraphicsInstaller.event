@@ -3,6 +3,8 @@
 #include "Tilesets/_TilesetInstaller.event"
 #include "PlayerUnitPalettes/PaletteSetup.event"
 #include "BossUnitPalettes/PaletteSetup.event"
+#include "StatScreen.event"
+#include "TitleScreen.event"
 
 #define StandingMapSprite(aId, size, gfxPointer) "PUSH; ORG StandingMapSpriteTable + (aId * 8); SHORT 0 size; POIN gfxPointer; POP"
 #define MovingMapSprite(aId, apPointer, gfxPointer) "PUSH; ORG MovingMapSpriteTable + ((aId - 1) * 8); POIN gfxPointer apPointer; POP"
@@ -47,6 +49,12 @@
 }
 {
 #include "TroubadourMagicAnim.event"
+}
+{
+#include "DeathgoyleLanceAnim.event"
+}
+{
+#include "DeathgoyleUnarmedAnim.event"
 }
 ALIGN 4
 HalbStandingMapSprite:

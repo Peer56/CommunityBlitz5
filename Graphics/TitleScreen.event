@@ -1,0 +1,13 @@
+
+PUSH
+  ORG $c5830
+  POIN NewTitleScroll
+
+  ORG $aac5ac
+  #incext Png2Dmp "TitleScreen/FE_Title.png" --lz77
+
+POP
+
+NewTitleScroll:
+#incext Png2Dmp "TitleScreen/TitleScroll.png" --lz77
+
