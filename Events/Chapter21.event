@@ -150,6 +150,7 @@ MUSC 0xFFFF
 Text(Ch21_TimeLoop)
 SVAL s3 Warp
 GIVEITEM Gunborg
+MNC2 20 //restart chapter because time loop
 LABEL 2000
 NoFade
 ENDA
