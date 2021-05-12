@@ -19,6 +19,11 @@ adding yourself!
 - Vesly
 - Zaim
 
+# Animations
+Deathgoyle Animation by L95
+Halberdier by TBA, Spud, MeatofJustice
+Troubadour magic animation by Lisandra_Brave
+
 # Other
 
 - Peerless: made ch1 map
