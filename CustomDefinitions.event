@@ -464,6 +464,10 @@
 #define TroubadourMagicAnimID 6
 #define DeathgoyleLanceAnimID 0xBF
 #define DeathgoyleUnarmedAnimID 0xC0
+#define WightSwordAnimID 0xA7
+#define WightLanceAnimID 0xA8
+#define WightUnarmedAnimID 0xA9
+#define WightBowAnimID 0xAA
 
 // Item Definitions
 

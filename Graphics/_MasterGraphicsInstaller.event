@@ -1,4 +1,3 @@
-
 #include "Portraits/_PortraitInstaller.event"
 #include "Tilesets/_TilesetInstaller.event"
 #include "PlayerUnitPalettes/PaletteSetup.event"
@@ -56,6 +55,12 @@
 {
 #include "DeathgoyleUnarmedAnim.event"
 }
+{
+#include "WightBowAnim.event"
+#include "WightSwordAnim.event"
+#include "WightLanceAnim.event"
+#include "WightUnarmedAnim.event"
+}
 ALIGN 4
 HalbStandingMapSprite:
 #incext Png2Dmp "HalbStand.png" --lz77
@@ -111,5 +116,16 @@ PUSH
 	ORG $8AF198 //Sniper_F Animations
 	BowAnim(0x2C)
 	UnarmedAnim(0x2D)
+	EndAnim
+
+	ORG $8AF594 //Wight Animations
+	SwordAnim(WightSwordAnimID)
+	LanceAnim(WightLanceAnimID)
+	UnarmedAnim(WightUnarmedAnimID)
+	EndAnim
+
+	ORG $8AF5A4
+	BowAnim(WightBowAnimID)
+	UnarmedAnim(WightUnarmedAnimID)
 	EndAnim
 POP

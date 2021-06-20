@@ -23,6 +23,7 @@ adding yourself!
 Deathgoyle Animation by L95
 Halberdier by TBA, Spud, MeatofJustice
 Troubadour magic animation by Lisandra_Brave
+T2 Skeleton animations by Teraspark & Eliwan
 
 # Other
 
