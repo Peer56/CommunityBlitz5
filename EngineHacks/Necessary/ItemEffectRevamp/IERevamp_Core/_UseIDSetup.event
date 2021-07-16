@@ -90,7 +90,7 @@
 		SHORT 0x468F	//mov 	r15, r1
 		B($2F90E)
 		
-		#include "GetStatBoosterText.event"
+		#include "GetStatBoosterText.lyn.event"
 		
 		//BL(Item_GetStat_EffectID)
 		//B($2F8AA)	//IB Jump 
